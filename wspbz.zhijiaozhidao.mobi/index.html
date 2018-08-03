@@ -1,0 +1,46 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="max-age=0" http-equiv="Cache-Control">
+    <meta content="240" name="MobileOptimized">
+    <meta content="YES" name="apple-touch-fullscreen">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+    <title>91桌面</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="picBox" style="position: relative;">
+    <img src="images/logo1.png" style="position: absolute;left:0;top:0;width:15%;z-index: 99">
+    <div class="top">
+         <img src="images/ql_v1.png" alt="91桌面">
+         <a href="javascript:;" class="download loadApp" style="width:68%;top:91%;height:14%;"></a>
+    </div>
+    <a href="javascript:;" class="loadApp" style="position: fixed;max-width:640px;bottom:0;"><img src="images/ql_btn.png" alt="91桌面"></a>
+</div>
+<div class="copyRight">Copyright 北京智投智道投资咨询有限公司</div>
+</body>
+<script>
+        var imgs = document.querySelectorAll('img');
+        [].forEach.call(imgs,function(el){
+            el.addEventListener('click',function(e){
+                e.preventDefault();
+            });
+        });
+
+        var alink = document.querySelectorAll('.loadApp');
+        [].forEach.call(alink,function(el){
+            el.addEventListener('click',function(){
+                if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                    window.location.href ="http://url.ifjing.com/down?pid=6&mt=4&resid=919191&position=0";
+                }else {
+                    window.location.href ="http://url.ifjing.com/down?pid=6&mt=4&resid=919191&position=0";
+                }
+            });
+        });
+</script>
+</html>  
+

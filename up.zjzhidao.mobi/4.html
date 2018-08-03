@@ -1,0 +1,50 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>UP直播</title>
+	<meta name="viewport" content="width=device-width"> 
+ 	 <link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
+     <style>
+		.navImage img{
+			width:720px;
+			height:auto;
+			}
+			.navImage{
+			display:inline-block;
+			width:100%;			
+			}
+			body{
+			margin:0!important;
+			}
+     </style>
+</head>
+<body>
+			<center>
+				<div class="navImage">
+				  <img id="img"  src="http://cdn.lyplaaap.cn/up.zjzhidao.mobi/bg1.jpg" alt="navbar" usemap="#navImg">
+			    <map name="navImg" id="navImg" class="btnCilck">
+				  <area shape="rectangle" coords="165,1097,541,1213" onClick="javascript:;"/>
+<area shape="rectangle" coords="100,113,634,310" onClick="javascript:;"/>
+				  </map>
+			  </div> 
+			<!--<img src="images/bg2.png" class="btnCilck" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" alt=""  id="download2" onClick="javascript:;" >-->
+			</center>
+<script>
+
+		var Android="http://n.pengpengla.com/android/Uplive_2018.06.29_3.2.2_12994.production_upliveV1UpDomesticUPsem5.apk";//安卓下载链接
+		var Ios="https://at.umeng.com/P9nCGr?cid=5484&keywordid={keywordid}&creative={creative}";//ios下载链接
+
+		var btns = document.getElementsByClassName("btnCilck");
+		for(var i=0;i<btns.length;i++){
+		   btns[i].onclick=function () {
+               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Ios;
+               }else {
+                   window.location.href =Android;
+               }
+           }
+		};
+</script>
+</body>
+</html>

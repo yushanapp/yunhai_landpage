@@ -1,0 +1,57 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>微博动漫</title>
+	<meta name="viewport" content="width=device-width"> 
+ 	 <link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
+     <style>
+		.navImage img{
+			width:720px;
+			height:auto;
+			}
+			.navImage{
+			display:inline-block;
+			width:100%;			
+			}
+			body{
+			margin:0!important;
+			}
+     </style>
+</head>
+<body>
+			<center>
+				<div class="navImage">
+				  <img id="img"  src="images/bg1.jpg" alt="navbar" usemap="#navImg">
+					<map name="navImg" id="navImg" class="btnCilck">
+					  
+
+<area shape="rectangle" coords="82,1473,309,1534" onClick="javascript:;" />					  
+<area shape="rectangle" coords="398,1470,625,1536" onClick="javascript:;" />
+<area shape="rectangle" coords="79,1920,308,1985" onClick="javascript:;"/>
+<area shape="rectangle" coords="397,1917,627,1985" onClick="javascript:;" />
+<area shape="rectangle" coords="80,2360,308,2420" onClick="javascript:;" />
+<area shape="rectangle" coords="395,2357,628,2422" onClick="javascript:;" />
+					</map>
+				</div> 
+			<img src="images/bg2.jpg" alt="" name="download2" border="0" usemap="#download2Map"  style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
+<map name="download2Map"><area shape="rect" coords="444,17,693,81" onClick="javascript:;" class="btnCilck"></map>
+</center>
+<script>
+
+		var Android="http://img.manhua.weibo.com/static/b/wb_comic/apk/6.0.0/baidusearch/app-6.0.0-166-baidusearchH-release.apk";//安卓下载链接
+		var Ios="http://img.manhua.weibo.com/static/b/wb_comic/apk/6.0.0/baidusearch/app-6.0.0-166-baidusearchH-release.apk";//ios下载链接
+
+		var btns = document.getElementsByClassName("btnCilck");
+		for(var i=0;i<btns.length;i++){
+		   btns[i].onclick=function () {
+               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Ios;
+               }else {
+                   window.location.href =Android;
+               }
+           }
+		};
+</script>
+</body>
+</html>

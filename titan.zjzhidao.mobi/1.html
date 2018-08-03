@@ -1,0 +1,59 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>体坛新闻</title>
+<meta name="viewport" content="width=device-width"> 
+<link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
+<!--
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" /> -->
+<style>
+.navImage img{
+width:720px;
+height:1400px;
+}
+.navImage{
+/* text-align:center; */
+display:inline-block
+/*margin-left:-8px!important; */
+width:100%;			
+}
+body{
+margin:0!important;
+}
+</style></head>
+
+<body>
+<center>
+<div class="navImage" >
+    <img id="img"  src="images/bg1.jpg" alt="navbar" usemap="#navImg">
+    <map name="navImg" id="navImg" class="btnCilck">
+	  <area shape="rectangle" coords="143,1151,546,1244" onclick="javascript:;">
+
+    </map>
+    </div> 
+
+	<img src="images/bg2.png" class="btnCilck" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" alt="" id="download2" onclick="javascript:;">
+
+	</center>
+
+<script>
+
+		var Android="https://at.umeng.com/fimO9D?cid=5484&keywordid={keywordid}&creative={creative}";//安卓下载链接
+		var Ios="https://at.umeng.com/PHDWri?cid=5484&keywordid={keywordid}&creative={creative}";//ios下载链接
+
+		var btns = document.getElementsByClassName("btnCilck");
+		for(var i=0;i<btns.length;i++){
+		   btns[i].onclick=function () {
+               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Ios;
+               }else {
+                   window.location.href =Android;
+               }
+           }
+		};
+</script>
+
+
+</body>
+</html>

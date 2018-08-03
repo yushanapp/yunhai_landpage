@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="max-age=0" http-equiv="Cache-Control">
+    <meta content="240" name="MobileOptimized">
+    <meta content="YES" name="apple-touch-fullscreen">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+    <title>91桌面</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style type="text/css">
+        .top1 a{
+            display: block;
+            position: absolute;
+            width:33.333%;
+            height:24%;
+        }
+        .top1 a:hover{
+            background:rgba(255,255,255,0.2);
+        }
+        .a1{
+            left:0;
+            top:40%;
+        }
+        .a2{
+            left:33.333%;
+            top:40%;
+        }
+        .a3{
+            right:0;
+            top:40%;
+        }
+        .a4{
+            left:0;
+            top:64%;
+        }
+        .a5{
+            left:33.333%;
+            top:64%;
+        }
+        .a6{
+            right:0;
+            top:64%;
+        }
+        .downloadBtn1{
+            display: block;
+            position: absolute;
+            width: 53%;
+            height: 7%;
+            top: 24%;
+            left: 6%;
+        }
+        .downloadBtn2{
+           display: block;
+            position: absolute;
+            width: 86%;
+            height: 7%;
+            bottom: 4%;
+            left: 6%;
+        }
+    </style>
+</head>
+<body>
+<div class="picBox" style="position:relative;">
+    <img src="images/logo1.png" style="position: absolute;left:0;top:0;width:15%;z-index: 99">
+    <img src="images/c3-1v1.jpg" alt="91桌面">
+    <img src="images/c3-2.jpg" alt="91桌面">
+    <div class="downloadBtn1 loadApp"></div>
+    <div class="downloadBtn2 loadApp"></div>
+    <div class="top1">
+        <a href="javascript:;" class="a1 loadApp"></a>
+        <a href="javascript:;" class="a2 loadApp"></a>
+        <a href="javascript:;" class="a3 loadApp"></a>
+        <a href="javascript:;" class="a4 loadApp"></a>
+        <a href="javascript:;" class="a5 loadApp"></a>
+        <a href="javascript:;" class="a6 loadApp"></a>
+    </div>
+    <a href="javascript:;" class="loadApp" style="position: fixed;bottom:0;max-width: 640px;">
+        <img src="images/xuanfu_btn.png" alt="91桌面">
+    </a>
+</div>
+<div class="copyRight">Copyright 北京智投智道投资咨询有限公司</div>
+</body>
+<script>
+    
+
+        var alink = document.querySelectorAll('.loadApp');
+        [].forEach.call(alink,function(el){
+            el.addEventListener('click',function(){
+                if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                    window.location.href ="http://url.ifjing.com/down?pid=6&mt=4&resid=919191&position=0";
+                }else {
+                    window.location.href ="http://url.ifjing.com/down?pid=6&mt=4&resid=919191&position=0";
+                }
+            });
+        });
+</script>
+</html>  
+

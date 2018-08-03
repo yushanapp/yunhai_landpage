@@ -1,0 +1,49 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>鲸鱼阅读</title>
+	<meta name="viewport" content="width=device-width"> 
+ 	 <link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
+     <style>
+		.navImage img{
+			width:720px;
+			height:auto;
+			}
+			.navImage{
+			display:inline-block;
+			width:100%;			
+			}
+			body{
+			margin:0!important;
+			}
+     </style>
+</head>
+<body>
+			<center>
+				<div class="navImage">
+				  <img  src="images/bg001.jpg" alt="navbar" name="img" usemap="#navImg" id="img">
+				  <map name="navImg" id="navImg" class="btnCilck">
+				  <area shape="rect" coords="234,1018,508,1090" href="javascript:;"></map>
+				</div> 
+			<!--<img src="images/bg002.png" alt="" name="download2" border="0" usemap="#download2Map" id="download2" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
+<map name="download2Map" class="btnCilck"><area shape="rect" coords="505,23,689,79" href="javascript:;"></map>-->
+</center>
+<script>
+
+		var Android="http://afile.ihuayue.cn/download/app/91dfd1a15e0ff74a37a219d05d105d08/jingyu_v1.12.0_199_07241451_yunhaibaiduxinxiliu15_hyapp2026_jiagu_sign_1532421570513.apk";//安卓下载链接
+		var Ios="http://afile.ihuayue.cn/download/app/91dfd1a15e0ff74a37a219d05d105d08/jingyu_v1.12.0_199_07241451_yunhaibaiduxinxiliu15_hyapp2026_jiagu_sign_1532421570513.apk";//ios下载链接
+
+		var btns = document.getElementsByClassName("btnCilck");
+		for(var i=0;i<btns.length;i++){
+		   btns[i].onclick=function () {
+               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Ios;
+               }else {
+                   window.location.href =Android;
+               }
+           }
+		};
+</script>
+</body>
+</html>

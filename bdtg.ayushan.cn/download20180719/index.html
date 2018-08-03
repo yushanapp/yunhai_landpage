@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	<meta name="wap-font-scale" content="no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <meta content="" name="apple-mobile-web-app-title" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="telephone=no" name="format-detection">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+	<title>免费读书</title>
+	<style>
+		
+		*{
+			margin: 0; padding: 0;
+		}
+		.guid__aladdin {
+			width: 100vw;
+			height: 100vh;
+			background: #fff url(./img/download.jpg) no-repeat center;
+			background-size:contain;
+			position: relative;
+			display: block;
+		}
+	</style>
+	</head>
+	<body>
+		<div class="guid__aladdin">
+			
+		</div>
+		<script src="../zepto.min.js"></script>
+		<script src="//pingjs.qq.com/h5/stats.js?v2.0.2" name="MTAH5" sid="500356942" cid="500361520" ></script>
+		<script>
+		// 统计访问量
+		$(document).ready(function() {
+		    $('html').one('MtaH5:click', function() {
+		    	var tjName = 'download_freebook';
+		        console.log('统计标识 =>>', tjName);
+		        MtaH5.clickStat(tjName);
+		    }).trigger('MtaH5:click');
+		   
+		    $('.guid__aladdin').click(function() {
+		    	console.log(222)
+				var UA = navigator.userAgent;
+				var isAndroid = /android|adr/gi.test(UA);
+				
+				if (isAndroid) {
+					window.location.href = 'http://apk.3gsc.com.cn/00/ggbook/GGBookBase-com.weteent.freebook-209-release-v2.0.6-27-20180723-102411.apk';
+				}else{
+					window.location.href= 'https://at.umeng.com/nSfSfa';
+				}
+				
+			});
+		     
+		});
+		</script>
+	</body>
+</html>

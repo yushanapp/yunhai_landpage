@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="max-age=0" http-equiv="Cache-Control">
+    <meta content="240" name="MobileOptimized">
+    <meta content="YES" name="apple-touch-fullscreen">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+    <title>neets</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+    <style>
+        .picBox{
+            font-size: inherit;
+            position: relative;
+        }
+        .content{
+            position: absolute;
+            left:10%;
+            width:80%;
+            top:10%;
+        }
+        .swiper-pagination{
+            left:50%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform:translateX(-50%);
+            -moz-transform:translateX(-50%);
+            -o-transform:translateX(-50%);
+            transform:translateX(-50%);
+        }
+        .swiper-pagination-bullet{
+            margin:0 5px;
+        }
+        .loadApp{
+            position: absolute;
+            left:10%;
+            width:80%;
+            bottom:10%;
+        }
+    </style>
+</head>
+<body>
+<div class="picBox">
+    <img src="images/logo.png" alt="" style="position:absolute;left:0;top:0;width:20%;z-index:1">
+    <img src="images/n1-1.jpg" alt="">
+    <div class="content">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/n1-11.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/n1-22.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/n1-33.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/n1-44.png" alt=""></div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <a href="javascript:;" class="loadApp"><img src="images/n1-2.png" alt=""></a>
+    <div class="copyRight">Copyright 北京智投智道投资咨询有限公司</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        loop: true,
+        autoplay: true
+    });
+    var alink = document.querySelectorAll('.loadApp');
+    [].forEach.call(alink,function(el){
+        el.addEventListener('click',function(){
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href ="https://at.umeng.com/5vmmeC";
+            }else {
+                window.location.href ="https://img.neets.cc/android/qudao/qudao7_release.apk";
+            }
+        });
+    });
+
+</script>
+</body>
+</html>
+

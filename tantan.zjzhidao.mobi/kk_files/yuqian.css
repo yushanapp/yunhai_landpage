@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/* CSS Document */
+body,div,a,p,table,tr,td,img{ margin:0; padding:0; font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; color:#707070; font-size:18px}
+div img{ vertical-align:middle; margin: 0; padding: 0}
+tabel,tr,td{ background:transparent; text-align: center;}
+.main_visual{overflow:hidden;position:relative;}
+.main_image{overflow:hidden;position:relative; zoom:1}
+.main_image ul{width:9999px;overflow:hidden;position:absolute;top:0;left:0;}
+.main_image li{float:left;width:100%; overflow: hidden; zoom:1; }
+
+
+
+div.flicking_con{position:absolute; bottom: 0; left:50%;z-index:999;width:300px;height:21px;margin:0 0 0 -30px;}
+div.flicking_con a{float:left;width:21px;height:21px;margin:0;padding:0;background:url('http://w.tancdn.com/v1/images/eyJpZCI6IktEWFVSVFpCVVEySzVDSzIyWVhSVk1PTVhTM01ZRiIsInciOjIxLCJoIjo0MiwiZCI6MCwibXQiOiJpbWFnZS9qcGVnIiwiZGgiOjQzNTE2NDgwMzM2ODQ1MzEyfQ?format=originalOFGHLERTH') 0 0 no-repeat;display:block;text-indent:-1000px}
+div.flicking_con a.on{background-position:0 -21px}
+#btn_prev,#btn_next{z-index:11111;position:absolute;display:block;width:73px!important;height:74px!important;top:50%;margin-top:-37px;display:none;}
+#btn_prev{background:url(http://w.tancdn.com/v1/images/eyJpZCI6IlhPUE43VVNETEVRMkVXQVVOWkhZQjRVUVAyUldQSCIsInciOjczLCJoIjo3NCwiZCI6MCwibXQiOiJpbWFnZS9qcGVnIiwiZGgiOjMxMjI1NjcwNTQ2ODA4MDY2OTl9?format=originalOFGHLERTH) no-repeat left top;left:100px;}
+#btn_next{background:url(http://w.tancdn.com/v1/images/eyJpZCI6IlhQVEVRUUtCVEZOVE1VSTNXQVRFTk5ZNFVXMzVMWCIsInciOjczLCJoIjo3NCwiZCI6MCwibXQiOiJpbWFnZS9qcGVnIiwiZGgiOjMxMjI1NjczMzA2MzQ1NTI2MTl9?format=originalOFGHLERTH) no-repeat right top;right:100px;}

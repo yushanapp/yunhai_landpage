@@ -1,0 +1,369 @@
+	<!DOCTYPE html>
+<!-- saved from url=(0043)http://lp.tantanapp.com/android/semshenma04 -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="kk-一款萌萌哒社交应用，脱单神器交友约会同城心动的陌生人">
+    <meta property="og:description" content="kk-一款萌萌哒社交应用，脱单神器交友约会同城心动的陌生人">
+    <meta name="twitter:description" content="kk-一款萌萌哒社交应用，脱单神器交友约会同城心动的陌生人">
+    <title>探探</title>
+    <link type="text/css" href="./kk_files/yuqian.css" rel="stylesheet">
+    <script type="text/javascript" src="./kk_files/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="./kk_files/jquery.touchSlider.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var ua = window.navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == "micromessenger") {
+                $(".aa").show()
+            };
+            $(".main_visual").hover(function () {
+                $("#btn_prev,#btn_next").fadeIn()
+            }, function () {
+                $("#btn_prev,#btn_next").fadeOut()
+            });
+            $dragBln = false;
+            $(".main_image").touchSlider({
+                flexible: true,
+                speed: 200,
+                btn_prev: $("#btn_prev"),
+                btn_next: $("#btn_next"),
+                paging: $(".flicking_con a"),
+                counter: function (e) {
+                    $(".flicking_con a").removeClass("on").eq(e.current - 1).addClass("on");
+                }
+            });
+            $(".main_image").bind("mousedown", function () {
+                $dragBln = false;
+            });
+            $(".main_image").bind("dragstart", function () {
+                $dragBln = true;
+            });
+            $(".main_image a").click(function () {
+                if ($dragBln) {
+                    return false;
+                }
+            });
+            timer = setInterval(function () {
+                $("#btn_next").click();
+            }, 2000);
+            $(".main_visual").hover(function () {
+                clearInterval(timer);
+            }, function () {
+                timer = setInterval(function () {
+                    $("#btn_next").click();
+                }, 2500);
+            });
+            $(".main_image").bind("touchstart", function () {
+                clearInterval(timer);
+            }).bind("touchend", function () {
+                timer = setInterval(function () {
+                    $("#btn_next").click();
+                }, 2500);
+            });
+        });
+    </script>
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?886994bb939c9fdb82d2f8bbb922d2b2";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+
+
+</head>
+
+<body>
+    <div class="aa" style="position:fixed;display:none; z-index:999; height:100%; width:100%; background: url(http://w.tancdn.com/v1/images/eyJpZCI6IkFLUFpERExDMkJaSEVOS0hUVk9YVDRDSkpVVElNRCIsInciOjMwMCwiaCI6MzAwLCJkIjowLCJtdCI6ImltYWdlL2pwZWciLCJkaCI6MH0?format=originalOFGHLERTH)">
+        <img width="100%" src="./kk_files/bg9.jpg" alt="" id="download9" onClick="javascript:;">
+    </div>
+    <div>
+        <img width="100%" src="./kk_files/bg12.jpg" alt="" id="download12" onClick="javascript:;">
+    </div>
+    <div style="position: relative">
+        <img width="100%" src="./kk_files/bg7.jpg" alt="" id="download7" onClick="javascript:;">
+        <table cellpadding="0" cellspacing="0" style="width: 100%; position: absolute; top: 0; left: 0; padding: 0; margin: 0">
+            <tbody>
+                <tr>
+                    <td style="width: 50%; background: none">
+                        <a href="javascript:;" id="download4">
+                            <img width="40%" src="./kk_files/bg4.jpg" alt="" >
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <img width="100%" src="./kk_files/bg11.jpg" alt="" id="download11" onClick="javascript:;">
+    </div>
+    <div>
+        <img width="100%" src="./kk_files/bg6.jpg" alt="" id="download6" onClick="javascript:;">
+    </div>
+    <div>
+        <img width="100%" src="./kk_files/bg10.jpg" alt="" id="download10" onClick="javascript:;">
+    </div>
+<!--
+	        <div class="main_image">
+            <img width="100%"  src="./kk_files/bg15.jpg" alt="" id="download15" onClick="javascript:;"  style="width: 1366px; overflow: visible;">
+            <ul style="width: 1366px; overflow: visible;">
+                <li style="float: none; display: block; position: absolute; top: 0px; left: 0px; width: 1349px;">
+                    <img width="100%" src="./kk_files/bg10.jpg" alt="">
+                </li>
+                <li style="float: none; display: block; position: absolute; top: 0px; left: -2698px; width: 1349px;">
+                    <img width="100%" src="./kk_files/bg10.jpg" alt="" id="download10" onClick="javascript:;">
+                </li>
+                <li style="float: none; display: block; position: absolute; top: 0px; left: -1349px; width: 1349px;">
+                    <img width="100%" src="./kk_files/bg10.jpg" alt="" id="download10" onClick="javascript:;">
+                </li>
+            </ul>
+            <a href="javascript:;" id="btn_prev" style="width: 1366px; overflow: visible; display: none;"></a>
+            <a href="javascript:;" id="btn_next" style="width: 1366px; overflow: visible; display: none;"></a>
+        </div>    -->
+
+    <div>
+        <img width="100%" src="./kk_files/bg14.jpg" alt="" id="download14" onClick="javascript:;">
+    </div>
+    <div>
+        <img width="100%" src="./kk_files/bg3.jpg" alt="" id="download3" onClick="javascript:;">
+    </div>
+    <div class="main_visual">
+        <div class="flicking_con"><a href="http://tantan.sswlau.cn" class="on">1</a><a href="http://tantan.sswlau.cn" class="">2</a><a href="http://tantan.sswlau.cn" class="">3</a>
+        </div>
+        <div class="main_image">
+            <img width="100%" src="./kk_files/bg5.jpg" alt=""  id="download5" onClick="javascript:;"style="width: 1366px; overflow: visible;">
+            <ul style="width: 1366px; overflow: visible;">
+                <li style="float: none; display: block; position: absolute; top: 0px; left: 0px; width: 1349px;">
+                    <img width="100%" src="./kk_files/bg2.jpg" alt="" id="download2" onClick="javascript:;">
+                </li>
+                <li style="float: none; display: block; position: absolute; top: 0px; left: -2698px; width: 1349px;">
+                    <img width="100%" src="./kk_files/bg8.jpg" alt="" id="download8" onClick="javascript:;">
+                </li>
+                <li style="float: none; display: block; position: absolute; top: 0px; left: -1349px; width: 1349px;">
+                    <img width="100%" src="./kk_files/bg1.jpg" alt="" id="download1" onClick="javascript:;">
+                </li>
+            </ul>
+            <a href="javascript:;" id="btn_prev" style="width: 1366px; overflow: visible; display: none;"></a>
+            <a href="javascript:;" id="btn_next" style="width: 1366px; overflow: visible; display: none;"></a>
+        </div>
+    </div>
+    <div>
+<img src="./kk_files/bg13.jpg" alt="" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;width: 100%;" alt="" id="download13" onClick="javascript:;" >	
+        
+    </div>
+ 
+</body>
+
+
+<script>
+/*
+if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+      
+   setTimeout(function(){
+            window.location.href ="https://tantanapp.com/tantan_sembaidu01.apk";
+        },2000);   
+    }else {
+       setTimeout(function(){
+            
+            window.location.href ="https://tantanapp.com/tantan_sembaidu01.apk";
+        },2000);  
+    }
+
+*/
+/*
+;(function(){
+        document.getElementById("download1").addEventListener("click", function(){
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href ="https://tantanapp.com/tantan_sembaidu01.apk";
+            }else {
+                window.location.href ="https://tantanapp.com/tantan_sembaidu01.apk";
+            }
+        });
+    })();
+
+
+;(function(){
+        document.getElementById("download8").addEventListener("click", function(){
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href ="https://tantanapp.com/tantan_sembaidu01.apk";
+            }else {
+                window.location.href ="https://tantanapp.com/tantan_sembaidu01.apk";
+            }
+        });
+    })();
+
+
+;(function(){
+        document.getElementById("download2").addEventListener("click", function(){
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href ="https://tantanapp.com/tantan_sembaidu01.apk";
+            }else {
+                window.location.href ="https://tantanapp.com/tantan_sembaidu01.apk";
+            }
+        });
+    })();
+
+;(function(){
+        document.getElementById("download3").addEventListener("click", function(){
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href ="https://tantanapp.com/tantan_sembaidu01.apk";
+            }else {
+                window.location.href ="https://tantanapp.com/tantan_sembaidu01.apk";
+            }
+        });
+    })();
+*/
+;(function(){
+        document.getElementById("download4").addEventListener("click", function(){
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href ="https://tantanapp.com/tantan_sembaidu06.apk";
+            }else {
+                window.location.href ="https://tantanapp.com/tantan_sembaidu06.apk";
+            }
+        });
+    })();
+/*
+;(function(){
+        document.getElementById("download5").addEventListener("click", function(){
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href ="https://tantanapp.com/tantan_sembaidu01.apk";
+            }else {
+                window.location.href ="https://tantanapp.com/tantan_sembaidu01.apk";
+            }
+        });
+    })();
+
+;(function(){
+        document.getElementById("download6").addEventListener("click", function(){
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href ="https://tantanapp.com/tantan_sembaidu01.apk";
+            }else {
+                window.location.href ="https://tantanapp.com/tantan_sembaidu01.apk";
+            }
+        });
+    })();
+
+;(function(){
+        document.getElementById("download7").addEventListener("click", function(){
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href ="https://tantanapp.com/tantan_sembaidu01.apk";
+            }else {
+                window.location.href ="https://tantanapp.com/tantan_sembaidu01.apk";
+            }
+        });
+    })();
+
+;(function(){
+        document.getElementById("download9").addEventListener("click", function(){
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href ="https://tantanapp.com/tantan_sembaidu01.apk";
+            }else {
+                window.location.href ="https://tantanapp.com/tantan_sembaidu01.apk";
+            }
+        });
+    })();
+
+
+;(function(){
+        document.getElementById("download10").addEventListener("click", function(){
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href ="https://tantanapp.com/tantan_sembaidu01.apk";
+            }else {
+                window.location.href ="https://tantanapp.com/tantan_sembaidu01.apk";
+            }
+        });
+    })();
+
+;(function(){
+        document.getElementById("download11").addEventListener("click", function(){
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href ="https://tantanapp.com/tantan_sembaidu01.apk";
+            }else {
+                window.location.href ="https://tantanapp.com/tantan_sembaidu01.apk";
+            }
+        });
+    })();
+
+;(function(){
+        document.getElementById("download12").addEventListener("click", function(){
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href ="https://tantanapp.com/tantan_sembaidu01.apk";
+            }else {
+                window.location.href ="https://tantanapp.com/tantan_sembaidu01.apk";
+            }
+        });
+    })();
+*/
+;(function(){
+        document.getElementById("download13").addEventListener("click", function(){
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href ="https://tantanapp.com/tantan_sembaidu06.apk";
+            }else {
+                window.location.href ="https://tantanapp.com/tantan_sembaidu06.apk";
+            }
+        });
+    })();
+/*
+;(function(){
+        document.getElementById("download14").addEventListener("click", function(){
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href ="https://tantanapp.com/tantan_sembaidu01.apk";
+            }else {
+                window.location.href ="https://tantanapp.com/tantan_sembaidu01.apk";
+            }
+        });
+    })();
+
+;(function(){
+        document.getElementById("download15").addEventListener("click", function(){
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href ="https://tantanapp.com/tantan_sembaidu01.apk";
+            }else {
+                window.location.href ="https://tantanapp.com/tantan_sembaidu01.apk";
+            }
+        });
+    })();
+
+
+
+*/
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

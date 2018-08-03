@@ -1,0 +1,141 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>碎乐</title>
+<meta name="viewport" content="width=device-width"> 
+<!--
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" /> -->
+<style>
+.navImage img{
+width:720px;
+height:3000px;
+}
+.navImage{
+/* text-align:center; */
+display:inline-block
+/*margin-left:-8px!important; */
+width:100%;			
+}
+body{
+margin:0!important;
+}
+</style></head>
+
+<body>
+<center>
+<div class="navImage" >
+    <img id="img"  src="http://static5.zjzdao.net/images/bg1.jpg" alt="navbar" usemap="#navImg">
+    <map name="navImg" id="navImg">
+<area shape="rectangle" coords="144,1034,581,1145" onClick="javascript:;" />
+<area shape="poly" coords="34,615,144,436,362,366,511,410,583,414,639,539,678,644,635,847,518,965,384,1004,170,952,44,797" onClick="javascript:;" />
+<!--<area shape="rectangle" coords="254,296,467,504" onClick="javascript:;" />
+<area shape="rectangle" coords="51,211,106,273" onClick="javascript:;"/>
+<area shape="rectangle" coords="171,136,227,178" onClick="javascript:;" />
+<area shape="poly" coords="440,62,478,49,498,50,536,74,551,118,538,148,514,170,488,182,431,166,424,157" onClick="javascript:;" />
+<area shape="rectangle" coords="48,1042,199,1163" onClick="javascript:;" />
+<area shape="rectangle" coords="508,975,653,1163" onClick="javascript:;" /> -->
+    </map>
+    </div> 
+<!--<img src="images/bg2.jpg" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" alt=""  id="download2" onClick="javascript:;" > -->
+	</center>
+
+
+<!--
+<script>
+areaValue();
+var timeout = null;//onresize       
+ window.onresize = function () {
+     clearTimeout(timeout);
+     timeout = setTimeout(function () { window.location.reload(); }, 100);
+ }
+function areaValue(){
+$("area").each(function(){
+    var oldValue=new String();
+   oldValue=$(this).attr("coords");
+   var newValue=adjustPoint(oldValue);
+   $(this).attr("coords",newValue);
+})
+}
+function adjustPoint(item){
+   var pageWidth=$("body").css("width"); 
+   var pageHeight=$("body").css("height");
+   var imageWidth = 720;      
+   var imageHeigth = 3443;
+   var itemChild = item.split(",");
+   for(var i=0;i<itemChild.length;i++){
+       itemChild[i] = Math.round(parseInt(itemChild[i]) * parseInt(pageWidth) / parseInt(imageWidth)).toString();
+       i++;
+       itemChild[i] = Math.round(parseInt(itemChild[i]) * parseInt(pageHeight) / parseInt(imageHeigth)).toString();
+   }
+  
+     for (var i = 0; i < itemChild.length; i++) {
+         newValue += itemChild[i];
+         if (i < itemChild.length - 1) {
+             newValue += ",";
+         }
+     }
+     return newValue;
+}
+
+
+<script type="text/javascript">  
+  
+        adjust();  
+  
+        var timeout = null;   
+        window.onresize = function () {  
+            clearTimeout(timeout);  
+            timeout = setTimeout(function () { window.location.reload(); }, 100);//
+        }  
+  
+
+        function adjust() {  
+            var map = document.getElementById("CribMap");  
+            var element = map.childNodes;  
+            var itemNumber = element.length / 2;  
+            for (var i = 0; i < itemNumber - 1; i++) {  
+                var item = 2 * i + 1;  
+                var oldCoords = element[item].coords;  
+                var newcoords = adjustPosition(oldCoords);  
+                element[item].setAttribute("coords", newcoords);  
+            }  
+            var test = element;  
+        }  
+  
+    
+        function adjustPosition(position) {  
+            var pageWidth = document.body.clientWidth; 
+            var pageHeith = document.body.clientHeight;
+  
+            var imageWidth = 1160;<span style="white-space:pre;">   </span>//ͼƬ ĳ     
+            var imageHeigth = 990;  
+  
+            var each = position.split(",");  
+            
+            for (var i = 0; i < each.length; i++) {  
+                each[i] = Math.round(parseInt(each[i]) * pageWidth / 
+
+		</script>  
+</script>
+
+-->
+<script>
+ ;(function(){
+        document.getElementById("navImg").addEventListener("click", function(){
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href ="https://static.suiyueyule.com/o_1cbp7gdpqcpq119l17n1n6f1l0g1e.apk";
+            }else {                 
+                window.location.href ="https://static.suiyueyule.com/o_1cbp7gdpqcpq119l17n1n6f1l0g1e.apk";
+            }
+        });
+    })();
+
+    
+
+</script>
+
+
+</body>
+</html>

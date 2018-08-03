@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <meta name="keywords" content="短视频拍摄制作App，全球上亿用户都在拍！最强视频剪辑，最in动画字幕和贴纸" />
+    <meta name="description" content="" />
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <title>小影</title>
+    <link rel="icon" href="https://hybrid.xiaoying.tv/web/GH/img/favicon.ico">
+	<link rel="stylesheet" href="./css/baidu.css"/>
+    <script>
+        //声明_czc对象:
+        var _czc = _czc || [];
+        //绑定siteid，请用您的siteid替换下方"XXXXXXXX"部分
+        _czc.push(["_setAccount", "1274110768"]);
+    </script>
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1274110768'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1274110768' type='text/javascript'%3E%3C/script%3E"));</script>
+    <script src="https://hybrid.xiaoying.tv/web/slidePlus/zepto.min.js"></script>
+</head>
+<body>
+<div class="main">
+    <img class="yushan" src="./images/yushan.png" alt=""/>
+    <img class="bg" id="test" src="./images/HUAWEIh5_01.png" alt=""/>
+    <div class="videoBox">
+        <img class="bg" id="cover" src="./images/HUAWEIh5_02.png" alt=""/>
+        <!--<img class="loading" src="https://hybrid.xiaoying.tv/web/vivaVideo/live/img/load.gif" alt=""/>-->
+    </div>
+    <img class="bg" src="./images/HUAWEIh5_03.png" alt=""/>
+    <img class="bg" src="./images/HUAWEIh5_04.png" alt=""/>
+    <img class="bg" src="./images/HUAWEIh5_05.png" alt=""/>
+    <img class="bg" src="./images/HUAWEIh5_06.png" alt=""/>
+    <img class="bg" src="./images/HUAWEIh5_07.png" alt=""/>
+    <img class="bg" src="./images/HUAWEIh5_08.png" alt=""/>
+    <span class="btTxt">版权：北京智投智道投资咨询有限公司</span>
+</div>
+<a id="download" onclick="_czc.push(['_trackEvent', '点击下载', '点击下载', '点击下载' + channel]);" href="https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/XiaoYing_V7.1.6_1-baidu-OthersDomestic.apk">
+    <img class="download" src="./images/downloadnew.png" alt=""/>
+</a>
+<script>
+    var sUserAgent = navigator.userAgent.toLowerCase();
+    var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+    var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+    var bIsAndroid = sUserAgent.match(/android/i) == "android";
+    window.channel = 'common';
+    if(bIsAndroid) {
+        if (window.location.href.indexOf('baidu=1') !== -1) {
+            window.channel = 1;
+            $('#download').attr('href', 'https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/XiaoYing_V7.1.6_1-baidu1-OthersDomestic.apk')
+        } else if (window.location.href.indexOf('baidu=2') !== -1) {
+            window.channel = 2;
+            $('#download').attr('href', 'https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/XiaoYing_V7.1.6_1-baidu2-OthersDomestic.apk')
+        } else if (window.location.href.indexOf('baidu=3') !== -1) {
+            window.channel = 3;
+            $('#download').attr('href', 'https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/XiaoYing_V7.1.6_1-baidu3-OthersDomestic.apk')
+        } else if (window.location.href.indexOf('baidu=4') !== -1) {
+            window.channel = 4;
+            $('#download').attr('href', 'https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/XiaoYing_V7.1.6_1-baidu4-OthersDomestic.apk')
+        } else if (window.location.href.indexOf('baidu=5') !== -1) {
+            window.channel = 5;
+            $('#download').attr('href', 'https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/XiaoYing_V7.1.6_1-baidu5-OthersDomestic.apk')
+        } else if (window.location.href.indexOf('baidu=6') !== -1) {
+            window.channel = 6;
+            $('#download').attr('href', 'https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/XiaoYing_V7.1.6_1-baidu6-OthersDomestic.apk')
+        } else {
+            $('#download').attr('href', 'https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/XiaoYing_V7.1.6_1-baidu-OthersDomestic.apk')
+        }
+    } else {
+        $('#download').attr('href', 'https://itunes.apple.com/app/apple-store/id738897668?pt=2088378&ct=baidu&mt=8')
+    }
+//    $('#test').tap(function(){
+//        console.log($('#videoplaypart')[0])
+//    })
+    $('#cover').tap(function() {
+        if($('#videoplaypart')[0]) {
+            return false
+        }
+        var videoelement = $('<video src="./images/videoHUAWEI.mp4" id="videoplaypart" controls="true" x5-video-player-type="h5" webkit-playsinline playsinline x-webkit-airplay x5nativepanel class="videopart1"></video>');
+        $('.videoBox').append(videoelement);
+        $('#videoplaypart')[0].play();
+        //$('.cover_img,.loading_part').hide();
+        console.log('开始播放');
+        // video play 视频事件控制处理
+        /*监听视频时间变化事件*/
+        $('#videoplaypart')[0].addEventListener("ended", function() {
+            $("#videoplaypart").remove();
+        }, false);
+    });
+    window.onload = function() {
+        var height = $('.download').height();
+        $('.btTxt').attr('style', 'bottom: ' + (height + 5) + 'px');
+    }
+</script>
+</body>
+</html>

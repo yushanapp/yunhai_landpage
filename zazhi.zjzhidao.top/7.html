@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>时尚资讯</title>
+	<meta name="viewport" content="width=device-width">
+	<link href="images/favicon.ico" type="images/x-favicon.icon" rel="icon">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" /> -->
+     <style>
+		.navImage img{
+			width:720px;
+			height:1927px;
+			}
+			.navImage{
+			/* text-align:center; */
+			display:inline-block
+			/*margin-left:-8px!important; */
+			width:100%;			
+			}
+			body{
+			margin:0!important;
+			}
+     </style>
+</head>
+<body>
+			<center>
+				<div class="navImage" >
+				  <img id="img"  src="images/bg1.jpg" alt="navbar" usemap="#navImg">
+					<map name="navImg" id="navImg">
+						<!--<area shape="poly" coords="107,599,480,606,510,656,499,707,715,711,682,802,262,795,271,752,5,751,38,666" onClick="javascript:;"/> 
+						<area shape="rectangle" coords="379,1152,626,1216" onClick="javascript:;"/>-->
+						<area shape="poly" coords="379,1181,418,1158,625,1160,623,1207,419,1212" onClick="javascript:;"/>
+					</map>
+				</div> 
+			<img src="images/bg2.jpg" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" alt=""  id="download2" onClick="javascript:;" >
+			</center>
+			<script>
+				 ;(function(){
+						document.getElementById("navImg").addEventListener("click", function(){
+							if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+								window.location.href ="https://itunes.apple.com/cn/app/ilady-you-jia-hua-bao/id554594787?mt=8&uo=4&at=11l7dm&ct=iLady201805157";
+							}else {                 
+								window.location.href ="https://itunes.apple.com/cn/app/ilady-you-jia-hua-bao/id554594787?mt=8&uo=4&at=11l7dm&ct=iLady201805157";
+							}
+						});
+					})();
+                     ;(function(){
+						document.getElementById("download2").addEventListener("click", function(){
+							if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+								window.location.href ="https://itunes.apple.com/cn/app/ilady-you-jia-hua-bao/id554594787?mt=8&uo=4&at=11l7dm&ct=iLady201805157";
+							}else {                 
+								window.location.href ="https://itunes.apple.com/cn/app/ilady-you-jia-hua-bao/id554594787?mt=8&uo=4&at=11l7dm&ct=iLady201805157";
+							}
+						});
+					})();
+			</script>
+</body>
+</html>

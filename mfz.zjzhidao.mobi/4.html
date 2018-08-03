@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!-- saved from url=(0174)http://mhd.zhijiaozhidao.top/nlp-v1/lp1.html?c1=7sjst9lsbq9a553ymh6esqyqfrw4el5t&c2=sem1&c3=lp1&c4=sem4&baidu_sem=82132127338_%C3%E2%B7%D1%C2%FE%BB%AD%C8%ED%BC%FE_21205970380 -->
+<html><head lang="en"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title>免费追书</title>
+    <!--<link rel="stylesheet" href="http://cdn.bootcss.com/Swiper/2.7.6/idangerous.swiper.min.css">-->
+    <link rel="stylesheet" href="./lp1_files/swiper.min.css">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body,html{
+            position: relative;
+            width:100%;
+            height:100%;
+            overflow: hidden;
+        }
+        .box{
+            width:100%;
+            height:100%;
+        }
+        img{
+            display: block;
+        }
+        .box img{
+            width: 100%;
+            height:100%;
+            position: absolute;
+        }
+        .header{
+            position: absolute;
+            top:0;
+            left:0;
+            width:3rem;
+            z-index: 9999;
+        }
+        .biaoti{
+            width:100%;
+        }
+        .slider{
+            width: 59.9%;
+            height: 69%;
+            position: absolute;
+            top: 31.6%;
+            left: 21.5%;
+        }
+        .slider img {
+            width:100%;
+            height:100%;
+        }
+        .img_bottom{
+            width:100%;
+            position: absolute;
+            bottom:-1%;
+            z-index: 999;
+        }
+        .download2{
+            width:100%;
+        }
+        .quan{
+            width: 35%;
+            height: 26%;
+            position: absolute;
+            top: 32%;
+            left: 65%;
+            z-index: 9999;
+            display: none;
+        }
+        .quan1 {
+            display:block;
+        }
+        .fontsize{
+            width:100%;
+            text-align: center;
+            font-size: 0.5rem;
+            position: absolute;
+            bottom: 0;
+            z-index: 99999;
+            transform: scale(.5);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <!--  <img class="biaoti hei" style="width:40px;" src="./lp1_files/black_yushanlogo.png" alt=""> -->
+</div>
+<div class="box">
+    <img src="./lp1_files/bg.jpg" alt="" class="bj down">
+    <div class="swiper-container slider swiper-container-horizontal">
+        <div class="swiper-wrapper" style="transform: translate3d(-1588px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3" style="width: 794px;">
+                <img src="./lp1_files/sw_4.jpg" class="down">
+            </div>
+            <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="0" style="width: 794px;">
+                <img src="./lp1_files/sw_1.jpg" class="down">
+            </div>
+            <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1" style="width: 794px;">
+                <img src="./lp1_files/sw_2.jpg" class="down">
+            </div>
+            <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="2" style="width: 794px;">
+                <img src="./lp1_files/sw_3.jpg" class="down">
+            </div>
+            <div class="swiper-slide" data-swiper-slide-index="3" style="width: 794px;">
+                <img src="./lp1_files/sw_4.jpg" class="down">
+            </div>
+        <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" style="width: 794px;">
+                <img src="./lp1_files/sw_1.jpg" class="down">
+            </div></div>
+        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+    </div>
+    <p class="fontsize banben">
+        北京智投智道投资咨询有限公司版权所有
+    </p>
+</div>
+<img src="./lp1_files/1_1.png" class="quan quan1 down" style="display: none;">
+<img src="./lp1_files/2_1.png" class="quan quan2 down" style="display: block;">
+<img src="./lp1_files/3_1.png" class="quan quan3 down" style="display: none;">
+<img src="./lp1_files/4_1.png" class="quan quan4 down" style="display: none;">
+
+<div style="position: absolute;bottom: 0;width: 100%;height: 15%;z-index: 2000;">
+    <img style="position: absolute;width: 100%;bottom: 0%;" src="./lp1_files/btm.png" alt="" class="btn_down">
+   <!-- <img class="btn_down" style="position: absolute;bottom: 8%;width:30%;right:8%;" src="./lp1_files/btn.png" alt=""> -->
+
+</div>
+
+<script src="./lp1_files/jquery.min.js"></script>
+<script src="./lp1_files/swiper.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="./lp1_files/defaultUrl4.js"></script>
+<script src="./lp1_files/no_touch.js"></script>
+
+<script>
+    var first = 1;
+    $('.btn_down').click(function () {
+        window.location.href=btndown;
+        event.defaultPrevented
+    });
+    new _yushan.dl_info({
+        url :'',
+        dlbutton: ['.btn_down']
+    });
+
+    function slider(){
+        var mySwiper = new Swiper('.slider', {
+            autoplay: 4000,
+            loop:true,
+            pagination : '.swiper-pagination',
+            paginationClickable :true,
+            onAutoplayStop: function(swiper){
+                swiper.startAutoplay();
+            },
+
+            onSlideChangeEnd: function(swiper){
+                if(swiper.activeIndex==1){
+                    $(".quan1").show().siblings("img").hide();
+                }else if(swiper.activeIndex==2){
+                    $(".quan2").show().siblings("img").hide();
+                }else if(swiper.activeIndex==3){
+                    $(".quan3").show().siblings("img").hide();
+                }else if(swiper.activeIndex==4){
+                    $(".quan4").show().siblings("img").hide();
+                }else{
+                    $(".quan1").show().siblings("img").hide();
+                }
+
+            }
+        });
+    }
+    slider()
+</script>
+
+</body><style type="text/css" id="1006089896885"></style></html>

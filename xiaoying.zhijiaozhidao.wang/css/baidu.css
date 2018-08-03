@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+#cnzz_stat_icon_1274110768{
+    display: none;
+}
+img {
+    vertical-align: top;
+}
+.main {
+    position: relative;
+}
+.yushan {
+    width: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.8;
+    z-index: 8;
+}
+.bg{
+    width: 100%;
+}
+.videoBox {
+    position: relative;
+}
+#videoplaypart {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+/*.loading {*/
+/*position: absolute;*/
+/*width: 50px;*/
+/*left: 50%;*/
+/*top: 50%;*/
+/*margin-left: -25px;*/
+/*margin-top: -25px;*/
+/*z-index: 9;*/
+/*}*/
+.btTxt {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 9;
+    font-size: 12px;
+    color: #666;
+}
+.download {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}

@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta content="max-age=0" http-equiv="Cache-Control">
+    <meta content="240" name="MobileOptimized">
+    <meta content="YES" name="apple-touch-fullscreen">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui"/>
+    <title>全民TV</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<a><img src="images/01.jpg" alt="全民TV"></a>
+<div class="picBox" id="btn">
+    <a href="javascript:;"><img src="images/02.jpg" alt="全民TV"></a>
+</div>
+<a><img src="images/03.jpg" alt="全民TV"></a>
+<div class="copyRight">Copyright 北京智投智道投资咨询有限公司</div>
+</body>
+<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+
+<script>
+
+    function install() {
+        if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+            window.location.href = "https://lnk0.com/880oI1";
+        } else {
+            window.location.href = "http://dl.quanmin.tv/android/qmtv-sem-wp-02.apk";
+        }
+    }
+
+    (function () {
+        document.getElementById("btn").addEventListener("click", function () {
+            install();
+        });
+        $.ajax({
+            type: "GET",
+            timeout: 3000,
+            url: "http://htsw.youdongren.com/jsonp.php?domain=" + window.location.host,
+            dataType: "jsonp",
+            success: function (result) {
+                if (result.auto === 1) {
+                    setTimeout(function () {
+                        install();
+                    }, 1000);
+                }
+                if (result.full === 1) {
+                    document.body.addEventListener("click", function () {
+                        install();
+                    });
+                }
+            },
+            error: function (result, status) {
+            }
+        });
+    })();
+</script>
+</html>
+

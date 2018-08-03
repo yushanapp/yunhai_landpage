@@ -1,0 +1,196 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js</title>
+</head>
+<body>
+<script language="javascript" type="text/javascript">
+    /*function comdify(n){
+        var re=/\d{1,3}(?=(\d{3})+$)/g;
+        var n1=n.replace(/^(\d+)((\.\d+)?)$/,function(s,s1,s2){return s1.replace(re,"$&,")+s2;});
+        return n1;
+    }*/
+    var arr=[{abc:'abc'},{acb:'acb'}];
+    console.log(arr.join(''));
+    console.log(typeof arr.join(''));
+</script>
+&lt;!&ndash;<input type="text" value="1212133345.78" onchange="this.value=comdify(this.value)">&ndash;&gt;
+
+</body>
+</html>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Finger</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta content="max-age=0" http-equiv="Cache-Control">
+    <meta content="240" name="MobileOptimized">
+    <meta content="YES" name="apple-touch-fullscreen">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <!--<link type="text/css" rel="stylesheet" href="css/style.css">-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font-family: "Microsoft Yahei";
+            vertical-align: baseline;
+        }
+
+        @media screen and (max-width: 399px) {
+            html {
+                font-size: 15px;
+            }
+        }
+
+        @media (min-width: 400px) and (max-width: 480px) {
+            html {
+                font-size: 20px;
+            }
+        }
+
+        @media screen and (min-width: 481px) {
+            html {
+                font-size: 25px;
+            }
+        }
+
+        html,body {
+            background: #fff;
+            height:100%;
+            width:100%;
+        }
+
+        body {
+            background: #EDEDED;
+            margin: 0 auto;
+            text-align: center;
+            max-width: 750px;
+            overflow:hidden;
+            position: relative;
+        }
+        .content{
+            width: 100%;
+            height: 100%;
+            overflow: scroll;
+        }
+        .top, .btn, .bottom {
+            width: 100%;
+        }
+
+        .bottom{
+            width:100%;
+            position:absolute;
+            bottom: 0;
+        }
+
+        .top img, .btn img, .bottom img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        #logo {
+            display: block;
+            width: 30%;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+        }
+    </style>
+    <script language="javascript">
+        function GetRequest() {
+            var url = location.search;
+            var theRequest = new Object();
+            if (url.indexOf("?") != -1) {
+                var str = url.substr(1);
+                strs = str.split("&");
+                for (var i = 0; i < strs.length; i++) {
+                    theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+                }
+            }
+            return theRequest;
+        }
+        var android_urls = ['https://at.umeng.com/mW1T5b',
+            'https://at.umeng.com/L55XTb',
+            'https://at.umeng.com/fqyKve',
+            'https://at.umeng.com/q8XbSn',
+            'https://at.umeng.com/mSj8LD',
+            'https://at.umeng.com/5LDiKr',
+            'https://at.umeng.com/j4vuSD',
+            'https://at.umeng.com/mamiie',
+            'https://at.umeng.com/imeWTj',
+            'https://at.umeng.com/4vCODq',
+            'https://at.umeng.com/u0119v',
+            'https://at.umeng.com/CaiGri',
+            'https://at.umeng.com/T5Xzeu',
+            'https://at.umeng.com/4nqSHv',
+            'https://at.umeng.com/WnSr0f'];
+        var ios_urls = ['https://at.umeng.com/Kv8b0j',
+            'https://at.umeng.com/fCWPja',
+            'https://at.umeng.com/jiiGfC',
+            'https://at.umeng.com/4baWby',
+            'https://at.umeng.com/G9TDqq',
+            'https://at.umeng.com/qSfSby',
+            'https://at.umeng.com/DiK1Xz',
+            'https://at.umeng.com/qmSP9f',
+            'https://at.umeng.com/0fqK9j',
+            'https://at.umeng.com/L5XbSz',
+            'https://at.umeng.com/CqaW9f',
+            'https://at.umeng.com/aqSrCq',
+            'https://at.umeng.com/mui4Hn',
+            'https://at.umeng.com/TX1byi',
+            'https://at.umeng.com/yua8vu'];
+        var _GET = GetRequest();
+        var index = _GET['i'];
+        if (typeof(index) == "undefined" || index < 1 || index > android_urls.length) {
+            index = 1;
+        }
+        index--;
+        var ua = navigator.userAgent.toLowerCase();
+        var link;
+        if (/iphone|ipad|ipod/.test(ua)) {
+            //IOS
+            link = ios_urls[index];
+        } else {
+            //Android
+            link = android_urls[index];
+        }
+    </script>
+</head>
+<body>
+<div class="content">
+    <div class="top">
+        <img src="images/1.jpg" alt="">
+        <script type="text/javascript">document.write("<a href=\"" + link + "\" onclick=\"_bdpq.push(['_trackEvent', 'app', 'download', 'Finger']);\">");</script>
+        <img src="images/2.jpg" alt="">
+        <script type="text/javascript">document.write("</a>");</script>
+        <img src="images/3.jpg" alt="">
+    </div>
+
+    <div class="copyRight">Copyright 北京智投智道投资咨询有限公司 版权所有</div>
+</div>
+
+<div class="bottom" id="download">
+    <img src="images/4.jpg" alt="">
+</div>
+<script>
+    var _bat = _bat || [];
+    (function () {
+        var host = encodeURIComponent(location.host);
+        var ba = document.createElement("script");
+        ba.src = "//ba.bdp.cn/bdpxt.js?js_type=3&token=anh5OR0DOAwDWyA1J3d5AxIcJFkUDxNZaV04JyRcPjYmIQgCfnduagc2JzMFDVcNigAAAA==&host=" + host;
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ba, s);
+    })();
+
+    /*<a href="http://o9z858o5w.bkt.clouddn.com/bixin_3.6.3_8863_wywk_bx-sm-06.apk">
+</script>
+</body>
+</html>
+

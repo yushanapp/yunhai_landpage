@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container>a>img{
+    display: block;
+    width: 100%;
+}
+.container>img{
+    display: block;
+    width: 100%;
+}
+.copyRight{
+    font-size: 15px;
+    text-align: center;
+}

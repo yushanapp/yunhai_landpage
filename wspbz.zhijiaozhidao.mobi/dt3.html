@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="max-age=0" http-equiv="Cache-Control">
+    <meta content="240" name="MobileOptimized">
+    <meta content="YES" name="apple-touch-fullscreen">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+    <title>91桌面</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style type="text/css">
+        .top1 .a{
+            display: block;
+            position: absolute;
+            width:33%;
+            height:22%;
+        }
+        .top1 a:hover{
+            background:rgba(255,255,255,0.2);
+        }
+        .top1 .b{
+            display: block;
+            position: absolute;
+            width:6%;
+        }
+        .a1{
+            left:0;
+            top:0;
+        }
+        .b1{
+            left:25%;
+            top:0.5%;
+        }
+        .a2{
+            left:33%;
+            top:0;
+        }
+        .b2{
+            left:57%;
+            top:0.5%;
+        }
+        .a3{
+            right:0;
+            top:0;
+        }
+        .b3{
+            left:88.5%;
+            top:0.5%;
+        }
+        .a4{
+            left:0;
+            top:30%;
+        }
+        .b4{
+            left:25%;
+            top:30.5%;
+        }
+        .a5{
+            left:33%;
+            top:30%;
+        }
+        .b5{
+            left:57%;
+            top:30.5%;
+        }
+        .a6{
+            right:0;
+            top:30%;
+        }
+        .b6{
+            left:88.5%;
+            top:30.5%;
+        }
+        .a7{
+            left:0;
+            top:59%;
+        }
+        .b7{
+            left:25%;
+            top:60%;
+        }
+        .a8{
+            left:33%;
+            top:59%;
+        }
+        .b8{
+            left:57%;
+            top:60%;
+        }
+        .a9{
+            right:0;
+            top:59%;
+        }
+        .b9{
+            left:88.5%;
+            top:60%;
+        }
+        .downloadBtn1{
+            display: block;
+            position: absolute;
+            width: 53%;
+            height: 14%;
+            bottom: 30%;
+            left: 1%;
+        }
+        .top1 .downloadBtn2{
+            display: block;
+            position: absolute;
+            width: 88%;
+            height: 7%;
+            bottom: 3%;
+            left: 6%;
+        }
+    </style>
+</head>
+<body>
+<div class="picBox" style="position: relative;">
+    <img src="images/logo1.png" style="position: absolute;left:0;top:0;width:15%;z-index: 99">
+    <div class="top">
+         <img src="images/hh.jpg" alt="91桌面">
+        <a href="javascript:;" class="download loadApp" style="width: 38%;top:49%;left: 74%;">
+            <img src="images/xmsj2.gif" alt="91桌面">
+        </a>
+        <a href="javascript:;" class="downloadBtn1 loadApp"></a>
+    </div>
+    <div class="top top1">
+        <img src="images/vv1.jpg" alt="91桌面">
+        <img src="images/vv2.jpg" alt="91桌面">
+        <a href="javascript:;" class="a a1 loadApp"></a>
+        <a href="javascript:;" class="a a2 loadApp"></a>
+        <a href="javascript:;" class="a a3 loadApp"></a>
+        <a href="javascript:;" class="a a4 loadApp"></a>
+        <a href="javascript:;" class="a a5 loadApp"></a>
+        <a href="javascript:;" class="a a6 loadApp"></a>
+        <a href="javascript:;" class="a a7 loadApp"></a>
+        <a href="javascript:;" class="a a8 loadApp"></a>
+        <a href="javascript:;" class="a a9 loadApp"></a>
+        <a href="javascript:;" class="b b1 loadApp"><img src="images/down.png"></a>
+        <a href="javascript:;" class="b b2 loadApp"><img src="images/down.png"></a>
+        <a href="javascript:;" class="b b3 loadApp"><img src="images/down.png"></a>
+        <a href="javascript:;" class="b b4 loadApp"><img src="images/down.png"></a>
+        <a href="javascript:;" class="b b5 loadApp"><img src="images/down.png"></a>
+        <a href="javascript:;" class="b b6 loadApp"><img src="images/down.png"></a>
+        <a href="javascript:;" class="b b7 loadApp"><img src="images/down.png"></a>
+        <a href="javascript:;" class="b b8 loadApp"><img src="images/down.png"></a>
+        <a href="javascript:;" class="b b9 loadApp"><img src="images/down.png"></a>
+        <div class="downloadBtn2 loadApp"></div>
+    </div>
+    <a href="javascript:;" class="loadApp" style="position: fixed;bottom:0;max-width: 640px;">
+        <img src="images/xuanfu_btn1.png" alt="91桌面">
+    </a>
+</div>
+<div class="copyRight">Copyright 北京智投智道投资咨询有限公司</div>
+</body>
+<script>
+        var imgs = document.querySelectorAll('img');
+        [].forEach.call(imgs,function(el){
+            el.addEventListener('click',function(e){
+                e.preventDefault();
+            });
+        });
+
+        var alink = document.querySelectorAll('.loadApp');
+        [].forEach.call(alink,function(el){
+            el.addEventListener('click',function(){
+                if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                    window.location.href ="http://url.ifjing.com/down?pid=20000073&mt=4&resid=919291&position=0";
+                }else {
+                    window.location.href ="http://url.ifjing.com/down?pid=20000073&mt=4&resid=919291&position=0";
+                }
+            });
+        });
+</script>
+</html>  
+
