@@ -22,14 +22,19 @@
 <body>
 			<center>
 				<div class="navImage">
-			    <img id="img"  src="images/bg1.jpg" alt="navbar"></div> 
-			<img src="images/bg2.png" alt="" name="download2" border="0" usemap="#download2Map"  id="download2" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
-<map name="download2Map"  class="btnCilck"><area shape="rect" coords="497,7,716,84"  href="javascript:;"></map>
-</center>
+				  <img id="img"  src="images/bg1.jpg" alt="navbar" usemap="#navImg">
+					<map name="navImg" id="navImg" class="btnCilck">
+					  <area shape="rectangle" coords="-1,1252,721,1357" onClick="javascript:;"/>
+					  <area shape="rectangle" coords="113,110,713,253" onClick="javascript:;"/>
+					  <area shape="rectangle" coords="13,263,704,380" onClick="javascript:;"/>
+				  </map>
+			  </div> 
+<!--			<img src="images/bg2.png" class="btnCilck" style="position:fixed;margin:0 auto;bottom:25px;left:0;right:0;max-width: 720px;" alt=""  id="download2" onClick="javascript:;" >-->
+			</center>
 <script>
 
-		var Android="https://update.weihuitel.com/hello/hello-4.3.3-official_baidu10.apk";//安卓下载链接
-		var Ios="https://update.weihuitel.com/hello/hello-4.3.3-official_baidu10.apk";//ios下载链接
+		var Android="https://imgaliyuncdn.miaopai.com/ads-pro/apks/cd48b847d17d6420dae170aee2f22834.apk";//安卓下载链接
+		var Ios="https://imgaliyuncdn.miaopai.com/ads-pro/apks/cd48b847d17d6420dae170aee2f22834.apk";//ios下载链接
 
 		var btns = document.getElementsByClassName("btnCilck");
 		for(var i=0;i<btns.length;i++){

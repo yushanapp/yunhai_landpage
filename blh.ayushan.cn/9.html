@@ -7,18 +7,6 @@
         <meta http-equiv="Pragma" content="no-cache" />
         <meta http-equiv="Expires" content="0" />
         <title>95%的妈妈下载贝乐虎儿歌App</title>
-        <script type="text/javascript">
-            window.ubklink="https://res1.ubestkid.com/cp/wq/beilehuerge-wq9.apk";
-            function jump(){
-                if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                    window.location.href ="https://itunes.apple.com/cn/app/id1095193892?mt=8";
-                }else {
-                    window.location.href=ubklink;
-                }
-            }
-        </script>
-        <script type="text/javascript" src="https://res1.ubestkid.com/cp/js/jquery.cb.min.js?ts=1">
-        </script>
         <style type="text/css">
                 *{
             margin: 0;
@@ -41,30 +29,25 @@
     </head>
     <body>
         <div class="container">
-            <a class="tsec"><img src="https://res1.ubestkid.com/cp/images/app_bkg_v1_1_ys.jpg" /></a>
+            <img src="http://res1.ubestkid.com/cp/images/app_bkg_yd1.jpg" />
+        </div>
+        <div class="container" id="download">
+            <img src="http://res1.ubestkid.com/cp/images/app_bkg_yd2.jpg" />
         </div>
         <div class="container">
-            <a onclick="jump();">
-                <img src="https://res1.ubestkid.com/cp/images/app_bkg_v1_2.jpg" /></a>
-        </div>
-        <div class="container">
-            <a class="tsec"><img src="https://res1.ubestkid.com/cp/images/app_bkg_v1_3.jpg" /></a>
-        </div>
-        <div class="container">
-            <a class="tsec"><img src="https://res1.ubestkid.com/cp/images/app_bkg_v1_4.jpg" /></a>
+            <img src="http://res1.ubestkid.com/cp/images/app_bkg_yd3.jpg" />
         </div>
         <div class="copyRight">北京智投智道投资咨询有限公司</div>
-        <div id="boxs" style="width:100%;min-height:100px;background:#fff;"></div>
-        <div class="container" id="btns1" style="position:fixed;bottom:0px;width:100%;"><a onclick="jump();"><img src="https://res1.ubestkid.com/cp/images/app_bkg_v1_btn.jpg"></a></div>
 
-        <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+        <!-- 判断跳转 -->
         <script type="text/javascript">
-            var heights=$("#btns1").height();
-            $("#boxs").css({"height":heights+"px"});
-            $(window).resize(function () {
-                var heights=$("#btns1").height();
-                $("#boxs").css({"height":heights+"px"});
-            });
+             document.getElementById('download').addEventListener('click', function () {                
+	            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+	                window.location.href ="https://itunes.apple.com/cn/app/id1095193892?mt=8";
+	            }else {
+					window.location.href ="http://res1.ubestkid.com/cp/mm/贝乐虎儿歌.mm9.apk";									
+	            }
+             })
         </script>
-    </body>
+    </body> 
 </html>
