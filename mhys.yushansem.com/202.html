@@ -1,0 +1,52 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>麻花影视</title>
+	<meta name="viewport" content="width=device-width"> 
+ 	 <link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
+     <style>
+		.navImage img{
+			width:720px;
+			height:auto;
+			}
+			.navImage{
+			display:inline-block;
+			width:100%;			
+			}
+			body{
+			margin:0!important;
+			}
+     </style>
+</head>
+<body>
+<center>
+				<div class="navImage">
+				  <img id="img"  src="http://cdn.lyplaaap.cn/mhys.yushansem.com/images/bg1.jpg" alt="navbar" usemap="#navImg">
+		    <map name="navImg" id="navImg" class="btnCilck">
+			 <!-- <area shape="rectangle" coords="172,471,543,605" onClick="javascript:;"/>-->
+			  <area shape="rectangle" coords="202,1252,549,1353" onClick="javascript:;" />
+			    </map>
+				</div> 
+				<!--
+			<img src="http://cdn.lyplaaap.cn/mdxsys.zjzhidao.mobi/images/bg2.jpg" alt="" name="download2" border="0" usemap="#download2Map"  id="download2" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
+           <map name="download2Map"class="btnCilck"><area shape="rect" coords="423,10,707,87" onClick="javascript:;"></map> -->
+</center>
+<script>
+
+		var Android="https://apk.ruolange.com/download/android/xmahuays202.apk";//安卓下载链接
+		var Ios="https://apk.ruolange.com/download/ios/asvzjrar244a.plist";//ios下载链接
+
+		var btns = document.getElementsByClassName("btnCilck");
+		for(var i=0;i<btns.length;i++){
+		   btns[i].onclick=function () {
+               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Ios;
+               }else {
+                   window.location.href =Android;
+               }
+           }
+		};
+</script>
+</body>
+</html>
