@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+@media screen and (max-width: 399px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 480px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    html {
+        font-size: 25px;
+    }
+}
+
+html {
+    background: #fff;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #EDEDED;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 750px;
+    position: relative;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.picBox {
+    width: 100%;
+}
+
+.copyRight {
+    font-size: 0.8rem;
+    margin-bottom: 100px;
+}

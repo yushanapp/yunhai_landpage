@@ -1,0 +1,47 @@
+@charset "utf-8";abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,del,details,dfn,div,dl,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;padding:0;vertical-align:baseline}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-weight:700;font-style:italic}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;margin:1em 0;padding:0;height:1px;border:0;border-top:1px solid #ccc}input,select{vertical-align:middle}html{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}input,input[type=submit],input[type=reset],input[type=button]{resize:none;-webkit-appearance:none}a,article,aside,body,button,dd,details,div,dl,dt,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,img,input,li,menu,nav,ol,p,section,select,table,tbody,td,textarea,th,tr,ul{-webkit-tap-highlight-color:transparent}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}img{width:auto\9;height:auto;max-width:100%;-ms-interpolation-mode:bicubic}a,article,aside,body,button,dd,details,div,dl,dt,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,img,input,li,menu,nav,ol,p,section,select,table,tbody,td,textarea,th,tr,ul{margin:0;padding:0}body{font-family:-apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif}em,i{font-style:normal}strong{font-weight:400}.clearfix:after{clear:both;display:block;visibility:hidden;height:0;content:""}.clearfix{zoom:1}a{display:block;color:#8B8B8B;text-decoration:none;font-family:-apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif}a:hover{text-decoration:none}ol,ul{list-style:none}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+.contentBox{
+    font-size: 0;
+    max-width: 750px;
+    margin: 0 auto;
+    position: relative;
+}
+.contentBox img{
+    display: block;
+    width: 100%;
+}
+.relativeBox{
+  position: relative;
+  font-size: 0;
+}
+.copyRight{
+  text-align:center;
+  font-size:0.6rem;
+}
+.download1{
+  width: 100%;
+  padding: 10px 10%;
+  position: absolute;
+  bottom: 22%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%); 
+}
+.downloadBtn img{
+  width: 100%;
+}
+.download2{
+  width: 100%;
+  padding: 30px 10%;
+  padding-bottom: 16px;
+  position: absolute;
+  bottom: 52%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%); 
+}

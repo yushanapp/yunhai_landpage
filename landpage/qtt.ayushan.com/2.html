@@ -1,0 +1,63 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>趣头条</title>
+	<meta name="viewport" content="width=device-width"> 
+ 	 <link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
+     <style>
+		.navImage img{
+			width:720px;
+			height:auto;
+			}
+			.navImage{
+			display:inline-block;
+			width:100%;			
+			}
+			body{
+			margin:0!important;
+			}
+     </style>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?7adbd5913b942de23a055d3c82436954";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+</head>
+<body class="btnCilck">
+			<center>
+				<div class="navImage">
+				  <img id="img"  src="images/bg2.jpg" alt="navbar" usemap="#navImg">
+					<map name="navImg" id="navImg" class="btnCilck">
+					  <area shape="rectangle" coords="61,1181,682,1302" onClick="javascript:;"/>
+					  <area shape="rectangle" coords="290,33,439,175" onClick="javascript:;"/>
+					  <area shape="rectangle" coords="61,206,388,293" onClick="javascript:;"/>
+					</map>
+				</div> 
+			<!--<img src="images/bg2.png" class="btnCilck" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" alt=""  id="download2" onClick="javascript:;" >-->
+			</center>
+            
+<script>
+
+		var Android="http://bd-m.qutoutiao.net/download/qutoutiao_2170_apkfile";//安卓下载链接
+		var Ios="http://bd-m.qutoutiao.net/download/qutoutiao_2170_apkfile";//ios下载链接
+
+		var btns = document.getElementsByClassName("btnCilck");
+		for(var i=0;i<btns.length;i++){
+		   btns[i].onclick=function () {
+               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Ios;
+               }else {
+                   window.location.href =Android;
+               }
+           }
+		};
+</script>
+</body>
+</html>

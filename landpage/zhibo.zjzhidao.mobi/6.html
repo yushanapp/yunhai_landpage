@@ -1,0 +1,52 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>小草</title>
+	<meta name="viewport" content="width=device-width"> 
+ 	 <link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
+     <style>
+		.navImage img{
+			width:720px;
+			height:auto;
+			}
+			.navImage{
+			display:inline-block;
+			width:100%;			
+			}
+			body{
+			margin:0!important;
+			}
+     .navImage1 {			display:inline-block;
+			width:100%;			
+}
+     </style>
+</head>
+<body>
+			<center>
+				<div class="navImage"><span class="navImage1"><img id="img"  src="images/bg1.jpg" alt="navbar" usemap="#navImg"></span>
+				  <map name="navImg" id="navImg" class="btnCilck">
+                    <area shape="rectangle" coords="-1,1083,715,1173" onClick="javascript:;"/>
+                    <area shape="rectangle" coords="125,126,611,359" onClick="javascript:;"/>
+				  </map>
+				</div> 
+			<!--<img src="images/bg2.png" class="btnCilck" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" alt=""  id="download2" onClick="javascript:;" >-->
+			</center>
+<script>
+
+		var Android="http://image2.xcbobo.com/PubImgSour/apk_download/market/app-baidu2.apk.apk";//安卓下载链接
+		var Ios="";//ios下载链接
+
+		var btns = document.getElementsByClassName("btnCilck");
+		for(var i=0;i<btns.length;i++){
+		   btns[i].onclick=function () {
+               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Ios;
+               }else {
+                   window.location.href =Android;
+               }
+           }
+		};
+</script>
+</body>
+</html>
