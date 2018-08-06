@@ -1,0 +1,73 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>淘新闻</title>
+<meta name="viewport" content="width=device-width"> 
+<link href="images/favicon.ico" type="images/x-favicon.icon" rel="icon">
+<!--
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" /> -->
+<style>
+.navImage img{
+width:720px;
+height:1332px;
+}
+.navImage{
+/* text-align:center; */
+display:inline-block
+/*margin-left:-8px!important; */
+width:100%;			
+}
+body{
+margin:0!important;
+}
+</style>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?81d2a66f4b214ef9e1294baa44a61625";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+
+<body>
+<center>
+<div class="navImage" >
+    <img id="img"  src="images/bg3.jpg" alt="navbar" usemap="#navImg">
+    <map id="navImg" name="navImg">
+ 	  <area shape="rectangle" coords="436,1197,693,1312" onClick="javascript:;" id="download2" title="" alt="" >
+    </map>
+
+  </div> 
+<!--	<img src="images/bg2.png" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" alt=""  id="download2" onClick="javascript:;" >-->	
+	</center>
+
+
+<script>
+
+    ;(function(){
+        document.getElementById("navImg").addEventListener("click", function(){
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href ="http://app.coohua.com/xinwenzhuan-production-3.1.2.2_8_F2qdxbaidusem08_sign.apk";
+            }else {
+                window.location.href ="http://app.coohua.com/xinwenzhuan-production-3.1.2.2_8_F2qdxbaidusem08_sign.apk";
+            }
+        });
+    })();
+  ;(function(){
+        document.getElementById("download2").addEventListener("click", function(){
+        if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href ="http://app.coohua.com/xinwenzhuan-production-3.1.2.2_8_F2qdxbaidusem08_sign.apk";
+            }else {
+                window.location.href ="http://app.coohua.com/xinwenzhuan-production-3.1.2.2_8_F2qdxbaidusem08_sign.apk";
+            }
+        });
+    })();
+</script>
+
+
+</body>
+</html>
