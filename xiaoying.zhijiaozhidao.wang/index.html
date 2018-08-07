@@ -17,27 +17,29 @@
         //绑定siteid，请用您的siteid替换下方"XXXXXXXX"部分
         _czc.push(["_setAccount", "1274110768"]);
     </script>
-    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1274110768'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1274110768' type='text/javascript'%3E%3C/script%3E"));</script>
+    <script type="text/javascript">
+        var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1274110768'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1274110768' type='text/javascript'%3E%3C/script%3E"));</script>
     <script src="https://hybrid.xiaoying.tv/web/slidePlus/zepto.min.js"></script>
 </head>
 <body>
 <div class="main">
-    <img class="yushan" src="./images/yushan.png" alt=""/>
-    <img class="bg" id="test" src="./images/HUAWEIh5_01.png" alt=""/>
+
+    <img class="yushan" src="http://cdn.lyplaaap.cn/xiaoying.zhijiaozhidao.wang/images/yushan.png" alt=""/>
+    <img class="bg" id="test" src="http://cdn.lyplaaap.cn/xiaoying.zhijiaozhidao.wang/images/HUAWEIh5_01.png" alt=""/>
     <div class="videoBox">
-        <img class="bg" id="cover" src="./images/HUAWEIh5_02.png" alt=""/>
+        <img class="bg" id="cover" src="http://cdn.lyplaaap.cn/xiaoying.zhijiaozhidao.wang/images/HUAWEIh5_02.png" alt=""/>
         <!--<img class="loading" src="https://hybrid.xiaoying.tv/web/vivaVideo/live/img/load.gif" alt=""/>-->
     </div>
-    <img class="bg" src="./images/HUAWEIh5_03.png" alt=""/>
-    <img class="bg" src="./images/HUAWEIh5_04.png" alt=""/>
-    <img class="bg" src="./images/HUAWEIh5_05.png" alt=""/>
-    <img class="bg" src="./images/HUAWEIh5_06.png" alt=""/>
-    <img class="bg" src="./images/HUAWEIh5_07.png" alt=""/>
-    <img class="bg" src="./images/HUAWEIh5_08.png" alt=""/>
+    <img class="bg" src="http://cdn.lyplaaap.cn/xiaoying.zhijiaozhidao.wang/images/HUAWEIh5_03.png" alt=""/>
+    <img class="bg" src="http://cdn.lyplaaap.cn/xiaoying.zhijiaozhidao.wang/images/HUAWEIh5_04.png" alt=""/>
+    <img class="bg" src="http://cdn.lyplaaap.cn/xiaoying.zhijiaozhidao.wang/images/HUAWEIh5_05.png" alt=""/>
+    <img class="bg" src="http://cdn.lyplaaap.cn/xiaoying.zhijiaozhidao.wang/images/HUAWEIh5_06.png" alt=""/>
+    <img class="bg" src="http://cdn.lyplaaap.cn/xiaoying.zhijiaozhidao.wang/images/HUAWEIh5_07.png" alt=""/>
+    <img class="bg" src="http://cdn.lyplaaap.cn/xiaoying.zhijiaozhidao.wang/images/HUAWEIh5_08.png" alt=""/>
     <span class="btTxt">版权：北京智投智道投资咨询有限公司</span>
 </div>
-<a id="download" onclick="_czc.push(['_trackEvent', '点击下载', '点击下载', '点击下载' + channel]);" href="https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/XiaoYing_V7.1.6_1-baidu-OthersDomestic.apk">
-    <img class="download" src="./images/downloadnew.png" alt=""/>
+<a id="download" onclick="_czc.push(['_trackEvent', '点击下载', '点击下载', '点击下载' + channel]);" href="https://at.umeng.com/PTv4Xj">
+    <img class="download" src="http://cdn.lyplaaap.cn/xiaoying.zhijiaozhidao.wang/images/downloadnew.png" alt=""/>
 </a>
 <script>
     var sUserAgent = navigator.userAgent.toLowerCase();
@@ -45,30 +47,63 @@
     var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
     var bIsAndroid = sUserAgent.match(/android/i) == "android";
     window.channel = 'common';
+    console.log(window.location.href.indexOf('baidu=1') );
     if(bIsAndroid) {
         if (window.location.href.indexOf('baidu=1') !== -1) {
             window.channel = 1;
-            $('#download').attr('href', 'https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/XiaoYing_V7.1.6_1-baidu1-OthersDomestic.apk')
+            console.log("A1");
+            $('#download').attr('href', 'http://hybrid.xiaoying.tv/vcm/20180806/14433131/baidu1.apk')
         } else if (window.location.href.indexOf('baidu=2') !== -1) {
             window.channel = 2;
-            $('#download').attr('href', 'https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/XiaoYing_V7.1.6_1-baidu2-OthersDomestic.apk')
+            console.log("A2");
+            $('#download').attr('href', 'http://hybrid.xiaoying.tv/vcm/20180806/14433131/baidu2.apk')
         } else if (window.location.href.indexOf('baidu=3') !== -1) {
             window.channel = 3;
-            $('#download').attr('href', 'https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/XiaoYing_V7.1.6_1-baidu3-OthersDomestic.apk')
+            console.log("A3");
+            $('#download').attr('href', 'http://hybrid.xiaoying.tv/vcm/20180806/14434747/baidu3.apk')
         } else if (window.location.href.indexOf('baidu=4') !== -1) {
             window.channel = 4;
-            $('#download').attr('href', 'https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/XiaoYing_V7.1.6_1-baidu4-OthersDomestic.apk')
+            console.log("A4");
+            $('#download').attr('href', 'http://hybrid.xiaoying.tv/vcm/20180806/14433131/baidu1.apk')
         } else if (window.location.href.indexOf('baidu=5') !== -1) {
             window.channel = 5;
-            $('#download').attr('href', 'https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/XiaoYing_V7.1.6_1-baidu5-OthersDomestic.apk')
+            console.log("A5");
+            $('#download').attr('href', 'http://hybrid.xiaoying.tv/vcm/20180806/14433131/baidu2.apk ')
         } else if (window.location.href.indexOf('baidu=6') !== -1) {
             window.channel = 6;
-            $('#download').attr('href', 'https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/XiaoYing_V7.1.6_1-baidu6-OthersDomestic.apk')
+            console.log("A6");
+            $('#download').attr('href', 'http://hybrid.xiaoying.tv/vcm/20180806/14434747/baidu3.apk')
         } else {
-            $('#download').attr('href', 'https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/XiaoYing_V7.1.6_1-baidu-OthersDomestic.apk')
+            $('#download').attr('href', 'http://hybrid.xiaoying.tv/vcm/20180806/14434747/baidu1.apk')
         }
     } else {
-        $('#download').attr('href', 'https://itunes.apple.com/app/apple-store/id738897668?pt=2088378&ct=baidu&mt=8')
+        if (window.location.href.indexOf('baidu=1') !== -1) {
+            window.channel = 1;
+            console.log("i1");
+            $('#download').attr('href', 'https://at.umeng.com/PTv4Xj')
+        } else if (window.location.href.indexOf('baidu=2') !== -1) {
+            window.channel = 2;
+            console.log("i2");
+            $('#download').attr('href', 'https://at.umeng.com/bu8ryq')
+        } else if (window.location.href.indexOf('baidu=3') !== -1) {
+            window.channel = 3;
+            console.log("i3");
+            $('#download').attr('href', 'https://at.umeng.com/veqGTv')
+        } else if (window.location.href.indexOf('baidu=4') !== -1) {
+            window.channel = 4;
+            console.log("i4");
+            $('#download').attr('href', 'https://at.umeng.com/DiuWHf')
+        } else if (window.location.href.indexOf('baidu=5') !== -1) {
+            window.channel = 5;
+            console.log("i5");
+            $('#download').attr('href', 'https://at.umeng.com/PTv4Xj')
+        } else if (window.location.href.indexOf('baidu=6') !== -1) {
+            window.channel = 6;
+            console.log("i6");
+            $('#download').attr('href', 'https://at.umeng.com/bu8ryq')
+        } else {
+            $('#download').attr('href', 'https://at.umeng.com/PTv4Xj')
+        }
     }
 //    $('#test').tap(function(){
 //        console.log($('#videoplaypart')[0])
@@ -77,7 +112,7 @@
         if($('#videoplaypart')[0]) {
             return false
         }
-        var videoelement = $('<video src="./images/videoHUAWEI.mp4" id="videoplaypart" controls="true" x5-video-player-type="h5" webkit-playsinline playsinline x-webkit-airplay x5nativepanel class="videopart1"></video>');
+        var videoelement = $('<video src="https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/img/videoHUAWEI.mp4" id="videoplaypart" controls="true" x5-video-player-type="h5" webkit-playsinline playsinline x-webkit-airplay x5nativepanel class="videopart1"></video>');
         $('.videoBox').append(videoelement);
         $('#videoplaypart')[0].play();
         //$('.cover_img,.loading_part').hide();
