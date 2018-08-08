@@ -35,17 +35,16 @@ width:100%;
     <area shape="rectangle" coords="246,1811,478,1853" onClick="javascript:;" id="download1" title="" alt="" >
     <area shape="rectangle" coords="247,2164,479,2206" onClick="javascript:;" id="download1" title="" alt="" >
     <area shape="rectangle" coords="246,2526,478,2568" onClick="javascript:;" id="download1" title="" alt="" >
-  
-    <area shape="rectangle" coords="80,89,599,286" onClick="javascript:;" id="download1" title="" alt="" >
   </map>
 </div> 
-<img src="images/bg2.jpg" alt="" width="718" height="95"  id="download2" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
+<img src="images/bg2.jpg" alt="" width="718" height="95" border="0" usemap="#btn1Map"  style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
+<map name="btn1Map" id="btn1" ><area shape="rect" coords="417,7,709,88" href="javascript:;"></map>
 </center>
 
 <script>
 
 	;(function(){
-        document.getElementById("download2").addEventListener("click", function(){
+        document.getElementById("btn1").addEventListener("click", function(){
             if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
                 window.location.href ="https://download.km.com/book/sc/bookReader-baiduxxlzr18.apk";
             }else {
