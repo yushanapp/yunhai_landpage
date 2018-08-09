@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!--<link rel="stylesheet" href="css/raiders.css">-->
+    <title>VISO</title>
+    <style>
+        body,
+        div,
+        img,
+        video,
+        a,
+        p,
+        span,
+        button,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        a img {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-touch-callout: none;
+        }
+
+        img {
+            vertical-align: top;
+        }
+
+        /************鑳屾櫙**************/
+
+        .main {
+            position: relative;
+        }
+
+        .main .bg>img {
+            width: 100%;
+        }
+
+        .main .bg>a {
+            width: 100%;
+        }
+
+        .main .btn {
+            text-align: center;
+		    display: table-cell;
+		    vertical-align: middle;
+
+        }
+
+        .apply-div {
+            position: absolute;
+            width: 50%;
+            height: 50.4%;
+            top: 16.6%;
+            text-align: center;
+            left: 22.51%;
+            z-index: 6;
+            display: none;
+        }
+
+        .apply-bottom{
+            position: fixed;bottom: 0;
+            width: 100%;
+        }
+
+     .apply-video {
+           
+            width: 113.4%;
+            border-radius:5px;
+     }
+            
+    </style>
+    <script>
+function playvideo(){
+    var videodiv=document.getElementById("videodiv");
+    videodiv.style.display='block';
+    var video = document.getElementById("videoPlayer");
+    video.play();
+}
+
+function toappstore(){
+
+    window.location.href="https://itunes.apple.com/cn/app/id1312830469?mt=8";
+
+}
+</script>
+
+</head>
+
+
+<body>
+    <div class="main">
+        <!--背景-->
+        <div class="bg">
+            <img src="https://hybrid.xiaoying.tv/web/viso/1.png" alt="">
+            <img src="https://hybrid.xiaoying.tv/web/viso/2.png" alt="" onclick="playvideo()">
+            <img src="https://hybrid.xiaoying.tv/web/viso/3.png" alt="">
+            <img src="https://hybrid.xiaoying.tv/web/viso/4.png" alt="">
+            <img src="https://hybrid.xiaoying.tv/web/viso/5.png" alt="">
+            <img class='apply-bottom' src="https://hybrid.xiaoying.tv/web/viso/6.png" alt="" onclick="toappstore()">
+            <div class='apply-div' id="videodiv">
+                <video id="videoPlayer"  class='apply-video' src="https://hybrid.xiaoying.tv/web/viso/viso.mov" alt="" controls>  </video>
+            </div>
+        </div>
+       
+</div>
+</body>
+
+</html>
