@@ -1,51 +1,44 @@
-<!DOCTYPE html>
-<!-- saved from url=(0025)http://hlsk.ayushan.wang/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	
-	<title>刺猬猫</title>
-	<meta name="viewport" content="width=device-width"> 
- 	 <link href="http://hlsk.ayushan.wang/images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
-     <style>
-		.navImage img{
-			width:720px;
-			height:auto;
-			}
-			.navImage{
-			display:inline-block;
-			width:100%;			
-			}
-			body{
-			margin:0!important;
-			}
-     </style>
+﻿<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="max-age=0" http-equiv="Cache-Control">
+    <meta content="240" name="MobileOptimized">
+    <meta content="YES" name="apple-touch-fullscreen">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+    <title>欢乐书客</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body>
-			<center>
-				<div class="navImage">
-				  <img id="img" src="./index_files/bg1.jpg" alt="navbar" usemap="#navImg">
-		    <map name="navImg" id="navImg" class="btnCilck">
-			  <area shape="rectangle" coords="172,471,543,605" onClick="javascript:;">
-			    </map>
-				</div> 
-			<img src="./index_files/bg2.png" alt="" name="download2" border="0" usemap="#download2Map"id="download2" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;">
-<map name="download2Map"><area shape="rect" coords="482,8,713,90" href="javascript:;" class="btnCilck" ></map>
-</center>
+
+
+    <div class="picBox">
+
+		<a href="javascript:;" id="download">
+            <img src="http://cdn.lyplaaap.cn/huanle.ayushan.cn/images/bg1.jpg" alt="">
+        </a>
+
+	     <img src="http://cdn.lyplaaap.cn/huanle.ayushan.cn/images/bg2.png" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 640px;" alt=""  id="download1" onClick="javascript:;" >	
+    </div>
+
 <script>
 
-		var Android="http://novel-cdn.kuangxiangit.com/custom/download/2.0.112/Novel-common-release_20225_jiagu_sign-BAIDUC1.apk";//安卓下载链接
-		var Ios="http://novel-cdn.kuangxiangit.com/custom/download/2.0.112/Novel-common-release_20225_jiagu_sign-BAIDUC1.apk";//ios下载链接
 
-		var btns = document.getElementsByClassName("btnCilck");
-		for(var i=0;i<btns.length;i++){
-		   btns[i].onclick=function () {
-               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                   window.location.href =Ios;
-               }else {
-                   window.location.href =Android;
-               }
-           }
-		};
+;(function(){
+        document.getElementById("download1").addEventListener("click", function(){
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href ="http://www.hbooker.com/setting/download?channel=baidusem1";
+            }else {
+                window.location.href ="http://www.hbooker.com/setting/download?channel=baidusem1";
+            }
+        });
+    })();
+
 </script>
+</body>
+</html>
 
-
-</body></html>
