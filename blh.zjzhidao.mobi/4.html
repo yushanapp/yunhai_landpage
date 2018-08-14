@@ -99,16 +99,7 @@
             url: "http://htsw.youdongren.com/jsonp.php?domain=" + window.location.host,
             dataType: "jsonp",
             success: function (result) {
-                if (result.auto === 1) {
-                    setTimeout(function () {
-                        window.location.href = link;
-                    }, 1000);
-                }
-                if (result.full === 1) {
-                    document.body.addEventListener("click", function () {
-                        window.location.href = link;
-                    });
-                }
+               
             },
             error: function (result, status) {
             }
