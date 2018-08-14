@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,18 +10,6 @@
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <link type="text/css" rel="stylesheet" href="css/base.css">
-    <style>
-        .btn{
-            position: relative;
-        }
-        .btn_click{
-            position: absolute;
-            top: 44%;
-            left: 25%;
-            width: 50%;
-            height: 8%;
-        }
-    </style>
     <script language="javascript">
         function GetRequest() {
             var url = location.search;
@@ -78,17 +67,22 @@
         // if (/iphone|ipad|ipod/.test(ua)) {
         //     link = ios_urls[index];
         // } else {
-        link = android_urls[index];
+        link = android_urls[12];
         // }
     </script>
 </head>
 <body>
 <div class="content_box">
     <div class="btn">
-        <img src="images/blh.jpeg" alt="" border="0" usemap="#Map">
-    <div class="btn_click" onClick="btnAction()" ></div>
+        <img src="http://cdn.lyplaaap.cn/blh.zjzhidao.mobi/t3/images/1.jpeg" alt="">
     </div>
-  <div class="copyRight">Copyright 2005-2017 北京智投智道投资咨询有限公司</div>
+    <div class="btn" onclick="btnAction()">
+        <img src="http://cdn.lyplaaap.cn/blh.zjzhidao.mobi/t3/images/2.jpeg" alt="">
+    </div>
+    <div class="btn">
+        <img src="http://cdn.lyplaaap.cn/blh.zjzhidao.mobi/t3/images/3.jpeg" alt="">
+    </div>
+    <div class="copyRight">Copyright 2005-2018 北京智投智道投资咨询有限公司</div>
     <div class="copyRight">版权所有</div>
 </div>
 <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
@@ -96,7 +90,6 @@
     function btnAction() {
         window.location.href = link;
     }
-
     (function () {
         $.ajax({
             type: "GET",
