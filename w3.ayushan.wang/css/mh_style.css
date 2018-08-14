@@ -1,6 +1,6 @@
 html,body {line-height:1.5;}
 body {background:#460e7e;}
-body::-webkit-scrollbar{display:none;}
+body::-webkit-scrollbar{display: none}
 body,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd,p {margin:0;}
 body,h1,input,button,select,textarea {font-family:"Microsoft Yahei","PingFang SC","Helvetica Neue",serif;font-size:.28rem;color:#1a1a1a;}
 input,button,select,textarea {border:none;outline:none;}
@@ -10,12 +10,11 @@ ul,ol {padding:0;list-style:none;}
 img {vertical-align:top;border:none;}
 a {text-decoration:none;color:inherit;}
 
-
 .warp,.header{margin:0 auto;width:7.5rem;}
 .warp:after{content:'';display:table;clear:both;}
-.header{position:fixed;top:0;display:table;background:rgba(0,0,0,.7);z-index:3;}
+.header{position:fixed;display:table;background:rgba(0,0,0,.7);z-index:3;}
 .soft-logo,.soft-name,.soft-down{display:table-cell;height:1rem;vertical-align:middle;}
-.soft-logo{width:.9rem;text-align:right;}
+.soft-logo{width:1.7rem;text-align:right;}
 .soft-logo img{border-radius:.15rem;width:.7rem;height:.7rem;}
 .soft-name{padding:0 .17rem;line-height:.2rem;font-size:.18rem;font-weight:300;color:#fff;}
 .soft-name p:first-child{line-height:.4rem;font-size:.3rem;font-weight:bold;}
