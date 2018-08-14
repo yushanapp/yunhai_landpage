@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title></title>
+    <style>
+        fieldset,img{border:0}
+        a{text-decoration:none;color:#000;outline:none}
+        li{list-style:none}
+        h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+        input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
+        input,button,textarea,select{*font-size:100%}
+        .clear:after{
+            display:block;
+            content:"clear";
+            height:0;
+            clear:both;
+            visibility:hidden;
+        }
+        .clear{zoom:1;}
+        /************************rewrite******************************************/
+        html,body{
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height:100%;
+            position: relative;
+            min-width: 320px;
+            max-width: 840px;
+            margin:0 auto;
+            /*height: 100%;*/
+        }
+        .all{
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            -webkit-overflow-scrolling : touch;
+            position: relative;
+        }
+        .box {
+            width:100%;
+            position: relative;
+        }
+        .a2{
+            display: table;
+            width: 100%;
+            height: auto;
+
+            /*height: 100%;*/
+        }
+        .btn_down {
+            width:100%;
+            position: absolute;
+            bottom:0%;
+            left: 0%;
+           /* -webkit-animation-timing-function:ease-in-out;
+            -webkit-animation-name:breathe;
+            -webkit-animation-duration:600ms;
+            -webkit-animation-iteration-count:infinite;
+            -webkit-animation-direction:alternate;*/
+            /*-webkit-animation-name: slipUp1;
+            animation-name: slipUp1;
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+            -webkit-animation-duration: 1s;
+            animation-duration:1s;
+            animation-iteration-count: infinite;
+            -webkit-animation-iteration-count: infinite;
+            margin: 0 auto;*/
+            z-index: 1;
+        }
+        @-webkit-keyframes slipUp1{
+            0%{
+                transform:  translateY(5px);
+            }
+            50%{transform: translateY(0px);
+            }
+            100%{
+                transform: translateY(5px);
+            }
+
+        }
+        .btn_down1 {
+            width: 30%;
+            position: absolute;
+            bottom:1%;
+            right: 1%;
+            /* margin: 0 auto; */
+            z-index: 1;
+            /* -webkit-animation: slipUp 1s linear infinite alternate; */
+        }
+        .btn_down2 {
+            width:100%;
+            position: absolute;
+            top:0%;
+            right: 0%;
+            /*margin: 0 auto;*/
+            z-index: 1;
+            /*-webkit-animation: slipUp 1s linear infinite alternate;*/
+        }
+        .fu{
+            position: absolute;
+            width: 50%;
+            left: 25%;
+            top: 72%;
+        }
+        .banben{
+            width:100%;
+            color:#fff;
+            position: absolute;
+            text-align: center;
+            bottom: 0%;
+            font-size: .4rem;
+            z-index: 111;
+            -webkit-transform: scale(0.4);
+        }
+        .d1{
+            z-index: 111;
+            width: 26%;
+            position: absolute;
+            bottom: 2%;
+            right: 4%;
+            margin: 0 auto;
+
+        }
+        @-webkit-keyframes slipUp{
+            0%{
+                opacity: 1;
+            }
+            50%{opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+
+        }
+       /* @-webkit-keyframes breathe {
+            0% {
+                opacity:1;
+                !*box-shadow:0 1px 2px rgba(255,255,255,0.1);*!
+            }
+            100% {
+                opacity:0;
+                !*border:1px solid rgba(59,235,235,1);*!
+                !*box-shadow:0 1px 30px rgba(59,255,255,1);*!
+            }
+        }*/
+        .btndow{
+            z-index: 111;
+            position: absolute;
+            width: 36%;
+            right: 2%;
+            bottom: 1%;
+            height: 9%;
+            /*border: 1px solid red;*/
+        }
+        .btndow1{
+            position: absolute;
+            width: 100%;
+            right: 0%;
+            bottom: 0%;
+            /*border: 1px solid red;*/
+        }
+        .btndow2{
+            position: absolute;
+            width:30%;
+            right:1%;
+            bottom:1%;
+            /*height: 4%;*/
+            /*border: 1px solid red;*/
+        }
+
+        .n1{
+            position: absolute;
+            width: 70%;
+            left: 15%;
+            top: 58%;
+        }
+        .download{
+            position: absolute;
+            width:100%;
+            bottom:0%;
+            left:0;
+            z-index: 10;
+            text-align: center;
+        }
+        .download img{
+            display: table;
+            position: relative;
+            width: 100%;
+        }
+        .tbndow{
+            position: absolute;
+            width: 50%;
+            right: 25%;
+            bottom: 2%;
+            height: 12%;
+            /*border: 1px solid red;*/
+            z-index: 111;
+        }
+
+        img{
+            width:60%;
+        }
+        /*::-webkit-scrollbar {
+            -webkit-appearance: none;
+        }
+        ::-webkit-scrollbar:vertical {
+            width: 12px;
+        }
+        ::-webkit-scrollbar:horizontal {
+            height: 12px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: rgba(0, 0, 0, .2);
+            border-radius: 10px;
+            border: 2px solid #fff;
+        }
+        ::-webkit-scrollbar-track {
+            border-radius: 10px;
+            background-color: #fff;
+        }*/
+
+        @-webkit-keyframes breathe {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(.9);
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="all">
+    <div class="box">
+        <!--<img class="hei" style="position: absolute;left: 0;top: 0;width:10%;z-index: 99999;" src="http://test.myushan.com//lanpeg/yslogo.png"/>-->
+        <img src="http://test.myushan.com//huanleshuke/huanleshuke0209001.jpg" class="a2 down" alt="" />
+        <!--<div class="tbndow"></div>-->
+        <div class="banben down">北京智鸟科技有限公司版权所有</div>
+    </div>
+
+</div>
+
+
+
+<!--<div class="download">
+    <div class="tbndow"></div>
+    <img src="" alt=""/>
+</div>-->
+
+<img src="http://test.myushan.com//huanleshuke/huanleshuke0209002.png" alt="" class="btndow1">
+<!--<img src="" alt="" class="btndow2">-->
+<!--<img src="" alt="" class="btn_down">-->
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<!--<script src="http://cdn.bootcss.com/jquery_lazyload/1.9.6/jquery.lazyload.min.js"></script>-->
+<script src="//nlp.zntec.mobi/javascripts/yushan_rs_min.js"></script>
+<script>
+  var dlserver = 'http://'+location.hostname+(location.port?':'+location.port:'')+'/dc'
+  new _yushan.dl_info({
+    url : btndown,
+    iosurl : btndown,
+    dlserver : dlserver,
+//    autoDownload: true,
+//    autoDownloadDelayTime:5,
+    dlbutton: ['img'],
+    trace_tag: [0, 0]
+  });
+
+</script>
+</body>
+</html>
