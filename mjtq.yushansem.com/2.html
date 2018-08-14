@@ -1,0 +1,53 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>墨迹天气</title>
+	<meta name="viewport" content="width=device-width"> 
+ 	 <link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
+     <style>
+		.navImage img{
+			width:720px;
+			height:auto;
+			}
+			.navImage{
+			display:inline-block;
+			width:100%;			
+			}
+			body{
+			margin:0!important;
+			}
+     </style>
+</head>
+<body>
+<center>
+				<div class="navImage">
+				  <img id="img"  src="http://cdn.lyplaaap.cn/mjtq.yushansem.com/images/bg1.png" alt="navbar" usemap="#navImg">
+		    <map name="navImg" id="navImg" class="btnCilck">
+			 <!-- <area shape="rectangle" coords="172,471,543,605" onClick="javascript:;"/>-->
+			  <area shape="rectangle" coords="199,1254,546,1355" style="outline:none;" onClick="javascript:;" />
+			    <area shape="rect" coords="162,974,527,1079" style="outline:none;" href="javascript:;">
+		    </map>
+				</div> 
+				<!--
+			<img src="http://cdn.lyplaaap.cn/mdxsys.zjzhidao.mobi/images/bg2.jpg" alt="" name="download2" border="0" usemap="#download2Map"  id="download2" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
+           <map name="download2Map"class="btnCilck"><area shape="rect" coords="423,10,707,87" onClick="javascript:;"></map> -->
+</center>
+<script>
+
+		var Android="http://cdn.lyplaaap.cn/moji/apk/mojiweather-V7.0600.02-20180803-release-5754.apk";//安卓下载链接
+		var Ios="http://cdn.lyplaaap.cn/moji/apk/mojiweather-V7.0600.02-20180803-release-5754.apk";//ios下载链接
+
+		var btns = document.getElementsByClassName("btnCilck");
+		for(var i=0;i<btns.length;i++){
+		   btns[i].onclick=function () {
+               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Ios;
+               }else {
+                   window.location.href =Android;
+               }
+           }
+		};
+</script>
+</body>
+</html>
