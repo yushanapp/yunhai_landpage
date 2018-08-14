@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title></title>
+    <style>
+        fieldset,img{border:0}
+        a{text-decoration:none;color:#000;outline:none}
+        li{list-style:none}
+        h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+        input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
+        input,button,textarea,select{*font-size:100%}
+        /************************rewrite******************************************/
+        html,body{
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height:100%;
+            position: relative;
+            min-width: 320px;
+            max-width: 840px;
+            margin:0 auto;
+        }
+        .all{
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            -webkit-overflow-scrolling : touch;
+            /*position: relative;*/
+        }
+        .box {
+            width:100%;
+            height: 98%;
+            position: relative;
+            padding-bottom: 8%;
+            overflow-y: scroll;
+        }
+        .main_img{
+        	width: 100%;
+        	height: 100%;
+        }
+        .bottom_img1{
+        	width:100%;
+            position: absolute;
+            right:0;
+            left:0;
+            bottom: 0;
+        }
+        .bottom_img2{
+		    width: 33%;
+		    position: absolute;
+		    bottom: 1.6%;
+		    right: 3%;
+		    z-index: 1;
+        }
+        .banben{
+        	width: 100%;
+		    text-align: center;
+		    font-size: 10px;
+		    position: absolute;
+		    bottom: 0;
+		    color: #000;
+			z-index: 999;
+			margin: 0;
+        }
+        .header{
+    	    position: absolute;
+		    top: 0;
+		    left: 0;
+		    width: 50px;
+		    z-index: 9999;
+        }
+    </style>
+</head>
+<body>
+<div class="all">
+    <div class="box">
+    	<img class="header hei" src="http://test.myushan.com//yushan/logo_black.png" onclick="return false" alt="">
+       <img src="image/main_bg1.jpg"/ class="main_img">
+       
+    </div>
+    <p class="fontsize banben">北京智投智道投资咨询有限公司版权所有</p>
+    <img src="image/fuchuang.png"/ class="bottom_img1">
+	<img src="image/anniu1.png" class="bottom_img2 btn_down1"/>
+</div>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//nlp.zntec.mobi/javascripts/yushan_rs_min.js"></script>
+<script src="js/defaultUrl.js"></script>
+<script>
+$('.btn_down1').click(function () {
+        window.location.href=btndown;
+        event.defaultPrevented
+    });
+    new _yushan.dl_info({
+        url :'',
+        dlbutton: ['.btn_down1']
+    });
+</script>
+</body>
+</html>
