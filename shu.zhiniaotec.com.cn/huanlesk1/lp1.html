@@ -230,6 +230,18 @@
                 transform: scale(.9);
             }
         }
+		
+	.btn{
+	    position: absolute;
+		width: 29%;
+		
+		z-index: 1;
+		right: 1%;
+		bottom: 0%;
+		height: 6%;
+
+	}
+
 
     </style>
 </head>
@@ -251,23 +263,17 @@
     <img src="" alt=""/>
 </div>-->
 
-<img src="http://test.myushan.com//huanleshuke/huanleshuke0209002.png" alt="" class="btndow1">
+<img src="http://test.myushan.com//huanleshuke/huanleshuke0209002.png" alt="" class="btndow1"><div class="btn"></div>
 <!--<img src="" alt="" class="btndow2">-->
 <!--<img src="" alt="" class="btn_down">-->
 <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 <!--<script src="http://cdn.bootcss.com/jquery_lazyload/1.9.6/jquery.lazyload.min.js"></script>-->
 <script src="//nlp.zntec.mobi/javascripts/yushan_rs_min.js"></script><script src="../defaultUrl.js"></script>
 <script>
-  var dlserver = 'http://'+location.hostname+(location.port?':'+location.port:'')+'/dc'
-  new _yushan.dl_info({
-    url : btndown,
-    iosurl : btndown,
-    dlserver : dlserver,
-//    autoDownload: true,
-//    autoDownloadDelayTime:5,
-    dlbutton: ['img'],
-    trace_tag: [0, 0]
-  });
+	
+	$(".btn").click(function(e){
+		window.location.href=btndown;
+	});
 
 </script>
 </body>
