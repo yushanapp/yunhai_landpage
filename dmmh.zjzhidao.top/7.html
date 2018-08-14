@@ -11,6 +11,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
     <title>咚漫</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?f5aff6f27a7015469800805ec3a9f7bf";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
 </head>
 <body>
     <div class="contentBox" style="position: relative;">
@@ -19,20 +28,58 @@
             <img src="images/d1-btn.png" alt="咚漫">
         </a>
         <img src="images/d1-1.jpg" alt="咚漫">
-        <div class="relativeBox loadApp">
+        <div class="relativeBox">
             <img src="images/d1-2.jpg" alt="咚漫">
-            <a href="javascript:;" class="download" style="width:55%;top:81%;height:19%;">
+            <a href="javascript:;" class="loadApp" style="width: 55%;bottom: 1%;left: 50%;height: 19%;position: absolute;-ms-transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);-o-transform: translate(-50%,-50%);transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);">
             </a>
         </div>
         <div class="copyRight">Copyright 北京智投智道投资咨询有限公司</div>
     </div>
     <script type="text/javascript">
+      var refer=document.referrer;
+      var sosuo=refer.split(".")[1];
+      var grep=null;var str=null;
+      var keyword=null;
+      switch(sosuo){
+        case "sogou":
+          grep=/keyword\=.*\&/i;
+          str=refer.match(grep);
+          try {
+            keyword=str.toString().split("=")[1].split("&")[0];
+          }
+          catch (e) {
+            _hmt.push(['_trackEvent', 'ready', '初始加载', '无法获取关键词']);
+          }
+          break;
+        case "sm":
+          grep=/s?q\=.*\&/i;
+          str=refer.match(grep);
+          try {
+            keyword=str.toString().split("&")[0].split("=")[1];
+          }
+          catch (e) {
+            _hmt.push(['_trackEvent', 'ready', '初始加载', '无法获取关键词']);
+          }
+          break;
+      }
+      if(refer.indexOf('sm') >= 0){ //单独匹配手机浏览器内置神马搜索
+        grep=/s?q\=.*\&/i;
+        str=refer.match(grep);
+        try {
+          keyword=str.toString().split("&")[0].split("=")[1];
+        }
+        catch (e) {
+          _hmt.push(['_trackEvent', 'ready', '初始加载', '无法获取关键词']);
+        }}
+      var key = decodeURIComponent(keyword);
     var alink = document.querySelectorAll('.loadApp');
     [].forEach.call(alink,function(el){
         el.addEventListener('click',function(){
             if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+              _hmt.push(['_trackEvent', 'click', '苹果下载按钮', '关键词：' + key ]);
                 window.location.href ="https://lnk0.com/kgk0og";
             }else {
+              _hmt.push(['_trackEvent', 'click', '安卓下载按钮', '关键词：' + key ]);
                 window.location.href ="https://lnk0.com/tkosUl";
             }
         });
