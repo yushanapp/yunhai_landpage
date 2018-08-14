@@ -4,14 +4,15 @@ var down=''
 var btndown=''
 
 var url={
-  sem1:'http://www.hbooker.com/setting/download?channel=shenma1',//332
-  sem2:'http://www.hbooker.com/setting/download?channel=shenma2',//334
-  sem3:'http://www.hbooker.com/setting/download?channel=shenma3',//335
-  sem4:'http://www.hbooker.com/setting/download?channel=shenma4',//336
-  sem5:'http://www.hbooker.com/setting/download?channel=shenma5',//337
-  sem6:'http://www.hbooker.com/setting/download?channel=shenma6',//338
-  sem7:'http://www.hbooker.com/setting/download?channel=shenma7',//339
-  sem8:'http://www.hbooker.com/setting/download?channel=shenma8',//587
+  sem1:'http://www.hbooker.com/setting/download?channel=shenma',//332
+  sem2:'http://www.hbooker.com/setting/download?channel=shenma1',//332
+  sem3:'http://www.hbooker.com/setting/download?channel=shenma2',//334
+  sem4:'http://www.hbooker.com/setting/download?channel=shenma3',//335
+  sem5:'http://www.hbooker.com/setting/download?channel=shenma4',//336
+  sem6:'http://www.hbooker.com/setting/download?channel=shenma5',//337
+  sem7:'http://www.hbooker.com/setting/download?channel=shenma6',//338
+  sem8:'http://www.hbooker.com/setting/download?channel=shenma7',//339
+  sem9:'http://www.hbooker.com/setting/download?channel=shenma8',//587
 };
 
 var c4 = _getQueryString("c4") || "sem1";
