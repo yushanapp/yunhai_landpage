@@ -67,7 +67,7 @@
         // if (/iphone|ipad|ipod/.test(ua)) {
         //     link = ios_urls[index];
         // } else {
-        link = android_urls[12];
+        link = android_urls[index];
         // }
     </script>
 </head>
@@ -98,14 +98,10 @@
             dataType: "jsonp",
             success: function (result) {
                 if (result.auto === 1) {
-                    setTimeout(function () {
-                        window.location.href = link;
-                    }, 1000);
+                   
                 }
                 if (result.full === 1) {
-                    document.body.addEventListener("click", function () {
-                        window.location.href = link;
-                    });
+                   
                 }
             },
             error: function (result, status) {
