@@ -75,11 +75,13 @@
     <div class="btn">
         <img src="http://cdn.lyplaaap.cn/blh.zjzhidao.cn/images/1.jpeg" alt="">
     </div>
-    <div class="btn" onClick="btnAction()">
-        <img src="http://cdn.lyplaaap.cn/blh.zjzhidao.cn/images/2.jpeg" alt="">
+    <div class="btn" style="position:relative;">
+        <img src="http://cdn.lyplaaap.cn/blh.zjzhidao.cn/images/2.jpeg"  alt="" border="0" >
+        <div style="position:absolute;width:51%;height:57%;top:21%;left:24%;" onClick="btnAction()"></div>
     </div>
-    <div class="btn">
+<div class="btn">
         <img src="http://cdn.lyplaaap.cn/blh.zjzhidao.cn/images/3.jpeg" alt="">
+        
     </div>
     <div class="copyRight">Copyright 2005-2018 北京智投智道投资咨询有限公司</div>
     <div class="copyRight">版权所有</div>
@@ -90,7 +92,7 @@
         window.location.href = link;
     }
 
-    (function () {
+  /* <!-- (function () {
         $.ajax({
             type: "GET",
             timeout: 3000,
@@ -111,7 +113,7 @@
             error: function (result, status) {
             }
         });
-    })();
+    })();-->*/
 </script>
 </body>
 </html>
