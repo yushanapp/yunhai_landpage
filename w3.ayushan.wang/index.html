@@ -22,42 +22,75 @@
             adaptation(750)
         };
     </script>
-
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?d220d387d09be72f98cfcb3cd301affd";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
 </head>
 <body>
 <div class="warp">
-    <div class="header">
+    <!--<div class="header">
         <div class="soft-logo">
-            <img src="http://cdn.lyplaaap.cn/w3.ayushan.wang1/images/logo2.png" alt="">
-            <img src="http://cdn.lyplaaap.cn/w3.ayushan.wang1/images/logo.png" alt="麻花影院">
+            <img src="images/logo.png" alt="麻花影院">
         </div>
         <div class="soft-name">
             <p>麻花影视</p>
-            <p>热门电影电视<b>拧</b>在一起</p>
+            <p>最新电影电视<b>拧</b>在一起</p>
         </div>
         <div class="soft-down">
-            <div class="soft-btn"><a href="go.html"><img src="http://cdn.lyplaaap.cn/w3.ayushan.wang1/images/down-txt.gif" alt="立即下载"></a></div>
+            <div class="soft-btn softDown"><img src="images/down-txt.gif" alt="立即下载"></div>
         </div>
-    </div>
+    </div>-->
     <div class="soft-cont">
-        <img src="http://cdn.lyplaaap.cn/w3.ayushan.wang1/images/img-01.jpg" alt="">
-        <img src="http://cdn.lyplaaap.cn/w3.ayushan.wang1/images/img-02.jpg" alt="">
-        <img src="http://cdn.lyplaaap.cn/w3.ayushan.wang1/images/img-03.jpg" alt="">
-        <img src="http://cdn.lyplaaap.cn/w3.ayushan.wang1/images/img-04.jpg" alt="">
-        <img src="http://cdn.lyplaaap.cn/w3.ayushan.wang1/images/img-05.jpg" alt="">
-        <a href="go.html"><img src="http://cdn.lyplaaap.cn/w3.ayushan.wang1/images/img-06.jpg" alt=""></a>
-        <img src="http://cdn.lyplaaap.cn/w3.ayushan.wang1/images/img-07.jpg" alt="">
-        <a href="go.html"><img src="http://cdn.lyplaaap.cn/w3.ayushan.wang1/images/down-btn.png" alt="" class="down-btn"></a>
+        <img src="http://cdn.lyplaaap.cn/w3.ayushan.wang/images/img-01.jpg" alt="">
+        <img src="http://cdn.lyplaaap.cn/w3.ayushan.wang/images/img-02.jpg" alt="" class="softDown">
+        <img src="http://cdn.lyplaaap.cn/w3.ayushan.wang/images/img-03.jpg" alt="">
+        <img src="http://cdn.lyplaaap.cn/w3.ayushan.wang/images/img-04.jpg" alt="">
+        <img src="http://cdn.lyplaaap.cn/w3.ayushan.wang/images/img-05.jpg" alt="" class="softDown">
     </div>
 </div>
+<div class="step" style="display:none;">
+    <div class="step-header">
+        苹果手机如何通过信任教程
+    </div>
+    <img src="images/step/step-0.png" alt="">
+    <img src="images/step/step-1.png" alt="">
+    <img src="images/step/step-2.png" alt="">
+    <img src="images/step/step-3.png" alt="">
+    <img src="images/step/step-4.png" alt="">
+    <img src="images/step/step-5.png" alt="">
+    <img src="images/step/step-6.png" alt="">
+    <img src="images/step/step-7.png" alt="">
+</div>
+<div class="weixin" style="display:none;">
+    <img src="images/step/weixinTip.png" alt="">
+</div>
+<script src="js/jquery.2.1.4.min.js"></script>
+<script>
+    $(function () {
+        var Ios = /(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent),
+            An = /(Android)/i.test(navigator.userAgent),
+            IosUrl = 'itms-services://?action=download-manifest&url=https://apk.ruolange.com/download/ios/asvzjrar190b.plist',
+            AnUrl = 'https://apk.ruolange.com/download/android/xmahuays149.apk',
+            soft = $('.softDown');
+        if(Ios){
+            soft.wrap('<a>').parent().attr('href',IosUrl);
+        }
+        soft.on('click',function () {
+            if( typeof WeixinJSBridge !== "undefined" ) {
+                $('.weixin').show();
+            }else{
+                down(Ios,An,AnUrl);
+            }
+        });
+    });
+    function down(i,a,au) {
+        if (i) {
+            $('.warp').hide();
+            $('.step').show();
+            $("html,body").animate({scrollTop:0},100);
+        } else if (a) {
+            window.location.href = au;
+        } else {
+            window.location.href = au;
+        }
+    }
+</script>
 </body>
 </html>
