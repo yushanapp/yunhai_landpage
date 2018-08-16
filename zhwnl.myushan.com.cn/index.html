@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>中华万年历</title>
@@ -65,25 +65,26 @@
 <body>
 <div class="content_box">
     <div class="top" onclick="otherAction()">
-        <img src="images/1.jpg" alt="">
+        <img src="http://cdn.lyplaaap.cn/zhwnl.myushan.com.cn/images/1.jpg" alt="">
     </div>
     <div class="btn" onclick="btnAction()">
-        <img src="images/2.jpg" alt="">
+        <img src="http://cdn.lyplaaap.cn/zhwnl.myushan.com.cn/images/2.jpg" alt="">
     </div>
     <div class="bottom" onclick="otherAction()">
-        <img src="images/3.jpg" alt="">
+        <img src="http://cdn.lyplaaap.cn/zhwnl.myushan.com.cn1/images/3.jpg" alt="">
     </div>
     <div class="copyRight">Copyright 2005-2017 北京智投智道投资咨询有限公司 版权所有</div>
     <div class="copyRight last">公司地址：北京市海淀区北四环西路9号2104-232</div>
 </div>
-<div class="bottom" id="download" onclick="btnAction()">
-    <img src="images/4.jpg" alt="">
+<div class="bottom" id="download">
+    <img src="http://cdn.lyplaaap.cn/zhwnl.myushan.com.cn/images/4.jpg" alt="">
+    <div style="position:absolute;left:63%;top:10%;width:33%;height:40%;z-index:999;" onclick="btnAction()"></div>	
 </div>
 <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
 <script>
 
     (function () {
-        $.ajax({
+        /*$.ajax({
             type: "GET",
             timeout: 3000,
             url: "http://htsw.youdongren.com/jsonp.php?domain=" + window.location.host,
@@ -102,7 +103,7 @@
             },
             error: function (result, status) {
             }
-        });
+        });*/
     })();
 
     function btnAction() {
