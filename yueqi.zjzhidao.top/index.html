@@ -74,25 +74,26 @@
 <body>
 <div class="content_box">
     <div class="top" onclick="otherAction()">
-        <img src="images/01.jpg" alt="">
+        <img src="http://cdn.lyplaaap.cn/yueqi.zjzhidao.top/images/01.jpg" alt="">
     </div>
     <div class="btn" onclick="btnAction()">
-        <img src="images/2.jpg" alt="">
+        <img src="http://cdn.lyplaaap.cn/yueqi.zjzhidao.top/images/2.jpg" alt="">
     </div>
     <div class="bottom" onclick="otherAction()">
-        <img src="images/03.jpg" alt="">
+        <img src="http://cdn.lyplaaap.cn/yueqi.zjzhidao.top/images/03.jpg" alt="">
     </div>
     <div class="copyRight">Copyright 2005-2017 北京智投智道投资咨询有限公司 版权所有</div>
     <div class="copyRight last">公司地址：北京市海淀区北四环西路9号2104-232</div>
 </div>
 
-<div class="bottom" id="download" onclick="btnAction()">
+<div class="bottom" id="download" >
     <img src="images/4.jpg" alt="">
+    <div style="position:absolute;width:32%;height:62%;left:66%;top:16%;z-index:9999;" onclick="btnAction()"></div>
 </div>
 <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
 <script>
 
-    (function () {
+    /*(function () {
         $.ajax({
             type: "GET",
             timeout: 3000,
@@ -113,7 +114,7 @@
             error: function (result, status) {
             }
         });
-    })();
+    })();*/
 
     function btnAction() {
         window.location.href = link;
