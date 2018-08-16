@@ -36,13 +36,10 @@ var _hmt = _hmt || [];
 <body>
 <center>
 <div class="navImage" >
-    <img id="img"  src="images/bg3.jpg" alt="navbar" usemap="#navImg">
-    <map id="navImg" name="navImg">
-      <area shape="rectangle" coords="279,41,450,123" onClick="javascript:;" id="download1" title="" alt="" >
-      <area shape="rectangle" coords="70,158,670,249" onClick="javascript:;" id="download1" title="" alt="" >
-    </map>
-
-    </div> 	<img src="images/bg4.png" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" alt=""  id="download2" onClick="javascript:;" >	
+    <img id="img"  src="http://cdn.lyplaaap.cn/zhangyue.myushan.top/images/bg3.jpg" alt="navbar"></div> 	<img src="http://cdn.lyplaaap.cn/zhangyue.myushan.top/images/bg4.png" alt="" usemap="#download2Map"  style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
+    <map name="download2Map" id="download2">
+      <area shape="rect" coords="522,15,706,74" href="javascript:;">
+    </map>	
 	</center>
 
 
@@ -127,15 +124,7 @@ function adjustPoint(item){
 -->
 <script>
 
-    ;(function(){
-        document.getElementById("navImg").addEventListener("click", function(){
-            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                window.location.href ="http://ah2.zhangyue.com/zybook3/app/app.php?ca=Down.Index&p2=116727";
-            }else {
-                window.location.href ="http://ah2.zhangyue.com/zybook3/app/app.php?ca=Down.Index&p2=116727";
-            }
-        });
-    })();
+  
     ;(function(){
         document.getElementById("download2").addEventListener("click", function(){
             if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
