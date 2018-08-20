@@ -1,0 +1,598 @@
+/**
+	给力专家  2015-07-17
+**/
+html {
+	color: #fff;
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td {
+	margin: 0;
+	padding: 0;
+	font-family: "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3",FontVsoicon,sans-serif
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+fieldset,img {
+	border: 0
+}
+
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style: normal
+}
+
+ol,ul {
+	list-style: none
+}
+
+caption,th {
+	text-align: left
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%
+}
+
+q:before,q:after {
+	content: ''
+}
+
+abbr,acronym {
+	border: 0;
+	font-variant: normal
+}
+
+sup {
+	vertical-align: text-top
+}
+
+sub {
+	vertical-align: text-bottom
+}
+
+input,textarea,select {
+	font-family: inherit;
+	font-size: inherit;
+	*font-size: 100%
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden
+}
+
+.clearfix {
+	display: inline-block
+}
+
+* html .clearfix {
+	height: 1%
+}
+
+.clearfix {
+	display: block
+}
+
+.fr {
+	float: right
+}
+
+.fl {
+	float: left
+}
+
+.clear {
+	clear: both
+}
+
+.hide {
+	display: none
+}
+
+.show {
+	display: block
+}
+
+input,button,a {
+	outline: 0
+}
+
+
+/**导航**/
+.container {
+    color: #333;
+    height: auto;
+    margin: 0 auto;
+    max-width: 1980px;
+    width: 100%;
+}
+.container .main {
+    margin: 0 auto;
+    position: relative;
+    width: 1200px;
+	height:60%;
+}
+.container .header {
+    background: url("../images/gg/header-bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 85px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transition: top 0.5s ease 0s;
+    width: 100%;
+    z-index: 9999;
+}
+.container .header.hiddened {
+    top: -90px;
+}
+.container .header.showed {
+    top: 0;
+    z-index: 999;
+}
+.container .header .header2 {
+    font-size: 17px;
+}
+.container .header .header2 .logo {
+   margin-top: 15px;
+    width: 200px;
+}
+.container .header .header2 .logo img {
+    width: 100%;
+}
+.container .header .header2 ul {
+    float: right;
+    height: 85px;
+    width: 320px;
+}
+.container .header .header2 ul a li {
+    color: #d6d6d6;
+    float: left;
+    height: 85px;
+    line-height: 85px;
+    margin: 0 5px;
+    padding: 0 20px;
+    position: relative;
+}
+.container .header .header2 ul a li i {
+    background: none repeat scroll 0 0 #42c6c6;
+    display: block;
+    height: 5px;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    transition: all 0.2s ease-out 0s;
+    width: 0;
+}
+.container .header .header2 ul a li.active, .container .header .header2 ul a:hover li {
+    color: #fff;
+}
+.container .header .header2 ul a li.active i, .container .header .header2 ul a:hover li i {
+    background: none repeat scroll 0 0 #42c6c6;
+    display: block;
+    height: 5px;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.container .header .header2 a .dowm-btn {
+    background: none repeat scroll 0 0 #29bbbb;
+    border-radius: 30px;
+    color: #fff;
+    margin: 26px 0 0 30px;
+    padding: 5px 25px 7px;
+    transition: all 0.3s ease-in 0s;
+}
+.container .header .header2 a:hover .dowm-btn {
+    background: none repeat scroll 0 0 #179d9d;
+    transition: all 0.2s ease-out 0s;
+}
+
+.container .banner {
+	width: 100%;
+	min-width: 1200px;
+	height: 700px;
+	background: url(../images/gg/index_bg.jpg) top center
+}
+
+.container .banner .font-left {
+	width: 640px;
+	height: 135px;
+	position: absolute;
+	top: 120px;
+	left: 15px
+}
+
+.container .banner a.down-btn {
+	display: block;
+	border: 2px #fff solid;
+	padding: 15px 20px 5px 20px;
+	color: #fff;
+	font-size: 30px;
+	border-radius: 10px;
+	text-decoration: none;
+	position: absolute;
+	top: 455px;
+	left: 150px;
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	-ms-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
+	transition: all .2s ease-out
+}
+
+.container .banner a:hover.down-btn {
+	background: #29bbbb;
+	border: 2px #29bbbb solid;
+	-webkit-transition: all .3s ease-in;
+	-moz-transition: all .3s ease-in;
+	-ms-transition: all .3s ease-in;
+	-o-transition: all .3s ease-in;
+	transition: all .3s ease-in
+}
+.panel{ overflow:hidden;}
+.appimg{ width:600px; margin-right:0px;overflow:hidden;}
+
+.showmain {
+    margin: 0 auto;
+    position: relative;
+    width: 1200px;
+	padding-top:10%;
+}
+.showimg{ width:35%; float:left; margin-left:5%}
+.showimg2{ width:35%; float:right; margin-right:5%}
+.showtext1{background-repeat:no-repeat; height:290px;; width:600px; float:left; margin-top:10%;background-image:url(../images/gg/text11.png);}
+.showtext2{background-repeat:no-repeat; height:290px;; width:600px; float:left; margin-top:10%;background-image:url(../images/gg/text21.png);}
+.showtext3{background-repeat:no-repeat; height:290px;; width:600px; float:left; margin-top:10%;background-image:url(../images/gg/text31.png);}
+.footor{
+	background: none repeat scroll 0 0 #727680;
+    color: #fff;
+    min-width: 1200px;
+    padding: 30px 0;
+    width: 100%;
+	height:70px;
+	text-align:center;
+	}
+        
+/**新版bannar**/        
+.banner2{   height: 700px;
+    min-width: 1200px;
+    width: 100%;}
+.banner2 .b_left{width: 50%; float: left; margin-top: 85px; padding-top: 30px;background-color: #1dc490; padding-bottom: 20px;}
+.b_left .top{ margin: 20px;text-align: right;}
+.b_left .top .txt{ float: right;width: 291px;text-align: center;}
+.b_left .img{ float: right; width: 300px;margin-right: 32px;}
+.top .txt span{ float: left; font-size: 24px; color: #fff;margin: 8px;width: 86%;}
+.b_left .saoma{width: 100%;}
+.saoma img{margin: 10px auto;}
+
+.banner2 .b_right{background-color: #2bc1b6;
+    float: right;
+     margin-top: 85px; padding-top: 30px; padding-bottom: 20px;
+    min-height: 568px;
+    width: 50%;}
+.b_right .img{  margin: 60px 20px 60px 60px;}
+.b_right .btn{ margin-left: 200px;}
+.b_right .btn a{ 
+    background: none repeat scroll 0 0 #2F684E;
+    border-radius: 30px;
+    color: #fff;
+    margin: 0 auto;
+    padding: 5px 68px 7px;
+    transition: all 0.3s ease-in 0s; text-decoration: none;
+}
+
+/**第一屏动画**/
+.container .banner .app01,.container .banner .app02,.container .banner .app03,.container .banner .app04{
+	right:50%; top:90px; width:0; height:0;
+  -webkit-box-shadow: 3px 3px 3px;  
+  -moz-box-shadow: 3px 3px 3px;  
+  box-shadow: 3px 3px 3px;	
+	}
+.container .banner .app01{
+	position: absolute;
+    /* right: 420px;
+    top: 120px;
+	width:175px;
+	height:313px;*/
+	animation: app01 1s;
+	-moz-animation: app01 1s;	/* Firefox */
+	-webkit-animation: app01 1s;	/* Safari 和 Chrome */
+	-o-animation: app01 1s;	/* Opera */	
+	animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	-webkit-animation-fill-mode:forwards;
+	-o-animation-fill-mode:forwards;
+}
+
+.container .banner .app02{
+	position: absolute;
+/*    right: 270px;
+    top: 140px;
+	width:215px;
+	height:383px;*/	 
+	animation: app02 1s;
+	-moz-animation: app02 1s;	/* Firefox */
+	-webkit-animation: app02 1s;	/* Safari 和 Chrome */
+	-o-animation: app02 1s;	/* Opera */	
+	animation-delay: 1s	;
+	animation-fill-mode:forwards;/*停留在动画结束状态*/
+	-moz-animation-fill-mode:forwards;
+	-webkit-animation-fill-mode:forwards;
+	-o-animation-fill-mode:forwards;	
+}
+.container .banner .app03{
+	position: absolute;
+/*    right: 120px;
+    top: 160px;
+	width:255px;
+	height:455px;*/	
+	animation: app03 1s;
+	-moz-animation: app03 1s;	/* Firefox */
+	-webkit-animation: app03 1s;	/* Safari 和 Chrome */
+	-o-animation: app03 1s;	/* Opera */	
+	animation-delay: 2s;
+	animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	-webkit-animation-fill-mode:forwards;
+	-o-animation-fill-mode: forwards;				
+}
+.container .banner .app04{
+	position: absolute;
+/*    right: -30px;
+    top: 180px;
+	width:271px;
+	height:484px;*/	
+	animation: app04 1s;
+	-moz-animation: app04 1s;	/* Firefox */
+	-webkit-animation: app04 1s;	/* Safari 和 Chrome */
+	-o-animation: app04 1s;	/* Opera */	
+	animation-delay: 3s	;
+	animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	-webkit-animation-fill-mode:forwards;
+	-o-animation-fill-mode:forwards;	  	
+}
+
+.next{ width:100%; text-align:center; padding-top:10px;}
+.next img{
+	animation: next 5s;
+	-moz-animation: next 5s;	/* Firefox */
+	-webkit-animation: next 5s;	/* Safari 和 Chrome */
+	-o-animation: next 5s;	/* Opera */	
+	animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	-webkit-animation-fill-mode:forwards;
+	-o-animation-fill-mode:forwards;		
+	}
+	
+.an2{
+/*	display:block;*/
+	animation: 1s linear 0s normal forwards 1 an2;
+	-moz-animation: 1s linear 0s normal forwards 1 an2;	/* Firefox */
+	-webkit-animation: 1s linear 0s normal forwards 1 an2;	/* Safari 和 Chrome */
+	-o-animation: 1s linear 0s normal forwards 1 an2;	/* Opera */
+}
+.an3{
+/*	display:block;*/
+	animation: 1s linear 0s normal forwards 1 an3;
+	-moz-animation: 1s linear 0s normal forwards 1 an3;	/* Firefox */
+	-webkit-animation: 1s linear 0s normal forwards 1 an3;	/* Safari 和 Chrome */
+	-o-animation: 1s linear 0s normal forwards 1 an3;	/* Opera */			
+}
+.an4{
+/*	display:block;*/
+	animation: 1s linear 0s normal forwards 1 an4;
+	-moz-animation: 1s linear 0s normal forwards 1 an4;	/* Firefox */
+	-webkit-animation: 1s linear 0s normal forwards 1 an4;	/* Safari 和 Chrome */
+	-o-animation: 1s linear 0s normal forwards 1 an4;	/* Opera */			
+}
+
+
+/**动画**/
+@keyframes app01
+{
+0%   {right:50%; top:90px; width:0; height:0}
+100% {right: 420px;width:175px; height:313px;top: 120px;}
+}
+
+@-moz-keyframes app01 /* Firefox */
+{
+0%   {right:50%; top:90px; width:0; height:0}
+100% {right: 420px;width:175px; height:313px;top: 120px;}
+}
+
+@-webkit-keyframes app01 /* Safari 和 Chrome */
+{
+0%   {right:50%; top:90px; width:0; height:0}
+100% {right: 420px;width:175px; height:313px;top: 120px;}
+}
+
+@-o-keyframes app01 /* Opera */
+{
+0%   {right:50%; top:90px; width:0; height:0}
+100% {right: 420px;width:175px; height:313px;top: 120px;}
+}
+
+@keyframes app02
+{
+0%   {right:50%; top:90px; width:0; height:0}
+100% {right: 270px;width:215px; height:383px;top: 140px;}
+}
+@-moz-keyframes app02 /* Firefox */
+{
+0%   {right:50%; top:90px; width:0; height:0}
+100% {right: 270px;width:215px; height:383px;top: 140px;}
+}
+
+@-webkit-keyframes app02 /* Safari 和 Chrome */
+{
+0%   {right:50%; top:90px; width:0; height:0}
+100% {right: 270px;width:215px; height:383px;top: 140px;}
+}
+
+@-o-keyframes app02 /* Opera */
+{
+0%   {right:50%; top:90px; width:0; height:0}
+100% {right: 270px;width:215px; height:383px;top: 140px;}
+}
+
+@keyframes app03
+{
+0%   {right:50%; top:90px; width:0; height:0}
+100% {right: 120px;width:255px; height:455px;top: 160px;}
+}
+@-moz-keyframes app03 /* Firefox */
+{
+0%   {right:50%; top:90px; width:0; height:0}
+100% {right: 120px;width:255px; height:455px;top: 160px;}
+}
+
+@-webkit-keyframes app03 /* Safari 和 Chrome */
+{
+0%   {right:50%; top:90px; width:0; height:0}
+100% {right: 120px;width:255px; height:455px;top: 160px;}
+}
+
+@-o-keyframes app03 /* Opera */
+{
+0%   {right:50%; top:90px; width:0; height:0}
+100% {right: 120px;width:255px; height:455px;top: 160px;}
+}
+
+@keyframes app04
+{
+0%   {right:50%; top:90px; width:0; height:0}
+100% {right: 0px;width:271px; height:484px;top: 180px;}
+}
+@-moz-keyframes app04 /* Firefox */
+{
+0%   {right:50%; top:90px; width:0; height:0}
+100% {right: 0px;width:271px; height:484px;top: 180px;}
+}
+
+@-webkit-keyframes app04 /* Safari 和 Chrome */
+{
+0%   {right:50%; top:90px; width:0; height:0}
+100% {right: 0px;width:271px; height:484px;top: 180px;}
+}
+@-o-keyframes app04 /* Opera */
+{
+0%   {right:50%; top:90px; width:0; height:0}
+100% {right: 0px;width:271px; height:484px;top: 180px;}
+}
+
+@keyframes next
+{
+0%   { margin-top:10px;}
+100% {margin-top:30px;}
+}
+
+@-moz-keyframes next /* Firefox */
+{
+0%   { margin-top:10px;}
+100% {margin-top:30px;}
+}
+
+@-webkit-keyframes next /* Safari 和 Chrome */
+{
+0%   { margin-top:10px;}
+100% {margin-top:30px;}
+}
+
+@-o-keyframes next /* Opera */
+{
+0%   { margin-top:10px;}
+100% {margin-top:30px;}
+}
+@keyframes an2
+{
+0%   {margin-left:400px;}
+100% {margin-left:0px;}
+}
+
+@-moz-keyframes an2 /* Firefox */
+{
+0%   {margin-left:400px;}
+100% {margin-left:0px;}
+}
+
+@-webkit-keyframes an2 /* Safari 和 Chrome */
+{
+0%   {margin-left:400px;}
+100% {margin-left:0px;}
+}
+
+@-o-keyframes an2 /* Opera */
+{
+0%   {margin-left:400px;}
+100% {margin-left:0px;}
+}
+@keyframes an4
+{
+0%   {margin-left:90px;}
+100% {margin-left:0px;}
+}
+
+@-moz-keyframes an4 /* Firefox */
+{
+0%   {margin-left:400px;}
+100% {margin-left:0px;}
+}
+
+@-webkit-keyframes an4 /* Safari 和 Chrome */
+{
+0%   {margin-left:400px;}
+100% {margin-left:0px;}
+}
+
+@-o-keyframes an4 /* Opera */
+{
+0%   {margin-left:400px;}
+100% {margin-left:0px;}
+}
+@keyframes an3
+{
+0% { margin-right: 120px;transform: rotate(0deg);}
+25% { margin-right: 120px;transform: rotate(20deg);}
+50% {margin-right: 0px;transform: rotate(0deg);}
+55% {margin-right: 0px;transform: rotate(0deg);}
+100% { margin-right: 0px;transform: rotate(-360deg);}
+}
+
+@-moz-keyframes an3 /* Firefox */
+{
+0% { margin-right: 120px;transform: rotate(0deg);}
+25% { margin-right: 120px;transform: rotate(20deg);}
+50% {margin-right: 0px;transform: rotate(0deg);}
+55% {margin-right: 0px;transform: rotate(0deg);}
+100% { margin-right: 0px;transform: rotate(-360deg);}
+}
+
+@-webkit-keyframes an3 /* Safari 和 Chrome */
+{
+0% { margin-right: 120px;transform: rotate(0deg);}
+25% { margin-right: 120px;transform: rotate(20deg);}
+50% {margin-right: 0px;transform: rotate(0deg);}
+55% {margin-right: 0px;transform: rotate(0deg);}
+100% { margin-right: 0px;transform: rotate(-360deg);}
+}
+
+@-o-keyframes an3 /* Opera */
+{
+0% { margin-right: 120px;transform: rotate(0deg);}
+25% { margin-right: 120px;transform: rotate(20deg);}
+50% {margin-right: 0px;transform: rotate(0deg);}
+55% {margin-right: 0px;transform: rotate(0deg);}
+100% { margin-right: 0px;transform: rotate(-360deg);}
+}
+
+
