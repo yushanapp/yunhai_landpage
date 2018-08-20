@@ -1,0 +1,63 @@
+﻿
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>米读小说</title>
+<meta name="viewport" content="width=device-width"> 
+<!--
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" /> -->
+<style>
+.navImage img{
+width:750px;
+height:auto;
+}
+.navImage{
+/* text-align:center; */
+display:inline-block
+/*margin-left:-8px!important; */
+width:100%;			
+}
+body{
+margin:0!important;
+}
+</style></head>
+
+<body>
+<center>
+<div class="navImage" >
+    <img id="img"  src="http://cdn.lyplaaap.cn/mdxs.zhiniaotec.mobi/images/bg1.jpg" alt="navbar" usemap="#navImg">
+    <map name="navImg" id="navImg" class="btnCilck">
+    <area shape="rect" coords="179,297,560,376" href="javascript:;">
+    </map>
+
+
+   </div> 
+   <img src="http://cdn.lyplaaap.cn/mdxs.zhiniaotec.mobi/images/bg2.jpg" alt="" usemap="#download2Map"  id="download2" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;width:100%;width: 750px;" onClick="javascript:;" >
+   <map name="download2Map" class="btnCilck">
+     <area shape="rect" coords="415,7,709,86" href="javascript:;">
+   </map>
+	</center>
+
+
+
+<script>
+
+    var Android="https://img.ddrhhh.com/browser/apk/midu_android_shenma05.apk";//安卓下载链接
+    var Ios="https://img.ddrhhh.com/browser/apk/midu_android_shenma05.apk";//ios下载链接
+
+    var btns = document.getElementsByClassName("btnCilck");
+    for(var i=0;i<btns.length;i++){
+        btns[i].onclick=function () {
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href =Ios;
+            }else {
+                window.location.href =Android;
+            }
+        }
+    };
+</script>
+
+
+</body>
+</html>
