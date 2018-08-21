@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>微鲤</title>
+<meta name="viewport" content="width=device-width"> 
+<!--
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" /> -->
+<style>
+.navImage img{
+width:720px;
+height:auto;
+}
+.navImage{
+/* text-align:center; */
+display:inline-block
+/*margin-left:-8px!important; */
+width:100%;			
+}
+body{
+margin:0!important;
+}
+</style>
+</head>
+
+<body>
+<center>
+<div class="navImage" >
+    <img id="img"  src="http://cdn.lyplaaap.cn/kankan.zjiaozhidao.mobi/images/bg3.jpg" alt="navbar" usemap="#navImg">
+    <map name="navImg" class="btnCilck">
+       <area shape="poly" coords="457,1216,664,1216,684,1238,690,1265,678,1291,652,1306,468,1307,450,1294,434,1274,433,1246,443,1234" style="outline:none;" href="javascript:;">
+    </map>
+  
+    <!--  <map id="navImg" name="navImg">
+      <area shape="rectangle" coords="148,1194,578,1305" onClick="javascript:;" id="download1" title="" alt="" >
+    </map>-->
+
+    </div> 	
+    <!--<img src="http://cdn.lyplaaap.cn/rili.zjzhidao.top/images/bg3.png" alt="" usemap="#download2Map" style="position:fixed;margin:0 auto;bottom:0;left:0;right:0;max-width: 720px;width:100%;" onClick="javascript:;" >
+    <map name="download2Map" class="btnCilck"> 
+      <area shape="rect" coords="550,21,757,79" style="outline:none;" href="javascript:;">
+    </map>	-->
+</center>
+
+<script>
+
+		var Android="http://ssy-file-common.b0.upaiyun.com/Wltt_News_sem03.apk";//安卓下载链接
+		var Ios="";//ios下载链接
+
+		var btns = document.getElementsByClassName("btnCilck");
+		for(var i=0;i<btns.length;i++){
+		   btns[i].onclick=function () {
+               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Android;
+               }else {
+                   window.location.href =Android;
+               }
+           }
+		};
+</script>
+
+
+</body>
+</html>
