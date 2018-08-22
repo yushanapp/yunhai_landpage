@@ -1,0 +1,55 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>皮皮蟹</title>
+	<meta name="viewport" content="width=device-width"> 
+ 	 <link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
+     <style>
+		.navImage img{
+			width:720px;
+			height:auto;
+			}
+			.navImage{
+			display:inline-block;
+			width:100%;			
+			}
+			body{
+			margin:0!important;
+			}
+     </style>
+</head>
+<body>
+						<center>
+				<div class="navImage">
+			<img id="img"  src="http://cdn.lyplaaap.cn/ppx.zhiniaotec.mobi/s2/images/bg1.jpg" alt="navbar" usemap="#navImg">
+		    <map name="navImg" id="navImg" class="btnCilck">
+			  <area shape="poly" coords="231,912,491,910,514,928,526,952,522,980,496,1004,237,1008,206,994,196,961,202,928" onClick="javascript:;"/> 
+			    </map>
+				</div> 
+
+
+			   <!-- <img src="" alt="" name="download2" border="0" usemap="#download2Map"
+			        style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;" > -->
+             <!-- <map name="download2Map">
+                         <area shape="poly" coords="474,9,685,9,704,27,709,50,700,73,679,85,476,84,451,68,446,45,452,26,461,17" class="btnCilck">
+             </map> -->
+</center>
+<script>
+                    
+		var Android="https://update.weihuitel.com/shrimp/shrimp-1.6.2-60_tx15.apk";//安卓下载链接
+		var Ios="https://update.weihuitel.com/shrimp/shrimp-1.6.2-60_tx15.apk";//ios下载链接
+
+		var btns = document.getElementsByClassName("btnCilck");
+		for(var i=0;i<btns.length;i++){
+		   btns[i].onclick=function () {
+               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Ios;
+               }else {
+                   window.location.href =Android;
+               }
+           }
+		};
+</script>
+</body>
+</html>
