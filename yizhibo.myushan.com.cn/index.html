@@ -1,49 +1,63 @@
-﻿<!doctype html>
+
+<!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>一直播</title>
-	<meta name="viewport" content="width=device-width"> 
- 	 <link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
-     <style>
-		.navImage img{
-			width:720px;
-			height:auto;
-			}
-			.navImage{
-			display:inline-block;
-			width:100%;			
-			}
-			body{
-			margin:0!important;
-			}
-     </style>
-</head>
+<meta charset="UTF-8">
+<title>一直播</title>
+<meta name="viewport" content="width=device-width"> 
+<!--
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" /> -->
+<style>
+.navImage img{
+width:750px;
+height:auto;
+}
+.navImage{
+/* text-align:center; */
+display:inline-block
+/*margin-left:-8px!important; */
+width:100%;			
+}
+body{
+margin:0!important;
+}
+.navImage1 {/* text-align:center; */
+display:inline-block
+/*margin-left:-8px!important; */
+width:100%;			
+}
+</style></head>
+
 <body>
-			<center>
-				<div class="navImage">
-				  <img id="img"  src="http://cdn.lyplaaap.cn/yizhibo.myushan.com.cn/images/bg2.jpg" alt="navbar" usemap="#navImg">
-					<map name="navImg" id="navImg" class="btnCilck">
-					  <area shape="rectangle" coords="176,960,532,1038" onClick="javascript:;"/>
-				  </map>
-				</div> 
-			<!--<img src="images/bg2.png" class="btnCilck" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" alt=""  id="download2" onClick="javascript:;" >-->
-			</center>
+<center>
+<div class="navImage" ><span class="navImage1"><img id="img"  src="http://cdn.lyplaaap.cn/yizhibo.myushan.com.cn/images/bg1.jpg" alt="navbar"></span></div> 
+<img src="http://cdn.lyplaaap.cn/yizhibo.myushan.com.cn/images/bg2.png" alt="" usemap="#download2Map"  id="download2" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;width:100%;max-width: 750px;" onClick="javascript:;">
+<map name="download2Map" class="btnCilck">
+  <area shape="rect" coords="474,36,695,113" href="javascript:;">
+</map>
+<img src="http://cdn.lyplaaap.cn/yizhibo.myushan.com.cn/images/bg3.png" alt="" usemap="#download3Map"  id="download3" style="position:fixed;margin:0 auto;top:0px;left:0;right:0;width:100%;max-width: 750px;" onClick="javascript:;">
+<map name="download3Map" class="btnCilck">
+  <area shape="rect" coords="519,22,709,84" href="javascript:;">
+</map>
+</center>
+
 <script>
 
-		var Android="http://m.yizhibo.com/download/baidusem1.apk";//安卓下载链接
-		var Ios="http://m.yizhibo.com/download/baidusem1.apk";//ios下载链接
+    var Android="http://m.yizhibo.com/download/baidusem1.apk";//安卓下载链接
+    var Ios="";//ios下载链接
 
-		var btns = document.getElementsByClassName("btnCilck");
-		for(var i=0;i<btns.length;i++){
-		   btns[i].onclick=function () {
-               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                   window.location.href =Ios;
-               }else {
-                   window.location.href =Android;
-               }
-           }
-		};
+    var btns = document.getElementsByClassName("btnCilck");
+    for(var i=0;i<btns.length;i++){
+        btns[i].onclick=function () {
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href =Android;
+            }else {
+                window.location.href =Android;
+            }
+        }
+    };
 </script>
+
+
 </body>
 </html>
