@@ -1,63 +1,65 @@
-﻿
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>米读小说</title>
-<meta name="viewport" content="width=device-width"> 
-<!--
- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" /> -->
-<style>
-.navImage img{
-width:750px;
-height:auto;
-}
-.navImage{
-/* text-align:center; */
-display:inline-block
-/*margin-left:-8px!important; */
-width:100%;			
-}
-body{
-margin:0!important;
-}
-</style></head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>米读小说</title>
+    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="stylesheet" href="css/index.css">
 
+</head>
 <body>
-<center>
-<div class="navImage" >
-    <img id="img"  src="http://cdn.lyplaaap.cn/mdxs.zhiniaotec.mobi/images/bg1.jpg" alt="navbar" usemap="#navImg">
-    <map name="navImg" id="navImg" class="btnCilck">
-    <area shape="rect" coords="179,297,560,376" href="javascript:;">
-    </map>
+<div class="header">
+    <div class="header-image">
+        <img src="http://cdn.lyplaaap.cn/mdxs.zhiniaotec.mobi1/images/bg1.jpg" id="bg1" alt="">
+    </div>
 
+    <div class="layout">
+        <div class="banner">
+            <ul class="clearfix">
+                <li><a href="javascript:;"><img src="http://cdn.lyplaaap.cn/mdxs.zhiniaotec.mobi1/images/bg3.jpg"></a></li>
+                <li><a href="javascript:;"><img src="http://cdn.lyplaaap.cn/mdxs.zhiniaotec.mobi1/images/bg2.jpg"></a></li>
+                <li><a href="javascript:;"><img src="http://cdn.lyplaaap.cn/mdxs.zhiniaotec.mobi1/images/bg3.jpg"></a></li>
+                <li><a href="javascript:;"><img src="http://cdn.lyplaaap.cn/mdxs.zhiniaotec.mobi1/images/bg2.jpg"></a></li>
+                <li><a href="javascript:;"><img src="http://cdn.lyplaaap.cn/mdxs.zhiniaotec.mobi1/images/bg3.jpg"></a></li>
+                <li><a href="javascript:;"><img src="http://cdn.lyplaaap.cn/mdxs.zhiniaotec.mobi1/images/bg2.jpg"></a></li>
+            </ul>
+            <ul>
+                <li class="now"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
 
-   </div> 
-   <img src="http://cdn.lyplaaap.cn/mdxs.zhiniaotec.mobi/images/bg2.jpg" alt="" usemap="#download2Map"  id="download2" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;width:100%;width: 750px;" onClick="javascript:;" >
-   <map name="download2Map" class="btnCilck">
-     <area shape="rect" coords="415,7,709,86" href="javascript:;">
-   </map>
-	</center>
+        <!-- <div id="btns">
 
+         </div>-->
+        <div style="position:absolute;width:78%;height:14%;left:9%;top:148%;z-index:999;" id="btns">
 
-
+        </div>
+       <!-- <div style="width:100%;height:auto;position: fixed;bottom:-1.8%;left:0;">
+            <img src="http://cdn.lyplaaap.cn/yyys.zjzhidao.mobi1/images/bgbtn.png" alt="" style="width:100%;">
+            <div style="position:absolute;width:32%;height:61%;left:67%;top:21%;z-index:999;" id="btns"></div>
+        </div>-->
+    </div>
+</div>
+<script type="text/javascript" src="js/index.js"></script>
+<script src="js/base.js"></script>
+<script src="js/slideshow.js"></script>
 <script>
-
-    var Android="https://img.ddrhhh.com/browser/apk/midu_android_shenma06.apk";//安卓下载链接
-    var Ios="https://img.ddrhhh.com/browser/apk/midu_android_shenma06.apk";//ios下载链接
-
-    var btns = document.getElementsByClassName("btnCilck");
-    for(var i=0;i<btns.length;i++){
-        btns[i].onclick=function () {
+    ;(function(){
+        document.getElementById("btns").addEventListener("click", function(){
             if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                window.location.href =Ios;
+                window.location.href ="https://img.ddrhhh.com/browser/apk/midu_android_shenma06.apk";
             }else {
-                window.location.href =Android;
+                window.location.href ="https://img.ddrhhh.com/browser/apk/midu_android_shenma06.apk";
             }
-        }
-    };
+        });
+    })();
 </script>
-
-
 </body>
 </html>
