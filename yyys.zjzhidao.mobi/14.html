@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <title>快手直播</title>
+    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+<div class="header">
+    <div class="header-image">
+        <img src="images/bg1.jpg" id="bg1" alt="">
+    </div>
+
+    <div class="layout">
+        <div class="banner">
+            <ul class="clearfix">
+                <li><a href="javascript:;"><img src="images/bg6.jpg"></a></li>
+                <li><a href="javascript:;"><img src="images/bg2.jpg"></a></li>
+                <li><a href="javascript:;"><img src="images/bg3.jpg"></a></li>
+                <li><a href="javascript:;"><img src="images/bg4.jpg"></a></li>
+                <li><a href="javascript:;"><img src="images/bg5.jpg"></a></li>
+                <li><a href="javascript:;"><img src="images/bg6.jpg"></a></li>
+                <li><a href="javascript:;"><img src="images/bg2.jpg"></a></li>
+                <li><a href="javascript:;"><img src="images/bg3.jpg"></a></li>
+                <li><a href="javascript:;"><img src="images/bg4.jpg"></a></li>
+                <li><a href="javascript:;"><img src="images/bg5.jpg"></a></li>
+            </ul>
+            <ul>
+                <li class="now"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+        <!-- <div id="btns">
+
+         </div>-->
+        <div class="logoImg">
+            <img src="images/bg5.png" alt="">
+        </div>
+        <div style="width:100%;height:auto;position: fixed;bottom:-1.8%;left:0;">
+            <img src="images/bgbtn.png" alt="" style="width:100%;">
+            <div style="position:absolute;width:32%;height:61%;left:67%;top:21%;z-index:999;" id="btns"></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/index.js"></script>
+<script src="js/base.js"></script>
+<script src="js/slideshow.js"></script>
+<script>
+    ;(function(){
+        document.getElementById("btns").addEventListener("click", function(){
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href ="https://yydl.duowan.com/mobile/yymobile_client-android/7.9.3/yymobile_client-7.9.3-5160.apk";
+            }else {
+                window.location.href ="https://yydl.duowan.com/mobile/yymobile_client-android/7.9.3/yymobile_client-7.9.3-5160.apk";
+            }
+        });
+    })();
+</script>
+</body>
+</html>
