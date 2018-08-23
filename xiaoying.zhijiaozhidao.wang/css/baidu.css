@@ -52,8 +52,5 @@ img {
     color: #666;
 }
 .download {
-    position: fixed;
     width: 100%;
-    left: 0;
-    bottom: 0;
 }
