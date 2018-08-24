@@ -20,12 +20,14 @@
 
     <div class="picBox">
 
-		<a href="javascript:;" id="download">
-            <img src="http://cdn.lyplaaap.cn/renren.myushan.com/images/bgy.jpg" alt="">        </a>
+		<a href="javascript:;"  style="display:block; position:relative; width:100%;height:auto;">
+            <img src="http://cdn.lyplaaap.cn/renren.myushan.com/images/bg01.jpg" alt="">    
+            <div id="download" style="position:absolute; width:50%;height:8%;left:25%;top:24%; z-index:999;"></div>	
+                </a>
     	
-	  <div style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 640px;"><img style="width:100%;" src="http://cdn.lyplaaap.cn/renren.myushan.com/images/bgy2.jpg" alt="" border="0" usemap="#download1Map"  onClick="javascript:;" >
+	<!--  <div style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 640px;"><img style="width:100%;" src="http://cdn.lyplaaap.cn/renren.myushan.com/images/bgy2.jpg" alt="" border="0" usemap="#download1Map"  onClick="javascript:;" >
       	<div id="download1" style="position:absolute;top:16%;left:71%;width:28%;height:76%;"></div>
-      </div>
+      </div>-->
 	  
 </div>
 <div style=" font-family: Verdana, Arial, Helvetica, sans-serif; color: #6f6f6f; text-align: center; margin: -125px; line-height: 24px;font-size:9px">
@@ -33,7 +35,7 @@
 <script>
 
     ;(function(){
-        document.getElementById("download1").addEventListener("click", function(){
+        document.getElementById("download").addEventListener("click", function(){
             if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
                 window.location.href ="https://lnk0.com/xVBtwl";
             }else {
