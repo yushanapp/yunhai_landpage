@@ -1,17 +1,20 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>hello语音</title>
 	<meta name="viewport" content="width=device-width"> 
- 	 <link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
+	<link href="images/favicon.ico" type="images/x-favicon.icon" rel="icon">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" /> -->
      <style>
 		.navImage img{
 			width:720px;
 			height:auto;
 			}
 			.navImage{
-			display:inline-block;
+			/* text-align:center; */
+			display:inline-block
+			/*margin-left:-8px!important; */
 			width:100%;			
 			}
 			body{
@@ -21,26 +24,25 @@
 </head>
 <body>
 			<center>
-				<div class="navImage">
-			    <img id="img"  src="http://cdn.lyplaaap.cn/helloyy.zhiniaotec.com/images/bg1.jpg" alt="navbar"></div> 
-			<img src="http://cdn.lyplaaap.cn/helloyy.zhiniaotec.com/images/bg2.png" alt="" name="download2" border="0" usemap="#download2Map"  id="download2" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
-<map name="download2Map"  class="btnCilck"><area shape="rect" coords="497,7,716,84"  href="javascript:;"></map>
-</center>
-<script>
-
-		var Android="https://update.weihuitel.com/hello/hello-4.4.1-official_tencent5.apk";//安卓下载链接
-		var Ios="https://update.weihuitel.com/hello/hello-4.4.1-official_tencent5.apk";//ios下载链接
-
-		var btns = document.getElementsByClassName("btnCilck");
-		for(var i=0;i<btns.length;i++){
-		   btns[i].onclick=function () {
-               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                   window.location.href =Ios;
-               }else {
-                   window.location.href =Android;
-               }
-           }
-		};
-</script>
+				<div class="navImage" >
+			    <img  src="http://cdn.lyplaaap.cn/helloyy.zhiniaotec.com1/images/bg1.jpg" alt="navbar" usemap="#imgMap" id="img">
+                <map name="imgMap" id="navImg">
+                  <area shape="rect" coords="43,1088,654,1181" href="javascript:;" style="outline:none;">
+                </map>
+				</div> 
+			<!--<img src="images/bg2.jpg" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" alt=""  id="download2" onClick="javascript:;" >-->
+			</center>
+			<script>
+				 ;(function(){
+						document.getElementById("navImg").addEventListener("click", function(){
+							if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+								window.location.href ="https://update.weihuitel.com/hello/hello-4.4.1-official_tencent5.apk";
+							}else {                 
+								window.location.href ="https://update.weihuitel.com/hello/hello-4.4.1-official_tencent5.apk";
+							}
+						});
+					})();
+                  
+			</script>
 </body>
 </html>
