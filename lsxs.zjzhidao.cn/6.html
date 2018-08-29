@@ -1,53 +1,367 @@
-﻿<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>乐书小说</title>
-	<meta name="viewport" content="width=device-width"> 
- 	 <link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
-     <style>
-		.navImage img{
-			width:720px;
-			height:auto;
-			}
-			.navImage{
-			display:inline-block;
-			width:100%;			
-			}
-			body{
-			margin:0!important;
-			}
-     </style>
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://tt/?vid=2.1.3 -->
+<html class="js cssanimations" style="font-size: 55.2px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI">
+    <link rel="stylesheet" href="./tt_files/amazeui.min.css">
+    <link rel="stylesheet" href="./tt_files/app.css">
+    <link rel="stylesheet" href="./tt_files/swiper-4.2.2.min.css">
+    <script>
+      // 计算html的font-size
+      (function(){
+        function resizeBaseFontSize(){
+            var rootHtml = document.documentElement,
+            deviceWidth = rootHtml.clientWidth;
+            if(deviceWidth >= 414){
+              deviceWidth = 414;
+          }
+          rootHtml.style.fontSize = deviceWidth / 7.5 + "px";
+      }
+      resizeBaseFontSize();
+      window.addEventListener("resize", resizeBaseFontSize, false);
+      window.addEventListener("orientationchange", resizeBaseFontSize, false);
+  })();
+</script>
+
 </head>
 <body>
-		<center>
-				<div class="navImage">
-				  <img id="img"  src="images/bg1.jpg" alt="navbar" usemap="#navImg">
-					<map name="navImg" id="navImg" class="btnCilck">
-					  <area shape="rectangle" coords="143,2987,564,3096" onClick="javascript:;"/>
-					  <area shape="rectangle" coords="148,1952,569,2061" onClick="javascript:;"/>
-					  <area shape="rectangle" coords="137,1064,558,1173" onClick="javascript:;"/>
-					  <area shape="rectangle" coords="150,635,571,744" onClick="javascript:;"/>
-					  <area shape="rectangle" coords="268,117,463,182" onClick="javascript:;"/>
-				  </map>
-			  </div> 
-			<img src="images/bg2.jpg" class="btnCilck" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" alt=""  id="download2" onClick="javascript:;" >
-			</center>
+    <header>
+        <div style="display: flex;align-items: center; position:relative;">
+            <img class="close" src="./tt_files/close.png" style="width: 0.64rem; height: 0.64rem;padding: 0.1rem;">
+            <img class="brand" src="./tt_files/header-img.png" style="border-radius: 0.2rem !important;">
+            <div style="display: flex;flex-direction: column;">
+         
+                <span class="fs-28">你的专属小说APP</span>
+                <span class="fs-24" style="color: #999">海量原创小说,签到免费畅读</span>
+            </div>
+            <img src="tt_files/logo.png" style="position:absolute;width:13%;height:auto;left:0;top:-6%;z-index:999;"/>	
+        </div>
+        <div class="header-btn fs-28 jump btnCilck">打开APP</div>
+    </header>
+    <!-- 蒙版层 -->
+    <div class="mask" style="display: none">
+        <img src="./tt_files/mask.png">
+    </div>
+    <article>
+        <section class="detail">
+            <div class="detail-content">
+                <img src="./tt_files/detail-img.jpeg">
+                <ul>
+                    <li>你是我的遥不可及</li>
+                    <li>字数: 50360</li>
+                    <li><p>
+                        一场车祸，订婚礼上，他另娶她人，她将他送的戒指扔到他的面前，祝福他永远不要后悔!她本以为终于可以放下一切离开，却被陌生男人拉入房间...
+                    </p></li>
+                    <!-- <li>作者：慕寒</li> -->
+                    <!-- <li>类别：都市言情</li> -->
+                    <!-- <li>最新：第425章 公然的引诱</li> -->
+                    <!-- <li class="fs-24"><span class="fc-orange">282914</span>人正在阅读</li> -->
+                </ul>
+            </div>
+            <div class="detail-btn fs-30 jump">
+                点击阅读全文
+            </div>
+        </section>
+        <section class="chapter">
+            <div class="chapter-heading">
+                <h2>第1章 婚礼上的惊</h2>
+            </div>
+            <div class="chapter-content fs-32">
+                <p>贺梓凝看着不远处繁华热闹的订婚礼，脸色煞白。</p>
+				<p>“准新郎，你是否愿意与面前的美丽准新娘订婚，按照圣经的教训与她同住，在神面前和她结为一体，爱她、安慰她、尊重她、保护他，像你爱自己一样。不论她生病或是健康、富有或贫穷，始终忠於她，直到离开世界？”</p>
+				<p>贺梓凝心一紧，死死盯着台上的乔南之，半年前，这个男人还是她的未婚夫。</p>
+				<p>而这场定婚礼，原本是给她和乔南之举办的！</p>
+				<p>可是一场车祸之后，乔南之失去记忆，她清楚的记得再次见到乔南之之后，他满眼厌恶的看着她说：“贺梓凝，你让我感到恶心。”</p>
+				<p>明明曾经彼此那么深爱，怎么突然就那么厌恶她呢？</p>
+				<p>再后来，简安安哭着对她说，她和乔南之有了夫妻之实，希望她可以成全。</p>
+				<p>当年，她和简安安同一天出生，医院医生出错，两家抱错了孩子。她从小在简家长大，直到16岁时候，才因为生病，查到血型和简父简母不同，发现抱错。于是，这才找到贺家，将两个孩子换了回来。</p>
+				<p>只是贺梓凝在回到自家之后不到两个月，亲生父母就离奇失踪。简父简母怕圈子里的人说他们太薄情，又将她接了回家，只是，态度幡然不同。</p>
+				<p>虽然明白简安安才是简父简母亲生女儿，可是当听到自己叫了十六年的爸妈亲口叫她把未婚夫乔南之让给简安安的时候，她还是忍不住红了眼眶。</p>
+				<p>她也哭着问过他们：“我也曾经是你们的女儿，你们也知道乔南之和我在一起经历了多少，为什么非要拆散我们？”</p>
+				<p>可换来的，只有冷酷无情的一巴掌。</p>
+				<p>她去找乔南之，可他只是厌恶的看着他说：“贺梓凝，要不是看在你和安安也算是姐妹的份上，我会和你多说一句话？想不到你这么恶毒，竟然企图抢姐妹的男朋友，真是恶心。你走吧，我永远不想再看见你！”</p>
+				<p>她想不到，一个人失忆起来，竟然能忘掉得这么干净！</p>
+				<p>怎么就一点痕迹也没有了呢？</p>
+				<p>甚至，深爱变成了厌恶，关心变成了刺伤。所有的一切，全部颠覆！</p>
+				<p>贺梓凝想着往期的一幕幕，心底抽痛的厉害。</p>
+				<p>不远处，站在台上的简安安瞥见在人群中蠢蠢欲动的贺梓凝，立刻朝父母使了个眼色。</p>
+				<p>看来她的“好姐妹”这是还不愿意死心啊！</p>
+				<p>贺梓凝刚想踏出一步，简父简母那张脸就出现在面前。</p>
+				<p>“梓凝，你想干什么，这是安安的订婚礼，你不许打扰他们。”</p>
+				<p>“爸，妈，你们想多了，我只是来祝福他们的，顺便，问问乔南之几句话。”</p>
+				<p>看着简父简母慌乱的神色，贺梓凝冷笑，嘴唇微勾。</p>
+				<p>怎么，移花接木的事情都做出来了，还怕东窗事发？</p>
+				<p>人群里喧喧嚷嚷，贺梓凝看着乔南之，嘴角划出一抹弧度，拿出包包里的可乐戒指，对着乔南之道：“这是你当初送给我的东西，现在我还给你，乔南之，从此以后你我一别两宽，各生欢喜，再不相干！”</p>
+				<p>易拉环清脆的碰撞声在整个大厅里显得格外清脆，乔南之看着那个易拉环，只觉得脑海里有什么东西呼之欲出，扯得他的大脑生疼。</p>
+				<p>这时他忽然感觉到有什么东西在扯着他的衣袖，他低头一看，简安安娇艳的小脸已经泫然欲泣：“南之，我胃里有些不舒服，不知道是不是怀孕了，我们赶紧宣誓完回房间休息好不好？”</p>
+				<p>是了，他爱人是简安安，这个贺梓凝又想来破坏他跟安安的感情。</p>
+				<p>只是一瞬间，乔南之刚刚还迷茫的双眼顿时恢复清明。</p>
+				<p>简安安忙笑道：“梓凝真会开玩笑，刚高考完想必是累的脑子糊涂了吧？爸妈，你们赶紧带梓凝去休息。”</p>
+				<p>简安安嘴角带着幸福的微笑，可只有贺梓凝知道简安安其实背地里一肚子坏水。</p>
+				<p>见乔南之无动于衷，贺梓凝眼底一闪而逝的失落。</p>
+				<p>她被简父简母连拉带扯的拖出了礼堂，带到了一处没人的房间，二人指着她的脑袋狠狠骂道：“今天是安安的婚礼，你竟然还想破坏，你怎么这么恶毒？！”</p>
+				<p>恶毒？</p>
+				<p>贺梓凝理都不想理会这两个人，到底是谁恶毒，呵呵！</.p>
+				<p>“你就在这里，直到婚礼结束，才能离开这个房间！”</p>
+				<p>“啪嗒”几声，贺梓凝没想到爸妈竟然还将房间上锁，也好，她根本不想出去。</p>
+				<p>是夜，别墅灯火辉煌，人流不息。</p>
+				<p>简安挽着乔南之的手臂，浅笑祝福，转身的刹那，视线落在楼上那个黑暗的小阁楼，嘴角扬起一抹神秘的微笑。</p>
+				<p>不知道她的“好姐妹”会不会满意她准备的这份大礼物？想想都有些期待呢！</p>
+				<p>房间里，贺梓凝呆着无聊，看房间里什么都有，索性洗了澡再蒙头大睡，打定主意等这个订婚礼之后，她就去刚刚考上的大学申请助学贷款，再也不要和简家有任何牵扯！</p>
+				<p>谁也没有留意到，此刻，贺梓凝所在的房门被悄然打开……</p>
+
+
+                <h2>第2章 房间里的男人</h2>
+				<p>贺梓凝换了一身浴袍，靠着窗户呆呆的望着下方热闹的晚宴出神。</p>
+				<p>要是乔南之没有失忆的话——</p>
+				<p>贺梓凝想到这里，顿时使劲摇头，没有什么假设。</p>
+				<p>她跟乔南之，再也没有任何关系！</p>
+				<p>她站起身，刚要转身，身后猛地伸出一双手臂，猝不及防的将她禁锢在原地。</p>
+				<p>随之而来的是铺天盖地的吻，带着男性独有的侵略气息，散发着浓烈的荷尔蒙味道，危险致命。</p>
+				<p>他呼吸粗重，在没有开灯的房间里，她看不清他的面孔，只看到他一双眼眸里闪着幽光，看她的时候，好似看待一个到手的猎物！</p>
+				<p>“你再乱来我就报警了！？”</p>
+				<p>只是，男人好像没有听到她的问话一般，一把将她扣紧，迫不及待地又吻了下去。</p>
+				<p>贺梓凝浑身颤抖，拼命挣扎，可是，就算她用尽了力气，在男人力量的面前，也不过蚍蜉撼树。</p>
+				<p>他猛地往前两步，将她抵在了墙上。</p>
+				<p>隐隐知道男人下一步要做什么，贺梓凝吓得魂飞魄散，她的指甲在男人身上留下深深的抓痕。</p>
+				<p>这人受伤了还想着女人？！这到底是什么禽兽！贺梓凝只觉得三观颠覆！</p>
+				<p>“帮帮我……”男人的声音很低,就好像大提琴的末弦音。</p>
+				<p>“啊！”贺梓凝尖叫一声，随即就被男人捂住了嘴：“你想所有人都听到？”</p>
+				<p>贺梓凝心头一寒，恐惧铺天盖地，她压低声音，带着哭腔：“你要多少钱，我都给你！求你，放过我！”</p>
+				<p>男人不为所动。</p>
+				<p>贺梓凝坐在桌上，后背一丝不挂地贴在这窗台上，外面是热闹的晚宴，人们时不时的交谈声还不断充斥在耳边。</p>
+				<p>她挣扎到几乎脱力，紧张到不知所措，就好像受伤的小兽，发出压抑的低声悲鸣。</p>
+				<p>霍言深从未想到，他同胞弟弟派来的那些人竟然用了这样的药，让他自以为无坚不摧的意志，都被彻底蚕食！</p>
+				<p>他眸子变得猩红，目光打量着瑟瑟发抖的女人。</p>
+				<p>借着窗口的微光，虽然很朦胧，但他还是隐约看到了一张美得惊心动魄的脸，目前还很稚嫩，可是，将来一旦更加成熟，又将会是怎样的风姿？</p>
+				<p>她的眼睛很清澈，让人想到踏过雪地的精灵，即使此刻充满了惊恐，也美得让人有种落泪的冲动。</p>
+				<p>她想张口喊救命，喊出来的话到了嘴边悉数变成呜咽。</p>
+				<p>从前不管谁要欺负她，乔南之总会像个骑士一样从天而降，不让任何人伤害她。</p>
+				<p>可是现在呢？</p>
+				<p>贺梓凝转过头，眼睁睁看着乔南之带着身旁的简安安在人群中穿梭，目光时不时转向她所在的方向。</p>
+				<p>她吓得身子一缩，生怕自己此刻的不堪被他看到。</p>
+				<p>绝望的情绪一点点蔓延，贺梓凝只觉得内心有什么东西在一点点崩塌。</p>
+				<p>乔南之，再也不是她的白马王子。</p>
+				<p>一滴眼泪滑过贺梓凝光洁的脸颊，落到霍言深的手背上，他好像被烫了一下般，动作放缓了些许。</p>
+                <div class="chapter-masking"></div>
+
+            </div>
+
+            <div class="chapter-morebtn fc-orange">展开阅读更多内容</div>
+            <a href="javascript:void(0);" class="chapter-morebtn fc-orange jump" style="display: none;">打开APP阅读全文</a>
+        </section>
+        <section class="gallery">
+            <div class="gallery-heading">
+                <ul>
+                    <li class="fs-32">极力推荐</li>
+                    <li class="fs-26">书荒必看 全网最火爆小说</li>
+                </ul>
+            </div>
+            <div class="gallery-content">
+                <div class="dt-content">
+                    <img src="./tt_files/1-1.jpeg" class="jump">
+                    <ul>
+                        <li class="fs-30 overflow">你是我要的爱情</li>
+                        <li><p class="fs-24 overflow">
+                            简介：池音为了一百万，出卖了自己的爱情，没想到...
+                        </p></li>
+                        <li class="fs-24"><span class="fc-orange">29212</span>同时在读</li>
+                    </ul>
+                </div>
+                <div class="dt-content">
+                    <img src="./tt_files/1-2.jpeg" class="jump">
+                    <ul>
+                        <li class="fs-30 overflow">年轻的追逐</li>
+                        <li><p class="fs-24 overflow">
+                            简介：高一那年，我寄住在年轻的小姨家...
+                        </p></li>
+                        <li class="fs-24"><span class="fc-orange">29212</span>同时在读</li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="gallery-footer">
+                <div class="g-btn fs-28 jump">查看更多</div>
+            </div>
+        </section>
+        <section class="gallery" id="g1">
+            <div class="gallery-heading">
+                <ul>
+                    <li class="fs-32">猜你喜欢</li>
+                    <li class="fs-26">看过本书的书友还喜欢看</li>
+                    <li class="fc-orange fs-26 change">换一批</li>
+                </ul>
+            </div>
+            <div class="gallery-content">
+                <ul class="like1">
+                    <li>
+                        <img src="./tt_files/2-1.jpg" class="jump">
+                        <span class="overflow">超级小农民</span>
+                    </li>
+                    <li>
+                        <img src="./tt_files/2-2.jpeg" class="jump">
+                        <span class="overflow">与你生死两相欢</span>
+                    </li>
+                    <li>
+                        <img src="./tt_files/2-3.jpeg" class="jump">
+                        <span class="overflow">总裁爹地宠上天</span>
+                    </li>
+                </ul>
+                <ul class="like2" style="display: none;">
+                    <li>
+                        <img src="./tt_files/2-4.jpeg" class="jump">
+                        <span class="overflow">此生因你空欢喜</span>
+                    </li>
+                    <li>
+                        <img src="./tt_files/2-5.jpeg" class="jump">
+                        <span class="overflow">先生, 我们不约</span>
+                    </li>
+                    <li>
+                        <img src="./tt_files/2-6.jpg" class="jump">
+                        <span class="overflow">温柔的背叛</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="gallery-footer">
+                <div class="g-btn fs-28 jump">查看更多</div>
+            </div>
+        </section>
+        <section class="gallery" id="g2">
+            <div class="gallery-heading">
+                <ul>
+                    <li class="fs-32">精品必读</li>
+                    <li class="fs-26">书友吐血推荐</li>
+                    <li class="fc-orange fs-26 change">换一批</li>
+                </ul>
+            </div>
+            <div class="gallery-content">
+                <ul class="like1">
+                    <li>
+                        <img src="./tt_files/3-1.jpeg" class="jump">
+                        <span class="overflow">等着时光等着你</span>
+                    </li>
+                    <li>
+                        <img src="./tt_files/3-2.jpeg" class="jump">
+                        <span class="overflow">顾少的独家挚爱</span>
+                    </li>
+                    <li>
+                        <img src="./tt_files/3-3.jpeg" class="jump">
+                        <span class="overflow">亿万星辰说爱你</span>
+                    </li>
+                </ul>
+                <ul class="like2" style="display: none;">
+                    <li>
+                        <img src="./tt_files/3-4.jpeg" class="jump">
+                        <span class="overflow">情深以南尽成欢</span>
+                    </li>
+                    <li>
+                        <img src="./tt_files/3-5.jpeg" class="jump">
+                        <span class="overflow">你筑相思度余年</span>
+                    </li>
+                    <li>
+                        <img src="./tt_files/3-6.jpeg" class="jump">
+                        <span class="overflow">下个路口遇见你</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="gallery-footer">
+                <div class="g-btn fs-28 jump">查看更多</div>
+            </div>
+        </section>
+        <section class="description ">
+            <!--<span>地址：杭州市西湖区华星科技大厦</span>-->
+            <span>北京智投智道投资咨询有限公司</span>
+        </section>
+    </article>
+    <!-- <footer>
+        <div class="swiper-container">
+            <div class="swiper-wrapper jump">
+                <div class="swiper-slide">
+                    <img src="assets/i/4-1.png" class="jump">
+                    <span>试衣间里，我被好友的老公玩到停不下来</span>
+                    <div class="btn fs-28 jump">点击下载乐书</div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/i/4-2.png" class="jump">
+                    <span>闺蜜推荐的小说，看的我脸都红了</span>
+                    <div class="btn fs-28 jump">点击下载乐书</div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/i/4-3.png" class="jump">
+                    <span>老公意外失忆，闺蜜竟然对他做这种事</span>
+                    <div class="btn fs-28 jump">点击下载乐书</div>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </footer> -->
+<!--[if lte IE 9]>
+<p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a
+        href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+    以获得更好的体验！</p>
+<![endif]-->
+<script src="./tt_files/jquery-3.3.1.min.js"></script>
+<script src="./tt_files/amazeui.js"></script>
+<script src="./tt_files/swiper-4.2.2.min.js"></script>
+<script src="./tt_files/app.js"></script>
+
 <script>
 
-		var Android="https://statics.leshuwu.com/app_apk/sem6.apk";//安卓下载链接
-		var Ios="https://statics.leshuwu.com/app_apk/sem6.apk";//ios下载链接
+
+		var Android="https://statics.leshuwu.com/app_apk/sem_5.apk";//安卓下载链接
+		var Ios="";//ios下载链接
 
 		var btns = document.getElementsByClassName("btnCilck");
 		for(var i=0;i<btns.length;i++){
 		   btns[i].onclick=function () {
                if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                   window.location.href =Ios;
+                   window.location.href =Android;
                }else {
                    window.location.href =Android;
                }
            }
 		};
 </script>
-</body>
-</html>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var mySwiper = new Swiper ('.swiper-container', 
+        {
+            direction: 'horizontal',
+            loop: true,
+            // 如果需要分页器
+            pagination: {
+              el: '.swiper-pagination',
+          },
+          speed: 1000,
+          autoplay: true,
+          disableOnInteraction: false
+      })   
+
+        function doClose(){
+            $('header').hide();
+            $('article').css("margin", "0")
+        }     
+    })
+</script>
+
+</body></html>
