@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>欢乐书客</title>
+	<meta name="viewport" content="width=device-width"> 
+	<link href="images/favicon.ico" type="images/x-favicon.icon" rel="icon">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" /> -->
+     <style>
+		.navImage img{
+			width:720px;
+			height:auto;
+			}
+			.navImage{
+			/* text-align:center; */
+			display:inline-block
+			/*margin-left:-8px!important; */
+			width:100%;			
+			}
+			body{
+			margin:0!important;
+			}
+     </style>
+</head>
+<body>
+			<center>
+				<div class="navImage" >
+			    <img  src="http://cdn.lyplaaap.cn/shusm.zntec.cc/images/bg2.jpg" alt="navbar" usemap="#imgMap" id="img">
+                <map name="imgMap" id="navImg"><area shape="rect" coords="231,306,496,395" href="javascript:;" style="outline:none;">
+                  <area shape="rect" coords="78,2081,650,2172" href="javascript:;" style="outline:none;">
+                </map>
+			  </div> 
+			<!--<img src="images/bg2.png" alt="" usemap="#download2Map"  id="download2" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
+            <map name="download2Map" id="navImg">
+              <area shape="rect" coords="82,13,642,97" href="javascript:;">
+            </map>-->
+			</center>
+			<script>
+				 ;(function(){
+						document.getElementById("navImg").addEventListener("click", function(){
+							if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+								window.location.href ="http://novel-cdn.kuangxiangit.com/custom/download/1.4.9/Novel-release_15510_jiagu_sign-shenma1.apk";
+							}else {                 
+								window.location.href ="http://novel-cdn.kuangxiangit.com/custom/download/1.4.9/Novel-release_15510_jiagu_sign-shenma1.apk";
+							}
+						});
+					})();
+                  
+			</script>
+</body>
+</html>
