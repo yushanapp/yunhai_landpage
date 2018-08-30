@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+.bg1{
+    width: 100%;
+    height: auto;
+}
+.Sem_App_Img{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 34%;
+}
+.btn_bottom{
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+}
+.btn_bottom img{
+    width: 100%;
+    height: auto;
+}
+.btn_top{
+    position: absolute;
+    width: 61%;
+    height: 4%;
+    left: 20%;
+    top: 27%;
+    z-index: 999;
+}
