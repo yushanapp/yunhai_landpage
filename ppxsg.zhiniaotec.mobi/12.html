@@ -1,17 +1,20 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>皮皮蟹</title>
+	<title>皮皮蟹语音</title>
 	<meta name="viewport" content="width=device-width"> 
- 	 <link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
+	<link href="images/favicon.ico" type="images/x-favicon.icon" rel="icon">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" /> -->
      <style>
 		.navImage img{
 			width:720px;
 			height:auto;
 			}
 			.navImage{
-			display:inline-block;
+			/* text-align:center; */
+			display:inline-block
+			/*margin-left:-8px!important; */
 			width:100%;			
 			}
 			body{
@@ -20,31 +23,29 @@
      </style>
 </head>
 <body>
-						<center>
-				<div class="navImage">
-			<img id="img"  src="http://cdn.lyplaaap.cn/ppx.zhiniaotec.mobi/s2/images/bg1.jpg" alt="navbar" usemap="#navImg">
-		    <map name="navImg" id="navImg" class="btnCilck">
-			  <area shape="poly" coords="231,912,491,910,514,928,526,952,522,980,496,1004,237,1008,206,994,196,961,202,928" onClick="javascript:;"/> 
-			    </map>
-				</div> 
+			<center>
+				<div class="navImage" >
+			    <img  src="http://cdn.lyplaaap.cn/ppxsg.zhiniaotec.mobi/images/bg1.jpg" alt="navbar" usemap="#imgMap" id="img">
+                <map name="imgMap" id="navImg" class="btnCilck">
+                  <area shape="rect" coords="261,1105,465,1171" href="javascript:;" style="outline:none;">
+                </map>
+			  </div> 
+			<!--<img src="http://cdn.lyplaaap.cn/dsxsys.zjzhidao.mobi/images/bg2.png" alt="" usemap="#download2Map"  id="download2" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
+            <map name="download2Map" id="navImg1">
+              <area shape="rect" coords="422,76,706,168" href="javascript:;">
+            </map>-->
+			</center>
+			<script>
 
 
-			   <!-- <img src="" alt="" name="download2" border="0" usemap="#download2Map"
-			        style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;" > -->
-             <!-- <map name="download2Map">
-                         <area shape="poly" coords="474,9,685,9,704,27,709,50,700,73,679,85,476,84,451,68,446,45,452,26,461,17" class="btnCilck">
-             </map> -->
-</center>
-<script>
-                    
 		var Android="https://update.weihuitel.com/shrimp/shrimp-1.6.2-60_tx12.apk";//安卓下载链接
-		var Ios="https://update.weihuitel.com/shrimp/shrimp-1.6.2-60_tx12.apk";//ios下载链接
+		var Ios="";//ios下载链接
 
 		var btns = document.getElementsByClassName("btnCilck");
 		for(var i=0;i<btns.length;i++){
 		   btns[i].onclick=function () {
                if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                   window.location.href =Ios;
+                   window.location.href =Android;
                }else {
                    window.location.href =Android;
                }
