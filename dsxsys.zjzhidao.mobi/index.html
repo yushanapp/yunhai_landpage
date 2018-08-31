@@ -1,20 +1,17 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>都市小说</title>
 	<meta name="viewport" content="width=device-width"> 
-	<link href="images/favicon.ico" type="images/x-favicon.icon" rel="icon">
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" /> -->
+ 	 <link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
      <style>
 		.navImage img{
 			width:720px;
 			height:auto;
 			}
 			.navImage{
-			/* text-align:center; */
-			display:inline-block
-			/*margin-left:-8px!important; */
+			display:inline-block;
 			width:100%;			
 			}
 			body{
@@ -24,35 +21,33 @@
 </head>
 <body>
 			<center>
-				<div class="navImage" >
-			    <img  src="http://cdn.lyplaaap.cn/dsxsys.zjzhidao.mobi/images/bg1.jpg" alt="navbar" usemap="#imgMap" id="img">
-                <map name="imgMap" id="navImg">
-                  <area shape="rect" coords="186,2652,524,2761" href="javascript:;" style="outline:none;">
-                </map>
-			  </div> 
-			<img src="http://cdn.lyplaaap.cn/dsxsys.zjzhidao.mobi/images/bg2.png" alt="" usemap="#download2Map"  id="download2" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
-            <map name="download2Map" id="navImg1">
-              <area shape="rect" coords="422,76,706,168" href="javascript:;">
-            </map>
-			</center>
-			<script>
-				 ;(function(){
-						document.getElementById("navImg").addEventListener("click", function(){
-							if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-								window.location.href ="http://media9.tadu.com/downloads/android/dushixiaoshuo_1800049.apk";
-							}else {                 
-								window.location.href ="http://media9.tadu.com/downloads/android/dushixiaoshuo_1800049.apk";
-							}
-						});
-						document.getElementById("navImg1").addEventListener("click", function(){
-							if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-								window.location.href ="http://media9.tadu.com/downloads/android/dushixiaoshuo_1800049.apk";
-							}else {                 
-								window.location.href ="http://media9.tadu.com/downloads/android/dushixiaoshuo_1800049.apk";
-							}
-						});
-					})();
-                  
-			</script>
+				<div class="navImage">
+		      <img src="http://cdn.lyplaaap.cn/dsxsys.zjzhidao.mobi/2/images/bg1.jpg" alt="navbar" name="img" border="0" usemap="#imgMap" id="img">
+				<map name="imgMap" class="btnCilck">
+				  <area shape="poly" coords="221,2656,490,2652,517,2672,523,2702,515,2730,490,2743,234,2745,201,2730,188,2704,192,2679,206,2667" onClick="javascript:;">
+				</map></div> 
+
+		<img src="http://cdn.lyplaaap.cn/dsxsys.zjzhidao.mobi/2/images/bg2.png" alt="" name="download2" border="0" usemap="#download2Map" id="download2" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
+         <map name="download2Map">
+             <area shape="poly" coords="459,79,671,80,700,99,702,123,701,140,684,161,457,162,430,146,424,122,430,105,442,93,439,88,435,97"  class="btnCilck"   onClick="javascript:;">
+       </map>
+ 
+</center>
+<script>
+
+		var Android="http://media9.tadu.com/downloads/android/dushixiaoshuo_1800049.apk";//安卓下载链接
+		var Ios="http://media9.tadu.com/downloads/android/dushixiaoshuo_1800049.apk";//ios下载链接
+
+		var btns = document.getElementsByClassName("btnCilck");
+		for(var i=0;i<btns.length;i++){
+		   btns[i].onclick=function () {
+               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Ios;
+               }else {
+                   window.location.href =Android;
+               }
+           }
+		};
+</script>
 </body>
 </html>
