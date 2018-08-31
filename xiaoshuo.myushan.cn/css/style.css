@@ -120,3 +120,24 @@ ul,ol{list-style:none;}
 	text-align:center;
 	font-size:0.6rem;
 }
+.header{
+  margin: 0 auto;
+  max-width: 750px;
+}
+.btn_box{
+  display: block;
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+  position: relative;
+
+}
+.btn_clik{
+  display: block;
+  position: absolute;
+  width: 81%;
+  height: 62%;
+  left: 9%;
+  top:14%;
+  z-index: 999;
+}
