@@ -18,42 +18,26 @@
 			margin:0!important;
 			}
      </style>
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?1cca685fa85cf2994ec8e20b9946adeb";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-
-
 </head>
 <body>
 			<center>
 				<div class="navImage">
-			    <img  src="http://cdn.lyplaaap.cn/dsxs.yushansem.com1/images/bg3.jpg" alt="navbar" usemap="#imgMap" id="img">
-                <map name="imgMap" class="btnCilck">
-                  <area shape="rect" coords="128,1817,584,1934" href="javascript:;">
-                </map>
-				</div> 
+			    <img  src="http://cdn.lyplaaap.cn/dsxs.yushansem.com2/images/bg3.jpg" alt="navbar" id="img"></div> 
 			
-			<img src="http://cdn.lyplaaap.cn/dsxs.yushansem.com/images/bg4.jpg" alt="" name="download2" usemap="#download2Map"  id="download2" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;" border="0" >
-            <map name="download2Map" class="btnCilck">
-              <area shape="rect" coords="386,11,703,110" href="javascript:;">
-            </map>
+            <img src="http://cdn.lyplaaap.cn/dsxs.yushansem.com1/images/bg2.png" alt="" name="download2" border="0" usemap="#download2Map"  id="download2" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
+<map name="download2Map"  class="btnCilck"><area shape="rect" coords="162,8,591,107"  href="javascript:;"></map>
+
 </center>
 <script>
 
 		var Android="http://media9.tadu.com/downloads/android/dushixiaoshuo_1800036.apk";//安卓下载链接
-		var Ios="http://media9.tadu.com/downloads/android/dushixiaoshuo_1800036.apk";//ios下载链接
+		var Ios="";//ios下载链接
 
 		var btns = document.getElementsByClassName("btnCilck");
 		for(var i=0;i<btns.length;i++){
 		   btns[i].onclick=function () {
                if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                   window.location.href =Ios;
+                   window.location.href =Android;
                }else {
                    window.location.href =Android;
                }
