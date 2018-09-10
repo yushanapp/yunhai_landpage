@@ -18,41 +18,30 @@
 			margin:0!important;
 			}
      </style>
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?e147a8ad8fd2dd2341c43f24a3dc2c8e";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-
 </head>
 <body>
 			<center>
 				<div class="navImage">
-				  <img id="img"  src="http://cdn.lyplaaap.cn/xcxs.ayushan.wang/images/bg1.jpg" alt="navbar" usemap="#navImg">
-		    <map name="navImg" id="navImg" class="btnCilck">
-			  <area shape="rectangle" coords="186,1171,510,1284" onClick="javascript:;"/>
-			    </map>
+			    <img  src="http://cdn.lyplaaap.cn/xcxs.ayushan.wang1/images/bg1.jpg" alt="navbar" usemap="#imgMap" id="img">
+                <map name="imgMap" class="btnCilck"><area shape="rect" coords="119,3751,599,3866" style="outline:none;" href="javascript:;"><area shape="rect" coords="185,2878,512,2969" style="outline:none;" href="javascript:;"><area shape="rect" coords="200,2003,527,2094" style="outline:none;" href="javascript:;"><area shape="rect" coords="190,1137,517,1228" style="outline:none;" href="javascript:;">
+                  <area shape="rect" coords="182,397,509,488" style="outline:none;" href="javascript:;">
+                </map>
 				</div> 
 			
-			<!--<img src="images/bg3.png" alt="" name="download2" border="0" usemap="#download2Map"  id="download2" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
-<map name="download2Map">
-  <area shape="poly" coords="537,18,688,18,706,38,706,55,689,71,538,70,519,59,517,36"class="btnCilck"  onClick="javascript:;">
-</map>-->
+            <!--<img src="http://cdn.lyplaaap.cn/dsxsys.zjzhidao.mobi1/images/bg2.png" alt="" name="download2" border="0" usemap="#download2Map"  id="download2" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
+<map name="download2Map"  class="btnCilck"><area shape="rect" coords="162,8,591,107"  href="javascript:;"></map>-->
+
 </center>
 <script>
 
 		var Android="http://media9.tadu.com/downloads/android/xiangcun_v3.82_1600132.apk";//安卓下载链接
-		var Ios="http://media9.tadu.com/downloads/android/xiangcun_v3.82_1600132.apk";//ios下载链接
+		var Ios="";//ios下载链接
 
 		var btns = document.getElementsByClassName("btnCilck");
 		for(var i=0;i<btns.length;i++){
 		   btns[i].onclick=function () {
                if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                   window.location.href =Ios;
+                   window.location.href =Android;
                }else {
                    window.location.href =Android;
                }
