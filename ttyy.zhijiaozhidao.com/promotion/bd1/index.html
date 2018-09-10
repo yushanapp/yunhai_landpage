@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://activity.52tt.com/promotion/bd1/ -->
+<html class="pixel-ratio-1 watch-active-state"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="keywords" content="2">
+	<meta name="description" content="1">
+    <meta name="revised" id="html-version" content="2.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>下载链接</title>
+  <script src="./index_files/hm.js"></script><script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?86320a5d4f91657c8c684c082ddb8079";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script><style>
+	*{margin:0;padding:0;}
+body{
+	max-width:720px;
+	position:relative;
+	margin:0 auto;
+}
+	.cover {
+	  width: 100%;
+	  height: 100%;
+	  position: absolute;
+	  left: 0;
+	  top: 0;
+	  color: #fff;
+		display:none;
+		z-index:2;
+	}
+	.cover .cover-sub {
+	  position: relative;
+	  background: #000;
+	  opacity: 0.7;	
+	  width: 100%;
+	  height: 100%;
+	}
+	.cover .cover-sub .cover-sub-content {
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  margin: auto;
+	}
+	.cover .cover-sub .cover-sub-content .img-wrap {
+	  overflow: hidden;
+	}
+	.cover .cover-sub .cover-sub-content .img-wrap img {
+	  float: right;
+	}
+	.cover p {
+	  text-align: center;
+    padding: 0 10px;
+    margin-top: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+    height: 20px;
+	}
+	.cover p span{
+	  color:#FFD702;
+	}
+ </style><link rel="stylesheet" href="./index_files/PromotionActivities.css"><link rel="stylesheet" href="./index_files/swiper.min.css"></head>
+  	
+				
+  	
+  
+		
+  <body class="view view-main">
+    <div class="page-content parent" style="padding-bottom: 149.375px;">
+      <div class="wrap">
+        <div class="top1" style="position:relative;">
+				  <img class="" src="./index_files/y百度搜索落地页1_01.jpg" alt="TT语音，无兄弟，不手游">									
+        	<div class="download" style="position:absolute;width:10%;height:44%;left:87%;top:27%;z-index:999;" ></div>
+        </div>
+
+        <p><img id="__mcenew" src="./index_files/y百度搜索落地页1_02.jpg" alt="" data-id="40289"></p>
+
+      </div>
+
+    </div>
+    <div class="btn-bottom">
+    
+			  <img src="./index_files/y百度搜索落地页1_03.jpg" alt="TT语音，无兄弟，不手游">								
+    			<div class="download" style="position:absolute;width:69%;height:59%;left:15%;top:18%;z-index:999;border:1px solid red;;"></div>
+    </div>
+	
+	<div class="cover"><div class="cover-sub"><div class="cover-sub-content"><div class="img-wrap"><img src="./index_files/arrow.png" alt=""></div> </div></div><p class="">戳右上角，选择<span>在浏览器中打开</span>，即可下载！</p></div>	
+  		
+  <script type="text/javascript" src="./index_files/framework.min.js"></script>
+  <script src="./index_files/uaredirect.js"></script>
+  <script>
+    //get parameters from url: exp. uid
+	$$('.cover').click(function(){
+		$$('.cover').hide();
+	})			
+    function getUrlParam(name) {
+      var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+      var r = window.location.search.substr(1).match(reg);
+      if (r != null)
+        return unescape(r[2]);
+      return null;
+    }
+	var packageChannel = getUrlParam("channel");
+	var guildid = getUrlParam("guild");
+	var from= getUrlParam("from");
+    var kwid = packageChannel?packageChannel.split("_")[1]:'';
+	setTimeout(function(){
+		var pt=	$$('.download').height();
+		$$('.parent').css('paddingBottom',pt+'px');
+	},500)
+	var status = getUrlParam("status");
+	console.log(packageChannel);
+	var ua = navigator.userAgent.toLowerCase();
+	if(status==1){
+		if(myApp.device.android){
+			android();
+		}
+		else if(myApp.device.ios){
+			ios();				  
+		}		
+		else{
+			android();
+		}
+	}
+    $$('.download').click(function(){
+		if(myApp.device.android){
+			android();
+		}
+		else if(myApp.device.ios){
+			ios();				  
+		}		
+		else{
+			android();
+		}
+	})	
+	  
+	function android(){
+			
+		if (ua.match(/MicroMessenger/i) == "micromessenger") {
+			$$('.cover').show();
+		}
+		
+		if(guildid&&!packageChannel){
+			window.location.href='https://d.52tt.com/p/app/GAClient/dl?guild='+guildid;
+		}
+		else if(guildid&&packageChannel){
+			window.location.href='https://d.52tt.com/p/app/GAClient/dl?guild='+guildid+'&channel='+packageChannel;
+		}
+		else if(packageChannel&&!guildid){
+			window.location.href='https://d.52tt.com/tt/'+packageChannel+'/tt.apk';
+		}
+		else{
+			window.location.href='http://cdntt.52tt.com/packages/GAClient/My4yLjFAMzI0/official/tt.apk';	
+		}
+	}
+	function ios(){
+		var url=from+kwid+'&sjump=https%3A%2F%2Fitunes.apple.com%2Fcn%2Fapp%2Fid1012317813%3F%26mt%3D8';
+		if(kwid){
+			window.location.href=url;
+		}
+		
+		else{
+			window.location.href="https://itunes.apple.com/cn/app/tt-yu-yin-shou-ji-you-xi-wan/id1012317813?mt=8";
+		}
+	}		
+  </script>
+  <script src="./index_files/swiper.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container');
+  </script>		
+
+</body></html>
