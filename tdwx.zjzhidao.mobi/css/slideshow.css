@@ -1,0 +1,72 @@
+*,
+::before,
+::after{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;/*兼容移动端主流浏览器*/
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;/*清除移动端点击高亮效果*/
+}
+body{
+    font-family:Microsoft YaHei,sans-serif;/*移动端默认的字体*/
+    font-size: 14px;
+    color: #333;
+}
+ol,ul{
+    list-style: none;
+}
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after{
+    content: "";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.layout{
+    width: 100%;
+    position: relative;
+    margin-top: -283%;
+    left: 0;
+
+}
+.banner{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.banner ul:first-child{
+    width: 1000%;
+    -webkit-transform: translateX(-10%);
+    transform: translateX(-10%);
+}
+.banner ul:first-child li{
+    width: 10%;
+    float: left;
+}
+.banner ul:first-child li a{
+    display: block;
+    width: 100%;
+}
+.banner ul:first-child li a img{
+    width: 100.5%;
+    display: block;
+}
+.banner ul:last-child{
+    position: absolute;
+    bottom: 6px;
+    width: 100%;
+    text-align: center;
+}
+.banner ul:last-child li{
+
+}
+.banner ul:last-child li:first-child{
+    margin-left: 0;
+}
+.banner ul:last-child li.now{
+    background: #fff;
+}

@@ -1,74 +1,52 @@
-
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>七猫精品小说</title>
-<meta name="viewport" content="width=device-width"> 
-<!--
- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" /> -->
-<style>
-.navImage img{
-width:720px;
-height:auto;
-}
-.navImage{
-/* text-align:center; */
-display:inline-block
-/*margin-left:-8px!important; */
-width:100%;			
-}
-body{
-margin:0!important;
-}
-.navImage1 {/* text-align:center; */
-display:inline-block
-/*margin-left:-8px!important; */
-width:100%;			
-}
-</style></head>
-
+	<meta charset="UTF-8">
+	<title>阅读王</title>
+	<meta name="viewport" content="width=device-width"> 
+ 	 <link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
+     <style>
+		.navImage img{
+			width:720px;
+			height:auto;
+			}
+			.navImage{
+			display:inline-block;
+			width:100%;			
+			}
+			body{
+			margin:0!important;
+			}
+     </style>
+</head>
 <body>
-<center>
-<div class="navImage" ><span class="navImage1"><img id="img"  src="images/bg1.jpg" alt="navbar" usemap="#navImg"></span>
-  <map id="navImg" name="navImg">
-    <area shape="rectangle" coords="246,1811,478,1853" onClick="javascript:;" id="download1" title="" alt="" >
-    <area shape="rectangle" coords="247,2164,479,2206" onClick="javascript:;" id="download1" title="" alt="" >
-    <area shape="rectangle" coords="246,2526,478,2568" onClick="javascript:;" id="download1" title="" alt="" >
-  </map>
-</div> 
-<img src="images/bg2.jpg" alt="" width="718" height="95" border="0" usemap="#btn1Map"  style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
-<map name="btn1Map" id="btn1" ><area shape="rect" coords="417,7,709,88" href="javascript:;"></map>
+			<center>
+				<div class="navImage">
+			    <img  src="http://cdn.lyplaaap.cn/yueduys.zjzhidao.mobi/images/4.jpg" alt="navbar" usemap="#imgMap" id="img">
+                <map name="imgMap" class="btnCilck"><area shape="rect" coords="118,1816,604,1929" style="outline:none;" href="javascript:;"><area shape="rect" coords="119,3751,599,3866" style="outline:none;" href="javascript:;"><area shape="rect" coords="185,2878,512,2969" style="outline:none;" href="javascript:;"><area shape="rect" coords="200,2003,527,2094" style="outline:none;" href="javascript:;">
+                  <area shape="rect" coords="413,542,629,602" style="outline:none;" href="javascript:;">
+                </map>
+				</div> 
+			
+         <!--<img src="http://cdn.lyplaaap.cn/xcswys.zjzhidao.mobi/images/bg2.png" alt="" name="download2" border="0" usemap="#download2Map"  id="download2" style="position:fixed;margin:0 auto;bottom:2%;;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
+<map name="download2Map"  class="btnCilck"><area shape="rect" coords="454,25,670,99"  href="javascript:;"></map>-->
+
 </center>
-
-
-
-
 <script>
 
+		var Android="https://download.km.com/book/sc/bookReader-baiduxxlzr20.apk";//安卓下载链接
+		var Ios="";//ios下载链接
 
-	;(function(){
-        document.getElementById("btn1").addEventListener("click", function(){
-            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                window.location.href ="https://download.km.com/book/sc/bookReader-baiduxxlzr20.apk";
-            }else {
-                window.location.href ="https://download.km.com/book/sc/bookReader-baiduxxlzr20.apk";
-            }
-        });
-    })();
-
-;(function(){
-        document.getElementById("navImg").addEventListener("click", function(){
-            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                window.location.href ="https://download.km.com/book/sc/bookReader-baiduxxlzr20.apk";
-            }else {
-                window.location.href ="https://download.km.com/book/sc/bookReader-baiduxxlzr20.apk";
-            }
-        });
-    })();
-
+		var btns = document.getElementsByClassName("btnCilck");
+		for(var i=0;i<btns.length;i++){
+		   btns[i].onclick=function () {
+               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Android;
+               }else {
+                   window.location.href =Android;
+               }
+           }
+		};
 </script>
-
-
 </body>
 </html>

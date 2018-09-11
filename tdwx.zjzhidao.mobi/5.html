@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>塔读</title>
+    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+<div class="header">
+    <div class="header-image">
+        <img src="http://cdn.lyplaaap.cn/tdwx.zjzhidao.mobi/images/bg1.jpg" id="bg1" alt="">
+    </div>
+
+        <div class="layout">
+            <div class="banner">
+                <ul class="clearfix">
+                    <li><a href="javascript:;"><img src="http://cdn.lyplaaap.cn/tdwx.zjzhidao.mobi/images/bg4.jpg"></a></li>
+                    <li><a href="javascript:;"><img src="http://cdn.lyplaaap.cn/tdwx.zjzhidao.mobi/images/bg2.jpg"></a></li>
+                    <li><a href="javascript:;"><img src="http://cdn.lyplaaap.cn/tdwx.zjzhidao.mobi/images/bg3.jpg"></a></li>
+                    <li><a href="javascript:;"><img src="http://cdn.lyplaaap.cn/tdwx.zjzhidao.mobi/images/bg4.jpg"></a></li>
+                    <li><a href="javascript:;"><img src="http://cdn.lyplaaap.cn/tdwx.zjzhidao.mobi/images/bg2.jpg"></a></li>
+                    <li><a href="javascript:;"><img src="http://cdn.lyplaaap.cn/tdwx.zjzhidao.mobi/images/bg3.jpg"></a></li>
+                    <li><a href="javascript:;"><img src="http://cdn.lyplaaap.cn/tdwx.zjzhidao.mobi/images/bg2.jpg"></a></li>
+                </ul>
+                <ul>
+                   <!-- <li class="now"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>-->
+                </ul>
+            </div>
+
+            <div id="btns">
+
+            </div>
+            <div class="logoImg">
+                <img src="http://cdn.lyplaaap.cn/tdwx.zjzhidao.mobi/images/logo.png" alt="">
+            </div>
+
+        </div>
+</div>
+<div style="position: fixed;width: 100%;height: auto;bottom: -1%;left: 0;">
+    <img src="http://cdn.lyplaaap.cn/tdwx.zjzhidao.mobi/images/bg_btn.jpg" style="width: 100%;" alt="">
+    <div class="btnCilck" style="position: absolute;width: 53%;height: 66%;left: 29%;top: 19%;z-index:999999999999999;">
+
+    </div>
+</div>
+<script type="text/javascript" src="js/index.js"></script>
+<script src="js/base.js"></script>
+<script src="js/slideshow.js"></script>
+<script>
+    var Android="http://media9.tadu.com/downloads/android/tadu_android_v5.10_3863.apk";//安卓下载链接
+    var Ios="";//ios下载链接
+
+    var btns = document.getElementsByClassName("btnCilck");
+    for(var i=0;i<btns.length;i++){
+        btns[i].onclick=function () {
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href =Android;
+            }else {
+                window.location.href =Android;
+            }
+        }
+    };
+</script>
+</body>
+</html>
