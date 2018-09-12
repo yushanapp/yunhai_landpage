@@ -1,47 +1,1170 @@
-﻿<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://wf49.aoyingame.com/ -->
+<html lang="en" style="overflow: hidden; height: 100%;">
 <head>
-	<meta charset="UTF-8">
-	<title>约单</title>
-	<meta name="viewport" content="width=device-width"> 
- 	 <link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
-     <style>
-		.navImage img{
-			width:100%;
-			height:auto;
-			}
-			.navImage{
-			display:inline-block;
-			width:100%;			
-			}
-			body{
-			margin:0!important;
-			}
-     </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>约单 - 人人共享，人人约单</title>
+
+    <meta name="keywords" content="滴滴打人  猪八戒  陌陌  微信  Thumbtack TaskRabbits,任务兔子">
+    <meta name="description" content="约单APP是国内最大的时间交易平台，中国版的Thumbtack，您可以出售您的时间，比如可以陪看电影，陪跑步等，同时您也可以提供技能服务，比如上门按摩，模特外拍，瑜伽、外语等培训等。
+比陌陌更容易，比微信更有趣。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="oupengmobile" content="portrait">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <link rel="stylesheet" href="./index_files/number_animate.css">
+    <style type="text/css">
+        html, body {
+            margin: 0;
+            height: 100%;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Microsoft YaHei;
+        }
+
+        body {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            font-size: 62.5%;
+            /*min-width: 60rem;*/
+            min-width: 60rem;
+            font-family: Microsoft Yahei;
+            background: #222;
+        }
+
+        a {
+            text-decoration: none;
+            color: #222222;
+        }
+
+        .section {
+            overflow: hidden;
+            /*background: #222;*/
+        }
+
+        #fp-nav {
+            position: fixed;
+            z-index: 100;
+            margin-top: -32px;
+            top: 50%;
+            opacity: 1;
+            right: 17px;
+        }
+
+        #fp-nav ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        #fp-nav ul li {
+            display: block;
+            width: 14px;
+            height: 13px;
+            margin: 7px;
+            position: relative;
+        }
+
+        #fp-nav ul li a.active span {
+            background: #f66;
+            border: 2px solid #f66;
+        }
+
+        #fp-nav ul li a span {
+            top: 2px;
+            left: 2px;
+            width: 12px;
+            height: 12px;
+            border: 2px solid #ccc;
+            background: #ccc;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .section {
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+        }
+
+        .section0 {
+            text-align: center;
+        }
+
+        .header {
+            background: url("images/header-bg.png");
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        .inner {
+            max-width: 70%;
+            margin: auto;
+            text-align: left;
+            position: relative;
+        }
+
+        .inner2 {
+            max-width: 73%;
+            min-width: 1000px;
+            height: 90%;
+            margin: auto;
+            /*text-align: left;*/
+            position: relative;
+        }
+
+        .inner2_main {
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        .inner2_main h2 {
+            font-size: 24px;
+            line-height: 46px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .inner2_main p {
+            text-align: center;
+            margin: 20px 0 3em 0;
+        }
+
+        .inner2_main p a img {
+            width: 12%;
+        }
+
+        .user_img {
+            width: 100%;
+            text-align: center;
+        }
+
+        .user_img img {
+            width: 65%;
+        }
+
+        .user_img img.new_bj1 {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .user_img img.bj1 {
+            display: none;
+        }
+
+        .header span {
+            float: right;
+            text-align: right;
+        }
+
+        .header span a {
+            color: white;
+            font-size: 1rem;
+            padding: 10px;
+            border: 1px solid transparent;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .header span a:hover {
+            border: 1px solid #fff;
+        }
+
+        .header img {
+            height: 5rem;
+            margin-top: 5px;
+        }
+
+        /*约单导航————移动端 new_*/
+        .iyd_nav {
+            width: 100%;
+            position: relative;
+        }
+
+        .iyd_nav h3 {
+            height: 50px;
+            line-height: 50px;
+            background: #ffffff;
+            text-align: center;
+            font-size: 18px;
+
+        }
+
+        .yd_logo {
+            position: absolute;
+            top: 3px;
+            left: 13px;
+        }
+
+        .yd_logo img {
+            width: 2.2rem;
+            height: 2.2rem;
+        }
+
+        .nav_btn {
+            width: 30px;
+            height: 26px;
+            display: inline-block;
+            background: #ffffff url("images/btn.png") no-repeat;
+            background-size: 75%;
+            background-position: center;
+            position: absolute;
+            top: 12px;
+            right: 25px;
+        }
+
+        .nav_menu {
+            width: 130px;
+            height: auto;
+            border: 1px solid #dddddd;
+            border-radius: 6px;
+            background: #f6f6f6;
+            position: absolute;
+            top: 57px;
+            right: 15px;
+            z-index: 99;
+        }
+
+        .triangle {
+            padding: 10px;
+            background: url("images/triangle.png") no-repeat;
+            background-size: cover 50%;
+            background-position: center;
+            position: absolute;
+            top: -14px;
+            right: 14px;
+            z-index: 80;
+        }
+
+        .nav_menu li a {
+            display: inline-block;
+            width: 80%;
+            font-size: 16px;
+        }
+
+        .about a {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        /*end约单导航————移动端*/
+        .section {
+            width: 100%;
+        }
+
+        .service {
+            width: 45%;
+            height: 45%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .service img {
+            position: absolute;
+        }
+
+        .title {
+            position: absolute;
+            top: 30%;
+            right: 10%;
+            width: 40%;
+        }
+
+        .down {
+            background: url(images/0-download-qrcode.png) left center no-repeat;
+            background-size: auto 100%;
+            width: 270px;
+            height: 100px;
+            /*border: 1px solid red;*/
+            position: absolute;
+            bottom: 25%;
+            right: 18%;
+        }
+
+        .down a {
+            display: block;
+            padding-left: 110px;
+            /*top: 0;*/
+            right: 0;
+            height: 45%;
+            margin-bottom: 3%;
+        }
+
+        .down .android {
+            bottom: 0;
+            /*top:100%;*/
+        }
+
+        .down img {
+            width: 100%;
+            height: 100%
+        }
+
+        .fp-section.fp-table {
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+        }
+
+        .bg .fp-tableCell {
+            /*display: table-cell;*/
+            text-align: center;
+            vertical-align: middle;
+            width: 100%;
+            height: 100%;
+        }
+
+        .bg img {
+            max-width: 100%;
+            max-height: 100%;
+            color: #3a3a3a;
+        }
+
+        .section4 p {
+            position: absolute;
+            color: transparent;
+            /*color: red;*/
+        }
+
+        .m {
+            display: none !important;
+        }
+
+        .c {
+            clear: both;
+            overflow: hidden;
+        }
+
+        .l {
+            height: 100%;
+        }
+
+        /*pc*/
+        @media screen and (min-width: 640px) {
+            .section0 {
+                background: url(images/0-b.jpg) repeat-x;
+                background-size: cover;
+                background-position: center -130px;
+            }
+
+            .sectionnew {
+                background: url(images/new/new_img.jpg) repeat-x;
+                background-size: cover;
+            }
+
+            .section1 {
+                background: url(images/new/service01.jpg) repeat-x;
+                background-size: cover;
+            }
+
+            .section2 {
+                background: url(images/new/service02.jpg) repeat-x;
+                background-size: cover;
+            }
+
+            .section3 {
+                /*background-image: url(images/3-b.png);*/
+                background: url(images/new/service03.jpg) repeat-x;
+                background-size: cover;
+            }
+
+            .section4 {
+                background: url(images/new/service04.jpg) repeat-x;
+                background-size: cover;
+            }
+
+            .iyd_nav {
+                display: none;
+            }
+
+            .down_phone {
+                display: none;
+            }
+
+            .Mid_cont .number {
+                width: 100%;
+            }
+
+            .number_box_new {
+                width: 100%;
+            }
+
+            .number_box_new li {
+                float: left;
+                width: 20%;
+            }
+
+            .number_box_new li .numberpic {
+                width: 85%;
+                background: #fd4f53;
+                border-radius: 10px;
+                margin: 0 auto 20px;
+                padding: 20px 0;
+            }
+
+            .number_box_new li .numberpic img {
+                height: 80px;
+            }
+        }
+
+        /*手机端的适配*/
+        @media screen and (max-width: 640px) {
+            .inner, .inner2, body {
+                width: auto;
+                min-width: 100%;
+                max-width: 100%;
+                text-align: center;
+            }
+
+            .header {
+                height: 48px;
+                line-height: 48px;
+            }
+
+            .section {
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: 100% auto;
+                background-color: #222;
+            }
+
+            .section0 {
+                background-image: url(images/phone/bj1.png);
+                background-size: cover;
+            }
+
+            .shadow_element {
+                display: none;
+            }
+
+            .sectionnew {
+                background-image: url(images/phone/bj2.jpg);
+                background-size: cover;
+            }
+
+            .section1 {
+                background-image: url(images/phone/bj3.jpg);
+                background-size: cover;
+            }
+
+            .section2 {
+                background-image: url(images/phone/bj4.jpg);
+                background-size: cover;
+            }
+
+            .section3 {
+                background-image: url(images/phone/bj5.jpg);
+                background-size: cover;
+            }
+
+            .section4 {
+                background-image: url(images/phone/bj6.jpg);
+                background-size: cover;
+            }
+
+            .pic_q {
+                width: 100%;
+                height: 100%;
+                background-size: 90%;
+                background-position: center 77%;
+                background-repeat: no-repeat;
+            }
+
+            .pic_2 {
+                background-image: url(images/phone/qbj2.png);
+            }
+
+            .pic_3 {
+                background-image: url(images/phone/qbj3.png);
+            }
+
+            .pic_4 {
+                background-image: url(images/phone/qbj4.png);
+            }
+
+            .pic_5 {
+                background-image: url(images/phone/qbj5.png);
+            }
+
+            .pic_6 {
+                position: relative;
+                background-image: url(images/phone/qbj6.png);
+            }
+
+            .pic_6 > .down_phone {
+                position: absolute;
+                bottom: 39%;
+            }
+
+            .ph_copyright {
+                width: 265px;
+                height: 5em;
+                margin-left: -132px;
+                position: absolute;
+                left: 50%;
+                bottom: 3%;
+            }
+
+            .ph_copyright > p {
+                width: 100%;
+                text-align: center;
+                line-height: 22px;
+                font-size: 12px;
+                margin: 0 4%;
+                color: #ffffff;
+            }
+
+            .ph_copyright span {
+                padding: 5px;
+            }
+
+            .Mid_cont {
+                display: none;
+                width: 1200px;
+                height: 500px;
+                margin: 0 auto;
+                color: #FFFFFF;
+            }
+
+            .iyd_nav {
+                display: block;
+            }
+
+            .title {
+                top: 70%;
+                left: 20%;
+                width: 60%;
+            }
+
+            .down {
+                background: transparent;
+                top: 80%;
+                left: 0;
+                display: block;
+                bottom: auto;
+                height: 2rem;
+                width: 100%;
+                text-align: center;
+            }
+
+            .down a {
+                display: inline;
+                padding-left: 0;
+                /*top: 0;*/
+                right: auto;
+                height: 20px;
+                margin-bottom: 0;
+            }
+
+            .down img {
+                width: auto;
+                margin: 2%;
+            }
+
+            .phone {
+                width: 60%;
+                position: absolute;
+                margin: 0 20%;
+                top: 5%;
+            }
+
+            .service {
+                width: 60%;
+                height: 30%;
+                position: absolute;
+                margin: 0 20%;
+                top: 32%;
+            }
+
+            .m {
+                display: block !important;;
+            }
+
+            .b {
+                display: none !important;
+            }
+
+            #fp-nav {
+                display: none;
+            }
+
+            .header span a {
+                padding: 0 3px;
+                font-size: 1.5em;
+                border: none;
+            }
+
+            .header span a:hover {
+                border: none;
+            }
+
+            .header span {
+                float: none;
+            }
+
+            .down {
+                display: none;
+            }
+
+            .down_phone {
+                width: 157px;
+                border-radius: 4px;
+                background: #ff4d4d;
+                position: absolute;
+                bottom: 5%;
+                /*margin: 0 28%;*/
+                left: 50%;
+                margin-left: -78px;
+            }
+
+            .down_phone a {
+                width: 100%;
+                font-size: 14px;
+                line-height: 34px;
+                text-align: center;
+                color: #ffffff;
+                display: inline-block;
+            }
+
+            .inner2_main {
+                margin-top: 3em;
+            }
+
+            .inner2_main h2 {
+                font-size: 20px;
+                line-height: 35px;
+            }
+
+            .inner2_main p a {
+                width: 100%;
+                display: block;
+            }
+
+            .inner2_main p a.a_m {
+                margin-bottom: 10px;
+            }
+
+            .inner2_main p a img {
+                width: 35%;
+            }
+
+            .user_img img {
+                width: 90%;
+            }
+
+            .user_img img.new_bj1 {
+                display: none;
+            }
+
+            .user_img img.bj1 {
+                display: block;
+                margin: 0 auto;
+            }
+
+        }
+
+        @media screen and (max-width: 320px) {
+            .down {
+                top: 18%;
+            }
+
+            .phone {
+                width: 60%;
+                position: absolute;
+                margin: 0 20%;
+                top: 20px;
+            }
+
+            .service {
+                width: 60%;
+                height: 40%;
+                position: absolute;
+                margin: 0 20%;
+                top: 86px;
+            }
+        }
+
+        @media screen and (max-width: 360px) {
+            .down {
+                top: 83%;
+            }
+
+            .phone {
+                width: 50%;
+                margin: 0 25%;
+            }
+        }
+
+        @media screen and (max-height: 450px) {
+            .down {
+                top: 18%;
+            }
+
+            .phone {
+                width: 44%;
+                margin: 0 28%;
+            }
+        }
+
+        @media (device-height: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+            .phone {
+                width: 33%;
+                margin: 0 35%;
+            }
+
+            .service {
+                width: 37%;
+                height: 23%;
+                margin: 0 36%;
+                top: 85px;
+            }
+
+            .title {
+                top: 58%;
+            }
+
+            .down_phone {
+                bottom: 10%;
+            }
+
+            .pic_q {
+                background-size: 70%;
+            }
+
+            .pic_6 {
+                position: relative;
+            }
+
+            .pic_6 > .down_phone {
+                position: absolute;
+                bottom: 35%;
+            }
+
+            .inner2_main h2 {
+                font-size: 18px;
+            }
+
+            .down_phone a {
+                font-size: 12px;
+                line-height: 28px;
+            }
+
+            .inner2_main p {
+                text-align: center;
+                margin: 20px 0 0 0;
+            }
+        }
+
+        @media (device-height: 736px) and (-webkit-min-device-pixel-ratio: 2) {
+            .title {
+                top: 73%;
+            }
+        }
+
+    </style>
+    <script type="text/javascript" src="./index_files/jquery-1.8.3.min.js.下载"></script>
+    <script type="text/javascript" src="./index_files/jquery.fullPage.js.下载"></script>
+    <script type="text/javascript" src="./index_files/jquery.transit.min.js.下载"></script>
+    <script type="text/javascript" src="./index_files/app.js.下载"></script>
+    <script>
+        $(function () {
+            var downdz = {
+                android: "http://cdn.iyuedan.com/apk/YueDan_V3.4.1_YueDan.apk",
+                //ios:"https://itunes.apple.com/cn/app/yue-dan/id1323945074?mt=8"
+                ios: "https://itunes.apple.com/cn/app/id1067234732"
+            }
+            $('#dowebok').fullpage({
+//                sectionsColor: ['#000000', '#394750', '#3a3a3a', '', '#000000'],
+//                continuousVertical: true,
+                loopHorizontal: false,
+                navigation: true,
+                css3: true,
+
+                /*在当前的页面执行函数    添加动画*/
+                afterLoad: function (link, index) {
+                    if (ismobile) $('#section4').remove()
+                    switch (index) {
+                        case  1:
+                            break;
+                        case  2:
+                            var stage_len = $('.number').children('.number_box').children('#stage-1');
+                            var i = 0;
+                            stage_len.each(function () {
+                                $(this).removeClass().addClass("animation");
+                                i++;
+                            });
+                            break;
+                        case  3:
+                            break;
+                        case  4:
+                            break;
+                        case  5:
+                            break;
+                        case  6:
+                            break;
+                        default :
+                            break;
+                    }
+                },
+                /*离开页面执行的函数    删除动画*/
+                onLeave: function (link, index) {
+                    switch (index) {
+                        case  1:
+                            break;
+                        case  2:
+                            var stage_len = $('.number').children('.number_box').children('.animation');
+                            var i = 0;
+                            stage_len.each(function () {
+                                $(this).removeClass("animation");
+                                i++;
+                            });
+                            break;
+                        case  3:
+                            break;
+                        case  4:
+                            break;
+                        case  5:
+                            break;
+                        case  6:
+                            break;
+                        default :
+                            break;
+                    }
+                }
+
+            });
+            (function () {
+                var agent = navigator.userAgent;
+                if (agent.match(/(iphone|ipod|ipad)/ig)) {
+                    //$('.android').hide();
+                    document.title = '约单-官网';
+                }
+                else if (agent.match(/android/ig)) {
+                    //$('.ios').hide();
+                    document.title = '约单-官网';
+                    var url = $('.android').attr('href') + '?from=android_mobile_homepage';
+                    $('.android').attr('href', url);
+                }
+            })();
+            var nav_menu = $('.nav_menu');
+            $('.nav_btn').click(function () {
+                nav_menu.show();
+                /*node.is(':visible')*/
+            });
+            nav_menu.find('li').click(function () {
+                $('.nav_menu').hide();
+            });
+        });
+    </script>
 </head>
-<body>
-			<center>
-				<div class="navImage" style="position:relative;">
-				  <img id="img"  src="http://cdn.lyplaaap.cn/yd.ayushan.com/images/bg1.png" alt="navbar" usemap="#navImg">
-					<div style="position:absolute;width:18%;height:0.8%;left:41%;top:3.9%;z-index:999;border:" class="btnCilck"></div>
-			  </div> 
-			<!--<img src="images/bg2.png" class="btnCilck" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" alt=""  id="download2" onClick="javascript:;" >-->
-			</center>
-<script>
 
-		var Android="https://lnk0.com/Idw1sc";//安卓下载链接
-		var Ios="https://lnk0.com/Idw1sc";//ios下载链接
+<body class="fp-viewing-2" style="overflow: hidden; height: 100%; font-size: 100%;">
+<!--[if lte IE 8]>
+<style type="text/css">
+    #errorie, #errorie div {
+        display: block;
+    }
 
-		var btns = document.getElementsByClassName("btnCilck");
-		for(var i=0;i<btns.length;i++){
-		   btns[i].onclick=function () {
-               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                   window.location.href =Ios;
-               }else {
-                   window.location.href =Android;
-               }
-           }
-		};
-</script>
+    #errorie {
+        padding: 30px 0;
+        background: #FCF8E3;
+    }
+
+    #errorie div {
+        width: 900px;
+        margin: 0 auto;
+        line-height: 26px;
+        color: orange;
+        font-size: 18px;
+    }
+
+    #errorie div a {
+        color: #459f79;
+        font-size: 18px;
+    }
+
+    #errorie div a:hover {
+        text-decoration: underline;
+    }
+
+    #errorie div a span {
+        font-size: 30px;
+        color: red;
+    }
+
+    #dowebok, #fp-nav {
+        display: none;
+    }
+</style>
+
+<div id="errorie">
+    <div>
+        您所使用的IE浏览器版本过旧，为了您获得更好的浏览体验，请升级您的浏览器到 IE9 以上版本，
+        <a target="_blank" href="http://windows.microsoft.com/zh-cn/internet-explorer">点击升级</a>
+    </div>
+
+    <div>
+        <a href="https://lnk0.com/Idw1sc" target="_blank">下载最新版<span>约单APP</span></a>
+    </div>
+</div>
+<![endif]-->
+<div id="dowebok" class="fullpage-wrapper"
+     style="height: 100%; position: relative; touch-action: none; transform: translate3d(0px, -1788px, 0px); transition: all 700ms ease 0s;">
+    <div class="section section0 fp-section fp-table active" style="height: 894px;">
+        <div class="fp-tableCell" style="height: 894px;">
+            <div class="header" style="position: relative;">
+                <img src="images/logo_ys.png" style="width: 48px;height: auto;position: absolute;left: 0;top: 0;" alt="">
+                <div class="inner">
+
+                    <a href="javascript:void (0)" class="b"><img src="./index_files/logo.png"
+                                                                                  alt="约单APP"></a>
+                    <div class="iyd_nav">
+                        <a class="yd_logo" href="javascript:void (0)"><img src="./index_files/logo.png" alt=""></a>
+                        <h3>约单首页</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="inner2">
+                <div class="inner2_main">
+                    <h2>中国优秀的个人服务交易平台</h2>
+                    <h2>共享经济的倡导者</h2>
+                    <p>
+                        <a class="a_m" href="https://lnk0.com/Idw1sc"><img
+                                src="./index_files/0-download-android.png" alt=""></a>
+                        <a href="https://lnk0.com/Idw1sc"><img
+                                src="./index_files/0-download-ios.png" alt=""></a>
+                    </p>
+                    <div class="user_img">
+                        <img class="new_bj1" src="./index_files/new_bj1.png">
+                        <img class="bj1" src="./index_files/qbj1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section bg sectionnew fp-section fp-table" style="height: 894px;text-align: center;">
+        <div class="fp-tableCell" style="height: 894px;width:100%!important;max-width: 100%;argin: 0 auto;">
+            <div class="pic_q pic_2"></div>
+            <div class="Mid_cont" style="width: 1200px;height: 500px;margin: 0 auto;color: #FFFFFF;">
+                <h1>数据见证我们的价值</h1>
+                <h3><i></i>&nbsp;&nbsp;&nbsp;共享经济的领航者&nbsp;&nbsp;&nbsp;<i></i></h3>
+                <div class="number" style="margin-top:100px;">
+                    <ul class="number_box_new">
+                        <li>
+                            <div class="numberpic">
+                                <img src="./index_files/300.png" alt="">
+                            </div>
+                            <div class="numb_text">
+                                <h4>300个品类</h4>
+                                <p>数百种品类可供选择<br>你想要的这里都有</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="numberpic">
+                                <img src="./index_files/700w.png" alt="">
+                            </div>
+                            <div class="numb_text">
+                                <h4>700万技能达人</h4>
+                                <p>汇集400个城市技能达人<br>身处何地都能乐享服务</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="numberpic">
+                                <img src="./index_files/6000w.png" alt="">
+                            </div>
+                            <div class="numb_text">
+                                <h4>6000万用户</h4>
+                                <p>按需定制<br>一分钟帮你找到对的人</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="numberpic">
+                                <img src="./index_files/1ym.png" alt="">
+                            </div>
+                            <div class="numb_text">
+                                <h4>年1亿+订单</h4>
+                                <p>智能匹配需求订单<br>多个服务者任你挑选</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="numberpic">
+                                <img src="./index_files/600y.png" alt="">
+                            </div>
+                            <div class="numb_text">
+                                <h4>年600亿撮合金额</h4>
+                                <p>年撮合交易金额200亿<br>互联网共享经济倡导者</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--
+                            <div class="buttom_title"><img src="images/new/title.png" alt="" style="width: 25%"/></div>
+                -->
+            </div>
+        </div>
+    </div>
+    <div class="section bg section1 fp-section fp-table " style="height: 894px;">
+        <div class="fp-tableCell" style="height: 894px;">
+            <div class="pic_q pic_3"></div>
+
+            <div class="Mid_cont Mid_cont01 shadow_element">
+                <h1>他们都在这里···</h1>
+                <div class="service_provider">
+                    <div class="service_man">
+                        <div class="service_box">
+                            <div class="service_pic" style="background-image: url(images/user/01s.jpg)"></div>
+                            <h5>小北/知名健身教练</h5>
+                            <p>
+                                遇见他之后<br>
+                                让我懂得健身不光要掌握方法<br>
+                                更要变成一种习惯
+                            </p>
+                        </div>
+                        <div class="service_box">
+                            <div class="service_pic" style="background-image: url(images/user/02s.jpg)"></div>
+                            <h5>张森/跑步激励师</h5>
+                            <p>
+                                遇见他之后<br>
+                                我才知道漫漫长路<br>
+                                他的鼓励对我多么重要
+                            </p>
+                        </div>
+                        <div class="service_box">
+                            <div class="service_pic" style="background-image: url(images/user/03s.jpg)"></div>
+                            <h5>Alice/摄影达人</h5>
+                            <p>
+                                遇见她之后<br>
+                                让我更有自信拿起相机<br>
+                                去捕捉那一瞬间的美好
+
+                            </p>
+                        </div>
+                        <div class="service_box">
+                            <div class="service_pic" style="background-image: url(images/user/04s.jpg)"></div>
+                            <h5>阿雅/推拿专业3年经验</h5>
+                            <p>
+                                遇见她之后<br>
+                                肩颈酸痛好多了<br>
+                                让我能更好的面对繁忙工作
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="service_man">
+                        <div class="service_box">
+                            <div class="service_pic" style="background-image: url(images/user/05s.jpg)"></div>
+                            <h5>苏妃/产后瑜伽教练</h5>
+                            <p>
+                                遇见她之后<br>
+                                让我产后六个月<br>
+                                就恢复了窈窕好身材
+
+                            </p>
+                        </div>
+                        <div class="service_box">
+                            <div class="service_pic" style="background-image: url(images/user/06s.jpg)"></div>
+                            <h5>昊楠/兼职教练</h5>
+                            <p>
+                                遇见他之后<br>
+                                我才鼓起勇气踏上雪板<br>
+                                享受驰骋而下的乐趣
+                            </p>
+                        </div>
+                        <div class="service_box">
+                            <div class="service_pic" style="background-image: url(images/user/07s.jpg)"></div>
+                            <h5>司机老张/兼职家庭大厨</h5>
+                            <p>
+                                遇见他之后<br>
+                                让身处异乡的我<br>
+                                也能吃出家的味道
+                            </p>
+                        </div>
+                        <div class="service_box">
+                            <div class="service_pic" style="background-image: url(images/user/08s.jpg)"></div>
+                            <h5>谭教练/网球王子</h5>
+                            <p>
+                                遇见他之后<br>
+                                我终于体会到每一拍漂亮击球<br>
+                                后的喜悦和成就感
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section bg section2 fp-section fp-table" style="height: 894px;">
+        <div class="fp-tableCell" style="height: 894px;">
+            <div class="pic_q pic_4"></div>
+            <div class="Mid_cont shadow_element">
+                <h1>快速找到附近的服务者</h1>
+                <div class="service_man service_n n01_bj">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section bg section3 fp-section fp-table" style="height: 894px;">
+        <div class="fp-tableCell" style="height: 894px;">
+            <div class="pic_q pic_5"></div>
+            <div class="Mid_cont shadow_element">
+                <!--<h1>创新高效的服务者抢单模式</h1>-->
+                <h1>有效满足个性化需求,让服务响应更及时</h1>
+                <div class="service_man service_n n02_bj">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section bg section4 fp-section fp-table" id="section4" style="height: 894px;">
+        <div class="fp-tableCell" style="height: 894px;">
+            <div class="pic_q pic_6">
+                <div class="down_phone">
+                    <a href="http://cdn.iyuedan.com/apk/yuedan_tuiguang_0058.apk">立即下载</a>
+                </div>
+                <div class="ph_copyright">
+                    <!-- <p>津ICP备17004910号</p><br/> -->
+                    <span></span> <br>
+                    <p>北京智投智道投资咨询有限公司</p>
+                </div>
+            </div>
+            <div class="Mid_cont shadow_element">
+                <h2>人人共享，人人约单</h2>
+                <div class="footer_box">
+                    <div class="footer_phone" style="margin: 0 auto;position: static;background-position:center"></div>
+                </div>
+                <!-- <div class="copy_text" style="color:gray"></div>-->
+                <!-- <div class="copy_text">津ICP备17004910号</div> -->
+                <div class="copy_text">北京智投智道投资咨询有限公司</div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cspan style='display:none' id='cnzz_stat_icon_1260446014'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1260446014%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+<span style="display:none" id="cnzz_stat_icon_1260446014"><a
+        href="http://www.cnzz.com/stat/website.php?web_id=1260446014" target="_blank" title="站长统计"><img border="0"
+                                                                                                        hspace="0"
+                                                                                                        vspace="0"
+                                                                                                        src="./index_files/pic1.gif"></a></span>
+<script src="./index_files/z_stat.php" type="text/javascript"></script>
+<script src="./index_files/core.php" charset="utf-8" type="text/javascript"></script>
+
+
+<div id="fp-nav" class="right" style="color: rgb(0, 0, 0); margin-top: -63.5px;">
+    <ul>
+       <!-- <li><a href="http://wf49.aoyingame.com/#" class=""><span></span></a></li>
+        <li><a href="http://wf49.aoyingame.com/#" class=""><span></span></a></li>
+        <li><a href="http://wf49.aoyingame.com/#" class="active"><span></span></a></li>
+        <li><a href="http://wf49.aoyingame.com/#" class=""><span></span></a></li>
+        <li><a href="http://wf49.aoyingame.com/#" class=""><span></span></a></li>
+        <li><a href="http://wf49.aoyingame.com/#" class=""><span></span></a></li>-->
+    </ul>
+</div>
+
 </body>
 </html>
