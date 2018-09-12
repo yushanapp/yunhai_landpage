@@ -1,0 +1,1370 @@
+﻿html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    font-family: Microsoft Yahei;
+    font: inherit;
+    font-size: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*添加新的*/
+.Mid_cont,.Mid_cont01{
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    color: #FFFFFF;
+}
+.Mid_cont01{
+    height: 555px;
+}
+.Mid_cont h1,.Mid_cont h2{
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing:5px;
+    color: #fdfdfd;
+}
+.Mid_cont h2{
+    font-size: 20px;
+}
+.Mid_cont p{
+    font-size: 16px;
+    line-height: 40px;
+}
+.Mid_cont h3{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    letter-spacing:3px;
+}
+.Mid_cont h3 i{
+    background: url("../images/new/xian.png");
+    background-size: cover;
+    padding: 1px 40px;
+}
+.Mid_cont .radius_btn{
+    width: 110px;
+    font-size: 16px;
+    display: block;
+    border: 2px solid #eeeeee;
+    border-radius: 30px;
+    line-height: 32px;
+    margin: 0 auto;
+    background: rgba(141, 141, 141, 0.10);
+}
+.Mid_cont .radius_btn:hover{border: 2px solid #ffffff;background: rgba(141, 141, 141, 0.20);}
+.Mid_cont span a{color: #eaeaea;letter-spacing:1px;}
+.Mid_cont span a:hover{color: #ffffff;}
+.Mid_cont .number{
+    /*border: 1px solid #FFFFFF;*/
+    width: 90%;
+    margin: 0 auto;
+}
+.Mid_cont .number{
+    margin-top: 30px;
+}
+.Mid_cont .buttom_title{margin-top: 80px;}
+/*.Mid_cont .buttom_title>img{width: 15%;}*/
+.number01{display: table-row;}
+.number_box{display: table-cell;width: 210px;/*background: #0163a0;border-right: 1px solid #ffffff;*/}
+/*容器的宽度*/
+.number01{width: 210px;}
+.number02{width: 200px;}
+.number03{width: 260px;}
+.number04{width: 246px;}
+.number05{}
+
+.numb_text{}
+.numb_text h4{font-size: 18px;font-weight: bold;line-height: 40px;letter-spacing:2px;}
+.numb_text p{line-height: 26px;letter-spacing:1px;}
+
+
+
+
+
+#stage-1 .stage-content {
+    /*width: 500px;
+    height: 500px;*/
+    /*margin:60px auto 0 auto;*/
+}
+.stage-1-icon {
+    height: 130px;
+    position: relative;
+
+}
+/*容器内部图片的定位*/
+.stage-1-icon1{left: 40%;margin-left: -50px; width: 100px;}
+.stage-1-icon2{left: 50%;margin-left: -90px; width: 140px;}
+.stage-1-icon3{left: 15%;margin-left: -15px;}
+.stage-1-icon4{left: 10%;margin-left: -10px;}
+.stage-1-icon5{left: 20%;margin-left: -20px;}
+
+.stage-1-icon-top1,.stage-1-icon-top2,.stage-1-icon-top3,.stage-1-icon-top4,.stage-1-icon-top5,.stage-1-icon-bottom1,.stage-1-icon-bottom2,.stage-1-icon-bottom3,.stage-1-icon-bottom4,.stage-1-icon-bottom5 {
+    position: absolute;
+    left: 0;
+    background-color: #fd4f53;
+    background-repeat: no-repeat;
+}
+/*图片的宽度*/
+.stage-1-icon-top1,.stage-1-icon-bottom1{width: 120px;}
+.stage-1-icon-top2,.stage-1-icon-bottom2{width: 150px;}
+.stage-1-icon-top3,.stage-1-icon-bottom3{width: 188px;}
+.stage-1-icon-top4,.stage-1-icon-bottom4{width: 188px;}
+.stage-1-icon-top5,.stage-1-icon-bottom5{width: 150px;}
+
+.stage-1-icon-top {
+    height: 60px;/*数字的高度*/
+    padding: 10px 10px 0;
+    top: 0; /*上半截数字的位置*/
+    background-position: center 10px;
+    transform-origin: center bottom;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.stage-1-icon-bottom {
+    height: 50px;/*数字的高度*/
+    top: 60px;/*下半截数字的位置*/
+    padding: 0 10px 0px;
+    background-position: center -50px;
+    transform-origin: center top;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/*number01*/
+.bj_numb1-1 .stage-1-icon-top ,.bj_numb1-1 .stage-1-icon-bottom {
+    z-index: 7;
+    background-image: url(../images/image/1-594.png);
+}
+.bj_numb1-2 .stage-1-icon-top,.bj_numb1-2 .stage-1-icon-bottom {
+    z-index: 6;
+    background-image: url(../images/image/1-595.png)
+}
+.bj_numb1-3 .stage-1-icon-top,.bj_numb1-3 .stage-1-icon-bottom {
+    z-index: 5;
+    background-image: url(../images/image/1-596.png)
+}
+.bj_numb1-4 .stage-1-icon-top,.bj_numb1-4 .stage-1-icon-bottom {
+    z-index: 4;
+    background-image: url(../images/image/1-597.png)
+}
+.bj_numb1-5 .stage-1-icon-top,.bj_numb1-5 .stage-1-icon-bottom {
+    z-index: 3;
+    background-image: url(../images/image/1-598.png)
+}
+.bj_numb1-6 .stage-1-icon-top,.bj_numb1-6 .stage-1-icon-bottom {
+    z-index: 2;
+    background-image: url(../images/image/1-599.png)
+}
+.bj_numb1-7 .stage-1-icon-top,.bj_numb1-7 .stage-1-icon-bottom {
+    z-index: 1;
+    background-image: url(../images/image/1-600.png)
+}
+
+/*number02*/
+.bj_numb2-1 .stage-1-icon-top ,.bj_numb2-1 .stage-1-icon-bottom {
+    z-index: 7;
+    background-image: url(../images/image/2-394.png);
+}
+.bj_numb2-2 .stage-1-icon-top,.bj_numb2-2 .stage-1-icon-bottom {
+    z-index: 6;
+    background-image: url(../images/image/2-395.png)
+}
+.bj_numb2-3 .stage-1-icon-top,.bj_numb2-3 .stage-1-icon-bottom {
+    z-index: 5;
+    background-image: url(../images/image/2-396.png)
+}
+.bj_numb2-4 .stage-1-icon-top,.bj_numb2-4 .stage-1-icon-bottom {
+    z-index: 4;
+    background-image: url(../images/image/2-397.png)
+}
+.bj_numb2-5 .stage-1-icon-top,.bj_numb2-5 .stage-1-icon-bottom {
+    z-index: 3;
+    background-image: url(../images/image/2-398.png)
+}
+.bj_numb2-6 .stage-1-icon-top,.bj_numb2-6 .stage-1-icon-bottom {
+    z-index: 2;
+    background-image: url(../images/image/2-399.png)
+}
+.bj_numb2-7 .stage-1-icon-top,.bj_numb2-7 .stage-1-icon-bottom {
+    z-index: 1;
+    background-image: url(../images/image/2-400.png)
+}
+
+/*number03*/
+.bj_numb3-1 .stage-1-icon-top ,.bj_numb3-1 .stage-1-icon-bottom {
+    z-index: 7;
+    background-image: url(../images/image/4-2994.png);
+}
+.bj_numb3-2 .stage-1-icon-top,.bj_numb3-2 .stage-1-icon-bottom {
+    z-index: 6;
+    background-image: url(../images/image/4-2995.png)
+}
+.bj_numb3-3 .stage-1-icon-top,.bj_numb3-3 .stage-1-icon-bottom {
+    z-index: 5;
+    background-image: url(../images/image/4-2996.png)
+}
+.bj_numb3-4 .stage-1-icon-top,.bj_numb3-4 .stage-1-icon-bottom {
+    z-index: 4;
+    background-image: url(../images/image/4-2997.png)
+}
+.bj_numb3-5 .stage-1-icon-top,.bj_numb3-5 .stage-1-icon-bottom {
+    z-index: 3;
+    background-image: url(../images/image/4-2998.png)
+}
+.bj_numb3-6 .stage-1-icon-top,.bj_numb3-6 .stage-1-icon-bottom {
+    z-index: 2;
+    background-image: url(../images/image/4-2999.png)
+}
+.bj_numb3-7 .stage-1-icon-top,.bj_numb3-7 .stage-1-icon-bottom {
+    z-index: 1;
+    background-image: url(../images/image/4-3000.png)
+}
+
+/*number04*/
+.bj_numb4-1 .stage-1-icon-top ,.bj_numb4-1 .stage-1-icon-bottom {
+    z-index: 7;
+    background-image: url(../images/image/4-2994.png);
+}
+.bj_numb4-2 .stage-1-icon-top,.bj_numb4-2 .stage-1-icon-bottom {
+    z-index: 6;
+    background-image: url(../images/image/4-2995.png)
+}
+.bj_numb4-3 .stage-1-icon-top,.bj_numb4-3 .stage-1-icon-bottom {
+    z-index: 5;
+    background-image: url(../images/image/4-2996.png)
+}
+.bj_numb4-4 .stage-1-icon-top,.bj_numb4-4 .stage-1-icon-bottom {
+    z-index: 4;
+    background-image: url(../images/image/4-2997.png)
+}
+.bj_numb4-5 .stage-1-icon-top,.bj_numb4-5 .stage-1-icon-bottom {
+    z-index: 3;
+    background-image: url(../images/image/4-2998.png)
+}
+.bj_numb4-6 .stage-1-icon-top,.bj_numb4-6 .stage-1-icon-bottom {
+    z-index: 2;
+    background-image: url(../images/image/4-2999.png)
+}
+.bj_numb4-7 .stage-1-icon-top,.bj_numb4-7 .stage-1-icon-bottom {
+    z-index: 1;
+    background-image: url(../images/image/4-3000.png)
+}
+
+/*number05*/
+.bj_numb5-1 .stage-1-icon-top ,.bj_numb5-1 .stage-1-icon-bottom {
+    z-index: 7;
+    background-image: url(../images/image/5-194.png);
+}
+.bj_numb5-2 .stage-1-icon-top,.bj_numb5-2 .stage-1-icon-bottom {
+    z-index: 6;
+    background-image: url(../images/image/5-195.png)
+}
+.bj_numb5-3 .stage-1-icon-top,.bj_numb5-3 .stage-1-icon-bottom {
+    z-index: 5;
+    background-image: url(../images/image/5-196.png)
+}
+.bj_numb5-4 .stage-1-icon-top,.bj_numb5-4 .stage-1-icon-bottom {
+    z-index: 4;
+    background-image: url(../images/image/5-197.png)
+}
+.bj_numb5-5 .stage-1-icon-top,.bj_numb5-5 .stage-1-icon-bottom {
+    z-index: 3;
+    background-image: url(../images/image/5-198.png)
+}
+.bj_numb5-6 .stage-1-icon-top,.bj_numb5-6 .stage-1-icon-bottom {
+    z-index: 2;
+    background-image: url(../images/image/5-199.png)
+}
+.bj_numb5-7 .stage-1-icon-top,.bj_numb5-7 .stage-1-icon-bottom {
+    z-index: 1;
+    background-image: url(../images/image/5-200.png)
+}
+
+
+
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadein{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadein{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-ms-keyframes fadein{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-o-keyframes fadein{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes fadeout{
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-moz-keyframes fadeout{
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-ms-keyframes fadeout{
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-o-keyframes fadeout{
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes first-1 {
+    0% {
+        /*top: 38.57%;*/
+        opacity: 0;
+        /*transform: scale(0.1);*/
+    }
+    100% {
+        /*top: 38.57%;*/
+        opacity: 1;
+        /*transform: scale(1);*/
+    }
+}
+@-webkit-keyframes first-1{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes first-1{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-ms-keyframes first-1{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-o-keyframes first-1{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*
+@keyframes first-2 {
+    0% {
+        */
+/*top: 38.57%;*//*
+
+    }
+    100% {
+        */
+/*top: 0;*//*
+
+    }
+}
+*/
+
+@keyframes flipover-top {
+    0% {
+        z-index: 8;
+        transform: rotateX(0);
+    }
+    50% {
+        z-index: 8;
+        transform: rotateX(-90deg);
+    }
+    51% {
+        z-index: 7;
+        opacity: 1;
+    }
+    100% {
+        z-index: 7;
+        opacity: 0;
+        transform: rotateX(-180deg);
+    }
+}
+@-webkit-keyframes flipover-top{
+    0% {
+        z-index: 8;
+        transform: rotateX(0);
+    }
+    50% {
+        z-index: 8;
+        transform: rotateX(-90deg);
+    }
+    51% {
+        z-index: 7;
+        opacity: 1;
+    }
+    100% {
+        z-index: 7;
+        opacity: 0;
+        transform: rotateX(-180deg);
+    }
+}
+@-moz-keyframes flipover-top{
+    0% {
+        z-index: 8;
+        transform: rotateX(0);
+    }
+    50% {
+        z-index: 8;
+        transform: rotateX(-90deg);
+    }
+    51% {
+        z-index: 7;
+        opacity: 1;
+    }
+    100% {
+        z-index: 7;
+        opacity: 0;
+        transform: rotateX(-180deg);
+    }
+}
+@-ms-keyframes flipover-top {
+    0% {
+        z-index: 8;
+        transform: rotateX(0);
+    }
+    50% {
+        z-index: 8;
+        transform: rotateX(-90deg);
+    }
+    51% {
+        z-index: 7;
+        opacity: 1;
+    }
+    100% {
+        z-index: 7;
+        opacity: 0;
+        transform: rotateX(-180deg);
+    }
+}
+@-o-keyframes flipover-top {
+    0% {
+        z-index: 8;
+        transform: rotateX(0);
+    }
+    50% {
+        z-index: 8;
+        transform: rotateX(-90deg);
+    }
+    51% {
+        z-index: 7;
+        opacity: 1;
+    }
+    100% {
+        z-index: 7;
+        opacity: 0;
+        transform: rotateX(-180deg);
+    }
+}
+
+
+@keyframes flipover-bottom {
+    0% {
+        z-index: 7;
+        /*background-color: #ff3492;*/
+        transform: rotateX(180deg);
+    }
+    50% {
+        z-index: 7;
+        /*background-color: #ff3492;*/
+        transform: rotateX(90deg);
+    }
+    51% {
+        z-index: 8;
+    }
+    100% {
+        z-index: 8;
+        /*background-color: #ff3492;*/
+        transform: rotateX(0);
+    }
+}
+@-webkit-keyframes flipover-bottom {
+    0% {
+        z-index: 7;
+        transform: rotateX(180deg);
+    }
+    50% {
+        z-index: 7;
+        transform: rotateX(90deg);
+    }
+    51% {
+        z-index: 8;
+    }
+    100% {
+        z-index: 8;
+        transform: rotateX(0);
+    }
+}
+@-moz-keyframes flipover-bottom {
+    0% {
+        z-index: 7;
+        transform: rotateX(180deg);
+    }
+    50% {
+        z-index: 7;
+        transform: rotateX(90deg);
+    }
+    51% {
+        z-index: 8;
+    }
+    100% {
+        z-index: 8;
+        transform: rotateX(0);
+    }
+}
+@-ms-keyframes flipover-bottom {
+    0% {
+        z-index: 7;
+        transform: rotateX(180deg);
+    }
+    50% {
+        z-index: 7;
+        transform: rotateX(90deg);
+    }
+    51% {
+        z-index: 8;
+    }
+    100% {
+        z-index: 8;
+        transform: rotateX(0);
+    }
+}
+@-o-keyframes flipover-bottom {
+    0% {
+        z-index: 7;
+        transform: rotateX(180deg);
+    }
+    50% {
+        z-index: 7;
+        transform: rotateX(90deg);
+    }
+    51% {
+        z-index: 8;
+    }
+    100% {
+        z-index: 8;
+        transform: rotateX(0);
+    }
+}
+
+@keyframes fadein-from-bottom {
+    0% {
+        opacity: 0;
+        transform: translateY(300px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@-webkit-keyframes fadein-from-bottom {
+    0% {
+        opacity: 0;
+        transform: translateY(300px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@-moz-keyframes fadein-from-bottom {
+    0% {
+        opacity: 0;
+        transform: translateY(300px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@-ms-keyframes fadein-from-bottom {
+    0% {
+        opacity: 0;
+        transform: translateY(300px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@-o-keyframes fadein-from-bottom {
+    0% {
+        opacity: 0;
+        transform: translateY(300px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#stage-1.stage-state-default {
+    z-index: 1
+}
+/*#stage-1.stage-state-default .stage-1-icon {
+    opacity: 0;
+    animation: first-1 .20s ease-out .6s 1 forwards, first-2 .5s ease-out 2.7s 1 forwards
+}*/
+#stage-1.stage-state-default .stage-1-icon-bottom {
+    -webkit-transform: translateX(0) translateY(0) translateZ(0) rotateX(180deg) rotateY(0) rotateZ(0) rotate(0) scale(1);
+    -moz-transform: translateX(0) translateY(0) translateZ(0) rotateX(180deg) rotateY(0) rotateZ(0) rotate(0) scale(1);
+    -ms-transform: translateX(0) translateY(0) translateZ(0) rotateX(180deg) rotateY(0) rotateZ(0) rotate(0) scale(1);
+    -o-transform: translateX(0) translateY(0) translateZ(0) rotateX(180deg) rotateY(0) rotateZ(0) rotate(0) scale(1);
+    transform: translateX(0) translateY(0) translateZ(0) rotateX(180deg) rotateY(0) rotateZ(0) rotate(0) scale(1);
+}
+#stage-1.stage-state-default .stage-1-icon-1 .stage-1-icon-bottom {
+    -webkit-transform: translateX(0) translateY(0) translateZ(0) rotateX(0) rotateY(0) rotateZ(0) rotate(0) scale(1);
+    -moz-transform: translateX(0) translateY(0) translateZ(0) rotateX(0) rotateY(0) rotateZ(0) rotate(0) scale(1);
+    -ms-transform: translateX(0) translateY(0) translateZ(0) rotateX(0) rotateY(0) rotateZ(0) rotate(0) scale(1);
+    -o-transform: translateX(0) translateY(0) translateZ(0) rotateX(0) rotateY(0) rotateZ(0) rotate(0) scale(1);
+    transform: translateX(0) translateY(0) translateZ(0) rotateX(0) rotateY(0) rotateZ(0) rotate(0) scale(1);
+}
+
+/*动画时间*/
+/*01*/
+.animation .stage-content>ul .stage-1-icon-1 .stage-1-icon-top1 {
+    -webkit-animation: flipover-top .15s linear 1.2s 1 normal forwards;
+    -moz-animation: flipover-top .15s linear 1.2s 1 normal forwards;
+    -ms-animation: flipover-top .15s linear 1.2s 1 normal forwards;
+    -o-animation: flipover-top .15s linear 1.2s 1 normal forwards;
+    animation: flipover-top .15s linear 1.2s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-2 .stage-1-icon-bottom1 {
+    -webkit-animation: flipover-bottom .15s linear 1.2s 1 normal forwards;
+    -moz-animation: flipover-bottom .15s linear 1.2s 1 normal forwards;
+    -ms-animation: flipover-bottom .15s linear 1.2s 1 normal forwards;
+    -o-animation: flipover-bottom .15s linear 1.2s 1 normal forwards;
+    animation: flipover-bottom .15s linear 1.2s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-2 .stage-1-icon-top1 {
+    -webkit-animation: flipover-top .15s linear 1.3499999999999999s 1 normal forwards;
+    -moz-animation: flipover-top .15s linear 1.3499999999999999s 1 normal forwards;
+    -ms-animation: flipover-top .15s linear 1.3499999999999999s 1 normal forwards;
+    -o-animation: flipover-top .15s linear 1.3499999999999999s 1 normal forwards;
+    animation: flipover-top .15s linear 1.3499999999999999s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-3 .stage-1-icon-bottom1 {
+    -webkit-animation: flipover-bottom .15s linear 1.3499999999999999s 1 normal forwards;
+    -moz-animation: flipover-bottom .15s linear 1.3499999999999999s 1 normal forwards;
+    -ms-animation: flipover-bottom .15s linear 1.3499999999999999s 1 normal forwards;
+    -o-animation: flipover-bottom .15s linear 1.3499999999999999s 1 normal forwards;
+    animation: flipover-bottom .15s linear 1.3499999999999999s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-3 .stage-1-icon-top1 {
+    -webkit-animation: flipover-top .15s linear 1.4999999999999998s 1 normal forwards;
+    -moz-animation: flipover-top .15s linear 1.4999999999999998s 1 normal forwards;
+    -ms-animation: flipover-top .15s linear 1.4999999999999998s 1 normal forwards;
+    -o-animation: flipover-top .15s linear 1.4999999999999998s 1 normal forwards;
+    animation: flipover-top .15s linear 1.4999999999999998s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-4 .stage-1-icon-bottom1 {
+    -webkit-animation: flipover-bottom .15s linear 1.4999999999999998s 1 normal forwards;
+    -moz-animation: flipover-bottom .15s linear 1.4999999999999998s 1 normal forwards;
+    -ms-animation: flipover-bottom .15s linear 1.4999999999999998s 1 normal forwards;
+    -o-animation: flipover-bottom .15s linear 1.4999999999999998s 1 normal forwards;
+    animation: flipover-bottom .15s linear 1.4999999999999998s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-4 .stage-1-icon-top1 {
+    -webkit-animation: flipover-top .2s linear 1.6499999999999997s 1 normal forwards;
+    -moz-animation: flipover-top .2s linear 1.6499999999999997s 1 normal forwards;
+    -ms-animation: flipover-top .2s linear 1.6499999999999997s 1 normal forwards;
+    -o-animation: flipover-top .2s linear 1.6499999999999997s 1 normal forwards;
+    animation: flipover-top .2s linear 1.6499999999999997s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-5 .stage-1-icon-bottom1 {
+    -webkit-animation: flipover-bottom .2s linear 1.6499999999999997s 1 normal forwards;
+    -moz-animation: flipover-bottom .2s linear 1.6499999999999997s 1 normal forwards;
+    -ms-animation: flipover-bottom .2s linear 1.6499999999999997s 1 normal forwards;
+    -o-animation: flipover-bottom .2s linear 1.6499999999999997s 1 normal forwards;
+    animation: flipover-bottom .2s linear 1.6499999999999997s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-5 .stage-1-icon-top1 {
+    -webkit-animation: flipover-top .35s linear 1.8499999999999996s 1 normal forwards;
+    -moz-animation: flipover-top .35s linear 1.8499999999999996s 1 normal forwards;
+    -ms-animation: flipover-top .35s linear 1.8499999999999996s 1 normal forwards;
+    -o-animation: flipover-top .35s linear 1.8499999999999996s 1 normal forwards;
+    animation: flipover-top .35s linear 1.8499999999999996s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-6 .stage-1-icon-bottom1 {
+    -webkit-animation: flipover-bottom .35s linear 1.8499999999999996s 1 normal forwards;
+    -moz-animation: flipover-bottom .35s linear 1.8499999999999996s 1 normal forwards;
+    -ms-animation: flipover-bottom .35s linear 1.8499999999999996s 1 normal forwards;
+    -o-animation: flipover-bottom .35s linear 1.8499999999999996s 1 normal forwards;
+    animation: flipover-bottom .35s linear 1.8499999999999996s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-6 .stage-1-icon-top1 {
+    -webkit-animation: flipover-top .5s linear 2.1999999999999997s 1 normal forwards;
+    -moz-animation: flipover-top .5s linear 2.1999999999999997s 1 normal forwards;
+    -ms-animation: flipover-top .5s linear 2.1999999999999997s 1 normal forwards;
+    -o-animation: flipover-top .5s linear 2.1999999999999997s 1 normal forwards;
+    animation: flipover-top .5s linear 2.1999999999999997s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-7 .stage-1-icon-bottom1 {
+    -webkit-animation: flipover-bottom .5s linear 2.1999999999999997s 1 normal forwards;
+    -moz-animation: flipover-bottom .5s linear 2.1999999999999997s 1 normal forwards;
+    -ms-animation: flipover-bottom .5s linear 2.1999999999999997s 1 normal forwards;
+    -o-animation: flipover-bottom .5s linear 2.1999999999999997s 1 normal forwards;
+    animation: flipover-bottom .5s linear 2.1999999999999997s 1 normal forwards;
+}
+
+/*02 +0.3*/
+.animation .stage-content>ul .stage-1-icon-1 .stage-1-icon-top2 {
+    -webkit-animation: flipover-top .15s linear 1.5s 1 normal forwards;
+    -moz-animation: flipover-top .15s linear 1.5s 1 normal forwards;
+    -ms-animation: flipover-top .15s linear 1.5s 1 normal forwards;
+    -o-animation: flipover-top .15s linear 1.5s 1 normal forwards;
+    animation: flipover-top .15s linear 1.5s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-2 .stage-1-icon-bottom2 {
+    -webkit-animation: flipover-bottom .15s linear 1.5s 1 normal forwards;
+    -moz-animation: flipover-bottom .15s linear 1.5s 1 normal forwards;
+    -ms-animation: flipover-bottom .15s linear 1.5s 1 normal forwards;
+    -o-animation: flipover-bottom .15s linear 1.5s 1 normal forwards;
+    animation: flipover-bottom .15s linear 1.5s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-2 .stage-1-icon-top2 {
+    -webkit-animation: flipover-top .15s linear 1.6499999999999999s 1 normal forwards;
+    -moz-animation: flipover-top .15s linear 1.6499999999999999s 1 normal forwards;
+    -ms-animation: flipover-top .15s linear 1.6499999999999999s 1 normal forwards;
+    -o-animation: flipover-top .15s linear 1.6499999999999999s 1 normal forwards;
+    animation: flipover-top .15s linear 1.6499999999999999s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-3 .stage-1-icon-bottom2 {
+    -webkit-animation: flipover-bottom .15s linear 1.6499999999999999s 1 normal forwards;
+    -moz-animation: flipover-bottom .15s linear 1.6499999999999999s 1 normal forwards;
+    -ms-animation: flipover-bottom .15s linear 1.6499999999999999s 1 normal forwards;
+    -o-animation: flipover-bottom .15s linear 1.6499999999999999s 1 normal forwards;
+    animation: flipover-bottom .15s linear 1.6499999999999999s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-3 .stage-1-icon-top2 {
+    -webkit-animation: flipover-top .15s linear 1.7999999999999998s 1 normal forwards;
+    -moz-animation: flipover-top .15s linear 1.7999999999999998s 1 normal forwards;
+    -ms-animation: flipover-top .15s linear 1.7999999999999998s 1 normal forwards;
+    -o-animation: flipover-top .15s linear 1.7999999999999998s 1 normal forwards;
+    animation: flipover-top .15s linear 1.7999999999999998s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-4 .stage-1-icon-bottom2 {
+    -webkit-animation: flipover-bottom .15s linear 1.7999999999999998s 1 normal forwards;
+    -moz-animation: flipover-bottom .15s linear 1.7999999999999998s 1 normal forwards;
+    -ms-animation: flipover-bottom .15s linear 1.7999999999999998s 1 normal forwards;
+    -o-animation: flipover-bottom .15s linear 1.7999999999999998s 1 normal forwards;
+    animation: flipover-bottom .15s linear 1.7999999999999998s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-4 .stage-1-icon-top2 {
+    -webkit-animation: flipover-top .2s linear 1.9499999999999997s 1 normal forwards;
+    -moz-animation: flipover-top .2s linear 1.9499999999999997s 1 normal forwards;
+    -ms-animation: flipover-top .2s linear 1.9499999999999997s 1 normal forwards;
+    -o-animation: flipover-top .2s linear 1.9499999999999997s 1 normal forwards;
+    animation: flipover-top .2s linear 1.9499999999999997s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-5 .stage-1-icon-bottom2 {
+    -webkit-animation: flipover-bottom .2s linear 1.9499999999999997s 1 normal forwards;
+    -moz-animation: flipover-bottom .2s linear 1.9499999999999997s 1 normal forwards;
+    -ms-animation: flipover-bottom .2s linear 1.9499999999999997s 1 normal forwards;
+    -o-animation: flipover-bottom .2s linear 1.9499999999999997s 1 normal forwards;
+    animation: flipover-bottom .2s linear 1.9499999999999997s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-5 .stage-1-icon-top2 {
+    -webkit-animation: flipover-top .35s linear 2.1499999999999996s 1 normal forwards;
+    -moz-animation: flipover-top .35s linear 2.1499999999999996s 1 normal forwards;
+    -ms-animation: flipover-top .35s linear 2.1499999999999996s 1 normal forwards;
+    -o-animation: flipover-top .35s linear 2.1499999999999996s 1 normal forwards;
+    animation: flipover-top .35s linear 2.1499999999999996s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-6 .stage-1-icon-bottom2 {
+    -webkit-animation: flipover-bottom .35s linear 2.1499999999999996s 1 normal forwards;
+    -moz-animation: flipover-bottom .35s linear 2.1499999999999996s 1 normal forwards;
+    -ms-animation: flipover-bottom .35s linear 2.1499999999999996s 1 normal forwards;
+    -o-animation: flipover-bottom .35s linear 2.1499999999999996s 1 normal forwards;
+    animation: flipover-bottom .35s linear 2.1499999999999996s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-6 .stage-1-icon-top2 {
+    -webkit-animation: flipover-top .5s linear 2.4999999999999997s 1 normal forwards;
+    -moz-animation: flipover-top .5s linear 2.4999999999999997s 1 normal forwards;
+    -ms-animation: flipover-top .5s linear 2.4999999999999997s 1 normal forwards;
+    -o-animation: flipover-top .5s linear 2.4999999999999997s 1 normal forwards;
+    animation: flipover-top .5s linear 2.4999999999999997s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-7 .stage-1-icon-bottom2 {
+    -webkit-animation: flipover-bottom .5s linear 2.4999999999999997s 1 normal forwards;
+    -moz-animation: flipover-bottom .5s linear 2.4999999999999997s 1 normal forwards;
+    -ms-animation: flipover-bottom .5s linear 2.4999999999999997s 1 normal forwards;
+    -o-animation: flipover-bottom .5s linear 2.4999999999999997s 1 normal forwards;
+    animation: flipover-bottom .5s linear 2.4999999999999997s 1 normal forwards;
+}
+
+/*03 +0.5*/
+/*
+@-webkit-keyframes
+@-moz-keyframes
+@-ms-keyframes
+@-o-keyframes
+*/
+.animation .stage-content>ul .stage-1-icon-1 .stage-1-icon-top3 {
+    -webkit-animation: flipover-top .15s linear 1.7s 1 normal forwards;
+    -moz-animation: flipover-top .15s linear 1.7s 1 normal forwards;
+    -ms-animation: flipover-top .15s linear 1.7s 1 normal forwards;
+    -o-animation: flipover-top .15s linear 1.7s 1 normal forwards;
+    animation: flipover-top .15s linear 1.7s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-2 .stage-1-icon-bottom3 {
+    -webkit-animation: flipover-bottom .15s linear 1.7s 1 normal forwards;
+    -moz-animation: flipover-bottom .15s linear 1.7s 1 normal forwards;
+    -ms-animation: flipover-bottom .15s linear 1.7s 1 normal forwards;
+    -o-animation: flipover-bottom .15s linear 1.7s 1 normal forwards;
+    animation: flipover-bottom .15s linear 1.7s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-2 .stage-1-icon-top3 {
+    -webkit-animation: flipover-top .15s linear 1.8499999999999999s 1 normal forwards;
+    -moz-animation: flipover-top .15s linear 1.8499999999999999s 1 normal forwards;
+    -ms-animation: flipover-top .15s linear 1.8499999999999999s 1 normal forwards;
+    -o-animation: flipover-top .15s linear 1.8499999999999999s 1 normal forwards;
+    animation: flipover-top .15s linear 1.8499999999999999s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-3 .stage-1-icon-bottom3 {
+    -webkit-animation: flipover-bottom .15s linear 1.8499999999999999s 1 normal forwards;
+    -moz-animation: flipover-bottom .15s linear 1.8499999999999999s 1 normal forwards;
+    -ms-animation: flipover-bottom .15s linear 1.8499999999999999s 1 normal forwards;
+    -o-animation: flipover-bottom .15s linear 1.8499999999999999s 1 normal forwards;
+    animation: flipover-bottom .15s linear 1.8499999999999999s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-3 .stage-1-icon-top3 {
+    -webkit-animation: flipover-top .15s linear 1.9999999999999998s 1 normal forwards;
+    -moz-animation: flipover-top .15s linear 1.9999999999999998s 1 normal forwards;
+    -ms-animation: flipover-top .15s linear 1.9999999999999998s 1 normal forwards;
+    -o-animation: flipover-top .15s linear 1.9999999999999998s 1 normal forwards;
+    animation: flipover-top .15s linear 1.9999999999999998s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-4 .stage-1-icon-bottom3 {
+    -webkit-animation: flipover-bottom .15s linear 1.9999999999999998s 1 normal forwards;
+    -moz-animation: flipover-bottom .15s linear 1.9999999999999998s 1 normal forwards;
+    -ms-animation: flipover-bottom .15s linear 1.9999999999999998s 1 normal forwards;
+    -o-animation: flipover-bottom .15s linear 1.9999999999999998s 1 normal forwards;
+    animation: flipover-bottom .15s linear 1.9999999999999998s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-4 .stage-1-icon-top3 {
+    -webkit-animation: flipover-top .2s linear 2.1499999999999997s 1 normal forwards;
+    -moz-animation: flipover-top .2s linear 2.1499999999999997s 1 normal forwards;
+    -ms-animation: flipover-top .2s linear 2.1499999999999997s 1 normal forwards;
+    -o-animation: flipover-top .2s linear 2.1499999999999997s 1 normal forwards;
+    animation: flipover-top .2s linear 2.1499999999999997s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-5 .stage-1-icon-bottom3 {
+    -webkit-animation: flipover-bottom .2s linear 2.1499999999999997s 1 normal forwards;
+    -moz-animation: flipover-bottom .2s linear 2.1499999999999997s 1 normal forwards;
+    -ms-animation: flipover-bottom .2s linear 2.1499999999999997s 1 normal forwards;
+    -o-animation: flipover-bottom .2s linear 2.1499999999999997s 1 normal forwards;
+    animation: flipover-bottom .2s linear 2.1499999999999997s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-5 .stage-1-icon-top3 {
+    -webkit-animation: flipover-top .35s linear 2.3499999999999996s 1 normal forwards;
+    -moz-animation: flipover-top .35s linear 2.3499999999999996s 1 normal forwards;
+    -ms-animation: flipover-top .35s linear 2.3499999999999996s 1 normal forwards;
+    -o-animation: flipover-top .35s linear 2.3499999999999996s 1 normal forwards;
+    animation: flipover-top .35s linear 2.3499999999999996s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-6 .stage-1-icon-bottom3 {
+    -webkit-animation: flipover-bottom .35s linear 2.3499999999999996s 1 normal forwards;
+    -moz-animation: flipover-bottom .35s linear 2.3499999999999996s 1 normal forwards;
+    -ms-animation: flipover-bottom .35s linear 2.3499999999999996s 1 normal forwards;
+    -o-animation: flipover-bottom .35s linear 2.3499999999999996s 1 normal forwards;
+    animation: flipover-bottom .35s linear 2.3499999999999996s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-6 .stage-1-icon-top3 {
+    -webkit-animation: flipover-top .5s linear 2.6999999999999997s 1 normal forwards;
+    -moz-animation: flipover-top .5s linear 2.6999999999999997s 1 normal forwards;
+    -ms-animation: flipover-top .5s linear 2.6999999999999997s 1 normal forwards;
+    -o-animation: flipover-top .5s linear 2.6999999999999997s 1 normal forwards;
+    animation: flipover-top .5s linear 2.6999999999999997s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-7 .stage-1-icon-bottom3 {
+    -webkit-animation: flipover-bottom .5s linear 2.6999999999999997s 1 normal forwards;
+    -moz-animation: flipover-bottom .5s linear 2.6999999999999997s 1 normal forwards;
+    -ms-animation: flipover-bottom .5s linear 2.6999999999999997s 1 normal forwards;
+    -o-animation: flipover-bottom .5s linear 2.6999999999999997s 1 normal forwards;
+    animation: flipover-bottom .5s linear 2.6999999999999997s 1 normal forwards;
+}
+
+/*04 + 0.8*/
+.animation .stage-content>ul .stage-1-icon-1 .stage-1-icon-top4 {
+    -webkit-animation: flipover-top .15s linear 2s 1 normal forwards;
+    -moz-animation: flipover-top .15s linear 2s 1 normal forwards;
+    -ms-animation: flipover-top .15s linear 2s 1 normal forwards;
+    -o-animation: flipover-top .15s linear 2s 1 normal forwards;
+    animation: flipover-top .15s linear 2s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-2 .stage-1-icon-bottom4 {
+    -webkit-animation: flipover-bottom .15s linear 2s 1 normal forwards;
+    -moz-animation: flipover-bottom .15s linear 2s 1 normal forwards;
+    -ms-animation: flipover-bottom .15s linear 2s 1 normal forwards;
+    -o-animation: flipover-bottom .15s linear 2s 1 normal forwards;
+    animation: flipover-bottom .15s linear 2s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-2 .stage-1-icon-top4 {
+    -webkit-animation: flipover-top .15s linear 2.1499999999999999s 1 normal forwards;
+    -moz-animation: flipover-top .15s linear 2.1499999999999999s 1 normal forwards;
+    -ms-animation: flipover-top .15s linear 2.1499999999999999s 1 normal forwards;
+    -o-animation: flipover-top .15s linear 2.1499999999999999s 1 normal forwards;
+    animation: flipover-top .15s linear 2.1499999999999999s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-3 .stage-1-icon-bottom4 {
+    -webkit-animation: flipover-bottom .15s linear 2.1499999999999999s 1 normal forwards;
+    -moz-animation: flipover-bottom .15s linear 2.1499999999999999s 1 normal forwards;
+    -ms-animation: flipover-bottom .15s linear 2.1499999999999999s 1 normal forwards;
+    -o-animation: flipover-bottom .15s linear 2.1499999999999999s 1 normal forwards;
+    animation: flipover-bottom .15s linear 2.1499999999999999s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-3 .stage-1-icon-top4 {
+    -webkit-animation: flipover-top .15s linear 2.2999999999999998s 1 normal forwards;
+    -moz-animation: flipover-top .15s linear 2.2999999999999998s 1 normal forwards;
+    -ms-animation: flipover-top .15s linear 2.2999999999999998s 1 normal forwards;
+    -o-animation: flipover-top .15s linear 2.2999999999999998s 1 normal forwards;
+    animation: flipover-top .15s linear 2.2999999999999998s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-4 .stage-1-icon-bottom4 {
+    -webkit-animation: flipover-bottom .15s linear 2.2999999999999998s 1 normal forwards;
+    -moz-animation: flipover-bottom .15s linear 2.2999999999999998s 1 normal forwards;
+    -ms-msanimation: flipover-bottom .15s linear 2.2999999999999998s 1 normal forwards;
+    -o-animation: flipover-bottom .15s linear 2.2999999999999998s 1 normal forwards;
+    animation: flipover-bottom .15s linear 2.2999999999999998s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-4 .stage-1-icon-top4 {
+    -webkit-animation: flipover-top .2s linear 2.4499999999999997s 1 normal forwards;
+    -moz-animation: flipover-top .2s linear 2.4499999999999997s 1 normal forwards;
+    -ms-animation: flipover-top .2s linear 2.4499999999999997s 1 normal forwards;
+    -o-animation: flipover-top .2s linear 2.4499999999999997s 1 normal forwards;
+    animation: flipover-top .2s linear 2.4499999999999997s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-5 .stage-1-icon-bottom4 {
+    -webkit-animation: flipover-bottom .2s linear 2.4499999999999997s 1 normal forwards;
+    -moz-animation: flipover-bottom .2s linear 2.4499999999999997s 1 normal forwards;
+    -ms-animation: flipover-bottom .2s linear 2.4499999999999997s 1 normal forwards;
+    -o-animation: flipover-bottom .2s linear 2.4499999999999997s 1 normal forwards;
+    animation: flipover-bottom .2s linear 2.4499999999999997s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-5 .stage-1-icon-top4 {
+    -webkit-animation: flipover-top .35s linear 2.6499999999999996s 1 normal forwards;
+    -moz-animation: flipover-top .35s linear 2.6499999999999996s 1 normal forwards;
+    -ms-animation: flipover-top .35s linear 2.6499999999999996s 1 normal forwards;
+    -o-animation: flipover-top .35s linear 2.6499999999999996s 1 normal forwards;
+    animation: flipover-top .35s linear 2.6499999999999996s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-6 .stage-1-icon-bottom4 {
+    -webkit-animation: flipover-bottom .35s linear 2.6499999999999996s 1 normal forwards;
+    -moz-animation: flipover-bottom .35s linear 2.6499999999999996s 1 normal forwards;
+    -ms-animation: flipover-bottom .35s linear 2.6499999999999996s 1 normal forwards;
+    -o-animation: flipover-bottom .35s linear 2.6499999999999996s 1 normal forwards;
+    animation: flipover-bottom .35s linear 2.6499999999999996s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-6 .stage-1-icon-top4 {
+    -webkit-animation: flipover-top .5s linear 2.9999999999999997s 1 normal forwards;
+    -moz-animation: flipover-top .5s linear 2.9999999999999997s 1 normal forwards;
+    -ms-animation: flipover-top .5s linear 2.9999999999999997s 1 normal forwards;
+    -o-animation: flipover-top .5s linear 2.9999999999999997s 1 normal forwards;
+    animation: flipover-top .5s linear 2.9999999999999997s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-7 .stage-1-icon-bottom4 {
+    -webkit-animation: flipover-bottom .5s linear 2.9999999999999997s 1 normal forwards;
+    -moz-animation: flipover-bottom .5s linear 2.9999999999999997s 1 normal forwards;
+    -ms-animation: flipover-bottom .5s linear 2.9999999999999997s 1 normal forwards;
+    -o-animation: flipover-bottom .5s linear 2.9999999999999997s 1 normal forwards;
+    animation: flipover-bottom .5s linear 2.9999999999999997s 1 normal forwards;
+}
+
+/*05 +1.2*/
+.animation .stage-content>ul .stage-1-icon-1 .stage-1-icon-top5 {
+    -webkit-animation: flipover-top .15s linear 2.4s 1 normal forwards;
+    -moz-animation: flipover-top .15s linear 2.4s 1 normal forwards;
+    -ms-animation: flipover-top .15s linear 2.4s 1 normal forwards;
+    -o-animation: flipover-top .15s linear 2.4s 1 normal forwards;
+    animation: flipover-top .15s linear 2.4s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-2 .stage-1-icon-bottom5 {
+    -webkit-animation: flipover-bottom .15s linear 2.4s 1 normal forwards;
+    -moz-animation: flipover-bottom .15s linear 2.4s 1 normal forwards;
+    -ms-animation: flipover-bottom .15s linear 2.4s 1 normal forwards;
+    -o-animation: flipover-bottom .15s linear 2.4s 1 normal forwards;
+    animation: flipover-bottom .15s linear 2.4s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-2 .stage-1-icon-top5 {
+    -webkit-animation: flipover-top .15s linear 2.5499999999999999s 1 normal forwards;
+    -moz-animation: flipover-top .15s linear 2.5499999999999999s 1 normal forwards;
+    -ms-animation: flipover-top .15s linear 2.5499999999999999s 1 normal forwards;
+    -o-animation: flipover-top .15s linear 2.5499999999999999s 1 normal forwards;
+    animation: flipover-top .15s linear 2.5499999999999999s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-3 .stage-1-icon-bottom5 {
+    -webkit-animation: flipover-bottom .15s linear 2.5499999999999999s 1 normal forwards;
+    -moz-animation: flipover-bottom .15s linear 2.5499999999999999s 1 normal forwards;
+    -ms-animation: flipover-bottom .15s linear 2.5499999999999999s 1 normal forwards;
+    -o-animation: flipover-bottom .15s linear 2.5499999999999999s 1 normal forwards;
+    animation: flipover-bottom .15s linear 2.5499999999999999s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-3 .stage-1-icon-top5 {
+    -webkit-animation: flipover-top .25s linear 2.6999999999999998s 1 normal forwards;
+    -moz-animation: flipover-top .25s linear 2.6999999999999998s 1 normal forwards;
+    -ms-animation: flipover-top .25s linear 2.6999999999999998s 1 normal forwards;
+    -o-animation: flipover-top .25s linear 2.6999999999999998s 1 normal forwards;
+    animation: flipover-top .25s linear 2.6999999999999998s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-4 .stage-1-icon-bottom5 {
+    -webkit-animation: flipover-bottom .25s linear 2.6999999999999998s 1 normal forwards;
+    -moz-animation: flipover-bottom .25s linear 2.6999999999999998s 1 normal forwards;
+    -ms-animation: flipover-bottom .25s linear 2.6999999999999998s 1 normal forwards;
+    -o-animation: flipover-bottom .25s linear 2.6999999999999998s 1 normal forwards;
+    animation: flipover-bottom .25s linear 2.6999999999999998s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-4 .stage-1-icon-top5 {
+    -webkit-animation: flipover-top .4s linear 2.8499999999999997s 1 normal forwards;
+    -moz-animation: flipover-top .4s linear 2.8499999999999997s 1 normal forwards;
+    -ms-animation: flipover-top .4s linear 2.8499999999999997s 1 normal forwards;
+    -o-animation: flipover-top .4s linear 2.8499999999999997s 1 normal forwards;
+    animation: flipover-top .4s linear 2.8499999999999997s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-5 .stage-1-icon-bottom5 {
+    -webkit-animation: flipover-bottom .4s linear 2.8499999999999997s 1 normal forwards;
+    -moz-animation: flipover-bottom .4s linear 2.8499999999999997s 1 normal forwards;
+    -ms-animation: flipover-bottom .4s linear 2.8499999999999997s 1 normal forwards;
+    -o-animation: flipover-bottom .4s linear 2.8499999999999997s 1 normal forwards;
+    animation: flipover-bottom .4s linear 2.8499999999999997s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-5 .stage-1-icon-top5 {
+    -webkit-animation: flipover-top .75s ease-in 3.0499999999999996s 1 normal forwards;
+    -moz-animation: flipover-top .75s ease-in 3.0499999999999996s 1 normal forwards;
+    -ms-animation: flipover-top .75s ease-in 3.0499999999999996s 1 normal forwards;
+    -o-animation: flipover-top .75s ease-in 3.0499999999999996s 1 normal forwards;
+    animation: flipover-top .75s ease-in 3.0499999999999996s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-6 .stage-1-icon-bottom5 {
+    -webkit-animation: flipover-bottom .75s ease-in 3.0499999999999996s 1 normal forwards;
+    -moz-animation: flipover-bottom .75s ease-in 3.0499999999999996s 1 normal forwards;
+    -ms-animation: flipover-bottom .75s ease-in 3.0499999999999996s 1 normal forwards;
+    -o-animation: flipover-bottom .75s ease-in 3.0499999999999996s 1 normal forwards;
+    animation: flipover-bottom .75s ease-in 3.0499999999999996s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-6 .stage-1-icon-top5 {
+    -webkit-animation: flipover-top 1.2s ease-in 3.3999999999999997s 1 normal forwards;
+    -moz-animation: flipover-top 1.2s ease-in 3.3999999999999997s 1 normal forwards;
+    -ms-animation: flipover-top 1.2s ease-in 3.3999999999999997s 1 normal forwards;
+    -o-animation: flipover-top 1.2s ease-in 3.3999999999999997s 1 normal forwards;
+    animation: flipover-top 1.2s ease-in 3.3999999999999997s 1 normal forwards;
+}
+.animation .stage-content>ul .stage-1-icon-7 .stage-1-icon-bottom5 {
+    -webkit-animation: flipover-bottom 1.2s ease-in 3.3999999999999997s 1 normal forwards;
+    -moz-animation: flipover-bottom 1.2s ease-in 3.3999999999999997s 1 normal forwards;
+    -ms-animation: flipover-bottom 1.2s ease-in 3.3999999999999997s 1 normal forwards;
+    -o-animation: flipover-bottom 1.2s ease-in 3.3999999999999997s 1 normal forwards;
+    animation: flipover-bottom 1.2s ease-in 3.3999999999999997s 1 normal forwards;
+}
+
+
+/*Second pages*/
+.service_provider{
+    width: auto;
+    height: 544px;
+    padding-top: 15px;
+    margin: 0 auto;
+}
+.service_man{
+    width: 100%;
+    padding-top: 20px;
+}
+.n01_bj{
+    background: url(../images/skill_matching.png) no-repeat;
+    background-size: 90%;
+}
+.n02_bj{
+    background: url(../images/city_service.png) no-repeat;
+    background-size: 110%;
+}
+.service_n {
+    width: 100%;
+    height: 600px;
+    background-position: center -28px;
+}
+
+
+.service_box{
+    width: 156px;
+    height: auto;
+    display: inline-block;
+    margin: 10px;
+}
+.service_pic {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.service_box h5 {
+    width: 92%;
+    font-size: 12px;
+    line-height: 24px;
+    border-radius: 18px;
+    margin: 0 auto;
+    color: #ffffff;
+    background: #fd4f53;
+}
+.service_box p{
+    font-size: 12px;
+    line-height: 22px;
+    margin-top: 10px;
+}
+
+.footer_box{
+    width: 45%;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footer_phone{
+    width: 55%;
+    height: 500px;
+    background: url("../images/new/footer_i/phone.png") no-repeat;
+    background-position: 88px 75px;
+    background-size: 65%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.yd_information{
+    width: 45%;
+    height: 400px;
+    float: right;
+    position: relative;
+}
+.yd_p{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 80px;
+    left: 0;
+}
+
+.yd_p div{
+    width: 100%;
+    line-height: 30px;
+    font-size: 12px;
+    color: #ffffff;
+}
+.yd_p div.yd_b{
+    text-align: left;
+    line-height: 20px;
+}
+.yd_weibo{
+    background: url("../images/new/footer_i/weibo.png") no-repeat;
+}
+.yd_wx{
+    background: url("../images/new/footer_i/wx.png") no-repeat;
+}
+.yd_email{
+    background: url("../images/new/footer_i/email.png") no-repeat;
+}
+.yd_qq{
+    background: url("../images/new/footer_i/qq.png") no-repeat;
+}
+.yd_tel{
+    background: url("../images/new/footer_i/tel.png") no-repeat;
+}
+.yd_kefu{
+    display: inline-block;
+    margin-top: 20px;
+    width:400px;
+}
+.yd_p div.yd_b i{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 8px;
+    left: 0;
+    margin-right: 10px;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+}
+.yd_p div.yd_b_T{
+    line-height: 14px;
+}
+.yd_p div.yd_b_T i{
+    display: inline-block;
+    width: 25px;
+    height: 14px;
+}
+.copy_text{
+    font-size: 12px;
+    text-align: center;
+    line-height: 24px;
+    color: #e7e7e7;
+}
+.video-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+.video-container .video-mask{
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+	background:rgba(34,34,34,0.8);
+}
+.video-container .video-control{
+	width: 1000px;
+	position:absolute;
+	left:50%;
+	top:25%;
+	margin-left: -500px;
+	text-align: center;
+}
+.video-container .video-control img{
+	display: block;
+	margin: 50px auto;
+}
+.w_title{
+	width: 800px;
+}
+.video-container .video-bottom{
+	position:absolute;
+	width:100%;
+	left:0;
+	bottom:50px;
+}
+.video-bottom .a_m{
+	margin-right: 15px;
+}
+.video-bottom a img{
+	width: 160px;
+}
+.header .inner img{
+	width: 50px;
+	height: 50px;
+}
+#video-play{
+	cursor: pointer;
+}
+.video-large-wrap{
+	display: none;
+}
+.video-large-wrap video {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+#video-close{
+	width: 40px;
+	height: 40px;
+	background: url(../images/close.png) no-repeat;
+	background-size: 40px 40px;
+	cursor: pointer;
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	z-index: 100;
+	display: block;
+}
+#down_ydts{
+	width: 100%;
+	height: 100%;
+	background: url(../images/down_ydts2.png) no-repeat;
+	background-size: 100% auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}

@@ -690,7 +690,7 @@
     <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
     <script type="text/javascript" src="js/jquery.transit.min.js"></script>
-    <!--<script type="text/javascript" src="js/app.js"></script>-->
+    <script type="text/javascript" src="js/app.js"></script>
     <script>
         $(function () {
         	var downdz ={
@@ -834,7 +834,6 @@
 </div>
 <![endif]-->
 <div id="dowebok">
-    <img src="images/logo_ys.png" style="position: absolute;left: 0;top: 55px;width: 48px;height: auto;z-index: 9999;" alt="">
     <div class="section section0">
         <div class="header">
             <div class="inner">
@@ -1032,7 +1031,7 @@
             <div class="ph_copyright">
                 <!-- <p>津ICP备17004910号</p><br/> -->
                 <span></span> <br/>
-                <p>北京智投智道投资咨询有限公司</p>
+                <p>天津汇财智科网络科技有限公司</p>
             </div>
         </div>
         <div class="Mid_cont shadow_element">
@@ -1042,7 +1041,7 @@
             </div>
            <!-- <div class="copy_text" style="color:gray"></div>-->
             <!-- <div class="copy_text">津ICP备17004910号</div> -->
-            <div class="copy_text">北京智投智道投资咨询有限公司</div>
+            <div class="copy_text">北京移端科技有限公司</div>
         </div>
     </div>
 </div>

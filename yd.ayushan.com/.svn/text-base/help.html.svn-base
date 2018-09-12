@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>【约单_约单APP—约单官网】最大的时间交易平台,中国版的Thumbtack，TaskRabbits,任务兔子。</title>
+    <meta charset="utf-8"/>
+    <meta name="keywords" content="滴滴打人  猪八戒  陌陌  微信  Thumbtack TaskRabbits,任务兔子"/>
+    <meta name="description" content="约单APP是国内最大的时间交易平台，中国版的Thumbtack，您可以出售您的时间，比如可以陪看电影，陪跑步等，同时您也可以提供技能服务，比如上门按摩，模特外拍，瑜伽、外语等培训等。
+比陌陌更容易，比微信更有趣。"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /*font-size: 62.5%;
+            min-width: 60rem;*/
+            /* 10 ÷ 16 × 100% = 62.5% */
+            font-family: "Microsoft YaHei";
+            -webkit-tap-highlight-color:rgba(0,0,0,0);
+        }
+        ol, ul {
+            list-style: none;
+        }
+        .header {
+            background: #222;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+        }
+        a{
+            text-decoration:none;
+            color: #222222;
+        }
+        a:hover {
+            color: #555555;
+        }
+        .header div {
+            width: 70%;
+            margin: auto;
+            text-align: left;
+            /*border: dashed 1px grey;*/
+        }
+
+        .header span {
+            /*margin-top: 5px;*/
+            float: right;
+            text-align: right;
+        }
+
+        .header span a {
+            color: white;
+            font-size: 1rem;
+            padding: 10px;
+            border: 1px solid transparent;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .header span a:hover {
+            border: 1px solid #fff;
+        }
+
+        .header img {
+            height: 2.5rem;
+            margin-top: 5px;
+        }
+        .iyd_nav{display: none;}
+
+        /*约单导航————移动端 new_*/
+        .iyd_nav{
+            width: 100%;
+            position: relative;
+        }
+        .iyd_nav h3{
+            height: 50px;
+            line-height: 50px;
+            background: #ffffff;
+            text-align: center;
+            font-weight: normal;
+            font-size: 18px;
+        }
+        .yd_logo{
+            position: absolute;
+            top: 7px;
+            left: 13px;
+        }
+        .yd_logo img{
+            width: 2rem;
+            height: 2rem;
+        }
+        .nav_btn{
+            width: 30px;
+            height: 26px;
+            display: inline-block;
+            background: #ffffff url("images/btn.png") no-repeat;
+            background-size: 75%;
+            background-position: center;
+            position: absolute;
+            top: 12px;
+            right: 25px;
+        }
+        .nav_menu{
+            width: 130px;
+            height: auto;
+            border: 1px solid #dddddd;
+            border-radius: 6px;
+            background: #f6f6f6;
+            position: absolute;
+            top: 57px;
+            right: 15px;
+            z-index: 99;
+        }
+        .triangle{
+            padding: 10px;
+            background: url("images/triangle.png") no-repeat;
+            background-size:  cover 50%;
+            background-position: center;
+            position: absolute;
+            top: -14px;
+            right: 14px;
+            z-index: 80;
+        }
+        .nav_menu li{
+            text-align: center;
+            line-height: 48px;
+        }
+        .nav_menu li a{
+            display: inline-block;
+            width: 80%;
+            font-size: 16px;
+        }
+
+        .about a{
+            border-bottom: 1px solid #dddddd;
+        }
+        /*end约单导航————移动端*/
+
+        .content {
+            width: 70%;
+            margin: auto;
+            /*background: #fff;*/
+            line-height: 200%;
+            font-size: 1rem;
+        }
+
+        .content h1 {
+            font-size: 1.5em;
+            margin: 1rem 0;
+        }
+
+        .content dt {
+            font-weight: bold;
+        }
+
+        .content dl {
+            margin-bottom: 1rem;
+            border: 1px dashed grey;
+            padding: 2rem;
+            -webkit-border-radius: 1rem 1rem 0 0;
+            -moz-border-radius: 1rem 1rem 0 0;
+            border-radius: 1rem 1rem 0 0;
+        }
+
+        .content ol, .content li {
+            margin: 0;
+            padding-left: 2rem;
+            font-style: normal;
+            list-style: none;
+        }
+
+        .footer {
+            background: #222;
+        }
+
+        .footer div {
+            background: url(images/footer.png) no-repeat 50% 0;
+            background-size: 100%;
+            height: 15em;
+            margin: auto;
+            max-width: 60rem;
+            position: relative;
+        }
+
+        .footer p {
+            position: absolute;
+            color: transparent;
+            /*color: red;*/
+        }
+
+        .weibo {
+            font-size: 1.6rem;
+            top: 2.5rem;
+            right: 17rem;
+        }
+
+        .weixin {
+            font-size: 1.6rem;
+            top: 5.5rem;
+            right: 17rem;
+        }
+
+        .kefu {
+            font-size: 1.1rem;
+            top: 10.5rem;
+            right: 17.5rem;
+        }
+
+        .copyright {
+            color: #fff !important;
+            width: 100%;
+            bottom: 2rem;
+            text-align: center;
+            font-size: 1rem;
+        }
+
+
+
+        @media screen and (min-width: 320px) {
+            html {
+                font-size: .9em
+            }
+        }
+
+        @media screen and (min-width: 340px) {
+            html {
+                font-size: 1.1em
+            }
+        }
+
+        @media screen and (min-width: 480px) {
+            html {
+                font-size: 1.6em
+            }
+        }
+
+        @media screen and (min-width: 720px) {
+            html {
+                font-size: 2em
+            }
+        }
+
+        @media screen and (min-width: 1080px) {
+            html {
+                font-size: 1em
+            }
+        }
+
+        /*手机的适配*/
+        @media screen and (max-width: 1000px) {
+            body {
+                background: #FAFAFA;
+            }
+            .header{display: none}
+            .iyd_nav{display: block;}
+            /*.header span a{
+                padding: 0;
+                margin-left: .5em;
+            }
+            .header span a:hover{
+                border: none;
+            }*/
+            .content{
+                width: 90%;
+            }
+            .content h1{
+                font-size: 1.2em;
+            }
+            .content dl{
+                margin-bottom: 1em;
+                padding: .7em;
+                border-radius: .7rem;
+            }
+            .content ol, .content li{
+                 padding-left: 0em;
+            }
+
+            .footer div{
+                height: 6em;
+            }
+
+        }
+    </style>
+
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script>
+        $(function () {
+            $('.nav_btn').click(function () {
+                $('.nav_menu').show();
+            });
+            $('.nav_menu').find('li').click(function () {
+                $('.nav_menu').hide();
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+<!--[if lte IE 8]>
+<style type="text/css">
+    #errorie, #errorie div {
+        display: block;
+    }
+
+    #errorie {
+        padding: 30px 0;
+        background: #FCF8E3;
+    }
+
+    #errorie div {
+        width: 900px;
+        margin: 0 auto;
+        line-height: 26px;
+        color: orange;
+        font-size: 18px;
+    }
+
+    #errorie div a {
+        color: #459f79;
+        font-size: 18px;
+    }
+
+    #errorie div a:hover {
+        text-decoration: underline;
+    }
+
+    #errorie div a span {
+        font-size: 30px;
+        color: red;
+    }
+
+    .header, .content, .footer {
+        display: none;
+    }
+</style>
+<div id="errorie">
+    <div>
+        您所使用的IE浏览器版本过旧，为了您获得更好的浏览体验，请升级您的浏览器到 IE9 以上版本，
+        <a target="_blank" href="http://windows.microsoft.com/zh-cn/internet-explorer">点击升级</a>
+    </div>
+
+    <div>
+        <a href="http://wx.iyuedan.com/wx/download/fast" target="_blank">下载最新版<span>约单APP</span></a>
+    </div>
+</div>
+<![endif]-->
+
+<div class="iyd_nav">
+    <a class="yd_logo" href="index.html"><img src="images/logo.png" alt=""/></a>
+    <h3>产品帮助</h3>
+    <a class="nav_btn" href="javascript:void (0)"></a>
+    <ul class="nav_menu" style="display: none;">
+        <span class="triangle"></span>
+        <li class="about"><a href="index.html">约单首页</a></li>
+        <li class="about"><a href="about.html">关于我们</a></li>
+        <!--<li><a href="javascript:void (0)">产品帮助</a></li>-->
+    </ul>
+</div>
+
+<div class="header">
+    <div>
+        <a href="index.html"><img src="images/logo.png" alt="约单APP"/></a>
+        <span class="b">
+                <a href="index.html">首页</a>
+                <a href="about.html">关于我们</a>
+                <!--<a href="help.html">产品帮助</a>-->
+        </span>
+    </div>
+</div>
+<div class="content">
+    <h1>【产品帮助】</h1>
+
+    <dl>
+        <dt>Q：我是服务者如何使用约单？</dt>
+        <dd>
+            A：服务者使用“约单”很简单：
+            <ol>
+                <li>1、首先您要注册成为约单会员；</li>
+                <li>2、登录后在“发布”里发布一项技能并激活；</li>
+                <li>3、技能审核通过后，即可成为服务者；</li>
+                <li>4、随后您的手机，就会不定期地收到我们为您推送的较为匹配的需求者；</li>
+                <li>5、你来决定去应邀谁，填写报价，填写您的优势；</li>
+                <li>6、应邀后，需求者如果中意你，确认了你的应邀，就会联系你。</li>
+                <li>7、你也可以在进行中的订单中去主动免费电话或发消息去联系需求者。</li>
+            </ol>
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            Q：我是需求者如何使用约单？
+        </dt>
+        <dd>A：需求者使用“约单”也很简单且有效：
+            <ol>
+                <li>1、首先您要注册成为约单会员；</li>
+                <li>2、可以通过"附近"在您中意的个人主页发布需求,我们会把您的需求通知Ta,以及其他附近的服务者；</li>
+                <li>3、或者您可以在“发布”里发布您要的需求，我们会为您筛选多个最为匹配和优质的服务者，并将您的需求推送给他们；</li>
+                <li>4、发布需求后，您就可以等着服务者来应邀；</li>
+                <li>5、您可以从应邀者中，选择服务者语音或聊天并为您服务。</li>
+            </ol>
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            Q：“赞”有什么用？
+        </dt>
+        <dd>A：获得用户更多的对你的“赞”可以提升你的人气排名，获得更多的订单和成交。
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            Q：服务者发布了很多行业的服务怎么来选择推送内容？
+        </dt>
+        <dd>
+            A：可以将不同行业的服务设置为启用状态或者关闭状态，系统只会给您推送处于启用状态的服务行业的需求信息。
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            Q：为何服务者要身份认证和服务认证？
+        </dt>
+        <dd>
+            A：亲，身份认证和服务认证可以增加您的推送次数和交易成功率哦。
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            Q：为何我的认证没有审核通过？
+        </dt>
+        <dd>
+            A：亲，审核工作会在一个工作日完成。如果时间已到还没有审核通过kefu@iyuedan.com联系我们。
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            Q：发现色情、违法、广告信息怎么办？
+        </dt>
+        <dd>
+            A：请举报投诉该用户，我们经过审核判定后会停用该用户。
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            Q：发现骚扰信息怎么办？
+        </dt>
+        <dd>
+            A：请拉黑或投诉该用户，我们经过审核判定后会停用该用户。
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            Q：忘记密码怎么办？
+        </dt>
+        <dd>
+            A：请到登录界面点击密码找回功能。
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            Q：服务者怎么才能提高接单率？
+        </dt>
+        <dd>
+            A：您可以通过以下或更多途径来提高接单率：
+            <ol>
+                <li>1、照片和相册：面带微笑的生活照、优秀的作品或者全面的自我展示会给消费者留下一个好的直观印象；</li>
+                <li>2、录制语音介绍和视频介绍：丰富展示您优秀的技能；</li>
+                <li>3、技能认证和身份认证：上传您的资格证书和身份证，将大大提高您技能的可信度；</li>
+                <li>4、及时抢单：您想要的订单大家都想要，更积极的应邀，更合理的价格，更详细诚恳的服务留言，都能为自己赢得想要的订单；</li>
+                <li>5、客户的评论：诚心诚信的提供服务，邀请您的客户为您提供更多赞扬的评价，这些评价能够帮助未来的用户更加直观的了解您的服务有多么优秀；</li>
+                <li>6、扩大您的客户群：分享约单给您身边尽可能多的朋友，口口相传，约单愈加广泛的用户才能给您带来更多应邀的机会。</li>
+            </ol>
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            Q：充值与提现
+        </dt>
+        <dd>
+            A：充值
+            <ol>
+                <li>1、可以用支付宝或微信向约单账户内充值；</li>
+                <li>2、单次最低充值金额为0.01元；</li>
+                <li>3、约单账户内金额可用来给服务者定金和支付；</li>
+            </ol>
+        </dd>
+        <dd>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;提现
+            <ol>
+                <li>1、需求者支付给服务者的金额会到服务者的约单账户内；</li>
+                <li>2、约单账户内金额可提现到你的支付宝或微信；</li>
+                <li>3、单次提现最低金额为100元,最高为10000元；</li>
+                <li>4、提现自动扣除提现金额2.5%的手续费，由微信和支付宝收取，3-7个工作日之内到帐；</li>
+            </ol>
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            Q：订金的使用
+        </dt>
+        <dd>
+            A：你是需求者
+            <ol>
+                <li>1、服务者应邀后可以给服务者支付订金；</li>
+                <li>2、订金支付后会先有约单平台保管，你需要确认后订金才会支付给服务者；</li>
+                <li>3、待确认的订金订单后是可以退回的哦，请记得与服务者见面后确认订金给Ta哦；</li>
+                <li>4、订金有三种只支付方式：约单账户支付、支付宝支付、微信支付；</li>
+            </ol>
+        </dd>
+        <dd>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你是服务者
+            <ol>
+                <li>1、应邀订单后可以让需求者先支付订金给你然后再见面哦；</li>
+                <li>2、需求者支付订金后订金会先有约单平台保管，需求者确认订金后订金才会到达你的账户，所以记得见面后先要求需求者确认订金哦；</li>
+            </ol>
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            Q：担保支付
+        </dt>
+        <dd>
+            A：服务开始前需求者先支付服务费用由约单平台保管，服务完成后需求者确认全款后服务费用到达服务者约单账户
+            <ol>
+                <li>1、三种支付方式：约单账户支付、支付宝支付、微信支付；</li>
+                <li>2、服务费用待确认状态，需求者可申请退回钱款；</li>
+            </ol>
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            Q：电话咨询服务
+        </dt>
+        <dd>
+            A：电话咨询服务的使用方法
+            <ol>
+                <li>1、服务者发布技能是可以选择有电话咨询服务，需求者发布需求时也可以选择发布电话咨询需求；</li>
+                <li>2、发起电话咨询服务需求者和服务者会收到01053560993电话，双方都接听后开始咨询服务，按照服务者报价的金额和咨询时长扣除需求者费用，意外挂断不用担心，会按照当前挂断时长收费；</li>
+                <li>3、要使用在线咨询服务的需求者是要提前充值的哦；</li>
+                <li>注： 必须使用注册时手机号码接听！</li>
+            </ol>
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            Q：视频咨询服务
+        </dt>
+        <dd>
+            A：视频咨询服务的使用方法
+            <ol>
+                <li>1、服务者发布技能是可以选择有视频咨询服务，需求者发布需求时也可以选择发布视频咨询需求；</li>
+                <li>2、服务者应邀后需求者可开始对服务者进行视频咨询，服务者接通后开始咨询服务，按照服务者报价的金额和咨询时长扣除需求者费用，意外挂断不用担心，会按照当前挂断时长收费；</li>
+                <li>3、要使用视频咨询服务的需求者是要提前充值的哦；</li>
+            </ol>
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            Q：远程服务
+        </dt>
+        <dd>
+            A：需求者和服务者双方不方便见面情况下还可以选择远程服务方式
+        </dd>
+    </dl>
+</div>
+<div class="footer">
+    <div>
+       <!-- <p class="weibo">新浪微博号：约单APP</p>
+
+        <p class="weixin">微信服务号：iyuedan</p>
+
+        <p class="kefu">客服邮箱 kefu@iyuedan.com</p>
+
+        <p class="copyright">©2015 约单 京ICP备15011114号-1</p>-->
+    </div>
+</div>
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan style='display:none' id='cnzz_stat_icon_1260446014'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1260446014%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>
