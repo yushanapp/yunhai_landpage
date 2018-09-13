@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>HELLO语音</title>
+	<title>hello语音</title>
 	<meta name="viewport" content="width=device-width"> 
  	 <link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
      <style>
@@ -17,32 +17,29 @@
 			body{
 			margin:0!important;
 			}
+     .navImage1 {			display:inline-block;
+			width:100%;			
+}
      </style>
 </head>
 <body>
-				<center>
-				<div class="navImage">
-				  <img id="http://cdn.lyplaaap.cn/hello.zjzhidao.top/s2/img"  src="images/bg1.jpg" alt="navbar" usemap="#navImg">
-		    <map name="navImg" id="navImg" class="btnCilck">
-			  <!-- <area shape="rectangle" coords="172,471,543,605" onClick="javascript:;"/> -->
-			    </map>
-				</div> 
-			   <img src="http://cdn.lyplaaap.cn/hello.zjzhidao.top/s2/images/bg2.jpg" alt="" name="download2" border="0" usemap="#download2Map"
-			        style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
-             <map name="download2Map">
-            <area shape="poly" coords="474,9,685,9,704,27,709,50,700,73,679,85,476,84,451,68,446,45,452,26,461,17" class="btnCilck">
-</map>
-</center>
+			<center>
+				<div class="navImage"><span class="navImage1"><img id="img"  src="http://cdn.lyplaaap.cn/hello.zjzhidao.top/images/bg1.jpg" alt="navbar"></span></div> 
+			<img src="http://cdn.lyplaaap.cn/hello.zjzhidao.top/images/bg2.jpg" alt="" usemap="#download2Map" id="download2" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
+            <map name="download2Map">
+              <area shape="rect" class="btnCilck"  coords="446,8,709,86" href="javascript:;">
+            </map>
+			</center>
 <script>
 
-		var Android="https://update.weihuitel.com/hello/hello-4.4.1-official_aliy4.apk";//安卓下载链接
-		var Ios="https://update.weihuitel.com/hello/hello-4.4.1-official_aliy4.apk";//ios下载链接
+		var Android="https://update.weihuitel.com/hello/hello-4.5.1-official_aliy4.apk";//安卓下载链接
+		var Ios="";//ios下载链接
 
 		var btns = document.getElementsByClassName("btnCilck");
 		for(var i=0;i<btns.length;i++){
 		   btns[i].onclick=function () {
                if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                   window.location.href =Ios;
+                   window.location.href =Android;
                }else {
                    window.location.href =Android;
                }
