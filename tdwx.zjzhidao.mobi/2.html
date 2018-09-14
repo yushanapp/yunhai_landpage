@@ -10,63 +10,33 @@
 
 </head>
 <body>
-<div class="header">
-    <div class="header-image">
-        <img src="http://cdn.lyplaaap.cn/tdwx.zjzhidao.mobi/images/bg1.jpg" id="bg1" alt="">
-    </div>
+<center>
+	  <div class="navImage">
+	    <img  src="http://cdn.lyplaaap.cn/tdwx.zjzhidao.mobi/images/bg_1.jpg" alt="navbar" usemap="#imgMap" id="img">
+        <map name="imgMap" class="btnCilck">
+          <area shape="rect" coords="184,4741,553,4825" href="javascript:;">
+        </map>
+	  </div> 
+			
+            <img src="http://cdn.lyplaaap.cn/tdwx.zjzhidao.mobi/images/bg_2.jpg" alt="" name="download2" border="0" usemap="#download2Map"  id="download2" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
+<map name="download2Map"  class="btnCilck"><area shape="rect" coords="16,3,701,101"  href="javascript:;"></map>
 
-        <div class="layout">
-            <div class="banner">
-                <ul class="clearfix">
-                    <li><a href="javascript:;"><img src="http://cdn.lyplaaap.cn/tdwx.zjzhidao.mobi/images/bg4.jpg"></a></li>
-                    <li><a href="javascript:;"><img src="http://cdn.lyplaaap.cn/tdwx.zjzhidao.mobi/images/bg2.jpg"></a></li>
-                    <li><a href="javascript:;"><img src="http://cdn.lyplaaap.cn/tdwx.zjzhidao.mobi/images/bg3.jpg"></a></li>
-                    <li><a href="javascript:;"><img src="http://cdn.lyplaaap.cn/tdwx.zjzhidao.mobi/images/bg4.jpg"></a></li>
-                    <li><a href="javascript:;"><img src="http://cdn.lyplaaap.cn/tdwx.zjzhidao.mobi/images/bg2.jpg"></a></li>
-                    <li><a href="javascript:;"><img src="http://cdn.lyplaaap.cn/tdwx.zjzhidao.mobi/images/bg3.jpg"></a></li>
-                    <li><a href="javascript:;"><img src="http://cdn.lyplaaap.cn/tdwx.zjzhidao.mobi/images/bg2.jpg"></a></li>
-                </ul>
-                <ul>
-                   <!-- <li class="now"></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>-->
-                </ul>
-            </div>
-
-            <div id="btns">
-
-            </div>
-            <div class="logoImg">
-                <img src="http://cdn.lyplaaap.cn/tdwx.zjzhidao.mobi/images/logo.png" alt="">
-            </div>
-
-        </div>
-</div>
-<div style="position: fixed;width: 100%;height: auto;bottom: -1%;left: 0;">
-    <img src="http://cdn.lyplaaap.cn/tdwx.zjzhidao.mobi/images/bg_btn.jpg" style="width: 100%;" alt="">
-    <div class="btnCilck" style="position: absolute;width: 53%;height: 66%;left: 29%;top: 19%;z-index:999999999999999;">
-
-    </div>
-</div>
-<script type="text/javascript" src="js/index.js"></script>
-<script src="js/base.js"></script>
-<script src="js/slideshow.js"></script>
+</center>
 <script>
-    var Android="http://media9.tadu.com/downloads/android/tadu_android_v5.10_3860.apk";//安卓下载链接
-    var Ios="";//ios下载链接
 
-    var btns = document.getElementsByClassName("btnCilck");
-    for(var i=0;i<btns.length;i++){
-        btns[i].onclick=function () {
-            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                window.location.href =Android;
-            }else {
-                window.location.href =Android;
-            }
-        }
-    };
+		var Android="http://media9.tadu.com/downloads/android/tadu_android_v5.10_3860.apk";//安卓下载链接
+		var Ios="";//ios下载链接
+
+		var btns = document.getElementsByClassName("btnCilck");
+		for(var i=0;i<btns.length;i++){
+		   btns[i].onclick=function () {
+               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Android;
+               }else {
+                   window.location.href =Android;
+               }
+           }
+		};
 </script>
 </body>
 </html>
