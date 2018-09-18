@@ -17,16 +17,18 @@
 </head>
 <body>
 
-
     <div class="picBox">
 
-		<a href="javascript:;" id="download">
-            <img src="http://cdn.lyplaaap.cn/renren.myushan.com/images/bg12.jpg" alt="">
-        </a>
-		<img src="http://cdn.lyplaaap.cn/renren.myushan.com/images/bg122.png" style="position:absolute;margin:-260px auto;left:0;right:0;max-width: 180px;" alt=""  id="download2" onClick="javascript:;" > 
-   		<div style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 640px;"><img style="width:100%;" src="http://cdn.lyplaaap.cn/renren.myushan.com/images/bgl2.png" alt="" border="0" usemap="#download1Map"  onClick="javascript:;" >
-      	<div id="download1" style="position:absolute;top:16%;left:71%;width:28%;height:76%;"></div>
-      </div>    
+		<a href="javascript:;" id="download" style="position:relative;">
+            <img src="http://cdn.lyplaaap.cn/renren.myushan.com/images/tfyb.jpg" alt="">
+           	<img src="http://cdn.lyplaaap.cn/renren.myushan.com/images/tfyb2.png" id="download2" style="position:absolute;left:26%;top:80%;height:auto;width:50%;z-index:998;">
+      </a> 
+        
+    		  <div style="position:fixed;margin:0 auto;top:0px;left:0;right:0;max-width: 640px;z-index:999;">
+              <img style="width:100%;" src="http://cdn.lyplaaap.cn/renren.myushan.com/images/tfyb1.png" alt="" border="0" usemap="#download1Map"  onClick="javascript:;" >
+                <div id="download1" style="position: absolute; top: 23%; left: 74%; width: 24%; height: 50%; z-index: 9999;">
+                </div>
+      </div>
     </div>
 
 <script>
@@ -40,10 +42,9 @@
             }
         });
     })();
-
-    ;(function(){
+;(function(){
         document.getElementById("download2").addEventListener("click", function(){
-            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+          if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
                 window.location.href ="https://lnk0.com/p4cUBt";
             }else {
                 window.location.href ="https://download.rr.tv/static/down/android/newest/rrmj_bdtg_tfyb_newest.apk";
