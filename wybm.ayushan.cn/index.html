@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,viewport-fit=contain"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="家政服务公司,找保姆,月嫂,育儿嫂"/>
+    <meta name="description"
+          content="找家政服务公司就选无忧保姆网，无忧保姆网拥有超过百家直营门店，为您提供最全面的保姆、月嫂、育儿嫂、钟点工信息，独创360度安全防护体系，尊享专业家政保险，为您的家政服务体验保驾护航。"/>
+    <title>无忧保姆专注家政服务10年，为885458个家庭找到合适的保姆</title>
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css"/>
+    <link rel="stylesheet" href="css/style.css?version=0914"/>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="log fl"><img src="img/logo.png" alt="" title="无忧"></div>
+        <div class="header-desc fl">
+            全国<a id="spans" class="spans" href="#photo">
+            <span num="8" class="num1">0</span>
+            <span num="8" class="num1">0</span>
+            <span num="5" class="num1">0</span>
+            <span num="4" class="num1">0</span>
+            <span num="5" class="num1">0</span>
+            <span num="8" class="num1">0</span>
+        </a>个家庭都使用的家政APP
+        </div>
+        <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.baomu51.android" class="fr download">马上下载</a>
+    </div>
+    <div class="banner">
+        <img src="img/top.png" alt="top"/>
+    </div>
+    <div class="swiper-container" id="swiper-container2">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/banner1.png"></div>
+            <div class="swiper-slide"><img src="img/banner2.png"></div>
+            <div class="swiper-slide"><img src="img/banner3.png"></div>
+            <div class="swiper-slide"><img src="img/banner4.png"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <p class="tc mark" >√官方<span class="space"></span>√安全<span class="space"></span>√无广告<span class="space"></span>√保姆信息真实</p>
+    <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.baomu51.android" class="btnLink"><img class="" src="img/btn.png"></a>
+    <div class="footer">
+        <p class="tc">北京智投智道投资咨询有限公司</p>
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/numUp.js"></script>
+<script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
+<script type="text/javascript">
+    setSize();
+    function setSize() {
+        var desW = 750;
+        var winW = document.documentElement.clientWidth;
+        if (winW >= 750) {
+            winW = 750;
+        }
+        document.documentElement.style.fontSize = (winW / desW * 100) + "px";
+    }
+    window.onresize = setSize;
+    $(function () {
+        NumUpUI($(".num1"), {
+            prefix: "",
+            duration: 1500,
+            decimal: 0,
+        });
+        //滑动
+        var mySwiper2 = new Swiper('#swiper-container2', {
+            loop: true,
+            autoplay: 3000,
+            pagination: '.swiper-pagination'
+        });
+    });
+</script>
+
+
+
+
