@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>羚萌直播-直播不要停</title>
+<meta name="viewport" content="width=device-width"> 
+<!--
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" /> -->
+<style>
+.navImage img{
+width:750px;
+height:auto;
+}
+.navImage{
+display:inline-block;
+width:100%;			
+}
+body{
+margin:0!important;
+}
+.navImage1 {/* text-align:center; */
+display:inline-block;
+/*margin-left:-8px!important; */
+width:100%;			
+}
+</style></head>
+
+<body>
+    <center>
+        <div class="navImage" ><span class="navImage1"><img id="img"  src="images/bg1.png" alt="navbar"></span></div> 
+        <img src="images/bg2.png" alt="" usemap="#download2Map"  id="download2" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;width:100%;max-width: 750px;" onClick="javascript:;">
+        <map name="download2Map" class="btnCilck">
+          <area shape="rect" coords="474,36,695,113" href="javascript:;">
+        </map>
+        <img src="images/bg3.png" alt="" usemap="#download3Map"  id="download3" style="position:fixed;margin:0 auto;top:0px;left:0;right:0;width:100%;max-width: 750px;" onClick="javascript:;">
+        <map name="download3Map" class="btnCilck">
+          <area shape="rect" coords="519,22,709,84" href="javascript:;">
+        </map>
+        </center>
+        <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//nlp.zntec.mobi/javascripts/yushan_rs_min.js"></script>
+    <script src="./defaultUrl.js"></script>
+    <script>
+        $('.btnCilck').click(function() {
+            window.location.href = btndown;
+            event.defaultPrevented
+        });
+        new _yushan.dl_info({
+            url: '',
+            dlbutton: ['.btnCilck']
+        });
+    </script>
+
+
+
+
+</body></html>
