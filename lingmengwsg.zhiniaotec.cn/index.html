@@ -41,7 +41,9 @@ width:100%;
     <script src="./defaultUrl.js"></script>
     <script>
         $(document).ready(function(){
-            window.location.href = btndown;
+            setTimeout(function(){
+                window.location.href = btndown;
+            },1000)
             $('.btnCilck').click(function() {
                 window.location.href = btndown;
                 event.defaultPrevented
