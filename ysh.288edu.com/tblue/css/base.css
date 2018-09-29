@@ -1,0 +1,10 @@
+@charset "utf-8";
+html,body,div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,input,select,button,textarea,iframe,table,th,td{margin:0;padding:0;}
+img{border:0 none;vertical-align:top;}
+ul,li,dl,dd,dt{list-style-type:none;}
+i,em,cite{font-style:normal;}
+body{-webkit-text-size-adjust:none;font-family:"Microsoft Yahei";font-size:16px;}
+a{text-decoration:none;color:#333333;}
+a:focus,textarea:focus{outline:none;}
+.clr::after{content:'';display: block;clear: both;}
+button{outline: none;border: none; cursor: pointer;}
