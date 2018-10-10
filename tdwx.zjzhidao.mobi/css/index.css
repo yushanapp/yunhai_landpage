@@ -50,15 +50,25 @@ body *{
 .header .header-lb .header-lb-box img{
     float: left;
 }
-#btns{
+.btns{
     position: absolute;
-    top: -25%;
-    left: 13%;
-    width: 68%;
-    height: 11%;
+    top: 103%;
+    left: 53%;
+    width: 44%;
+    height: 21%;
     cursor: pointer;
     z-index: 9999;
     }
+.btns2{
+    position: absolute;
+    top: 392%;
+    left: 11%;
+    width: 79%;
+    height: 35%;
+    cursor: pointer;
+    z-index: 9999;
+
+}
 .logoImg img{
     position: absolute;
     top: 0;

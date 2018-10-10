@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+.bg1{
+    width: 100%;
+    height: auto;
+}
+.Sem_App_Img{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 32%;
+}
+.btn_bottom{
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    height: auto;
+    position: fixed;
+    bottom: 3%;
+    z-index: 9999;
+}
+.btn_bottom img{
+    width: 100%;
+    height: auto;
+}
+.btn_top{
+    position: absolute;
+    width: 61%;
+    height: 4%;
+    left: 20%;
+    top: 27%;
+    z-index: 999;
+}
+.texts{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 52%;
+}
+.texts .text_title{
+    width: 100%;
+    height: auto;
+    padding: 5px 0;
+    overflow: hidden;
+}
+.texts .text_title ul li{
+    display: block;
+    width: 50%;
+    float:left;
+    text-align: center;
+    font-size: 16px;
+    color: #909090;
+    padding-bottom: 5px;
+    border-bottom:2px solid #e0e0e0;
+    margin-bottom: 15px;
+
+}
+.texts .text_title ul li:nth-child(1){
+    color: red;
+    border-bottom: 2px solid red;
+}
+.texts .text_title img{
+    width: 100%;
+    height: auto;
+}
+.texts .text_title .im1{
+    display: block;
+}
+.texts .text_title .im2{
+    display: none;
+}
