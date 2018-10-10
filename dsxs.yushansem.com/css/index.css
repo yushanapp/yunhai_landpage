@@ -13,12 +13,19 @@
     width: 100%;
     height: auto;
 }
-.Sem_App_Img{
+.sem_box{
     position: absolute;
     width: 100%;
     height: auto;
     left: 0;
     top: 32%;
+}
+.Sem_App_Img{
+   /* position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 32%;*/
 }
 .btn_bottom{
     width: 100%;
@@ -42,11 +49,12 @@
     z-index: 999;
 }
 .texts{
-    position: absolute;
+/*  position: absolute;
     width: 100%;
     height: auto;
     left: 0;
-    top: 52%;
+    top: 2%;*/
+    margin-top: 5px;
 }
 .texts .text_title{
     width: 100%;

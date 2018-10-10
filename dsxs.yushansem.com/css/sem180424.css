@@ -282,8 +282,8 @@ body {
 .App_ImgBox img {
     height: 220px;
     margin: 0px;
-    margin-left: 8px;
-    margin-bottom: 8px;
+/*    margin-left: 8px;
+    margin-bottom: 8px;*/
     display: inline-block;
     width: 132px;
 }
