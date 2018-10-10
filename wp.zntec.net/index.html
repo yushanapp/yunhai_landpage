@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://www.826006.com/zssqao1/index.html -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>首页</title>
+    <style>
+    *{
+    	margin: 0;
+    	padding: 0;
+    }
+    #download{
+    	position: relative;
+    }
+    #download .info{
+    	position: absolute;
+    	bottom: 3%;
+    }
+    </style>
+</head>
+<body>
+<div id="download">
+    <img id="b_img" style="width:100%; height:100%; display: block;" src="images/01.jpg" alt="">
+    <img src = "http://test.myushan.com//logo/black_zhiniao.png" style="position: absolute;left: 0;top: 0;width: 10%">
+    <img src = "images/downbtn.png" class="downloadclz" style="position: absolute;right: 10%;top: 3%;width: 25%">
+    <div><img src = "images/btn1.png" id="btn_img" style="position: absolute;left: 20%;bottom: 10%;width: 60%" onclick="changeBtn()"></div>
+    <div  class="info" style="width: 100%;text-align: center; font-size: 14px;color: #000; ">北京智鸟科技有限公司</div>
+</div>
+
+<audio id="audio">
+   <source src="images/1.mp3" type="audio/mpeg">
+</audio> 
+
+<!-- <img id="footer" class="downloadclz" style="position: fixed;width:100%;bottom:0;left:0;" src="images/foot.png"> -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/app.js"></script>
+<script type="text/javascript">
+
+    var btnid = 'btn1';
+    $(document).ready(function() {
+        // 调整 foot 高度
+        var b_img = $('#footer').height();
+        $('#download').css('margin-bottom', b_img);
+
+     //    loadBody("b_img");
+        $('.downloadclz').click( function(e) {
+            var id = getParam('id');
+            if(id == '') {
+                id = "1";
+            }
+            window.location.href = "http://nuanguang-img.oss-cn-shanghai.aliyuncs.com/yuyinbao/baidu2.1.1/com.warmlight.voicepacket-baidusem" + id + "-12-2.1.1-20181009.apk";
+        });
+
+        var vid = document.getElementById('audio');
+        vid.onpause = function() {
+            $("#btn_img").attr("src", "images/btn1.png");
+            var audio = document.getElementById('audio');
+            audio.pause();
+            audio.currentTime = 0;
+            btnid = 'btn1';
+        };
+    });
+
+    function changeBtn() {
+        if(btnid == 'btn1') {
+            $("#btn_img").attr("src", "images/btn2.png");
+            var audio = document.getElementById('audio');
+            audio.play();
+            btnid = 'btn2';
+        } else {
+            var audio = document.getElementById('audio');
+            audio.pause();
+        }
+    }
+
+</script>
+</body></html>
