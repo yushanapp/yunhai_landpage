@@ -62,7 +62,99 @@
     padding: 5px 0;
     overflow: hidden;
 }
-.texts .text_title ul li{
+.texts .text_title .pl{
+    width: 100%;
+    display: none;
+    margin-top: 20px;
+}
+.texts .text_title .pl .pl_box{
+    width: 100%;
+    height: auto;
+    padding: 10px 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.texts .text_title .pl .pl_box .pl_top{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.texts .text_title .pl .pl_box .pl_top .pl_top1{
+    float: left;
+    width: 15%;
+    height: auto;
+    text-align: center;
+}
+.texts .text_title .pl .pl_box .pl_top .pl_top1 img{
+    width: 70%;
+    height: auto;
+}
+.texts .text_title .pl .pl_box2{
+    display: none;
+}
+.texts .text_title .pl .pl_box .pl_top .pl_top2{
+    float: left;
+    height: auto;
+    width: 80%;
+}
+.texts .text_title .pl .pl_box .pl_top .pl_top2 ul li{
+    height: auto;
+    font-size: 17px;
+    list-style: none;
+    margin-top: 5px;
+    width: 100%;
+}
+.texts .text_title .pl .pl_box .pl_top .pl_top2 ul li:nth-child(1){
+    color: #909090;
+}
+.texts .text_title .pl .pl_box .pl_top .pl_top2 ul li:nth-child(2) img{
+    width: 100px;
+    height: auto;
+    margin-left: -10px;
+    margin-top: -5px;
+}
+.texts .text_title .pl .pl_box .pl_top .pl_top2 ul li:nth-child(3){
+    color: #000;
+    font-size: 13px;
+    margin-top: -5px;
+    line-height: 20px;
+}
+.texts .text_title .pl .pl_box .pl_bottom{
+    width: 100%;
+    height: auto;
+    font-size: 15px;
+    color: #909090;
+    text-align: left;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.texts .text_title .pl .pl_box .pl_bottom .p_b_dz{
+    display: inline-block;
+    width: 50%;
+    height: auto;
+    float: right;
+    text-align: right;
+}
+.texts .text_title .pl .pl_box .pl_bottom .p_b_dz>ul{
+    overflow: hidden;
+}
+.texts .text_title .pl .pl_box .pl_bottom .p_b_dz>ul>li{
+    list-style: none;
+    font-size: 15px;
+    line-height: 28px;
+    margin-left: 15px;
+    float: right;
+}
+.texts .text_title .pl .pl_box .pl_bottom .p_b_dz>ul>li img{
+    width: 30px;
+    height: auto;
+    margin-top: 3px;
+}
+.texts .text_title .pl .pl_box .pl_bottom>span{
+    margin-right: 20px;
+    float: left;
+}
+.texts .text_title>ul>li{
     display: block;
     width: 50%;
     float:left;
@@ -74,7 +166,7 @@
     margin-bottom: 15px;
 
 }
-.texts .text_title ul li:nth-child(1){
+.texts .text_title>ul>li:nth-child(1){
     color: red;
     border-bottom: 2px solid red;
 }
@@ -85,6 +177,4 @@
 .texts .text_title .im1{
     display: block;
 }
-.texts .text_title .im2{
-    display: none;
-}
+
