@@ -1,0 +1,12 @@
+/*公共*/
+body,html{font-size:100px; background:#fff;}
+body{font-family:"微软雅黑"; color:#333333;}
+body,div,dl,dt,dd,ul,li,p,h1,h2{margin:0; padding:0;}
+ul,li,dl,dt,dd,table,tr,td,th{list-style:none;}
+h1,h2{font-weight:normal}
+img{border:0;}
+.cleat{clear:both;}
+a.a-more{width:94%; height:.6rem; margin:0 auto; text-align:center; line-height:.6rem; border-radius:.03rem; background:#1cade6; display:block; font-size:.34rem; color:#fff;}
+.content{width:100%; margin:0 auto;}
+a{cursor:pointer;}
+

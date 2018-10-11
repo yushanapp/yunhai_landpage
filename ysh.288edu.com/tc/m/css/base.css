@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box; }
+
+body, table, thead, tbody, tr, th, td, div, ul, ol, dl, dt, dd, li, dl, h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+ol, ul, li {
+    list-style: none; }
+
+img, fieldset {
+    border: 0; }
+
+input {
+    letter-spacing: 1px; }
+
+button {
+    border: none; }
+
+ins, a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #666; }
+input[type=text],input[type=password],input[type=tel],input[type=number] {
+    height: 20px;
+    line-height: 20px;
+    background: #fff;
+    border: 1px solid #999;
+}
+i, em {
+    font-style: normal; }
+
+h1, h2, h3, h4, h5, h6, dt {
+    font-size: 100%;
+    font-weight: 500; }
+/*你、首页title*/
+html,body{
+    font-size: 4vw;
+    font-family: "微软雅黑";
+}
