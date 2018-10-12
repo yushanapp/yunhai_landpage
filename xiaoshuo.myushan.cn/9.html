@@ -17,10 +17,27 @@
 <div class="header">
     <img src="http://cdn.lyplaaap.cn/xiaoshuo.myushan.cn/images/bg_new.jpg" alt="鲸鱼小说">
     <div class="btn_box">
-        <a href="http://file.ihuayue.cn/download/packages//f9234e8fe8b9d04f361d5b99b8545049/jingyu_v1.15.0_251_10090957_yd9_hyapp1616_jiagu_sign.apk" class="btn_clik"></a>
+        <a href="javascript:;" class="btn_clik btnCilck"></a>
         <img src="images/02.jpg" alt="全民TV">
-    </div>
+    </div><br>
     <div class="copyRight">Copyright 北京智投智道投资咨询有限公司</div>
 </div>
+
+<script>
+
+		var Android="http://file.ihuayue.cn/download/packages//f9234e8fe8b9d04f361d5b99b8545049/jingyu_v1.15.0_251_10090957_yd9_hyapp1616_jiagu_sign.apk";//安卓下载链接
+		var Ios="";//ios下载链接
+
+		var btns = document.getElementsByClassName("btnCilck");
+		for(var i=0;i<btns.length;i++){
+		   btns[i].onclick=function () {
+               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Ios;
+               }else {
+                   window.location.href =Android;
+               }
+           }
+		};
+</script>
 </body>
 </html>
