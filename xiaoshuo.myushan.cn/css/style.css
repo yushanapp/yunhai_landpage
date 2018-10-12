@@ -129,7 +129,10 @@ ul,ol{list-style:none;}
   width: 100%;
   max-width: 750px;
   height: auto;
-  position: relative;
+  position: fixed;
+  bottom:2%;
+  width:100%;
+ 
 
 }
 .btn_clik{
