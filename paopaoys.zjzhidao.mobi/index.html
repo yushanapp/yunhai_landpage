@@ -5,7 +5,7 @@
     <title>泡泡</title>
     <meta name="viewport" content="width=device-width">
     <style>
-        .navImage   img {
+        .navImage img {
             height: auto;
         }
 
@@ -39,63 +39,13 @@
 
         <img src="" alt="" border="0" usemap="#download3Map" id="xfbtntop" style="position:fixed;margin:0 auto;top:0px;left:0;right:0;" onClick="javascript:;" >
         <map name="download3Map" class="btnCilck">
-            <area id="b_dw4" shape="rect" coords="" href="javascript:;">
+          <area shape="rect" id="b_dw4" coords="" href="javascript:;">
         </map>
 </center>
-<script>
-    $(document).ready(function() {
-        $.ajax({
-            url: "http://storage.lyplaaap.cn/paopao/action/select.php",
-            type: "get",
-            success: function (res) {
-                var data = jQuery.parseJSON(res);
-                var bj=data[0].bj;
-                var xf=data[0].xf;
-                var dxf=data[0].dxf;
-                var kd=data[0].kd;
-                var dw1=data[0].dw1;
-                var dw2=data[0].dw2;
-                var dw3=data[0].dw3;
-
-                console.log(bj+"----"+xf+"------"+dw1+"------"+dw2+"-----"+dw3);
-
-               /* $("#img").attr("src",bj);*//* $("#img").attr("src",bj);*/
-
-                var imgs=" <img src="+bj+" style='width:"+kd+"' alt=\"navbar\" border=\"0\" usemap=\"#imgMap\" id=\"img\">";
-               /* $("#xfbtn").attr("src",xf);*/
-
-                $(".navImage").append(imgs);
-              if(xf==0||xf == ""||xf.length==0){
-                  $("#xfbtn").remove();
-                }else{
-                  $("#xfbtn").attr("src",xf);
-                  $("#xfbtn").css({"width":kd});
-                }
-
-                if(dxf==0||dxf == ""||dxf.length==0){
-                    $("#xfbtntop").remove();
-                }else{
-                    $("#xfbtntop").attr("src",dxf);
-                    $("#xfbtntop").css({"width":kd});
-                }
-
-                $("#xfbtntop").css({"width":kd});
-                $("#b_dw1").attr("coords",dw1);
-                $("#b_dw2").attr("coords",dw2);
-                $("#b_dw3").attr("coords",dw3);
-
-            }
-        });
-    });
-
-</script>
-
+<script src="js/d.js"></script>
 <script>
     /*var Android="https://static.inkuai.com、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、/bs2/fes/kwai-android-5_BS-gifmakerrelease-5.9.1.6830_7ab988.apk";//安卓下载链接
     var Ios="https://static.inkuai.com/bs2/fes/kwai-android-5_BS-gifmakerrelease-5.9.1.6830_7ab988.apk";//ios下载链接*/
-
-
-
 
     var btns = document.getElementsByClassName("btnCilck");
     for (var i = 0; i < btns.length; i++) {
