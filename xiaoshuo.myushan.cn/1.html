@@ -1,0 +1,43 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta content="max-age=0" http-equiv="Cache-Control">
+    <meta content="240" name="MobileOptimized">
+    <meta content="YES" name="apple-touch-fullscreen">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui"/>
+    <title>鲸鱼小说</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="header">
+    <img src="http://cdn.lyplaaap.cn/xiaoshuo.myushan.cn/images/bg_new.jpg" alt="鲸鱼小说">
+    <div class="btn_box">
+        <a href="javascript:;" class="btn_clik btnCilck"></a>
+        <img src="images/02.jpg" alt="全民TV">
+    </div><br>
+    <div class="copyRight">Copyright 北京智投智道投资咨询有限公司</div>
+</div>
+
+<script>
+
+		var Android="http://file.ihuayue.cn/download/packages//290c40760fb81fb36e96a52ac15fe15e/jingyu_v1.15.0_251_10090957_yd1_hyapp1513_jiagu_sign.apk";//安卓下载链接
+		var Ios="";//ios下载链接
+
+		var btns = document.getElementsByClassName("btnCilck");
+		for(var i=0;i<btns.length;i++){
+		   btns[i].onclick=function () {
+               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Ios;
+               }else {
+                   window.location.href =Android;
+               }
+           }
+		};
+</script>
+</body>
+</html>
