@@ -1,0 +1,52 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>蜂助手</title>
+	<meta name="viewport" content="width=device-width"> 
+ 	 <link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
+     <style>
+		.navImage img{
+			width:720px;
+			height:auto;
+			}
+			.navImage{
+			display:inline-block;
+			width:100%;			
+			}
+			body{
+			margin:0!important;
+			}
+     </style>
+</head>
+<body>
+	<center>
+				<div class="navImage">
+			    <img  src="images/bg1.jpg" alt="navbar" usemap="#imgMap" id="img">
+                <map name="imgMap" class="btnCilck"><area shape="rect" coords="176,4503,519,4606" style="outline:none;" href="javascript:;">
+                  <area shape="rect" coords="146,5676,585,5771" style="outline:none;" href="javascript:;">
+                </map>
+				</div> 
+			
+         <img src="images/bg2.png" alt="" name="download2" border="0" usemap="#download2Map"  id="download2" style="position:fixed;margin:0 auto;bottom:10%;;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
+<map name="download2Map"  class="btnCilck"><area shape="rect" coords="65,6,658,117"  href="javascript:;"></map>
+
+</center>
+<script>
+
+		var Android="https://at.umeng.com/XTPDmi?cid=5484&keywordid={keywordid}&creative={creative}";//安卓下载链接
+		var Ios="";//ios下载链接
+
+		var btns = document.getElementsByClassName("btnCilck");
+		for(var i=0;i<btns.length;i++){
+		   btns[i].onclick=function () {
+               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Android;
+               }else {
+                   window.location.href =Android;
+               }
+           }
+		};
+</script>
+</body>
+</html>
