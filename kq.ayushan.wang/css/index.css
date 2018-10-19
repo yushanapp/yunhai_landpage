@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+.bg1{
+    width: 100%;
+    height: auto;
+}
+.Sem_App_Img{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 18.5%;
+    padding-left: 15px;
+}
+.btn_bottom{
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    height: auto;
+    position: fixed;
+    bottom: 40px;
+    z-index: 9999;
+}
+.btn_bottom .b_click{
+    position: absolute;
+    width: 34%;
+    height: 50%;
+    left: 60%;
+    top: 20%;
+    z-index: 9999999999999999;
+}
+.btn_bottom img{
+    width: 100%;
+    height: auto;
+}
+.btn_top{
+    position: absolute;
+    width: 35%;
+    height: 3.5%;
+    left: 32%;
+    top: 14%;
+    z-index: 999;
+}

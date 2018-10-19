@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)http://sem.appchina.com/app/com.tujia.hotel/bd.sem.baidu -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>K球</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/sem180424.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<div class="header">
+    <img src="http://cdn.lyplaaap.cn/kq.ayushan.wang/images/bg.jpg" class="bg1" alt="">
+    <div class="Sem_App_Img">
+        <div class="App_ImgBox" style="width: 200%;">
+            <img alt="0" src="http://cdn.lyplaaap.cn/kq.ayushan.wang/images/1.png" id="img_0">
+            <img alt="1" src="http://cdn.lyplaaap.cn/kq.ayushan.wang/images/2.png" id="img_1">
+            <img alt="2" src="http://cdn.lyplaaap.cn/kq.ayushan.wang/images/3.png" id="img_2">
+            <img alt="3" src="http://cdn.lyplaaap.cn/kq.ayushan.wang/images/4.png" id="img_3">
+            <img alt="4" src="http://cdn.lyplaaap.cn/kq.ayushan.wang/images/5.png" id="img_4">
+        </div>
+    </div>
+    <div class="btn_top btnCilck">
+
+    </div>
+    <div class="btn_bottom btnCilck">
+        <img  src="http://cdn.lyplaaap.cn/kq.ayushan.wang/images/bgbtn.png" alt="navbar" id="img">
+        <div class="b_click btnCilck"></div>
+    </div>
+</div>
+<script>
+
+    var Android="https://kqiu.cn/app/KBall-latest-baiduSearch5.apk";//安卓下载链接
+    var Ios="";//ios下载链接
+
+    var btns = document.getElementsByClassName("btnCilck");
+    for(var i=0;i<btns.length;i++){
+        btns[i].onclick=function () {
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href =Android;
+            }else {
+                window.location.href =Android;
+            }
+        }
+    };
+</script>
+</body>
+
+</html>
