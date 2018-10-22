@@ -21,11 +21,11 @@
 			.wapper{
 				position: relative;
 			}
-			.wapper a{
+			.wapper .item{
 				display: block;
 				width:100%;
 			}
-			.wapper a img{
+			.wapper .item img{
 				display: block;
 				width:100%;
 			}
@@ -55,23 +55,24 @@
 	</head>
 	<body>
 		<div class="wapper">
-			<a href="javascript:;"><img src="images/1.png"></a>
-			<a href="javascript:;"><img src="images/2.png"></a>
-			<a href="javascript:;"><img src="images/3.png"></a>
-			<a href="javascript:;"><img src="images/4.png"></a>
-			<a href="javascript:;"><img src="images/5.png"></a>
-			<div class="download-btn1 "></div>
-			<div  class="download-btn2 "></div>
+			<a class="item" href="javascript:;"><img src="images/1.png"></a>
+			<a class="item" href="javascript:;"><img src="images/2.png"></a>
+			<a class="item" href="javascript:;"><img src="images/3.png"></a>
+			<a class="item" href="javascript:;"><img src="images/4.png"></a>
+			<a class="item" href="javascript:;"><img src="images/5.png"></a>
+			<a  href="http://public.laosiji.com/download/laosiji_baidu_ayj_gjz_02.apk" class="download-btn1 "></a>
+			<a href="http://public.laosiji.com/download/laosiji_baidu_ayj_gjz_02.apk" class="download-btn2 "></a>
+			
 		</div>
-		<script type="text/javascript">
+		<!--<script type="text/javascript">
 			var downLoadBtn1 = document.querySelector('.download-btn1');
 			var downLoadBtn2 = document.querySelector('.download-btn2');
 			downLoadBtn1.onclick = function(){
-				window.location.href = 'http://public.laosiji.com/download/laosiji_baidu_ayj_gjz_02.apk'
+				window.location.href = ''
 			}
 			downLoadBtn2.onclick = function(){
 				window.location.href = 'http://public.laosiji.com/download/laosiji_baidu_ayj_gjz_02.apk'
 			}
-		</script>
+		</script>-->
 	</body>
 </html>
