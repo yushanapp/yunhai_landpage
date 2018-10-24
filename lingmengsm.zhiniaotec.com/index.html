@@ -37,22 +37,19 @@ width:100%;
           <area shape="rect" coords="519,22,709,84" href="javascript:;">
         </map>
         </center>
-
+        <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="//nlp.zntec.mobi/javascripts/yushan_rs_min.js"></script>
+        <script src="./defaultUrl.js"></script>
 <script>
 
-    var Android="http://cdn.51lm.tv/AppRelease/JLWLBDSS.apk";//安卓下载链接
-    var Ios="";//ios下载链接
-
-    var btns = document.getElementsByClassName("btnCilck");
-    for(var i=0;i<btns.length;i++){
-        btns[i].onclick=function () {
-            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                window.location.href =Android;
-            }else {
-                window.location.href =Android;
-            }
-        }
-    };
+$('.btnCilck').click(function () {
+        window.location.href=btndown;
+        event.defaultPrevented
+    });
+    new _yushan.dl_info({
+        url :'',
+        dlbutton: ['.btnCilck']
+    });
 </script>
 
 
