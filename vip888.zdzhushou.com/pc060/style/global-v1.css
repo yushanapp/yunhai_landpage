@@ -1,0 +1,70 @@
+html,body { background:#fff}
+body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{
+	margin: 0;
+	padding: 0;
+	border: 0; 
+	vertical-align: baseline;
+      word-wrap:break-word;
+   word-break:break-all;
+}
+}
+/* HTML5 display-role reset for older browsers 
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section{
+	display:block;
+}*/
+/*æ¸…é™¤è‹¹æžœæ‰‹æœºæŒ‰é’®æ ·å¼*/
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+-webkit-appearance: none;
+}
+
+*,*:before,*:after { 
+	 -moz-box-sizing: border-box;  
+     -webkit-box-sizing: border-box; 
+     -o-box-sizing: border-box; 
+     -ms-box-sizing: border-box; 
+     box-sizing: border-box; }
+
+ol,ul,li{
+	list-style:none;
+}
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+}
+.clear{line-height:0;font-size:0;clear:both;height:0;}
+.clearfix:before,.clearfix:after{
+	content:"";
+	display:table; 
+} 
+.clearfix:after{clear:both;} 
+.clearfix{ 
+    *zoom:1;/*IE/7/6*/
+}
+a{text-decoration:none;outline:none; color:#000;}
+a:hover{ color:#cd0000;star:expression(this.onFocus=this.blur()); text-decoration:none}
+:focus{outline: 0;}
+s.allIcon {display: inline-block;vertical-align: middle;text-decoration: line-through;}
+.img_Fillet {-moz-border-radius:50%;-webkit-border-radius:50%;border-radius:50%; }
+.box_Fillet60 {-moz-border-radius:60px;-webkit-border-radius:60px;border-radius:60px;  }
+.box_Fillet20 {-moz-border-radius:20px;-webkit-border-radius:20px;border-radius:20px;  }
+.box_Fillet10 {-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;  }
+.box_Fillet5 {-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;  }
+.box_Fillet3 {-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px; }
+.fl{float: left;}
+.fr{float: right;}
+.hidden{display: none}
+.img_big { 
+height: auto; 
+width: auto\9; 
+width:100%;
+display:block;
+}
+
+.colred{ color:#c00;}
+.colgreen{ color:#24AB66;}
+
+.w { max-width:550px; margin:0 auto; }
