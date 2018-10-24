@@ -1,61 +1,86 @@
 ﻿<!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>宝宝巴士儿歌</title>
-	<meta name="viewport" content="width=device-width"> 
- 	 <link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
-     <style>
-		.navImage img{
-			width:720px;
-			height:auto;
-			}
-			.navImage{
-			display:inline-block;
-			width:100%;			
-			}
-			body{
-			margin:0!important;
-			}
-     </style>
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?373bcaa652cfcce0fb701ad3eadb23b6";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
+    <meta charset="UTF-8">
+    <title>宝宝巴士</title>
+    <meta name="viewport" content="width=device-width">
+    <style>
+
+        .navImage img {
+            height: auto;
+        }
+
+        .navImage {
+            display: inline-block;
+            width: 100%;
+        }
+
+        body {
+            margin: 0 !important;
+        }
+
+    </style>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?373bcaa652cfcce0fb701ad3eadb23b6";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
 </head>
 <body>
-			<center>
-				<div class="navImage">
-			    <img  src="http://cdn.lyplaaap.cn/bbbs.zjiaozhidao.mobi/images/bg1.jpg" alt="navbar" usemap="#imgMap" id="img">
-                <map name="imgMap" class="btnCilck">
-                  <area shape="rect" coords="197,531,542,634" style="outline:none;" href="javascript:;">
-                </map>
-				</div> 
-			
-            <img src="http://cdn.lyplaaap.cn/bbbs.zjiaozhidao.mobi/images/bg2.jpg" alt="" name="download2" border="0" usemap="#download2Map"  id="download2" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
-<map name="download2Map"  class="btnCilck"><area shape="rect" coords="513,14,700,87"  href="javascript:;"></map>
 
+<center>
+    <div class="navImage">
+     <!-- <img src="http://cdn.lyplaaap.cn/kuaishou.zjiaozhidao.mobi/images/bgmy.jpg"  alt="navbar" border="0" usemap="#imgMap" id="img">-->
+        <map name="imgMap" class="btnCilck">
+            <area id="b_dw1" shape="rect" coords="" style="outline:none;" href="javascript:;">
+            <area id="b_dw2" shape="rect" coords="" style="outline:none;" href="javascript:;">
+        </map>
+    </div>
+
+        <img src="" alt="" border="0" usemap="#download2Map" id="xfbtn" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;" onClick="javascript:;" >
+            <map name="download2Map" class="btnCilck">
+                <area id="b_dw3" shape="rect" coords="" href="javascript:;">
+            </map>
+
+        <img src="" alt="" border="0" usemap="#download3Map" id="xfbtntop" style="position:fixed;margin:0 auto;top:0px;left:0;right:0;" onClick="javascript:;" >
+        <map name="download3Map" class="btnCilck">
+          <area shape="rect" id="b_dw4" coords="" href="javascript:;">
+        </map>
 </center>
+<script src="js/d4.js"></script>
 <script>
+    var btns = document.getElementsByClassName("btnCilck");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].onclick = function () {
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                $.ajax({
+                    url: "http://storage.lyplaaap.cn/bbbs/action/select.php",
+                    type: "get",
+                    success: function (res) {
+                        var data = jQuery.parseJSON(res)
 
-		var Android="https://app.appsflyer.com/com.sinyee.babybus.chants-360?af_adset={{UNIT_ID}}&af_ad={{IDEA_ID}}&af_prt=yunhaiyangfan&pid=baidusearch_int&c=4&af_click_lookback=7d&muid={{IMEI}}&idfa={{IDFA}}&android_id={{ANDROID_ID}}&os={{OS}}&af_ip={{IP}}&af_ua={{UA}}&ts={{TS}}&clickid={{CLICK_ID}}&callback_url={{CALLBACK_URL}}&sign={{SIGN}}&redirect=false&callType=v3&md5_imei={{IMEI_MD5}}&android_id={{ANDROID_ID}}&af_lang=%e4%b8%ad%e6%96%87";//安卓下载链接
-		var Ios="https://app.adjust.com/e9a944a";//ios下载链接
+                        window.location.href = data[3].ios;
+                    }
+                });
+            } else {
+                $.ajax({
+                    url: "http://storage.lyplaaap.cn/bbbs/action/select.php",
+                    type: "get",
+                    success: function (res) {
+                        var data = jQuery.parseJSON(res)
+                        window.location.href = data[3].az;
+                    }
 
-		var btns = document.getElementsByClassName("btnCilck");
-		for(var i=0;i<btns.length;i++){
-		   btns[i].onclick=function () {
-               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                   window.location.href =Ios;
-               }else {
-                   window.location.href =Android;
-               }
-           }
-		};
+                });
+            }
+        }
+    }
+    ;
 </script>
 </body>
 </html>
