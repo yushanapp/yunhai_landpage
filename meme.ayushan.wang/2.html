@@ -37,7 +37,7 @@
 					</map>
 				</div> 
 			<img src="images/bg5.jpg" alt="" usemap="#download2Map"id="download2" style="position:fixed;margin:0 auto;bottom:50px;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
-            <map name="download2Map" class="btnCilck">
+            <map name="download2Map" class="btnCilck" id="btn">
               <area shape="rect" coords="402,16,687,91" href="JavaScript:;">
             </map>
 			</center>
@@ -45,8 +45,23 @@
 
 		var Android="http://dll.sumeme.com/app/memezhibo_android_baidu2.apk";//安卓下载链接
 		var Ios="";//ios下载链接
-
-		var btns = document.getElementsByClassName("btnCilck");
+	var btns= document.getElementById("btn");
+		var navimg=document.getElementById("navImg");
+		btns.onclick=function(){
+			 if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Ios;
+               }else {
+                   window.location.href =Android;
+               }	
+			}
+			navimg.onclick=function(){
+			 if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Ios;
+               }else {
+                   window.location.href =Android;
+               }	
+			}
+		/*var btns = document.getElementsByClassName("btnCilck");
 		for(var i=0;i<btns.length;i++){
 		   btns[i].onclick=function () {
                if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
@@ -55,7 +70,7 @@
                    window.location.href =Android;
                }
            }
-		};
+		};*/
 </script>
 </body>
 </html>
