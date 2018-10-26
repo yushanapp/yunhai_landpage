@@ -47,7 +47,6 @@
 		var Ios="";//ios下载链接
 		
 			var btns= document.getElementById("btn");
-		var navimg=document.getElementById("navImg");
 		btns.onclick=function(){
 			 if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
                    window.location.href =Ios;
@@ -55,13 +54,7 @@
                    window.location.href =Android;
                }	
 			}
-			navimg.onclick=function(){
-			 if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                   window.location.href =Ios;
-               }else {
-                   window.location.href =Android;
-               }	
-			}
+		
 
 	/*	var btns = document.getElementsByClassName("btnCilck");
 		for(var i=0;i<btns.length;i++){

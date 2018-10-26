@@ -29,16 +29,15 @@
 	</script>
 </head>
 <body>
-			<center>
+		<center>
 				<div class="navImage">
-				  <img id="img"  src="http://cdn.lyplaaap.cn/meme.ayushan.wang/images/bg2.jpg" alt="navbar" usemap="#navImg">
+				  <img id="img"  src="http://cdn.lyplaaap.cn/meme.ayushan.wang/images/bg01.png" alt="navbar" usemap="#navImg">
 					<map name="navImg" id="navImg" class="btnCilck"><area shape="rectangle" coords="56,1348,656,1463" onClick="javascript:;"/>
-					  <area shape="rectangle" coords="202,600,516,679" onClick="javascript:;"/>
 					</map>
 				</div> 
-			<img src="images/bg5.jpg" alt="" usemap="#download2Map"id="download2" style="position:fixed;margin:0 auto;bottom:50px;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
+			<img src="http://cdn.lyplaaap.cn/meme.ayushan.wang/images/bg02.png" alt="" usemap="#download2Map"id="download2" style="position:fixed;margin:0 auto;bottom:50px;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
             <map name="download2Map" class="btnCilck" id="btn">
-              <area shape="rect" coords="402,16,687,91" href="JavaScript:;">
+              <area shape="rect" coords="401,17,686,92" href="JavaScript:;">
             </map>
 			</center>
 <script>
@@ -46,7 +45,6 @@
 		var Android="http://dll.sumeme.com/app/memezhibo_android_baidu4.apk";//安卓下载链接
 		var Ios="";//ios下载链接
 		var btns= document.getElementById("btn");
-			var navimg=document.getElementById("navImg");
 			btns.onclick=function(){
 				 if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
 					   window.location.href =Ios;
@@ -54,13 +52,7 @@
 					   window.location.href =Android;
 				   }	
 				}
-				navimg.onclick=function(){
-				 if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-					   window.location.href =Ios;
-				   }else {
-					   window.location.href =Android;
-				   }	
-				}
+		
 
 
 
