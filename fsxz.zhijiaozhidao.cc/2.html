@@ -1,47 +1,44 @@
-﻿<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>番薯小组</title>
-	<meta name="viewport" content="width=device-width"> 
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" /> -->
-     <style>
-		.navImage img{
-			width:750px;
-			height:1206px;
-			}
-			.navImage{
-			/* text-align:center; */
-			display:inline-block
-			/*margin-left:-8px!important; */
-			width:100%;			
-			}
-			body{
-			margin:0!important;
-			}
-     </style>
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://www.826006.com/zssqao1/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>首页</title>
+    <style>
+    *{
+    	margin: 0;
+    	padding: 0;
+    }
+    #download{
+    	position: relative;
+    }
+    #download .info{
+    	position: absolute;
+    	bottom: 0%;
+    }
+    </style>
 </head>
 <body>
-			<center>
-				<div class="navImage" >
-				  <img id="img"  src="images/bg1.jpg" alt="navbar" usemap="#navImg">
-					<map name="navImg" id="navImg">
-						<area shape="rectangle" coords="77,1085,338,1173" onClick="javascript:;"/>
-						
-					</map>
-				</div> 
-			<!--<img src="images/bg2.png" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" alt=""  id="download2" onClick="javascript:;" >-->
-			</center>
-<script>
-      ;(function(){
-        document.getElementById("navImg").addEventListener("click", function(){
-            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+<div id="download">
+    <img id="b_img" style="width:100%; height:100%; display: block;" src="images/01.jpg" alt="">
+    <img src = "http://test.myushan.com//yushan/logo_black.png" style="position: absolute;left: 0;top: 0;width: 10%">
+    <img src = "images/btn.png" class="downloadclz" id="downloadclz" style="position: fixed; left : 10%;bottom: 2%;width: 80%">
+    <div  class="info" style="width: 100%;text-align: center; font-size: 14px;color: #000; ">北京智投智道投资咨询有限公司</div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/app.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function() {
+
+      $("#downloadclz").click(function(){
+			
+			 if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
                 window.location.href ="https://at.umeng.com/Ofy4vC";
             }else {                 
                 window.location.href ="http://wangsuimg.fanshuapp.com/FANSHU-XIAOZU-ANDROID_5.5.0_RELEASE_small32.apk";
             }
-        });
-    })();
+			});
+    });
 </script>
-</body>
-</html>
+</body></html>
