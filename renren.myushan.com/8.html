@@ -21,10 +21,12 @@
     <div class="picBox">
 
 		<a href="javascript:;" id="download">
-            <img src="http://cdn.lyplaaap.cn/renren.myushan.com/images/bgzp.jpg" alt="">
+            <img src="http://cdn.lyplaaap.cn/renren.myushan.com/images/bg100.jpg" alt="">
         </a>  
-   		<div style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 640px;"><img style="width:100%;" src="http://cdn.lyplaaap.cn/renren.myushan.com/images/bgzp2.jpg" alt="" border="0" usemap="#download1Map"  onClick="javascript:;" >
-      	<div id="download1" style="position:absolute;top:16%;left:71%;width:28%;height:76%;"></div>
+   		<div style="position:fixed;margin:0 auto;top:0px;left:0;right:0;max-width: 640px;"><img style="width:100%;" src="http://cdn.lyplaaap.cn/renren.myushan.com/images/bg101.png" alt="" border="0" usemap="#download1Map"  onClick="javascript:;" >
+      	<div id="download1" style="position:absolute;top:16%;left:67%;width:30%;height:71%;"></div>
+      </div>
+      <div style="position:fixed;margin:0 auto;bottom:19%;left:0;right:0;max-width: 640px;"><img id="download2" style="width:210px;height:auto; margin:0 auto;" src="http://cdn.lyplaaap.cn/renren.myushan.com/images/bg102.png" alt="" border="0" usemap="#download1Map"  onClick="javascript:;" >
       </div>
     </div>
 
@@ -39,7 +41,15 @@
             }
         });
     })();
-
+ ;(function(){
+        document.getElementById("download2").addEventListener("click", function(){
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href ="https://lnk0.com/4YNhg0";
+            }else {
+                window.location.href ="http://download.rr.tv/static/down/android/newest/rrmj_bdtg_zpw_newest.apk";
+            }
+        });
+    })();
 </script>
 </body>
 </html>
