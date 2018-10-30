@@ -1,0 +1,59 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>免费小说</title>
+	<meta name="viewport" content="width=device-width"> 
+ 	 <link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
+     <style>
+		.navImage img{
+			width:720px;
+			height:auto;
+			}
+			.navImage{
+			display:inline-block;
+			width:100%;			
+			}
+			body{
+			margin:0!important;
+			}
+     </style>
+</head>
+<body>
+			<center>
+				<div class="navImage">
+			    <img  src="http://cdn.lyplaaap.cn/mfxsys.zjzhidao.top/1/images/bg1.jpg" alt="navbar" usemap="#imgMap" id="img">
+                <map name="imgMap" class="btnCilck">
+                    <area shape="rect" coords="222,370,504,423" style="outline:none;" href="javascript:;">
+					<area shape="poly" coords="177,1100,538,1100,568,1121,575,1147,554,1186,183,1194,147,1168,143,1136,153,1111"  style="outline:none;" href="javascript:;"/>
+					<area shape="rect" coords="224,2316,400,2362" style="outline:none;" href="javascript:;"/>
+					<area shape="rect" coords="227,2564,400,2613"  style="outline:none;" href="javascript:;"/>
+					<area shape="rect" coords="225,2814,400,2860"  style="outline:none;" href="javascript:;"/>
+
+                </map>
+				</div> 
+			
+       <img src="http://cdn.lyplaaap.cn/mfxsys.zjzhidao.top/1/images/bg2.png"   class="btnCilck" alt="" name="download2" border="0" usemap="#download2Map"  id="download2" style="position:fixed;margin:0 auto;bottom:0;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
+      <map name="download2Map"  class="btnCilck">
+      <area shape="poly"coords=""  href="javascript:;"></map>
+ 
+
+</center>
+<script>	
+
+		var Android="http://media.tadu.com/downloads/android/tadu_android_v4.11_daquan_300042.apk";//安卓下载链接
+		var Ios="";//ios下载链接
+
+		var btns = document.getElementsByClassName("btnCilck");
+		for(var i=0;i<btns.length;i++){
+		   btns[i].onclick=function () {
+               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Ios;
+               }else {
+                   window.location.href =Android;
+               }
+           }
+		};
+</script>
+</body>
+</html>
