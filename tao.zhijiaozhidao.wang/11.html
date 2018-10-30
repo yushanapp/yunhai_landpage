@@ -1,67 +1,133 @@
-﻿
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>淘新闻</title>
-<meta name="viewport" content="width=device-width"> 
-<!--
- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" /> -->
-<style>
-.navImage img{
-width:750px;
-height:auto;
-}
-.navImage{
-/* text-align:center; */
-display:inline-block
-/*margin-left:-8px!important; */
-width:100%;			
-}
-body{
-margin:0!important;
-}
-.navImage1 {/* text-align:center; */
-display:inline-block
-/*margin-left:-8px!important; */
-width:100%;			
-}
-</style>
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?5521b87a41cf08838f4bfdd9b3377f1b";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
+    <meta charset="UTF-8">
+    <title>生日管家</title>
+    <meta name="viewport" content="width=device-width">
+    <style>
 
+        .navImage img {
+            height: auto;
+        }
+
+        .navImage {
+            display: inline-block;
+            width: 100%;
+        }
+
+        body {
+            margin: 0 !important;
+        }
+
+    </style>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?14374f952045cf67e4c348f781d70828";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
 </head>
-
 <body>
+
 <center>
-<div class="navImage" ><span class="navImage1"><img id="img"  src="http://cdn.lyplaaap.cn/xinwen.ayushan.cn/images/b1.jpg" alt="navbar"></span>
+    <div class="navImage">
+     <!-- <img src="http://cdn.lyplaaap.cn/kuaishou.zjiaozhidao.mobi/images/bgmy.jpg"  alt="navbar" border="0" usemap="#imgMap" id="img">-->
+        <map name="imgMap"  class="btnCilck">
+            <area id="b_dw1" shape="rect" coords="" style="outline:none;" href="javascript:;">
+            <area id="b_dw2" shape="rect" coords="" style="outline:none;" href="javascript:;">
+        </map>
+    </div>
 
-</div> 
-<img src="http://cdn.lyplaaap.cn/xinwen.ayushan.cn/images/b2.png" alt="" usemap="#download2Map"  id="download2" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 750px;" onClick="javascript:;">
-<map name="download2Map" id="navImg">
-  <area shape="rect" coords="156,19,682,116" href="javascript:;">
-</map>
+        <img src="" alt="" border="0" usemap="#download2Map" id="xfbtn" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;" onClick="javascript:;" >
+            <map name="download2Map" class="btnCilck">
+                <area id="b_dw3" shape="rect" coords="" href="javascript:;">
+            </map>
+
+        <img src="" alt="" border="0" usemap="#download3Map" id="xfbtntop" style="position:fixed;margin:0 auto;top:0px;left:0;right:0;" onClick="javascript:;" >
+        <map name="download3Map" class="btnCilck">
+          <area shape="rect" id="b_dw4" coords="" href="javascript:;">
+        </map>
 </center>
-
+<script src="js/clipboard.js"></script>
 <script>
- ;(function(){
-        document.getElementById("navImg").addEventListener("click", function(){
-            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                window.location.href ="http://app.coohua.com/xinwenzhuan-production-3.2.2.5_3_F2qdxbaidusem11_sign.apk";
-            }else {                 
-                window.location.href ="http://app.coohua.com/xinwenzhuan-production-3.2.2.5_3_F2qdxbaidusem11_sign.apk";
+
+    $.ajax({
+        url: "http://storage.lyplaaap.cn/tao/action/select.php",
+        type: "get",
+        success: function (res) {
+            var data = jQuery.parseJSON(res);
+            var bj=data[1].bj;
+            var xf=data[1].xf;
+            var dxf=data[1].dxf;
+            var kd=data[1].kd;
+            var dw1=data[1].dw1;
+            var dw2=data[1].dw2;
+            var dw3=data[1].dw3;
+            var dw4=data[1].dw4;
+
+            console.log(bj+"----"+xf+"------"+dw1+"------"+dw2+"-----"+dw3);
+
+            /* $("#img").attr("src",bj);*//* $("#img").attr("src",bj);*/
+
+            var imgs=" <img src="+bj+" style='width:"+kd+"' alt=\"navbar\" border=\"0\" usemap=\"#imgMap\" id=\"img\">";
+            /* $("#xfbtn").attr("src",xf);*/
+
+            $(".navImage").append(imgs);
+            if(xf==0||xf == ""||xf.length==0){
+                $("#xfbtn").remove();
+            }else{
+                $("#xfbtn").attr("src",xf);
+                $("#xfbtn").css({"width":kd});
             }
-        });
-    })();
+
+            if(dxf==0||dxf == ""||dxf.length==0){
+                $("#xfbtntop").remove();
+            }else{
+                $("#xfbtntop").attr("src",dxf);
+                $("#xfbtntop").css({"width":kd});
+            }
+
+            $("#xfbtntop").css({"width":kd});
+            $("#b_dw1").attr("coords",dw1);
+            $("#b_dw2").attr("coords",dw2);
+            $("#b_dw3").attr("coords",dw3);
+            $("#b_dw4").attr("coords",dw4);
+        }
+    });
+
+
+    var btns = document.getElementsByClassName("btnCilck");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].onclick = function () {
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                $.ajax({
+                    url: "http://storage.lyplaaap.cn/tao/action/select.php",
+                    type: "get",
+                    success: function (res) {
+                        var data = jQuery.parseJSON(res)
+
+                        window.location.href = data[1].ios;
+                    }
+                });
+            } else {
+                $.ajax({
+                    url: "http://storage.lyplaaap.cn/tao/action/select.php",
+                    type: "get",
+                    success: function (res) {
+                        var data = jQuery.parseJSON(res)
+                        window.location.href = data[1].az;
+                    }
+
+                });
+            }
+        }
+    }
+
+
 </script>
-
-
 </body>
 </html>
