@@ -1,0 +1,339 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=750,user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="email=no">
+<title>抖颜-高端真实旅游结伴</title>
+<script type="text/javascript"></script>
+<link href="static/css/swiper-3.4.2.min.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="static/js/jquery.min.js"></script>
+<!--<script language="javascript" src="static/js/md5.js"></script>-->
+<script language="javascript" src="static/js/swiper-3.4.2.min.js"></script>
+<!--<script language="javascript" src="static/js/pub.js"></script>-->
+</head>
+<style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+    }
+
+    body {
+        font-family: "微软雅黑";
+        line-height: normal;
+        background: #000;
+    }
+
+    ul,
+    ol,
+    li {
+        list-style: none;
+        text-indent: 0;
+    }
+
+    a,
+    a:link,
+    a:active,
+    a:visited,
+    a:hover {
+        text-decoration: none;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+    }
+
+    img {
+        border: none;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+        font-size: 100%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+
+    input::-webkit-input-placeholder,textarea::-webkit-input-placeholder,input::-webkit-input-placeholder {
+        color: #bcbcbc;
+    }
+
+    input:focus::-webkit-input-placeholder {
+        color: transparent;
+    }
+
+    input {
+        background: none;
+        -webkit-appearance: none;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    p,
+    div {
+        word-break: break-all;
+        line-height: 130%;
+    }
+
+    i {
+        font-style: normal;
+    }
+
+    body {
+        background: #fff;
+    }
+    a{
+        color:inherit;
+    }
+
+    .home {
+        width: 100%;
+        height: 1540px;
+        background: url(static/images/background.png) no-repeat;
+        background-size: 100% auto;
+        padding-top: 1px;
+        position: relative;
+    }
+
+    .home-title {
+        font-size: 68px;
+        color: #302E40;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 136px;
+        line-height: 95px;
+    }
+
+    .menu-icon {
+        display: block;
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        background: url(static/images/phone_navigation_1.png) no-repeat;
+        background-size: 100% auto;
+    }
+
+    .down-btn {
+        margin-top: 27px;
+        text-align: center;
+    }
+
+    .down {
+        width: 402px;
+        height: 72px;
+        background: #FFFFFF;
+        border-radius: 100px;
+        font-size: 28px;
+        color: #302E40;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .scroll {
+        width: 403px;
+        height: 818px;
+        margin: 40px auto;
+        background: url(static/images/web_phone_1.png) no-repeat;
+        background-size: 100% auto;
+        padding: 1px;
+    }
+
+    .swiper-container {
+        width: 344px;
+        height: 604px;
+        margin: 108px 32px;
+    }
+
+    .swiper-slide img {
+        width: 344px;
+        height: 604px;
+    }
+
+
+    .home-tip1{
+        font-size: 28px;
+        color: #302E40;
+        margin-top: 81px;
+        text-align: center;
+    }
+    .home-tip2{
+        font-size: 24px;
+        color: #484858;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .list {
+        width: 100%;
+        height: 1206px;
+        -webkit-opacity: 0.95;
+        background: #7E7E7E;
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+
+    }
+    .list-top{
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+    .login,.out-login{
+        font-size: 32px;
+        color: #FFFFFF;
+    }
+    .close-icon{
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        background: url(static/images/phone_navigation_2.png) no-repeat;
+        background-size:100% auto ;
+    }
+    .home-list{
+        width: 574px;
+        margin: 39px auto;
+        font-size: 34px;
+        color: #fff;
+    }
+    .menu-list{
+        height: 130px;
+        width: 100%;
+        line-height: 130px;
+        border-bottom: 1px solid #fff;
+    }
+    .selected{
+        color: #FFE456;
+        border-bottom: 1px solid #FFE456;
+    }
+    .layer{
+        position:fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        background:rgba(0,0,0,0.8);
+        z-index:10;
+        display:none;
+    }
+    .arrow{
+        position:absolute;
+        top:0;
+        right:12px;
+        text-align:right;
+    }
+    .arrow img{
+        width:148px;
+        height:148px;
+    }
+    .layer-tips{
+        font-size: 32px;
+        color: #FFFFFF;
+        text-align:right;
+    }
+.menu-list a{
+  width:100%;
+  height:100%;
+  display:inline-block;
+}
+.ios-help{
+	font-size: 24px;
+	color: #2D2D2D;
+	margin-top: 16px;
+}
+.ios-help a{
+	font-size: 24px;
+	color: cornflowerblue;
+	text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+<div class="home">
+    <p class="home-title">抖颜<br />高端·真实</p>
+    <i class="menu-icon"></i>
+    <div class="down-btn">
+        <button class="down" onclick="down()">立即下载</button>
+        <!--<p class="ios-help">若打开APP遇到问题，<a href="/about/enterprise_pack">查看教程 >></a></p>-->
+    </div>
+    <div class="scroll">
+        <div class="swiper-container" id="swiper-container2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="static/picture/scroll1.png" /></div>
+                <div class="swiper-slide"><img src="static/picture/scroll2.png" /></div>
+                <div class="swiper-slide"><img src="static/picture/scroll3.png" /></div>
+                <div class="swiper-slide"><img src="static/picture/scroll4.png" /></div>
+                <div class="swiper-slide"><img src="static/picture/scroll5.png" /></div>
+
+            </div>
+        </div>
+    </div>
+    <p class="home-tip1">抖颜</p>
+    <p class="home-tip2">北京智投智道投资咨询有限公司</p>
+    <div class="list">
+        <div class="list-top">
+                        <!--<p class="login"><a href="/login/phone">登录</a></p>-->
+        </div>
+        <ul class="home-list">
+            <li class="menu-list selected"><a href="index.html">首页</a></li>
+            <li class="menu-list"><a href="guanyuwomen.html" >关于我们</a></li>
+            <li class="menu-list"><a href="xieyi.html">服务条款</a> </li>
+            <!--<li class="menu-list"><a href="/safe">安全须知</a></li>-->
+            <li class="menu-list"><a href="lianxiwomen.html">联系我们</a> </li>
+        </ul>
+        <div class="close-icon"></div>
+    </div>
+</div>
+<div class="layer" onclick="close_layer()">
+    <div class="arrow">
+        <img src="static/picture/rectangle.png" alt="">
+        <p class="layer-tips">点这里在浏览器中打开</p>
+    </div>
+</div>
+<script type="text/javascript">
+  var os=navigator.userAgent;
+
+  var mySwiper = new Swiper('.swiper-container', {
+    autoplay: 2000,
+    loop:true,
+  })
+  $('.menu-icon').on('click',function(){
+    $('.list').css('display','block')
+  })
+  $('.close-icon').on('click',function(){
+    $('.list').css('display','none')
+  })
+  $('.menu-list').on('click',function(){
+    $('.menu-list').removeClass('selected');
+    $(this).addClass('selected');
+  })
+function down(){
+  var ua = navigator.userAgent.toLowerCase();
+  if(ua.match(/MicroMessenger/i)=="micromessenger") {
+    document.querySelector('.layer').style.display='block'
+  }else{
+    // window.location.href="https://doum.tmlvxing.cn/package/downloads.html";
+    window.location.href="https://app.adjust.com/pqa5rf1?redirect=https%3A%2F%2Fdoum.tmlvxing.cn%2Fpackage%2Fandroid.html";
+  }
+
+  }
+
+  function close_layer(){
+    document.querySelector('.layer').style.display='none'
+  }
+</script>
+</body>
+
+</html>
