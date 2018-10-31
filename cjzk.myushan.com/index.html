@@ -1,88 +1,52 @@
-<!DOCTYPE html>
-<!-- saved from url=(0024)http://cjzk.myushan.com/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-<title>超级折扣</title>
-<meta name="viewport" content="width=device-width"> 
-<!--
- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" /> -->
-<style>
-.navImage img{
-width:750px;
-height:2500px;
-}
-.navImage{
-/* text-align:center; */
-display:inline-block;
-/*margin-left:-8px!important; */
-}
-
-.navImage2 img{
-width:377px;
-height:125px;
-}
-.navImage2{
-/* text-align:center; */
-display:inline-block
-/*margin-left:-8px!important; */
-width:100%;			
-}
-
-
-body{
-margin:0!important;
-}
-</style>
-<script src="./js/hm.js"></script><script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?16ed57bb1d9feeef3227f25998bf95b5";
-  var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-})();
-</script>
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>超级折扣</title>
+	<meta name="viewport" content="width=device-width"> 
+ 	 <link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
+     <style>
+		.navImage img{
+			width:750px;
+			height:auto;
+			}
+			.navImage{
+			display:inline-block;
+			width:100%;			
+			}
+			body{
+			margin:0!important;
+			}
+     </style>
 </head>
 <body>
-<center>
-<div class="navImage" style="position: relative;">
-    <img id="img" src="./images/bg1.jpg" alt="navbar" usemap="#navImg">
-    <map name="navImg" id="navImg">
-<area shape="rectangle" coords="191,2109,543,2211" onclick="javascript:;">
-    </map>
-	
-	<div style="font-size:16px;color:#000; position:absolute;bottom:9%;width:100%!important;height:auto;text-align:center;margin: 0 auto;">北京智投智道投资咨询有限公司</div>
-    </div> 
-<img src="./images/bg2.png" alt="" usemap="#download2Map" style=" display:block; position:fixed;margin:0 auto;bottom:0;left:0;right:0;max-width: 750px;" onclick="javascript:;">
-<map name="download2Map" id="download2">
-  <area shape="rect" coords="543,42,730,111" href="javascript:;">
-</map>
+			<center>
+				<div class="navImage">
+			    <img  src="http://cdn.lyplaaap.cn/cjzk.myushan.com/dm2/images/bg1.jpg" alt="navbar" usemap="#imgMap" id="img">
+                <map name="imgMap" class="btnCilck">
+                  <area shape="rect" coords="176,2129,571,2243" style="outline:none;" href="javascript:;">
+                </map>
+				</div> 
+			
+       <img src="http://cdn.lyplaaap.cn/cjzk.myushan.com/dm2/images/bg2.png" alt="" name="download2" border="0" usemap="#download2Map"  id="download2" style="position:fixed;margin:0 auto;bottom:0;left:0;right:0;max-width: 750px;" onClick="javascript:;" >
+<map name="download2Map"  class="btnCilck"><area shape="rect" coords="505,39,744,114"  href="javascript:;"></map>
 
-
-<!--<img src="images/bg11.png" style="position:absolute;margin:-110px auto;left:0;right:0;max-width: 200px;" alt=""  id="download1" onClick="javascript:;" >-->
-	</center>
-
+</center>
 <script>
- ;(function(){
-        document.getElementById("navImg").addEventListener("click", function(){
-            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                window.location.href ="https://itunes.apple.com/cn/app/%E8%B6%85%E7%BA%A7%E6%8A%98%E6%89%A3/id1290803829?l=zh&ls=1&mt=8";
-            }else {                   
-                window.location.href ="http://ffquan.com/app/1668867J";
-            }
-        });
-    })();
-    ;(function(){
-        document.getElementById("download2").addEventListener("click", function(){
-            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                window.location.href ="https://itunes.apple.com/cn/app/%E8%B6%85%E7%BA%A7%E6%8A%98%E6%89%A3/id1290803829?l=zh&ls=1&mt=8";
-            }else {                
-                window.location.href ="http://ffquan.com/app/1668867J";
-            }
-        });
-    })();
+
+		var Android="http://ffquan.com/app/1668867J";//安卓下载链接
+		var Ios="https://itunes.apple.com/cn/app/%E8%B6%85%E7%BA%A7%E6%8A%98%E6%89%A3/id1290803829?l=zh&ls=1&mt=8";//ios下载链接
+
+		var btns = document.getElementsByClassName("btnCilck");
+		for(var i=0;i<btns.length;i++){
+		   btns[i].onclick=function () {
+               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Ios;
+               }else {
+                   window.location.href =Android;
+               }
+           }
+		};
 </script>
-
-
-
-</body></html>
+</body>
+</html>
