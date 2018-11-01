@@ -1,39 +1,85 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>星光直播</title>
-	<meta name="viewport" content="width=device-width"> 
- 	 <link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
-     <style>
-		.navImage img{
-			width:720px;
-			height:auto;
-			}
-			.navImage{
-			display:inline-block;
-			width:100%;			
-			}
-			body{
-			margin:0!important;
-			}
-     </style>
+  <meta charset="utf-8">
+  <title>星光直播</title>
+  <meta name="viewport" content="width=device-width">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <!-- Demo styles -->
+
 </head>
 <body>
-			<center>
-				<div class="navImage">
-			    <img  src="http://cdn.lyplaaap.cn/xgzbys.zjzhidao.mobi/images/bg001.jpg" alt="navbar" usemap="#imgMap" id="img">
-                <map name="imgMap" class="btnCilck">
-                  <area shape="rect" coords="49,1500,674,1613" style="outline:none;" href="javascript:;">
-                </map>
-				</div> 
-                
-		<!--	<img src="http://cdn.lyplaaap.cn/yzb.zjzhidao.top/images/bg2.png" alt="" name="download2" border="0" usemap="#download2Map"  id="download2" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
-<map name="download2Map"  class="btnCilck"><area shape="rect" coords="475,32,704,110"  href="javascript:;"></map>-->
+<div class="header">
+  <div class="h_top">
+    <img src="images/bg_1.jpg" style="width: 100%;height: auto" alt="">
+  </div>
+  <div class="h_lbbox">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" >
+          <img src="http://cdn.lyplaaap.cn/xgzbys.zjzhidao.mobi/images/6.jpg" style="width: 100%;height: auto;" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/slider_2.jpg" style="width: 100%;height: auto;" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/lb2.jpg" style="width: 100%;height: auto;" alt="">
+        </div>
+
+      </div>
+      <!--    &lt;!&ndash; Add Pagination &ndash;&gt;
+          <div class="swiper-pagination"></div>-->
+    </div>
+  </div>
+  <div class="part-3">
+    <img src="images/bg_3.jpg" class="bj">
+    <!--<img src="images/fix_1.jpg">
+    <img src="images/fix_2.jpg">-->
+    <div class="btbox">
+      <img src="images/fix_1.jpg" alt="">
+      <img src="http://cdn.lyplaaap.cn/xgzbys.zjzhidao.mobi/images/x2.jpg" alt="">
+    </div>
+
+  </div>
+  <div style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 650px;width: 100%;opacity: 0.8;">
+    <img src="images/btn.png" alt="" border="0" style="width: 100%;height: auto;margin-bottom: -2px;" onClick="javascript:;" >
+    <div class="btnCilck" style="position: absolute;width: 32%;height: 50%;left: 61%;top: 23%;z-index: 99999;">
+
+    </div>
+  </div>
+
+</div>
 
 
-</center>
-<script>
+  <!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      autoplay: 3000,
+      loop: true, //
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+
+    });
+
 
     var Android="http://m.tuho.tv/download/file?code=1301&channel=and-yhyfcpa4-7";//安卓下载链接
     var Ios="";//ios下载链接
@@ -48,7 +94,6 @@
             }
         }
     };
-</script>
+  </script>
 </body>
-
 </html>
