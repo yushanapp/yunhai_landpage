@@ -8,10 +8,13 @@
     <link rel="stylesheet" type="text/css" href="css/sem180424.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
-<body>
+<body class="body">
 
 <div class="header">
-    <img src="http://cdn.lyplaaap.cn/fyxs.zhijiaozhidao.net/images/bg2.jpg" class="bg1" alt="">
+    <img src="http://cdn.lyplaaap.cn/fyxs.zhijiaozhidao.net/images/bg2.jpg" class="bg1" usemap="#imgMap" alt="">
+    <map name="imgMap"  class="btnCilck">
+        <area id="b_dw1" shape="rect" coords="" style="outline:none;" href="javascript:;">
+    </map>
     <div class="Sem_App_Img">
         <div class="App_ImgBox" style="width: 246%;">
             <img alt="0" src="http://cdn.lyplaaap.cn/fyxs.zhijiaozhidao.net/images/lb1.jpg" id="img_0">
@@ -32,21 +35,70 @@
         <div class="b_click btnCilck"></div>
     </div>-->
 </div>
+<script src="js/jquery-2.1.4.min.js"></script>
 <script>
 
-    var Android="https://media.yc.ifeng.com/apklist/ifeng_fy_4.65.50136.apk";//安卓下载链接
-    var Ios="";//ios下载链接
+    $.ajax({
+        url: "http://storage.lyplaaap.cn/fyxs/action/select.php",
+        type: "get",
+        success: function (res) {
+            var data = jQuery.parseJSON(res);
+            var dw4=data[3].dw4;
+            console.log(dw4);
+            if (dw4==1){
+                $('body').click(function () {
+                    if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                        $.ajax({
+                            url: "http://storage.lyplaaap.cn/fyxs/action/select.php",
+                            type: "get",
+                            success: function (res) {
+                                var data = jQuery.parseJSON(res)
+                                window.location.href = data[3].ios;
+                            }
+                        });
+                    } else {
+                        $.ajax({
+                            url: "http://storage.lyplaaap.cn/fyxs/action/select.php",
+                            type: "get",
+                            success: function (res) {
+                                var data = jQuery.parseJSON(res)
+                                window.location.href = data[3].az;
+                            }
+                        });
+                    }
+                });
+
+            }
+
+        }
+    });
+
 
     var btns = document.getElementsByClassName("btnCilck");
-    for(var i=0;i<btns.length;i++){
-        btns[i].onclick=function () {
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].onclick = function () {
             if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                window.location.href =Android;
-            }else {
-                window.location.href =Android;
+                $.ajax({
+                    url: "http://storage.lyplaaap.cn/fyxs/action/select.php",
+                    type: "get",
+                    success: function (res) {
+                        var data = jQuery.parseJSON(res)
+                        window.location.href = data[3].ios;
+                    }
+                });
+            } else {
+                $.ajax({
+                    url: "http://storage.lyplaaap.cn/fyxs/action/select.php",
+                    type: "get",
+                    success: function (res) {
+                        var data = jQuery.parseJSON(res)
+                        window.location.href = data[3].az;
+                    }
+                });
             }
         }
-    };
+    }
+
 </script>
 </body>
 

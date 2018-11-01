@@ -7,7 +7,6 @@
  	 <link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
      <style>
 		.navImage img{
-			width:720px;
 			height:auto;
 			}
 			.navImage{
@@ -22,28 +21,92 @@
 <body>
 			<center>
 				<div class="navImage">
-			    <img  src="http://cdn.lyplaaap.cn/fyxs.zhijiaozhidao.net/images/bg3.jpg" alt="navbar" id="img"></div> 
-                
-			<img src="http://cdn.lyplaaap.cn/fyxs.zhijiaozhidao.net/images/bg4.png" alt="" name="download2" border="0" usemap="#download2Map"  id="download2" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
-<map name="download2Map"  class="btnCilck"><area shape="rect" coords="-2,-3,723,106"  href="javascript:;"></map>
+			   <!-- <img  src="http://cdn.lyplaaap.cn/fyxs.zhijiaozhidao.net/images/bg3.jpg" alt="navbar" id="img"></div> -->
+					<map name="imgMap"  class="btnCilck">
+						<area shape="rect" coords="-2,-3,723,106"  href="javascript:;">
+					</map>
+			<img src="http://cdn.lyplaaap.cn/fyxs.zhijiaozhidao.net/images/bg4.png" id="xfbtn" alt="" name="download2" border="0" usemap="#download2Map"  id="download2" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
+			<map name="download2Map"  class="btnCilck">
+				<area shape="rect" coords="-2,-3,723,106" id="b_dw3"  href="javascript:;">
+			</map>
 
 
 </center>
-<script>
+			<script src="js/jquery-2.1.4.min.js"></script>
+			<script>
 
-		var Android="https://media.yc.ifeng.com/apklist/ifeng_fy_4.65.50138.apk";//安卓下载链接
-		var Ios="";//ios下载链接
+                $.ajax({
+                    url: "http://storage.lyplaaap.cn/fyxs/action/select.php",
+                    type: "get",
+                    success: function (res) {
+                        var data = jQuery.parseJSON(res);
+                        var bj=data[5].bj;
+                        var xf=data[5].xf;
+                        var dxf=data[5].dxf;
+                        var kd=data[5].kd;
+                        var dw1=data[5].dw1;
+                        var dw2=data[5].dw2;
+                        var dw3=data[5].dw3;
+                        var dw4=data[5].dw4;
 
-		var btns = document.getElementsByClassName("btnCilck");
-		for(var i=0;i<btns.length;i++){
-		   btns[i].onclick=function () {
-               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                   window.location.href =Android;
-               }else {
-                   window.location.href =Android;
-               }
-           }
-		};
-</script>
+                        console.log(bj+"----"+xf+"------"+dw1+"------"+dw2+"-----"+dw3);
+
+                        /* $("#img").attr("src",bj);*//* $("#img").attr("src",bj);*/
+
+                        var imgs=" <img src="+bj+" style='width:"+kd+"' alt=\"navbar\" border=\"0\" usemap=\"#imgMap\" id=\"img\">";
+                        /* $("#xfbtn").attr("src",xf);*/
+
+                        $(".navImage").append(imgs);
+
+                        if(xf==0||xf == ""||xf.length==0){
+                            $("#xfbtn").remove();
+                        }else{
+                            $("#xfbtn").attr("src",xf);
+                            $("#xfbtn").css({"width":kd});
+                        }
+
+                        if(dxf==0||dxf == ""||dxf.length==0){
+                            $("#xfbtntop").remove();
+                        }else{
+                            $("#xfbtntop").attr("src",dxf);
+                            $("#xfbtntop").css({"width":kd});
+                        }
+
+                        $("#xfbtntop").css({"width":kd});
+                        $("#b_dw1").attr("coords",dw1);
+                        $("#b_dw2").attr("coords",dw2);
+                        $("#b_dw3").attr("coords",dw3);
+                        $("#b_dw4").attr("coords",dw4);
+                    }
+                });
+
+
+                var btns = document.getElementsByClassName("btnCilck");
+                for (var i = 0; i < btns.length; i++) {
+                    btns[i].onclick = function () {
+                        if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                            $.ajax({
+                                url: "http://storage.lyplaaap.cn/fyxs/action/select.php",
+                                type: "get",
+                                success: function (res) {
+                                    var data = jQuery.parseJSON(res)
+
+                                    window.location.href = data[5].ios;
+                                }
+                            });
+                        } else {
+                            $.ajax({
+                                url: "http://storage.lyplaaap.cn/fyxs/action/select.php",
+                                type: "get",
+                                success: function (res) {
+                                    var data = jQuery.parseJSON(res)
+                                    window.location.href = data[5].az;
+                                }
+
+                            });
+                        }
+                    }
+                }
+			</script>
 </body>
 </html>
