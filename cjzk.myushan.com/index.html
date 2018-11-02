@@ -1,52 +1,92 @@
-﻿<!doctype html>
+
+
+<!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>超级折扣</title>
-	<meta name="viewport" content="width=device-width"> 
- 	 <link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
-     <style>
-		.navImage img{
-			width:750px;
-			height:auto;
-			}
-			.navImage{
-			display:inline-block;
-			width:100%;			
-			}
-			body{
-			margin:0!important;
-			}
-     </style>
-</head>
-<body>
-			<center>
-				<div class="navImage">
-			    <img  src="http://cdn.lyplaaap.cn/cjzk.myushan.com/dm2/images/bg1.jpg" alt="navbar" usemap="#imgMap" id="img">
-                <map name="imgMap" class="btnCilck">
-                  <area shape="rect" coords="176,2129,571,2243" style="outline:none;" href="javascript:;">
-                </map>
-				</div> 
-			
-       <img src="http://cdn.lyplaaap.cn/cjzk.myushan.com/dm2/images/bg2.png" alt="" name="download2" border="0" usemap="#download2Map"  id="download2" style="position:fixed;margin:0 auto;bottom:0;left:0;right:0;max-width: 750px;" onClick="javascript:;" >
-<map name="download2Map"  class="btnCilck"><area shape="rect" coords="505,39,744,114"  href="javascript:;"></map>
+<meta charset="UTF-8">
+<title>省钱APP下载</title>
+<meta name="viewport" content="width=device-width"> 
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 
-</center>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    #download2 {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 10;
+        left: 0;
+    }
+    .wrap {
+        position: relative;
+    }
+    .wrap .bg {
+        display: block;
+        width: 100%;
+    }
+    #img {
+        position: absolute;
+        width: 70%;
+        left: 15%;
+        bottom: 60px;
+    }
+    #download1 {
+        display: block;
+        width: 100%;
+    }
+</style>
+
+
+</head>
+
+<body >
+
+
+    <div class="wrap">
+        <img class="bg" src="images/1.jpg">
+        <img class="bg" src="images/2.jpg">
+        <img class="bg" src="images/3.jpg">
+        <img class="bg" src="images/4.jpg">
+        <img class="bg" src="images/5.jpg">
+        <img style="position: absolute; bottom: 10%; width: 50%; left: 25%;" src="images/btn.png" id="download1">
+        <img class="bg" src="images/7.jpg">
+        
+        <div style="font-size:16px;color:#000; position:absolute;bottom:8%;width:100%!important;height:auto;text-align:center;margin: 0 auto;">北京智投智道投资咨询有限公司</div>
+        
+		    <div id="download2">
+                <img class="bg" src="images/bg2.png" style="width: 100%;height: auto;">
+                <div id="download3" style="position: absolute;width: 32%;height: 38%;left: 67%;top:24%;z-index: 999;"></div>
+            </div>
+    </div>
+
+
 <script>
 
-		var Android="http://ffquan.com/app/1668867J";//安卓下载链接
-		var Ios="https://itunes.apple.com/cn/app/%E8%B6%85%E7%BA%A7%E6%8A%98%E6%89%A3/id1290803829?l=zh&ls=1&mt=8";//ios下载链接
-
-		var btns = document.getElementsByClassName("btnCilck");
-		for(var i=0;i<btns.length;i++){
-		   btns[i].onclick=function () {
-               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                   window.location.href =Ios;
-               }else {
-                   window.location.href =Android;
-               }
-           }
-		};
+    ;(function(){
+        document.getElementById("download1").addEventListener("click", function(){
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href ="https://itunes.apple.com/cn/app/%E8%B6%85%E7%BA%A7%E6%8A%98%E6%89%A3/id1290803829?l=zh&ls=1&mt=8";
+            }else {                 
+                window.location.href ="http://ffquan.com/app/1668867J";
+            }
+        });
+    })();
+    
+    ;(function(){
+        document.getElementById("download3").addEventListener("click", function(){
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href ="https://itunes.apple.com/cn/app/%E8%B6%85%E7%BA%A7%E6%8A%98%E6%89%A3/id1290803829?l=zh&ls=1&mt=8";
+            }else {                 
+                window.location.href ="http://ffquan.com/app/1668867J";
+            }
+        });
+    })();
+    
 </script>
+
+
 </body>
 </html>
