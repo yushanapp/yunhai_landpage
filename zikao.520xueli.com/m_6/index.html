@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var pageLevel = 1  //代表页面层级
+    </script>
+    <title>学历提升中心</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="email=no"/>
+    <!-- 引入flexible.js -->
+    <script type="text/javascript" src="js/flexible.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- 引入初始化CSS -->
+    <link rel="stylesheet" type="text/css" href="css/cssrest.css"/>
+    <!-- 加入自己的CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <style>
+        .yuan {
+
+            position: absolute;
+
+            widows: 0.2rem;
+
+            height: 0.2rem;
+
+            background-color: #f82236;
+
+            border-radius: 50%;
+
+            left: 1rem;
+
+            top: 0.2rem;
+
+            /* box-shadow: 0 0 10px rgba(0,0,0,.3) inset; */
+
+            -webkit-animation-name: 'ripple'; /*动画属性名，也就是我们前面keyframes定义的动画名*/
+
+            -webkit-animation-duration: 0.3s; /*动画持续时间*/
+
+            -webkit-animation-timing-function: ease; /*动画频率，和transition-timing-function是一样的*/
+
+            -webkit-animation-delay: 0s; /*动画延迟时间*/
+
+            -webkit-animation-iteration-count: infinite; /*定义循环资料，infinite为无限次*/
+
+            -webkit-animation-direction: alternate; /*定义动画方式*/
+
+        }
+
+        @keyframes ripple {
+
+            0% {
+
+                opacity: 0.8;
+
+                width: 0.36rem;
+
+                height: 0.36rem;
+
+            }
+
+            100% {
+
+                width: 0.46rem;
+
+                height: 0.46rem;
+
+            }
+
+        }
+
+    </style>
+    <script>
+
+        /*  页面框架参数，请勿删除，并用自己的站点ID替换111111  */
+
+        var siteId = 170927201
+
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/date.js"></script>
+    <script src="js/interactive_online.js"></script>
+</head>
+<!--下方是页面框架js，请勿删除-->
+<!--新框架-->
+<!--自动改时间JS开始-->
+<!--搭配小能触发-->
+<!--自动改时间JS结束-->
+<body>
+<script src="js/interactive_online.js"></script>
+
+<div class="banner" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+    <div class="navv">
+        <div class="left">
+            考证费用
+        </div>
+        <div class="left">
+            考证时间
+        </div>
+        <div class="left">
+            报考条件
+        </div>
+        <div class="left right">
+            报考政策
+        </div>
+    </div>
+
+</div>
+<div style='margin:10px auto;'><img src='images/banner1.jpg' style='width:100%;'/></div>
+<!-- 悬浮导航 -->
+<div class="nav">
+    <div class="nav_top">
+        <div class="nav1" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+            <div class="nav_img">
+                <img src="images/xf1.png" alt=""/>
+                <p>报考费用</p>
+            </div>
+        </div>
+        <div class="nav1" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+            <div class="nav_img">
+                <img src="images/xf2.png" alt=""/>
+                <p>报考流程</p>
+            </div>
+        </div>
+        <div class="nav1" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+            <div class="nav_img">
+                <img src="images/xf3.png" alt=""/>
+                <p>报考方法</p>
+            </div>
+        </div>
+        <div class="nav1" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+            <div class="nav_img">
+                <img src="images/xf4.png" alt=""/>
+                <p>学历形式</p>
+            </div>
+        </div>
+    </div>
+    <div class="nav_top nav_bot" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+        <div class="nav1">
+            <div class="nav_img">
+                <img src="images/xf5.png" alt=""/>
+                <p>测试基础</p>
+            </div>
+        </div>
+        <div class="nav1" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+            <div class="nav_img">
+                <img src="images/xf6.png" alt=""/>
+                <p>不考数英</p>
+            </div>
+        </div>
+        <div class="nav1" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+            <div class="nav_img">
+                <img src="images/xf7.png" alt=""/>
+                <p>费用减免</p>
+            </div>
+        </div>
+        <div class="nav1" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+            <div class="nav_img">
+                <img src="images/xf8.png" alt=""/>
+                <p>热门专业</p>
+            </div>
+        </div>
+    </div>
+    <div class="nav2"></div>
+    <div class="nav3"></div>
+</div>
+<!-- 本次培训接受以下学历形式 -->
+<div class="tion">
+    <h1>高等教育自学考试接受以下<span>学历提升形式</span></h1>
+    <div class="tion_top">
+        <div class="tion_left tion_left1">
+            <h2>低学历修专科</h2>
+            <div class="tion_img tion_img1">
+                <img src="images/xll1.png" alt=""/>
+                <span>小学</span>
+            </div>
+            <div class="tion_img">
+                <img src="images/xll1.png" alt=""/>
+                <span>初中修专科</span>
+            </div>
+            <div class="aan" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+                点击咨询>>
+            </div>
+        </div>
+        <div class="tion_left">
+            <h2>低学历修本科</h2>
+            <div class="tion_img tion_img1">
+                <img src="images/xll1.png" alt=""/>
+                <span>小学</span>
+            </div>
+            <div class="tion_img">
+                <img src="images/xll1.png" alt=""/>
+                <span>初中修本科</span>
+            </div>
+            <div class="aan" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+                点击咨询>>
+            </div>
+        </div>
+    </div>
+    <div class="tion_top tion_top1">
+        <div class="tion_left tion_left1">
+            <h2>高中修专科</h2>
+            <div class="tion_img tion_img1">
+                <img src="images/xll1.png" alt=""/>
+                <span>高中</span>
+            </div>
+            <div class="tion_img">
+                <img src="images/xll1.png" alt=""/>
+                <span>中专类修专科</span>
+            </div>
+            <div class="aan" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+                点击咨询>>
+            </div>
+        </div>
+        <div class="tion_left">
+            <h2>高中修本科</h2>
+            <div class="tion_img tion_img1">
+                <img src="images/xll1.png" alt=""/>
+                <span>高中</span>
+            </div>
+            <div class="tion_img">
+                <img src="images/xll1.png" alt=""/>
+                <span>中专类修本科</span>
+            </div>
+            <div class="aan" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+                点击咨询>>
+            </div>
+        </div>
+    </div>
+    <div class="tion_top tion_top2">
+        <div class="tion_left tion_left1">
+            <h2>大专修本科</h2>
+            <div class="tion_img tion_img1">
+                <img src="images/xll1.png" alt=""/>
+                <span>上班族</span>
+            </div>
+            <div class="tion_img">
+                <img src="images/xll1.png" alt=""/>
+                <span>在校生修本科</span>
+            </div>
+            <div class="aan" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+                点击咨询>>
+            </div>
+        </div>
+        <div class="tion_left">
+            <h2>低基础专本套读</h2>
+            <div class="tion_img tion_img1">
+                <img src="images/xll1.png" alt=""/>
+                <span>无学历</span>
+            </div>
+            <div class="tion_img">
+                <img src="images/xll1.png" alt=""/>
+                <span>基础差培训入口</span>
+            </div>
+            <div class="aan" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+                点击咨询>>
+            </div>
+        </div>
+    </div>
+    <div class="an" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+        免费领取学历定制提升方案
+    </div>
+</div>
+<!-- 专业预览 -->
+<div class="major">
+    <h1>主考专业<span>预览</span></h1>
+    <div class="major_top major_top11" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+        <div class="major_top_img">
+            <img src="images/yl1.png" alt=""/>
+        </div>
+        <div class="major_cen">
+            <h3>主考专业：<font color="#fd2f68">工商企业管理</font></h3>
+            <div class="major_top_bot">
+                <span class="ss"></span>
+                <span>管理类中通过率高的专业</span>
+            </div>
+            <div class="major_top_bot major_top_bot1">
+                <span class="ss"></span>
+                <span>管理岗位必修课程，就业面广</span>
+            </div>
+            <div class="major_top_bot major_top_bot1">
+                <span class="ss"></span>
+                <span>高端人才必选</span>
+            </div>
+        </div>
+    </div>
+    <div class="major_top lmajor_top_1" onclick="doyoo.util.openChat('g=10062662');return false;"
+         style="cursor:pointer">
+        <div class="major_top_img">
+            <img src="images/yl2.png" alt=""/>
+        </div>
+        <div class="major_cen">
+            <h3>主考专业：<font color="#6569e7">旅游管理</font></h3>
+            <div class="major_top_bot">
+                <span class="ss"></span>
+                <span>紧缺型高端型人才</span>
+            </div>
+            <div class="major_top_bot major_top_bot1">
+                <span class="ss"></span>
+                <span>就业市场的需求潜力很大</span>
+            </div>
+            <div class="major_top_bot major_top_bot1">
+                <span class="ss"></span>
+                <span>可贴合自己喜好</span>
+            </div>
+        </div>
+    </div>
+    <div class="major_top major_top_1" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+        <div class="major_top_img">
+            <img src="images/yl3.png" alt=""/>
+        </div>
+        <div class="major_cen">
+            <h3>主考专业：<font color="#24c091">企业财务管理</font></h3>
+            <div class="major_top_bot">
+                <span class="ss"></span>
+                <span>职业地位高，实用性强</span>
+            </div>
+            <div class="major_top_bot major_top_bot1">
+                <span class="ss"></span>
+                <span>工作稳定，薪资上升快</span>
+            </div>
+            <div class="major_top_bot major_top_bot1">
+                <span class="ss"></span>
+                <span>财会精英必备</span>
+            </div>
+        </div>
+    </div>
+    <div class="major_top major_top_1" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+        <div class="major_top_img">
+            <img src="images/yl4.png" alt=""/>
+        </div>
+        <div class="major_cen">
+            <h3>主考专业：<font color="#6569e7">视觉传达设计</font></h3>
+            <div class="major_top_bot">
+                <span class="ss"></span>
+                <span>设计大师必备技能</span>
+            </div>
+            <div class="major_top_bot major_top_bot1">
+                <span class="ss"></span>
+                <span>背记即可备考</span>
+            </div>
+            <div class="major_top_bot major_top_bot1">
+                <span class="ss"></span>
+                <span>就业面广，晋升快</span>
+            </div>
+        </div>
+    </div>
+    <div class="major_top major_top_1" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+        <div class="major_top_img">
+            <img src="images/yl4.jpg" alt=""/>
+        </div>
+        <div class="major_cen">
+            <h3>主考专业：<font color="#fd2f68">汽车营销与售后技术服务</font></h3>
+            <div class="major_top_bot">
+                <span class="ss"></span>
+                <span>就业热门专业</span>
+            </div>
+            <div class="major_top_bot major_top_bot1">
+                <span class="ss"></span>
+                <span>考证速度快</span>
+            </div>
+            <div class="major_top_bot major_top_bot1">
+                <span class="ss"></span>
+                <span>工作环境想好，工资高</span>
+            </div>
+        </div>
+    </div>
+    <div class="an" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+        查询更多专业条件
+    </div>
+    <div class="tsk">
+        <p><span class="clo month">5</span>月<span class="clo day">9</span>日18:00点 本批培训报名截止</p>
+        <img src="images/tsk1.png" alt=""/>
+    </div>
+</div>
+<!-- 热门专业 -->
+<div class="hot">
+    <h1>热门专业<span>推荐</span></h1>
+    <div class="hot_top">
+        <div class="hot_left hot_left1" onclick="doyoo.util.openChat('g=10062662');return false;"
+             style="cursor:pointer">
+            <img src="images/rm1.png" alt=""/>
+            <p>工商企业管理</p>
+        </div>
+        <div class="hot_left hot_left1" onclick="doyoo.util.openChat('g=10062662');return false;"
+             style="cursor:pointer">
+            <img src="images/rm1.png" alt=""/>
+            <p>企业财务管理</p>
+        </div>
+        <div class="hot_left hot_left1" onclick="doyoo.util.openChat('g=10062662');return false;"
+             style="cursor:pointer">
+            <img src="images/rm1.png" alt=""/>
+            <p>旅游管理</p>
+        </div>
+    </div>
+    <div class="hot_top hot_top1">
+        <div class="hot_left hot_left1" onclick="doyoo.util.openChat('g=10062662');return false;"
+             style="cursor:pointer">
+            <img src="images/rm1.png" alt=""/>
+            <p>视觉传达设计</p>
+        </div>
+        <div class="hot_left hot_left1" onclick="doyoo.util.openChat('g=10062662');return false;"
+             style="cursor:pointer">
+            <img src="images/rm1.png" alt=""/>
+            <p>汽车营销与售后服务</p>
+        </div>
+        <div class="hot_left hot_left1" onclick="doyoo.util.openChat('g=10062662');return false;"
+             style="cursor:pointer">
+            <img src="images/rm1.png" alt=""/>
+            <p>金融学专业</p>
+        </div>
+    </div>
+    <div class="hot_top hot_top2">
+        <div class="hot_left hot_left1" onclick="doyoo.util.openChat('g=10062662');return false;"
+             style="cursor:pointer">
+            <img src="images/rm1.png" alt=""/>
+            <p>广告学</p>
+        </div>
+        <div class="hot_left hot_left1" onclick="doyoo.util.openChat('g=10062662');return false;"
+             style="cursor:pointer">
+            <img src="images/rm1.png" alt=""/>
+            <p>法律专业</p>
+        </div>
+        <div class="hot_left hot_left1" onclick="doyoo.util.openChat('g=10062662');return false;"
+             style="cursor:pointer">
+            <img src="images/rm1.png" alt=""/>
+            <p>项目管理</p>
+        </div>
+    </div>
+    <div class="an" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+        更多热门院校专业在线咨询
+    </div>
+</div>
+
+
+
+
+<!-- 附近的人选择的学历提升方式 -->
+<div class="mall_seckill">
+    <span class="imgg"><img src="images/fj1.png" alt=""/></span>
+    <h1>附近的人选择的学历<span>提升方式</span></h1>
+    <div class="mall_seckill_slider">
+        <a href="javascript:;" class="mall_seckill_item">
+            <div class="way_top ">
+                <div class="way_top_left ">
+                    <h3>自学考试</h3>
+                    <p class="pp1">证书认可度高</p>
+                    <p>等同于统招学历</p>
+                    <p>部分专业难度低</p>
+                    <p>无入学考试</p>
+                    <div class="way_bot">
+                        <img src="images/yj.png" alt=""/>
+                        <span>436549</span>
+                    </div>
+                    <div class="an" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+                        查看更多
+                    </div>
+                </div>
+                <div class="way_top_left way_top_left1 ">
+                    <h3>自学考试</h3>
+                    <p class="pp1">领取学习指导书</p>
+                    <p>申请免费公共课</p>
+                    <div class="way_bot way_boo">
+                        <img src="images/yj.png" alt=""/>
+                        <span>385945</span>
+                    </div>
+                    <div class="an" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+                        查看更多
+                    </div>
+                </div>
+                <div class="way_top_left way_top_left1 ">
+                    <h3>其他形式</h3>
+                    <p class="pp1">证书含金量较低</p>
+                    <p>有入学考试</p>
+                    <div class="way_bot way_boo">
+                        <img src="images/yj.png" alt=""/>
+                        <span>384641</span>
+                    </div>
+                    <div class="an" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+                        查看更多
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+<!-- 自学考试  -->
+<div class="zxk">
+    <div class="zxk_k1">
+        <img src="images/zxk1.png" alt=""/>
+        <span onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">自学考试</span>
+    </div>
+    <div class="zxk_k2">
+        <div class="zxk_top" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+            报考条件
+        </div>
+        <div class="zxk_bot" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+            报考时间
+        </div>
+    </div>
+    <div class="zxk_k2">
+        <div class="zxk_top" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+            考试时间
+        </div>
+        <div class="zxk_bot" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+            考试科目
+        </div>
+    </div>
+    <div class="zxk_k1 zxk_k3">
+        <img src="images/zxk2.png" alt=""/>
+        <span onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">咨询入口</span>
+    </div>
+</div>
+<!-- 提升让你受益多多 -->
+<div class="lot">
+    <h1>提升学历让你<span>受益多多</span></h1>
+    <div class="lot_top" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+        <div class="lot_top_img">
+            <img src="images/1_01.jpg" alt=""/>
+            <img src="images/1_02.jpg" alt=""/>
+            <img src="images/1_03.jpg" alt=""/>
+        </div>
+    </div>
+    
+    <div class="an" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+        了解自考提升学历优势
+    </div>
+    <div class="tsk">
+        <p><span class="clo month">5</span>月<span class="clo day">9</span>日18:00点 本批培训报名截止</p>
+        <img src="images/tsk1.png" alt=""/>
+    </div>
+</div>
+<style>
+
+    .swiper-container2 {
+
+        width: 100%;
+
+        height: 12.3rem;
+
+        border-radius: 0.24rem;
+
+        margin: 0.6rem auto 0;
+
+        overflow: hidden;
+
+    }
+
+    .swiper-slide2 img {
+
+        width: 2.4rem;
+
+        height: 3.066666666666667rem;
+
+        background-size: 100%;
+
+        /* float: left; */
+
+        display: inline-block;
+
+    }
+
+    .part5 {
+
+        height: 7.6rem;
+
+    }
+
+    .swiper-slide .btn-11 {
+
+        /* width: 3rem;
+
+        height: 2.4rem; */
+
+    }
+
+    .swiper-wrapper {
+
+        width: 3rem;
+
+    }
+
+</style>
+<!-- 学习保障 -->
+
+
+<div class="core">
+    <h1>学历提升<span>问答中心</span></h1>
+    <div class="core_top">
+        <div class="core_top_left">
+            <img src="images/xd3.png" alt=""/>
+            <span>大家都关心</span>
+        </div>
+        <div class="core_top_right" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+            更多
+        </div>
+    </div>
+    <div class="core_nav">
+        <div class="core_nav_top">
+            <div class="core_nav_top_left " onclick="doyoo.util.openChat('g=10062662');return false;"
+                 style="cursor:pointer">
+                学习快
+            </div>
+            <div class="core_nav_top_left core_nav_top_left1" onclick="doyoo.util.openChat('g=10062662');return false;"
+                 style="cursor:pointer">
+                基础差
+            </div>
+            <div class="core_nav_top_left core_nav_top_left1" onclick="doyoo.util.openChat('g=10062662');return false;"
+                 style="cursor:pointer">
+                宝妈
+            </div>
+            <div class="core_nav_top_left core_nav_top_left1" onclick="doyoo.util.openChat('g=10062662');return false;"
+                 style="cursor:pointer">
+                找工作
+            </div>
+        </div>
+        <div class="core_nav_top">
+            <div class="core_nav_top_left " onclick="doyoo.util.openChat('g=10062662');return false;"
+                 style="cursor:pointer">
+                积分入户
+            </div>
+            <div class="core_nav_top_left core_nav_top_left1" onclick="doyoo.util.openChat('g=10062662');return false;"
+                 style="cursor:pointer">
+                直播教学
+            </div>
+            <div class="core_nav_top_left core_nav_top_left1" onclick="doyoo.util.openChat('g=10062662');return false;"
+                 style="cursor:pointer">
+                考公务员
+            </div>
+            <div class="core_nav_top_left core_nav_top_left1" onclick="doyoo.util.openChat('g=10062662');return false;"
+                 style="cursor:pointer">
+                考证书
+            </div>
+        </div>
+        <div class="core_nav_top core_nav_top1">
+            <div class="core_nav_top_left " onclick="doyoo.util.openChat('g=10062662');return false;"
+                 style="cursor:pointer">
+                全程无忧
+            </div>
+            <div class="core_nav_top_left core_nav_top_left1" onclick="doyoo.util.openChat('g=10062662');return false;"
+                 style="cursor:pointer">
+                没时间
+            </div>
+            <div class="core_nav_top_left core_nav_top_left1" onclick="doyoo.util.openChat('g=10062662');return false;"
+                 style="cursor:pointer">
+                不考英语
+            </div>
+            <div class="core_nav_top_left core_nav_top_left1" onclick="doyoo.util.openChat('g=10062662');return false;"
+                 style="cursor:pointer">
+                不考数学
+            </div>
+        </div>
+    </div>
+    <div class="core_ppp">
+        <p class="core_bot_left " onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer;color:#626ef6">
+            如何快速提升学历？<span style="margin-left: 3rem;" >查看答案</span></p>
+        <p class="core_bot_left" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+            自考需要什么条件？<span style="margin-left: 3rem;">查看答案</span></p>
+        <p class="core_bot_left" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+            自考学费多少钱？<span style="margin-left: 3.33rem;">查看答案</span></p>
+        <p class="core_bot_left" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer ;color:#626ef6">
+            低基础如何学本科？<span style="margin-left: 3rem;">查看答案</span></p>
+        <p class="core_bot_left" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+            没专科，可以直接学本科学历吗？<span style="margin-left: 1rem;">查看答案</span></p>
+        <p class="core_bot_left" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+            成人学历通过率高吗？难吗？<span style="margin-left: 1.65rem;">查看答案</span></p>
+    </div>
+    <div class="an" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+        进入提问中心
+    </div>
+</div>
+
+<div class="dream">
+    <img src="images/mx1.png" alt=""/>
+    <!-- 获取手机号码 -->
+   <form action="http://www.hyeduzj.net/plus/diy.php" enctype="multipart/form-data" method="post"
+                  name="lansige" onsubmit="return CheckForm()">
+
+            <input type="hidden" name="action" value="post">
+            <input name='furl' id='furl' class='intxt' value='' style="display:none"/>
+            <input name="sj" value='' id="sj" style="display:none"/>
+            <script language="javascript" type="text/javascript">
+                var wdtime = new Date();
+                var fromurl = window.location.href;
+                document.getElementById("sj").value = wdtime;
+                document.getElementById("furl").value = fromurl;
+            </script>
+            <input type="hidden" name="diyid" value="1">
+
+            <input type="hidden" name="do" value="2">
+
+
+        <div style="width:8.4rem;margin:0.6rem auto 0;">
+        <input name="dh" class="hsf_lydh1" type="text" id="stPhone5"
+              placeholder="请输入您的真实手机号码"
+               style="height:1.0666666666666667rem ;width:100%;line-height:1.0666666666666667rem ;border:1px solid #656df3;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius:0.13333333333333333rem ;color:#525bec;text-align: center;  font-size: 0.44rem ;"/>
+    </div>
+    <div style=" clear:both;"></div>
+    <div style=" display:block; ">
+        <div style=" margin:0.4rem auto; text-align:center;font-family:'微软雅黑', Arial; font-weight:bold;margin-top:0.4rem;">
+            <input type="hidden" name="dede_fields" value="address,text;qq,text;school,select;zy,text;cc,select;xm,text;dh,text;sel,select;sj,datetime;furl,text" />
+                        <input type="hidden" name="dede_fieldshash" value="0a7f869806957f3c1160d52a20c13e79" />
+
+            <input type="submit" class="dong_btn2"
+                   style="  background-color:#050e6b;width:8.4rem; font-size:0.45rem; color:#fff; -webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;  height:1.0666666666666667rem;border:0px; line-height: 1.0666666666666667rem; font-weight：bold; letter-spacing: 0.04rem; cursor:pointer"
+                   value="立即获取资料"/>
+        </div>
+        <div style=" clear:both;"></div>
+    </div>
+    </form>
+
+</div>
+
+
+
+
+<!-- 版权 -->
+<div class="foot" style="width: 100%;color: #ffffff;text-align: center;line-height: 30px;font-size: 15px;margin-top: 10px;">
+    <div class="footer" style="height: 1.5rem;">
+       <!-- <p>联系电话0571-81906867</p>
+        <p>联系地址：浙江省杭州市西湖区万塘路252号计量大厦7楼</p>
+        <p>浙ICP备17052761号<br>版权所有：浙江出头教育科技有限公司</p>-->
+        <p><br>版权所有：北京中嘉未来教育科技有限公司<br><br></p>
+    </div>
+</div>
+<!-- 右侧返回顶部 -->
+<div class="c_meau">
+    <div class="fr_t">
+        <img src="images/db.png"/>
+    </div>
+    <div class="clear"></div>
+</div>
+<script type="text/javascript">
+
+    $(window).scroll(function () {
+
+        if ($(this).scrollTop() > 1400) {
+
+            $(".c_meau").stop().show().animate({bottom: '2.9rem'}, 400);
+
+        }
+
+        else {
+
+            $(".c_meau").stop().animate({bottom: '-4rem'}, 400);
+
+        }
+
+    });
+
+    $('.c_meau .fr_t').click(function () {
+
+        $('body,html').animate({scrollTop: 0}, 800);
+
+        $(".c_meau").animate({bottom: '-5.066666666666666rem ', opacity: '0'}, 1000);
+
+        return false;
+
+    });
+
+</script>
+<!-- 右边悬浮导航 -->
+<div class=" rightxf" onclick="doyoo.util.openChat('g=10062662');return false;" style="cursor:pointer">
+    <div class="yuan"></div>
+    <img src="images/txmm.png" alt=""/>
+    <h2>在线咨询</h2>
+    <p>学历提升</p>
+</div>
+<script>
+
+    $(function () {
+
+        $('.rightxf').animate({right: '24px'}, 1000);
+
+        $('.rightxf .close').click(function () {
+
+            $('.rightxf').hide();
+
+        });
+
+    });
+
+</script>
+
+
+
+<!-- 与此页相关的内联脚本 -->
+<script type="text/javascript">
+
+
+    jQuery(function ($) {
+
+        $('#cutimgmain').slideBox({
+
+            duration: 0.3,//滚动持续时间，单位：秒
+
+            easing: 'linear',//swing,linear//滚动特效
+
+            delay: 5,//滚动延迟时间，单位：秒
+
+            hideClickBar: false,//不自动隐藏点选按键
+
+            clickBarRadius: 10
+
+        });
+
+    });
+
+</script>
+
+<script>
+
+    interactive.init('greatbear');
+
+    setTimeout(function () {
+
+        interactive.openGreatBear("0", "")
+
+    }, 10000);
+
+
+</script>
+<script type="text/javascript" charset="utf-8" src="http://lead.soperson.com/20001634/10097908.js"></script>
+
+</body>
+</html>
+        
