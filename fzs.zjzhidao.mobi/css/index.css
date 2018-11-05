@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+.titles{
+    position: absolute;
+    left: 0;
+    top: 24%;
+    width: 100%;
+    height: 4%;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.titles>div{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.titles>div>span{
+    display: block;
+    width: 40%;
+    font-size: 22px;
+    font-weight: 500;
+    color: #5D5D5D;
+    height: auto;
+    padding-bottom: 8px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 20px;
+
+}
+.t_left{
+}
+.t_right{
+
+}
+.bcolor{
+    border-bottom: 2px solid #3fcf8a;
+}
+.tests{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 47%;
+}
+.tests .xq{
+    display: block;
+}
+.tests .pl
+{
+    display: none;
+}
+.tests>img{
+    width: 100%;
+    height: auto;
+}
+.bg1{
+    width: 100%;
+    height: auto;
+}
+.Sem_App_Img{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 28%;
+    background: #fff;
+}
+.btn_bottom{
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+}
+.btn_bottom .b_click{
+    position: absolute;
+    width: 34%;
+    height: 50%;
+    left: 60%;
+    top: 20%;
+    z-index: 9999999999999999;
+}
+.btn_bottom img{
+    width: 100%;
+    height: auto;
+}
+.btn_top{
+    position: absolute;
+    width: 100%;
+    height: 4%;
+    left: 0;
+    bottom: 10px;
+    z-index: 9999;
+}
