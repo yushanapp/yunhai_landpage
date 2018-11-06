@@ -1,25 +1,29 @@
+
+
 <!DOCTYPE html>
-<!-- saved from url=(0040)https://activity.52tt.com/promotion/bd2/ -->
-<html class="pixel-ratio-1 watch-active-state"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html>
+  <head>
+    <meta charset=utf-8"utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<meta name="keywords" content="2">
-	<meta name="description" content="1">
+	<meta name="keywords" content="2" />
+	<meta name="description" content="1" />
     <meta name="revised" id="html-version" content="2.0">
-    <meta name="format-detection" content="telephone=no">
+    <meta name = "format-detection" content = "telephone=no">
     <title>下载链接</title>
-  <script src="./index_files/hm.js"></script><script>
+  </head>
+  	<script>
 		var _hmt = _hmt || [];
 		(function() {
 		  var hm = document.createElement("script");
-		  hm.src = "//hm.baidu.com/hm.js?86320a5d4f91657c8c684c082ddb8079";
+		  hm.src = "hm.js-86320a5d4f91657c8c684c082ddb8079"/*tpa=https://hm.baidu.com/hm.js?86320a5d4f91657c8c684c082ddb8079*/;
 		  var s = document.getElementsByTagName("script")[0]; 
 		  s.parentNode.insertBefore(hm, s);
 		})();
-	</script><style>
+	</script>
+<style>
 	*{margin:0;padding:0;}
 body{
 	max-width:720px;
@@ -72,34 +76,35 @@ body{
 	.cover p span{
 	  color:#FFD702;
 	}
- </style><link rel="stylesheet" href="./index_files/PromotionActivities.css"><link rel="stylesheet" href="./index_files/swiper.min.css"></head>
-  	
-				
-  	
-  
+ </style>				
+  <link rel="stylesheet" href="PromotionActivities.css" tppabs="https://activity.52tt.com/css/PromotionActivities.css">	
+  <link rel="stylesheet" href="swiper.min.css" tppabs="https://activity.52tt.com/css/swiper.min.css">
 		
   <body class="view view-main">
-    <div class="page-content parent" style="padding-bottom: 146.078px;">
+
+    <div class="page-content parent">
       <div class="wrap">
-        <div class="top1" style="position:relative;">
-				  <img  src="./index_files/y百度搜索落地页2_01.jpg" alt="TT语音，无兄弟，不手游">									
-        		  <div class="download" style="position:absolute;width:10%;height:45%;left:87%;top:22%;z-index:888;"></div>
+        <div class="top1">
+				  <img class="download" src="topmrzh.jpg" tppabs="https://activity.52tt.com/media/26665/topmrzh.jpg" alt="TT语音，无兄弟，不手游" />
+            <img src="logo.png" style="position: absolute;left: -1px;top: 0;width: 73px;height: auto;z-index: 999999;" alt="">
         </div>
 
-        <p><img id="__mcenew" src="./index_files/y百度搜索落地页2_02.jpg" alt="" data-id="40283"></p>
+        <p><img src="o_1cr9o14nn14kcc0b1lef6o81ps69.jpg" tppabs="https://ga-album-cdnqn.52tt.com/o_1cr9o14nn14kcc0b1lef6o81ps69.jpg" alt="" /></p>
 
       </div>
 
     </div>
-    <div class="btn-bottom ">
-			  <img src="./index_files/y百度搜索落地页2_03.jpg" alt="TT语音，无兄弟，不手游">	
-              <div class="download" style="position:absolute;width:25%;height:40%;left:73%;top:47%;z-index:999;"></div>							
+    <div class="btn-bottom download">
+			  <img src="bomrzh.jpg" tppabs="https://activity.52tt.com/media/26666/bomrzh.jpg" alt="TT语音，无兄弟，不手游" />								
     </div>
 	
-	<div class="cover"><div class="cover-sub"><div class="cover-sub-content"><div class="img-wrap"><img src="./index_files/arrow.png" alt=""></div> </div></div><p class="">戳右上角，选择<span>在浏览器中打开</span>，即可下载！</p></div>	
-  		
-  <script type="text/javascript" src="./index_files/framework.min.js"></script>
-  <script src="./index_files/uaredirect.js"></script>
+	<div class="cover"><div class="cover-sub"><div class="cover-sub-content"><div class="img-wrap"><img src="arrow.png" tppabs="https://activity.52tt.com/media/24317/arrow.png" alt=""></div> </div></div><p class="">戳右上角，选择<span>在浏览器中打开</span>，即可下载！</p></div>	
+    <div style="width: 100%;height: 20px;position: absolute;bottom: 0;left: 0;text-align: center;z-index: 99;color: #fff;line-height: 20px;">
+        北京智投智道投资咨询有限公司
+    </div>
+  </body>
+  <script type="text/javascript" src="framework.min.js-v=2" tppabs="https://cdn.52tt.com/m/pubilc/js/framework.min.js?v=2"></script>
+  <script src="uaredirect.js" tppabs="https://cdn.52tt.com/m/private/official_website/assets/js/uaredirect.js"></script>
   <script>
     //get parameters from url: exp. uid
 	$$('.cover').click(function(){
@@ -120,7 +125,8 @@ body{
 		var pt=	$$('.download').height();
 		$$('.parent').css('paddingBottom',pt+'px');
 	},500)
-	var status = getUrlParam("status");
+	var status = getUrlParam("status")?getUrlParam("status"):0;//此参数判断是否自动下载
+	var game_id = getUrlParam("game_id") ? getUrlParam("game_id"):'';
 	console.log(packageChannel);
 	var ua = navigator.userAgent.toLowerCase();
 	if(status==1){
@@ -151,19 +157,23 @@ body{
 		if (ua.match(/MicroMessenger/i) == "micromessenger") {
 			$$('.cover').show();
 		}
-		
-		if(guildid&&!packageChannel){
-			window.location.href='https://d.52tt.com/p/app/GAClient/dl?guild='+guildid;
-		}
-		else if(guildid&&packageChannel){
-			window.location.href='https://d.52tt.com/p/app/GAClient/dl?guild='+guildid+'&channel='+packageChannel;
-		}
-		else if(packageChannel&&!guildid){
-			window.location.href='https://d.52tt.com/tt/'+packageChannel+'/tt.apk';
+		var jumpDownLoadUrl='';
+		if(guildid || game_id || packageChannel){
+		   jumpDownLoadUrl='https://d.52tt.com/p/app/GAClient/dl?status='+status;
+		   if (guildid)
+			    jumpDownLoadUrl+='&guild='+guildid;
+		   if (game_id)
+			    jumpDownLoadUrl+='&game_id='+game_id;
+		   if (packageChannel&&(guildid||game_id))
+			    jumpDownLoadUrl+='&channel='+packageChannel;	
+		   else{
+			   jumpDownLoadUrl='https://d.52tt.com/tt/'+packageChannel+'/tt.apk';
+		   }	
 		}
 		else{
-			window.location.href='http://cdntt.52tt.com/packages/GAClient/My4yLjFAMzI0/official/tt.apk';	
+			jumpDownLoadUrl='http://cdntt.52tt.com/packages/GAClient/My4yLjFAMzI0/official/tt.apk';	
 		}
+		window.location.href=jumpDownLoadUrl
 	}
 	function ios(){
 		var url=from+kwid+'&sjump=https%3A%2F%2Fitunes.apple.com%2Fcn%2Fapp%2Fid1012317813%3F%26mt%3D8';
@@ -176,9 +186,8 @@ body{
 		}
 	}		
   </script>
-  <script src="./index_files/swiper.min.js"></script>
+  <script src="swiper.min.js" tppabs="https://activity.52tt.com/scripts/swiper.min.js"></script>
   <script>
     var swiper = new Swiper('.swiper-container');
   </script>		
-
-</body></html>
+</html>

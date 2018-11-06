@@ -1,0 +1,107 @@
+  *{margin: 0;padding: 0;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;}
+  a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video{
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font: inherit;
+      vertical-align: baseline;
+      /*word-break:break-all;*/
+      word-wrap:break-word;
+  }
+  ul,li,ol{
+      list-style: none;
+  }
+  img{
+      border: none;
+
+      vertical-align:top;
+      -webkit-tap-highlight-color:rgba(0,0,0,0);
+  }
+  a{
+      text-decoration: none;
+      border: none;
+      outline: none;
+      tap-highlight-color: rgba(0,0,0,0);
+      focus-ring-color: rgba(0, 0, 0, 0);
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+      -webkit-focus-ring-color: rgba(0, 0, 0, 0);
+      -moz-tap-highlight-color: rgba(0,0,0,0);
+      -moz-focus-ring-color: rgba(0, 0, 0, 0);
+  }
+  a:visited{
+      color: inherit;
+  }
+
+  .parent{
+    padding-bottom: 35px;
+  }
+  .wrap{
+
+  }
+  .top1{
+    position: relative;
+  }
+  .top1>img{
+    width: 100%;
+  }
+  .wrap>p>img{
+    width: 100%;
+    display: block;
+  }
+
+  .btn-top{
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+    margin: auto;
+    width: 300px;
+  }
+  .btn-top a{
+
+  }
+  .btn-top a img{
+    margin: 0 auto;
+    height: 40px;
+  }
+  .btn-bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+  }
+  .btn-bottom img{
+    height: auto;
+    width: 100%;
+    position: static;
+    vertical-align: middle;
+}
+  .page-content{
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+    height: 100%;
+    z-index: 1;
+    position: static;
+    margin: 0 auto;
+  }
+  .left{
+    float: left;
+  }
+  .right{
+    float: right;
+  }
+  body{
+    position: relative;
+	margin: 0 auto;
+	max-width:720px;  
+    height: 100%;
+  }
+  html{
+    height:100%;
+  }
+.swiper-container img{
+	width:100%;
+}
