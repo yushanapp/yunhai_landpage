@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<meta charset="utf-8">
+<html>
+	<head>
+		<meta charset="utf-8" />
 		<title></title>
 		<style>
 			.myimg
@@ -46,53 +46,31 @@
 				width: 100%;
 				margin-top: -4%;
 			}
-			#img_btn1{
-				position: fixed;
-				right: 5%;
-				top: 1%;
-				z-index: 99;
-				width: 35%;
-			}
-			#img_btn2{
-				position: absolute;
-				right: 26%;
-				top: 32%;
-				width: 50%;
-			}
-			#img_btn3{
-				position: absolute;
-				right: 21%;
-				bottom: 6%;
-				width: 57%;
-			}
 			.receive_div img{
 				width: 45%;
 				cursor: pointer;
 			}
-			#mydiv{
-				position: relative;
-			}
 			*{margin:0;}
 		</style>
-		<script src="index.php_files/jquery.js"></script>
+		<script src="js/jquery.min.js" tppabs="http://cdn-huoshu.fire2333.com/landpages/lyzt/template/1001/js/jquery.min.js"></script>
     </head>
 		<body style="background-color:rgb(0,0,0); width:100%">
-	<div id="mydiv">
-	<a class="mya"><img id="img_1" class="myimg myfixtop" src="index.php_files/1.jpg"><img id="img_btn1" src="index.php_files/btn1.png"></a><a class="mya"><img id="img_2" class="myimg" src="index.php_files/2.jpg" style="margin-top: 310px;"></a><a class="mya"><img id="img_3" class="myimg" src="index.php_files/3.jpg"><img id="img_btn2" src="index.php_files/btn2.png"></a><a class="mya"><img id="img_4" class="myimg" src="index.php_files/4.jpg"></a><a class="mya"><img id="img_5" class="myimg" src="index.php_files/5.jpg"></a><a class="mya"><img id="img_6" class="myimg" src="index.php_files/6.jpg"><img id="img_btn3" src="index.php_files/btn3.png"></a><img id="img_footer" class="myimg" src="index.php_files/bjzn_tail.jpg"></div>
-	<div class="alert_div">
-		<div class="text_div"><img src="index.php_files/2.png" alt=""></div>
-		<div class="receive_div"><img src="index.php_files/3_002.jpg" alt="" class="download_img"></div>
+	<div id='mydiv'>
 	</div>
-	
+	<div class="alert_div">
+		<div class="text_div"><img src="img2/2.png" tppabs="http://cdn-huoshu.fire2333.com/landpages/lyzt/template/1001/img2/2.png" alt=""></div>
+		<div class="receive_div"><img src="img2/3.jpg" tppabs="http://cdn-huoshu.fire2333.com/landpages/lyzt/template/1001/img2/3.jpg" alt="" class="download_img"></div>
+	</div>
+	</body>
 	
 	<script type="text/javascript">
 		var gameId = '3000035';
-		var landingPageId = '2001';
+		var landingPageId = '1001';
 		var isDetainment = '';
 		var fromType = getUrlParam('from_type');
-		var downloadArray = [0];
-		var hrefArray = [1,2,3,4,5,6];
-        var imageSrcArray = ['img/1.jpg', 'img/2.jpg','img/3.jpg','img/4.jpg', 'img/5.jpg', 'img/6.jpg'];
+		var downloadArray = [0,2,4,7];
+		var hrefArray = [1, 2, 3,4,5,6,7,8];
+        var imageSrcArray = ['img/01.jpg'/*tpa=http://cdn-huoshu.fire2333.com/landpages/lyzt/template/1001/img/01.jpg*/, 'img/2.gif'/*tpa=http://cdn-huoshu.fire2333.com/landpages/lyzt/template/1001/img/2.gif*/,'img/3.gif'/*tpa=http://cdn-huoshu.fire2333.com/landpages/lyzt/template/1001/img/3.gif*/,'img/4.gif'/*tpa=http://cdn-huoshu.fire2333.com/landpages/lyzt/template/1001/img/4.gif*/, 'img/5.gif'/*tpa=http://cdn-huoshu.fire2333.com/landpages/lyzt/template/1001/img/5.gif*/,'img/6.gif'/*tpa=http://cdn-huoshu.fire2333.com/landpages/lyzt/template/1001/img/6.gif*/,'img/7.gif'/*tpa=http://cdn-huoshu.fire2333.com/landpages/lyzt/template/1001/img/7.gif*/, 'img/8.jpg'/*tpa=http://cdn-huoshu.fire2333.com/landpages/lyzt/template/1001/img/8.jpg*/];
 
 		var modeltype = navigator.userAgent;
 		console.log(modeltype);
@@ -133,7 +111,7 @@
 			}
 		}
 		$(document).ready(function () {
-			postData('//www.fire2333.com/logapi/LogLandpages.php', 'logLandingPage');
+			postData('http://www.fire2333.com/logapi/LogLandpages.php', 'logLandingPage');
 			//setTimeout('downloadApk()',3000);
 			init();
 			isWeiXin();
@@ -146,7 +124,7 @@
 			$(".alert_div").hide();
 			$("#mydiv").css({"-webkit-filter":"brightness(100%)","filter":"brightness(100%)"})
 			$("body").css({"height":"100%","overflow":"initial"});
-			window.location = "//cdn-huoshu.fire2333.com/mc/apks/200069/lyzt-216313267.181023.apk";
+			window.location = "http://cdn-huoshu.fire2333.com/mc/apks/200069/lyzt-216313155.181023.apk";
 		}
 
 
@@ -156,30 +134,19 @@
                 var img = "<img id='img_" + (parseInt(index)+1) + "' class='myimg' src='" + imageSrcArray[index] + "?v=1000000017'>";
                 $("#mydiv").append(img);
             }
-            $("#mydiv").append("<img id='img_footer' class='myimg' src='//cdn-huoshu.fire2333.com/landpages/footer/icp/bjzn_tail.jpg'/>");
+            $("#mydiv").append("<img id='img_footer' class='myimg' src='../../../footer/icp/bjzn_tail.jpg'/*tpa=http://cdn-huoshu.fire2333.com/landpages/footer/icp/bjzn_tail.jpg*//>");
+            
             for (var index in hrefArray){
                 $("#img_" + hrefArray[index]).wrap("<a class='mya'></a>");            
             }
 			for (var index in downloadArray){
 				var Arrayindex = downloadArray[index];
-//				$(".mya").eq(Arrayindex).attr('href', "//");
+				$(".mya").eq(Arrayindex).attr('href', "http://cdn-huoshu.fire2333.com/mc/apks/200069/lyzt-216313155.181023.apk");
 				$(".mya").eq(Arrayindex).click(function(){
-					postData('//www.fire2333.com/logapi/LogLandpages.php', 'logClickDownload');
+					postData('http://www.fire2333.com/logapi/LogLandpages.php', 'logClickDownload');
 				});
 			}
-             $("#img_1").addClass("myfixtop");
-			$("#img_1").parent().append("<img id='img_btn1'  src='img/btn1.png'/>");
-			$("#img_3").parent().append("<img id='img_btn2'  src='img/btn2.png'>");
-			$("#img_6").parent().append("<img id='img_btn3'  src='img/btn3.png'>");
-			$("#img_btn1").click(function(){
-				window.location = "//cdn-huoshu.fire2333.com/mc/apks/200069/lyzt-216313267.181023.apk";
-			});
-			$("#img_btn2").click(function(){
-				window.location = "//cdn-huoshu.fire2333.com/mc/apks/200069/lyzt-216313267.181023.apk";
-			});
-			$("#img_btn3").click(function(){
-				window.location = "//cdn-huoshu.fire2333.com/mc/apks/200069/lyzt-216313267.181023.apk";
-			});
+             $("#img_1").addClass("myfixtop");   
 //             $("#img_2").addClass("mymargin");
 		}
 		
@@ -199,7 +166,7 @@
 	                landingpage_id: landingPageId,
 	                from_type : fromType,
 					footer_id : "22",
-					apk_id : "13267"
+					apk_id : "13155"
 	            },
 	            dataType: 'json',
 	            timeout: 10000,
@@ -210,10 +177,9 @@
 	    }
 	    
 	    function downloadApk(){
-	        window.location = "//cdn-huoshu.fire2333.com/mc/apks/200069/lyzt-216313267.181023.apk";
-			postData('//www.fire2333.com/logapi/LogLandpages.php', 'logClickDownload');
+	        window.location = "http://cdn-huoshu.fire2333.com/mc/apks/200069/lyzt-216313155.181023.apk";
+			postData('http://www.fire2333.com/logapi/LogLandpages.php', 'logClickDownload');
 		}
 
 	</script>
-
-</body></html>
+</html>
