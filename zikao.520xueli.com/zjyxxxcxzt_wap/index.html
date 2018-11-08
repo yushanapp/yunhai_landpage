@@ -1,0 +1,907 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+<meta name="aplus-terminal" content="1">
+<meta name="spm-id" content="a2156.1391427">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title>成人教育院校信息查询</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<link rel="stylesheet" href="css/swiper.min.css">
+<style type="text/css">
+html, body {position: relative;height: 100%;min-width: 320px;max-width: 640px; margin:0 auto;}
+.swiper-container {width: 100%;height: 100%;}
+.swiper-slide {position:relative;}
+</style>
+<script>
+document.write('<script type="text/javascript"  data-lxb-uid="22044321" data-lxb-gid="339538" src="http://lxbjs.baidu.com/api/asset/api.js?t=' + new Date().getTime() + '" charset="utf-8"></scr' + 'ipt>' );
+</script>
+</head>
+
+<body>
+<header>
+  <a  class="logo fl swt" style="cursor:pointer; float: right;"><img src="images/logo.png"></a>
+  <a href="tel:0571-81906867" class="phone fr"><b><!--0571-81906867--></b><p><!--<img src="images/tel.jpg">--></p></a>
+</header>
+
+<div class="banner"><img src="images/banner.jpg" /></div>
+
+<section>
+<div class="search">
+  
+ <form action="http://www.hyeduzj.net/plus/diy.php" enctype="multipart/form-data" method="post"
+                  name="lansige" onsubmit="return CheckForm()">
+
+       <input type="hidden" name="action" value="post">
+          <input name='furl' id='furl' class='intxt' value='' style="display:none" />
+          <input name="sj" value='' id="sj" style="display:none"  />
+<script  language="javascript" type="text/javascript">
+　　var wdtime= new Date();
+    var fromurl = window.location.href;
+　　document.getElementById("sj").value=wdtime;
+    document.getElementById("furl").value=fromurl;
+</script>
+          <input type="hidden" name="diyid" value="1">
+
+          <input type="hidden" name="do" value="2">
+   
+  <div class="search-box"><span>院校:</span><input id="xm" name="xm" type="text" class="input_text"  placeholder="请输入需查询院校（外地院校也可以查询）"/> </div>
+  
+  <div class="search-box"><span>联系方式:</span><input id='dh' name='dh' class="input_text s-input" type='number'  placeholder="查询结果将直接反馈至手机"></div>
+  
+  <div class="search-btn">
+ 
+                        <input type="hidden" name="dede_fields" value="address,text;qq,text;school,select;zy,text;cc,select;xm,text;dh,text;sel,select;sj,datetime;furl,text" />
+                        <input type="hidden" name="dede_fieldshash" value="0a7f869806957f3c1160d52a20c13e79" />
+
+    <input id='Submit1' class="is_btn" type='submit' onclick='SubmitDateTo()' value='立即查询'>
+	</form>
+	<script language="javascript" type="text/javascript">
+
+                function gosavenow(){
+
+                    savediv.style.visibility="visible";}
+
+            </script>
+
+            <script language="javascript" type="text/javascript">
+
+                function CheckForm() {
+
+                    if(lansige.dh.value == '') {
+
+                        alert('对不起！请输入您的电话！');
+
+                        lansige.dh.focus();
+
+                        return false;}
+
+                    var re = new RegExp("^([0-9])+$","ig");
+
+                    {if (!re.test(lansige.dh.value))
+
+                    {alert("对不起！电话只能是0-9的数字！");
+
+                        lansige.dh.focus();
+
+                        return false;}}
+
+                    gosavenow();}
+
+            </script>
+  </div>
+
+  <p>温馨提示：请务必正确填写手机号码，稍后会以短信的形式将所查询院校的招生计划，招生专业，报名时间条件等相关信息发送至您手机上!</p>
+</div>
+
+<div class="icon">
+    <a href="#school"><img src="images/icon1.jpg"></a>
+    <a href="#notice"><img src="images/icon2.jpg"></a>
+    <a href="#enter"><img src="images/icon3.jpg"></a>
+    <a class="swt"  style="cursor:pointer"><img src="images/icon4.jpg"></a>
+</div>
+
+<div class="school" id="school">
+  <div class="title"><img src="images/title1.jpg"></div>
+  <div class="school-main">
+    <div class="swiper-container swiper-container-h">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <ul>
+                  <li>
+                      <p class="school-name">浙江工商大学</p>
+                      <div class="school-img"><img src="images/school1_12.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+
+                      <div class="schooled">
+                          <a title="招生简章"  class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间"  class=" schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                      <div class="hot"><img src="images/hot.png"></div>
+                  </li>
+                  <li>
+                      <p class="school-name">宁波工程学院</p>
+                      <div class="school-img"><img src="images/school1_06.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+
+                      <div class="schooled">
+                          <a title="招生简章"  class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间"  class=" schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                      <div class="hot"><img src="images/hot.png"></div>
+                  </li>
+                  <li>
+                      <p class="school-name">浙江科技学院</p>
+                      <div class="school-img"><img src="images/school1_04.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+
+                      <div class="schooled">
+                          <a title="招生简章"  class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间"  class=" schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                      <div class="hot"><img src="images/hot.png"></div>
+                  </li>
+                  <li>
+                      <p class="school-name">浙江大学</p>
+                      
+                      <div class="school-img"><img src="images/school1_01.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章"  class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间"  class=" schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                  </li>
+                  <li>
+                      <p class="school-name">宁波大学</p>
+                      <div class="school-img"><img src="images/school1_02.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章"  class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间"  class=" schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                      <div class="hot"><img src="images/hot.png"></div>
+                  </li>
+                  <li>
+                      <p class="school-name">温州大学</p>
+                      <div class="school-img"><img src="images/school1_03.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章"  class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间"  class=" schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                      
+                  </li>
+
+
+                  <li>
+                      <p class="school-name">四川农业大学</p>
+                      <div class="school-img"><img src="images/school1_08.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                  </li>
+				  
+                  <li>
+                      <p class="school-name">浙江海洋大学</p>
+                      <div class="school-img"><img src="images/school1_09.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                  </li>
+                  <li>
+                      <p class="school-name">浙江中医药大学</p>
+                      <div class="school-img"><img src="images/school1_07.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                      <div class="hot"><img src="images/hot.png"></div>
+                  </li>
+                  <li>
+                      <p class="school-name">中国传媒大学</p>
+                      <div class="school-img"><img src="images/school1_11.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                  </li>				                                
+				  <li>
+                      <p class="school-name">金华职业技术学院</p>
+                      <div class="school-img"><img src="images/school3_06.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                   
+                  </li>
+				    <li>
+                      <p class="school-name">对外经济贸易大学</p>
+                      <div class="school-img"><img src="images/school3_08.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                      <div class="hot"><img src="images/hot.png"></div>
+                  </li>
+              </ul>
+      
+          </div>
+          <div class="swiper-slide">
+              <ul>
+                  <li>
+                      <p class="school-name">浙江外国语学院</p>
+                      <div class="school-img"><img src="images/school2_01.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                  </li>
+                  <li>
+                      <p class="school-name">丽水学院</p>
+                      <div class="school-img"><img src="images/school2_02.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                  </li>
+                  <li>
+                      <p class="school-name">浙江农林大学</p>
+                      <div class="school-img"><img src="images/school2_03.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                      
+                  </li>
+                  <li>
+                      <p class="school-name">浙江音乐学院</p>
+                      <div class="school-img"><img src="images/school2_06.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                  </li>
+                  <li>
+                      <p class="school-name">绍兴文理学院</p>
+                      <div class="school-img"><img src="images/school2_04.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                  </li>
+                  <li>
+                      <p class="school-name">义乌工商学院</p>
+                      <div class="school-img"><img src="images/school2_05.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                  </li>
+                  <li>
+                      <p class="school-name">浙江树人大学</p>
+                      <div class="school-img"><img src="images/school2_09.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                  </li>
+                  <li>
+                      <p class="school-name">嘉兴学院</p>
+                      <div class="school-img"><img src="images/school2_07.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                  </li>
+                  <li>
+                      <p class="school-name">温州医科大学</p>
+                      <div class="school-img"><img src="images/school2_08.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                  </li>
+                  <li>
+                      <p class="school-name">金华教育学院</p>
+                      <div class="school-img"><img src="images/school2_11.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                  </li>
+                  <li>
+                      <p class="school-name">浙江万里学院</p>
+                      <div class="school-img"><img src="images/school2_12.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+      
+                  </li>
+                  <li>
+                      <p class="school-name">湖州师范学院</p>
+                      <div class="school-img"><img src="images/school2_10.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+          <div class="swiper-slide">
+              <ul>
+                  <li>
+                      <p class="school-name">中国计量学院</p>
+                      <div class="school-img"><img src="images/school3_01.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                      <div class="hot"><img src="images/hot.png"></div>
+                  </li>
+                  <li>
+                      <p class="school-name">衢州学院</p>
+                      <div class="school-img"><img src="images/school3_02.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                 
+                  </li>
+                  <li>
+                      <p class="school-name">苏州大学</p>
+                      <div class="school-img"><img src="images/school3_03.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                      
+                  </li>
+                    <li>
+                      <p class="school-name">浙江工业大学</p>
+                      <div class="school-img"><img src="images/school1_10.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                  </li>
+                  <li>
+                      <p class="school-name">华东理工大学</p>
+                      <div class="school-img"><img src="images/school3_04.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                  </li>
+                  <li>
+                      <p class="school-name">南京大学</p>
+                      <div class="school-img"><img src="images/school3_05.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                   
+                  </li>
+				  <li>
+                      <p class="school-name">台州学院</p>
+                      <div class="school-img"><img src="images/school1_05.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                  </li>
+                
+                  <li>
+                      <p class="school-name">郑州大学</p>
+                      <div class="school-img"><img src="images/school3_09.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                  </li>
+                  <li>
+                      <p class="school-name">北京大学</p>
+                      <div class="school-img"><img src="images/school3_07.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                     
+                  </li>
+                  <li>
+                      <p class="school-name">北京外国语大学</p>
+                      <div class="school-img"><img src="images/school3_12.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                      <div class="hot"><img src="images/hot.png"></div>
+                  </li>
+                  <li>
+                      <p class="school-name">盐城工学院</p>
+                      <div class="school-img"><img src="images/school3_10.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                      
+                  </li>
+                  <li>
+                      <p class="school-name">电子科技大学</p>
+                      <div class="school-img"><img src="images/school3_11.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                      <div class="hot"><img src="images/hot.png"></div>
+                  </li>
+              </ul>
+          </div>
+          <div class="swiper-slide">
+              <ul>
+                  <li>
+                      <p class="school-name">中国地质大学</p>
+                      <div class="school-img"><img src="images/school4_01.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                  </li>
+                  <li>
+                      <p class="school-name">江西农业大学</p>
+                      <div class="school-img"><img src="images/school4_02.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                      <div class="hot"><img src="images/hot.png"></div>
+                  </li>
+                  <li>
+                      <p class="school-name">西南科技大学</p>
+                      <div class="school-img"><img src="images/school4_03.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                      
+                  </li>
+                  <li>
+                      <p class="school-name">华中师范大学</p>
+                      <div class="school-img"><img src="images/school4_04.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                      <div class="hot"><img src="images/hot.png"></div>
+                  </li>
+                  <li>
+                      <p class="school-name">西南交通大学</p>
+                      <div class="school-img"><img src="images/school4_05.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                      <div class="hot"><img src="images/hot.png"></div>
+                  </li>
+                  <li>
+                      <p class="school-name">西北工业大学</p>
+                      <div class="school-img"><img src="images/school4_06.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                   
+                  </li>
+                  <li>
+                      <p class="school-name">宿迁学院</p>
+                      <div class="school-img"><img src="images/school4_08.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                  </li>
+                  <li>
+                      <p class="school-name">南开大学</p>
+                      <div class="school-img"><img src="images/school4_09.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                  </li>
+                  <li>
+                      <p class="school-name">南京陆军指挥学院</p>
+                      <div class="school-img"><img src="images/school4_07.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                     
+                  </li>
+                  <li>
+                      <p class="school-name">西南财经大学</p>
+                      <div class="school-img"><img src="images/school4_10.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                  </li>
+                  <li>
+                      <p class="school-name">湖北大学</p>
+                      <div class="school-img"><img src="images/school4_11.jpg"></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                      
+                      <div class="schooled">
+                          <a title="招生简章" class="schooled-a1 swt" style="cursor:pointer">招生简章</a>
+                          <a title="报名时间" class="schooled-a2 swt" style="cursor:pointer">报名时间</a>
+                      </div>
+                      
+                  </li>
+                  <li>
+                      <p class="school-name">查看更多院校</p>
+                      <div class="school-img"><a title="查看更多院校"  class="schooled-a3 swt" style="cursor:pointer"><img src="images/school4_12.jpg"></a></div>
+                      <a title="点击详情" class="swt"  style="cursor:pointer">点击详情>></a>
+                  
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </div>
+    <div class="swiper-pagination swiper-pagination-h"></div>
+    <div class="zhu"><span>*</span>注：如需报考其他院校，可<a title="在线咨询"  class="zhu-a1 swt" style="cursor:pointer">在线咨询</a><!--或拨打招生咨询专线：<a class="zhu-a2" href="tel:0571-81906867">0571-81906867</a>--></div>
+  </div>
+</div>
+
+<div class="notice" id="notice">
+  <div class="title"><img src="images/title2.png"></div>
+  <div class="notice-txt"><!--招生咨询热线：<a href="tel:0571-81906867">0571-81906867</a>--></div>
+    <div class="notice-box">
+      <P>随着选择成人教育考生人数的逐年增加，国家自1998年起逐步开放成人教育报考跨省院校政策，从1998年的4所增加到2012年68所。目前，可报考的外省院校有60余所，其中包括像北京外国语大学、郑州大学、北京大学、南开大学等211/985高校，每年招考人数、报名时间及条件会随政策调整。</P>
+       <p><!--在浙江地区可-->报考的外省院校招生自主性较强，导致每所院校的招生人数、报名时间及报考条件等都不经相同。<!--，如需报考外省院校，可直接拨打招生咨询电话：<a href="tel:0571-81906867">0571-81906867</a>。--></p>
+    <p>&nbsp;</p>
+    <p class="zsjz" style="text-align: center;text-indent:0rem;">外省院校招生简章查询</p>
+    <div class="jz-box">
+        <form action="http://www.hyeduzj.net/plus/diy.php" enctype="multipart/form-data" method="post"
+              name="lansige" onsubmit="return CheckForm()">
+        <input type="hidden" name="action" value="post">
+          <input name='furl' id='furl' class='intxt' value='' style="display:none" />
+          <input name="sj" value='' id="sj" style="display:none"  />
+<script  language="javascript" type="text/javascript">
+　　var wdtime= new Date();
+    var fromurl = window.location.href;
+　　document.getElementById("sj").value=wdtime;
+    document.getElementById("furl").value=fromurl;
+</script>
+          <input type="hidden" name="diyid" value="1">
+
+          <input type="hidden" name="do" value="2">
+<div class="jz-box">
+            <div class="jz-all">
+                <div class="jz-box2">
+                    <span>院校:</span>
+                    <input id="remrak" name="xm" type="text" class="input_text"  placeholder="请输入需查询院校"/>
+                </div>
+                <div class="jz-box2">
+                    <span>联系方式:</span>
+                    <input id='phone' name='dh' class="input_text " type='number'  placeholder="查询结果将直接反馈至手机">
+                </div>
+            </div>
+                <div class="jz-btn">
+                    <input type="hidden" name="dede_fields" value="address,text;qq,text;school,select;zy,text;cc,select;xm,text;dh,text;sel,select;sj,datetime;furl,text" />
+                    <input type="hidden" name="dede_fieldshash" value="0a7f869806957f3c1160d52a20c13e79" />
+
+                    <input id='Submit1' class="is_btn" type='submit' value=''>
+					</form>
+	<script language="javascript" type="text/javascript">
+
+                function gosavenow(){
+
+                    savediv.style.visibility="visible";}
+
+            </script>
+
+            <script language="javascript" type="text/javascript">
+
+                function CheckForm() {
+
+                    if(lansige.dh.value == '') {
+
+                        alert('对不起！请输入您的电话！');
+
+                        lansige.dh.focus();
+
+                        return false;}
+
+                    var re = new RegExp("^([0-9])+$","ig");
+
+                    {if (!re.test(lansige.dh.value))
+
+                    {alert("对不起！电话只能是0-9的数字！");
+
+                        lansige.dh.focus();
+
+                        return false;}}
+
+                    gosavenow();}
+
+            </script>
+                </div>
+         </div>
+    </div>
+</div>
+
+<div class="copyright">
+  <!--招生咨询热线：0571-81906867<br>  
+            ©版权所有：浙江出头教育科技有限公司<br>
+            联系地址：浙江省杭州市西湖区万塘路252号计量大厦7楼<br/>
+            备案号：浙ICP备17052761号<br />-->
+            版权所有：北京中嘉未来教育科技有限公司<br />
+</div>
+
+<div class="footer-float sj-lzyMain">
+<ul>
+ <li><a class="swt"><img src="images/phone1.jpg" alt=""></a></li>
+ <li><a title="在线报名" class="swt" style="cursor:pointer"><img src="images/phone2.jpg" alt=""></a></li>
+ <li class="nobg"><a title="在线咨询" class="swt" style="cursor:pointer"><img src="images/phone3.jpg" alt=""><span id="test1">3</span></a></li>
+</ul>
+</div>
+    
+</section>    
+
+<div class="ttop"><img src="images/top.png" /></div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<!--数字增长-->
+<script type="text/javascript">
+/**/
+var inner="";
+ var date=new Date();
+ var h=date.getHours();
+ if(h>=15){
+  inner='14'; 
+ }else if(h<=3){
+  inner='0'
+ }else{
+  inner=(h-8)*2+"";
+ }
+ document.getElementById("test1").innerHTML=inner;
+ 
+var oSpan = document.getElementById('num');
+var iNow = parseInt(oSpan.innerHTML);    
+setInterval(function(){
+  if(iNow==38) iNow=28;
+  iNow += 1;
+  oSpan.innerHTML = iNow;
+    
+  },80000);
+</script>
+<script type="text/javascript">
+var oSpan2 = document.getElementById('num2');
+var iNow2 = parseInt(oSpan2.innerHTML);    
+setInterval(function(){
+  if(iNow2==36) iNow2=30
+  iNow2 += 1;
+  oSpan2.innerHTML = iNow2;
+    
+  },4500);
+</script>
+<script type="text/javascript">
+var oSpan3 = document.getElementById('num3');
+var iNow3 = parseInt(oSpan3.innerHTML);    
+setInterval(function(){
+  if(iNow3==45) iNow3=32;
+  iNow3 += 1;
+  oSpan3.innerHTML = iNow3;
+    
+  },7000);
+</script>
+<script type="text/javascript">
+var oSpan4 = document.getElementById('num4');
+var iNow4 = parseInt(oSpan4.innerHTML);    
+setInterval(function(){
+  if(iNow4==55) iNow4=45;
+  iNow4 += 1;
+  oSpan4.innerHTML = iNow4;
+    
+  },10500);
+</script>
+<script type="text/javascript">
+var oSpan5 = document.getElementById('num5');
+var iNow5 = parseInt(oSpan5.innerHTML);    
+setInterval(function(){
+  if(iNow5==36) iNow5=25;
+  iNow5 += 1;
+  oSpan5.innerHTML = iNow5;
+    
+  },8500);
+</script>
+<script type="text/javascript">
+var oSpan6 = document.getElementById('num6');
+var iNow6 = parseInt(oSpan6.innerHTML);    
+setInterval(function(){
+  if(iNow6==55) iNow6=37;
+  iNow6 += 1;
+  oSpan6.innerHTML = iNow6;
+    
+  },8800);
+</script>
+<script type="text/javascript">
+var oSpan7 = document.getElementById('num7');
+var iNow7 = parseInt(oSpan7.innerHTML);    
+setInterval(function(){
+  if(iNow7==36) iNow7=18;
+  iNow7 += 1;
+  oSpan7.innerHTML = iNow7;
+    
+  },9500);
+</script>
+<script type="text/javascript">
+var oSpan8 = document.getElementById('num8');
+var iNow8 = parseInt(oSpan8.innerHTML);    
+setInterval(function(){
+  if(iNow8==36) iNow8=21;
+  iNow8 += 1;
+  oSpan8.innerHTML = iNow8;
+    
+  },8500);
+</script>
+<script type="text/javascript">
+var oSpan9 = document.getElementById('num9');
+var iNow9 = parseInt(oSpan9.innerHTML);    
+setInterval(function(){
+  if(iNow9==36) iNow9=27;
+  iNow9 += 1;
+  oSpan9.innerHTML = iNow9;
+    
+  },9000);
+</script>
+<script type="text/javascript">
+var oSpan10 = document.getElementById('num10');
+var iNow10 = parseInt(oSpan10.innerHTML);    
+setInterval(function(){
+  if(iNow10==44) iNow10=34;
+  iNow10 += 1;
+  oSpan10.innerHTML = iNow10;
+    
+  },12000);
+</script>
+<script type="text/javascript">
+var oSpan11 = document.getElementById('num11');
+var iNow11 = parseInt(oSpan11.innerHTML);    
+setInterval(function(){
+  if(iNow11==36) iNow11=21;
+  iNow11 += 1;
+  oSpan11.innerHTML = iNow11;
+    
+  },10000);
+</script>
+<script type="text/javascript">
+$(function () {
+  var Height = $(".footer-float").innerHeight();
+  $(".copyright").css("margin-bottom",'1rem');
+});
+
+$(window).scroll(function(){
+  if($(window).scrollTop()>100){
+    $(".ttop").fadeIn(500)
+  }
+  else{
+    $(".ttop").fadeOut(500)
+  }
+});
+$(".ttop").click(function(){
+  $("html,body").animate({scrollTop:0},300)
+});
+
+/*学校切换*/
+$(function(){
+  $('.school-main li').click(function(e) {
+        $(this).addClass('current').siblings().removeClass('current');
+    });  
+})
+
+var swiperH = new Swiper('.swiper-container-h', {
+    pagination: '.swiper-pagination-h',
+    paginationClickable: true
+});
+</script>
+<script language=javascript>
+$(".swt").click( function(){
+            openZoosUrl('chatwin');
+})
+</script>
+</body>
+</html>
+<script language="javascript" src="http://pkt.zoosnet.net/JS/LsJS.aspx?siteid=PKT21915463&float=1&lng=cn"></script>
+
+        
+        

@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+body{ border:none !important;}
+input,p,div{list-style:none;margin:0;padding:0;}
+.form p{width:322px;height:45px; margin:0 20px 0 0;background:#fff;color:#333;font:normal 16px/45px "宋体";padding:0 0 0 15px;border:1px solid #dadada;display:inline-block; float:left;}
+.form p span{display:block;width:50px;color:#333;font:normal 16px/45px "宋体"; float:left;}
+.form p input{display:block;width:241px;height:45px;border:none;padding:0 0 0 6px;font:normal 16px/50px "宋体"; outline:none; float:left;}
+.form .form-ljcx{display:block;width:160px;height:45px;text-align:center;background:#f00707;border-radius:5px;font:bold 16px "微软雅黑";color:#fff;border:none;cursor:pointer;outline:none;}
+</style>
+</head>
+
+<body>
+<div class="form">
+	 <form action="http://taizhou.hyeduzj.com/plus/diy.php" enctype="multipart/form-data" method="post" name="lansige" onsubmit="return CheckForm()">
+<input type="hidden" name="action" value="post">
+          <input name='furl' id='furl' class='intxt' value='' style="display:none" />
+          <input name="sj" value='' id="sj" style="display:none"  />
+<script  language="javascript" type="text/javascript">
+　　var wdtime= new Date();
+    var fromurl = window.location.href;
+　　document.getElementById("sj").value=wdtime;
+    document.getElementById("furl").value=fromurl;
+</script>
+          <input type="hidden" name="diyid" value="1">
+          <input type="hidden" name="do" value="2">
+        <div>
+        	<p><span>院校：</span><input id='name' type='text' name='xm' placeholder="请输入需查询院校"></p>
+            <p class="form-lxfs"><span>手机：</span><input id='phone' type='number' name='dh' placeholder="招生简章将直接反馈至手机"></p>
+			  <input type="hidden" name="dede_fields" value="dh,text;hq,text;nr,multitext;xm,text;sj,datetime;furl,text;sel,select;cc,select" />
+<input type="hidden" name="dede_fieldshash" value="9da002ae417612b1634d17ed6288a3d8" />
+            <input id='Submit1' class="form-ljcx" type='submit' onclick='SubmitDateTo()' value='立即查询'>
+			 </form>			 
+        </div>
+		<script language="javascript" type="text/javascript">
+
+                function gosavenow(){
+
+                    savediv.style.visibility="visible";}
+
+            </script>
+
+            <script language="javascript" type="text/javascript">
+
+                function CheckForm() {
+
+                    if(lansige.xm.value == '') {
+
+                        alert('对不起！请输入您的称呼！');
+
+                        lansige.xm.focus();
+
+                        return false;}
+
+                    if(lansige.dh.value == '') {
+
+                        alert('对不起！请输入您的电话！');
+
+                        lansige.dh.focus();
+
+                        return false;}
+
+                    var re = new RegExp("^([0-9])+$","ig");
+
+                    {if (!re.test(lansige.dh.value))
+
+                    {alert("对不起！电话只能是0-9的数字！");
+
+                        lansige.dh.focus();
+
+                        return false;}}
+
+                    gosavenow();}
+
+            </script>
+	</div>
+</body>
+</html>
