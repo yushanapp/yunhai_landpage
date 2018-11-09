@@ -1,0 +1,62 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>皮皮蟹</title>
+	<meta name="viewport" content="width=device-width"> 
+ 	 <link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
+     <style>
+		.navImage img{
+			width:720px;
+			height:auto;
+			}
+			.navImage{
+			display:inline-block;
+			width:100%;			
+			}
+			body{
+			margin:0!important;
+			}
+     </style>
+</head>
+<body>
+			<center>
+				<div class="navImage">
+			    <img  src="http://cdn.lyplaaap.cn/ppx.zjzhidao.top/2/images/bg1.jpg" alt="navbar" usemap="#imgMap" id="img">
+                <map name="imgMap" class="btnCilck">
+                       <area shape="rect" coords="47,1182,229,1239" >
+					   <area shape="rect" coords="267,1184,448,1239" >
+					   <area shape="rect" coords="477,1184,654,1238" >
+					   <area shape="rect" coords="53,1511,231,1566" >
+					   <area shape="rect" coords="272,1512,450,1565" >
+					   <area shape="rect" coords="481,1510,659,1568" >
+			
+                </map>
+				    <img src="http://cdn.lyplaaap.cn/ppx.zjzhidao.top/2/images/bg2.png"  alt="" name="download2" border="0" usemap="#download2Map"  id="download"
+	      style="position:fixed;margin:0 auto;bottom:0;left:0;right:0;max-width:720px;" onClick="javascript:;" > 
+         <map name="download2Map"  class="btnCilck">
+           <area shape="rect"coords="489,20,704,87" ></map>
+				</div> 
+			
+ 
+ 
+
+</center>
+<script>	
+
+		var Android="https://update.ppx520.com/shrimp/shrimp-1.10.1-88_sem10.apk";//安卓下载链接
+		var Ios="https://update.ppx520.com/shrimp/shrimp-1.10.1-88_sem10.apk";//ios下载链接
+
+		var btns = document.getElementsByClassName("btnCilck");
+		for(var i=0;i<btns.length;i++){
+		   btns[i].onclick=function () {
+               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Ios;
+               }else {
+                   window.location.href =Android;
+               }
+           }
+		};
+</script>
+</body>
+</html>
