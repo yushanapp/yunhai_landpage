@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://www.zhibo.tv/down/zhiniao.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>美女解说</title>
+    <meta name="viewport" content="width=device-width">
+    <style>
+        .navImage img{
+            width:720px;
+            height:auto;
+        }
+        .navImage{
+            display:inline-block;
+            width:100%;
+        }
+        body{
+            margin:0!important;
+        }
+        .navImage1 {			display:inline-block;
+            width:100%;
+        }
+    </style>
+
+</head>
+<body>
+<center>
+    <div class="navImage"><span class="navImage1"><img id="img" src="./zhiniao_files/zhiniao.jpg" alt="navbar" usemap="#navImg"></span>
+        <map name="navImg" id="navImg" class="btnCilck">
+            <area shape="rectangle" coords="102,1385,622,1517" onclick="javascript:;">
+        </map>
+    </div>
+    <!--<img src="images/bg2.png" class="btnCilck" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" alt=""  id="download2" onClick="javascript:;" >-->
+</center>
+<script src="./zhiniao_files/hm.js"></script><script>
+
+    var Android="http://www.zhibo.tv/soft/android/u_bag/3.2.3.1598.apk";//安卓下载链接
+    var Ios="";//ios下载链接
+
+    var btns = document.getElementsByClassName("btnCilck");
+    for(var i=0;i<btns.length;i++){
+        btns[i].onclick=function () {
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href =Android;
+            }else {
+                window.location.href =Android;
+            }
+        }
+    };
+</script>
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?6a1d4f18f62d602b7b3d95df38e345e7";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+</body></html>
