@@ -1,0 +1,411 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+html {
+    font-size: 50px;
+}
+
+body,
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    line-height: 1;
+    font-family: sans-serif;
+    font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Apple Legacy Chevron", "Helvetica Neue", "Helvetica", "Arial", sans-serif, "微软雅黑", "Microsoft YaHei";
+}
+
+.Response {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0%;
+    background: rgba(0, 0, 0, .05);
+}
+
+.Angular {
+    width: 100%;
+    padding-top: 0.8rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.jkesk {
+    position: relative;
+    top: .75rem;
+    width: 2.3rem;
+    height: 2.3rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.React {
+    position: absolute;
+    border-radius: 100% 100% 0 0;
+    height: 1.3rem;
+    width: 110%;
+    margin-left: -5%;
+    z-index: -1;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.VueJs {
+    display: block;
+    background: #fff;
+    border-radius: 100% 100% 0 0;
+    height: 1.1rem;
+    width: 110%;
+    margin-left: -5%;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.Mill {
+    position: absolute;
+    width: 100%;
+    z-index: -2;
+    top: 0%;
+}
+
+.flex-box-h,
+.flex-box-v,
+.flex-box-c {
+    display: -webkit-box;
+    -webkit-box-pack: justify;
+    -webkit-box-align: center;
+}
+
+.flex-box-c {
+    -webkit-box-pack: center;
+}
+
+.Backbone {
+    font-size: .4rem;
+    margin-right: .15rem;
+    font-weight: bold;
+}
+
+.Ember {
+    white-space: nowrap;
+}
+
+.flex-box-h {
+    -webkit-box-orient: horizontal;
+}
+
+.Knock {
+    display: block;
+    padding: 1px;
+    border-radius: 1px;
+    border: 1px solid;
+    margin-right: .1rem;
+    font-size: .22rem;
+}
+
+.color-green {
+    color: #3fcf8a;
+}
+
+.color-bg-white {
+    background-color: #fff;
+}
+
+.Avalon {
+    font-size: .24rem;
+}
+
+.margin-20 {
+    margin: .1rem;
+}
+
+.Cost {
+    font-size: .26rem;
+    margin: 10px auto;
+}
+
+.Per {
+    padding: 0 .1rem;
+}
+
+.flex-box-v {
+    -webkit-box-orient: vertical;
+}
+
+.Comp {
+    font-size: .36rem;
+    -webkit-box-flex: 1.0;
+    margin: 0 auto;
+    width: 5.21rem;
+    position: relative;
+}
+
+.color-bg-blue {
+    background-color: #4873fd;
+}
+
+.uter {
+    -webkit-box-flex: 1.0;
+    text-align: center;
+}
+
+.color-white {
+    color: #fff;
+}
+
+.btn {
+    border-radius: 1.04rem;
+    height: .67rem;
+    line-height: .67rem;
+    text-align: center;
+    border: 1px solid transparent;
+}
+
+.Opinion {
+    display: block;
+    width: .6rem;
+    height: .6rem;
+}
+
+.Leader {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    padding: 0 9px;
+}
+
+.KOL {
+    font-size: .26rem;
+    font-weight: bold;
+}
+
+.Search {
+    font-size: .2rem;
+    margin-top: .1rem;
+    color: #b8b9ba;
+}
+
+.Engine {
+    font-size: .26rem;
+    border-radius: 14px;
+    padding: .15rem;
+}
+
+.Key {
+    width: 100%;
+    position: fixed;
+    top: .96rem;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 1rem;
+    padding: 0 .2rem;
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .3);
+}
+
+.clientBox {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0;
+    background-color: white;
+}
+
+.clientBox .appIcon {
+    width: 40px;
+    height: 40px;
+    top: 12px;
+    position: absolute;
+    left: 10px;
+}
+
+.clientBox .appIcon img {
+    width: 100%;
+}
+
+.clientBox .appInfo_pop {
+    padding-left: 60px;
+    padding-right: 120px;
+}
+
+.clientBox .appInfo_pop h3 {
+    height: 42px;
+    line-height: 21px;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.clientBox>a {
+    background: #4873fd;
+    color: #fff;
+    font-size: 14px;
+    height: 25px;
+    line-height: 27px;
+    border-radius: .55rem;
+    padding: 0 8px;
+    display: block;
+    position: absolute;
+    right: 9px;
+    top: 17px;
+    width: 1.8rem;
+    text-align: center;
+}
+
+.Sem_App_Img {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.App_ImgBox {
+    text-align: left;
+}
+
+.App_ImgBox img {
+    height: auto;
+    margin: 0;
+/*    margin-left: 8px;
+    margin-bottom: 8px;*/
+    display: inline-block;
+    width:20%;
+}
+
+.App_SpreadTitle {
+    width: 100%;
+    margin: 5px 0 5px 0;
+    height: 27px;
+    line-height: 27px;
+}
+
+.App_SpreadTitle span {
+    font-weight: bold;
+    float: left;
+    padding-left: 14px;
+    font-size: 15px;
+    border-left: 7px solid #53BF1D;
+}
+
+.App_SpreadContent {
+    padding: 5px 20px 15px;
+    text-align: justify;
+    text-justify: distribute-all-lines;
+}
+
+ul,
+ol {
+    list-style: none outside none;
+}
+
+ul.App_SpreadContent li {
+    width: 100%;
+    overflow: hidden;
+}
+
+ul.App_SpreadContent li span.fl {
+    float: left;
+    margin-right: 4px;
+}
+
+.App_SpreadContent li,
+.App_SpreadContent span {
+    font-size: 12px;
+    color: #8f8d88;
+    line-height: 20px;
+    display: block;
+}
+
+.App_SpreadContent .get_more {
+    color: #666;
+}
+
+.get_more,
+.link_more {
+    width: 90%;
+    height: 27px;
+    margin: 0px auto;
+    cursor: pointer;
+    line-height: 27px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.Footer {
+    height: 108px;
+    background: #EEEEEB;
+    color: #8F8D88;
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.Footer-com {
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.Footer .fs10 {
+    font-size: 10px;
+    display: block;
+    line-height: 2;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+}
+
+.subtitle {
+    color: #b8b9ba;
+    font-size: 12px;
+}
+
+.stars {
+    height: 10px;
+    width: 10px;
+}
+#AppButton{
+    padding: 8px 80px;
+}
+#musi{
+    color: #8f8d88;
+}
+#musis{
+    color: #8f8d88;
+}
+.bigton{
+    padding: 8px 80px;
+}
+.yushan{
+    width: 60px;
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 10px;
+}
