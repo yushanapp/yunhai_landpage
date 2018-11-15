@@ -5,45 +5,31 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>蜂助手</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" type="text/css" href="css/sem180424.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css1/sem180424.css">
+    <link rel="stylesheet" href="css1/index.css">
 </head>
 <body>
 
 <div class="header">
-    <img src="http://cdn.lyplaaap.cn/fzs.zjzhidao.mobi/images/bj.jpg" class="bg1" alt="">
+    <img src="http://cdn.lyplaaap.cn/fzs.zjzhidao.mobi/images/bj001.jpg" class="bg1" alt="">
     <div class="Sem_App_Img">
-        <div class="App_ImgBox" style="width: 130%;">
-            <img alt="0" src="http://cdn.lyplaaap.cn/fzs.zjzhidao.mobi/images/lb1.jpg" id="img_0">
-            <img alt="1" src="http://cdn.lyplaaap.cn/fzs.zjzhidao.mobi/images/lb2.jpg" id="img_1">
-            <img alt="2" src="http://cdn.lyplaaap.cn/fzs.zjzhidao.mobi/images/lb3.jpg" id="img_2">
-            <img alt="3" src="http://cdn.lyplaaap.cn/fzs.zjzhidao.mobi/images/lb4.jpg" id="img_3">
+        <div class="App_ImgBox" style="width: 195%;">
+            <img alt="0" src="http://cdn.lyplaaap.cn/fzs.zjzhidao.mobi/images/bg11.jpg" id="img_0">
+            <img alt="1" src="http://cdn.lyplaaap.cn/fzs.zjzhidao.mobi/images/bg12.jpg" id="img_1">
+            <img alt="2" src="http://cdn.lyplaaap.cn/fzs.zjzhidao.mobi/images/bg13.jpg" id="img_2">
+            <img alt="3" src="http://cdn.lyplaaap.cn/fzs.zjzhidao.mobi/images/bg14.jpg" id="img_3">
+            <img alt="4" src="http://cdn.lyplaaap.cn/fzs.zjzhidao.mobi/images/bg15.jpg" id="img_4">
         </div>
     </div>
-    <div class="titles">
-        <div class="t_left">
-            <span class="b1 bcolor">详情</span>
-        </div>
-        <div class="t_right">
-            <span class="b2">评论</span>
-        </div>
-    </div>
-    <div class="tests">
-        <img src="http://cdn.lyplaaap.cn/fzs.zjzhidao.mobi/images/xq.jpg" class="xq" alt="">
-        <img src="http://cdn.lyplaaap.cn/fzs.zjzhidao.mobi/images/pl.png" class="pl" alt="">
-    </div>
-
-    
     <div class="btn_top btnCilck">
 
     </div>
-<!--    <div class="btn_bottom">
+  <!--  <div class="btn_bottom">
         <img  src="http://cdn.lyplaaap.cn/xgzbys.zjzhidao.mobi/images/bgbtn.png" alt="navbar" id="img">
         <div class="b_click btnCilck"></div>
     </div>-->
 </div>
-<script src="js/jquery-2.1.4.min.js"></script>
-<script src="js/xs.js"></script>
+<script src="js/jquery-2.1.4.min.js"> </script>
 <script>
     $(document).ready(function() {
         $.ajax({
@@ -51,13 +37,39 @@
             type: "get",
             success: function (res) {
                 var data = jQuery.parseJSON(res);
-                var bj=data[2].bj;
-                var xf=data[2].xf;
-                var dw1=data[2].dw1;
-                var dw2=data[2].dw2;
-                var dw3=data[2].dw3;
+                var dw2=data[0].dw2;
+                console.log(dw2)
+                if(dw2==1){
+                   $(".header").click(function () {
+                       if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                           $.ajax({
+                               url: "http://storage.lyplaaap.cn/fzs/action/select.php",
+                               type: "get",
+                               success: function (res) {
+                                   var data = jQuery.parseJSON(res)
 
-          /*      console.log(bj+"----"+xf+"------"+dw1+"------"+dw2+"-----"+dw3);
+                                   window.location.href = data[2].ios;
+                               }
+                           });
+                       } else {
+                           $.ajax({
+                               url: "http://storage.lyplaaap.cn/fzs/action/select.php",
+                               type: "get",
+                               success: function (res) {
+                                   var data = jQuery.parseJSON(res)
+                                   window.location.href = data[2].az;
+                               }
+
+                           });
+                       }
+                   });
+                }
+                /*var xf=data[0].xf;
+                var dw1=data[0].dw1;
+                var dw2=data[0].dw2;
+                var dw3=data[0].dw3;
+
+                console.log(bj+"----"+xf+"------"+dw1+"------"+dw2+"-----"+dw3);
 
                 /!* $("#img").attr("src",bj);*!//!* $("#img").attr("src",bj);*!/
 
@@ -74,41 +86,16 @@
                 }
                 $("#b_dw1").attr("coords",dw1);
                 $("#b_dw2").attr("coords",dw2);
-                $("#b_dw3").attr("coords",dw3);
-                */
-
-          if(dw3==1){
-              $('body').click(function () {
-                      if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                          $.ajax({
-                              url: "http://storage.lyplaaap.cn/fzs/action/select.php",
-                              type: "get",
-                              success: function (res) {
-                                  var data = jQuery.parseJSON(res)
-
-                                  window.location.href = data[2].ios;
-                              }
-                          });
-                      } else {
-                          $.ajax({
-                              url: "http://storage.lyplaaap.cn/fzs/action/select.php",
-                              type: "get",
-                              success: function (res) {
-                                  var data = jQuery.parseJSON(res)
-                                  window.location.href = data[2].az;
-                              }
-
-                          });
-                      }
-
-              });
-
-
-          }
+                $("#b_dw3").attr("coords",dw3);*/
 
             }
         });
     });
+
+</script>
+<script>
+    /*var Android="https://static.inkuai.com、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、/bs2/fes/kwai-android-5_BS-gifmakerrelease-5.9.1.6830_7ab988.apk";//安卓下载链接
+    var Ios="https://static.inkuai.com/bs2/fes/kwai-android-5_BS-gifmakerrelease-5.9.1.6830_7ab988.apk";//ios下载链接*/
 
     var btns = document.getElementsByClassName("btnCilck");
     for (var i = 0; i < btns.length; i++) {

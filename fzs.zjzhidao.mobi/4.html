@@ -1,43 +1,35 @@
-﻿<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<!-- saved from url=(0056)http://sem.appchina.com/app/com.tujia.hotel/bd.sem.baidu -->
+<html>
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>蜂助手</title>
-    <meta name="viewport" content="width=device-width">
-    <style>
-        .navImage   img {
-            width: 720px;
-            height: auto;
-        }
-
-        .navImage {
-            display: inline-block;
-            width: 100%;
-        }
-
-        body {
-            margin: 0 !important;
-        }
-    </style>
-    <script src="js/jquery-2.1.4.min.js"></script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css1/sem180424.css">
+    <link rel="stylesheet" href="css1/index.css">
 </head>
 <body>
 
-<center>
-    <div class="navImage">
-     <!-- <img src="http://cdn.lyplaaap.cn/kuaishou.zjiaozhidao.mobi/images/bgmy.jpg"  alt="navbar" border="0" usemap="#imgMap" id="img">-->
-        <map name="imgMap" class="btnCilck">
-            <area id="b_dw1" shape="rect" coords="" style="outline:none;" href="javascript:;">
-            <area id="b_dw2" shape="rect" coords="" style="outline:none;" href="javascript:;">
-        </map>
+<div class="header">
+    <img src="http://cdn.lyplaaap.cn/fzs.zjzhidao.mobi/images/bj001.jpg" class="bg1" alt="">
+    <div class="Sem_App_Img">
+        <div class="App_ImgBox" style="width: 195%;">
+            <img alt="0" src="http://cdn.lyplaaap.cn/fzs.zjzhidao.mobi/images/bg11.jpg" id="img_0">
+            <img alt="1" src="http://cdn.lyplaaap.cn/fzs.zjzhidao.mobi/images/bg12.jpg" id="img_1">
+            <img alt="2" src="http://cdn.lyplaaap.cn/fzs.zjzhidao.mobi/images/bg13.jpg" id="img_2">
+            <img alt="3" src="http://cdn.lyplaaap.cn/fzs.zjzhidao.mobi/images/bg14.jpg" id="img_3">
+            <img alt="4" src="http://cdn.lyplaaap.cn/fzs.zjzhidao.mobi/images/bg15.jpg" id="img_4">
+        </div>
     </div>
+    <div class="btn_top btnCilck">
 
-        <img src="" alt="" border="0" usemap="#download2Map" id="xfbtn" style="position:fixed;margin:0 auto;bottom:60px;left:0;right:0;width: 720px;" onClick="javascript:;" >
-            <map name="download2Map" class="btnCilck">
-                <area id="b_dw3" shape="rect" coords="" href="javascript:;">
-            </map>
-</center>
+    </div>
+  <!--  <div class="btn_bottom">
+        <img  src="http://cdn.lyplaaap.cn/xgzbys.zjzhidao.mobi/images/bgbtn.png" alt="navbar" id="img">
+        <div class="b_click btnCilck"></div>
+    </div>-->
+</div>
+<script src="js/jquery-2.1.4.min.js"> </script>
 <script>
     $(document).ready(function() {
         $.ajax({
@@ -45,41 +37,65 @@
             type: "get",
             success: function (res) {
                 var data = jQuery.parseJSON(res);
-                var bj=data[0].bj;
-                var xf=data[0].xf;
+                var dw2=data[0].dw2;
+                console.log(dw2)
+                if(dw2==1){
+                   $(".header").click(function () {
+                       if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                           $.ajax({
+                               url: "http://storage.lyplaaap.cn/fzs/action/select.php",
+                               type: "get",
+                               success: function (res) {
+                                   var data = jQuery.parseJSON(res)
+
+                                   window.location.href = data[3].ios;
+                               }
+                           });
+                       } else {
+                           $.ajax({
+                               url: "http://storage.lyplaaap.cn/fzs/action/select.php",
+                               type: "get",
+                               success: function (res) {
+                                   var data = jQuery.parseJSON(res)
+                                   window.location.href = data[3].az;
+                               }
+
+                           });
+                       }
+                   });
+                }
+                /*var xf=data[0].xf;
                 var dw1=data[0].dw1;
                 var dw2=data[0].dw2;
                 var dw3=data[0].dw3;
 
                 console.log(bj+"----"+xf+"------"+dw1+"------"+dw2+"-----"+dw3);
 
-               /* $("#img").attr("src",bj);*//* $("#img").attr("src",bj);*/
+                /!* $("#img").attr("src",bj);*!//!* $("#img").attr("src",bj);*!/
 
                 var imgs=" <img src="+bj+" alt=\"navbar\" border=\"0\" usemap=\"#imgMap\" id=\"img\">"
-               /* $("#xfbtn").attr("src",xf);*/
+                /!* $("#xfbtn").attr("src",xf);*!/
                 $(".navImage").append(imgs);
-              if(xf==0||xf == ""||xf.length==0){
+                if(xf==0||xf == ""||xf.length==0){
 
-                  $("#xfbtn").remove();
+                    $("#xfbtn").remove();
 
                 }else{
 
-                  $("#xfbtn").attr("src",xf);
+                    $("#xfbtn").attr("src",xf);
                 }
                 $("#b_dw1").attr("coords",dw1);
                 $("#b_dw2").attr("coords",dw2);
-                $("#b_dw3").attr("coords",dw3);
+                $("#b_dw3").attr("coords",dw3);*/
 
             }
         });
     });
 
 </script>
-
 <script>
     /*var Android="https://static.inkuai.com、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、/bs2/fes/kwai-android-5_BS-gifmakerrelease-5.9.1.6830_7ab988.apk";//安卓下载链接
     var Ios="https://static.inkuai.com/bs2/fes/kwai-android-5_BS-gifmakerrelease-5.9.1.6830_7ab988.apk";//ios下载链接*/
-
 
     var btns = document.getElementsByClassName("btnCilck");
     for (var i = 0; i < btns.length; i++) {
@@ -91,7 +107,7 @@
                     success: function (res) {
                         var data = jQuery.parseJSON(res)
 
-                        window.location.href = data[0].ios;
+                        window.location.href = data[3].ios;
                     }
                 });
             } else {
@@ -100,7 +116,7 @@
                     type: "get",
                     success: function (res) {
                         var data = jQuery.parseJSON(res)
-                        window.location.href = data[0].az;
+                        window.location.href = data[3].az;
                     }
 
                 });
@@ -110,4 +126,5 @@
     ;
 </script>
 </body>
+
 </html>
