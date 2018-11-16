@@ -1,132 +1,119 @@
 ﻿<!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>宝宝巴士</title>
-	<meta name="viewport" content="width=device-width">
-<!-- 	 <link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">-->
-     <style>
-		.navImage img{
-			width:720px;
-			height:auto;
-		}
-			.navImage{
-			display:inline-block;
-			width:100%;
-			max-width: 720px;
-			margin: 0 auto;
-			position: relative;
-			}
-			body{
-			margin:0!important;
-			}
-     </style>
+    <meta charset="UTF-8">
+    <title>宝宝巴士</title>
+    <meta name="viewport" content="width=device-width">
+    <style>
+
+        .navImage img {
+            height: auto;
+        }
+
+        .navImage {
+            display: inline-block;
+            width: 100%;
+        }
+
+        body {
+            margin: 0 !important;
+        }
+
+    </style>
+    <script src="js/jquery-2.1.4.min.js"></script>
+
 </head>
 <body>
-			<center>
-				<div class="navImage">
-					<!--<img  src="images/bg1.jpg" alt="navbar" usemap="#imgMap" id="img">-->
-                <map name="imgMap" class="btnCilck">
-                  <area shape="rect" id="b_dw1" coords="" style="outline:none;" href="javascript:;">
-                </map>
 
-					<div style="position: absolute;top: 48.09%;left: 92px;width: 540px;height: auto;z-index: 99;">
-						<video id="video1" poster="images/mp4.png" controls="controls" autoplay="autoplay" width="100%" height="400">
-							<source src="images/bg1.mp4"  type="video/mp4">
-							<source src="images/bg1.ogg"  type="video/ogg">
-							您的浏览器不支持 HTML5 video 标签。
-						</video>
-					</div>
-				</div> 
+<center>
+    <div class="navImage">
+     <!-- <img src="http://cdn.lyplaaap.cn/kuaishou.zjiaozhidao.mobi/images/bgmy.jpg"  alt="navbar" border="0" usemap="#imgMap" id="img">-->
+        <map name="imgMap"id="download"  class="btnCilck">
+            <area id="b_dw1" shape="rect" coords="" style="outline:none;" href="javascript:;">
+            <area id="b_dw2" shape="rect" coords="" style="outline:none;" href="javascript:;">
+        </map>
+    </div>
 
+        <img src="" alt="" border="0" usemap="#download2Map" id="xfbtn" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;" onClick="javascript:;" >
+            <map name="download2Map" class="btnCilck">
+                <area id="b_dw3" shape="rect" coords="" href="javascript:;">
+            </map>
 
-			<img src="" class="btnCilck" alt="" name="download2" border="0" usemap="#download2Map"  id="download2" style="position:fixed;z-index:9999;margin:0 auto;bottom:0;left:0;right:0;" onClick="javascript:;" >
-			<map name="download2Map"  class="btnCilck"><area shape="rect" coords="22,15,700,129"  href="javascript:;">
-				<area shape="rect" id="b_dw4" coords="" style="outline:none;" href="javascript:;">
-			</map>
-				<div style="width: 100%;height: 50px;"></div>
+        <img src="" alt="" border="0" usemap="#download3Map" id="xfbtntop" style="position:fixed;margin:0 auto;top:0px;left:0;right:0;" onClick="javascript:;" >
+        <map name="download3Map" class="btnCilck">
+          <area shape="rect" id="b_dw4" coords="" href="javascript:;">
+        </map>
 </center>
-<script src="js/jquery-2.1.4.min.js"></script>
 <script>
-    $.ajax({
-        url: "http://storage.lyplaaap.cn/bbbs/action/select.php",
-        type: "get",
-        success: function (res) {
-            var data = jQuery.parseJSON(res);
-            var bj=data[0].bj;
-            var xf=data[0].xf;
-            var dxf=data[0].dxf;
-            var kd=data[0].kd;
-            var dw1=data[0].dw1;
-            var dw2=data[0].dw2;
-            var dw3=data[0].dw3;
-            var dw4=data[0].dw4;
-
-			console.log(xf);
-            console.log(bj+"----"+xf+"------"+dw1+"------"+dw2+"-----"+dw3);
-            /* $("#img").attr("src",bj);*//* $("#img").attr("src",bj);*/
-            var imgs=" <img src="+bj+" style='width:"+kd+",z-index:999;' alt=\"navbar\" border=\"0\" usemap=\"#imgMap\" id=\"img\">";
-            /* $("#xfbtn").attr("src",xf);*/
-
-            $(".navImage").append(imgs);
-            if(xf==0||xf == ""||xf.length==0){
-                $("#download2").remove();
-            }else{
-                $("#download2").attr("src",xf);
-                $("#download2").css({"width":kd});
-            }
-
-            if(dxf==0||dxf == ""||dxf.length==0){
-                $("#xfbtntop").remove();
-            }else{
-                $("#xfbtntop").attr("src",dxf);
-                $("#xfbtntop").css({"width":kd});
-            }
-            $("#xfbtntop").css({"width":kd});
-            $("#b_dw1").attr("coords",dw1);
-            $("#b_dw4").attr("coords",dw4);
-        }
-    });
-
-    var btns = document.getElementsByClassName("btnCilck");
-    for (var i = 0; i < btns.length; i++) {
-        btns[i].onclick = function () {
-            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
                 $.ajax({
                     url: "http://storage.lyplaaap.cn/bbbs/action/select.php",
                     type: "get",
                     success: function (res) {
                         var data = jQuery.parseJSON(res);
-                        window.location.href = data[0].ios;
+                        var bj=data[0].bj;
+                        var xf=data[0].xf;
+                        var dxf=data[0].dxf;
+                        var kd=data[0].kd;
+                        var dw1=data[0].dw1;
+                        var dw2=data[0].dw2;
+                        var dw3=data[0].dw3;
+                        var dw4=data[0].dw4;
+
+                        console.log(xf);
+                        console.log(bj+"----"+xf+"------"+dw1+"------"+dw2+"-----"+dw3);
+                        /* $("#img").attr("src",bj);*//* $("#img").attr("src",bj);*/
+                        var imgs=" <img src="+bj+" style='width:"+kd+",z-index:999;' alt=\"navbar\" border=\"0\" usemap=\"#imgMap\" id=\"img\">";
+                        /* $("#xfbtn").attr("src",xf);*/
+
+                        $(".navImage").append(imgs);
+
+                        if(xf==0||xf == ""||xf.length==0){
+                            $("#download2").remove();
+                        }else{
+                            $("#download2").attr("src",xf);
+                            $("#download2").css({"width":kd});
+                        }
+
+                        if(dxf==0||dxf == ""||dxf.length==0){
+                            $("#xfbtntop").remove();
+                        }else{
+                            $("#xfbtntop").attr("src",dxf);
+                            $("#xfbtntop").css({"width":kd});
+                        }
+                        $("#xfbtntop").css({"width":kd});
+                        $("#b_dw1").attr("coords",dw1);
+						$("#b_dw2").attr("coords",dw2);	
+						$("#b_dw3").attr("coords",dw3);	
+                        $("#b_dw4").attr("coords",dw4);
                     }
                 });
-            } else {
-                $.ajax({
-                    url: "http://storage.lyplaaap.cn/bbbs/action/select.php",
-                    type: "get",
-                    success: function (res) {
-                        var data = jQuery.parseJSON(res)
-                        window.location.href = data[0].az;
+
+                var btns = document.getElementsByClassName("btnCilck");
+                for (var i = 0; i < btns.length; i++) {
+                    btns[i].onclick = function () {
+                        if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                            $.ajax({
+                                url: "http://storage.lyplaaap.cn/bbbs/action/select.php",
+                                type: "get",
+                                success: function (res) {
+                                    var data = jQuery.parseJSON(res);
+                                    window.location.href = data[0].ios;
+                                }
+                            });
+                        } else {
+                            $.ajax({
+                                url: "http://storage.lyplaaap.cn/bbbs/action/select.php",
+                                type: "get",
+                                success: function (res) {
+                                    var data = jQuery.parseJSON(res)
+                                    window.location.href = data[0].az;
+                                }
+
+                            });
+                        }
                     }
+                }
 
-                });
-            }
-        }
-    }
-
-		/*var Android="http://up.wubutianxia.com/product/lianzainovel_v2.2.6-57_2018-10-29_dyp1024_20011_001_226_jiagu_sign.apk";//安卓下载链接
-		var Ios="";//ios下载链接
-
-		var btns = document.getElementsByClassName("btnCilck");
-		for(var i=0;i<btns.length;i++){
-		   btns[i].onclick=function () {
-               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                   window.location.href =Android;
-               }else {
-                   window.location.href =Android;
-               }
-           }
-		};*/
-</script>
+			</script>
 </body>
 </html>
