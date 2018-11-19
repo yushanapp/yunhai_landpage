@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>在线教育</title>
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <!-- 头部logo加菜单 -->
+    <div style="position:fixed;top:0;left:0;width:10rem;height:0.8rem;background: #fff">
+        <img style="height:0.8rem;float: left;" src="./image/WechatIMG44.png" alt="">
+        <a style="font-size:0.4rem;color:#666;float:right;line-height: 0.8rem;margin-right:5%;" href="tel:4006062032">tel:4006062032</a>
+    </div>
+    <header>
+        <img class="logo" src="./image/shouye/logo.png" alt="">
+        <img class="menuicon" src="./image/shizi/daohang.png" alt="">
+        <ul id="menu">
+            <li>
+                <a href="index.html">首页</a>
+            </li>
+            <li>
+                <a href="./html/qimo.html">期末冲刺</a>
+            </li>
+            <li>
+                <a href="./html/shizi.html">师资力量</a>
+            </li>
+            <li>
+                <a href="./html/haoxuebao.html">好学宝</a>
+            </li>
+        </ul>
+    </header>
+    <div class="banner">
+        <img src="./image/shizi/banner.png" alt="">
+    </div>
+    <!-- 师资承诺 -->
+    <div class="sz">
+        <dl>
+            <dt>
+                <img src="./image/shouye/ShiZi.png" alt="">
+            </dt>
+            <dd>
+                <h4>
+                    师资承诺
+                </h4>
+                <p>
+                    中高级教师
+                </p>
+                <p>
+                    不满意即换
+                </p>
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <img src="./image/shouye/QuanYi.png" alt="">
+            </dt>
+            <dd>
+                <h4>
+                    权益承诺
+                </h4>
+                <p>
+                    无条件退款
+                </p>
+                <p>
+                    快速到账
+                </p>
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <img src="./image/shouye/FuWu.png" alt="">
+            </dt>
+            <dd>
+                <h4>
+                    服务承诺
+                </h4>
+                <p>
+                    7×24小时
+                </p>
+                <p>
+                    确保教学服务质量
+                </p>
+            </dd>
+        </dl>
+    </div>
+    <!-- 期末冲刺 -->
+    <div class="qm">
+        <dl>
+            <dt>
+                <img src="./image/shouye/QiMoCongCi.png" alt="">
+            </dt>
+            <dd>
+                <h4>
+                    期末冲刺
+                </h4>
+                <a href="./html/qimo.html">了解详情</a>
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <img src="./image/shouye/shizililiang.png" alt="">
+            </dt>
+            <dd>
+                <h4>
+                    师资力量
+                </h4>
+                <a href="./html/shizi.html">了解详情</a>
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <img src="./image/shouye/haoxuebao.png" alt="">
+            </dt>
+            <dd>
+                <h4>
+                    好学宝
+                </h4>
+                <a href="./html/haoxuebao.html">了解详情</a>
+            </dd>
+        </dl>
+    </div>
+    <!-- 全国统一认证 -->
+    <div class="d1" >
+        <h2 class="content_title">
+                全国统一认证中学高级教师
+        </h2>
+        <p>
+            26:1认证通过率&nbsp;&nbsp;平均教龄10年以上
+        </p>
+        <dl>
+            <dt>
+                <img src="./image/shouye/zizihi.png" alt="">
+            </dt>
+            <dd>
+                严格审查学历认证、教师资格、专业资质
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <img src="./image/shouye/kaohe.png" alt="">
+            </dt>
+            <dd>
+                严格审查学历认证、教师资格、专业资质
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <img src="./image/shouye/jiandu.png" alt="">
+            </dt>
+            <dd>
+                严格审查学历认证、教师资格、专业资质
+            </dd>
+        </dl>
+    </div>
+    <button class="btn szjs" href="javascript:void(0);" onclick="NTKF.im_openInPageChat('kf_10286_1530320084796')">
+	
+        更多师资介绍»
+    </button>
+    <!-- 好成绩 -->
+    <div class="d2">
+        <h2 class="content_title">
+            好成绩,从选择好老师开始
+        </h2>
+        <input type="number" class="btn telinput" placeholder="请输入手机号" value="">
+        <button class="btn mfk" onclick="sendPhoneByEmail();">申请免费课</button>
+        <p>今日剩余课程<span>13</span>名</p>
+    </div>
+    <!-- 预约体验课 -->
+    <div class="tyk">
+        <div class="header">
+            <div>
+                小学
+            </div>
+            <div>
+                初中
+            </div>
+            <div>
+                高中
+            </div>
+        </div>
+    </div>
+    <!-- 一对一专属定制学习计划 -->
+    <div class="d3">
+        <h2 class="content_title">一对一专属定制学习计划</h2>
+        <!-- <div class="left">
+            小学辅导&nbsp;&nbsp;&nbsp;&nbsp;
+            单科全科
+        </div>
+        <div class="right">
+            在线咨询
+        </div>
+        <div class="left">
+            中学辅导&nbsp;&nbsp;&nbsp;&nbsp;
+            单科全科
+        </div>
+        <div class="right">
+            在线咨询
+        </div>
+        <div class="left">
+            高中辅导&nbsp;&nbsp;&nbsp;&nbsp;
+            单科全科
+        </div>
+        <div class="right">
+            在线咨询
+        </div> -->
+        <img class="img1" src="./image/shouye/xiaoxue.png" alt="" href="javascript:void(0);" onclick="NTKF.im_openInPageChat('kf_10286_1530320084796')">
+        <img class="img1" src="./image/shouye/chuzhong.png" alt="" href="javascript:void(0);" onclick="NTKF.im_openInPageChat('kf_10286_1530320084796')">
+        <img class="img1" src="./image/shouye/zhongkao.png" alt="" href="javascript:void(0);" onclick="NTKF.im_openInPageChat('kf_10286_1530320084796')">
+        <img class="img2" src="./image/shouye/meirong.png" alt="" href="javascript:void(0);" onclick="NTKF.im_openInPageChat('kf_10286_1530320084796')">
+    </div>
+    <!-- 四大系统课程 -->
+    <div class="d4">
+        <h2 class="content_title">四大系统课程</h2>
+        <dl>
+            <dt>
+                <img src="./image/shouye/001.png" alt="">
+            </dt>
+            <dd>
+                <h4>1对1同步巩固课</h4>
+                <p class="p1">高级教师</p>
+                <p class="p2">
+                    知识结构不健全无法构建知识网,知识点难以掌握,继续突破弱项的学生
+                </p>
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <img src="./image/shouye/002.png" alt="">
+            </dt>
+            <dd>
+                <h4>1对1查漏补缺课</h4>
+                <p class="p1">中级/高级教师</p>
+                <p class="p2">
+                    课堂上自认为只是都已掌握,但课后做题准确率较低,作业用时较长的学生
+                </p>
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <img src="./image/shouye/003.png" alt="">
+            </dt>
+            <dd>
+                <h4>1对1培优拔高课</h4>
+                <p class="p1">高级/特级教师</p>
+                <p class="p2">
+                    成绩原地踏步或提分不显著/提升遭遇瓶颈,有望进一步提分的潜力学生
+                </p>
+            </dd>
+        </dl>
+        <dl>
+            <dt>
+                <img src="./image/shouye/004.png" alt="">
+            </dt>
+            <dd>
+                <h4>1对1考前冲刺课</h4>
+                <p class="p1">特级教师</p>
+                <p class="p2">
+                    希望考前集中强化/需要综合梳理知识与考试技能,迅速进步的学生
+                </p>
+            </dd>
+        </dl>
+        <button class="btn yuyue" style="margin: 0.66666rem 0 1.33333rem 0;" href="javascript:void(0);" onclick="NTKF.im_openInPageChat('kf_10286_1530320084796')">预约体验课</button>
+    </div>
+    <!-- 软件+硬件+服务 -->
+    <div class="d5">
+        <h2 class="content_title">软件+硬件+服务</h2>
+        <p class="tit">360<sup>0</sup>沉浸式学习氛围,师生互动畅通无阻</p>
+        <p class="tit">学习更高效&nbsp;&nbsp;&nbsp;孩子更主动&nbsp;&nbsp;&nbsp;家长更放心</p>
+        <img src="./image/shouye/005.png" alt="">
+        <h4>
+            师生面对面,真人直播互动
+        </h4>
+        <p class="con">
+            四路视频,看,写,听,讲轻松自如,师生"面对面"学,
+        </p>
+        <p class="con">
+            高清习题手写验算,作业远程批改,老师"手把手"教。
+        </p>
+        <h4>
+            家长手机旁听,随时随地参与
+        </h4>
+        <p class="con">
+            家长使用APP,随时随地参与课堂远程实时旁听,
+        </p>
+        <p class="con">
+            观看过程老师学生不受打扰,孩子学习状态一手掌握。
+        </p>
+        <button class="btn yuyue" style="margin: 0.66666rem 0 1.33333rem 0.5rem;background:#28d87b" href="javascript:void(0);" onclick="NTKF.im_openInPageChat('kf_10286_1530320084796')">抢订1对1免费课(价值300元)</button>
+    </div>
+    <!-- 好学宝 -->
+    <div class="d6">
+        <h2 class="content_title">好学宝</h2>
+        <p class="tit">7维互动在线教学仪</p>
+        <img src="./image/shouye/006.png" alt="">
+        <img src="./image/shouye/007.png" alt="">
+    </div>
+    <!-- 三方协同 -->
+    <div class="d7">
+        <h2 class="content_title">家长、老师、学生三方协同</h2>
+        <p class="tit">家长可在手机端无痕旁听</p>
+        <img src="./image/shouye/008.png" alt="">
+        <p class="tit">课堂情况一手掌握,零影响,免尴尬随意切换</p>
+        <p class="tit">多功能视频杆</p>
+    </div>
+    <!-- 量身定制 -->
+    <div class="d8">
+        <img src="./image/shouye/009.png" alt="">
+        <img src="./image/shouye/010.png" alt="">
+    </div>
+    <!-- 国家专利 -->
+    <div class="d9">
+        <h2 class="content_title">国家专利</h2>
+        <img src="./image/shouye/011.png" alt="">
+        <img src="./image/shouye/tuceng2.png" alt="">
+    </div>
+    <div class="d10">
+        <p class="p1">
+            现在预约免费试听课
+        </p>
+        <p class="p2">
+            可免费获得好学宝使用权
+        </p>
+        <button href="javascript:void(0);" onclick="NTKF.im_openInPageChat('kf_10286_1530320084796')">
+            立即预约免费试听课
+        </button>
+    </div>
+    <div class="d11">
+        <img src="./image/yxtj.jpg" alt="">
+    </div>
+	<div class="in-flex">
+        <div class="in-tele">
+            <a href="tel:4006062032">
+                <img src="./image/telephone-btn.png">
+            </a>
+        </div> 
+        <div class="in-image">
+            <img src="./image/red1.png" id="img_number">
+            <a id="div_2" href="javascript:void(0);" onclick="NTKF.im_openInPageChat('kf_10286_1530320084796')">
+                <img src="./image/consultation-btn.png">
+            </a>
+        </div>
+        <div id="autotype" class="div_autotype">
+            <a href="javascript:void(0);" onclick="NTKF.im_openInPageChat('kf_10286_1530320084796')">
+                <div class="send">
+                    <span class="qipao_c">您是要辅导什么科目？</span>
+                    <div class="arrow"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="p2"> <br>北京中嘉未来教育科技有限公司</p>
+    </div>
+	
+			<!-- 咨询代码 -->
+		<script type="text/javascript"> 
+			var NTKF_PARAM = {
+			    "siteid": "kf_10286" /*网站siteid*/,
+			    "settingid": "kf_10286_1530320084796" /*代码ID*/,
+			    "uid": "" /*会员ID*/,
+			    "uname": ""/*会员名*/,
+			    "userlevel": "0"/*会员等级*/
+			}
+		</script>
+		<script type="text/javascript" src="http://dl.ntalker.com/js/xn6/ntkfstat.js?siteid=kf_10286" charset="utf-8"></script>
+</body>
+
+<script src="./font/jquery-1.12.2.js"></script>
+<script src="./js/public.js"></script>
+<script type="text/javascript" src="http://dl.ntalker.com/js/xn6/ntkfstat.js?siteid=kf_10286" charset="utf-8"></script>
+<script src="./js/index.js"></script>
+</html>

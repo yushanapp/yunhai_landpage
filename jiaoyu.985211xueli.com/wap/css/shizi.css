@@ -1,0 +1,181 @@
+.banner {
+  padding-top: 1.33333rem; }
+  .banner img {
+    width: 10rem; }
+
+.content_title {
+  font-size: 0.56rem;
+  color: #333;
+  font-weight: 900; }
+
+.btn {
+  width: 9rem;
+  height: 1rem;
+  margin-left: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  outline: none; }
+
+.mfk {
+  background: #28d87b;
+  color: #fff;
+  margin-bottom: .3rem; }
+
+.telinput {
+  background: #d3fcdd;
+  text-align: center;
+  font-size: 0.4rem; }
+
+.telinput::-webkit-input-placeholder {
+  text-align: center;
+  color: #119d32;
+  font-size: 0.4rem; }
+
+.d6 {
+  padding-top: 1.33333rem; }
+  .d6 h2 {
+    text-align: center; }
+  .d6 .tit {
+    font-size: 0.34666rem;
+    text-align: center;
+    color: #666;
+    line-height: 0.7rem; }
+  .d6 img {
+    width: 10rem; }
+
+.d4 {
+  width: 9rem;
+  margin-left: 0.5rem;
+  overflow: hidden; }
+  .d4 h2 {
+    text-align: center; }
+  .d4 dl {
+    margin-top: 0.66667rem;
+    float: left; }
+    .d4 dl dt {
+      float: left;
+      width: 1.6rem; }
+      .d4 dl dt img {
+        width: 1.5rem; }
+    .d4 dl dd {
+      margin-left: 0.5rem;
+      width: 6.7rem;
+      float: left;
+      box-sizing: border-box; }
+      .d4 dl dd h4 {
+        font-size: 0.48rem;
+        color: #333; }
+      .d4 dl dd .p2 {
+        margin-top: 0.2rem;
+        font-size: 0.37333rem;
+        line-height: 0.5rem;
+        color: #666; }
+
+.d1 {
+  margin-top: 1rem;
+  overflow: hidden; }
+  .d1 img {
+    width: 10rem; }
+
+.d2 {
+  background: #333333;
+  padding: 1.3rem 0 1rem 0; }
+  .d2 h2 {
+    text-align: center;
+    color: #00db7a; }
+  .d2 .tit {
+    font-size: 0.34666rem;
+    text-align: center;
+    color: #00db7a;
+    line-height: 0.7rem; }
+  .d2 .con {
+    margin-bottom: 0.4rem; }
+    .d2 .con .tit {
+      color: #eee; }
+      .d2 .con .tit strong {
+        color: #fff; }
+
+.d3 {
+  width: 10rem; }
+  .d3 h2 {
+    text-align: center; }
+  .d3 img {
+    width: 10rem; }
+  .d3 p {
+    font-size: 0.34666rem;
+    font-weight: 900;
+    color: #333;
+    text-align: center; }
+    .d3 p span {
+      color: #fb7634;
+      margin: 0 3px; }
+
+.tyk {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+  .tyk .header {
+    width: 9rem;
+    overflow: hidden;
+    margin-left: 0.5rem; }
+    .tyk .header > div {
+      width: 2.9rem;
+      height: 1rem;
+      line-height: 1rem;
+      text-align: center;
+      background: #edfbf0;
+      margin-right: 0.1rem;
+      float: left;
+      font-size: 0.34666rem;
+      color: #666; }
+  .tyk .content {
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+    margin-top: 0.7rem; }
+    .tyk .content .content_top > img {
+      float: left;
+      width: 2.67rem;
+      height: 3.3rem; }
+    .tyk .content .content_top .content_top_right {
+      float: right;
+      width: 5.7rem;
+      height: 3.3rem;
+      line-height: 0.55rem;
+      position: relative; }
+      .tyk .content .content_top .content_top_right h4 {
+        display: inline-block;
+        font-size: 0.5rem;
+        font-weight: 600; }
+      .tyk .content .content_top .content_top_right span {
+        margin-left: 10px;
+        font-size: 0.35rem; }
+      .tyk .content .content_top .content_top_right p {
+        font-size: 0.35rem; }
+      .tyk .content .content_top .content_top_right .jiaoling {
+        height: 0.93333rem;
+        position: absolute;
+        bottom: 0; }
+        .tyk .content .content_top .content_top_right .jiaoling > div {
+          width: 1.6rem;
+          height: 100%;
+          padding-top: 0.2rem;
+          box-sizing: border-box;
+          background: #fff193;
+          text-align: center;
+          color: #666;
+          float: left;
+          margin-right: 0.4rem; }
+          .tyk .content .content_top .content_top_right .jiaoling > div:last-child {
+            margin-right: 0; }
+          .tyk .content .content_top .content_top_right .jiaoling > div .nl {
+            font-size: 0.34666rem;
+            line-height: 0.4rem; }
+          .tyk .content .content_top .content_top_right .jiaoling > div .jl {
+            font-size: 0.24rem;
+            line-height: 0.4rem; }
+  .tyk .btn {
+    margin-left: 0;
+    background: #33da82;
+    color: #fff;
+    outline: none; }
+  .d11 img {
+    width: 100%; }

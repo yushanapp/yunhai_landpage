@@ -1,0 +1,192 @@
+.banner{
+    padding-top:1.3rem;
+    img{
+        width:10rem;
+    }
+}
+.content_title{
+    font-size: 0.56rem;
+    color:#333;
+    font-weight: 900;
+    text-align:center;
+}
+.btn{
+    width:7rem;
+    height:1rem;
+    margin-left:1.5rem;
+    border:none;
+    border-radius:0.5rem;
+    outline:none;
+}
+.mfk{
+    background:#fff;
+    color:#28d87b;
+    // box-shadow: 0px 10px 1rem #28d87b inset;
+    margin-bottom:1rem;
+}
+.telinput{
+    background:#d3fcdd;
+    text-align: center;
+    font-size: 0.4rem;
+}
+.telinput::-webkit-input-placeholder{
+    text-align: center;
+    color:#119d32;
+    font-size: 0.4rem;
+}
+.d1{
+    .tit{
+        font-size:0.34666rem;
+        text-align: center;
+        color:#666;
+        line-height: 0.5rem;
+        &:nth-child(1){
+            margin-top:0.66666rem;
+        }
+        &:nth-child(2){
+            margin-top:0.4rem;
+        }
+        &:nth-child(3){
+            margin-top:0.26666rem;
+        }
+    }
+    margin-bottom:1.33333rem;
+}
+.d2{
+    .con{
+        margin-top:0.66666rem;
+        padding:0 0.5rem;
+        box-sizing: border-box;
+        img{
+            width:1.4rem;
+        }
+        h4{
+            margin-top:0.1rem;
+            font-size:0.4rem;
+            color:#333;
+        }
+        p{
+            margin-top:0.1rem;
+            font-size:0.37333rem;
+            color:#666;
+        }
+    }
+}
+.d3{
+    img{
+        width:10rem;
+    }
+}
+.d5{
+    img{
+        width:10rem;
+    }
+}
+.d4{
+    width:10rem;
+    background: #28d87b;
+    padding:1rem 0 0.6rem 0;
+    h2{
+        font-size: 0.56rem;
+        color:#fff;
+        text-align: center;
+        margin-bottom:0.5rem;
+    }
+    img{
+        width:10rem;
+    }
+    p{
+        font-size:0.34666rem;
+        font-weight: 900;
+        color:#333;
+        text-align: center;
+        span{
+            color:#fb7634;
+            margin:0 3px;
+        }
+    }
+}
+.tyk{
+    margin-top:1rem;
+    margin-bottom:1rem;
+    .header{
+        width:9rem;
+        overflow: hidden;
+        margin-left:0.5rem;
+        &>div{
+            width:2.9rem;
+            height:1rem;
+            line-height:1rem;
+            text-align: center;
+            background:#edfbf0;
+            margin-right:0.1rem;
+            float:left;
+            font-size:0.34666rem;
+            color:#666;
+        }
+    }
+    .content{
+        padding:0 0.5rem;
+        box-sizing: border-box;
+        margin-top:0.7rem;
+        .content_top{
+            &>img{
+                float:left;
+                width:2.67rem;
+                height:3.3rem;
+            }
+            .content_top_right{
+                float:right;
+                width: 5.7rem;
+                height:3.3rem;
+                line-height:0.55rem;
+                position:relative;
+                h4{
+                    display: inline-block;
+                    font-size:0.5rem;
+                    font-weight: 600;
+                }
+                span{
+                    margin-left:10px;
+                    font-size:0.35rem;
+                }
+                p{
+                    font-size:0.35rem;
+                }
+                .jiaoling{
+                    height:0.93333rem;
+                    position: absolute;
+                    bottom:0px;
+                    &>div{
+                        width:1.6rem;
+                        height:100%;
+                        padding-top:0.2rem;
+                        box-sizing: border-box;
+                        background: #fff193;
+                        text-align: center;
+                        color:#666;
+                        float:left;
+                        margin-right:0.4rem;
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                        .nl{
+                            font-size: 0.34666rem;
+                            line-height: 0.4rem;
+                        }
+                        .jl{
+                            font-size: 0.24rem;
+                            line-height: 0.4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .btn{
+        margin-left:0;
+        background: #33da82;
+        color:#fff;
+        width:9rem;
+    }
+}
