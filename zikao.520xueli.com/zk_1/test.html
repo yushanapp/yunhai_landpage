@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  
+  <link rel="stylesheet" href="testimg/index.css">
+  <link rel="stylesheet" href="testimg/animate.css">
+  <link rel="stylesheet" href="testimg/swiper-4.3.3.min.css">
+   <title>测一测你多久拿本科</title>
+   <style>
+     .select{background-color:rgb(247, 54, 28) !important;; box-shadow: rgb(247, 54, 28) 0px 0px 25px;}
+     .selectno{background-color:rgb(0, 0, 0) !important;; box-shadow: rgb(0, 0, 0) 0px 0px 0px;}
+   </style>
+   </style>
+</head>
+
+<body>
+  <div class="main-content">
+    
+    
+    <div class="bg">
+      <!--<img src="testimg/bg.png" alt="" class="bg-img">
+      <img src="testimg/Bitmap.png" alt="" class="bit-map">
+      <img src="testimg/kaobenke.png" alt="" srcset="" class="kaobenke">-->
+      <div class="slogan"><span class="count">3455</span>人已领取测试结果</div>
+    </div>
+    <div class="wrapper">
+      <div class="item item-1">
+        <div class="question">
+          <div class="title">您的年龄是?</div>
+          <div class="content" data-index="0">
+            <div class="option" data-index="0">18岁及以下</div>
+            <div class="option" data-index="1">19-30岁</div>
+            <div class="option" data-index="2">31-45岁</div>
+            <div class="option" data-index="3">46岁及以上</div>
+          </div>
+        </div>
+        <div class="answer">答案</div>
+      </div>
+      <div class="item item-2">
+        <div class="question">
+          <div class="title">您目前的最高学历是?</div>
+          <div class="content" data-index="1">
+            <div class="option" data-index="0">高中高职或技校</div>
+            <div class="option" data-index="1">专科</div>
+            <div class="option" data-index="2">本科及以上</div>
+            <div class="option" data-index="3">其他</div>
+          </div>
+        </div>
+        <div class="answer">答案</div>
+      </div>
+      <div class="item item-3">
+        <div class="question">
+          <div class="title">您意向的院校是?</div>
+          <div class="content" data-index="2">
+            <div class="option" data-index="0">985大学</div>
+            <div class="option" data-index="1">211大学</div>
+            <div class="option" data-index="2">普通一本院校</div>
+            <div class="option" data-index="3">其他院校</div>
+          </div>
+        </div>
+        <div class="answer">答案</div>
+      </div>
+    </div>
+    <div>
+    
+
+                <form action="http://www.hyeduzj.net/plus/diy.php" enctype="multipart/form-data" method="post" name="lansige" >
+                <input type="hidden" name="dede_fields" value="address,text;qq,text;school,select;zy,text;cc,select;xm,text;dh,text;sel,select;sj,datetime;furl,text" />
+                <input type="hidden" name="dede_fieldshash" value="0a7f869806957f3c1160d52a20c13e79" />
+                <input type="hidden" name="diyid" value="1">
+                <input type="hidden" name="do" value="2">
+                <input name='furl' id='furl' value='' type="hidden" />
+                <input name="sj" value='' id="sj" type="hidden"  />
+                <div class="phone">
+                <input type="text" name="dh" id="phone-number" placeholder="请输入手机号" maxlength="11" required="required">
+                </div>
+                <input  type="submit" id="submit" class="btn" value="生成报告" />
+              
+            </form>
+    </div> 
+
+
+    <div class="bottom swt" onclick="doyoo.util.openChat('g=10081562');return false;">
+        <img class="banner-item" src="testimg/03.png" alt="">
+        <img class="banner-item" src="testimg/02.png" alt="">
+        <img class="banner-item" src="testimg/01.png" alt="">
+    </div>
+  </div>
+
+
+ 
+  <script src="testimg/jquery.js"></script>
+  <script src="testimg/swiper-4.3.3.min.js"></script>
+
+  <script>
+   
+
+ $(document).ready(function () {
+        
+        $('.item-3 .option').click(function(){
+         $(this).siblings().removeClass("select");
+         $(this).addClass("select");
+       });
+        $('.item-1 .option').click(function(){
+         $(this).siblings().removeClass("select");
+         $(this).addClass("select");
+       });
+        $('.item-2 .option').click(function(){
+         $(this).siblings().removeClass("select");
+         $(this).addClass("select");
+       });
+
+  });
+
+    var wdtime= new Date();
+ var fromurl = window.location.href;
+document.getElementById("sj").value=wdtime;
+document.getElementById("furl").value=fromurl;
+
+  </script>
+  
+</body>
+<script type="text/javascript" charset="utf-8" src="http://lead.soperson.com/20001634/10101652.js"></script>
+</html>
