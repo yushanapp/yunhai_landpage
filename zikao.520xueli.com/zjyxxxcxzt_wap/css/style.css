@@ -85,7 +85,7 @@ section{overflow:hidden;width:100%;background:#b1ddfa;}
 .jz-all{width:82%;float:left;}
 .jz-box2{overflow:hidden;background:#fff;border-radius:5px;padding:3% 2% 3% 3%;margin-bottom:15%;}
 .jz-box2 span{color:#333333;font:normal 1.555em "微软雅黑";float:left;}
-.jz-box2 input{color:#999999;font:normal 1.555em "微软雅黑";width:100%;border:none;float:left;padding-left:2%;}
+.jz-box2 input{color:#999999;font:normal 1.555em "微软雅黑";width:80%;border:none;float:left;padding-left:2%;}
 .jz-btn input{width:16%;float:right;background:url(../images/jz-btn.jpg) no-repeat;background-size:contain;padding:10% 0;}
 /*enter*/
 .enter-txt{color:#073a61;font:normal 1.625em "微软雅黑";text-align:center;margin:2% 0;}
@@ -125,5 +125,3 @@ section{overflow:hidden;width:100%;background:#b1ddfa;}
 
 .ttop{width:12%;position:fixed;right:1%;bottom:10%; z-index:9999;}
 .ttop img{width:100%;cursor:pointer;}
-
-        

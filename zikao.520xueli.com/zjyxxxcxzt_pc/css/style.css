@@ -26,7 +26,7 @@ body{font-family:"微软雅黑, Verdana, Geneva, sans-serif";font-size:12px; bac
 .tel-txt{color:#666666;font:normal 16px "微软雅黑";}
 .tel-num{color:#ef2525;font:normal 20px "微软雅黑";}
 /*banner*/
-.banner{background:url(../images/banner.jpg) left center no-repeat;height:280px;}
+.banner{background:url(../images/banner2.jpg) left center no-repeat;height:280px;}
 
 /*search*/
 .search{width:100%;/*height:65px;*/background:#11448f;padding:15px 0;overflow:hidden;}
