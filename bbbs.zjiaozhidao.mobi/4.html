@@ -1,45 +1,49 @@
-<!DOCTYPE html>
-<!-- saved from url=(0056)http://sem.appchina.com/app/com.tujia.hotel/bd.sem.baidu -->
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
     <title>宝宝巴士</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" type="text/css" href="css/sem180424.css">
-    <link rel="stylesheet" href="css/index.css">
+    <meta name="viewport" content="width=device-width">
+    <style>
+
+        .navImage img {
+            height: auto;
+        }
+
+        .navImage {
+            display: inline-block;
+            width: 100%;
+        }
+
+        body {
+            margin: 0 !important;
+        }
+
+    </style>
+    <script src="js/jquery-2.1.4.min.js"></script>
+
 </head>
 <body>
 
-<div class="header">
-    <img src="http://cdn.lyplaaap.cn/bbbs.zjiaozhidao.mobi/images/bj.jpg" alt="" usemap="#Map" class="bg1">
-    <map name="Map" class="btnCilck">
-      <area shape="rect" coords="182,566,541,647" href="javascript:;">
-      <area shape="rect" coords="149,2136,524,2206" href="javascript:;">
-        <area shape="rect" id="b_dw1" coords="" href="javascript:;">
+<center>
+    <div class="navImage">
+        <!-- <img src="http://cdn.lyplaaap.cn/kuaishou.zjiaozhidao.mobi/images/bgmy.jpg"  alt="navbar" border="0" usemap="#imgMap" id="img">-->
+        <map name="imgMap"id="download"  class="btnCilck">
+            <area id="b_dw1" shape="rect" coords="" style="outline:none;" href="javascript:;">
+            <area id="b_dw2" shape="rect" coords="" style="outline:none;" href="javascript:;">
+        </map>
+    </div>
+
+    <img src="" alt="" border="0" usemap="#download2Map" id="xfbtn" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;" onClick="javascript:;" >
+    <map name="download2Map" class="btnCilck">
+        <area id="b_dw3" shape="rect" coords="" href="javascript:;">
     </map>
 
-    <div class="Sem_App_Img">
-        <div class="App_ImgBox" style="width: 216%;">
-            <img alt="0" src="http://cdn.lyplaaap.cn/bbbs.zjiaozhidao.mobi/images/lb1.jpg" id="img_0">
-            <img alt="1" src="http://cdn.lyplaaap.cn/bbbs.zjiaozhidao.mobi/images/lb2.jpg" id="img_1">
-            <img alt="2" src="http://cdn.lyplaaap.cn/bbbs.zjiaozhidao.mobi/images/lb3.jpg" id="img_2">
-            <img alt="3" src="http://cdn.lyplaaap.cn/bbbs.zjiaozhidao.mobi/images/lb4.jpg" id="img_3">
-            <img alt="4" src="http://cdn.lyplaaap.cn/bbbs.zjiaozhidao.mobi/images/lb5.jpg" id="img_4">
-        </div>
-    </div>
-    <div class="btn_top btnCilck">
-
-    </div>
-<!--    <div class="btn_bottom">
-        <img  src="http://cdn.lyplaaap.cn/xgzbys.zjzhidao.mobi/images/bgbtn.png" alt="navbar" id="img">
-        <div class="b_click btnCilck"></div>
-    </div>-->
- <!--   <img src="" class="btnCilck" alt="" name="download2" border="0" usemap="#download2Map"  id="download2" style="position:fixed;z-index:9999;margin:0 auto;bottom:0;left:0;right:0;width: 100%;" onClick="javascript:;" >
-    <map name="download2Map"  class="btnCilck"><area shape="rect" coords="22,15,700,129"  href="javascript:;">
+    <img src="" alt="" border="0" usemap="#download3Map" id="xfbtntop" style="position:fixed;margin:0 auto;top:0px;left:0;right:0;" onClick="javascript:;" >
+    <map name="download3Map" class="btnCilck">
+        <area shape="rect" id="b_dw4" coords="" href="javascript:;">
     </map>
--->
-</div>
-<script src="js/jquery-2.1.4.min.js"></script>
+</center>
 <script>
     $.ajax({
         url: "http://storage.lyplaaap.cn/bbbs/action/select.php",
@@ -61,12 +65,13 @@
             var imgs=" <img src="+bj+" style='width:"+kd+",z-index:999;' alt=\"navbar\" border=\"0\" usemap=\"#imgMap\" id=\"img\">";
             /* $("#xfbtn").attr("src",xf);*/
 
-           /* $(".navImage").append(imgs);
+            $(".navImage").append(imgs);
+
             if(xf==0||xf == ""||xf.length==0){
                 $("#download2").remove();
             }else{
                 $("#download2").attr("src",xf);
-                $("#download2").css({"max-width":kd});
+                $("#download2").css({"width":kd});
             }
 
             if(dxf==0||dxf == ""||dxf.length==0){
@@ -74,15 +79,12 @@
             }else{
                 $("#xfbtntop").attr("src",dxf);
                 $("#xfbtntop").css({"width":kd});
-            }*/
-          /*  $("#xfbtntop").css({"width":kd});*/
-
+            }
+            $("#xfbtntop").css({"width":kd});
             $("#b_dw1").attr("coords",dw1);
-
-
-          /*  $("#b_dw2").attr("coords",dw2);
+            $("#b_dw2").attr("coords",dw2);
             $("#b_dw3").attr("coords",dw3);
-            $("#b_dw4").attr("coords",dw4);*/
+            $("#b_dw4").attr("coords",dw4);
         }
     });
 
@@ -114,5 +116,4 @@
 
 </script>
 </body>
-
 </html>
