@@ -1,0 +1,46 @@
+﻿*{margin:0;padding:0;font:normal 100% "微软雅黑",Microsoft YaHei,Arial, Helvetica, sans-serif, "宋体";list-style:none;}
+body{ margin:0 auto; padding: 0 auto;background: #fff;}
+a{text-decoration:none;-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transparent;}
+a:focus {outline-style:none; -moz-outline-style: none;}
+a{blr:expression(this.onFocus=this.close());}
+a{blr:expression(this.onFocus=this.blur());}
+img{ border:0; vertical-align:middle; width:100%;}
+.top{height:1.57rem;width:100%;background:#333;position:fixed;left:0;buttom:0;z-index:10;}
+.logo{width:1.03rem;height: 1.03rem;background: url("http://cdn.lyplaaap.cn/txzb.zjzhidao.mobi/img/logo.png") no-repeat;background-size:100% 100%;float: left;margin:.37rem .19rem 0 .36rem;}
+.logo_text{width:3.3rem;padding-top:.4rem;font-size:.32rem;line-height:.5rem;overflow:hidden;color:#fff;float:left;}
+.button{width:2.07rem;height:.71rem;font-size:.36rem;color:#fff;background: #fd5964;border-radius: .5rem;cursor: pointer;line-height: .71rem;margin:.53rem .32rem 0 0;overflow: hidden;float: right;text-align: center; }
+.banner{width:7.5rem;height:8.04rem;margin:1.77rem auto 0;overflow: hidden;}
+.swiper-container{width:7.5rem;height:8.04rem;}
+.slide1{width:7.5rem;height: 8.04rem;background: url("http://cdn.lyplaaap.cn/txzb.zjzhidao.mobi/img/banner1.jpg") no-repeat;background-size:100% 100%;}
+.slide2{width:7.5rem;height: 8.04rem;background: url("http://cdn.lyplaaap.cn/txzb.zjzhidao.mobi/img/banner2.jpg") no-repeat;background-size:100% 100%;}
+.slide3{width:7.5rem;height: 8.04rem;background: url("http://cdn.lyplaaap.cn/txzb.zjzhidao.mobi/img/banner3.jpg") no-repeat;background-size:100% 100%;}
+.swiper-pagination-bullet{width:.2rem;height:.2rem;}
+.swiper-pagination-bullet-active{opacity:1;background:#fff;}
+.title1{margin:.44rem 0 0 .2rem;height: .66rem;line-height:.44rem;font-size:.38rem;overflow: hidden;text-indent: .86rem;background: url("http://cdn.lyplaaap.cn/txzb.zjzhidao.mobi/img/title.png") no-repeat;background-size:.58rem .34rem   }
+.title2{margin-top:.06rem;}
+.total{overflow: hidden;}
+.every{width:3.44rem;height:6.2rem;overflow:hidden;float:left;margin:0 0 0 .2rem;position:relative;}
+.s{position:absolute;left:2.46rem;top:0;width:.79rem;height:.42rem;background:#eb897e;border-radius:0 0 .1rem .1rem;font-size:.26rem;color:#fff;line-height:.42rem;text-align:center;}
+.q{position:absolute;left:2.46rem;top:0;width:.79rem;height:.42rem;background:#f4aeac;border-radius:0 0 .1rem .1rem;font-size:.26rem;color:#fff;line-height:.42rem;text-align:center;}
+.x{position:absolute;left:2.46rem;top:0;width:.79rem;height:.42rem;background:#eb89a6;border-radius:0 0 .1rem .1rem;font-size:.26rem;color:#fff;line-height:.42rem;text-align:center;}
+.every1{height:.48rem;padding:.2rem 0 0 0;width:100%;overflow:hidden;}
+.name{line-height: .48rem;font-size: .28rem;width: .82rem;overflow: hidden;float: left;}
+.age{width: .9rem;line-height:.48rem;color:#666;float: left;font-size: .28rem;}
+.live{width: 1.17rem;height: .48rem;border-radius: .5rem;overflow: hidden;background: #fee456;color: #000;line-height: .48rem;float: right;font-size: .3rem;text-align: center;}
+.publicity{color: #333;font-size: .26rem;}
+.more{height: .82rem;background: #f4f4f4;line-height: .82rem;font-size: .3rem;color: #666;text-align: center;}
+.discuss_outer{padding-bottom:.16rem;overflow: hidden;}
+.discuss{overflow: hidden;}
+.audience{float: left;width:.72rem;height: .72rem;margin:.33rem 0 0 .36rem; }
+.audience img{width:.72rem;height: .72rem;}
+.infor{width: 6.07rem;height: 1.84rem;border-bottom: 1px solid #e4e4e4;float: right;}
+.infor_top{padding:.6rem 0 .4rem;height: .32rem;overflow: hidden;}
+.user_name{font-size: .3rem;line-height: .32rem;color: #888;float: left;}
+.num1{width: .5rem;height: .32rem;line-height: .32rem;color: #9b99a9;float: right;font-size: .3rem;}
+.num2{width: .5rem;height: .32rem;line-height: .32rem;color: #eb3255;float: right;font-size: .3rem;}
+.xin1{width: .28rem;height: .32rem;background: url("http://cdn.lyplaaap.cn/txzb.zjzhidao.mobi/img/xin1.jpg") no-repeat;background-size:100% 100%;float: right;margin: 0 .33rem 0 .2rem;}
+.xin2{width: .28rem;height: .32rem;background: url("http://cdn.lyplaaap.cn/txzb.zjzhidao.mobi/img/xin2.jpg") no-repeat;background-size:100% 100%;float: right;margin: 0 .33rem 0 .2rem;}
+.infor_bottom{font-size: .3rem;color: #4a4a4a;}
+
+
+
