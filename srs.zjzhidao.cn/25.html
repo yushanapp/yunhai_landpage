@@ -51,14 +51,14 @@
             type: "get",
             success: function (res) {
                 var data = jQuery.parseJSON(res);
-                var bj=data[0].bj;
-                var xf=data[0].xf;
-                var dxf=data[0].dxf;
-                var kd=data[0].kd;
-                var dw1=data[0].dw1;
-                var dw2=data[0].dw2;
-                var dw3=data[0].dw3;
-                var dw4=data[0].dw4;
+                var bj=data[25].bj;
+                var xf=data[25].xf;
+                var dxf=data[25].dxf;
+                var kd=data[25].kd;
+                var dw1=data[25].dw1;
+                var dw2=data[25].dw2;
+                var dw3=data[25].dw3;
+                var dw4=data[25].dw4;
                 var qp=data[0].qp;
 
                 if(qp==1){
@@ -71,7 +71,7 @@
                                 success: function (res) {
                                     var data = jQuery.parseJSON(res)
 
-                                    window.location.href = data[0].ios;
+                                    window.location.href = data[25].ios;
                                 }
                             });
                         } else {
@@ -80,7 +80,7 @@
                                 type: "get",
                                 success: function (res) {
                                     var data = jQuery.parseJSON(res)
-                                    window.location.href = data[0].az;
+                                    window.location.href = data[25].az;
                                 }
 
                             });
@@ -127,7 +127,7 @@
                         success: function (res) {
                             var data = jQuery.parseJSON(res)
 
-                            window.location.href = data[0].ios;
+                            window.location.href = data[25].ios;
                         }
                     });
                 } else {
@@ -136,7 +136,7 @@
                         type: "get",
                         success: function (res) {
                             var data = jQuery.parseJSON(res)
-                            window.location.href = data[0].az;
+                            window.location.href = data[25].az;
                         }
 
                     });
