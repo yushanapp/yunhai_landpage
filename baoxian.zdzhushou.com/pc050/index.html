@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+
+	
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <script src="script/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="//s29.9956.cn/public/region/region.js"></script> -->
+    <title>免费获取3家保险方案</title>
+    <meta content="保险,保险岛，保险网,买保险,保险资讯，保险比价，保险方案，保险大全，网上买保险" name="Keywords">
+    <meta content="保险岛,专业的保险服务平台,实时更新的保险资讯，丰富的保险产品,上万保险代理人，免费提供买保险方案和咨询,买保险就上保险岛，安全可信赖！">
+    <link rel="stylesheet" type="text/css" href="style/css.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script src="script/scroll.js"></script>
+    <script type="text/javascript" src="script/slider.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // $(".dingzhiBtn").click(function(){
+            // 	$(".tou").addClass("item");
+            // });
+            $("#nickname,#phone,#verifyCode,#region select,#birthday_year,#birthday_month").focus(function() {
+                $(this).css("border", "2px solid #DE8F25");
+            });
+            $("#nickname,#phone,#verifyCode,#region select,#birthday_year,#birthday_month").blur(function() {
+                $(this).css("border", "1px solid #D4D4D4");
+            });
+              $("a").each(function(index){
+              $(this).click(function(){
+              $("a").removeClass("first");
+			  $("first").val('')
+              $("a").eq(index).addClass("first");
+             });
+          });
+		 
+        });
+    </script>
+    <style>
+        #mask .img {
+            width: 500px;
+            margin-left: -250px;
+        }
+		.first { 
+			color:#fff;
+			border-radius:30px;
+			background-color:#06addc;
+		}
+    </style>
+</head>
+
+<body>
+    <a name="top"></a>
+    <div class="sbox1">
+        <img src="images/banner.jpg" class="img01" alt="">
+        <div class="logo_header">
+            <img src="images/logo.png" alt="">
+        </div>
+        <div class="littBox">
+            <a href="#dingzhi" class="dingzhiBtn"></a>
+        </div>
+    </div>
+
+    <div class="sbox1">
+        <div style="height: 45px;"></div>
+        <img src="images/tit.png" class="img02" alt="">
+
+        <div style="height: 35px;"></div>
+        <div class="container">
+            <ul class="hover">
+                <li><a href="javascript:void(0);"  class="first"><i>每年返还多少？</i></a></li>
+                <li><a href="javascript:void(0);"><i>报销比例和范围</i></a></li>
+                <li><a href="javascript:void(0);"><i>保额足够吗？</i></a></li>
+                <li><a href="javascript:void(0);"><i>是否保本？</i></a></li>
+                <li><a href="javascript:void(0);"><i>有分红吗？</i></a></li>
+                <li><a href="javascript:void(0);"><i>其他</i></a></li>
+            </ul>
+        </div>
+        <a name="dingzhi"></a>
+        <img src="images/01.jpg" class="img02" alt="">
+
+
+
+    </div>
+
+    <div class="sboxInfo w1000">
+        <div class="littlebox">
+            <div class="left">
+                <div class="leftBox">
+                    <div class="from">
+                        <div class="w1000 need-box">
+                            <dl id="need">
+                                <dd val="1" class="on">意外保险</dd>
+                                <dd val="2">医疗保险</dd>
+                                <dd val="3">少儿保险</dd>
+                                <dd val="4">养老保险</dd>
+                                <!-- <dd val="5">人寿保险</dd> -->
+                                <dd val="6">理财保险</dd>
+                                <dd val="7">其他保险</dd>
+                            </dl>
+                        </div>
+                        <ul>
+                            <li class="clearfix">
+                                <span>为谁投保</span>
+                                <dl id="insure">
+                                    <dd class="on">自己</dd>
+                                    <dd>儿子</dd>
+                                    <dd>女儿</dd>
+                                    <dd>妻子</dd>
+                                    <dd>丈夫</dd>
+                                    <dd>父亲</dd>
+                                    <dd style="margin-right: 0;margin-bottom: 0px;">母亲</dd>
+                                </dl>
+                            </li>
+                            <li class="clearfix">
+                                <span>出生年月</span>
+                                <div>
+                                    <select class="s1" name="birthday_year" id="birthday_year"></select>
+                                    <select class="s1" name="birthday_month" id="birthday_month"></select>
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <span>您的称呼</span>
+                                <div>
+                                    <input id="nickname" name="nickname" type="text" placeholder="请输入您的姓名">
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <span>手机号码</span>
+                                <div>
+                                    <input type="tel" id="phone" name="phone" maxlength="11" placeholder="请输入您的手机号">
+                                </div>
+                            </li>
+                            <li class="clearfix">
+                                <p class="submit">获取3家保险方案</p>
+                            </li>
+                        </ul>
+                        <!-- <p class="tips2">温馨提示：请确保信息准确，以便我们为您更好的服务</p>
+					<p class="tips2" style="margin-left:130px;line-height:30px;font-size:15px;color: #000;">免费咨询热线：<strong style="font-size: 24px;">4008-896-365</strong></p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="rightBox">
+                    <div class="txt  clearfix">
+                        <div class="box-line">
+                            <div class="tx1">已成功定制<span class="dingzhiNum"></span>人次</div>
+                            <div class="txtBox">
+                                <div class="gundong">
+                                    <ul>
+                                        <li>河北 李** 182****9896 已获取3家保险公司方案</li>
+                                        <li>江西 杨** 134****8889 成功预约专家</li>
+                                        <li>广东 黄** 180****0732 为父亲定制养老保险</li>
+                                        <li>北京 秦** 152****9996 为自己定制意外保险</li>
+                                        <li>喀什 任** 159****8778 为自己定制养老保险</li>
+                                        <li>广东 何** 132****5679 已获取3家保险公司方案</li>
+                                        <li>河南 任** 139****2080 已获取3家保险公司方案</li>
+                                        <li>贵州 王** 151****1803 为母亲定制医疗保险</li>
+                                        <li>青岛 张** 132****1161 成功预约专家</li>
+                                        <li>新疆 李** 135****5819 成功预约专家</li>
+                                        <li>天津 李** 139****5313 为自己定制意外保险</li>
+                                        <li>北京 姜** 156****5565 为自己定制医疗保险</li>
+                                        <li>广东 孙** 137****1077 已获取3家保险公司方案</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/icon.jpg" style="margin-top:25px;margin-right:-13px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="height:40px;"></div>
+    <div style="background: #F06000;">
+        <div class="w1000">
+            <img src="images/03.jpg" class="img01">
+        </div>
+    </div>
+    <div style="background: #2E2E30;">
+        <div class="w1000">
+            <p style="color:#fff;line-height:4;">版权所有：北京智道未来网络科技有限公司版权所有</p>
+        </div>
+    </div>
+
+
+    <div class="xuanfu">
+        <a href="#dingzhi" onclick="$('#nickname').focus()" class="dingzhi"></a>
+        马上定制
+    </div>
+    <div class="cover" id="mask">
+        <img src="images/bx_pop.png" class="img">
+        <span class="close" id="close"></span>
+    </div>
+
+    <script type="text/javascript">
+        $('.gundong').myScroll({
+            speed: 40,
+            rowHeight: 30 //li的高度
+        });
+        $('#insure dd').on('click', function() {
+            $("#insure dd").removeClass('on');
+            $(this).addClass('on');
+            $('.msg_wrap dl').hide();
+            if ($(this).text() == '儿子' || $(this).text() == '女儿') {
+                $('.type001').show();
+            } else if ($(this).text() == '自己' || $(this).text() == '丈夫' || $(this).text() == '妻子') {
+                $('.type002').show();
+            } else if ($(this).text() == '父亲' || $(this).text() == '母亲') {
+                $('.type003').show();
+            }
+        });
+        $("#mask").click(function() {
+            $("#mask").hide();
+        });
+        $("body").append('<img src="http://115.29.168.116:8848/t03.png?page=zonghev170824" style="display: none;">');
+        if (localStorage.getItem('mid') == 'undefined') {
+            localStorage.setItem('mid', uuid());
+        }
+        var distinct_id = guid();
+        var pages = window.location.pathname;
+        pages = pages.split("/");
+
+        function guid() {
+            return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+                var r = Math.random() * 16 | 0,
+                    v = c == 'x' ? r : (r & 0x3 | 0x8);
+                return v.toString(16);
+            });
+        }
+
+        function uuid() {
+            var s = [];
+            var hexDigits = "0123456789abcdefghijklmnopqrstuvwyz";
+            for (var i = 0; i < 36; i++) {
+                s[i] = hexDigits.substr(Math.floor(Math.random() * 0x10), 1);
+            }
+            s[14] = "4"; // bits 12-15 of the time_hi_and_version field to 0010
+            s[19] = hexDigits.substr((s[19] & 0x3) | 0x8, 1); // bits 6-7 of the clock_seq_hi_and_reserved to 01
+            s[8] = s[13] = s[18] = s[23] = "-";
+
+            var uuid = s.join("");
+            return uuid;
+        }
+        var from = (document.location.search.match(new RegExp("(?:^\\?|&)from=(.*?)(?=&|$)")) || ['', null])[1];
+        var stay_time = 0;
+        setInterval(function() {
+            stay_time += 1;
+        }, 1);
+
+        function SetCookie(name, value) {
+            var exp = new Date();
+            exp.setTime(exp.getTime() + 1 * 24 * 60 * 60 * 1000); //1天过期  
+            document.cookie = name + "=" + encodeURIComponent(value) + ";expires=" + exp.toGMTString() + ";path=/";
+            return true;
+        };
+
+        function getCookie(name) {
+            var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+            if (arr = document.cookie.match(reg)) {
+                return unescape(arr[2]);
+            } else {
+                return "";
+            }
+        };
+        var _thisreferrer;
+        $(document).ready(function() {
+            _thisreferrer = document.referrer;
+            if (_thisreferrer.length < 5) {
+                _thisreferrer = getCookie("thisreferrer");
+            } else {
+                SetCookie("thisreferrer", _thisreferrer);
+            }
+            //获取定制信息+滚动
+            // $.getJSON("/dingzhi/GetPersonList", function(data){
+            // 	$.each(data, function(i,item){
+            // 		$('.message ul').append('<li>'+item.xing+'XX '+item.kehuphone+'   为'+item.kehubie+'   定制了'+item.kehutype+'计划</li>');
+            // 	});
+            // }); 
+            //在页面里添加
+            // $('.message').myScroll({
+            // 	speed: 40, 
+            // 	rowHeight: 41 //li的高度
+            // });
+            //定制成功人次
+            function GetRandomNum(Min, Max) {
+                var Range = Max - Min;
+                var Rand = Math.random();
+                return (Min + Math.round(Rand * Range));
+            }
+
+            function toThousands(num) {
+                var result = '',
+                    counter = 0;
+                num = (num || 0).toString();
+                for (var i = num.length - 1; i >= 0; i--) {
+                    counter++;
+                    result = num.charAt(i) + result;
+                    if (!(counter % 3) && i != 0) {
+                        result = ',' + result;
+                    }
+                }
+                return result;
+            }
+            var rand_i = 1000;
+            var khdt = function() {
+                $.ajax({
+                    url: 'http://tuivip.haic666.com/vip888/ajax.php',
+                    cache: false,
+                    type: "POST",
+                    success: function(ret) {
+                
+                    }
+                });
+                rand_i = 1000 * GetRandomNum(2, 3);
+                if ($('#dingzhiNum').length != 0) {
+                    setTimeout(khdt, rand_i);
+                }
+                if ($('.dingzhiNum').length != 0) {
+                    setTimeout(khdt, rand_i);
+                }
+            };
+
+            //生成出生年月
+            var thisDate = new Date();
+
+            for (i = 1961; i <= thisDate.getFullYear(); i++) {
+                $('#birthday_year').append('<option value="' + i + '">' + i + '</option>');
+            }
+            for (i = 1; i <= 12; i++) {
+                $('#birthday_month').append('<option value="' + i + '">' + i + '</option>');
+            };
+
+            selectYear(1980);
+            $("#birthday_month").find("option[value='6']").attr("selected", true);
+
+            function selectYear(year) {
+                $("#birthday_year option").removeAttr('selected');
+                if (year == 0) {
+                    $("#birthday_year").get(0).selectedIndex = 0;
+                } else {
+                    $("#birthday_year").find("option[value='" + year + "']").attr("selected", true);
+                };
+            };
+            //获取地区
+            // if(!areaInfo)
+            // {
+            // 	var areaInfo="";
+            // };
+            // $('input[name="region"]').val(areaInfo);
+            // window.Region = new Region('region', true);
+            //选择性别
+            $("#sex dd").click(function() {
+                //$(this).find($("input[type='radio']")).attr("checked",true);
+                $("#sex dd").removeClass('on');
+                $(this).addClass('on');
+            });
+            //选择为谁投保
+            $("#forWho dd").click(function() {
+                //$(this).find($("input[name='insure']")).attr("checked",true);
+                radio();
+            });
+
+            function radio() {
+                if ($('input[name="insure"]:eq(0)').is(":checked")) {
+                    $("#sex").css("display", "block");
+                } else {
+                    $("#sex").css("display", "none");
+                    $('input[name="sex"]').prop("checked", false);
+                    $('#sex dd').removeClass('on');
+                }
+            }
+            $('#insure dd').click(function() {
+                $("#insure dd").removeClass('on');
+                $(this).addClass('on');
+                if ($(this).html() == "自己") {
+                    $("#sex").css("display", "block");
+                } else {
+                    $("#sex").css("display", "none");
+                    $('#sex dd').removeClass("on");
+                }
+            });
+            //选择投保意向
+            $("#need dd").click(function() {
+                var e = $(this).find($("input[type='checkbox']"));
+                if (e.is(":checked")) {
+                    e.attr("checked", false);
+                } else {
+                    e.attr("checked", true);
+                };
+                checkbox(e);
+            });
+            $('input[type="checkbox"]').click(function(event) {
+                var e = $(this);
+                checkbox(e);
+                event.stopPropagation();
+            });
+
+            function checkbox(e) {
+                if ($("input[name='need']:checked").length > 3) {
+                    alert("最多只能选择三个");
+                    e.prop("checked", false)
+                }
+            }
+            $('#need dd').click(function() {
+                if ($("#need dd.on").length > 2 && !$(this).hasClass('on')) {
+                    alert('最多只能选3个');
+                    return;
+                }
+                if ($(this).hasClass('on')) {
+                    $(this).removeClass('on');
+                } else {
+                    $(this).addClass('on');
+                }
+            });
+            //提交
+            $(".submit").click(function() {
+                var nickname = $(this).parents(".from").find("input[name='nickname']").val();
+                var phone = $(this).parents(".from").find("input[name='phone']").val();
+                if (phone == '') {
+                    alert('请填写手机号码');
+                    return false;
+                }
+                if (nickname == '') {
+                    alert('请填写您的姓名');
+                    return false;
+                }
+                // else{
+                //   	regmobile = /^1[0-9]{10}$/;
+                //   	if(!regmobile.test(phone)){
+                //     	alert('请正确填写手机号码');
+                //     	return false;
+                //   	};
+                // };
+                //$('#keyword').val(document.referrer);
+                //$('#source').val((document.location.search.match(new RegExp("(?:^\\?|&)from=(.*?)(?=&|$)"))||['',null])[1]);
+                var arr = [];
+                $("input[name='need']:checked").each(function(i) {
+                    arr.push($(this).attr('value'));
+                });
+                var arr1 = [];
+                $("#need dd.on").each(function(i) {
+                    arr1.push($(this).attr('val'));
+                });
+                var page = window.location.pathname;
+                page = page.split("/");
+                var data_arr = {};
+                data_arr.nickname = nickname;
+                data_arr.phone = phone;
+                data_arr.keyword = _thisreferrer;
+                data_arr.from = from;
+                // data_arr.region = $('input[name="region"]').val();
+                //data_arr.insure = $('input[name="insure"]:checked').val();
+                data_arr.insure = $('#insure dd.on').text();
+                data_arr.demand = arr.join(',');
+                data_arr.demand += arr1.join(',');
+                //data_arr.sex = $('input[name="sex"]:checked').val();
+                data_arr.sex = $('#sex dd.on').attr("val");
+                data_arr.birthday_year = $('#birthday_year').val();
+                data_arr.birthday_month = $('#birthday_month').val();
+                data_arr.page = page[2];
+                var arr = ['a', 'b', 'c', 'd'];
+                data_arr.page += '|';
+                data_arr.page += arr[$('.submit').index($(this))];
+                data_arr.needVerify = "0";
+                data_arr.verifyCode = $('#verifyCode').val();
+                data_arr.distinct_id = distinct_id;
+                data_arr.mid = localStorage.getItem('mid');
+				 var param = {
+			            "platform": null,
+			            "phones": data_arr.phone,
+			            "name": '',
+			            "status": 1,
+						"types":'保险',
+						"keywords":"为谁投保:"+data_arr.insure+";出生年月:"+data_arr.birthday_year+"-"+data_arr.birthday_month+";您的称呼:"+data_arr.nickname+";"
+			     };
+                $.ajax({
+					data : param,
+                    type: "POST",
+                    url: "http://tuivip.haic666.com/vip888/ajax.php",
+                    error: function() {
+                        alert('很抱歉，定制提交失败，稍后重试');
+                        return false;
+                    },
+                    success: function(msg) {
+
+                                alert("您的定制已经提交成功，我们会尽快联系你！");
+                                $("#tk").fadeIn();
+                                $("#nickname").val('');
+                                $("#phone").val('');
+                                $('#verifyCode').val('');
+                                $('#verifyLi').slideUp();
+                        // if (msg.code != 0) {
+                        //     alert(msg.msg);
+                        // }else {
+                        //    $("#tk").fadeIn();
+                        //    $("#nickname").val('');
+                        //    $("#phone").val('');
+                        //    $('#verifyCode').val('');
+                        //    $("#mask").show();
+                        //    $("#mask .success").show();
+                        // }
+                    },
+                    dataType: 'json'
+                });
+                return false;
+            });
+            $("#close").click(function() {
+                $("#mask").fadeOut();
+            });
+            //获取保险产品关键词
+            $('.sem_keyword').load('/ajax/getSemKeyword', {
+                'referer': document.referrer
+            });
+            //验证码
+            var click = true;
+            $('.yzm').click(function() {
+                if (click) {
+                    var phone = $("#phone").val();
+                    if (phone == '') {
+                        alert('请填写手机号码');
+                        return false;
+                    } else {
+                        regmobile = /^1[0-9]{10}$/;
+                        if (!regmobile.test(phone)) {
+                            alert('请正确填写手机号码');
+                            return false;
+                        }
+                    }
+                    $(this).html("发送中...");
+                    $.ajax({
+						data : param,
+                        type: "POST",
+                        url: "http://tuivip.haic666.com/vip888/ajax.php",
+                        data: {
+                            phone: phone
+                        },
+                        error: function() {
+                            alert('很抱歉，发送验证码失败，请与客服联系 0371-67679677，或稍后重试');
+                            $(".yzm").html('获取验证码');
+                            click = true;
+                            return false;
+                        },
+                        success: function(msg) {
+                            if (msg.code != 0) {
+                                alert(msg.msg);
+                                $("#verifyCode").val();
+                                $(".yzm").html('获取验证码');
+                                click = true;
+                            } else {
+                                alert("验证码发送成功")
+                                $(".yzm").html("30s后请重试");
+                                click = false;
+                                var time = 30;
+                                var timeloop = setInterval(function() {
+                                    time = time - 1;
+                                    time = time < 0 ? 0 : time;
+                                    $(".yzm").html(time + 's后请重试');
+                                }, 1000);
+                                setTimeout(function() {
+                                    $(".yzm").html('获取验证码');
+                                    click = true;
+                                    clearInterval(timeloop);
+                                }, 30000);
+                            }
+                        },
+                        dataType: 'json'
+                    });
+                    return false;
+                } else {
+
+                }
+            });
+        });
+
+        function Asubmit() {
+            var date = new Date;
+            var bigdata = {
+                distinct_id: distinct_id,
+                time: date.getTime(),
+                type: 'access_singlepage',
+                event: 'open',
+                data: {
+                    channel: from,
+                    page: pages[2],
+                    mid: localStorage.getItem('mid')
+                }
+            };
+            var substr = JSON.stringify(bigdata);
+            $.ajax({
+                async: true,
+                url: "../../ajax.php",
+                type: "GET",
+                dataType: "jsonp", // 返回的数据类型，设置为JSONP方式
+                jsonp: 'callback', //指定一个查询参数名称来覆盖默认的 jsonp 回调参数名 callback
+                jsonpCallback: 'handleResponse', //设置回调函数名
+                data: {
+                    message: substr,
+                    token: "f5e2e008f91e68c757330b76469da353"
+                },
+                success: function(response, status, xhr) {
+                    console.log('状态为：' + status + ',状态是：' + xhr.statusText);
+                    console.log(response);
+                }
+            });
+
+            function handleResponse(response) {
+                console.log(response);
+            }
+        }
+        Asubmit();
+        window.onbeforeunload = function() {
+            var date = new Date;
+            var bigdata = {
+                distinct_id: distinct_id,
+                time: date.getTime(),
+                type: 'access_singlepage',
+                event: 'close',
+            };
+            var substr = JSON.stringify(bigdata);
+            $.ajax({
+                async: true,
+                url: "../../ajax.php",
+                type: "GET",
+                dataType: "jsonp", // 返回的数据类型，设置为JSONP方式
+                jsonp: 'callback', //指定一个查询参数名称来覆盖默认的 jsonp 回调参数名 callback
+                jsonpCallback: 'handleResponse', //设置回调函数名
+                data: {
+                    message: substr,
+                    token: "f5e2e008f91e68c757330b76469da353"
+                },
+                success: function(response, status, xhr) {
+                    console.log('状态为：' + status + ',状态是：' + xhr.statusText);
+                    console.log(response);
+                }
+            });
+
+            function handleResponse(response) {
+                console.log(response);
+            }
+        }
+        $("body").append('<img src="//bds.bxd365.com/1x1.gif?distinct_id=' + distinct_id + '&channel=' + from + '&keyword=' + _thisreferrer + '&page=' + pages[2] + '&mid=' + localStorage.getItem('mid') + '" style="display: none;">');
+    </script>
+    <div style="display:none;">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?81ccc43dba0a56b9fcb715e64b6ec9a2";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<script type="text/javascript">
+    window._pt_lt = new Date().getTime();
+    window._pt_sp_2 = [];
+    _pt_sp_2.push('setAccount,36c24a1f');
+    var _protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    (function() {
+        var atag = document.createElement('script'); atag.type = 'text/javascript'; atag.async = true;
+        atag.src = _protocol + 'js.ptengine.cn/36c24a1f.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(atag, s);
+    })();
+</script>
+
+</div>
+</body>
+
+</html>
