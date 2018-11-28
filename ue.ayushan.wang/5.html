@@ -1,0 +1,52 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>优艺直播</title>
+	<meta name="viewport" content="width=device-width"> 
+     <style>
+		.navImage img{
+			width:720px;
+			height:auto;
+			}
+			.navImage{
+			display:inline-block;
+			width:100%;			
+			}
+			body{
+			margin:0!important;
+			}
+     </style>
+
+</head>
+<body>
+			<center>
+				<div class="navImage">
+				  <img id="img"  src="http://cdn.lyplaaap.cn/ue.ayushan.wang/images/bg1.jpg" alt="navbar" usemap="#navImg">
+			    <map name="navImg" id="navImg" class="btnCilck">
+			      <area shape="rectangle" coords="95,3600,605,3843" onClick="javascript:;"/>
+			    </map>
+				</div> 
+		<img src="http://cdn.lyplaaap.cn/ue.ayushan.wang/images/bg4.png" alt="" usemap="#download2Map"  id="download2"  style="position:fixed;margin:0 auto;bottom:0;left:0;right:0;width:720px;max-width: 720px;" onClick="javascript:;" >
+        <map name="download2Map" class="btnCilck">
+          <area shape="rect" coords="448,75,711,155" href="javascript:;">
+        </map>
+			</center>
+<script>
+
+		var Android="http://d2.youyi520.com/a/c/53/UElive.com_53249.apk";//安卓下载链接
+		var Ios="";//ios下载链接
+
+		var btns = document.getElementsByClassName("btnCilck");
+		for(var i=0;i<btns.length;i++){
+		   btns[i].onclick=function () {
+               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Ios;
+               }else {
+                   window.location.href =Android;
+               }
+           }
+		};
+</script>
+</body>
+</html>
