@@ -18,35 +18,42 @@
 			margin:0!important;
 			}
      </style>
+     <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?00f828ecfb220af15bcb4b38b9fc0a47";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
 </head>
 <body>
-			<center>
+<center>
 				<div class="navImage">
-				  <img id="img"  src="images/bg1.jpg" alt="navbar" usemap="#navImg">
-					<map name="navImg" id="navImg" class="btnCilck">
-					  
-
-<area shape="rectangle" coords="82,1473,309,1534" onClick="javascript:;" />					  
-<area shape="rectangle" coords="398,1470,625,1536" onClick="javascript:;" />
-<area shape="rectangle" coords="79,1920,308,1985" onClick="javascript:;"/>
-<area shape="rectangle" coords="397,1917,627,1985" onClick="javascript:;" />
-<area shape="rectangle" coords="80,2360,308,2420" onClick="javascript:;" />
-<area shape="rectangle" coords="395,2357,628,2422" onClick="javascript:;" />
-					</map>
+			    <img  src="http://cdn.lyplaaap.cn/weibo_dongman.zjzhidao.top/images/bg1.jpg" alt="navbar" usemap="#imgMap" id="img">
+                <map name="imgMap" class="btnCilck">
+                <area shape="rect" coords="79,2359,314,2423" style="outline:none;" href="javascript:;">
+                <area shape="rect" coords="400,2353,635,2417" style="outline:none;" href="javascript:;">
+                <area shape="rect" coords="396,1921,631,1985" style="outline:none;" href="javascript:;">
+                <area shape="rect" coords="78,1920,313,1984" style="outline:none;" href="javascript:;">
+                <area shape="rect" coords="386,1471,621,1535" style="outline:none;" href="javascript:;">
+                <area shape="rect" coords="74,1471,309,1535" style="outline:none;" href="javascript:;">
+                </map>
 				</div> 
-			<img src="images/bg2.jpg" alt="" name="download2" border="0" usemap="#download2Map"  style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
-<map name="download2Map"><area shape="rect" coords="444,17,693,81" onClick="javascript:;" class="btnCilck"></map>
+			<img src="http://cdn.lyplaaap.cn/weibo_dongman.zjzhidao.top/images/bg2.jpg" alt="" name="download2" border="0" usemap="#download2Map"   id="download2" style="position:fixed;margin:0 auto;bottom:0;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
+           <map name="download2Map"class="btnCilck"><area shape="rect" coords="442,19,703,84" onClick="javascript:;"></map>
 </center>
 <script>
 
-		var Android="https://s1.vcomic.com/2018-09-19/baidusearch/app-6.5.0-285-baidusearchE-release.apk";//安卓下载链接
-		var Ios="https://s1.vcomic.com/2018-09-19/baidusearch/app-6.5.0-285-baidusearchE-release.apk";//ios下载链接
+		var Android="https://s1.vcomic.com/2018-11-27/baidusearch/baidusearchC-vcomic-7.2.0-347.apk";//安卓下载链接
+		var Ios="";//ios下载链接
 
 		var btns = document.getElementsByClassName("btnCilck");
 		for(var i=0;i<btns.length;i++){
 		   btns[i].onclick=function () {
                if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                   window.location.href =Ios;
+                   window.location.href =Android;
                }else {
                    window.location.href =Android;
                }
