@@ -1,37 +1,44 @@
-<!DOCTYPE html>
-<!-- saved from url=(0056)http://sem.appchina.com/app/com.tujia.hotel/bd.sem.baidu -->
-<html>
+﻿<!doctype html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>翻阅小说</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" type="text/css" href="css/sem180424.css">
-    <link rel="stylesheet" href="css/index.css">
+	<meta charset="UTF-8">
+	<title>翻阅小说</title>
+	<meta name="viewport" content="width=device-width">
+	<link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
+	<style>
+		.navImage img{
+			width:720px;
+			height:auto;
+		}
+		.navImage{
+			display:inline-block;
+			width:100%;
+		}
+		body{
+			margin:0!important;
+		}
+	</style>
 </head>
 <body>
+<center>
+	<div class="navImage">
+		<!-- <img  src="http://cdn.lyplaaap.cn/fyxs.zhijiaozhidao.net/images/bg1.jpg" alt="navbar" usemap="#imgMap" id="img">-->
+		<map name="imgMap" class="btnCilck">
+			<area shape="rect" id="b_dw1" coords="" style="outline:none;" href="javascript:;">
+			<area shape="rect" id="b_dw2" coords="" style="outline:none;" href="javascript:;">
+		</map>
+	</div>
 
-<div class="header">
-    <img src="http://cdn.lyplaaap.cn/fyxs.zhijiaozhidao.net/images/bg2.jpg" class="bg1" alt="">
-    <div class="Sem_App_Img">
-        <div class="App_ImgBox" style="width: 246%;">
-            <img alt="0" src="http://cdn.lyplaaap.cn/fyxs.zhijiaozhidao.net/images/lb1.jpg" id="img_0">
-            <img alt="1" src="http://cdn.lyplaaap.cn/fyxs.zhijiaozhidao.net/images/lb2.jpg" id="img_1">
-            <img alt="2" src="http://cdn.lyplaaap.cn/fyxs.zhijiaozhidao.net/images/lb3.jpg" id="img_2">
-            <img alt="3" src="http://cdn.lyplaaap.cn/fyxs.zhijiaozhidao.net/images/lb4.jpg" id="img_3">
-            <img alt="3" src="http://cdn.lyplaaap.cn/fyxs.zhijiaozhidao.net/images/lb5.jpg" id="img_4">
-        </div>
-    </div>
-    <div class="btn_top btnCilck">
+	<img src="" alt="" name="download2" border="0" usemap="#download2Map"  id="xfbtn" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
+	<map name="download2Map"  class="btnCilck">
+		<area shape="rect" id="b_dw3" coords="59,1477,663,1595" style="outline:none;" href="javascript:;">
+	</map>
 
-    </div>
-    <div class="btn_top2 btnCilck">
-
-    </div>
-  <!--  <div class="btn_bottom">
-        <img  src="http://cdn.lyplaaap.cn/xgzbys.zjzhidao.mobi/images/bgbtn.png" alt="navbar" id="img">
-        <div class="b_click btnCilck"></div>
-    </div>-->
-</div>
+	<img src="" alt="" name="download2" border="0" usemap="#download2Map"  id="xfbtntop" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
+	<map name="download2Map"  class="btnCilck">
+		<area shape="rect" id="b_dw4" coords="59,1477,663,1595" style="outline:none;" href="javascript:;">
+	</map>
+</center>
 <script src="js/jquery-2.1.4.min.js"></script>
 <script>
 
@@ -40,33 +47,43 @@
         type: "get",
         success: function (res) {
             var data = jQuery.parseJSON(res);
-            var dw4=data[5].dw4;
-            console.log(dw4);
-            if (dw4==1){
-                $('body').click(function () {
-                    if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                        $.ajax({
-                            url: "http://storage.lyplaaap.cn/fyxs/action/select.php",
-                            type: "get",
-                            success: function (res) {
-                                var data = jQuery.parseJSON(res)
-                                window.location.href = data[3].ios;
-                            }
-                        });
-                    } else {
-                        $.ajax({
-                            url: "http://storage.lyplaaap.cn/fyxs/action/select.php",
-                            type: "get",
-                            success: function (res) {
-                                var data = jQuery.parseJSON(res)
-                                window.location.href = data[3].az;
-                            }
-                        });
-                    }
-                });
+            var bj=data[4].bj;
+            var xf=data[4].xf;
+            var dxf=data[4].dxf;
+            var kd=data[4].kd;
+            var dw1=data[4].dw1;
+            var dw2=data[4].dw2;
+            var dw3=data[4].dw3;
+            var dw4=data[4].dw4;
 
+            console.log(bj+"----"+xf+"------"+dw1+"------"+dw2+"-----"+dw3);
+
+            /* $("#img").attr("src",bj);*//* $("#img").attr("src",bj);*/
+
+            var imgs=" <img src="+bj+" style='width:"+kd+"' alt=\"navbar\" border=\"0\" usemap=\"#imgMap\" id=\"img\">";
+            /* $("#xfbtn").attr("src",xf);*/
+
+            $(".navImage").append(imgs);
+
+            if(xf==0||xf == ""||xf.length==0){
+                $("#xfbtn").remove();
+            }else{
+                $("#xfbtn").attr("src",xf);
+                $("#xfbtn").css({"width":kd});
             }
 
+            if(dxf==0||dxf == ""||dxf.length==0){
+                $("#xfbtntop").remove();
+            }else{
+                $("#xfbtntop").attr("src",dxf);
+                $("#xfbtntop").css({"width":kd});
+            }
+
+            $("#xfbtntop").css({"width":kd});
+            $("#b_dw1").attr("coords",dw1);
+            $("#b_dw2").attr("coords",dw2);
+            $("#b_dw3").attr("coords",dw3);
+            $("#b_dw4").attr("coords",dw4);
         }
     });
 
@@ -80,7 +97,8 @@
                     type: "get",
                     success: function (res) {
                         var data = jQuery.parseJSON(res)
-                        window.location.href = data[3].ios;
+
+                        window.location.href = data[4].ios;
                     }
                 });
             } else {
@@ -89,14 +107,13 @@
                     type: "get",
                     success: function (res) {
                         var data = jQuery.parseJSON(res)
-                        window.location.href = data[3].az;
+                        window.location.href = data[4].az;
                     }
+
                 });
             }
         }
     }
-
 </script>
 </body>
-
 </html>
