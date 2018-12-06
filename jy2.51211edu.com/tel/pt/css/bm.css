@@ -1,0 +1,14 @@
+#bm { padding:10px 10px 15px 10px;background:white;}
+#bm .t { font-size:2.0em; line-height:20px; margin-bottom:10px; color:#C00;}
+#bm .m ul { padding-bottom:6px;}
+#bm .m li { position:relative; z-index:1; height:40px; line-height:40px; margin-left:70px; font-size:1.4em; color:#1068b6;}
+#bm .m li span { position:absolute; z-index:2; left:-70px; top:0px; height:40px; line-height:40px;}
+#bm input,#bm select { border-radius:20px;-moz-border-radius:20px;-webkit-border-radius:20px; width:99%; height:30px; line-height:30px;border:1px solid #65a0d3; text-align:center;font-size:1.4em; font-size:14px;font-family:microsoft yahei; color:#666666;}
+#bm input.b  { position:fixed;_position:absolute; width:100%; z-index:2; left:0px; bottom:0px; -webkit-appearance: none; border:none; background:#4F911E; height:40px; line-height:40px; color:white;text-shadow:0px 0px 5px #444444;border-radius:0px;-moz-border-radius:0px;-webkit-border-radius:0px;}
+#bm input.b:active { filter: alpha(opacity=90); opacity:0.9;}
+
+#bm .m .join_two li {margin-left:100px;}
+#bm .m .join_two li span {left:-100px;}
+
+#bm .m .join_three li { margin-left:160px;}
+#bm .m .join_three li span { left:-160px;}

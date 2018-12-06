@@ -1,0 +1,58 @@
+@charset "gb2312";
+/* CSS Document */
+
+
+#lei { }
+#lei ul { overflow:auto; zoom:1; margin:0px 1em;}
+#lei ul li { width:50%; float:left;}
+#lei ul li a { display:block;}
+#lei ul li a img { width:100%;}
+
+h1 { font-size:1.4em; line-height:1; text-align:center; color:#c0810e; padding:0px; margin:0px; margin-bottom:1em;}
+h1.o { color:white;}
+h1 p { font-size:16px; font-weight:normal; color:#c2c9eb; margin-top:15px;}
+
+
+.box_1 { width:100%;background:url(../img/ss/bg_w.png) center bottom no-repeat; position:relative; z-index:1;overflow:hidden;}
+.box_1 .center { width:100%; height:auto; margin:0px auto; padding:2em 0; line-height:1.8; text-align:left;font-size:1.4em;}
+.box_1 .center.one ul li { width:180px; height:180px; margin-left:20px; float:left; background:#506787;-moz-border-radius:100px;-webkit-border-radius:100px; border-radius:100px; color:white; font-size:18px; line-height:1.5; }
+.box_1 .center.one ul.one { width:800px; margin:0px auto;}
+.box_1 .center.one ul.two { width:600px; margin:0px auto;}
+
+.box_1.o { color:white; background:#d19334;text-shadow:0px 0px 3px #845901;}
+
+#link{ line-height:20px; padding:15px; color:#333333;}
+
+
+#tab { position:relative; z-index:1; margin:0px auto; margin-bottom:0.5em;}
+#tab .tab { display:block; overflow:auto; zoom:1; position:absolute; z-index:2; width:9em;}
+#tab .tab li { position:relative; z-index:9; display:block; text-align:center; cursor:pointer; color:#444444; background:#f9f9f9; -webkit-transition: all .5s;-moz-transition: all .5s;-ms-transition: all .5s;-o-transition: all .5s;transition: all .5s; padding:1em 0px; border-bottom:1px solid #e9e9e9;}
+#tab .tab li .school_pic { width:50px; margin-bottom:0.5em;}
+#tab .tab li:hover,#tab .tab li.on { color:#ffffff; background:#2c4a66;}
+#tab .tab li .biao { position:absolute; z-index:10; right:0px; top:3.2em;}
+#tab .tab_mo { display:block; padding-left:10em;}
+#tab .tab_mo .one { line-height:1.8; margin-bottom:1em;}
+#tab .tab_mo .one a { color:red;}
+#tab .tab_mo .two { display:block; overflow:auto; zoom:1;}
+#tab .tab_mo .two li { line-height:1.8;}
+#tab .tab_mo .two li dl { position:relative; z-index:1; margin-right:1em; margin-bottom:1em; padding:0.5em 1em; background:#f1f5fe;}
+#tab .tab_mo .two li dl dt { font-weight:bold; color:#2c4a66; font-size:1.4em;}
+#tab .tab_mo .two li dl dd { color:#9cacd1; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+
+
+#gwqj { background:#2c4a66; padding:0.5em 0px; overflow:auto; zoom:1;}
+#gwqj .center {}
+
+
+#rmht { padding:0px 0.5em; margin-bottom:1.5em;}
+#rmht ul {overflow:auto; zoom:1;}
+#rmht ul li { float:left; margin-bottom:1em; width:50%; }
+#rmht ul li a { padding:0.5em 1em; margin:0px 0.5em; text-align:center; border:1px solid #9cacd1; background:#f1f5fe; display:block; color:#2c4a95;-moz-border-radius:5px;-webkit-border-radius:5px; border-radius:5px; }
+
+
+
+
+
+
+#zytj { background:#2c4a66; padding-bottom:0.5em; overflow:auto; zoom:1;}
+#zytj .center {}

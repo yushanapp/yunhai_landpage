@@ -1,0 +1,26 @@
+@import url("../../css/public.css");
+@import url("../../css/bm.css");
+
+
+#logo { text-align:center; width:100%; overflow:hidden; }
+#logo img { height:2.5em; margin:1em 0px;}
+
+#nav { padding:0px 0.5em;  height:3em;}
+#nav ul { width:100%; margin:0px auto; }
+/*#nav ul::-webkit-scrollbar {display: none;white-space: nowrap; overflow-x:scroll;}*/
+#nav ul li { float:left; width:25%; overflow:hidden;}
+#nav ul li a { display:block; text-align:center; height:2em; margin:0px 0.2em; line-height:2em; color:white; background:#444444; margin-bottom:0.5em;-moz-border-radius:500px;-webkit-border-radius:500px; border-radius:500px;}
+
+
+#banner { width:100%; overflow:hidden;}
+#banner img { width:100%;}
+
+
+
+
+
+
+h6 { font-size:1.8em; line-height:1; text-align:center; color:#444444; padding:1em; }
+
+a.pc {display:inline-block; margin:0px auto; padding:2px 10px;margin-top:10px; background:#f3cb13; color:#6c3602; font-size:1.2em;font-size:12px;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;}
+

@@ -1,0 +1,51 @@
+@charset "utf-8";
+@import url("public.css");
+@import url("bm.css");
+@import url("../css/schools_list.css");
+/* CSS Document */
+
+#head {}
+#head img { width:100%;}
+
+.box2 { overflow:auto;zoom:1;}
+.box2 div { width:25%;float:left; text-align:center;}
+.box2 div img { width:100%;}
+
+.list { line-height:18px; background:white;}
+
+.list .m { padding:0px 10px;}
+
+.list .m.l ul li { border-top:1px dotted #888888; padding:0px; }
+.list .m.l ul li a { display:block; padding:8px 0px; text-indent:38px; background:url(../img/list_ico.gif) 0px center no-repeat; }
+.list .m.l ul li.bg { background:#E4F3FC;}
+
+.list .m.g ul li { border-top:1px dotted #888888; padding:8px 0px;}
+.list .m.g ul li p { display:block; padding:0px 0px 0px 38px; background:url(../img/list_ico.gif) 0px center no-repeat; }
+.list .m.g ul li.bg { background:#E4F3FC;}
+
+
+.list .m.one { padding:0px 10px; text-align:center;}
+.list .m.one ul { overflow:auto; zoom:1;}
+.list .m.one ul li { width:25%; float:left;}
+.list .m.one ul li a { width:100%;}
+.list .m.one ul li a img { width:100%;}
+.list .m.one ul li a p { color:#944F03; padding:5px 0px;}
+
+.list .m.two { padding:0px 10px; line-height:16px;}
+.list .m.two ul li { position:relative; z-index:1; border-bottom:1px dotted #1f79c8; padding:8px 50px 8px 0px; overflow:hidden; color:#1068b6;}
+.list .m.two ul li strong { color:#944F03; font-weight:normal; font-weight:bold; }
+.list .m.two ul li p { padding-top:5px; font-size:12px; line-height:18px;}
+.list .m.two ul li p span { font-weight:bold;}
+.list .m.two ul li a { position:absolute; z-index:2; right:0px; top:15px; display:block; width:50px; height:43px; padding-top:7px;  background:#1f79c8; text-align:center; color:white;text-shadow: 1px 1px 0px #000; border-radius:50px;-moz-border-radius:50px;-webkit-border-radius:50px;}
+.list .m.two ul li a:active { background:#1f79c8;}
+
+.list .m.three { padding:0px 0px;}
+.list .m.three ul li { position:relative; z-index:1; border-bottom:1px dotted #1f79c8; height:40px; line-height:40px; background:#e6f2fd; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.list .m.three ul li i { position:absolute; z-index:2; left:10px; top:5px; display:block; width:30px; height:30px; line-height:30px;  background:#1f79c8; text-align:center; color:white;text-shadow: 1px 1px 0px #000; font-size:1.4em;font-size:14px; font-weight:bold; border-radius:50px;-moz-border-radius:50px;-webkit-border-radius:50px;}
+.list .m.three ul li a { display:block; text-indent:50px;}
+.list .m.three ul li a:active { background:#1f79c8; color:white;}
+
+h5 { font-size:1.4em;font-size:14px; height:30px; line-height:30px; color:#1f79c8; background:#d4ebff; text-align:center; border-radius:50px;-moz-border-radius:50px;-webkit-border-radius:50px; margin:10px 0px; text-shadow:0px 0px 5px white;}
+
+.foot { text-align:center; margin:0px 10px; padding-top:5px; padding-bottom:20px; line-height:24px; color:white; color:#222222;}
+.foot font { font-weight:bold;}

@@ -1,0 +1,47 @@
+@charset "utf-8";
+@import url("public.css");
+@import url("../css/schools_list.css");
+@import url("bm.css");
+/* CSS Document */
+
+#head {}
+#head img { width:100%;}
+
+.msdt {  position:relative; z-index:1; padding-left:75px; font-size:1.2em;}
+.msdt .biao { position:absolute; z-index:2; left:0px; top:0px; color:#c32c4c; font-weight:bold; height:30px; line-height:30px;}
+.msdt .m {}
+.msdt .m ul { overflow:auto; zoom:1;}
+.msdt .m ul li { height:30px; line-height:30px; overflow:hidden; text-overflow:ellipsis; white-space: nowrap; }
+.msdt .m ul li:hover { cursor:pointer;}
+.msdt .m ul li font.one { }
+.msdt .m ul li font.two { color:#c32c4c;}
+
+
+.tab_clo {}
+.tab_clo .t { position:relative; z-index:1; background:white; border-bottom:1px dotted #c3c3c3; height:40px; line-height:40px; padding:0px 0px 0px 10px;cursor:pointer; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.tab_clo .t:active { filter: alpha(opacity=50); opacity:0.5;}
+.tab_clo .t span { position:absolute; right:10px; top:0px; z-index:2;}
+.tab_clo .t strong { font-weight:normal; font-size:1.4em;}
+.tab_clo .t i { font-style:normal; height:20px; width:20px; line-height:20px; margin-top:10px; display:block; float:left; border-radius:50px;-moz-border-radius:50px;-webkit-border-radius:50px; color:white; background:#1f79c8; text-align:center; margin-right:10px; font-size:1.2em;}
+.tab_clo .m.three { padding:10px; line-height:1.8; font-size:1.2em; background:#f0f8ff; border-bottom:1px dotted #c3c3c3;}
+
+
+h4 { font-size:1em; padding:5px 0px; line-height:1.5; color:#1f79c8; background:#d4ebff; text-align:center; border-radius:50px;-moz-border-radius:50px;-webkit-border-radius:50px; margin:10px 0px; text-shadow:0px 0px 5px white; font-weight:normal;}
+
+
+.box2 { overflow:auto;zoom:1;}
+.box2 div { width:25%; padding:6px 0px; float:left; text-align:center;}
+.box2 div img { width:70%;}
+
+.list { line-height:1.8; background:white;}
+.list .m { color:#222222; padding:10px; padding-top:0px; font-size:1.2em;}
+.list .m.l ul li { border-top:1px dotted #888888; padding:0px; }
+.list .m.l ul li a { display:block; padding:8px 0px; text-indent:38px; background:url(../img/list_ico.gif) 0px center no-repeat; }
+.list .m.l ul li.bg { background:#E4F3FC;}
+
+.list .m.g ul li { border-top:1px dotted #888888; padding:8px 0px;}
+.list .m.g ul li p { display:block; padding:0px 0px 0px 38px; background:url(../img/list_ico.gif) 0px center no-repeat; }
+.list .m.g ul li.bg { background:#E4F3FC;}
+
+.foot { text-align:center; margin:0px 10px; padding-top:20px; line-height:24px; color:white; text-shadow:1px 1px 0px #444444;}
+.foot font { font-weight:bold;}

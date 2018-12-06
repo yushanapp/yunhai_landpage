@@ -1,0 +1,81 @@
+/* ------ general
+-----------------------------------------------*/
+
+/* ------ mobilyselect
+-----------------------------------------------*/
+
+#content {
+width:100%;
+background:#FFFFFF;
+}
+
+.selecterBtns {
+float:left;
+width:100%;
+margin-bottom:30px;
+}
+
+.selecterBtns a {
+-moz-border-radius:8px;
+-webkit-border-radius:8px;
+border-radius:8px;
+background:#EDEDED;
+color:#111;
+display:block;
+float:left;
+font-size:11px;
+line-height:28px;
+margin-right:0px;
+outline:none;
+padding:0 15px;
+text-decoration:none;
+}
+
+.selecterBtns .active,
+.selecterBtns a:hover {
+background:#111;
+color:#fff;
+}
+
+.selecterContent {
+float:left;
+width:100%;
+clear:both;
+}
+
+.selecterContent a {
+outline:none;
+}
+
+.selecterContent li {
+width:300px;
+height:200px;
+border:1px dashed #CCCCCC;
+overflow:hidden;
+}
+
+ul.nolist,
+ul.nolist li {
+display:block;
+list-style:none;
+padding:0px 0px 0px 0px;
+margin:0px 0px 0px 0px;
+}
+
+ul.nolist li {
+float:left;
+margin:0 10px 10px 0;
+text-align:center;
+}
+a {
+color:#000;
+}
+
+a img {
+border:none;
+}
+
+
+p a{
+color:#333;
+}
