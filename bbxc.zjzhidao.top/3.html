@@ -1,0 +1,52 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>宝宝时光</title>
+	<meta name="viewport" content="width=device-width"> 
+ 	 <link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
+     <style>
+		.navImage img{
+			width:720px;
+			height:auto;
+			}
+			.navImage{
+			display:inline-block;
+			width:100%;			
+			}
+			body{
+			margin:0!important;
+			}
+     </style>
+</head>
+<body>
+		<center>
+				<div class="navImage">
+			    <img  src="http://cdn.lyplaaap.cn/bbxc.zjzhidao.top/images/bg1.jpg" alt="navbar" usemap="#imgMap" id="img">
+                <map name="imgMap" class="btnCilck">
+                  <area shape="rect" coords="154,957,550,1068" style="outline:none;" href="javascript:;">
+                </map>
+				</div> 
+			<!--<img src="http://cdn.lyplaaap.cn/ksjgsys.zjzhidao.top/images/bg2.png" alt="" border="0" usemap="#download2Map"  id="download2" style="position:fixed;margin:0 auto;top:0;left:0;right:0;width: 720px;" onClick="javascript:;" >
+                <map name="download2Map" class="btnCilck">
+              <area shape="rect" coords="411,14,695,91" href="javascript:;" style="outline:none;">
+              </map>-->
+</center>
+<script>
+
+		var Android="https://app.appsflyer.com/id1270598726?af_prt=yunhaiyangfan&pid=baidusearchcpc_int&c=bbshg-iOS3&af_click_lookback=7d";//安卓下载链接
+		var Ios="";//ios下载链接
+
+		var btns = document.getElementsByClassName("btnCilck");
+		for(var i=0;i<btns.length;i++){
+		   btns[i].onclick=function () {
+               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Android;
+               }else {
+                   window.location.href =Android;
+               }
+           }
+		};
+</script>
+</body>
+</html>
