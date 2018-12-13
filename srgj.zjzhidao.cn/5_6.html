@@ -1,0 +1,125 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>生日管家</title>
+    <meta name="viewport" content="width=device-width">
+    <style>
+
+        .navImage img {
+            height: auto;
+        }
+
+        .navImage {
+            display: inline-block;
+            width: 100%;
+        }
+
+        body {
+            margin: 0 !important;
+        }
+
+    </style>
+    <script src="js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+
+<center>
+    <div class="navImage">
+        <!-- <img src="http://cdn.lyplaaap.cn/kuaishou.zjiaozhidao.mobi/images/bgmy.jpg"  alt="navbar" border="0" usemap="#imgMap" id="img">-->
+        <map name="imgMap"id="download"  class="btnCilck">
+            <area id="b_dw1" shape="rect" coords="" style="outline:none;" href="javascript:;">
+            <area id="b_dw2" shape="rect" coords="" style="outline:none;" href="javascript:;">
+        </map>
+    </div>
+
+    <img src="" alt="" border="0" usemap="#download2Map" id="xfbtn" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;" onClick="javascript:;" >
+    <map name="download2Map" class="btnCilck">
+        <area id="b_dw3" shape="rect" coords="" href="javascript:;">
+    </map>
+
+    <img src="" alt="" border="0" usemap="#download3Map" id="xfbtntop" style="position:fixed;margin:0 auto;top:0px;left:0;right:0;" onClick="javascript:;" >
+    <map name="download3Map" class="btnCilck">
+        <area shape="rect" id="b_dw4" coords="" href="javascript:;">
+    </map>
+</center>
+<script src="js/clipboard.js"></script>
+<script>
+
+    $.ajax({
+        url: "http://storage.lyplaaap.cn/srgj/action/select.php",
+        type: "get",
+        success: function (res) {
+            var data = jQuery.parseJSON(res);
+            var bj=data[30].bj;
+            var xf=data[30].xf;
+            var dxf=data[30].dxf;
+            var kd=data[30].kd;
+            var dw1=data[30].dw1;
+            var dw2=data[30].dw2;
+            var dw3=data[30].dw3;
+            var dw4=data[30].dw4;
+
+            console.log(bj+"----"+xf+"------"+dw1+"------"+dw2+"-----"+dw3);
+
+            /* $("#img").attr("src",bj);*//* $("#img").attr("src",bj);*/
+
+            var imgs=" <img src="+bj+" style='width:"+kd+"' alt=\"navbar\" border=\"0\" usemap=\"#imgMap\" id=\"img\">";
+            /* $("#xfbtn").attr("src",xf);*/
+
+            $(".navImage").append(imgs);
+            if(xf==0||xf == ""||xf.length==0){
+                $("#xfbtn").remove();
+            }else{
+                $("#xfbtn").attr("src",xf);
+                $("#xfbtn").css({"width":kd});
+            }
+
+            if(dxf==0||dxf == ""||dxf.length==0){
+                $("#xfbtntop").remove();
+            }else{
+                $("#xfbtntop").attr("src",dxf);
+                $("#xfbtntop").css({"width":kd});
+            }
+
+            $("#xfbtntop").css({"width":kd});
+            $("#b_dw1").attr("coords",dw1);
+            $("#b_dw2").attr("coords",dw2);
+            $("#b_dw3").attr("coords",dw3);
+            $("#b_dw4").attr("coords",dw4);
+        }
+    });
+
+
+    document.getElementById("download").addEventListener("click",function () {
+        this.setAttribute('href','javascript:;');
+        this.setAttribute('data-clipboard-text',"1f300f905479a459d56ae9296d5d6a8b");
+        var clipboard = new Clipboard('#download');
+
+        if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+            $.ajax({
+                url: "http://storage.lyplaaap.cn/srgj/action/select.php",
+                type: "get",
+                success: function (res) {
+                    var data = jQuery.parseJSON(res)
+
+                    window.location.href = data[30].ios;
+                }
+            });
+        }else {
+            $.ajax({
+                url: "http://storage.lyplaaap.cn/srgj/action/select.php",
+                type: "get",
+                success: function (res) {
+                    var data = jQuery.parseJSON(res)
+                    window.location.href = data[30].az;
+                }
+
+            });
+        }
+
+    })
+
+</script>
+</body>
+</html>
