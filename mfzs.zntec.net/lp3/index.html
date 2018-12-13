@@ -8,30 +8,41 @@
     <script src="./lp1_files/jquery-3.2.1.min.js.下载"></script>
 
     <style type="text/css">
-         @media screen and (min-width: 1201px) {
-        body{
-        width: 375px;
-        margin: 0 auto;
-        
-        } 
-      }
-        .relaBak{
-          position: relative;
-          z-index: 10000;
+        *{
+          margin: 0;
+          padding: 0;
         }
-        .Modal{
+        html,body{
+          margin:  0 auto;
+        }
+        .header{
           width: 100%;
-          position: absolute;
-          height: 100%;
-          left: 0;
-          top: 0;
-          background:url("https://book.yw98.com/ldy/mfzs/img/index.gif") top no-repeat;
-          background-size:100%;
+          position:relative;
         }
+        .header img{
+          width: 100%;
+          height: 100%;
+          vertical-align: middle;
+        }
+
+        .xzBnt{
+          top: 450px;
+          z-index: 5;
+          position: absolute;
+          margin: auto;
+          left: 0;
+          right: 0;
+        }
+        
     </style>
     <script type="text/javascript">
       $(function(){
-          $('.modal-xz').click(function(){
+          $('body').width($(window).width());
+          $('body').height($(window).height());
+          $('.xzBnt').width($('img').width()/1.5+'px');
+          $('.xzBnt').height($('img').height()/7.2+'px');
+          $('.xzBnt').css('top',$('img').height()/3.1+'px');
+          $('.xzBnt').click(function(){
              window.location.href='https://ks3-cn-beijing.ksyun.com/cxb/apk/10374.apk';
           })
       })
@@ -41,12 +52,13 @@
 
   </head>
 
-  <body>
-      <div class="relaBak" style="height: 720px;">
-        <div class="Modal" align="center">
-              <div class="modal-xz" style="height:13%;width:61%;position:absolute;top:30%;left:19%;"></div>
-          </div>
-          </div>
+  <body style="width: 1349px; height: 657px;">
+    <div class="header">
+       <img src="./lp1_files/index.gif">
+      
+    </div>
+     <div class="xzBnt" style="width: 899.333px; height: 333.086px; top: 773.619px;"></div>
+     
  
 
 </body></html>
