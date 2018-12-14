@@ -1,0 +1,52 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>中华万年历</title>
+	<meta name="viewport" content="width=device-width"> 
+ 	 <link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
+     <style>
+		.navImage img{
+			width:720px;
+			height:auto;
+			}
+			.navImage{
+			display:inline-block;
+			width:100%;			
+			}
+			body{
+			margin:0!important;
+			}
+     .navImage1 {			display:inline-block;
+			width:100%;			
+}
+     </style>
+
+</head>
+<body>
+			<center>
+				<div class="navImage"><span class="navImage1"><img id="img"  src="http://cdn.lyplaaap.cn/rili2.zjzhidao.top/img/04.jpg" alt="navbar" usemap="#navImg">
+				    <map name="navImg" id="navImg" class="btnCilck">
+                      <area shape="rect" coords="161,1058,540,1154" href="javascript:;" style="outline:none;">
+			    </map>
+			  </span></div> 
+			<!--<img src="images/bg_btn.png" class="btnCilck" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" alt=""  id="download2" onClick="javascript:;" >-->
+			</center>
+<script>
+
+		var Android="http://ssy-file-common.b0.upaiyun.com/Ecalendar_ceshi121.apk";//安卓下载链接
+		var Ios="";//ios下载链接
+
+		var btns = document.getElementsByClassName("btnCilck");
+		for(var i=0;i<btns.length;i++){
+		   btns[i].onclick=function () {
+               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Android;
+               }else {
+                   window.location.href =Android;
+               }
+           }
+		};
+</script>
+</body>
+</html>
