@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>伴伴-小姐姐最多的约玩app</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        html, body {
+            background-color: #fff;
+            text-align: center;
+            height: 100%;
+            width: 100%;
+            font-family: "微软雅黑", Arial, "宋体", sans-serif;
+            font-size: 14px;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: normal;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .contain {
+            height: 100%;
+            width: 100%;
+            overflow: auto;
+            color: #fff;
+            margin: 0 auto;
+        }
+
+        .share {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: none;
+            z-index: 999;
+        }
+
+        .share_shadow {
+            height: 100%;
+            width: 100%;
+            background-color: #000;
+            opacity: 0.7;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 998;
+        }
+
+        .share_pic {
+            height: 180px;
+            width: 260px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 1000;
+            background: url("img/download.png") right center no-repeat;
+            background-size: contain;
+        }
+
+        .share_con {
+            position: relative;
+            z-index: 10;
+            line-height: 20px;
+            color: #fff;
+            clear: both;
+            height: auto;
+            overflow: hidden;
+        }
+
+        .share_con img {
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            border: 1px solid #fff;
+            vertical-align: middle;
+            float: left;
+            margin: 20px;
+            display: inline-block;
+        }
+
+        .share_con span {
+            font-size: 16px;
+            height: 50px;
+            width: 250px;
+            float: left;
+            text-align: left;
+            line-height: 25px;
+            margin-top: 20px;
+        }
+
+        .share_con span em {
+            font-style: normal;
+            color: #ffcb2c;
+        }
+
+        .imgs {
+            display: block;
+            width: 100%;
+        }
+
+        .down2 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background: url(./img/bd_1.png) center bottom no-repeat;
+            background-size: contain;
+            z-index: 100;
+        }
+
+        .imgp {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 82px;
+        }
+
+        @media screen and (max-width: 320px) {
+            .contain {
+                width: 320px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="contain" id="contain">
+    <div style="position: relative">
+        <img class="imgp" src="./img/zhiniao.png"/>
+        <img class="imgs" src="./img/xs_bg1.jpg"/>
+    </div>
+    <img class="imgs" src="./img/xs_bg2.jpg"/>
+    <img class="imgs" src="./img/xs_bg3.jpg"/>
+    <img class="imgs" src="./img/xs_bg4.jpg"/>
+    <img class="imgs" src="./img/xs_bg5.jpg"/>
+    <div style="height:50px;font-size:12px;line-height:50px;text-align:center;color:#999">© 版权所有 ：北京智鸟科技有限公司</div>
+    <div style="height:80px">&nbsp;</div>
+</div>
+<div class="down2" id="down2">&nbsp;</div>
+<div class="share" id="share">
+    <div class="share_shadow" id="share_shadow">&nbsp;</div>
+    <div class="share_pic">&nbsp;</div>
+</div>
+<script>
+    eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('!3(){3 i(a){7 b=5 N("(^|&)"+a+"=([^&]*)(&|$)","i"),c=x.s.1u.1v(1).S(b);r v!=c?M(c[2]):""}3 k(b){7 d=b.1w||b.1x;r d==f?(e&&(e.C.A="Q"),!1):"D"==h||"E"==h?(x.1t(0,0),e.C.A="1s",e.y=3(){1o.C.A="Q"},!1):(1>c&&(c=1,q("P"),1p.L(["1q","W","P",a]),10(3(){c=0},1r)),s.B=j,!1)}3 m(a,b){7 c=1y,d=5 w;d.1z(d.Y()+I*O*O*24*c),6.R=a+"="+1G(b)+";1H="+d.1I()}3 n(a){7 b,c=5 N("(^| )"+a+"=([^;]*)(;|$)");r(b=6.R.S(c))?M(b[2]):v}3 o(){r(0|1E*(1+1A.1B())).G(16).1C(1)}3 p(){r"U"+o()+o()+"-"+o()+"-"+o()+"-"+o()+"-"+o()+o()}3 q(a){7 d,e,f,h,j,b="K://1J.27.1j.18/19?",c=n("V");c||(c=p(),m("V",c)),d={1b:4(s.B),17:4(6.15),13:4(H.J),14:+5 w,1c:"U",1d:a||"1k",T:4(i("T")),p:4(i("p")),u:4(i("u")),X:4(i("X")),k:4(i("k")),1e:g,1f:c},e=[];1g(f 1D d)e.L(f.G()+"="+d[f]);h=b+e.2c("&"),j=5 2d,j.2e=j.2b=3(){j=v},j.2g=h}7 h,j,l,a="25",b=(5 w).Y()/I>2f,c=0,d=H.J.2i(),e=6.t("22"),f=6.t("1Q"),g="1R";/23|1P|1O|F/.z(d)&&(g="F"),h="",/1L/.z(d)?h="D":/1M\\1N|\\1T/.z(d)&&(h="E"),j="K://1U-20.21-Z-1Z.1Y.12/1V/1.0.2.0/1W/W-"+a+"-1X-1i.0.2.0-9.2h","F"==g&&(j="29://26.11.12/Z/2a/11-1S/1h?1K=1l&1m=1a&1n=8"),l=6.t("1F"),l&&(l.y=k),b&&(x.y=k),q(),"D"!=h&&"E"!=h&&b&&10(3(){s.B=j},28)}();',62,143,'|||function|encodeURIComponent|new|document|var||||||||||||||||||||return|location|getElementById||null|Date|window|onclick|test|display|href|style|wechat|qq|ios|toString|navigator|1e3|userAgent|http|push|unescape|RegExp|60|down|none|cookie|match|ch|web|_bm|banban|cr|getTime|cn|setTimeout|apple|com|agent|timestamp|referrer||referer|139|xs|gw|url|tp|ac|ostype|mac|for|id1374860687|v1|202|view|119035652|ct|mt|this|_hmt|_trackEvent|100|block|scrollTo|search|substr|target|srcElement|365|setTime|Math|random|substring|in|65536|down2|escape|expires|toGMTString|120|pt|micromessenger|mobile|smqqbrowser|ipod|ipad|share_shadow|android|store|sqq|ee|temp|tg|release|aliyuncs|hangzhou|download|oss|share|iphone||smfs1|itunes||2e3|https|app|onerror|join|Image|onload|1545321600|src|apk|toLowerCase'.split('|'),0,{}));
+</script>
+<script>
+    eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/^/,String)){while(c--){d[c.toString(a)]=k[c]||c.toString(a)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('3 5=5||[];!8(){3 b,a=1.d("4");a.c="7://2.6.9/2.e?i",b=1.h("4")[0],b.f.g(a,b)}();',19,19,'|document|hm|var|script|_hmt|baidu|https|function|com|||src|createElement|js|parentNode|insertBefore|getElementsByTagName|a64c97292773c0a2d355342b7c891ba4'.split('|'),0,{}));
+</script>
+</body>
+</html>
