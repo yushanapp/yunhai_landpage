@@ -1,0 +1,40 @@
+@charset "gb2312";
+/* CSS Document */
+
+h1 { font-size:1.4em; line-height:1; text-align:center; color:#c0810e; padding:0px; margin:0px; margin-bottom:1em;}
+h1.o { color:white;}
+h1 p { font-size:16px; font-weight:normal; color:#c2c9eb; margin-top:15px;}
+
+
+.box_1 { width:100%;background:url(../img/ss/bg_w.png) center bottom no-repeat; position:relative; z-index:1;overflow:hidden;}
+.box_1 .center { width:100%; height:auto; margin:0px auto; padding:2em 0; line-height:1.8; text-align:left;font-size:1.4em;}
+.box_1 .center.one ul li { width:180px; height:180px; margin-left:20px; float:left; background:#506787;-moz-border-radius:100px;-webkit-border-radius:100px; border-radius:100px; color:white; font-size:18px; line-height:1.5; }
+.box_1 .center.one ul.one { width:800px; margin:0px auto;}
+.box_1 .center.one ul.two { width:600px; margin:0px auto;}
+
+.box_1.o { color:white; background:#d19334;text-shadow:0px 0px 3px #845901;}
+
+#link{ line-height:20px; padding:15px; color:#333333;}
+
+.box_index { width:100%; position:relative; z-index:1;}
+.box_index .center { height:auto; margin:0px auto; padding:2em; line-height:1.8; text-align:left;}
+.box_index.o { color:white; background:#377ec7;}
+.box_index.o .zxbm p { color:white;}
+
+.box_index ul.zswd_list li a span { float:right; height:2em; line-height:2em; background:#286db5; padding:0px 1em;-moz-border-radius:5px;-webkit-border-radius:5px; border-radius:5px;color:#93c7fc; cursor:pointer;} 
+.box_index ul.zswd_list li { margin-bottom:1em;}
+.box_index ul.zswd_list li a i { font-style:normal; background:#286db5; display:block; width:2em; height:2em; line-height:2em; float:left; color:#93c7fc; margin-right:1em; text-align:center;-moz-border-radius:5px;-webkit-border-radius:5px; border-radius:5px;}
+.box_index ul.zswd_list li a { height:2em; line-height:2em; display:block; font-size:1.2em;  color:white;-moz-border-radius:5px;-webkit-border-radius:5px; border-radius:5px;text-shadow: none; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+.box_index ul.zswd_list li a:hover { text-decoration:underline; }
+
+.box_index h1 { font-size:1.8em; line-height:1; text-align:center; color:#444444; margin-bottom:1em;}
+.box_index h1.o { color:white;}
+.box_index h1 p { font-size:1.6em; font-weight:normal; color:#c2c9eb; margin-top:1.5em;}
+.box_index h2 { font-size:1.4em; line-height:1; border-left:5px solid #444444; color:#444444; margin-bottom:0.5em; padding-left:1em;}
+.box_index h2.o { font-size:1.4em; line-height:1; border-left:5px solid #fffc02; color:#fffc02; margin-bottom:0.5em; padding-left:1em;}
+.box_index h4 { font-size:1.6em; line-height:1; padding-bottom:1.5em; padding-top:1.5em; }
+.box_index .zysz { overflow:auto; zoom:1;}
+.box_index .zysz li{ width:33.33%; float:left; overflow:hidden; }
+.box_index .zysz li a { width:100%; display:block; position:relative; z-index:1; padding-top:1em;}
+.box_index .zysz li a img { width:100%;} 
+.box_index .zysz li a p { width:100%; position:absolute; z-index:2; top:1em; left:0px; height:2em; line-height:2em; text-align:center;}
