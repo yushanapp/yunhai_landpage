@@ -1,0 +1,297 @@
+.mgs {
+	margin-top: 0.1rem;
+}
+.index_1 {
+	width: 100%; float: left;
+}
+.index_2 {
+	width: 94%; margin-left: 3%; float: left;
+}
+div > img {
+	width: 100%; height: 100%; float: left;
+}
+.mg {
+	margin-top: 0.17rem;
+}
+body {
+	margin: 0px; background-color: rgb(247, 246, 242);
+}
+.wxText {
+	left: 0rem; width: 100%; height: 0.34rem; text-align: center; bottom: 0rem; color: rgb(194, 0, 0); line-height: 0.34rem; font-size: 0.14rem; position: fixed; background-color: rgb(255, 255, 255);
+}
+.index_4 {
+	width: 100%; text-align: center; color: rgb(0, 0, 0); letter-spacing: 2px; font-size: 0.14rem; font-weight: bold; float: left; background-image: url("../image/1.png"); background-repeat: no-repeat; background-size: 100% 100%;
+}
+.index_7 {
+	width: 94%; text-align: center; color: rgb(0, 0, 0); letter-spacing: 2px; font-size: 0.13rem; margin-left: 3%; float: left; background-image: url("../image/14.png"); background-repeat: no-repeat; background-size: 100% 100%;
+}
+.index_6 {
+	width: 60%; margin-left: 20%; float: left;
+}
+.index_5 {
+	padding: 0.03rem; width: 91%; text-align: center; color: rgb(0, 0, 0); line-height: 0.2rem; letter-spacing: 2px; font-size: 0.12rem; margin-left: 3%; float: left; background-image: url("../image/26.png"); background-repeat: no-repeat; background-size: 100% 100%;
+}
+.weichat {
+	border-radius: 0.1rem; width: 88%; margin-top: 0.2rem; margin-left: 6%; float: left; background-color: rgb(81, 191, 128);
+}
+.weichat_text {
+	width: 100%; text-align: center; color: rgb(255, 255, 255); line-height: 0.16rem; letter-spacing: 2px; font-size: 0.14rem; font-weight: bold; margin-top: 0.3rem;
+}
+.weixin {
+	font-size: 0.16rem;
+}
+#consultationBtn {
+	background: rgb(255, 255, 255); padding: 4px 0px; border-radius: 5px; top: 50%; width: 0.55rem; height: 0.55rem; text-align: center; right: 5px; font-size: 0.12rem; text-decoration: none; display: block; position: fixed; z-index: 90; cursor: pointer; -webkit-border-radius: 5px; -moz-border-radius: 5px; -o-border-radius: 5px;
+}
+.movi {
+	border: 1px solid rgb(248, 248, 248); border-image: none; width: 100%; height: auto; box-shadow: 1px 2px 3px #cdcdcd; -webkit-box-shadow: 1px 2px 3px #cdcdcd; -moz-box-shadow: 1px 2px 3px #cdcdcd; -o-box-shadow: 1px 2px 3px #cdcdcd;
+}
+.index_8 {
+	width: 80%; margin-left: 10%; float: left; background-image: url("../image/18.png"); background-repeat: no-repeat; background-size: 100% 100%;
+}
+.weichat_1 {
+	padding-top: 0.15rem;
+}
+.weichat_1 {
+	width: 100%; height: 0.24rem; text-align: center; color: rgb(0, 0, 0); letter-spacing: 2px;
+}
+.weichat_2 {
+	width: 100%; height: 0.24rem; text-align: center; color: rgb(0, 0, 0); letter-spacing: 2px;
+}
+.weichat_3 {
+	width: 100%; height: 0.24rem; text-align: center; color: rgb(0, 0, 0); letter-spacing: 2px;
+}
+.weichat_4 {
+	width: 100%; height: 0.24rem; text-align: center; color: rgb(0, 0, 0); letter-spacing: 2px;
+}
+.weichat_1 {
+	padding-top: 0.15rem;
+}
+input[type=button] {
+	cursor: pointer; -webkit-appearance: none;
+}
+input[type=submit] {
+	cursor: pointer; -webkit-appearance: none;
+}
+input[type=file] {
+	cursor: pointer; -webkit-appearance: none;
+}
+button {
+	cursor: pointer; -webkit-appearance: none;
+}
+input:disabled {
+	background-color: rgb(192, 192, 192) !important;
+}
+.weichat_5 {
+	border-radius: 0.1rem; width: 70%; height: 0.25rem; text-align: center; color: rgb(255, 255, 255); line-height: 0.25rem; letter-spacing: 2px; margin-bottom: 0.15rem; margin-left: 15%; float: left; background-color: rgb(205, 185, 134);
+}
+.mga {
+	margin-top: 0.3rem;
+}
+.index_9 {
+	width: 70%; text-align: center; color: rgb(255, 255, 255); letter-spacing: 2px; font-size: 0.13rem; margin-left: 15%; float: left; background-image: url("../image/42.png"); background-repeat: no-repeat; background-size: 100% 100%;
+}
+.index_10 {
+	width: 94%; margin-left: 3%; float: left; background-image: url("../image/8.png"); background-repeat: no-repeat; background-size: 100% 100%;
+}
+.index_10 > p {
+	width: 84%; color: rgb(0, 0, 0); line-height: 0.22rem; letter-spacing: 2px; font-size: 0.12rem; margin-top: 0.12rem; margin-left: 8%; float: left;
+}
+.index_10 > img {
+	width: 92%; margin-top: 0.12rem; margin-left: 4%; float: left;
+}
+.index_11 {
+	width: 100%; height: 0.7rem; text-align: center; color: rgb(255, 255, 255); line-height: 0.7rem; letter-spacing: 3px; font-size: 0.14rem; float: left; position: relative; background-color: rgb(205, 185, 134);
+}
+.index_11 > div {
+	left: 32%; width: 36%; height: 2px; bottom: 0.15rem; position: absolute; background-color: rgb(255, 255, 255);
+}
+.index_12 {
+	width: 90%; text-align: center; line-height: 0.2rem; letter-spacing: 2px; font-size: 0.14rem; margin-left: 5%; float: left;
+}
+.index_5 > p {
+	padding-right: 0.1rem; padding-left: 0.1rem;
+}
+.mgz {
+	margin-top: 0.07rem;
+}
+.bg_text {
+	width: 100%; height: 0.4rem; text-align: center; color: rgb(255, 255, 255); line-height: 0.4rem; letter-spacing: 2px; font-size: 0.14rem; margin-top: 0.2rem; float: left; background-color: rgb(205, 185, 134);
+}
+.index_1_text {
+	width: 100%; text-align: center; color: rgb(0, 0, 0); line-height: 0.24rem; letter-spacing: 2px; font-size: 0.14rem;
+}
+.index_1_textcolor {
+	width: 100%; text-align: center; color: rgb(0, 0, 0); line-height: 0.24rem; letter-spacing: 2px; font-size: 0.14rem;
+}
+.index_1_textcolor {
+	color: rgb(247, 36, 37) !important;
+}
+.allowtext {
+	width: 100%; height: 0.5rem; text-align: center; color: rgb(247, 36, 37); line-height: 0.5rem; letter-spacing: 2px; font-size: 0.13rem; float: left;
+}
+.title_top {
+	text-align: left; color: rgb(0, 0, 0); line-height: 0.22rem; letter-spacing: 2px; padding-top: 0.2rem; padding-bottom: 0.15rem; font-size: 0.15rem;
+}
+.machine {
+	width: 100%; float: left; background-color: rgb(255, 255, 255);
+}
+.author {
+	height: 0.2rem; color: rgb(57, 85, 145); line-height: 0.2rem; letter-spacing: 1px; font-size: 0.12rem; float: left;
+}
+.date_time {
+	height: 0.2rem; color: rgb(173, 173, 173); line-height: 0.2rem; text-indent: 0.1rem; letter-spacing: 1px; font-size: 0.12rem; float: left;
+}
+.radio {
+	width: 94%; font-size: 0.16rem; margin-left: 3%; float: left; white-space: normal; -ms-word-wrap: break-word !important; box-sizing: border-box !important; background-color: rgb(255, 255, 255);
+}
+.video_video {
+	width: 100%;
+}
+.spread_title {
+	border-radius: 2px; width: 76%; height: 0.3rem; text-align: center; color: rgb(255, 255, 255); line-height: 0.3rem; letter-spacing: 2px; font-size: 0.12rem; margin-left: 12%; float: left; background-color: rgb(7, 126, 32);
+}
+.title_bg {
+	width: 74%; text-align: center; color: rgb(22, 117, 26); letter-spacing: 2px; font-size: 0.14rem; font-weight: bold; margin-left: 13%; float: left; background-image: url("../image/1.png"); background-repeat: no-repeat; background-size: 100% 100%;
+}
+.title_line {
+	width: 94%; margin-left: 3%; float: left; background-image: url("../image/23.png"); background-repeat: no-repeat; background-size: 100% 100%;
+}
+.title_line_li {
+	width: 94%; margin-left: 3%; float: left; background-image: url("../image/24.png"); background-repeat: no-repeat; background-size: 100% 100%;
+}
+.title_line_text {
+	padding: 0.15rem 0px; width: 88%; color: rgb(0, 0, 0); line-height: 0.25rem; letter-spacing: 1px; font-size: 0.12rem; margin-left: 6%; float: left;
+}
+.title_line_list {
+	width: 94%; margin-left: 3%; float: left; background-image: url("../image/25.png"); background-repeat: no-repeat; background-size: 100% 100%;
+}
+.title_line_second {
+	width: 94%; margin-left: 3%; float: left; background-image: url("../image/26.png"); background-repeat: no-repeat; background-size: 100% 100%;
+}
+.backGreen {
+	width: 94%; margin-left: 3%; float: left; background-image: url("../image/28.png"); background-repeat: no-repeat; background-size: 100% 100%;
+}
+.Zb1 {
+	width: 94%; margin-left: 3%; float: left; background-image: url("../image/32.png"); background-repeat: no-repeat; background-size: 100% 100%;
+}
+.Zb2 {
+	width: 94%; margin-left: 3%; float: left; background-image: url("../image/16.png"); background-repeat: no-repeat; background-size: 100% 100%;
+}
+.Zb3 {
+	width: 84%; margin-left: 8%; float: left; background-image: url("../image/30.png"); background-repeat: no-repeat; background-size: 100% 100%;
+}
+.title_line_text_zb {
+	letter-spacing: 2px; padding-left: 0.07rem; font-size: 0.1rem; margin-block-start: 0em; margin-block-end: 0em;
+}
+@media screen and (max-width:321px)
+{
+.title_line_text_zb {
+	line-height: 0.2rem; padding-top: 0.05rem;
+}
+.title_line_text {
+	line-height: 0.2rem;
+}
+}
+@media screen and (max-width:376px) and (min-width:321px)
+{
+.title_line_text_zb {
+	line-height: 0.2rem; padding-top: 0.06rem;
+}
+}
+@media screen and (max-width:1000px) and (min-width:376px)
+{
+.title_line_text_zb {
+	line-height: 0.2rem; padding-top: 0.06rem;
+}
+}
+@media screen and (max-width:1400px) and (min-width:1000px)
+{
+.title_line_text_zb {
+	line-height: 0.2rem; padding-top: 0.06rem;
+}
+}
+@media screen and (min-width:1400px)
+{
+.title_line_text_zb {
+	line-height: 0.2rem;
+}
+}
+.Zb3 > div {
+	width: 100%; text-align: center; line-height: 0.24rem; letter-spacing: 2px; font-size: 0.1rem; float: left;
+}
+.scan_list {
+	width: 96%; margin-left: 2.5%; float: left;
+}
+.scan_list_left {
+	width: 12%; float: left;
+}
+.scan_list_right {
+	width: 84.8%; margin-left: 2.5%; float: left;
+}
+.scan_list_right_top {
+	width: 100%; height: 0.16rem; color: rgb(0, 0, 0); line-height: 0.16rem; letter-spacing: 2px; font-size: 0.12rem; float: left;
+}
+.scan_list_right_bottom {
+	width: 100%; color: rgb(0, 0, 0); line-height: 0.16rem; letter-spacing: 2px; padding-top: 0.05rem; font-size: 0.12rem; float: left;
+}
+.scan_list_right_bottom_final {
+	width: 1.1rem; height: 0.7rem; float: left;
+}
+.scan_list_right_bottom_final > img {
+	width: 100%; height: 100%; margin-top: 0.07rem; float: left;
+}
+.scan_list_right_top_click {
+	color: rgb(101, 115, 152); line-height: 0.22rem; text-indent: 0.03rem; font-size: 0.11rem; float: right;
+}
+.scan_list_right_top_img {
+	width: 0.14rem; height: 0.13rem; margin-top: 0.03rem; float: right; background-image: url("../img/14.png"); background-repeat: no-repeat; background-size: 100% 100%;
+}
+.scan_list_right_top_text {
+	width: 81%; color: rgb(147, 147, 147); line-height: 0.16rem; letter-spacing: 2px; font-size: 0.12rem; float: left;
+}
+.bottom_href {
+	left: 0px; width: 100%; height: 0.4rem; bottom: 0px; position: fixed;
+}
+.bottom_href_left {
+	width: 75%; height: 100%; float: left; opacity: 0.6; background-color: rgb(3, 3, 3); -moz-opacity: 0.6;
+}
+.bottom_href_leftSpan {
+	width: 100%; height: 0.2rem; text-align: center; color: rgb(255, 255, 255); line-height: 0.2rem; letter-spacing: 2px; font-size: 0.11rem;
+}
+.bottom_href_leftSpan {
+	width: 100%; height: 0.2rem; text-align: center; color: rgb(255, 255, 255); line-height: 0.2rem; letter-spacing: 2px; font-size: 0.11rem;
+}
+input[type=button] {
+	cursor: pointer; -webkit-appearance: none;
+}
+input[type=submit] {
+	cursor: pointer; -webkit-appearance: none;
+}
+input[type=file] {
+	cursor: pointer; -webkit-appearance: none;
+}
+button {
+	cursor: pointer; -webkit-appearance: none;
+}
+.popup {
+	border: 1px solid rgb(229, 229, 229); border-image: none; left: 10%; top: 1rem; width: 80%; overflow: auto; display: none; position: fixed; z-index: 99999; background-image: url("../image/kuang.png"); background-repeat: no-repeat; background-size: 100% 100%; background-color: rgb(255, 255, 255);
+}
+.po_tip {
+	width: 100%; height: 0.3rem; text-align: center; color: rgb(0, 0, 0); line-height: 0.3rem; letter-spacing: 2px; font-size: 0.14rem; margin-top: 1.4rem;
+}
+.po_tip_black {
+	width: 100%; height: 0.3rem; text-align: center; color: rgb(0, 0, 0); line-height: 0.3rem; letter-spacing: 2px; font-size: 0.14rem;
+}
+.weichat_href {
+	border-radius: 6px; width: 84%; height: 0.32rem; text-align: center; color: rgb(255, 255, 255); line-height: 0.32rem; letter-spacing: 2px; font-size: 0.14rem; text-decoration: none; margin-top: 0.05rem; margin-left: 8%; float: left; background-color: rgb(3, 128, 2);
+}
+.bottom_href_right {
+	width: 25% !important; height: 100% !important; text-align: center !important; color: rgb(255, 255, 255) !important; line-height: 0.4rem !important; letter-spacing: 2px !important; font-size: 0.14rem !important; text-decoration: none !important; margin-bottom: 0rem !important; margin-left: 0% !important; float: left !important; background-color: rgb(3, 128, 2) !important;
+}
+.guanbi {
+	top: 0rem; width: 0.2rem; height: 0.2rem; right: 0.1rem; position: absolute; background-image: url("../image/guan.png"); background-repeat: no-repeat; background-size: 100% 100%;
+}
+.banquan {
+	width: 100%; height: 0.3rem; text-align: center; color: rgb(0, 0, 0); line-height: 0.3rem; letter-spacing: 2px; font-size: 0.14rem; float: left; background-color: rgb(241, 241, 241);
+}
