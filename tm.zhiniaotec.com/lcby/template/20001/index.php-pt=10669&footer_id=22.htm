@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			.myimg
+			{
+				vertical-align: bottom;
+				width:100%;
+				display:block;
+				margin-top:-1px;
+			}
+			.myfixtop
+			{
+				position: fixed;
+				left:0;
+				top:0;
+				z-index:99;
+			}
+			.mymargin
+			{
+				margin-top:10px;    /*距离顶部位置的像素距离*/
+			}
+			.alert_div{
+				position: fixed;
+				top: 20%;
+				width: 85%;
+				font-size: 40px;
+				z-index: 2222;
+				margin-left: 7.5%;
+				display: none;
+				background-size: 100% 100%;
+				background-image: url('img2/bg.png')/*tpa=http://cdn-huoshu.fire2333.com/landpages/lcby/template/20001/img2/bg.png*/;
+			}
+			.alert_text{
+				display: block;
+				margin-top:11%;
+				font-weight: 600;
+				width: 100%;
+				font-size: 49px;
+				text-align: center;
+			}
+			.alert_text span{
+				color: #f0e4bc;
+			}
+			.alert_bgdiv{
+				display: flex;
+				justify-content: space-around;
+				margin-top: 16%;
+				font-size: 0.86em;
+			}
+			.bg_img{
+				width: 90%;
+			}
+			.alert_img{
+				/*position: absolute;*/
+				/*top: 16%;*/
+				width: 63%;
+			}
+			.bgdiv{
+				position: relative;
+				text-align: center;
+			}
+			.leftimg{
+				left:18%;
+			}
+			.centerimg{
+				left: 18%;
+			}
+			.rightimg{
+				right: 14%;
+			}
+			.img_text{
+				display: flex;
+				justify-content: space-around;
+				color:#f0e4bc;
+			}
+			.receive_div{
+				width: 100%;
+				text-align: center;
+				height: 25%;
+				position: relative;
+				margin-top: 8%;
+			}
+			.receive_img{
+				padding-top: 7%;
+			}
+			*{margin:0;}
+		</style>
+		<script src="js/jquery.min.js" tppabs="http://cdn-huoshu.fire2333.com/landpages/lcby/template/20001/js/jquery.min.js"></script>
+    </head>
+		<body style="background-color:rgb(0,0,0); width:100%">
+	<div id='mydiv'>
+	</div>
+	<div class="alert_div">
+		<div class="alert_text"><span>英雄莫走，这里有888元限量礼包</span></div>
+		<div class="alert_bgdiv">
+			<div class="bgdiv"><img src="img2/gift.png" tppabs="http://cdn-huoshu.fire2333.com/landpages/lcby/template/20001/img2/gift.png" alt="" class="alert_img leftimg"></div>
+			<div class="bgdiv"><img src="img2/weapon.png" tppabs="http://cdn-huoshu.fire2333.com/landpages/lcby/template/20001/img2/weapon.png" alt=""  class="alert_img centerimg"></div>
+			<div class="bgdiv"><img src="img2/prop.png" tppabs="http://cdn-huoshu.fire2333.com/landpages/lcby/template/20001/img2/prop.png" alt="" class="alert_img rightimg"></div>
+		</div>
+		<div class="img_text">
+			<div>经验礼包</div>
+			<div>灵武礼包</div>
+			<div>珍稀道具</div>
+		</div>
+		<div class="receive_div" ><img src="img2/receive.png" tppabs="http://cdn-huoshu.fire2333.com/landpages/lcby/template/20001/img2/receive.png" alt="" class="receive_img"></div>
+	</div>
+	</body>
+	
+	<script type="text/javascript">
+		var gameId = '3000011';
+		var landingPageId = '20001';
+		var fromType = getUrlParam('from_type');
+		var hrefArray = [1,2,3, 4, 5, 6, 7, 8];
+		var downloadArray = [0,2,4,7];
+        var imageSrcArray = ['img/1.jpg'/*tpa=http://cdn-huoshu.fire2333.com/landpages/lcby/template/20001/img/1.jpg*/,'img/2.gif'/*tpa=http://cdn-huoshu.fire2333.com/landpages/lcby/template/20001/img/2.gif*/,'img/3.gif'/*tpa=http://cdn-huoshu.fire2333.com/landpages/lcby/template/20001/img/3.gif*/, 'img/4.gif'/*tpa=http://cdn-huoshu.fire2333.com/landpages/lcby/template/20001/img/4.gif*/, 'img/5.gif'/*tpa=http://cdn-huoshu.fire2333.com/landpages/lcby/template/20001/img/5.gif*/, 'img/06.gif'/*tpa=http://cdn-huoshu.fire2333.com/landpages/lcby/template/20001/img/06.gif*/, 'img/7.gif'/*tpa=http://cdn-huoshu.fire2333.com/landpages/lcby/template/20001/img/7.gif*/,  'img/8.jpg'/*tpa=http://cdn-huoshu.fire2333.com/landpages/lcby/template/20001/img/8.jpg*/];
+
+		var modeltype = navigator.userAgent;
+		if (modeltype.indexOf("Android") > 0 || modeltype.indexOf("iPhone") > 0 || modeltype.indexOf("iPad") > 0) {
+			if (screen.height > 800 && screen.width < 500){
+				$(".alert_div").css("height","40%");
+			} else if(modeltype.indexOf("iPad") > 0){
+				$(".alert_div").css("height","63%");
+				$(".receive_img").css("margin-top","10%");
+			}
+			pushHistory();
+			window.addEventListener("popstate", function(e) {
+				$(".alert_div").show();
+				$("body").css({"height":"100%","overflow":"hidden"});
+				$("#mydiv").css({"-webkit-filter":"brightness(50%)","filter":"brightness(50%)"})
+			}, false);
+			function pushHistory() {
+				var state = {
+					title: "title",
+					url: "#"
+				};
+				window.history.pushState(state, "title", "#");
+			}
+		}
+		function isWeiXin(){
+			var ua = navigator.userAgent.toLowerCase();
+			if(ua.match(/MicroMessenger/i)=="micromessenger" || ua.indexOf('qq')>-1) {
+				$(".download_img").on("touchstart",function(){
+					receiveImg();
+				});
+			}else{
+				$(".download_img").click(function(){
+					receiveImg();
+				});
+			}
+		}
+		$(document).ready(function () {
+			postData('http://www.fire2333.com/logapi/LogLandpages.php', 'logLandingPage');
+			//setTimeout('downloadApk()',3000);
+			init();
+			isWeiXin();
+		});
+		window.onload = function(){
+			var height =$("#img_1").height();
+			$("#img_2").css("margin-top",height+1);
+		};
+		function receiveImg(){
+			window.location.href = "http://cdn-huoshu.fire2333.com/mc/apks/200048/lcby-207110669.180919.apk";
+			$(".alert_div").hide();
+			$("#mydiv").css({"-webkit-filter":"brightness(100%)","filter":"brightness(100%)"})
+			$("body").css({"height":"100%","overflow":"initial"});
+		}
+		$(".receive_div").click(function(){
+			receiveImg();
+		});
+
+		function init()
+		{
+		    for(var index in imageSrcArray){
+                var img = "<img id='img_" + (parseInt(index)+1) + "' class='myimg' src='" + imageSrcArray[index] + "?v=1000000017'>";
+                $("#mydiv").append(img);
+            }
+            $("#mydiv").append("<img id='img_footer' class='myimg' src='../../../footer/icp/bjzn_tail.jpg'/*tpa=http://cdn-huoshu.fire2333.com/landpages/footer/icp/bjzn_tail.jpg*//>");
+            
+            for (var index in hrefArray){   
+                $("#img_" + hrefArray[index]).wrap("<a class='mya'></a>");            
+            }
+            for (var index in downloadArray){
+				console.log("dada");
+					var Arrayindex = downloadArray[index];
+					console.log(Arrayindex);
+				$(".mya").eq(Arrayindex).attr('href', "http://cdn-huoshu.fire2333.com/mc/apks/200048/lcby-207110669.180919.apk");
+				$(".mya").eq(Arrayindex).click(function(){
+					postData('http://www.fire2333.com/logapi/LogLandpages.php', 'logClickDownload');
+				});	
+			}
+				
+             $("#img_1").addClass("myfixtop");   
+		
+//             $("#img_2").addClass("mymargin");
+		}
+		
+	    function getUrlParam(name) {
+	        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+	        var r = window.location.search.substr(1).match(reg);
+	        if (r != null) return unescape(r[2]); return null;
+	    }
+	    
+	    function postData(postUrl, action){
+	    	$.ajax({
+	            url: postUrl,
+	            type: 'post',
+	            data: {
+					action: action,
+	                game_id: gameId,
+	                landingpage_id: landingPageId,
+	                from_type : fromType,
+					footer_id : "22",
+					apk_id : "10669"
+	            },
+	            dataType: 'json',
+	            timeout: 10000,
+	            success: function (result) {
+	                
+	            }
+        	});
+	    }
+	    
+	    function downloadApk(){
+	        window.location = "http://cdn-huoshu.fire2333.com/mc/apks/200048/lcby-207110669.180919.apk";
+			postData('http://www.fire2333.com/logapi/LogLandpages.php', 'logClickDownload');
+		}
+	</script>
+</html>
