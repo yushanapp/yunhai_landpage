@@ -43,12 +43,12 @@ var _hmt = _hmt || [];
     </div>
 
         <img src="" alt="" border="0" usemap="#download2Map" id="xfbtn" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;" onClick="javascript:;" >
-            <map name="download2Map" class="btnCilck">
+            <map name="download2Map" class="btnCilck" id="download2">
                 <area id="b_dw3" shape="rect" coords="" href="javascript:;">
             </map>
 
         <img src="" alt="" border="0" usemap="#download3Map" id="xfbtntop" style="position:fixed;margin:0 auto;top:0px;left:0;right:0;" onClick="javascript:;" >
-        <map name="download3Map" class="btnCilck">
+        <map name="download3Map" class="btnCilck" >
           <area shape="rect" id="b_dw4" coords="" href="javascript:;">
         </map>
 </center>
@@ -128,7 +128,34 @@ var _hmt = _hmt || [];
         }
 
     })
+ document.getElementById("download2").addEventListener("click",function () {
+        this.setAttribute('href','javascript:;');
+        this.setAttribute('data-clipboard-text',"59d5ad26635a176916024d2dfc34283f");
+        var clipboard = new Clipboard('#download');
 
+        if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+            $.ajax({
+                url: "http://storage.lyplaaap.cn/srgj/action/select.php",
+                type: "get",
+                success: function (res) {
+                    var data = jQuery.parseJSON(res)
+
+                    window.location.href = data[1].ios;
+                }
+            });
+        }else {
+            $.ajax({
+                url: "http://storage.lyplaaap.cn/srgj/action/select.php",
+                type: "get",
+                success: function (res) {
+                    var data = jQuery.parseJSON(res)
+                    window.location.href = data[1].az;
+                }
+
+            });
+        }
+
+    })
 </script>
 </body>
 </html>
