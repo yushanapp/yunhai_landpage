@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- saved from url=(0088)https://h5.izuiyou.com/h5/market?id=281885506&channel=BDS-fs-10&top=65&bottom=18&debug=0 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>最右APP</title>
+<link rel="stylesheet" href="./lp10/normalize.css">
+<style>
+body {
+position: relative;
+}
+img {
+display: block;
+width: 100%;
+}
+.copyright {
+padding: 5px 0;
+text-align: center;
+color: #999;
+font-size: 10px;
+}
+.copyright p {
+margin: 5px 0;
+}
+.logo {
+position: absolute;
+top: 10px;
+left: 10px;
+width: 40px;
+}
+.debug {
+border-top: 2px solid red;
+border-bottom: 2px solid red;
+cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<img src="./lp10/281885506">
+
+<div class="copyright">
+<p>北京智投智道投资咨询有限公司版权所有</p>
+<p>北京市海淀区花园东路11号泰兴大厦407</p>
+</div>
+<img class="logo" src="./lp10/logo_black.png" alt="">
+<div class="0" style="position:absolute;left:0;right:0;top:65%;bottom:18%;" onclick="download()">
+</div>
+<script src="./lp10/hm.js"></script><script>
+// /h5/market?bg=1&channel=bili
+// id和bg控制背景id优先
+// top bottom 控制下载区域 默认全屏
+// debug 参数为debug时候显示红色点击区域
+var ym_url = '' // 友盟渠道
+var androidDownload = 'https://apk.izuiyou.com/download/BDS-fs-10.apk'
+var IOSDownload = 'https://itunes.apple.com/cn/app/最右/id942443472?mt=8'
+var ua = window.navigator.userAgent.toLowerCase()
+var isIOS = ua.indexOf('iphone') >= 0 || ua.indexOf('ipod') >= 0 || ua.indexOf('ipad') >= 0
+var iosChannel = ''
+if (iosChannel) {
+var ajax = new XMLHttpRequest()
+ajax.open('get', 'https://api.izuiyou.com/market/ios?channel=' + iosChannel + '&app_name=zuiyou&action=view')
+ajax.send()
+}
+function download() {
+if (ym_url) {
+window.location.href = ym_url
+return
+}
+if (isIOS) {
+if (iosChannel) {
+var ajax = new XMLHttpRequest()
+ajax.open('get', 'https://api.izuiyou.com/market/ios?channel=' + iosChannel + '&app_name=zuiyou&action=click')
+ajax.onreadystatechange = function () {
+if (ajax.readyState === 4 && ajax.status === 200 || ajax.status === 304) {
+window.location.href = IOSDownload
+}
+}
+ajax.send()
+} else {
+window.location.href = IOSDownload
+}
+} else {
+window.location.href = androidDownload
+}
+}
+</script>
+<script>
+var _hmt = _hmt || [];
+(function () {
+var hm = document.createElement('script')
+hm.src = '//hm.baidu.com/hm.js?414bd23f4090657a5e2034429c836cca'
+var s = document.getElementsByTagName('script')[0]
+s.parentNode.insertBefore(hm, s)
+})()
+</script>
+
+
+</body></html>
