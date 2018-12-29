@@ -1,9 +1,8 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)http://chelaile.myushan.mobi/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
 
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>杞︽潵浜�</title>
+<title>车来了</title>
 <meta name="viewport" content="width=device-width"> 
 <!--
  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" /> -->
@@ -22,7 +21,7 @@ body{
 margin:0!important;
 }
 </style>
-<script>
+<script src="./cll_files/hm.js"></script><script>
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
@@ -34,10 +33,10 @@ var _hmt = _hmt || [];
 </head>
 <body>
 <center>
-<div class="navImage" >
-    <img id="img"  src="images/bg1.jpg" alt="navbar" usemap="#navImg">
+<div class="navImage">
+    <img id="img" src="http://cdn.lyplaaap.cn/cll/bg1.jpg" alt="navbar" usemap="#navImg">
     <map id="navImg" name="navImg">
-      <area shape="rectangle" coords="212,1039,498,1099" onClick="javascript:;" id="download1" title="" alt="" >
+      <area shape="rectangle" coords="212,1039,498,1099" onclick="javascript:;" id="download1" title="" alt="">
   
     </map>
 
@@ -46,84 +45,6 @@ var _hmt = _hmt || [];
 	</center>
 
 
-<!--
-<script>
-areaValue();
-var timeout = null;//onresize       
- window.onresize = function () {
-     clearTimeout(timeout);
-     timeout = setTimeout(function () { window.location.reload(); }, 100);
- }
-function areaValue(){
-$("area").each(function(){
-    var oldValue=new String();
-   oldValue=$(this).attr("coords");
-   var newValue=adjustPoint(oldValue);
-   $(this).attr("coords",newValue);
-})
-}
-function adjustPoint(item){
-   var pageWidth=$("body").css("width"); 
-   var pageHeight=$("body").css("height");
-   var imageWidth = 720;      
-   var imageHeigth = 3443;
-   var itemChild = item.split(",");
-   for(var i=0;i<itemChild.length;i++){
-       itemChild[i] = Math.round(parseInt(itemChild[i]) * parseInt(pageWidth) / parseInt(imageWidth)).toString();
-       i++;
-       itemChild[i] = Math.round(parseInt(itemChild[i]) * parseInt(pageHeight) / parseInt(imageHeigth)).toString();
-   }
-  
-     for (var i = 0; i < itemChild.length; i++) {
-         newValue += itemChild[i];
-         if (i < itemChild.length - 1) {
-             newValue += ",";
-         }
-     }
-     return newValue;
-}
-
-
-<script type="text/javascript">  
-  
-        adjust();  
-  
-        var timeout = null;   
-        window.onresize = function () {  
-            clearTimeout(timeout);  
-            timeout = setTimeout(function () { window.location.reload(); }, 100);//
-        }  
-  
-
-        function adjust() {  
-            var map = document.getElementById("CribMap");  
-            var element = map.childNodes;  
-            var itemNumber = element.length / 2;  
-            for (var i = 0; i < itemNumber - 1; i++) {  
-                var item = 2 * i + 1;  
-                var oldCoords = element[item].coords;  
-                var newcoords = adjustPosition(oldCoords);  
-                element[item].setAttribute("coords", newcoords);  
-            }  
-            var test = element;  
-        }  
-  
-    
-        function adjustPosition(position) {  
-            var pageWidth = document.body.clientWidth; 
-            var pageHeith = document.body.clientHeight;
-  
-            var imageWidth = 1160;<span style="white-space:pre;">   </span>//图片 某     
-            var imageHeigth = 990;  
-  
-            var each = position.split(",");  
-            
-            for (var i = 0; i < each.length; i++) {  
-                each[i] = Math.round(parseInt(each[i]) * pageWidth / 
-
-		</script>  
-</script>
--->
 <script>
 ;(function(){
         document.getElementById("download1").addEventListener("click", function(){
@@ -135,5 +56,5 @@ function adjustPoint(item){
         });
     })();
 </script>
-</body>
-</html>
+
+</body></html>
