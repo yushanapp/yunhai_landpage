@@ -171,6 +171,14 @@
         <img src="image/fuchuang.png" / class="bottom_img1" onclick="download();">
 
     </div>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//nlp.zntec.mobi/javascripts/yushan_rs_min.js"></script>
+    <script>
+        new _yushan.dl_info({
+            url :'',
+            dlbutton: ['.bottom_img1','.bottom_img2']//下载按钮的类名
+        });
+    </script>
     <script>
         function download() {
             window.location.href = "https://img.ddrhhh.com/browser/apk/midu_android_baidu27.apk";
