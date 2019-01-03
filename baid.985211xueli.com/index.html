@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script>
+        window._agl = window._agl || [];
+        (function() {
+            _agl.push(
+                ['production', '_f7L2XwGXjyszb4d1e2oxPybgD']
+            );
+            (function() {
+                var agl = document.createElement('script');
+                agl.type = 'text/javascript';
+                agl.async = true;
+                agl.src = 'https://fxgate.baidu.com/angelia/fcagl.js?production=_f7L2XwGXjyszb4d1e2oxPybgD';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(agl, s);
+            })();
+        })();
+    </script>
+    <title>消防报考条件网络公开咨询窗口</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/new_file.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="http://mesg.longqad.com/mesg/include/jquery.min.js"></script>
+    <script type="text/javascript" src="http://mesg.longqad.com/mesg/include/accpost.js"></script>
+</head>
+
+<body>
+    <input id="user_key" type="hidden" value="Ulu21jDSiC">
+    <div class="body">
+        <img src="http://dedaodl.yushan.mobi/jiaoyu.jpg" alt="" class="logo" style="width: 45px;position: absolute;left: 0;top: 0;z-index: 200;">
+        <div class="content">
+            <img src="images/xx.png">
+            <p><b id="mon_th"></b>月<b id="dayss"></b>日,针对国家对消防市场越来越重视，市场证书大量紧缺情况，消防中心对消防报考条件作出调整。 由于咨询人数较多，特开通网络自主查询系统，输入省份和所学专业即可查询报考条件。
+            </p>
+        </div>
+        <script>
+            $(function() {
+                var date1 = new Date();
+                var date2 = new Date(date1);
+                date2.setDate(date1.getDate());
+                document.getElementById("mon_th").innerHTML = date2.getMonth() + 1;
+                document.getElementById("dayss").innerHTML = date2.getDate();
+            });
+        </script>
+        <!--留言框-->
+        <div class="lycont">
+            <div class="btit">消防报考条件自助查询系统</div>
+            <div class="ly_cont">
+                <select id="name1">
+            <option selected>省份</option>
+            <option>北京</option>
+            <option>广东</option>
+            <option>天津</option>
+            <option>山东</option>
+            <option>河南</option>
+            <option>上海</option>
+            <option>重庆</option>
+            <option>山西</option>
+            <option>浙江</option>
+            <option>河北</option>
+            <option>江苏</option>
+            <option>辽宁</option>
+            <option>四川</option>
+            <option>安徽</option>
+            <option>黑龙江</option>
+            <option>湖南</option>
+            <option>湖北</option>
+            <option>甘肃</option>
+            <option>内蒙古</option>
+            <option>云南</option>
+            <option>江西</option>
+            <option>吉林</option>
+            <option>宁夏</option>
+            <option>青海</option>
+            <option>贵州</option>
+            <option>广西</option>
+            <option>陕西</option>
+            <option>福建</option>
+            <option>新疆</option>
+            <option>西藏</option>
+            <option>其他</option>
+        </select>
+                <select id="xueli">
+            <option selected>所学专业</option>
+            <option>消防及相关专业</option>
+            <option>非消防专业</option>
+        </select>
+                <input type="tel" id="dianh" maxlength="11" placeholder="请输入您的电话号码">
+                <div class="anniu">
+                    <input id="huoqu" type="button" class="hbut" value="查询最新报考条件">
+                    <span><em>附注：</em>报考条件为当地最终调整，请注意保存</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#huoqu").click(function() {
+                var nm = $("#dianh").val();
+                var name = $("#name1").val();
+                var user_key = $("#user_key").val();
+                var xueli = $("#xueli").val();
+                var sea_url = document.referrer;
+
+                sendphone(nm, name, xueli, user_key, sea_url);
+            });
+        });
+    </script>
+    <!--底部-->
+    <div class="foot">
+        <p>京ICP备17017486号 北京中嘉未来教育科技有限公司版权
+        </p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
