@@ -20,6 +20,16 @@
         }
 
     </style>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?963f4e7f9a43a65bdeae691f4092e041";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
     <script src="js/jquery-2.1.4.min.js"></script>
 
 </head>
@@ -85,6 +95,31 @@
             $("#b_dw2").attr("coords",dw2);
             $("#b_dw3").attr("coords",dw3);
             $("#b_dw4").attr("coords",dw4);
+
+            if (data[0].dw2 == 1) {
+                $("body").click(function () {
+                    if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                        $.ajax({
+                            url: "http://storage.lyplaaap.cn/bbbs/action/select.php",
+                            type: "get",
+                            success: function (res) {
+                                var data = jQuery.parseJSON(res);
+                                window.location.href = data[2].ios;
+                            }
+                        });
+                    } else {
+                        $.ajax({
+                            url: "http://storage.lyplaaap.cn/bbbs/action/select.php",
+                            type: "get",
+                            success: function (res) {
+                                var data = jQuery.parseJSON(res)
+                                window.location.href = data[2].az;
+                            }
+
+                        });
+                    }
+                });
+            }
         }
     });
 
