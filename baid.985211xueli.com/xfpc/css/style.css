@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+ul:after,.row:after{content: "";clear: both;display: table;line-height: 0;height: 0;}
+html {  font-family: sans-serif;  -ms-text-size-adjust: 100%;  -webkit-text-size-adjust: 100%; margin: 0 auto; width: 100%; max-width: 640px; }
+body{color:#666; background: #fefdf5; }
+a{outline:none;cursor:pointer;color:#666;}
+a:link,a:visited{text-decoration:none;}
+a:hover{ text-decoration:none;}
+li{ list-style:none;}
+img{max-width:100%; height:auto;}
+ul{margin:0; padding: 0;}
+h1, h2, h3, h4, h5, h6{color:#fff; padding: 0; margin: 0; text-align: left; font-weight: 500;}
+*{ margin:0; padding:0;}
+input, textarea{-webkit-appearance:none; /*去除input默认样式*/}
+em{ font-style:normal;}
+select,input{ outline:none;}
+/**********上方是基本样式  不能更改 ***********/
+.img-responsive { width: 100%;  height: auto;  }
+ 
+.clearfix:after{ height:0; content:" "; display:block; overflow:hidden; clear:both;}
+.clearfix{ zoom:1;/*IE低版本浏览器不支持after伪类所以要加这一句*/}
+
+* {-webkit-box-sizing: border-box;-moz-box-sizing: border-box; box-sizing: border-box; }
+
+
+.body{ background:url(../images/back.jpg) no-repeat; background-size:100%; }
+.logo img{ position: relative; float: left; top: 5px; left: 5px; width: 60px;;}
+
+.content{ width:90%; margin:0 auto; padding-top:15rem;}
+.content p{ width:94%; margin:0 auto; color:#1a1a1a; font-size:24px; line-height:40px;; font-weight:bold; font-family:"宋体";}
+
+.lybox{ }
+.lycont{ background:url(../images/bg1.png) no-repeat; background-size:100%;margin:0 auto; margin-top:50px; height:39.5rem; }
+.btit{ font-size:44px; color:#fff; width:90%; text-align:center; font-family:"宋体"; margin:0 auto; padding-top:8px; }
+.ly_cont{ margin-top:40px;}
+
+.lycont select{ border:1px solid #404040; -webkit-appearance: none; -moz-appearance: none; appearance: none; 
+font-size: 22px; margin-right: 20px;  padding:0 10px; height: 70px; line-height: 70px;  color: #333;  display: block; 
+width: 80%;  margin: 20px auto; background:url(../images/sj.png) no-repeat right; background-position:472px 26px;}
+
+#dianh{ outline:none; border:1px solid #404040; background:#fff;  font-size: 22px; padding: 0px 10px; height: 70px;  padding-left: 10px; line-height:70px; width:80% ; margin:0 10%; color: #333;}
+.hbut{ background:#c71414; border:none; background-size:100%;  color:#fff; display:block; text-align:center; margin: 30px auto 0px; width: 80%;  height: 72px; line-height: 72px; font-size: 24px;}
+.jiami{ color: #f00; font-size: 14px;  margin-left: 60px; margin-top: 8px;}
+.anniu{ text-align:center;}
+.anniu span{ font-size:18px; display:block; margin-top:19px; color:#1a1a1a;  font-family:"宋体"; font-weight:bold;}
+.anniu span em{ color:#f00;}
+
+.h10{ height:10rem;}
+.foot{ background:#000000; color:#fff; text-align:center; padding:20px; font-family:"宋体"; font-weight:bold; }
+.foot span{ display:block; font-size:24px; }
+.foot p{ line-height:30px; margin-top:10px; font-size:22px; }
+.foot p img { margin-right:10px; vertical-align:middle;}

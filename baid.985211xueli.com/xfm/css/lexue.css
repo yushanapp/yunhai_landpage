@@ -1,0 +1,130 @@
+.jie_t_w {  background-color: #f3f3f3;  border-bottom: 1px solid #eaeaea;  height: 32px;  width: 100%;  }
+.jie_t_1000 {  width: 630px;  margin: 0 auto;}
+.jie_f_l {  float: left;}
+.jie_f_l img{height:30px}
+.jie_f_c {  font-size: 12px;  height: 20px;  line-height: 30px;  text-indent: 4em;  }
+.jie_f_c span {  padding-left: 100px; margin-top:2px;}
+.jie_f_c a {
+    color: #FF8A22;
+    text-decoration: none;
+}
+.jie_f_r {    float: right;    margin-top: -20px;}
+.jie_advantage li {
+    float: left;
+    padding-left: 20px;
+    line-height: 32px;
+    font-size: 12px;
+    color: #666;
+}
+.jie_advantage li.jyc_3 {
+    background-position: 6px -73px;
+    padding-left: 30px;
+}
+.jie_advantage li.jie_yy_c {
+    background-image: url(../../tjjs7/images/jie_top_bg.png);
+    background-repeat: no-repeat;
+}
+.jie_advantage li.jyc_2 {
+    background-position: 6px -30px;
+    padding-left: 30px;
+}
+.jie_advantage li.jie_yy_c {
+    background-image: url(../../tjjs7/images/jie_top_bg.png);
+    background-repeat: no-repeat;
+}
+.jie_advantage li.jyc_1 {
+    background-position: 6px 5px;
+    padding-left: 30px;
+}
+
+.jie_advantage li.jie_yy_c {
+    background-image: url(../../tjjs7/images/jie_top_bg.png);
+    background-repeat: no-repeat;
+}
+
+
+.jt_over {
+    overflow: hidden;
+}
+.jie_ys_wai {
+    background-color: #fafafa;
+    padding: 30px 0;
+}
+.jie_youshi {
+    width: 1000px;
+    margin: 0 auto;
+}
+.jie_clear {
+    clear: both;
+}
+.jie_foot_nav {
+    border-bottom: 1px solid #dedddd;
+}
+.jie_foot_nav {
+    border-bottom: 1px solid #dedddd;
+}
+.jn_one {
+    width: 270px;
+}
+.jt_nishuo {
+    float: left;
+}
+.jn_two {
+    width: 210px;
+    margin-left: 150px;
+}
+.jn_three {
+    width: 210px;
+    margin-left: 150px;
+}
+
+.jt_nishuo dt {
+    float: left;
+    width: 56px;
+    color: #ff8921;
+    font-size: 27px;
+    background-image: url(../../tjjs7/images/jt_bg.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    height: 52px;
+    padding: 18px 0 0 14px;
+}
+.jt_nishuo dd {
+    float: left;
+    width: 260px;
+}
+.jn_one dd {
+    width: 197px;
+}
+
+.jn_two dd {
+    width: 140px;
+}
+
+.jn_three dd {
+    width: 140px;
+}
+.jt_nishuo dd h2 {
+    color: #ff8921;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.jt_nishuo dd p {
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+}
+
+
+
+.jie_f_copy {
+    padding: 25px 0px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 24px;
+    color: #999999;
+    margin-bottom:40px;
+}
+
+
+
