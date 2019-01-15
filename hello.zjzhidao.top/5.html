@@ -1,59 +1,99 @@
-﻿<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>hello语音</title>
-	<meta name="viewport" content="width=device-width"> 
- 	 <link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
-     <style>
-		.navImage img{
-			width:720px;
-			height:auto;
-			}
-			.navImage{
-			display:inline-block;
-			width:100%;			
-			}
-			body{
-			margin:0!important;
-			}
-     .navImage1 {			display:inline-block;
-			width:100%;			
-}
-     </style>
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?42f96cd180b66007c77854e11988e26e";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
+  <meta charset="utf-8">
+  <title>hello语音</title>
+  <meta name="viewport" content="width=device-width">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="lb5/css/swiper.min.css">
+  <link rel="stylesheet" href="lb5/css/index.css">
+  <!-- Demo styles -->
+
 </head>
 <body>
-				<center>
-				<div class="navImage"><span class="navImage1"><img  src="http://cdn.lyplaaap.cn/hello.zjzhidao.top/images/3.jpg" alt="navbar" id="img"></span></div> 
-			<img src="http://cdn.lyplaaap.cn/hello.zjzhidao.top/images/btn.png" alt="" usemap="#download2Map" id="download2" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
-            <map name="download2Map">
-              <area shape="rect" class="btnCilck"  coords="431,11,694,89" href="javascript:;">
-            </map>
-			</center>
-<script>
+<div class="header">
+  <div class="h_top">
+    <img src="lb5/images/bj.jpg" style="width: 100%;height: auto" alt="">
+  </div>
+  <div class="h_lbbox">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" >
+          <img src="lb5/images/lb01.jpg"  style="width: 100%;height: auto;" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="lb5/images/lb02.jpg"  style="width: 100%;height: auto;" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="lb5/images/lb03.jpg" style="width: 100%;height: auto;" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="lb5/images/lb04.jpg" style="width: 100%;height: auto;" alt="">
+        </div>
+      </div>
+      <!--    &lt;!&ndash; Add Pagination &ndash;&gt;
+          <div class="swiper-pagination"></div>-->
+    </div>
 
-		var Android="https://update.weihuitel.com/hello/hello-4.7.3-official_aliy5.apk";//安卓下载链接
-		var Ios="";//ios下载链接
+    <div class="btns btnCilck">
 
-		var btns = document.getElementsByClassName("btnCilck");
-		for(var i=0;i<btns.length;i++){
-		   btns[i].onclick=function () {
-               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                   window.location.href =Ios;
-               }else {
-                   window.location.href =Android;
-               }
-           }
-		};
-</script>
+    </div>
+  </div>
+ <!-- <div class="part-3">
+    <img src="images/bg_3.jpg" class="bj">
+    &lt;!&ndash;<img src="images/fix_1.jpg">
+    <img src="images/fix_2.jpg">&ndash;&gt;
+    <div class="btbox">
+      <img src="images/fix_1.jpg" alt="">
+      <img src="images/fix_2.jpg" alt="">
+    </div>
+
+  </div>-->
+
+  <div class="btn btnCilck"></div>
+  <div class="btnCilck" style="position:fixed;margin:0 auto;bottom:0;left:0;right:0;max-width: 650px;width: 100%;z-index: 999999999999;">
+    <img src="lb5/images/btn.png" alt="" border="0" style="width: 100%;height: auto;margin-bottom: -2px;" onClick="javascript:;" >
+    <div class="btnCilck" style="position: absolute;width: 32%;height: 50%;left: 61%;top: 23%;z-index: 99999;">
+    </div>
+  </div>
+</div>
+
+
+  <!-- Swiper JS -->
+  <script src="lb5/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+      var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          slideToClickedSlide: true,
+          initialSlide: 1,
+          loop:true,
+          coverflow: {
+              rotate: 50,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows : true
+          }
+      });
+    var Android="https://update.weihuitel.com/hello/hello-4.7.5-official_aliy5.apk";//安卓下载链接
+    var Ios="";//ios下载链接
+
+    var btns = document.getElementsByClassName("btnCilck");
+    for(var i=0;i<btns.length;i++){
+        btns[i].onclick=function () {
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href =Android;
+            }else {
+                window.location.href =Android;
+            }
+        }
+    };
+  </script>
 </body>
 </html>

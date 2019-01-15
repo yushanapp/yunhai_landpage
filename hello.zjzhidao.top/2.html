@@ -1,59 +1,64 @@
-﻿<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
+<!DOCTYPE html>
+<!-- saved from url=(0025)http://hlsk.ayushan.wang/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
 	<title>hello语音</title>
 	<meta name="viewport" content="width=device-width"> 
- 	 <link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
+ 	 <link href="http://hlsk.ayushan.wang/images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
      <style>
-		.navImage img{
-			width:720px;
-			height:auto;
-			}
-			.navImage{
-			display:inline-block;
-			width:100%;			
-			}
-			body{
-			margin:0!important;
-			}
-     .navImage1 {			display:inline-block;
-			width:100%;			
-}
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		 .header{
+			 width: 100%;
+			 height: auto;
+			 max-width: 720px;
+			 margin: 0 auto;
+			 position: relative;
+		 }
+		 .header img{
+			 width: 100%;
+			 height: auto;
+			 display: block;
+		 }
+		.btns{
+			position: absolute;
+			width: 49%;
+			height: 3%;
+			left: 25%;
+			top: 17%;
+			z-index: 9999;
+		}
      </style>
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?4638b5a34270071528866852dd5e4daf";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
 </head>
 <body>
-			<center>
-				<div class="navImage"><span class="navImage1"><img  src="http://cdn.lyplaaap.cn/hello.zjzhidao.top/images/2.jpg" alt="navbar" id="img"></span></div> 
-			<img src="http://cdn.lyplaaap.cn/hello.zjzhidao.top/images/btn.png" alt="" usemap="#download2Map" id="download2" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
-            <map name="download2Map">
-              <area shape="rect" class="btnCilck"  coords="431,11,694,89" href="javascript:;">
-            </map>
-			</center>
+		<div class="header">
+			<img src="ldy2/bg1.jpg" alt="">
+			<img src="ldy2/bg2.jpg" alt="">
+			<img src="ldy2/bg3.jpg" alt="">
+			<img src="ldy2/bg4.jpg" alt="">
+			<img src="ldy2/bg5.jpg" alt="">
+			<div class="btns btnCilck">
+
+			</div>
+		</div>
 <script>
-                  
-		var Android="https://update.weihuitel.com/hello/hello-4.7.3-official_aliy2.apk";//安卓下载链接
+
+		var Android="https://update.weihuitel.com/hello/hello-4.7.5-official_aliy2.apk";//安卓下载链接
 		var Ios="";//ios下载链接
 
 		var btns = document.getElementsByClassName("btnCilck");
 		for(var i=0;i<btns.length;i++){
 		   btns[i].onclick=function () {
                if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                   window.location.href =Ios;
+                   window.location.href =Android;
                }else {
                    window.location.href =Android;
                }
            }
 		};
 </script>
-</body>
-</html>
+
+
+</body></html>
