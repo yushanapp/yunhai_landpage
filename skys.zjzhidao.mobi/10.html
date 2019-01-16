@@ -1,0 +1,67 @@
+﻿
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>刺猬猫</title>
+<meta name="viewport" content="width=device-width"> 
+<!--
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" /> -->
+<style>
+.navImage img{
+width:750px;
+height:auto;
+}
+.navImage{
+/* text-align:center; */
+display:inline-block
+/*margin-left:-8px!important; */
+width:100%;			
+}
+body{
+margin:0!important;
+}
+.navImage1 {/* text-align:center; */
+display:inline-block
+/*margin-left:-8px!important; */
+width:100%;			
+}
+</style></head>
+
+<body>
+<center>
+<div class="navImage" ><span class="navImage1"><img  src="http://cdn.lyplaaap.cn/skys.zjzhidao.mobi/images/bg01.jpg" alt="navbar" usemap="#imgMap" id="img">
+    <map name="imgMap" class="btnCilck"><area shape="rect" coords="130,2741,276,2787" style="outline:none" href="javascript:;"><area shape="rect" coords="480,2744,626,2790" style="outline:none" href="javascript:;"><area shape="rect" coords="473,2337,619,2383" style="outline:none" href="javascript:;"><area shape="rect" coords="131,2337,277,2383" style="outline:none" href="javascript:;"><area shape="rect" coords="315,1702,461,1748" style="outline:none" href="javascript:;"><area shape="rect" coords="90,1703,236,1749" style="outline:none" href="javascript:;"><area shape="rect" coords="315,1702,461,1748" style="outline:none" href="javascript:;"><area shape="rect" coords="536,1703,682,1749" style="outline:none" href="javascript:;"><area shape="rect" coords="535,1383,681,1429" style="outline:none" href="javascript:;"><area shape="rect" coords="312,1381,458,1427" style="outline:none" href="javascript:;">
+      <area shape="rect" coords="89,1383,235,1429" style="outline:none" href="javascript:;">
+    </map>
+</span>
+<div style="height:30px;"></div></div> 
+
+<img src="http://cdn.lyplaaap.cn/skys.zjzhidao.mobi1/images/bg2.png" alt="" usemap="#download2Map"  id="download2" style="position:fixed;margin:0 auto;bottom:76px;left:0;right:0;width:750px;max-width:750px;" onClick="javascript:;">
+<map name="download2Map" class="btnCilck">
+  <area shape="rect" coords="202,17,672,124" href="javascript:;">
+</map>
+
+
+</center>
+
+<script>
+
+    var Android="http://novel-cdn.kuangxiangit.com/custom/download/2.0.112/Novel-common-release_20293_jiagu_sign-TIEBAC4.apk";//安卓下载链接
+    var Ios="";//ios下载链接
+
+    var btns = document.getElementsByClassName("btnCilck");
+    for(var i=0;i<btns.length;i++){
+        btns[i].onclick=function () {
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href =Android;
+            }else {
+                window.location.href =Android;
+            }
+        }
+    };
+</script>
+
+
+</body>
+</html>
