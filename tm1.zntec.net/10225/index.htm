@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta itemprop="image" content="img/icon.png" />
+	<meta itemprop="name" content="青云诛仙，共谱长生道！" />
+	<title>青云诛仙，共谱长生道！</title>
+	<meta name="description" content="2018全新3D仙侠动作手游《飘渺儒仙》正式上线！"/>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="favicon.png.css" tppabs="http://cdn-huoshu.fire2333.com/landpages/pmrx/template/10225/favicon.png">
+
+	<!-- TO TRANSLATE: "name", "description" -->
+	<meta itemprop="name" content="青云诛仙，共谱长生道！">
+	<meta itemprop="description" content="2018全新3D仙侠动作手游《飘渺儒仙》正式上线！">
+	<meta itemprop="image" content="social/icon.png">
+
+	<!-- TO TRANSLATE: "name", "description" -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ncasenmare">
+	<meta name="twitter:title" content="青云诛仙，共谱长生道！">
+	<meta name="twitter:description" content="2018全新3D仙侠动作手游《飘渺儒仙》正式上线！">
+	<meta name="twitter:creator" content="@ncasenmare">
+	<meta name="twitter:image" content="social/icon.png">
+
+	<!-- TO TRANSLATE: "name", "description" -->
+	<meta property="og:title" content="青云诛仙，共谱长生道！">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://page.fire2333.com/homepage/trust/">
+	<meta property="og:image" content="social/icon.png">
+	<meta property="og:description" content="2018全新3D仙侠动作手游《飘渺儒仙》正式上线！">
+
+	<style>
+		.myimg
+		{
+			vertical-align: bottom;
+			width:100%;
+			display:block;
+			margin-top:-2px;
+		}
+		.myfixtop
+		{
+			position: fixed;
+			left:0;
+			top:0;
+			z-index:99;
+		}
+		.mymargin
+		{
+			margin-top:0px;    /*距离顶部位置的像素距离*/
+		}
+		.mymargin2
+		{
+			margin-top: 130px;
+		}
+		#mydiv{
+			width:100%;
+			position: relative;
+		}
+		#img_btn1{
+			position: fixed;
+			right: 3%;
+			top: 1%;
+			cursor: pointer;
+			width: 33%;
+			display: inline-block;
+			z-index: 99;
+			border: none;
+			outline: none;
+			color: #000;
+			font-family: Microsoft Yahei;
+			text-align: center;
+			font-size: 40px;
+			/*background-image: url(img/top_button.png);*/
+			/*background-size: 100% 100%;*/
+			/*background-repeat: no-repeat;*/
+			/*background-color: transparent;*/
+		}
+		#img_btn1 img{
+			width: 100%;
+			cursor: pointer;
+			margin-top: 4%;
+		}
+		#img_div2{
+			position: absolute;
+			top: 1160px;
+			width: 100%;
+			cursor: pointer;
+			color: #000;
+			font-size: 45px;
+			text-align: center;
+		}
+		#img_btn2{
+			width: 53%;
+			cursor: pointer;
+			border: none;
+			z-index: 99;
+			outline: none;
+			font-family: Microsoft Yahei;
+			/* text-align: center; */
+			font-size: 45px;
+			/*background-color: transparent;*/
+			/*background-image: url(img/top.png);*/
+			/*background-size: 100% 100%;*/
+			/*background-repeat: no-repeat;*/
+		}
+		#img_btn2 img{
+			width: 55%;
+			cursor: pointer;
+		}
+		#img_div3{
+			position: absolute;
+			top: 3850px;
+			width: 100%;
+			text-align: center;
+			color: #000;
+			cursor: pointer;
+			font-size: 45px;
+		}
+		#img_btn3{
+			width: 83%;
+			cursor: pointer;
+			z-index: 99;
+			border: none;
+			outline: none;
+			text-align: center;
+			font-family: Microsoft Yahei;
+			font-size: 45px;
+			/*background-image: url(img/gift.png);*/
+			/*background-size: 100% 100%;*/
+			/*background-repeat: no-repeat;*/
+			/*background-color: transparent;*/
+		}
+		#img_btn3 img{
+			cursor: pointer;
+			width: 52%;
+			margin-top: 4%;
+		}
+		#img_3{
+			height: 175px;
+		}
+		#img_div4{
+			position: absolute;
+			bottom: 0%;
+			width: 100%;
+			text-align: center;
+		}
+		#img_btn4{
+			width: 51%;
+			cursor: pointer;
+			z-index: 99;
+			border: none;
+			outline: none;
+			text-align: center;
+			font-family: Microsoft Yahei;
+			color: #000;
+			font-size: 45px;
+			/*background-image: url(img/bottom.png);*/
+			/*background-size: 100% 100%;*/
+			/*background-repeat: no-repeat;*/
+			/*background-color: transparent;*/
+		}
+		#img_btn4 img{
+			width: 55%;
+			cursor: pointer;
+			margin-top: 3%;
+		}
+		#inputbackground{
+			background-image: url("img/6.jpg")/*tpa=http://cdn-huoshu.fire2333.com/landpages/pmrx/template/10225/img/6.jpg*/;
+			background-size: 100% 100%;
+			height: 5em;
+			width: 100%;
+			border: none;
+			padding:0;
+			text-align: center;
+			font-size: 2.6em;
+			color: #E6E8F5;
+		}
+		.alertdiv{
+			position: fixed;
+			top: 50%;
+			text-align: center;
+			background-color: rgb(255,255,255);
+			width: 80%;
+			left: 10%;
+			/* left: 10%; */
+			z-index: 11111111;
+			padding-top: .5em;
+			/* padding-bottom: .2em; */
+			box-sizing: border-box;
+			font-size: 3em;
+			/* line-height: 0em; */
+			height: 5em;
+			border-radius: 0.8em;
+		}
+		.alerttext{
+			border-bottom: 1px solid #333333;
+			height: 2em;
+		}
+		.request{
+			padding-top: .5em;
+			color: #4072C7;
+		}
+		*{margin:0;}
+	</style>
+	<script src="http://cdn-huoshu.fire2333.com/landpages/pmrx/template/10225/js/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://www.itunesappstore.cn/api/ioshelper-openapi.css?v=1.0">
+	<script type="text/javascript" src="https://www.itunesappstore.cn/api/ioshelper-openapi.js?v=1.0"></script>
+</head>
+<body style="background-color:rgb(0,0,0); width:100%; position: relative">
+<div style='margin:0 auto;display:none;'>
+	<img src="https://cdn-huoshu.fire2333.com/landpages/pmrx/template/10012/img/icon.png_300x300x0.jpg" />
+</div>
+<!--&lt;!&ndash;	&ndash;&gt;&lt;!&ndash; data-setting-copy="tuia:&ndash;&gt;&lt;!&ndash;" &ndash;&gt;-->
+<div id='mydiv'>
+	<div class="alertdiv" style="display: none">
+		<div class="alerttext"></div>
+		<div class="request">Ok</div>
+	</div>
+</div>
+</body>
+
+
+<script src="js/clipboard.min.js" tppabs="http://cdn-huoshu.fire2333.com/landpages/pmrx/template/10225/js/clipboard.min.js"></script>
+<!--	<script src="js/http://qzonestyle.gtimg.cn/qzone/qzact/common/share/share.js"></script>-->
+<!--<script src="js/gpsdk-min-1808071647.js"></script>-->
+<script type="text/javascript">
+	var gameId = '300002';
+	var landingPageId = '10225';
+	var fromType = getUrlParam('from_type');
+	var downloadArray = [0,2,8];
+	var hrefArray = [1,2,3,4,5,6,7,8,9];
+	var imageSrcArray = ['img/1.jpg'/*tpa=http://cdn-huoshu.fire2333.com/landpages/pmrx/template/10225/img/1.jpg*/,'img/2.jpg'/*tpa=http://cdn-huoshu.fire2333.com/landpages/pmrx/template/10225/img/2.jpg*/, 'img/3.jpg'/*tpa=http://cdn-huoshu.fire2333.com/landpages/pmrx/template/10225/img/3.jpg*/,'img/4.jpg'/*tpa=http://cdn-huoshu.fire2333.com/landpages/pmrx/template/10225/img/4.jpg*/,'img/5.gif'/*tpa=http://cdn-huoshu.fire2333.com/landpages/pmrx/template/10225/img/5.gif*/,'img/6.gif'/*tpa=http://cdn-huoshu.fire2333.com/landpages/pmrx/template/10225/img/6.gif*/,'img/7.jpg'/*tpa=http://cdn-huoshu.fire2333.com/landpages/pmrx/template/10225/img/7.jpg*/];
+	var wxPortal={"appName":"缥缈儒仙","appId":"wx24a60f399bd5535c","actId":"117512","msgToUser":[],"share":{"timeline_title":"青云诛仙，共谱长生道！","appmessage_title":"青云诛仙，共谱长生道！","appmessage_desc":"2018全新3D仙侠动作手游《飘渺儒仙》正式上线！","img_url":"https://cdn-huoshu.fire2333.com/landpages/pmrx/template/10012/img/icon.png","link":""},"start_time":"2018/08/23 00:00:00","end_time":"2018/10/31 23:59:59","reportActVisited":1,"bottombar_status":0,"barTheme":"green"};
+	var ___roleAreaMap={"areaios":"1","areaand":"1","platand":"1","platios":"0","amsname":"game"};
+	window.onload = function(){
+		postData('http://www.fire2333.com/logapi/LogLandpages.php', 'logLandingPage');
+		//setTimeout('downloadApk()',3000);
+		init();
+	}
+
+	//		setShareInfo({
+	//			title:          '父爱，在你看不到的地方', // 分享标题
+	//			summary:        '父爱如山，感觉不到只因身在此山中', // 分享内容
+	//			pic:            'https://cdn-huoshu.fire2333.com/landpages/pmrx/template/10012/img/icon.png', // 分享图片
+	//			url:            'https://cdn-huoshu.fire2333.com/landpages/pmrx/template/10012/index.php?apk_id=pmrx-134', // 分享链接
+	//		});
+
+	function init()
+	{
+		for(var index in imageSrcArray){
+//			if(index == 5){
+//				var input = "<input type='text' readonly='readonly' id='inputbackground'>"
+////					var img = "<img id='img_" + (parseInt(index)+1) + "' class='myimg' src='" + imageSrcArray[index] + "?v=1000000017'>";
+//				$("#mydiv").append(input);
+//				$("#inputbackground").val("1515caaX4442774");
+//				$("#inputbackground").wrap("<a class='mya'></a>");
+//			}else{
+			var img = "<img id='img_" + (parseInt(index)+1) + "' class='myimg' src='" + imageSrcArray[index] + "?v=1000000017'>";
+			$("#mydiv").append(img);
+//			}
+		}
+            $("#mydiv").append("<img id='img_footer' class='myimg' src='http://cdn-huoshu.fire2333.com/landpages/footer/icp/bjzn_tail.jpg'/>");
+
+		for (var index in hrefArray){
+			$("#img_" + hrefArray[index]).wrap("<a class='mya'></a>");
+		}
+//			for (var index in downloadArray){
+//				var Arrayindex = downloadArray[index];
+//				$(".mya").eq(Arrayindex).attr('href', "//");
+////				$(".mya").eq(Arrayindex).click(function(){
+////					postData('http://www.fire2333.com/logapi/LogLandpages.php', 'logClickDownload');
+////				});
+//			}
+            $('.mya').click(function(){
+                postData('http://www.fire2333.com/logapi/LogLandpages.php', 'logClickDownload');
+            });
+		$(".request").click(function () {
+			$(".alertdiv").hide();
+		})
+		$("#img_1").addClass("myfixtop");
+		$("#img_2").addClass("mymargin2");
+
+		$("#img_1").parent().append("<div id='img_btn1'><img  src='img/top_text.png'/*tpa=http://cdn-huoshu.fire2333.com/landpages/pmrx/template/10225/img/top_text.png*/ alt=''></div>");
+		$("#img_3").parent().append("<div id='img_div2'><img id='img_btn2' src='img/download.png'/*tpa=http://cdn-huoshu.fire2333.com/landpages/pmrx/template/10225/img/download.png*/ alt=''></div>");
+		$("#img_7").parent().append("<div id='img_div3'><img  id='img_btn3' src='img/gift.png'/*tpa=http://cdn-huoshu.fire2333.com/landpages/pmrx/template/10225/img/gift.png*/ alt=''></div>");
+		var u = navigator.userAgent, app = navigator.appVersion;
+		var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //g
+		var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+		if (isAndroid) {
+			//这个是安卓操作系统
+			console.log("3343");
+			$("#img_btn1,#img_btn2,#img_btn3").bind("click",function(e){
+				console.log("e4343");
+				console.log("dadasdsa");
+				window.location = "https://cdn-huoshu.fire2333.com/game/dl/apks/pmrx-160.apk";
+			});
+//			$("#img_div2").click(function(){
+//				console.log("dadasdsa");
+//				window.location = "http:///";
+//			});
+//			$("#img_div4").click(function(){
+//				console.log("dadasdsa");
+//				window.location = "http:///";
+//			});
+		}
+		if (isIOS) {
+			//这个是ios操作系统
+			$("#img_btn1").bindIosInstall('027433e4-09a7-11e9-8847-00163e0e27d5',
+				function(code,promise,status){
+					console.log("2222211");
+					console.log(code);
+					console.log(status.phase);
+					if (code == 0) {
+						console.log("22222");
+						if (status.phase == 'binding') {
+							$('#download-help').bindIosInstallHelp();
+							$('#download-help').css('display','block');
+						}
+						promise
+							.done(function(d){
+								$('#img_div2').text(d.hint);
+							})
+							.fail(function(d){
+								$('#img_div2').text(d.hint);
+							})
+							.progress(function(d){
+								$('#img_div2').text(d.hint + d.progress + '%');
+							})
+					}
+//						else {
+//							alert('此时⽆法下载！');
+//						}
+				}
+
+			);
+			$("#img_btn2").bindIosInstall('027433e4-09a7-11e9-8847-00163e0e27d5',
+				function(code,promise,status){
+					if (code == 0) {
+						if (status.phase == 'binding') {
+
+							$('#download-help').bindIosInstallHelp();
+							$('#download-help').css('display','block');
+						}
+						promise
+							.done(function(d){
+								$('#img_div2').text(d.hint);
+							})
+							.fail(function(d){
+								$('#img_div2').text(d.hint);
+							})
+							.progress(function(d){
+								$('#img_div2').text(d.hint + d.progress + '%');
+							})
+					}
+				}
+
+			);
+			$("#img_btn3").bindIosInstall('027433e4-09a7-11e9-8847-00163e0e27d5',
+				function(code,promise,status){
+					if (code == 0) {
+						if (status.phase == 'binding') {
+							$('#download-help').bindIosInstallHelp();
+							$('#download-help').css('display','block');
+						}
+						promise
+							.done(function(d){
+								$('#img_div3').text(d.hint);
+							})
+							.fail(function(d){
+								$('#img_div3').text(d.hint);
+							})
+							.progress(function(d){
+								$('#img_div3').text(d.hint + d.progress + '%');
+							})
+					}
+//						else {
+//							alert('此时⽆法下载！');
+//						}
+				}
+
+			);
+		}
+	}
+
+	//	if(ClipboardJS.isSupported()){
+	//		var btn1 = new ClipboardJS('#img_4');
+	//		var btn2 = new ClipboardJS('#img_5');
+	//		var btn = new ClipboardJS('#inputbackground');
+	//		var btn3 = new ClipboardJS('#img_div3');
+	//		btn.on('success', function(e) {
+	//			console.log("dadas");
+	//			$(".alerttext").html("复制成功");
+	//			$(".alertdiv").show();
+	////				alert("复制成功");
+	//		});
+	//
+	//		btn.on('error', function(e) {
+	//			console.log("323das");
+	//			$(".alerttext").html("请选择“拷贝”进行复制!");
+	//			$(".alertdiv").show();
+	////				alert('请选择“拷贝”进行复制!')
+	//		});
+	//		btn1.on('success', function(e) {
+	//			console.log("dadas");
+	//			$(".alerttext").html("复制成功");
+	//			$(".alertdiv").show();
+	////				alert("复制成功");
+	//		});
+	//
+	//		btn1.on('error', function(e) {
+	//			console.log("323das");
+	//			$(".alerttext").html("请选择“拷贝”进行复制!");
+	//			$(".alertdiv").show();
+	////				alert('请选择“拷贝”进行复制!')
+	//		});
+	//		btn2.on('success', function(e) {
+	//			console.log("dadas");
+	//			$(".alerttext").html("复制成功");
+	//			$(".alertdiv").show();
+	////				alert("复制成功");
+	//		});
+	//
+	//		btn2.on('error', function(e) {
+	//			console.log("323das");
+	//			$(".alerttext").html("请选择“拷贝”进行复制!");
+	//			$(".alertdiv").show();
+	////				alert('请选择“拷贝”进行复制!')
+	//		});
+	//		btn3.on('success', function(e) {
+	//			console.log("dadas");
+	//			$(".alerttext").html("复制成功");
+	//			$(".alertdiv").show();
+	////				alert("复制成功");
+	//		});
+	//
+	//		btn3.on('error', function(e) {
+	//			console.log("323das");
+	//			$(".alerttext").html("请选择“拷贝”进行复制!");
+	//			$(".alertdiv").show();
+	////				alert('请选择“拷贝”进行复制!')
+	//		});
+	//	}
+
+	function getUrlParam(name) {
+		var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+		var r = window.location.search.substr(1).match(reg);
+		if (r != null) return unescape(r[2]); return null;
+	}
+
+	function postData(postUrl, action){
+		$.ajax({
+			url: postUrl,
+			type: 'post',
+			data: {
+				action: action,
+				game_id: gameId,
+				landingpage_id: landingPageId,
+				from_type : fromType,
+				footer_id : "22",
+				apk_id : ""
+			},
+			dataType: 'json',
+			timeout: 10000,
+			success: function (result) {
+
+			}
+		});
+	}
+	function downloadApk(){
+//		window.location = "";
+		postData('http://www.fire2333.com/logapi/LogLandpages.php', 'logClickDownload');
+	}
+
+</script>
+</html>
