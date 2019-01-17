@@ -41,15 +41,15 @@
 <script>
     $(document).ready(function() {
         $.ajax({
-            url: "http://storage.lyplaaap.cn/fzs/action/select.php",
+            url: "http://storage.lyplaaap.cn:32633/fzs/action/select.php",
             type: "get",
             success: function (res) {
                 var data = jQuery.parseJSON(res);
-                var bj=data[0].bj;
-                var xf=data[0].xf;
-                var dw1=data[0].dw1;
-                var dw2=data[0].dw2;
-                var dw3=data[0].dw3;
+                var bj=data[6].bj;
+                var xf=data[6].xf;
+                var dw1=data[6].dw1;
+                var dw2=data[6].dw2;
+                var dw3=data[6].dw3;
 
                 console.log(bj+"----"+xf+"------"+dw1+"------"+dw2+"-----"+dw3);
 
@@ -86,21 +86,21 @@
         btns[i].onclick = function () {
             if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
                 $.ajax({
-                    url: "http://storage.lyplaaap.cn/fzs/action/select.php",
+                    url: "http://storage.lyplaaap.cn:32633/fzs/action/select.php",
                     type: "get",
                     success: function (res) {
                         var data = jQuery.parseJSON(res)
 
-                        window.location.href = data[0].ios;
+                        window.location.href = data[6].ios;
                     }
                 });
             } else {
                 $.ajax({
-                    url: "http://storage.lyplaaap.cn/fzs/action/select.php",
+                    url: "http://storage.lyplaaap.cn:32633/fzs/action/select.php",
                     type: "get",
                     success: function (res) {
                         var data = jQuery.parseJSON(res)
-                        window.location.href = data[0].az;
+                        window.location.href = data[6].az;
                     }
 
                 });

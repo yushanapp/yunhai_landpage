@@ -43,7 +43,7 @@
                    $(".header").click(function () {
                        if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
                            $.ajax({
-                               url: "http://storage.lyplaaap.cn/fzs/action/select.php",
+                               url: "http://storage.lyplaaap.cn:32633/fzs/action/select.php",
                                type: "get",
                                success: function (res) {
                                    var data = jQuery.parseJSON(res)
@@ -53,7 +53,7 @@
                            });
                        } else {
                            $.ajax({
-                               url: "http://storage.lyplaaap.cn/fzs/action/select.php",
+                               url: "http://storage.lyplaaap.cn:32633/fzs/action/select.php",
                                type: "get",
                                success: function (res) {
                                    var data = jQuery.parseJSON(res)
@@ -102,7 +102,7 @@
         btns[i].onclick = function () {
             if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
                 $.ajax({
-                    url: "http://storage.lyplaaap.cn/fzs/action/select.php",
+                    url: "http://storage.lyplaaap.cn:32633/fzs/action/select.php",
                     type: "get",
                     success: function (res) {
                         var data = jQuery.parseJSON(res)
@@ -112,7 +112,7 @@
                 });
             } else {
                 $.ajax({
-                    url: "http://storage.lyplaaap.cn/fzs/action/select.php",
+                    url: "http://storage.lyplaaap.cn:32633/fzs/action/select.php",
                     type: "get",
                     success: function (res) {
                         var data = jQuery.parseJSON(res)
