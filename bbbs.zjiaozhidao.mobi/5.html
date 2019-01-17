@@ -5,20 +5,16 @@
     <title>宝宝巴士</title>
     <meta name="viewport" content="width=device-width">
     <style>
-
         .navImage img {
             height: auto;
         }
-
         .navImage {
             display: inline-block;
             width: 100%;
         }
-
         body {
             margin: 0 !important;
         }
-
     </style>
     <script>
         var _hmt = _hmt || [];
@@ -30,7 +26,6 @@
         })();
     </script>
     <script src="js/jquery-2.1.4.min.js"></script>
-
 </head>
 <body>
 
@@ -42,12 +37,10 @@
             <area id="b_dw2" shape="rect" coords="" style="outline:none;" href="javascript:;">
         </map>
     </div>
-
         <img src="" alt="" border="0" usemap="#download2Map" id="download2" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;" onClick="javascript:;" >
             <map name="download2Map" class="btnCilck">
                 <area id="b_dw3" shape="rect" coords="" href="javascript:;">
             </map>
-
         <img src="" alt="" border="0" usemap="#download3Map" id="xfbtntop" style="position:fixed;margin:0 auto;top:0px;left:0;right:0;" onClick="javascript:;" >
         <map name="download3Map" class="btnCilck">
           <area shape="rect" id="b_dw4" coords="" href="javascript:;">
@@ -55,7 +48,7 @@
 </center>
 <script>
                 $.ajax({
-                    url: "http://storage.lyplaaap.cn/bbbs/action/select.php",
+                    url: "http://storage.lyplaaap.cn:32633/bbbs/action/select.php",
                     type: "get",
                     success: function (res) {
                         var data = jQuery.parseJSON(res);
@@ -89,6 +82,7 @@
                             $("#xfbtntop").attr("src",dxf);
                             $("#xfbtntop").css({"width":kd});
                         }
+
                         $("#xfbtntop").css({"width":kd});
                         $("#b_dw1").attr("coords",dw1);
 						$("#b_dw2").attr("coords",dw2);	
@@ -98,7 +92,7 @@
                             $("body").click(function () {
                                 if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
                                     $.ajax({
-                                        url: "http://storage.lyplaaap.cn/bbbs/action/select.php",
+                                        url: "http://storage.lyplaaap.cn:32633/bbbs/action/select.php",
                                         type: "get",
                                         success: function (res) {
                                             var data = jQuery.parseJSON(res);
@@ -107,7 +101,7 @@
                                     });
                                 } else {
                                     $.ajax({
-                                        url: "http://storage.lyplaaap.cn/bbbs/action/select.php",
+                                        url: "http://storage.lyplaaap.cn:32633/bbbs/action/select.php",
                                         type: "get",
                                         success: function (res) {
                                             var data = jQuery.parseJSON(res)
@@ -119,15 +113,13 @@
                             });
                         }
                     }
-
                 });
-
                 var btns = document.getElementsByClassName("btnCilck");
                 for (var i = 0; i < btns.length; i++) {
                     btns[i].onclick = function () {
                         if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
                             $.ajax({
-                                url: "http://storage.lyplaaap.cn/bbbs/action/select.php",
+                                url: "http://storage.lyplaaap.cn:32633/bbbs/action/select.php",
                                 type: "get",
                                 success: function (res) {
                                     var data = jQuery.parseJSON(res);
@@ -136,18 +128,16 @@
                             });
                         } else {
                             $.ajax({
-                                url: "http://storage.lyplaaap.cn/bbbs/action/select.php",
+                                url: "http://storage.lyplaaap.cn:32633/bbbs/action/select.php",
                                 type: "get",
                                 success: function (res) {
                                     var data = jQuery.parseJSON(res)
                                     window.location.href = data[4].az;
                                 }
-
                             });
                         }
                     }
                 }
-
 			</script>
 </body>
 </html>
