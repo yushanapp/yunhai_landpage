@@ -47,7 +47,7 @@
 <script>
     $(document).ready(function() {
         $.ajax({
-            url: "http://storage2.lyplaaap.cn/xcxs2ys/action/select.php",
+            url: "http://storage2.lyplaaap.cn:32568//xcxs2ys/action/select.php",
             type: "get",
             success: function (res) {
                 var data = jQuery.parseJSON(res);
@@ -66,7 +66,7 @@
 
                         if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
                             $.ajax({
-                                url: "http://storage2.lyplaaap.cn/xcxs2ys/action/select.php",
+                                url: "http://storage2.lyplaaap.cn:32568//xcxs2ys/action/select.php",
                                 type: "get",
                                 success: function (res) {
                                     var data = jQuery.parseJSON(res)
@@ -76,7 +76,7 @@
                             });
                         } else {
                             $.ajax({
-                                url: "http://storage2.lyplaaap.cn/xcxs2ys/action/select.php",
+                                url: "http://storage2.lyplaaap.cn:32568//xcxs2ys/action/select.php",
                                 type: "get",
                                 success: function (res) {
                                     var data = jQuery.parseJSON(res)
