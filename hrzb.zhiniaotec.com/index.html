@@ -1,0 +1,60 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>红人直播</title>
+	<meta name="viewport" content="width=device-width"> 
+     <style>
+		.navImage img{
+			width:720px;
+			height:auto;
+			}
+			.navImage{
+			display:inline-block;
+			width:100%;			
+			}
+			body{
+			margin:0!important;
+			}
+     </style>
+</head>
+<body>
+			<center>
+				<div class="navImage">
+
+		      <img src="http://cdn.lyplaaap.cn/hongren.zhiniaotec.com/images/bg1.jpg" alt="navbar" usemap="#imgMap" id="img" border="0">
+              <map name="imgMap" class="btnCilck">
+                <area shape="rect" coords="165,1070,561,1163" href="javascript:;" style="outline:none;">
+              </map>
+			  </div> 
+		<!--<img src="http://cdn.lyplaaap.cn/pick.zhiniaotec.com/images/bg2.png" alt="" border="0" usemap="#download2Map" id="download2" style="position:fixed;margin:0 auto;top:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
+<map name="download2Map" class="btnCilck"><area shape="rect" coords="496,7,716,88" href="javascript:;"></map>-->
+			</center>
+<script>
+
+    function getParameter(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)","i");
+        var r = location.search.substr(1).match(reg);
+        if (r!=null) return (r[2]); return null;
+    }
+    var c=getParameter("c");
+    console.log(c);
+
+
+	var Android="http://www.hongrenvv65.top/down+101.html?c="+c;//安卓下载链接
+	console.log(Android);
+		var Ios="";//ios下载链接
+
+		var btns = document.getElementsByClassName("btnCilck");
+		for(var i=0;i<btns.length;i++){
+		   btns[i].onclick=function () {
+               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Android;
+               }else {
+                   window.location.href =Android;
+               }
+           }
+		};
+</script>
+</body>
+</html>
