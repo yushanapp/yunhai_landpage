@@ -52,7 +52,7 @@
 		}
 		.mymargin2
 		{
-			margin-top: 130px;
+			/* margin-top: 130px; */
 		}
 		#mydiv{
 			width:100%;
@@ -84,7 +84,7 @@
 		}
 		#img_div2{
 			position: absolute;
-			top: 1160px;
+			top: 30%;
 			width: 100%;
 			cursor: pointer;
 			color: #000;
@@ -111,7 +111,7 @@
 		}
 		#img_div3{
 			position: absolute;
-			top: 3850px;
+			bottom: 4%;
 			width: 100%;
 			text-align: center;
 			color: #000;
@@ -249,6 +249,7 @@
 
 	function init()
 	{
+		$("#mydiv").append("<img style='width:100%;opacity:0;' src='http://cdn-huoshu.fire2333.com/landpages/pmrx/template/10225/img/1.jpg'/>");
 		for(var index in imageSrcArray){
 //			if(index == 5){
 //				var input = "<input type='text' readonly='readonly' id='inputbackground'>"
