@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <meta name="keywords" content="短视频拍摄制作App，全球上亿用户都在拍！最强视频剪辑，最in动画字幕和贴纸" />
+    <meta name="description" content="" />
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="app">
+    <title>小影</title>
+    <link rel="icon" href="https://hybrid.xiaoying.tv/web/GH/img/favicon.ico">
+	<link rel="stylesheet" href="https://hybrid.xiaoying.tv/web/vivaVideo/shenma/baidu.css"/>
+    <style>
+        .zhiniao {
+            position: absolute;
+            width: 70px;
+            left: 10px;
+            top: 10px;
+            z-index: 16;
+        }
+    </style>
+    <script>
+        //声明_czc对象:
+        var _czc = _czc || [];
+        //绑定siteid，请用您的siteid替换下方"XXXXXXXX"部分
+        _czc.push(["_setAccount", "1274388411"]);
+    </script>
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1274388411'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1274388411' type='text/javascript'%3E%3C/script%3E"));</script>
+    <script src="https://hybrid.xiaoying.tv/web/slidePlus/zepto.min.js"></script>
+</head>
+<body>
+<a href="https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/apk/XiaoYing_V7.6.0_3-shenma1-Domestic.apk" id="maintap">
+    <div class="main">
+        <img class="bg" id="test" src="https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/img/HUAWEIh5_01.png" alt=""/>
+        <div class="videoBox">
+            <img class="bg" id="cover" src="https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/img/HUAWEIh5_02.png" alt=""/>
+            <!--<img class="loading" src="https://hybrid.xiaoying.tv/web/vivaVideo/live/img/load.gif" alt=""/>-->
+        </div>
+        <img class="bg" src="https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/img/HUAWEIh5_03.png" alt=""/>
+        <img class="bg" src="https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/img/HUAWEIh5_04.png" alt=""/>
+        <img class="bg" src="https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/img/HUAWEIh5_05.png" alt=""/>
+        <img class="bg" src="https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/img/HUAWEIh5_06.png" alt=""/>
+        <img class="bg" src="https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/img/HUAWEIh5_07new.png" alt=""/>
+        <img class="bg" src="https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/img/HUAWEIh5_08.png" alt=""/>
+        <span class="btTxt">版权：北京智鸟科技有限公司版权所有</span>
+        <img class="zhiniao" src="https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/img/black_zhiniao.png"/>
+    </div>
+    <a id="download" onclick="_czc.push(['_trackEvent', '点击下载', '点击下载', '点击下载' + channel]);" href="https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/apk/XiaoYing_V7.6.0_3-shenma1-Domestic.apk">
+        <img class="download" src="https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/img/downloadnew.png" alt=""/>
+    </a>
+</a>
+<script>
+    var sUserAgent = navigator.userAgent.toLowerCase();
+    var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+    var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+    var bIsAndroid = sUserAgent.match(/android/i) == "android";
+    window.channel = 'common';
+    var bIsAndroidurl = ''
+    var bIsIphoneOsurl = ''
+    if(bIsIpad || bIsIphoneOs) {
+        if (window.location.href.indexOf('shenma=1') !== -1) {
+            window.channel = 1;
+            $('#download').attr('href', 'https://go.onelink.me/app/shenma1')
+            $('#maintap').attr('href', 'https://go.onelink.me/app/shenma1')
+            bIsIphoneOsurl = 'https://go.onelink.me/app/shenma1'
+        } else if (window.location.href.indexOf('shenma=2') !== -1) {
+            window.channel = 2;
+            $('#download').attr('href', 'https://go.onelink.me/app/shenma2')
+            $('#maintap').attr('href', 'https://go.onelink.me/app/shenma2')
+            bIsIphoneOsurl = 'https://go.onelink.me/app/shenma2'
+        } else if (window.location.href.indexOf('shenma=3') !== -1) {
+            window.channel = 3;
+            $('#download').attr('href', 'https://go.onelink.me/app/shenma3')
+            $('#maintap').attr('href', 'https://go.onelink.me/app/shenma3')
+            bIsIphoneOsurl = 'https://go.onelink.me/app/shenma3'
+        } else if (window.location.href.indexOf('shenma=4') !== -1) {
+            window.channel = 4;
+            $('#download').attr('href', 'https://go.onelink.me/app/shenma4')
+            $('#maintap').attr('href', 'https://go.onelink.me/app/shenma4')
+            bIsIphoneOsurl = 'https://go.onelink.me/app/shenma4'
+        } else if (window.location.href.indexOf('shenma=5') !== -1) {
+            window.channel = 5;
+            $('#download').attr('href', 'https://go.onelink.me/app/shenma5')
+            $('#maintap').attr('href', 'https://go.onelink.me/app/shenma5')
+            bIsIphoneOsurl = 'https://go.onelink.me/app/shenma5'
+        } else {
+			window.channel = 'other';
+            $('#download').attr('href', 'https://go.onelink.me/app/shenma1')
+            $('#maintap').attr('href', 'https://go.onelink.me/app/shenma1')
+            bIsIphoneOsurl = 'https://go.onelink.me/app/shenma1'
+        }
+    } else {
+        if (window.location.href.indexOf('shenma=1') !== -1) {
+            window.channel = 1;
+            $('#download').attr('href', 'https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/apk/XiaoYing_V7.7.5_2-shenma1-Domestic.apk')
+            $('#maintap').attr('href', 'https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/apk/XiaoYing_V7.7.5_2-shenma1-Domestic.apk')
+            bIsAndroidurl = 'https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/apk/XiaoYing_V7.7.5_2-shenma1-Domestic.apk'
+        } else if (window.location.href.indexOf('shenma=2') !== -1) {
+            window.channel = 2;
+            $('#download').attr('href', 'https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/apk/XiaoYing_V7.7.5_2-shenma2-Domestic.apk')
+            $('#maintap').attr('href', 'https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/apk/XiaoYing_V7.7.5_2-shenma2-Domestic.apk')
+            bIsAndroidurl = 'https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/apk/XiaoYing_V7.7.5_2-shenma2-Domestic.apk'
+        } else if (window.location.href.indexOf('shenma=3') !== -1) {
+            window.channel = 3;
+            $('#download').attr('href', 'https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/apk/XiaoYing_V7.7.5_2-shenma3-Domestic.apk')
+            $('#maintap').attr('href', 'https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/apk/XiaoYing_V7.7.5_2-shenma3-Domestic.apk')
+            bIsAndroidurl = 'https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/apk/XiaoYing_V7.7.5_2-shenma3-Domestic.apk'
+        } else if (window.location.href.indexOf('shenma=4') !== -1) {
+            window.channel = 4;
+            $('#download').attr('href', 'https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/apk/XiaoYing_V7.7.5_2-shenma4-Domestic.apk')
+            $('#maintap').attr('href', 'https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/apk/XiaoYing_V7.7.5_2-shenma4-Domestic.apk')
+            bIsAndroidurl = 'https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/apk/XiaoYing_V7.7.5_2-shenma4-Domestic.apk'
+        } else if (window.location.href.indexOf('shenma=5') !== -1) {
+            window.channel = 5;
+            $('#download').attr('href', 'https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/apk/XiaoYing_V7.7.5_2-shenma5-Domestic.apk')
+            $('#maintap').attr('href', 'https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/apk/XiaoYing_V7.7.5_2-shenma5-Domestic.apk')
+            bIsAndroidurl = 'https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/apk/XiaoYing_V7.7.5_2-shenma5-Domestic.apk'
+        } else {
+			window.channel = 'other';
+            $('#download').attr('href', 'https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/apk/XiaoYing_V7.7.5_2-shenma1-Domestic.apk')
+            $('#maintap').attr('href', 'https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/apk/XiaoYing_V7.7.5_2-shenma1-Domestic.apk')
+            bIsAndroidurl = 'https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/apk/XiaoYing_V7.7.5_2-shenma1-Domestic.apk'
+        }
+    }
+    $('#cover').tap(function() {
+        if($('#videoplaypart')[0]) {
+            return false
+        }
+        var videoelement = $('<video src="https://hybrid.xiaoying.tv/web/vivaVideo/HUAWEI/img/videoHUAWEI.mp4" id="videoplaypart" controls="true" x5-video-player-type="h5" webkit-playsinline playsinline x-webkit-airplay x5nativepanel class="videopart1"></video>');
+        $('.videoBox').append(videoelement);
+        $('#videoplaypart')[0].play();
+        //$('.cover_img,.loading_part').hide();
+        console.log('开始播放');
+        // video play 视频事件控制处理
+        /*监听视频时间变化事件*/
+        $('#videoplaypart')[0].addEventListener("ended", function() {
+            $("#videoplaypart").remove();
+        }, false);
+    });
+    window.onload = function() {
+        var height = $('.download').height();
+        $('.btTxt').attr('style', 'bottom: ' + (height + 5) + 'px');
+        if (bIsIpad || bIsIphoneOs) {
+            setTimeout(function() {
+                window.location.href = bIsIphoneOsurl;
+            }, 1000)
+        } else {
+            setTimeout(function() {
+                window.location.href = bIsAndroidurl;
+            }, 1000)
+        }
+    }
+</script>
+</body>
+</html>
