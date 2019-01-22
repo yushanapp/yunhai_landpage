@@ -1,0 +1,52 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>凯叔讲故事</title>
+	<meta name="viewport" content="width=device-width"> 
+ 	 <link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
+     <style>
+		.navImage img{
+			width:720px;
+			height:auto;
+			}
+			.navImage{
+			display:inline-block;
+			width:100%;			
+			}
+			body{
+			margin:0!important;
+			}
+     </style>
+</head>
+<body>
+			<center>
+				<div class="navImage">
+			    <img  src="http://cdn.xzwjuub.cn/ksjgsys.zjzhidao.top/2/images/bgx1.jpg" alt="navbar" usemap="#imgMap" id="img">
+                <!-- <map name="imgMap" class="btnCilck">
+                  <area shape="rect" coords="157,2581,565,2664" style="outline:none;" href="javascript:;">
+                </map> -->
+				</div> 
+			<img src="http://cdn.xzwjuub.cn/ksjgsys.zjzhidao.top/2/images/bgx2.png" alt="" border="0" usemap="#download2Map"  id="download2" style="position:fixed;margin:0 auto;bottom:0;left:0;right:0;width: 720px;" onClick="javascript:;" >
+                <map name="download2Map" class="btnCilck">
+              <area shape="rect" coords="356,20,705,93" href="javascript:;" style="outline:none;">
+              </map>
+</center>
+<script>
+
+		var Android="https://ksjgs.com/6NnEZb";//安卓下载链接
+		var Ios="";//ios下载链接
+
+		var btns = document.getElementsByClassName("btnCilck");
+		for(var i=0;i<btns.length;i++){
+		   btns[i].onclick=function () {
+               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Android;
+               }else {
+                   window.location.href =Android;
+               }
+           }
+		};
+</script>
+</body>
+</html>
