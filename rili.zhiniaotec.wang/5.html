@@ -1,0 +1,59 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>太白万年历</title>
+	<meta name="viewport" content="width=device-width"> 
+ 	 <link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
+     <style>
+		.navImage img{
+			width:720px;
+			height:auto;
+			}
+			.navImage{
+			display:inline-block;
+			width:100%;			
+			}
+			body{
+			margin:0!important;
+			}
+     </style>
+</head>
+<body>
+			<center>
+				<div class="navImage">
+				  <img id="img"  src="http://cdn.xzwjuub.cn/rili.zhiniaotec.wang/images/bg1.jpg" alt="navbar" usemap="#navImg">
+		    <map name="navImg" id="navImg" class="btnCilck">
+			  <!-- <area shape="rectangle" coords="172,471,543,605" onClick="javascript:;"/> -->
+			    <area shape="rect" coords="113,1264,607,1426" href="javascript:;" style="outline:none;">
+		    </map>
+				</div> 
+		<!--
+			<img src="http://cdn.lyplaaap.cn/yizhibo.myushan.com.cn/s2/images/bgnewt.png" alt="" name="download2" border="0" usemap="#download2Map" id="download2" style="position:fixed;margin:0 auto;top:0px;left:0;right:0;max-width: 720px;"  >
+<map name="download2Map">
+  <area shape="poly" coords="537,23,684,23,702,35,703,56,689,78,545,80,523,64,519,43" class="btnCilck" onClick="javascript:;">
+</map>
+
+			<img src="http://cdn.lyplaaap.cn/yizhibo.myushan.com.cn/s2/images/bgnewd.png" alt="" border="0" usemap="#download2Map2"   id="download2" style="position:fixed;margin:0 auto;bottom:0px;left:0;right:0;max-width: 720px;"    >
+           <map name="download2Map2">
+        <area shape="poly" coords="503,39,675,40,696,56,698,79,690,102,674,108,507,110,483,99,476,82,478,61,488,50,494,45"onClick="javascript:;" class="btnCilck">
+</map>-->
+</center>
+<script>
+      
+		var Android="http://app.2345.cn/daohang/wnl/wap/sc-yhsem_cpc_wl_5.apk";//安卓下载链接
+		var Ios="";//ios下载链接
+
+		var btns = document.getElementsByClassName("btnCilck");
+		for(var i=0;i<btns.length;i++){
+		   btns[i].onclick=function () {
+               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Android;
+               }else {
+                   window.location.href =Android;
+               }
+           }
+		};
+</script>
+</body>
+</html>
