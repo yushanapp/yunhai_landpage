@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title></title>
     <script>
         var _hmt = _hmt || [];
@@ -56,19 +56,25 @@
             right:0;
             left:0;
             bottom: 0;
+            z-index: 9;
         }
         .bottom_img2{
-            width: 33%;
-            position: absolute;
-            top:3%;
-            right: 3%;
-            z-index: 1;
-        }
-        .bottom_img3{
-            width: 30%;
+            width: 50%;
 		    position: absolute;
-		    bottom: 4%;
-		    right: 3%;
+		    top: 78%;
+		    right: 25%;
+		    z-index: 1;
+        }
+        @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3){
+		    .bottom_img2 {
+		        top: 66%;
+		    }
+		}
+        .bottom_img3{
+            width: 55%;
+		    position: absolute;
+		    bottom: 2%;
+		    right: 21%;
 		    z-index: 1;
         }
         .banben{
@@ -77,7 +83,7 @@
             font-size: 10px;
             position: absolute;
             bottom: 0;
-            color: #fff;
+            color: #000;
             z-index: 999;
             margin: 0;
         }
@@ -85,7 +91,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            width: 75px;
+            width: 60px;
             z-index: 9999;
         }
         .bottom_img4{
@@ -100,14 +106,14 @@
 <body>
 <div class="all">
     <div class="box">
-        <img class="header hei" src="http://test.myushan.com//logo/black_zhiniao.png" onclick="return false" alt="">
+		<img class="header hei" src="http://test.myushan.com//logo/black_zhiniao.png" onclick="return false" alt="">
         <img src="image/main_bg.jpg"/ class="main_img">
-        <!--<img src="image/main_bg2.jpg"/ class="main_img">-->
         <img src="image/anniu.png"/ class="bottom_img2" onclick="download();">
     </div>
-    <p class="fontsize banben">北京智鸟科技有限公司版权所有</p>
-    <img src="image/fuchuang.png"/ class="bottom_img1" onclick="download();">
-    <img src="image/xiazai.png"/ class="bottom_img3" onclick="download();">
+	<p class="fontsize banben">北京智鸟科技有限公司版权所有</p>
+	<img src="image/fuchuang.png"/ class="bottom_img1" onclick="download();">
+	
+	
 </div>
 <script>
     function download(){
