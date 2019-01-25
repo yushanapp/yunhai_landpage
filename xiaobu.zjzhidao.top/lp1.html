@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body,
+        html {
+            width: 100%;
+            position: relative;
+            margin: 0 auto;
+        }
+        
+        .box {
+            width: 100%;
+            position: relative;
+            overflow: auto;
+        }
+        
+        .box1 {
+            width: 100%;
+        }
+        
+        .logo {
+            width: 44px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 200;
+        }
+        
+        .page {
+            width: 100%;
+            display: block;
+        }
+        
+        .down {
+            width: 76%;
+            position: fixed;
+            bottom: 5.3%;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+        
+        .banben {
+            width: 100%;
+            position: absolute;
+            font-size: 12px;
+            text-align: center;
+            -webkit-transform: scale(0.6);
+            bottom: 0;
+        }
+        
+        .btn {
+            width: 100%;
+            position: fixed;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box1">
+            <img class="logo" src="http://test.myushan.com//logo/black_zhiniao.png" alt="">
+            <img src="http://test.myushan.com/0.48272569527972387.png" alt="" class="btn">
+            <img src="http://test.myushan.com/0.6305932949720356.jpg" alt="" class="page">
+            <img src="http://test.myushan.com/0.10543666801630525.jpg" alt="" class="page">
+            <img src="http://test.myushan.com/0.7586531778064585.jpg" alt="" class="page">
+            <img class="down" src="http://test.myushan.com/0.8520679459843294.png" alt="">
+            <div class="banben">北京智鸟科技有限公司版权所有</div>
+        </div>
+    </div>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./dl.min.js"></script>
+    <script src="//nlp.zntec.mobi/javascripts/yushan_rs_min.js"></script>
+    <script>
+        $(function() {
+
+
+            $('.down').click(function() {
+                window.location.href = btndown;
+                event.defaultPrevented
+            });
+            new _yushan.dl_info({
+                url: '',
+                dlbutton: ['.down']
+            });
+
+        })
+    </script>
+</body>
+
+</html>
