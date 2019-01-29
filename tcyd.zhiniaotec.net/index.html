@@ -128,6 +128,7 @@
         }
     </style>
     
+    <script src="http://pv.sohu.com/cityjson"></script>
 </head>
 <body style="background: #fff">
 <div class="all">
@@ -180,13 +181,22 @@
 	var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
 
 	if(isIOS == true){
-		APK_url="http://tdanba.cn/?app=3022020";
+		APK_url="http://182.92.237.157/20190124/ios_ts.html";
 	}
 	$(".btndow2").click(function(e){
+		var fromchannel="3022020";//渠道包号
+	var p_date={"ip_address":returnCitySN["cip"],"fromchannel":fromchannel};
+	 $.ajax({ 		
+		 type : "POST", 
+		 url : "http://as.yshizr.cn:9800/system/iosiprecord",
+		 data : p_date,
+		 success:function(msg){
+			//alert(JSON.stringify(msg)); 
+		 }
+	});
 		window.location.href=APK_url;
 	});
 	//setTimeout(function (){  window.location.href= APK_url;}, 3000)
 </script>
-
 </body>
 </html>
