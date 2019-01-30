@@ -156,35 +156,29 @@ $(function () {
             arr_num.push(i);
         }
 
-        var start = arr_num[0];
-        var end = arr_num[arr_num.length - 1];
-
-        tit_html += '<li><a href="javascript:;"><i id="s_t">' + start  + '</i>-<i id="e_t">' + end + '</i></a></li>';
-
-        for ( var i = 0; i <arr_num.length; i++){
-            con_html += '<a href="javascript:;" data-se="' + arr_num[i] + '">' + arr_num[i] + '</a>'
+        for (var i = 0; i < arr_num.length; i += s) {
+            // 修改 i+15  为i+1
+            result_num.push(arr_num.slice(i, i + 1));
+            console.log(result_num)
         }
+        ;
 
-        // for (var i = 0; i < arr_num.length; i += s) {
-        //     // 修改 i+15  为i+1
-        //     result_num.push(arr_num.slice(i, i + 1));
-        //     console.log(result_num)
-        // }
-        // ;
-
-        // $.each(result_num, function (i, o) {
-        //     tit_html += '<li><a href="javascript:;"><i id="s_t">' + o[0] + '</i>-<i id="e_t">' + o[o.length - 1] + '</i></a></li>';
-        //     $.each(o, function (j, k) {
-        //         con_html += '<a href="javascript:;" data-se="' + k + '">' + k + '</a>'
-        //     });
-        // });
+        $.each(result_num, function (i, o) {
+            tit_html += '<li><a href="javascript:;"><i id="s_t">' + o[0] + '</i>-<i id="e_t">' + o[o.length - 1] + '</i></a></li>';
+            $.each(o, function (j, k) {
+                con_html += '<a href="javascript:;" data-se="' + k + '">' + k + '</a>'
+            });
+        });
         $('#v_scrollBox .scroll_wrap').html(tit_html);
         $('#tab_num_item').html(con_html);
         $('#tab_item_new').html(con_html);
         $('#v_scrollBox .scroll_wrap li').eq(0).addClass('active');
         $('.item.tab_num_item a').eq(0).addClass('active');
 
-        if (t >= 20) {
+        if (2 < t && t < 4) {
+            $('#tab_item_new a').eq(t - 1).text('下载APP看最新集').addClass('last_one').removeAttr('data-se');
+            $('#tab_num_item a').eq(t - 1).text('下载APP看最新集').addClass('last_one').removeAttr('data-se');
+        } else if (t >= 4) {
 
             $('#tab_item_new a').eq(t - 2).text('下载APP看最新集').addClass('last_one').removeAttr('data-se').next().css('display', 'none');
             $('#tab_num_item a').eq(t - 2).text('下载APP看最新集').addClass('last_one').removeAttr('data-se').next().css({
@@ -269,15 +263,12 @@ function resetData() {
         classTag = 'IOS';
     }
     $('#js_an').attr('class', classTag);
-    $(document).on('click', '.js_btn, #js_an,.down_btn', function () {
-        window.location.href = siteData[osTag][0].url;
-    });
-    // $(document).on('click', '.js_btn,.ph_footer,#js_sure,#js_downBox,.down_btn, #v_scrollBox_mx .v_adver a,.last_one', function () {
+    // $(document).on('click', '.js_btn,.ph_footer,#js_sure,#js_downBox,.list_item a,.down_btn,.v_more a,#v_scrollBox_mx .v_adver a,.last_one', function () {
     //     window.location.href = siteData[osTag][0].url;
     // });
     $('#js_crossDowm i,.t_logo').css('background-image', 'url(' + siteData[osTag][0].icon + ')');
     $('.fo_left img,.down_logo').attr('src', siteData[osTag][0].icon);
-    // $('.loading').attr('src', siteData[osTag][0].gif);
+    $('.loading').attr('src', siteData[osTag][0].gif);
     $('.app_name').text(siteData[osTag][0].title);
 }
 

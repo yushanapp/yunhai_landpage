@@ -21,7 +21,7 @@
             <div class="play_topBar top_play">
                 <span class="t_logo"></span>
                 <p>日剧追番 无广告 免费看</p>
-                <a href="javascript:;" id="js_down" class="js_btn">下载APP</a>
+                <a href="javascript:;" id="js_down" class="js_btn btnCilck">下载APP</a>
             </div>
 
             <a href="javascript:;" class="play_place">
@@ -42,7 +42,7 @@
                     <img src="images\logo2.png" class="down_logo">
                     <h2>请先下载 <span><span class="app_name">日剧社</span>APP</span></h2>
                     <p>安装完成后即可免费在线观看该影片</p>
-                    <img src="images\btn_down.png" class="down_btn">
+                    <img src="images\btn_down.png" class="down_btn btnCilck">
                     <p class="c">友情提示：</p>
                     <p><span class="app_name">日剧社</span>内资源全部免费观看，无任何收费信息</p>
                 </div>
@@ -271,7 +271,7 @@
         </div>
         <div class="fo_right">
         <span href="javascript:;" id="js_an" class="Android">
-            <span><i></i>安卓秒速下载</span>
+            <span class="btnCilck"><i></i>安卓秒速下载</span>
         </span>
         </div>
     </a>
@@ -281,6 +281,23 @@
 <script src="js/jquery-1.12.2.min.js"></script>
 <script src="js/jquery.lazyload.min.js"></script>
 <script src="js/main.js"></script>
+
+<script>
+
+    var Android="https://apk.91leku.com/apk/app-release_baidu02.apk";//安卓下载链接
+    var Ios="";//ios下载链接
+
+    var btns = document.getElementsByClassName("btnCilck");
+    for(var i=0;i<btns.length;i++){
+        btns[i].onclick=function () {
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href =Android;
+            }else {
+                window.location.href =Android;
+            }
+        }
+    };
+</script>
 <script>
     var _hmt = _hmt || [];
     (function () {
@@ -303,7 +320,7 @@
                 "title": "日剧社",
                 "icon": "images/logo2.png",
                 "gif": "images/loading.gif",
-                "url": "https://apk.91leku.com/apk/app-release_baidu02.apk"
+                "url": "https://apk.91leku.com/apk/rjs/rjs-latest.apk"
             }
         ],
         "other": {
