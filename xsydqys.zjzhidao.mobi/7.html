@@ -1,48 +1,65 @@
-
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>全本小说阅读器</title>
-<meta name="viewport" content="width=device-width"> 
-<!--
+    <meta charset="UTF-8">
+    <title>全本小说阅读器</title>
+    <meta name="viewport" content="width=device-width">
+    <!--
  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" /> -->
-<style>
-.navImage img{
-width:720px;
-height:1200px;
-}
-.navImage{
-/* text-align:center; */
-display:inline-block
-/*margin-left:-8px!important; */
-width:100%;			
-}
-body{
-margin:0!important;
-}
-.navImage1 {/* text-align:center; */
-display:inline-block
-/*margin-left:-8px!important; */
-width:100%;			
-}
-</style></head>
+    <style>
+        .navImage img {
+            width: 720px;
+            height: 1200px;
+        }
+        
+        .navImage {
+            /* text-align:center; */
+            display: inline-block
+            /*margin-left:-8px!important; */
+            width: 100%;
+        }
+        
+        body {
+            margin: 0!important;
+        }
+        
+        .navImage1 {
+            /* text-align:center; */
+            display: inline-block
+            /*margin-left:-8px!important; */
+            width: 100%;
+        }
+        
+        #navImg {
+            width: 138%;
+            height: 22%;
+            position: absolute;
+            left: 29%;
+            /* right: 0; */
+            /* margin: 0 auto; */
+            bottom: -80%;
+            /* border: 1px solid black; */
+        }
+    </style>
+</head>
 
 <body>
-<center>
-<div class="navImage" ><span class="navImage1"><img id="img"  src="images/bg1.jpg" alt="navbar" usemap="#navImg"></span>
-  <map name="navImg" id="navImg">
+    <center>
+        <div class="navImage"><span class="navImage1"><img id="img"  src="images/bg1.jpg" alt="navbar" usemap="#navImg"></span>
+            <map name="navImg">
+                <div id="navImg"></div>
     <area shape="rectangle" coords="102,1013,610,1158" onClick="javascript:;"/>
     <area shape="poly" coords="300,34,393,35,408,119,475,132,593,206,602,331,125,332,113,270,133,200,299,126" onClick="javascript:;" />
     <!--<area shape="rectangle" coords="56,1897,661,2168" onClick="javascript:;" />
 -->
     </map>
-</div> 
-<!--<img src="images/bg3.png" style="position:fixed;margin:0 auto;bottom:30px;left:0;right:0;max-width: 750px;" alt=""  id="download2" onClick="javascript:;" > -->
-</center>
+        </div>
+        <!--<img src="images/bg3.png" style="position:fixed;margin:0 auto;bottom:30px;left:0;right:0;max-width: 750px;" alt=""  id="download2" onClick="javascript:;" > -->
+    </center>
 
 
-<!--
+    <!--
 <script>
 areaValue();
 var timeout = null;//onresize       
@@ -121,17 +138,18 @@ function adjustPoint(item){
 </script>
 
 -->
-<script>
- ;(function(){
-        document.getElementById("navImg").addEventListener("click", function(){
-            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                window.location.href ="http://uri6.com/tkio/nQraq2a";
-            }else {                 
-                window.location.href ="http://uri6.com/tkio/nQraq2a";
-            }
-        });
-    })();
-	/* ;(function(){
+    <script>
+        ;
+        (function() {
+            document.getElementById("navImg").addEventListener("click", function() {
+                if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                    window.location.href = "http://uri6.com/tkio/nQraq2a";
+                } else {
+                    window.location.href = "http://uri6.com/tkio/nQraq2a";
+                }
+            });
+        })();
+        /* ;(function(){
         document.getElementById("download2").addEventListener("click", function(){
             if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
                 window.location.href ="http://c.cdn.sohu.com/app/release/0fcd8c047dfad7ed077738c992489950.apk";
@@ -141,9 +159,9 @@ function adjustPoint(item){
         });
     })();
 */
-	
-</script>
+    </script>
 
 
 </body>
+
 </html>
