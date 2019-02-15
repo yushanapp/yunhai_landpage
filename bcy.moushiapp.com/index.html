@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="max-age=0" http-equiv="Cache-Control">
+    <meta content="240" name="MobileOptimized">
+    <meta content="YES" name="apple-touch-fullscreen">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+    <title>暴风影音</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="swiper.min.css">
+    <style>
+        .top {
+            position: relative;
+        }
+        
+        .topbtn {
+            position: absolute;
+            top: 62%;
+            left: 5%;
+            width: 90%;
+            height: 18%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="picBox" style="position: relative;">
+        <img src="http://test.myushan.com/logo/moushi.png" style="position: absolute;left: 0;top:0;width:20%;z-index:99">
+        <div class="top">
+            <img src="imgs/b2-1.jpg" onClick="javascript:;" alt="">
+            <div class="topbtn" id="download2">
+            </div>
+        </div>
+        <div class="swiper-container" style="padding:0 4%;background:#F6F6F6">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="imgs/b4-11.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgs/b4-22.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgs/b4-33.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgs/b4-44.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgs/b4-55.png" alt="">
+                </div>
+            </div>
+        </div>
+        <img src="imgs/b2-2.jpg" alt="">
+        <div class="copyRight">北京谋士网络科技有限公司</div>
+        <a href="javascript:;" class="Btn" id="download1" style="position: fixed;bottom: 0;max-width: 640px;z-index: 99">
+            <img src="imgs/b2-btn.png" alt="">
+        </a>
+    </div>
+    <script src="swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 2,
+            spaceBetween: 15
+        });
+
+        var _bat = _bat || [];
+        (function() {
+            var host = encodeURIComponent(location.host);
+            var ba = document.createElement("script");
+            ba.src = "//ba.bdp.cn/bdpxt.js?js_type=3&token=anh5OR0DOAwDWyA1J3d5AxIcJFkUDxNZaV04JyRcPjYmIQgCfnduagc2JzMFDVcNigAAAA==&host=" + host;
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(ba, s);
+        })();
+    </script>
+    <script>
+        var _bdpq = window._bdpq || [];
+        _bdpq.push(['_trackEvent', 'app', 'autodown', '暴风影音']);
+
+        /*
+        document.body.addEventListener("click", function(){
+            _bdpq.push(['_trackEvent','app','download','暴风影音']);
+            window.location.href ="http://yunying.xy599.com/BaofengAndroid-d71-release-0327.apk";
+
+        });
+*/
+
+        ;
+        (function() {
+            document.getElementById("download1").addEventListener("click", function() {
+                if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                    window.location.href = "http://yunying.xy599.com/BaofengAndroid-d71-release-0327.apk";
+                } else {
+                    window.location.href = "http://yunying.xy599.com/BaofengAndroid-d71-release-0327.apk";
+                }
+            });
+        })();;
+        (function() {
+            document.getElementById("download2").addEventListener("click", function() {
+                if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                    window.location.href = "http://yunying.xy599.com/BaofengAndroid-d71-release-0327.apk";
+                } else {
+                    window.location.href = "http://yunying.xy599.com/BaofengAndroid-d71-release-0327.apk";
+                }
+            });
+        })();
+    </script>
+</body>
+
+</html>
