@@ -1,0 +1,75 @@
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    width: 100%;
+    height: auto;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide img{
+    width: 100%;
+    height: auto;
+}
+.header{
+    height: auto;
+    width: 750px;
+    margin: 0 auto;
+    position: relative;
+}
+.lb{
+    position: absolute;
+    width: 86%;
+    left: 7%;
+    top:26.9%;
+    height: auto;
+    z-index: 999999;
+    margin-top: 39%;
+}
+.bj{
+    width: 100%;
+    height: auto;
+    z-index: 9999;
+}
+.btns{
+    position: absolute;
+    width: 54%;
+    height: 8%;
+    left: 23%;
+    top: 34%;
+    z-index: 9999;
+}
+.bottom_btn{
+    position: absolute;
+    width: 28%;
+    height: 62%;
+    left: 68%;
+    top: 19%;
+    z-index: 9999;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>贝乐虎儿歌</title>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+<div class="header">
+  <img src="images/bj.png" class="bj" alt="">
+  <div class="lb">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/bg1.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/bg2.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="position: fixed;bottom:40px;width: 100%;height: auto;max-width: 750px;z-index: 9999999">
+    <img src="images/btn.png" style="width: 100%;" alt="">
+    <div class="bottom_btn btnCilck">
+
+    </div>
+  </div>
+  <div class="btns btnCilck"></div>
+</div>
+
+
+  <!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container');
+  </script>
+<script>
+
+    var Android="http://res1.ubestkid.com/cp/xxlyh/beilehu_xxlyh1.apk";//安卓下载链接
+    var Ios="";//ios下载链接
+
+    var btns = document.getElementsByClassName("btnCilck");
+    for(var i=0;i<btns.length;i++){
+        btns[i].onclick=function () {
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href =Android;
+            }else {
+                window.location.href =Android;
+            }
+        }
+    };
+</script>
+</body>
+</html>
