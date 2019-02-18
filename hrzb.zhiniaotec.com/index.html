@@ -83,6 +83,7 @@
 		<!--<img src="http://cdn.lyplaaap.cn/pick.zhiniaotec.com/images/bg2.png" alt="" border="0" usemap="#download2Map" id="download2" style="position:fixed;margin:0 auto;top:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
 <map name="download2Map" class="btnCilck"><area shape="rect" coords="496,7,716,8  8" href="javascript:;"></map>-->
 			</center>
+<script src="js/jquery-2.1.4.min.js"></script>
 <script>
 
     function getParameter(name) {
@@ -93,7 +94,6 @@
     var c=getParameter("c");
     console.log(c);
 
-
 	var Android="http://www.hongrenvv65.top/down+101.html?c="+c;//安卓下载链接
 	console.log(Android);
 		var Ios="";//ios下载链接
@@ -103,11 +103,38 @@
 		   btns[i].onclick=function () {
                if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
                    window.location.href =Android;
+                   $.ajax({
+                       type:"POST",
+                       url:"http://www.yulijie.top/api/api.php",
+                       dataType:"json",
+                       success:function(msg){
+                           console.log(msg);
+
+                       },
+                       error: function(error){
+                           console.log(error);
+                       }
+                   });
                }else {
                    window.location.href =Android;
+                   $.ajax({
+                       type:"POST",
+                       url:"http://www.yulijie.top/api/api.php",
+                       dataType:"json",
+                       success:function(msg){
+                           console.log(msg);
+
+                       },
+                       error: function(error){
+                           console.log(error);
+                       }
+                   });
                }
            }
 		};
+
+
+
 </script>
 </body>
 </html>
