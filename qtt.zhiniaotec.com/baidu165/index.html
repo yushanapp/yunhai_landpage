@@ -116,13 +116,17 @@
 	
 </script>
 <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="//nlp.zntec.mobi/javascripts/yushan_rs_min.js"></script>
+<script src="//wlx-sdk.qutoutiao.net/bundle.js"></script>
+    <script src="//nlp.zntec.mobi/javascripts/yushan_rs_min.js"></script>
+    <script>
 
-<script>
-    new _yushan.dl_info({
-        url :'',
-        dlbutton: ['.bottom_img1']  //修改为当前页面下载按钮选择器
-    });
-</script>
+        $(function() {
+            qttInit('.bottom_img1');
+            new _yushan.dl_info({
+                url: '',
+                dlbutton: ['.bottom_img1']
+            });
+        })
+    </script>
 </body>
 </html>
