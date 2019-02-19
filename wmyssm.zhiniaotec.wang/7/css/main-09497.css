@@ -1,0 +1,107 @@
+@charset "utf-8";
+body{ background: url(../images/bg.jpg) no-repeat; background-size:100%; display:-webkit-flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:column wrap;flex-flow:column wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
+.imgs{ display: block; width: 60%; margin: 10% auto;}
+.person{ width: 90%; margin: 2% auto;}
+.footer{ position: fixed; left: 0; bottom: 10%; right: 0;}
+.btn{ width: 35%; margin: 0 auto; animation:light infinite 1s;-webkit-animation:light infinite 1s; opacity: .8;}
+@keyframes light {
+	50%{-webkit-transform:scale(1.1);transform:scale(1.1); opacity: 1;}
+}
+@-webkit-keyframes light {
+	50%{-webkit-transform:scale(1.1); opacity: 1;}
+}
+.compay{ font-size: 12px; text-align: center; color: #fff; padding: 10px 0;}
+@media all and (min-height:560px){
+	.person{ width: 92%; margin: 10% auto;}
+}@charset "utf-8";
+html,body{
+	width:100%;
+	min-height:100%;
+}
+body{
+	margin:0; 
+	padding:0;
+	font-size:16px;
+	font-family:"Microsoft yahei";
+}
+p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,input,img,select{
+	margin:0;
+	padding:0;
+	list-style:none;
+	border:0; outline:none;
+}
+a{
+	text-decoration:none;
+	cursor:default;
+}
+table{
+	border-collapse:
+	collapse;border-spacing: 0;
+}
+.shadow{
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+:focus {
+	outline:0;
+}
+
+*{
+	tap-highlight-color: rgba(0,0,0,0);
+}
+
+.re_trg, .le_trg, .top_trg,.bot_trg{
+	display:inline-block;
+	width:9px;
+	height:9px;
+	border-right:2px solid #555;
+	border-bottom:2px solid #555;
+	-webkit-transform:rotate(-45deg);
+	        transform:rotate(-45deg);
+}
+.le_trg{
+	width:9px;
+	height:9px;
+	-webkit-transform:rotate(135deg);
+	        transform:rotate(135deg);
+}
+.bot_trg{
+	-webkit-transform:rotate(45deg);
+	        transform:rotate(45deg);
+	margin:3px 4px;
+}
+.top_trg{
+	-webkit-transform:rotate(-135deg);
+	        transform:rotate(-135deg);
+	margin: -2px 4px;
+}
+
+.box-sizing{
+	box-sizing:border-box;
+}
+.dis-v{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	box-orient:vertical;
+}
+.dis-box{
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+}
+.dis-flex{
+	box-flex:1;
+}
+.dis-center{
+	box-sizing:border-box;
+	display:-webkit-box;
+	display:-ms-flexbox;
+	display:flex;
+	box-pack:center;
+	box-align:center;
+}
+.f_left{ float:left;}
+.f_right{ float:right;}
+.center{ text-align:center;}
+.font14{ font-size:14px;}
+.font12{ font-size:12px;}
