@@ -32,9 +32,17 @@
 -->
 
 </center>
+<script src="js/jquery-2.1.4.min.js"></script>
 <script>
+    function getParameter(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)","i");
+        var r = location.search.substr(1).match(reg);
+        if (r!=null) return (r[2]); return null;
+    }
+    var app=getParameter("app");
+    console.log(app);
 
-		var Android="https://yuehui1.cn/market/3062101.apk";//安卓下载链接
+		var Android="https://yuehui1.cn/market/"+app+".apk";//安卓下载链接
 		var Ios="";//ios下载链接
 
 		var btns = document.getElementsByClassName("btnCilck");

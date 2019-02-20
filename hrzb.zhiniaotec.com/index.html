@@ -103,32 +103,8 @@
 		   btns[i].onclick=function () {
                if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
                    window.location.href =Android;
-                   $.ajax({
-                       type:"POST",
-                       url:"http://www.yulijie.top/api/api.php",
-                       dataType:"json",
-                       success:function(msg){
-                           console.log(msg);
-
-                       },
-                       error: function(error){
-                           console.log(error);
-                       }
-                   });
                }else {
                    window.location.href =Android;
-                   $.ajax({
-                       type:"POST",
-                       url:"http://www.yulijie.top/api/api.php",
-                       dataType:"json",
-                       success:function(msg){
-                           console.log(msg);
-
-                       },
-                       error: function(error){
-                           console.log(error);
-                       }
-                   });
                }
            }
 		};
