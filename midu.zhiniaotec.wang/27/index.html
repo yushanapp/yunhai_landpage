@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title></title>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?131fe85659bd748966a3ef20f0d50ede";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <style>
+        fieldset,
+        img {
+            border: 0;
+            vertical-align: middle
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+            outline: none
+        }
+
+        li {
+            list-style: none
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: 100%;
+            font-weight: normal
+        }
+
+        input,
+        button,
+        textarea,
+        select,
+        optgroup,
+        option {
+            font-family: inherit;
+            font-size: inherit;
+            font-style: inherit;
+            font-weight: inherit
+        }
+
+        input,
+        button,
+        textarea,
+        select {
+            *font-size: 100%
+        }
+
+        /************************rewrite******************************************/
+
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            min-width: 320px;
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+
+        .all {
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+            /*position: relative;*/
+        }
+
+        .box {
+            width: 100%;
+            height: 98%;
+            position: relative;
+            /*padding-bottom: 15%;*/
+            overflow-y: scroll;
+        }
+
+        .main_img {
+            width: 100%;
+            /* height: 100%; */
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        .bottom_img1 {
+            width: 100%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+        }
+
+        .img_top {
+            position: relative;
+        }
+
+        .bottom_img2 {
+            width: 33%;
+            position: absolute;
+            top: 3%;
+            right: 3%;
+            z-index: 1;
+        }
+
+        .bottom_img3 {
+            width: 33%;
+            position: absolute;
+            bottom: 4%;
+            right: 2%;
+            z-index: 1;
+        }
+
+        .banben {
+            width: 100%;
+            text-align: center;
+            font-size: 10px;
+            position: absolute;
+            bottom: 0;
+            color: #000;
+            z-index: 999;
+            margin: 0;
+        }
+
+        .header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50px;
+            z-index: 9999;
+        }
+
+        .bottom_img4 {
+            position: absolute;
+            z-index: 99;
+            bottom: 3%;
+            width: 64%;
+            left: 18%;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="all">
+        <div class="box">
+            <img class="header hei" src="http://test.myushan.com//logo/black_zhiniao.png" onclick="return false" alt="">
+            <div class="img_top">
+                <img src="image/main_bg1.jpg" class="main_img" />
+                <img src="image/anniu.png" / class="bottom_img2" onclick="download();">
+            </div>
+           
+       
+        </div>
+        <p class="fontsize banben">北京智鸟科技有限公司版权所有</p>
+        <img src="image/xiazai.png" class="bottom_img3" onclick="download();" />
+        <!-- <img src="image/anniu.png"/ class="bottom_img2" onclick="download();"> -->
+        <img src="image/fuchuang.png" / class="bottom_img1" onclick="download();">
+
+    </div>
+    <script>
+        function download() {
+            window.location.href = "https://img.ddrhhh.com/browser/apk/midu_android_baidu27.apk";
+        }
+
+    </script>
+</body>
+
+</html>
