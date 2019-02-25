@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>我在V聊等你 高颜值一对一视频聊天</title>
+    <style type="text/css">
+        html, body, ul, ol, li, dl, dt, dd, p, h1, h2, h3, h4, h5, h6, a, img, th, td, form, fieldset, iframe, object, pre, code, legend, blockquote { border:0 none; margin:0; outline:0 none; padding:0; list-style-type:none; }
+        body { font-size:1rem; color:#282828; font-family:"Microsoft yahei"; background-color: #FFFFFF; /*line-height: 1.2rem; height:50%;*/    }
+        body {background-image:url('./image/zt/bg.jpg');background-size:100%;}
+        .downLoadApp {margin: 0 auto;text-align:center;}
+        h1 {font:bold 30px/40px arial;}
+        h2 {font:bold 20px/30px arial;}
+        h3 {font:normal 18px/26px arial;}
+        .down2 {width:200px;}
+        @media only screen and (max-width:750px) {
+            .logo {width:1.3rem;}
+            .btn1 {width:3.8rem;}
+            h1 {font:bold 1.8rem/2rem arial;}
+            h2 {font:bold 1.08rem/3rem arial;}
+            h3 {font:normal 1rem/2rem arial;}
+            .down2 {width:9rem;}
+            body {min-height:600px; }
+            .downLoadApp1 {height:4rem;vertical-align:middle;}
+        }
+        @media only screen and (max-width:500px) {
+            .logo {width:2.3rem;vertical-align: middle;}
+            .btn1 {width:4.8rem;vertical-align: middle;}
+            h1 {font:bold 1.5rem/1.9rem arial;}
+            h2 {font:bold 0.7rem/1.8rem arial;}
+            h3 {font:normal 1rem/1.8rem arial;}
+            .down2 {width:9rem;}
+            body {min-height:500px; }
+            td {line-height:4rem;}
+        }
+		.banben{
+            width:100%;
+            color:#fff;
+            position: absolute;
+            text-align: center;
+            font-size: .4rem;
+            -webkit-transform: scale(0.7);
+        }
+
+        h1,h2,h3{color:#fff;}
+
+    </style>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <style type="text/css">
+        /*img{max-width: 100%;height: auto;width: auto\9;} */
+    </style>
+</head>
+<body>
+<img style="position: absolute;left:0%;top:0%;width:30px;z-index:10;" class="hei" src="http://test.myushan.com//yushan/logo_black.png">
+<div class="content" id="app" data-clipboard-text="MwMSwid-19-evycJhzaYtWxpZCI6MTl9">
+    <div class="header" id="header" style="" >
+        <ul>
+            <li class=" downLoadApp1">
+                <table border="0" align="center" cellpadding="0" cellspacing="0" width="80%">
+                    <tr>
+                        <td align="center" valign="middle"><img src="./image/vchat_2017/logo.png" class="logo" /></td>
+                        <td align="center" valign="middle"><h2>V聊 高颜值1对1视频聊天</h2></td>
+                        <td align="center" valign="middle"><img src="./image/zt/btn1.png" class="btn1 downLoadApp" /></td>
+                    </tr>
+                </table>
+            </li>
+            <li class="">
+                <div  style="position:relative;margin:0 auto;text-align:center;">
+                    <video src="./video/vchat_tg_7.0.mp4" controls width="72%" id="cideoPlay"
+                           poster="./image/2017/video3.jpg">
+                        <source type="video/mp4">
+                        浏览器不支持mp4.
+                    </video>
+                </div>
+            </li>
+
+            <li class="" style="margin:0 auto;text-align:center;margin-top:1rem;">
+                <ul>
+                    <li><h1>高颜值 高素质 高效率</h1></li>
+                    <li><h3>网红 校花 模特 主播</h3></li>
+                    <li><h3>高端美女 尽在V聊</h3></li>
+                    <li><img src="./image/zt/btn2.png" class="down2 downLoadApp" /></li>
+                    <li style="font-size: 8px;color:#fff">
+                        <div class="banben down">
+                            北京智投智道投资咨询有限公司版权所有
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="./js/clipboard.min.js"></script>
+<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+<!--<script type="text/javascript" src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>-->
+<script type="text/javascript">
+    $(document).ready(function(){
+        var clipboard = new ClipboardJS('#app');
+        clipboard.on('success', function(e) {
+            console.log(e);
+        });
+        clipboard.on('error', function(e) {
+            console.log(e);
+        });
+
+        //var video1 = $("#cideoPlay");
+        $("#cideoPlay").click(function(){
+            if(this.paused){
+                this.play();
+            }else{
+                this.pause();
+            }
+        });
+
+        function isAndroid(){
+            var os = new Array("Android");
+            var info = navigator.userAgent;
+            var len = os.length;
+            for (var i = 0; i < len; i++) {
+                if (info.indexOf(os[i]) > 0){
+                    return true;
+                }
+            }
+            return false;
+        }
+        function isIOS(){
+            var os = new Array("iPhone","iPad","iPod");
+            var info = navigator.userAgent;
+            var len = os.length;
+            for (var i = 0; i < len; i++) {
+                if (info.indexOf(os[i]) > 0){
+                    return true;
+                }
+            }
+            return false;
+        }
+        function isWeixin(){
+            var os = new Array("MicroMessenger");
+            var info = navigator.userAgent;
+            var len = os.length;
+            for (var i = 0; i < len; i++) {
+                if (info.indexOf(os[i]) > 0){
+                    return true;
+                }
+            }
+            return false;
+        }
+        function setDownloadUrl() {
+            var url = 'http://cdn.vliao1.xyz/prod/apk/tg/vchat_xb.apk';
+            if (isIOS()) {
+                if (isWeixin()) {
+                    url = 'https://ios.vliao99.com/ios/index.html';
+                } else {
+                    url = 'https://ios.vliao99.com/ios/index.html';
+                }
+            } else {
+                if (isWeixin()) {
+                    url = 'http://a.app.qq.com/o/simple.jsp?pkgname=com.vliao.vchat';
+                }
+            }
+            return url;
+        }
+
+        var url = setDownloadUrl();
+        $(".downLoadApp").attr("href",url);
+        $(".downLoadApp").click(function(){
+            window.location.href = url;
+//        if( confirm("下载V聊APP开始和她私密视频聊天？") ){
+//            window.location.href = url;
+//        }
+        });
+    });
+    /*
+    function fixDown(boxId){
+        var box = document.getElementById(boxId);
+        var cn = box.className;
+        var bh=box.offsetTop;
+        var wh=document.documentElement.clientHeight;//这里为了兼容IE，所以不能用window.innerHeight;
+        if(bh >= wh){
+        box.className = cn + " fixed-bottom";
+        }else{
+            box.className = cn;
+            }
+    }*/
+    //window.onload=function(){fixDown("bb");}
+    //window.onresize=function(){fixDown("bb");}
+</script>
+<script type="text/javascript">
+    // 音乐播放
+    function autoPlayMusic() {
+        // 自动播放音乐效果，解决浏览器或者APP自动播放问题
+        function musicInBrowserHandler() {
+            musicPlay(true);
+            document.body.removeEventListener('touchstart', musicInBrowserHandler);
+        }
+        document.body.addEventListener('touchstart', musicInBrowserHandler);
+
+        // 自动播放音乐效果，解决微信自动播放问题
+        function musicInWeixinHandler() {
+            musicPlay(true);
+            document.addEventListener("WeixinJSBridgeReady", function () {
+                musicPlay(true);
+            }, false);
+            document.removeEventListener('DOMContentLoaded', musicInWeixinHandler);
+        }
+        document.addEventListener('DOMContentLoaded', musicInWeixinHandler);
+    }
+    function musicPlay(isPlay) {
+        var audio = document.getElementById('cideoPlay');
+        if (isPlay && audio.paused) {
+            audio.play();
+        }
+        if (!isPlay && !audio.paused) {
+            audio.pause();
+        }
+    }
+    autoPlayMusic();
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?75363fcfb47dac9aa5ed050dd01ebb85";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</html>

@@ -1,0 +1,40 @@
+落地页统计要求
+
+一、变量1：&c4=BD41；apk下载地址：
+http://cdn.vliao1.xyz/prod/apk/tg/BD41.apk
+http://cdn.vliao1.xyz/prod/apk/tg/BD42.apk
+http://cdn.vliao1.xyz/prod/apk/tg/BD43.apk
+http://cdn.vliao1.xyz/prod/apk/tg/BD44.apk
+http://cdn.vliao1.xyz/prod/apk/tg/BD45.apk
+http://cdn.vliao1.xyz/prod/apk/tg/BD46.apk
+http://cdn.vliao1.xyz/prod/apk/tg/BD47.apk
+http://cdn.vliao1.xyz/prod/apk/tg/BD48.apk
+http://cdn.vliao1.xyz/prod/apk/tg/BD49.apk
+http://cdn.vliao1.xyz/prod/apk/tg/BD50.apk
+
+
+
+二、变量2：&id=40；渠道id统计
+<script type="text/javascript" src="http://code.vliao99.com/tg/top2?id=41"></script>
+<script type="text/javascript" src="http://code.vliao99.com/tg/top2?id=42"></script>
+<script type="text/javascript" src="http://code.vliao99.com/tg/top2?id=43"></script>
+<script type="text/javascript" src="http://code.vliao99.com/tg/top2?id=44"></script>
+<script type="text/javascript" src="http://code.vliao99.com/tg/top2?id=45"></script>
+<script type="text/javascript" src="http://code.vliao99.com/tg/top2?id=46"></script>
+<script type="text/javascript" src="http://code.vliao99.com/tg/top2?id=47"></script>
+<script type="text/javascript" src="http://code.vliao99.com/tg/top2?id=48"></script>
+<script type="text/javascript" src="http://code.vliao99.com/tg/top2?id=49"></script>
+<script type="text/javascript" src="http://code.vliao99.com/tg/top2?id=50"></script>
+
+
+
+三、统计代码
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?75363fcfb47dac9aa5ed050dd01ebb85";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
