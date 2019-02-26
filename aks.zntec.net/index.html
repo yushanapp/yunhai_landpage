@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title></title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body,html{
+            position: relative;
+            width:100%;
+            height:100%;
+            min-width: 320px;
+            max-width: 840px;
+            margin:0 auto;
+        }
+        .header{
+            position: absolute;
+            top:0;
+            left:0;
+            width: 40px;
+            z-index: 9999;
+
+        }
+        .box{
+            width:100%;
+            height:100%;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        .box1 {
+            width:100%;
+            position: relative;
+        }
+        .header_title {
+            top: 2%;
+            width: 39%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        .car_img{
+            width:100%;
+            height:100%;
+            display: block;
+        }
+        .fontsize{
+            width:100%;
+            text-align: center;
+            font-size: 12px;
+            position: fixed;
+            bottom: 0;
+            color: black;
+            -webkit-transform: scale(0.6);
+            z-index: 2001;
+        }
+        .bottom{
+            width:100%;
+            position: absolute;
+            right:0;
+            left:0;
+            bottom: 0;
+        }
+        .btn_down1 {
+            width: 24%;
+            position: absolute;
+            bottom: 1.9%;
+            right: 4%;
+            height: 7%;
+            /* border: 1px solid red; */
+            /* margin: 0 auto; */
+            z-index: 2002;
+            /* -webkit-animation: slipUp 1s linear infinite alternate; */
+        }
+        .btn{
+            position: absolute;
+            width: 85%;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            top: 23%;
+
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="box1">
+        <img class="car_img down" src="./img/bg.jpg" onclick="return false" alt=""/>
+        <img class="btn" src="./img/btn.png" alt="">
+        <p class="fontsize banben">北京智鸟科技有限公司版权所有</p>
+    </div>
+</div>
+<div class="btn_down1" onclick="return false" alt=""></div>
+<img class="bottom" src="./img/btm.jpg" onclick="return false" alt=""/>
+
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script>
+    var data = {
+        '14363':'https://ks3-cn-beijing.ksyun.com/cxb/apk/14363.apk',
+        '14364':'https://ks3-cn-beijing.ksyun.com/cxb/apk/14364.apk',
+        '14365':'https://ks3-cn-beijing.ksyun.com/cxb/apk/14365.apk',
+        '14366':'https://ks3-cn-beijing.ksyun.com/cxb/apk/14366.apk',
+        '14367':'https://ks3-cn-beijing.ksyun.com/cxb/apk/14367.apk',
+        '14368':'https://ks3-cn-beijing.ksyun.com/cxb/apk/14368.apk',
+        '14369':'https://ks3-cn-beijing.ksyun.com/cxb/apk/14369.apk',
+        '14370':'https://ks3-cn-beijing.ksyun.com/cxb/apk/14370.apk',
+        '14371':'https://ks3-cn-beijing.ksyun.com/cxb/apk/14371.apk',
+        '14372':'https://ks3-cn-beijing.ksyun.com/cxb/apk/14372.apk',
+
+
+
+    }
+    function _getQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) {
+            return r[2]
+        }
+        return null
+    };
+    var c4 = _getQueryString('c4');
+    console.log(_getQueryString('c4'))
+    var btndown = data[c4]||'https://ks3-cn-beijing.ksyun.com/cxb/apk/14363.apk';
+    $('.btn,.btn_down1').click(function () {
+        window.location.href=btndown;
+    });
+
+</script>
+</body>
+</html>
