@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title></title>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?131fe85659bd748966a3ef20f0d50ede";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <style>
+        fieldset,img{border:0}
+        a{text-decoration:none;color:#000;outline:none}
+        li{list-style:none}
+        h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+        input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
+        input,button,textarea,select{*font-size:100%}
+        /************************rewrite******************************************/
+        html,body{
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height:100%;
+            position: relative;
+            min-width: 320px;
+            max-width: 1024px;
+            margin:0 auto;
+        }
+        .all{
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            -webkit-overflow-scrolling : touch;
+            /*position: relative;*/
+        }
+        .box {
+            width:100%;
+            /*height: 98%;*/
+            position: relative;
+            padding-bottom: 20%;
+            overflow-y: scroll;
+        }
+        .main_img{
+            width: 100%;
+            height:605px;
+            margin:0;
+            padding:0;
+        }
+        .bottom_img1{
+            width: 100%;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        .bottom_img2{
+            width: 33%;
+            position: absolute;
+            top:1%;
+            right: 3%;
+            z-index: 1;
+        }
+        .bottom_img3{
+            width: 30%;
+            position: absolute;
+            bottom: 3%;
+            right: 5%;
+            z-index: 1;
+        }
+        .banben{
+            width: 100%;
+            text-align: center;
+            font-size: 10px;
+            position: absolute;
+            bottom: 0.2%;
+            color: #000;
+            z-index: 999;
+            margin: 0;
+        }
+        .header{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 75px;
+            z-index: 9999;
+        }
+        .bottom_img4{
+            position: absolute;
+            z-index: 99;
+            bottom: 3%;
+            width: 64%;
+            left: 18%;
+        }
+        .one_btn{
+            position: relative;
+            height: 680px;
+            margin-bottom: 10%;
+        }
+        .one_btn .xiazai_btn{
+            width: 60%;
+            position: absolute;
+            top: 200px;
+            left: 20%;
+        }
+        .btn_input{
+            position: absolute;
+            top: 130px;
+            width: 90%;
+            left: 5%;
+        }
+        .xiazai_btn2{
+            width: 60%;
+            position: absolute;
+            bottom: 0px;
+            left: 20%;
+        }
+        .clearfix::after {
+            content: '';
+            display:block;
+            clear:both;
+            
+        }
+        .some_small{
+            width:100%;
+            background: #fff;
+        }
+        .some_small ul{
+            list-style: none;
+            margin:0;
+            padding: 0;
+            width:80%;
+            margin-left: 10%;
+        }
+        .some_small ul li{
+            list-style: none;
+            width:30%;
+            float: left;
+            margin-left: 4%;
+            margin-bottom: 15px;
+            height:145px;
+        }
+        .some_small .f_img{
+            width: 100%;
+            height: 115px;
+        }
+        .book_name{
+            font-size:12px;
+            text-align: center;
+        }
+        .tangkuang2{
+            position: absolute;
+            top: 20%;
+            left: 15%;
+            z-index: 99999;
+            width: 70%;
+            height: 45%;
+            background: #FFFFFF;
+            border-radius: 15px;
+            display: none;
+        }
+        .modal_bg{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+            display: none;
+        }
+        .modal_bg img{
+            width: 100%;
+            height: 100%;
+            
+        }
+        .modal_content{
+            display: none;
+        }
+        .modal_content img{
+            width: 35%;
+            margin-left: 32.5%;
+            margin-top: 10%;
+            
+        }
+        .modal_content div{
+            width: 100%;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .nromal_words{
+            margin-top: 10px;
+            text-align: center;
+            font-size: 15px;
+            width: 100%;
+        }
+        .tk3_img{
+            width: 10%;
+            position: absolute;
+            bottom: 4%;
+            left: 43%;
+        }
+        .tk5_img{
+            top: 83%;
+            position: absolute;
+            left: 22.5%;
+            width: 55%;
+        }
+    </style>
+</head>
+<body>
+<div class="all">
+    <div class="box">
+        <img class="header hei" src="http://test.myushan.com//logo/black_zhiniao.png" onclick="return false" alt="">
+        <div class="one_btn">
+            <img src="image/main_bg.jpg" class="main_img" />
+            <img src="image/input.png" alt="" class="btn_input" onclick="download();"/>
+            <img src="image/anniu1.png" alt="" class="xiazai_btn" onclick="download();"/>
+            <img src="image/anniu2.png" alt="" class="xiazai_btn2" onclick="download();"/>
+        </div>
+        <div class="some_small">
+            <ul class="clearfix">
+                <li style="margin-left:0">
+                    <img src="image/f_img1.png" alt="" class="f_img f_img1" />
+                    <div class="book_name">我的冰山美女老婆</div>
+                </li>
+                <li>
+                    <img src="image/f_img2.png" alt="" class="f_img f_img2" />
+                    <div class="book_name">算死命</div>
+                </li>
+                <li>
+                    <img src="image/f_img3.png" alt="" class="f_img f_img3" />
+                    <div class="book_name">斗罗大陆</div>
+                </li>
+                <li style="margin-left:0">
+                    <img src="image/f_img4.png" alt="" class="f_img f_img4" />
+                    <div class="book_name">一世兵王</div>
+                </li>
+                <li>
+                    <img src="image/f_img5.png" alt="" class="f_img f_img5" />
+                    <div class="book_name">鬼吹灯</div>
+                </li>
+                <li>
+                    <img src="image/f_img6.png" alt="" class="f_img f_img6" />
+                    <div class="book_name">妙医神手</div>
+                </li>
+                <li style="margin-left:0">
+                    <img src="image/f_img7.png" alt="" class="f_img f_img7" />
+                    <div class="book_name">修罗武神</div>
+                </li>
+                <li>
+                    <img src="image/f_img8.png" alt="" class="f_img f_img8" />
+                    <div class="book_name">狐嫁女</div>
+                </li>
+                <li>
+                    <img src="image/f_img9.png" alt="" class="f_img f_img9" />
+                    <div class="book_name">知否知否</div>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+    <p class="fontsize banben">北京智鸟科技有限公司版权所有</p>
+    <img src="image/fuchuang.png"/ class="bottom_img1" onclick="download();">
+    <div class="modal_bg">
+        <img src="image/modal_bg.png" alt="" />     
+    </div>
+    <div class="tangkuang2" >
+        <div class="modal_content0 modal_content">
+            <img src="image/f_img1.png" alt="" />
+            <div>我的冰山美女老婆</div>
+        </div>
+        <div class="modal_content1 modal_content">
+            <img src="image/f_img2.png" alt="" />
+            <div>算死命</div>
+        </div>
+        <div class="modal_content2 modal_content">
+            <img src="image/f_img3.png" alt="" />
+            <div>斗罗大陆</div>
+        </div>
+        <div class="modal_content3 modal_content">
+            <img src="image/f_img4.png" alt="" />
+            <div>一世兵王</div>
+        </div>
+        <div class="modal_content4 modal_content">
+            <img src="image/f_img5.png" alt="" />
+            <div>鬼吹灯</div>
+        </div>
+        <div class="modal_content5 modal_content">
+            <img src="image/f_img6.png" alt="" />
+            <div>妙医神手</div>
+        </div>
+        <div class="modal_content6 modal_content">
+            <img src="image/f_img7.png" alt="" />
+            <div>修罗武神</div>
+        </div>
+        <div class="modal_content7 modal_content">
+            <img src="image/f_img8.png" alt="" />
+            <div>好色小姨</div>
+        </div>
+        <div class="modal_content8 modal_content">
+            <img src="image/f_img9.png" alt="" />
+            <div>知否知否</div>
+        </div>
+        <div class="nromal_words">立即下载米读小说APP</div>
+        <div class="nromal_words">查看更多精彩内容</div>
+        <img src="image/modal_btn.png" alt="" class="tk5_img" onclick="download();"/>
+        <img src="image/modal_close.png" alt="" class="tk3_img modal2_close" style="bottom: -13%;"/>
+    </div> 
+</div>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script>
+    function download(){
+        window.location.href = "https://img.ddrhhh.com/browser/apk/midu_android_baidu16.apk";
+    }
+    
+    $(".f_img1").click(function(){
+        $(".tangkuang2").css("display","block");
+        $('.modal_content').css("display",'none');
+        $('.modal_content0').css("display",'block');
+        $(".modal_bg").css("display","block");
+    })
+    $(".f_img2").click(function(){
+        $(".tangkuang2").css("display","block");
+        $('.modal_content').css("display",'none');
+        $('.modal_content1').css("display",'block');
+        $(".modal_bg").css("display","block");
+    })
+    $(".f_img3").click(function(){
+        $(".tangkuang2").css("display","block");
+        $('.modal_content').css("display",'none');
+        $('.modal_content2').css("display",'block');
+        $(".modal_bg").css("display","block");
+    })
+    $(".f_img4").click(function(){
+        $(".tangkuang2").css("display","block");
+        $('.modal_content').css("display",'none');
+        $('.modal_content3').css("display",'block');
+        $(".modal_bg").css("display","block");
+    })
+    $(".f_img5").click(function(){
+        $(".tangkuang2").css("display","block");
+        $('.modal_content').css("display",'none');
+        $('.modal_content4').css("display",'block');
+        $(".modal_bg").css("display","block");
+    })
+    $(".f_img6").click(function(){
+        $(".tangkuang2").css("display","block");
+        $('.modal_content').css("display",'none');
+        $('.modal_content5').css("display",'block');
+        $(".modal_bg").css("display","block");
+    })
+    $(".f_img7").click(function(){
+        $(".tangkuang2").css("display","block");
+        $('.modal_content').css("display",'none');
+        $('.modal_content6').css("display",'block');
+        $(".modal_bg").css("display","block");
+    })
+    $(".f_img8").click(function(){
+        $(".tangkuang2").css("display","block");
+        $('.modal_content').css("display",'none');
+        $('.modal_content7').css("display",'block');
+        $(".modal_bg").css("display","block");
+    })
+    $(".f_img9").click(function(){
+        $(".tangkuang2").css("display","block");
+        $('.modal_content').css("display",'none');
+        $('.modal_content8').css("display",'block');
+        $(".modal_bg").css("display","block");
+    })
+    $(".modal2_close").click(function(){
+        $(".modal_bg").css("display","none");
+        $(".tangkuang2").css("display","none");
+    })
+</script>
+</body>
+</html>

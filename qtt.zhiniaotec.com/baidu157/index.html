@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title></title>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?131fe85659bd748966a3ef20f0d50ede";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <style>
+        fieldset,img{border:0}
+        a{text-decoration:none;color:#000;outline:none}
+        li{list-style:none}
+        h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+        input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
+        input,button,textarea,select{*font-size:100%}
+        /************************rewrite******************************************/
+        html,body{
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height:100%;
+            position: relative;
+            min-width: 320px;
+            max-width: 1024px;
+            margin:0 auto;
+        }
+        .all{
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            -webkit-overflow-scrolling : touch;
+            /*position: relative;*/
+        }
+        .box {
+            width:100%;
+            position: relative;
+            overflow-y: scroll;
+        }
+        .main_img{
+            width: 100%;
+            height: 625px;
+            margin:0;
+            padding:0;
+            pointer-events: none;
+        }
+        .bottom_img1{
+            width:100%;
+            position: absolute;
+            right:0;
+            left:0;
+            bottom: 0;
+        }
+        .bottom_img2{
+            width: 30%;
+		    position: absolute;
+		    top: 300px;
+		    right: 35%;
+		    z-index: 1;
+        }
+        .bottom_img3{
+            width: 70%;
+		    position: absolute;
+		    bottom: 3%;
+		    right: 15%;
+		    z-index: 1;
+        }
+        .banben{
+            width: 100%;
+            text-align: center;
+            font-size: 10px;
+            position: absolute;
+            bottom: 0;
+            color: #fff;
+            z-index: 999;
+            margin: 0;
+        }
+        .header{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 75px;
+            z-index: 9999;
+        }
+        .bottom_img4{
+        	position: absolute;
+		    z-index: 99;
+		    bottom: 3%;
+		    width: 64%;
+		    left: 18%;
+        }
+        .modal_bg{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+            display: none;
+        }
+        .modal_bg img{
+            width: 100%;
+            height: 100%;
+            
+        }
+        .tangkuang2{
+            position: absolute;
+            top: 10%;
+            left: 15%;
+            z-index: 99999;
+            width: 70%;
+            height: 65%;
+            border-radius: 15px;
+            display: none;
+        }
+        .modal_img{
+        	width: 100%;
+        	height: 100%;
+        }
+        .modal_img .modal_bgw{
+        	width: 100%;
+        	height: 100%;
+        }
+        .modal_btn{
+        	position: absolute;
+		    width: 40%;
+		    left: 30%;
+		    top: 210px;
+        }
+        .btn_close{
+        	position: absolute;
+		    bottom: -60px;
+		    width: 15%;
+	    	left: 43%;
+        }
+    </style>
+</head>
+<body>
+<div class="all">
+    <div class="box">
+        <img class="header hei" src="http://test.myushan.com//logo/black_zhiniao.png" onclick="return false" alt="">
+        <img src="image/main_bg.jpg"/ class="main_img">
+        <img src="image/xiazai.png"/ class="bottom_img2">
+    </div>
+    <p class="fontsize banben">北京智鸟科技有限公司版权所有</p>
+    <img src="image/fuchuang.png"/ class="bottom_img1" onclick="download();">
+    <div class="modal_bg">
+        <img src="image/modal_bg.png" alt="" />     
+    </div>
+    <div class="tangkuang2">
+    	<div class="modal_img">
+    		<img src="image/modal.png" alt="" class="modal_bgw"/>
+    		<img src="image/modal_btn.png" alt="" class="modal_btn" onclick="download()"/>
+    	</div>
+    	<img src="image/modal_close.png" class="btn_close" onclick="download()"/>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script>
+    function download(){
+        window.location.href = "https://bd-m.qutoutiao.net/download/qutoutiao_30157_apkfile?_.apk";
+    }
+	$(".bottom_img2").click(function(){
+		$(".modal_bg").css("display","block");
+		$(".tangkuang2").css("display","block");
+	})
+	$(".modal_bg").click(function(){
+		$(".modal_bg").css("display","none");
+		$(".tangkuang2").css("display","none");
+	})
+</script>
+</body>
+</html>
