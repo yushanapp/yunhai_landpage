@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>幻灵战歌</title>
+	<script type="text/javascript" src="http://img3.img.9xiu.com/css-js/mobile/js/zepto.min.js"></script>
+	<script type="text/javascript" src="http://img3.img.9xiu.com/css-js/mobile/js/mobCommon.min.js"></script>
+    
+    <script type="text/javascript" src="http://img3.img.9xiu.com/public/webImg/ass/rem.min.js?v=20180080801"></script>
+    <style>
+		.mian{width:10rem;padding-top:1.7rem}
+		.mian img{width:100%;display:block;}
+		a{display:block;}
+		.relative{position:relative;}
+		.fotDown{position:absolute;bottom:1.3rem;left:15%;width:70%;height: 1.6rem;}
+		.mian p{background:#a09d9d;color:#fff;font-size:0.36rem;text-align:center;padding:.25rem 0;}
+		.mian .logo{position:absolute;z-index: 5;top:-.3rem;left:-10%;width:3rem!important;}
+		.swiper-slide img{width: 130%!important;position:relative;left:-15%;}
+		.topFixed{position:fixed;top:0;left:0;width:100%;z-index:10;}
+		.topbtn{position: fixed;width: 37%;height: 7%;z-index: 2001;top: 1%;right: 1%;}
+	</style>
+	<link rel="stylesheet" href="http://img.img.9xiu.com/css-js/others/images/ac2019/38/css/swiper.min.css">
+</head>
+<body>
+	<div class="mian">
+		<a href="javascript:;" class="topFixed">
+			<img src="images/06.jpg" alt="">
+		</a>
+		<div class="topbtn"></div>
+		<div class="imglist flipster">
+			<div id="certify">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="http://test.myushan.com//logo/black_zhiniao.png" class="logo" alt=""><img src="images/01.jpg"" /></div>
+						<div class="swiper-slide"><img src="http://test.myushan.com//logo/black_zhiniao.png" class="logo" alt=""><img src="images/02.jpg"" /></div>
+						<div class="swiper-slide"><img src="http://test.myushan.com//logo/black_zhiniao.png" class="logo" alt=""><img src="images/03.jpg"" /></div>
+						<div class="swiper-slide"><img src="http://test.myushan.com//logo/black_zhiniao.png" class="logo" alt=""><img src="images/04.jpg"" /></div>
+						<div class="swiper-slide"><img src="http://test.myushan.com//logo/black_zhiniao.png" class="logo" alt=""><img src="images/05.jpg"" /></div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<img src="images/2.jpg" alt="">
+		<div class="relative">
+			<img src="images/lp1.jpg" alt="">
+			<a href="javascript:;" class="fotDown"></a>
+		</div>
+		<p>北京智鸟科技有限公司版权所有</p>
+	</div>
+	
+	<script src="http://img.img.9xiu.com/css-js/others/images/ac2019/38/js/swiper.min.js"></script>
+	<script>
+		var mySwiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            loop: true,
+            initialSlide: 1,
+            slidesPerView: 2,
+            grabCursor: true,
+            centeredSlides: true,
+            coverflow: {
+                rotate: 80,
+                stretch: 5,
+                depth: 120,
+                modifier: 1,
+                slideShadows: true
+            }
+        });
+
+
+		// $('a').click(function(){
+		// 	var downUrl = 'https://sdk.game.nextjoy.com/download/1005_1004';
+		// 	if(winOcx.browser.ios){
+		// 		downUrl = 'https://itunes.apple.com/cn/app/id1396472688?mt=8';
+		// 	}
+		// 	$(this).attr('href',downUrl);
+		// });
+	</script>
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//nlp.zntec.mobi/javascripts/yushan_rs_min.js"></script>
+    <script src="./dl.min.js"></script>
+
+    <script>
+        $('.fotDown,.topbtn').click(function() {
+            window.location.href = btndown;
+            event.defaultPrevented
+        });
+        new _yushan.dl_info({
+            url: '',
+            dlbutton: ['.fotDown','.topbtn']
+        });
+    </script>
+</body>
+</html>
