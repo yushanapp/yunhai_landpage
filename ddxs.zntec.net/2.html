@@ -1,0 +1,90 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>豆豆免费小说</title>
+	<meta name="viewport" content="width=device-width"> 
+ 	 <link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
+     <style>
+		.navImage img{
+			width:720px;
+			height:auto;
+			}
+			.navImage{
+			display:inline-block;
+			width:720px;
+			position: relative;
+			}
+			body{
+			margin:0!important;
+			}
+		 	#btn{
+		 		position: absolute;
+				width: 52%;
+				height: auto;
+				left: 23%;
+				top: 26%;
+				z-index: 999;
+				animation:myfirst 1s linear infinite;
+				-moz-animation:myfirst 1s linear infinite; /* Firefox */
+				-webkit-animation:myfirst 1s linear infinite; /* Safari and Chrome */
+				-o-animation:myfirst 1s linear infinite; /* Opera */
+
+			}
+
+		@keyframes myfirst
+		{
+			0%   {top:25%;}
+			50%  {top:24%;}
+			100% {top:25%;}
+		}
+
+		@-moz-keyframes myfirst /* Firefox */
+		{
+			0%   {top:25%;}
+			50%  {top:24%;}
+			100% {top:25%;}
+		}
+
+		@-webkit-keyframes myfirst /* Safari and Chrome */
+		{
+			0%   {top:25%;}
+			50%  {top:24%;}
+			100% {top:25%;}
+		}
+
+		@-o-keyframes myfirst /* Opera */
+		{
+			0%   {top:25%;}
+			50%  {top:24%;}
+			100% {top:25%;}
+		}
+     </style>
+</head>
+<body>
+			<center>
+				<div class="navImage">
+			    <img  src="http://cdn.xzwjuub.cn/ddxs.zntec.net/images/bg1.jpg" alt="navbar"  id="img">
+					<img src="http://cdn.xzwjuub.cn/ddxs.zntec.net/images/btn.png" alt="" id="btn" class="btnCilck">
+			  </div> 
+			</center>
+<script src="js/jquery-2.2.3.min.js"></script>
+
+<script>	
+
+		var Android="https://apk.ayd6.cn/android/doudou_new_5000001/app_v3.0.9_doudou_new_50000010436_2019-02-27_15512368739015.apk";//安卓下载链接
+		var Ios="";//ios下载链接
+
+		var btns = document.getElementsByClassName("btnCilck");
+		for(var i=0;i<btns.length;i++){
+		   btns[i].onclick=function () {
+               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Android;
+               }else {
+                   window.location.href =Android;
+               }
+           }
+		};
+</script>
+</body>
+</html>
