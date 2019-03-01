@@ -1,202 +1,95 @@
-
-
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="max-age=0" http-equiv="Cache-Control">
+    <meta content="240" name="MobileOptimized">
+    <meta content="YES" name="apple-touch-fullscreen">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
     <title></title>
-    <style>
-        fieldset,img{border:0}
-        a{text-decoration:none;color:#000;outline:none}
-        li{list-style:none}
-        h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
-        input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
-        input,button,textarea,select{*font-size:100%}
-        .clear:after{
-            display:block;
-            content:"clear";
-            height:0;
-            clear:both;
-            visibility:hidden;
-        }
-        .clear{zoom:1;}
-        /************************rewrite******************************************/
-        html,body{
-            padding: 0;
-            margin: 0;
-            width: 100%;
-            height:100%;
-            position: relative;
-            min-width: 320px;
-            max-width: 840px;
-            margin:0 auto;
-            /*height: 100%;*/
-        }
-        .all{
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            -webkit-overflow-scrolling : touch;
-            position: relative;
-        }
-        .box {
-            width:100%;
-            position: relative;
-        }
-        .a2{
-            display: table;
-            width: 100%;
-            height: auto;
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="http://img.qywlweb.cn/js/jquery.min.js"></script>
+	<script src="http://pv.sohu.com/cityjson"></script>
 
-            /*height: 100%;*/
-        }
-        .btn_down {
-            width:100%;
-            position: absolute;
-            bottom:0%;
-            left:0%;
-            margin: 0 auto;
-            z-index: 1;
-            /*-webkit-animation: slipUp 1s linear infinite alternate;*/
-        }
-        .btn_down1 {
-            width: 30%;
-            position: absolute;
-            bottom:3%;
-            right: 3%;
-            /* margin: 0 auto; */
-            z-index: 1;
-            /* -webkit-animation: slipUp 1s linear infinite alternate; */
-        }
-        .btn_down2 {
-            width:50%;
-            position: absolute;
-            bottom:5%;
-            right: 25%;
-            /*margin: 0 auto;*/
-            z-index: 1;
-            /*-webkit-animation: slipUp 1s linear infinite alternate;*/
-        }
-        .fu{
-            position: absolute;
-            width: 50%;
-            left: 25%;
-            top: 72%;
-        }
-        .banben{
-            width:100%;
-            color:#fff;
-            position: absolute;
-            text-align: center;
-            bottom: 0%;
-            font-size: .4rem;
-            z-index: 111;
-            -webkit-transform: scale(0.5);
-        }
-        .d1{
-            z-index: 111;
-            width: 26%;
-            position: absolute;
-            bottom: 2%;
-            right: 4%;
-            margin: 0 auto;
-
-        }
-        @-webkit-keyframes slipUp{
-            0%{
-                transform: scale(1);
-            }
-            50%{transform: scale(1.1);
-            }
-            100%{
-                transform: scale(1);
-            }
-
-        }
-        .btndow{
-            z-index: 111;
-            position: absolute;
-            width: 36%;
-            right: 2%;
-            bottom: 1%;
-            height: 9%;
-            border: 1px solid red;
-        }
-        .btndow1{
-            position: absolute;
-            width: 19%;
-            right: 9%;
-            top: 26%;
-            height: 24%;
-            /*border: 1px solid red;*/
-        }
-        .btndow2{
-            position: absolute;
-            width: 82%;
-            right: 9%;
-            bottom: 12%;
-            height: 4%;
-            /*border: 1px solid red;*/
-        }
-        .n1{
-            position: absolute;
-            width: 70%;
-            left: 15%;
-            top: 58%;
-        }
-        .download{
-            position: absolute;
-            width:100%;
-            bottom:0;
-            left:0;
-            z-index: 10;
-            text-align: center;
-        }
-        .download img{
-            display: table;
-            position: relative;
-            width: 100%;
-        }
-        .tbndow{
-            position: absolute;
-            width: 32%;
-            right: 1%;
-            bottom: 11%;
-            height: 76%;
-            /*border: 1px solid red;*/
-            z-index: 111;
-        }
-        .ewm{
-        	position: absolute;
-        	top: 30%;
-        	left: 100%;
-        	border: solid 4px black;
-        }
-    </style>
 </head>
-<body>
-<div class="all">
-    <div class="box">
-        <!--<img class="hei" style="position: absolute;left: 0;top: 0;width:10%;z-index: 99999;" src="http://img.qywlweb.cn/img/wu_logo.png"/>-->
-        <img src="img/fuliao1225001.jpg" class="a2 down" alt="" />
-        <!--
-        <div class="btndow1"></div>
-        <div class="btndow2"></div>-->
-        <div class="banben down" style="font-size:30px">北京智鸟科技有限公司</div>
+<body id="xz">
+    <div class="picBox" style="position: relative;">
+    	<!--<ul>
+    		<li style="float: left; width: 50%; text-align: center;">
+    			<a href="information.html">简介</a>
+    		</li>
+    		<li style="float: left; width: 50%; text-align: center;">
+    			<a href="information.html">特色</a>
+    		</li>
+    	</ul>-->
+        <img src="images/dsp_0519.jpg" alt="">
+        <!--<div class="top">
+            <img src="images/1152x1920(2).jpg" alt="敢聊">
+            <a href="javascript:;" class="download" id="download">
+                <img src="images/btn1.png" alt="下载">
+            </a>
+        </div>-->
+    <img src="images/btn5.png" style="position: absolute; bottom: 16%; width: 54%; left:26%;" class="dl"/>
     </div>
-</div>
-<img src="img/fuliao1225002.png" alt="" class="btn_down">
-<img src="img/fuliao1225003.png" alt="" class="btn_down1">
-<!--<img src="img/ewm.jpg" class="ewm">--> 
-<script src="http://img.qywlweb.cn/js/jquery.min.js"></script>
-<script>
-	APK_url="http://qn.wjmydhs.com/%E5%B9%B3%E6%B2%BB004.apk";
-	$(".btn_down1").click(function(e){
+    <!--<img src="images/appbtn.png" style="position: fixed; bottom: 9%; width: 100%;" id="dl"/>
+    <img src="images/canvas.jpg" style="position: fixed; bottom: 0%; width: 100%;" id="dl"/>-->
+     <div class="copyRight">
+        	北京智鸟科技有限公司 版权所有
+    </div>
+    <!--<div style="display: none;">
+		<script src="https://s19.cnzz.com/z_stat.php?id=1272836882&web_id=1272836882" language="JavaScript"></script>
+    </div>-->
+</body>
+ <!--<script>
+    (function(){
+        document.getElementsByTagName("body")[0].addEventListener("click", function(){
+            window.location.href ="http://ssjy.tjyjgj.cn/channel/app_sougousem3.apk";
+        });
+    })();
+</script> -->
+
+ <script>
+	var ua = navigator.userAgent.toLowerCase();	
+		if (/iphone|ipad|ipod/.test(ua)) {
+			    //alert("iphone");
+			    (function(){
+			        document.getElementsByClassName('dl')[0].addEventListener("click", function(){
+			            window.location.href ="http://ssjy.tjyjgj.cn/bd/app_baidusem51.apk";
+			        });
+    			})();
+		} else if (/android/.test(ua)) {
+			    //alert("android");	
+			    (function(){
+			        document.getElementsByClassName('dl')[0].addEventListener("click", function(){
+			            window.location.href ="http://ssjy.tjyjgj.cn/bd/app_baidusem51.apk";
+			        });
+    			})();
+		} else{
+			(function(){
+			        document.getElementsByClassName('dl')[0].addEventListener("click", function(){
+			            window.location.href ="http://ssjy.tjyjgj.cn/bd/app_baidusem51.apk";
+			        });
+    			})();
+		}
+</script>
+<!--<script>
+	APK_url="http://ssjy.tjyjgj.cn/channel/app_fccps61.apk";		
+	// 区分安卓ios
+	var u = navigator.userAgent;
+	var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+	var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+
+	if(isIOS == true){
+		APK_url="http://tdanba.cn/?app=3021339";
+	}
+	$("body").click(function(e){		
 		window.location.href=APK_url;
 	});
 	//setTimeout(function (){  window.location.href= APK_url;}, 3000)
+</script>-->
 
-</script>
-</body>
 </html>
+

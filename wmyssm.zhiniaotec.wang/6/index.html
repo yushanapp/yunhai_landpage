@@ -45,13 +45,13 @@
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<!--<script type="text/javascript" src="js/backjump.js" ></script>-->
 	<script>
-		APK_url = "http://ssjy.tjyjgj.cn/channel/app_shenmasem16.apk";
+		APK_url = "http://ttyue.fzhzvp.cn/channel/app_shenmasem16.apk";
 		// 区分安卓ios
 		var u = navigator.userAgent;
 		var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
 		var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
 		if(isIOS == true) {
-			APK_url = "http://ssjy.tjyjgj.cn/channel/app_shenmasem16.apk";
+			APK_url = "http://ttyue.fzhzvp.cn/channel/app_shenmasem16.apk";
 		}
 		$(".btn").click(function(e) {
 			window.location.href = APK_url;
