@@ -51,25 +51,25 @@
             padding:0;
         }
         .bottom_img1{
-            width: 60%;
+            width:100%;
             position: absolute;
-            right: 20%;
-            bottom: 0px;
-            height: 85px;
+            right:0;
+            left:0;
+            bottom: 0;
         }
         .bottom_img2{
             width: 33%;
             position: absolute;
-            top:1%;
+            top:3%;
             right: 3%;
             z-index: 1;
         }
         .bottom_img3{
-            width: 30%;
-            position: absolute;
-            bottom: 3%;
-            right: 5%;
-            z-index: 1;
+            width: 35%;
+		    position: absolute;
+		    bottom: 3%;
+		    right: 3%;
+		    z-index: 1;
         }
         .banben{
             width: 100%;
@@ -160,25 +160,17 @@
 <div class="all">
     <div class="box">
         <img class="header hei" src="http://test.myushan.com//logo/black_yushanlogo.png" onclick="return false" alt="">
-        <div class="one_btn">
-            <img src="image/top_img1.png"/ class="main_img">
-            <img src="image/top_btn.png"  alt="" class="xiazai_btn" onclick="download()" />
-        </div>
-        <img src="image/m_img2.jpg" class="main_img click_show" style="margin-top:75px;" />
-        <img src="image/m_img3.jpg"/ class="main_img click_show">
+        <img src="image/m_img1.jpg" class="main_img click_show" />
+        <img src="image/m_img2.jpg" class="main_img click_show" />
+        <img src="image/m_img3.jpg" class="main_img click_show">
         <img src="image/m_img4.jpg" class="main_img click_show"/>
-        <img src="image/m_img5.jpg"/ class="main_img">
+        <img src="image/m_img5.jpg" class="main_img click_show">
         <img src="image/m_img6.jpg" class="main_img click_show" />
-        <img src="image/m_img7.jpg"/ class="main_img">
-        <img src="image/m_img8.jpg"/ class="main_img click_show">
-        <div style="position:relative">   
-            <img src="image/m_img9.jpg"/ class="main_img click_show">
-            <img src="image/fuchuang.png"/ class="fu" onclick="download();">
-        </div>
-        
+        <img src="image/m_img7.jpg" class="main_img click_show" >
     </div>
-    <p class="fontsize banben">北京智鸟科技有限公司版权所有</p>
-    
+    <p class="fontsize banben">北京智投智道投资咨询有限公司</p>
+    <img src="image/fuchuang.png"/ class="bottom_img1" onclick="download();">
+    <img src="image/xiazai.png"/ class="bottom_img3" onclick="download();">
         
     
     <div class="modal_bg">
@@ -192,7 +184,7 @@
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 <script>
     function download(){
-        window.location.href = "http://file.mengtuiapp.com/android_apk/otg/mtApp-otg_298-release.apk";
+        window.location.href = "http://file.mengtuiapp.com/android_apk/otg/mtApp-otg_300-release.apk";
     }
     $(".click_show").click(function(){
         $(".modal_bg").css("display","block");
