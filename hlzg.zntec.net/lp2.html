@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>幻灵战歌</title>
+	<script type="text/javascript" src="http://img3.img.9xiu.com/css-js/mobile/js/zepto.min.js"></script>
+	<script type="text/javascript" src="http://img3.img.9xiu.com/css-js/mobile/js/mobCommon.min.js"></script>
+    
+    <script type="text/javascript" src="http://img3.img.9xiu.com/public/webImg/ass/rem.min.js?v=20180080801"></script>
+    <style>
+		.mian{width:10rem;background:#000;}
+		.mian img{width:100%;display:block;}
+		a{display:block;}
+		.topFixed{position:fixed;top:0;left:0;width:100%;z-index:10;}
+		.mian p{background:#a09d9d;color:#fff;font-size:0.36rem;text-align:center;padding:.25rem 0;}
+		.mian .logo{position:absolute;z-index: 5;top:1.3rem;left:.1rem;width:3rem;}
+		.btn{z-index: 2001;}
+		.btn1{    position: fixed;
+    width: 25%;
+    right: 2%;
+    top: 2%;
+    height: 5%;}
+	.btn2{
+		position: absolute;
+    width: 76%;
+    left: 12%;
+    top: 38%;
+    height: 45%;
+	}
+	.btn3{
+		position: absolute;
+    width: 54%;
+    left: 23%;
+    top: 72%;
+    height: 23%;
+
+	}
+	</style>
+</head>
+<body>
+	<div class="mian">
+		<img src="http://test.myushan.com//logo/black_zhiniao.png" class="logo" alt="">
+		<a href="javascript:;" class="topFixed" style="">
+			<div class="btn btn1"></div>
+			<img src="lp2images/7.png" alt="">
+		</a>
+		<img src="lp2images/1.jpg" alt="">
+		<a href="javascript:;" style="position: relative;">
+				<div class="btn btn2"></div>
+			<img src="lp2images/2.jpg" alt="">
+		</a>
+		<a href="javascript:;" style="position: relative;">
+				<div class="btn btn3"></div>
+		<img src="lp2images/3.jpg" alt="">
+		</a>
+		<img src="lp2images/5.jpg" alt="">
+		
+		<img src="lp2images/7.jpg" alt="">
+		<p>北京智鸟科技有限公司版权所有</p>
+	</div>
+
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="//nlp.zntec.mobi/javascripts/yushan_rs_min.js"></script>
+	<script src="./dl.min.js"></script>
+	<script>
+
+			$('.btn').click(function() {
+				window.location.href = btndown;
+				event.defaultPrevented
+			});
+			new _yushan.dl_info({
+				url: '',
+				dlbutton: ['.btn']
+			});
+
+	</script>
+</body>
+</html>
