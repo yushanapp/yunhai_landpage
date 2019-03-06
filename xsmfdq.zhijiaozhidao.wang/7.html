@@ -58,14 +58,14 @@ var _hmt = _hmt || [];
         type: "get",
         success: function (res) {
             var data = jQuery.parseJSON(res);
-            var bj=data[4].bj;
-            var xf=data[4].xf;
-            var dxf=data[4].dxf;
-            var kd=data[4].kd;
-            var dw1=data[4].dw1;
-            var dw2=data[4].dw2;
-            var dw3=data[4].dw3;
-            var dw4=data[4].dw4;
+            var bj=data[6].bj;
+            var xf=data[6].xf;
+            var dxf=data[6].dxf;
+            var kd=data[6].kd;
+            var dw1=data[6].dw1;
+            var dw2=data[6].dw2;
+            var dw3=data[6].dw3;
+            var dw4=data[6].dw4;
 
             console.log(bj+"----"+xf+"------"+dw1+"------"+dw2+"-----"+dw3);
 
@@ -108,7 +108,7 @@ var _hmt = _hmt || [];
                     success: function (res) {
                         var data = jQuery.parseJSON(res)
 
-                        window.location.href = data[4].ios;
+                        window.location.href = data[6].ios;
                     }
                 });
             } else {
@@ -117,7 +117,7 @@ var _hmt = _hmt || [];
                     type: "get",
                     success: function (res) {
                         var data = jQuery.parseJSON(res)
-                        window.location.href = data[4].az;
+                        window.location.href = data[6].az;
                     }
 
                 });
