@@ -1,0 +1,61 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>极云普惠</title>
+	<meta name="viewport" content="width=device-width">
+     <style>
+		.navImage{
+			width: 720px;
+			height: auto;
+			margin: 0 auto;
+			position: relative;
+		}
+		 .navImage #img{
+			 width: 100%;
+			 height: auto;
+		 }
+		 #xf{
+			 position: absolute;
+			 width: 100%;
+			 height: auto;
+			 left: 0;
+			 top: 50%;
+			 z-index: 999;
+		 }
+		#btn{
+			position: absolute;
+			width: 48%;
+			height: auto;
+			left: 25%;
+			top: 83%;
+			z-index: 999;
+		}
+     </style>
+</head>
+<body>
+			<center>
+				<div class="navImage">
+			  	  <img  src="http://cdn.xzwjuub.cn/ydn.zntec.net/images/a01.png" alt="navbar" id="img">
+				  <img src="http://cdn.xzwjuub.cn/ydn.zntec.net/images/bg2.gif" alt="" id="xf">
+				  <img src="http://cdn.xzwjuub.cn/ydn.zntec.net/images/a02.png" alt="" id="btn" class="btnCilck">
+				</div>
+</center>
+<script>	
+
+		var Android="http://yunying.xy599.com/jyphCloudGames_release_267172_v18.apk";//安卓下载链接
+		var Ios="";//ios下载链接
+
+		var btns = document.getElementsByClassName("btnCilck");
+		for(var i=0;i<btns.length;i++){
+		   btns[i].onclick=function () {
+               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Ios;
+               }else {
+                   window.location.href =Android;
+               }
+           }
+		};
+</script>
+</body>
+</html>
