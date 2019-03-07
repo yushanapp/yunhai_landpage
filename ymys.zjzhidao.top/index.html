@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<meta content="caibaojian" name="author"/>
+<title>阅米APP</title>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script> 
+<link rel="stylesheet" href="css/index.css">
+<script type="text/javascript">
+!function(e,t){function n(){var n=l.getBoundingClientRect().width;t=t||540,n>t&&(n=t);var i=100*n/e;r.innerHTML="html{font-size:"+i+"px;}"}var i,d=document,o=window,l=d.documentElement,r=document.createElement("style");if(l.firstElementChild)l.firstElementChild.appendChild(r);else{var a=d.createElement("div");a.appendChild(r),d.write(a.innerHTML),a=null}n(),o.addEventListener("resize",function(){clearTimeout(i),i=setTimeout(n,300)},!1),o.addEventListener("pageshow",function(e){e.persisted&&(clearTimeout(i),i=setTimeout(n,300))},!1),"complete"===d.readyState?d.body.style.fontSize="16px":d.addEventListener("DOMContentLoaded",function(e){d.body.style.fontSize="16px"},!1)}(750,750);
+</script>
+<script src="layer/layer.js?2.x"></script>
+</head>
+
+<body>
+<div class="cona" >
+  <img src="images/index_01.jpg">
+  <img src="images/index_02.jpg">
+</div>
+
+<form class="forma">
+	<input type="text" name="stel" id="stel" maxlength="20" class="iphone" placeholder="请输入您的手机号">
+    <a class="tijiao" onclick="return checkAsk()">立即申请并下载APP</a>
+    <b>领取资格后可购买</b>
+</form>
+<script>
+      function checkAsk()
+      {  
+		var stel=$("#stel").val();
+		var surl=window.location.href;
+		var myreg = /^(((13[0-9]{1})|(14[0-9]{1})|(17[0]{1})|(15[0-3]{1})|(15[5-9]{1})|(18[0-9]{1}))+\d{8})$/; 
+		var sinfo='';
+		var sname='';
+		if(stel=="")
+		{
+			layer.open({content: '电话不能为空',skin: 'msg',time: 2});
+			$("#stel").focus();
+			return false;
+		}
+		else if(stel.length !=11){
+			layer.open({content: '请输入有效的手机号码',skin: 'msg',time: 2});
+			$("#stel").focus();
+			return false;
+		}
+		else if(!myreg.test(stel)){
+			layer.open({content: '请输入有效的手机号码',skin: 'msg',time: 2});
+			$("#stel").focus();
+			return false;
+		}
+		else
+		{ 
+	  		$('#tijiao1').attr('disabled',"true");
+        	$.ajax({
+            type : "GET",
+			url:"http://gl.weiledao.cn/web/yuemif/tijiao/?sname="+encodeURIComponent(sname)+"&stel="+encodeURIComponent(stel)+"&sinfo="+encodeURIComponent(sinfo)+"&surl="+encodeURIComponent(surl),
+            dataType : "jsonp",
+            jsonp: 'callback',
+                  success : function(data){
+					if(data.state=='ok')
+					{
+						//alert(data.state);
+						/*
+					    layer.open({
+						  content: '<img src="images/success.png" class="success" onclick="guanbi()">'
+						  ,time: 5000
+						});*/
+						
+layer.open({
+  content: '<div class="conz"><img src="images/zg_01.jpg"><img src="images/zg_02.jpg"><a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.yuemee.app.main"><img src="images/zg_05.jpg"></a></div>'
+});
+						
+						$("form").each(function() {this.reset();}); 
+						$('#tijiao1').removeAttr("disabled");
+					}
+					else if(data.state=='stel')
+					{
+						layer.open({content: '手机号已存在',skin: 'msg',time: 2});
+						$('#tijiao1').removeAttr("disabled"); 
+						return false;	
+					}
+					else
+					{
+						layer.open({content: '提交失败',skin: 'msg',time: 2});
+						$('#tijiao1').removeAttr("disabled"); 
+						return false;
+					}
+                  }
+             });
+		}
+      }	 
+	  function guanbi()
+	  {
+		 layer.closeAll();  
+	  }
+</script>
+
+<div class="cona" style="padding-top:0.4rem;">
+<img src="images/index_03.jpg">
+<img src="images/index_05.jpg">
+<img src="images/index_06.jpg">
+</div>
+
+<!--<a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.yuemee.app.main"><img src="images/zg_05.jpg"></a>-->
+
+<div style="width:100%; text-align:center; font-size:0.16rem; padding:0.3rem 0;">版权所有：北京智投智道投资咨询有限公司</div>
+
+<div style="clear:both;"></div>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?ed185cb06251e04aa0400b85fe221878";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>
