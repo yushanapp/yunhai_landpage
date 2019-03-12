@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>百万作品永久免费</title>
+    <link rel="stylesheet" href="css/mh_style.css">
+    <script>
+        adaptation(750);
+
+        function adaptation(size) {
+            if (document.documentElement.clientWidth > size) {
+                document.documentElement.style.fontSize = size / 7.5 + "px"
+            } else {
+                document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + "px"
+            }
+        }
+    </script>
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?0d32528f90a2c75376109222f316273c";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+</head>
+
+<body style="background:#fff;">
+    <div class="step" style="display:none;">
+        <div class="step-header">
+            苹果手机如何通过信任教程
+        </div>
+        <img src="http://cdn.xzwjuub.cn/yt.zjzhidao.top/images/step/step-0.png" alt="">
+        <img src="http://cdn.xzwjuub.cn/yt.zjzhidao.top/images/step/step-1.png" alt="">
+        <img src="http://cdn.xzwjuub.cn/yt.zjzhidao.top/images/step/step-2.png" alt="">
+        <img src="http://cdn.xzwjuub.cn/yt.zjzhidao.top/images/step/step-3.png" alt="">
+        <img src="http://cdn.xzwjuub.cn/yt.zjzhidao.top/images/step/step-4.png" alt="">
+        <img src="http://cdn.xzwjuub.cn/yt.zjzhidao.top/images/step/step-5.png" alt="">
+        <img src="http://cdn.xzwjuub.cn/yt.zjzhidao.top/images/step/step-6.png" alt="">
+        <img src="http://cdn.xzwjuub.cn/yt.zjzhidao.top/images/step/step-7.png" alt="">
+    </div>
+    <div class="weixin" style="display:none;">
+        <img src="http://cdn.xzwjuub.cn/yt.zjzhidao.top/images/weixinTip.png" alt="">
+    </div>
+    <div class="an-pc">
+        <img src="http://cdn.xzwjuub.cn/yt.zjzhidao.top/images/0xin.jpg" alt="">
+        </div>
+    <script src="js/jquery.2.1.4.min.js"></script>
+    <script>
+        $(function () {
+            if (typeof WeixinJSBridge !== "undefined") {
+                $('.weixin').show();
+            } else {
+                down();
+            }
+            $('.anbtn-box').on('click', function () {
+                window.location.href = "https://download.taoshuzaixian.com/android/mtyd_baidu_6.apk";
+            })
+        });
+
+        function down() {
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                //苹果下载地址
+                window.location.href ="itms-services://?action=download-manifest&url=https://download.taoshuzaixian.com/ios/mtyd_baidu_6_001.plist";
+                $('.step').show();
+                $('.an-pc').hide();
+            } else if (/(Android)/i.test(navigator.userAgent)) {
+                //安卓下载地址
+                $('body').css('background', '#fff');
+                window.location.href = "https://download.taoshuzaixian.com/android/mtyd_baidu_6.apk";
+            } else {
+                //pc下载地址，默认可以为安卓版本
+             //   $('body').css('background', '#fff');
+             //   window.location.href = "https://download.taoshuzaixian.com/android/mtyd_baidu_6.apk";
+            }
+        }
+    </script>
+</body>
+
+</html>
