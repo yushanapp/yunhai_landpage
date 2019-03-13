@@ -1,0 +1,50 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>探探</title>
+	<meta name="viewport" content="width=device-width">
+     <style>
+		.navImage img{
+			width:720px;
+			height:auto;
+			}
+			.navImage{
+			display:inline-block;
+			width:100%;			
+			}
+			body{
+			margin:0!important;
+			}
+     </style>
+</head>
+<body>
+			<center>
+				<div class="navImage">
+			    <img  src="http://cdn.xzwjuub.cn/tantan.zjzhidao.mobi/images/2/bg3.jpg" alt="navbar" id="img"><img src="http://cdn.xzwjuub.cn/tantan.zjzhidao.mobi/images/2/bg3btn.jpg"  alt="" name="download2" border="0" usemap="#download2Map"  id="download"
+	      style="position:fixed;margin:0 auto;bottom:30px;left:0;right:0;max-width:720px;" onClick="javascript:;" > <map name="download2Map"  class="btnCilck">
+           <area shape="rect"coords="410,17,704,100" ></map>
+			  </div> 
+			
+ 
+ 
+
+</center>
+<script>	
+
+		var Android="https://tantanapp.com/tantan_BaidusemYunhaiyangfan97.apk";//安卓下载链接
+		var Ios="";//ios下载链接
+
+		var btns = document.getElementsByClassName("btnCilck");
+		for(var i=0;i<btns.length;i++){
+		   btns[i].onclick=function () {
+               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Ios;
+               }else {
+                   window.location.href =Android;
+               }
+           }
+		};
+</script>
+</body>
+</html>

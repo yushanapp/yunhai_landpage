@@ -1,49 +1,131 @@
-﻿<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>探探</title>
-	<meta name="viewport" content="width=device-width"> 
- 	 <link href="http://cdn.xzwjuub.cn/tantan.zjzhidao.mobi/1/images/favicon.ico" mce_href="http://cdn.xzwjuub.cn/tantan.zjzhidao.mobi/1/images/favicon.ico" rel="icon" type="image/x-icon">
-     <style>
-		.navImage img{
-			width:720px;
-			height:auto;
-			}
-			.navImage{
-			display:inline-block;
-			width:100%;			
-			}
-			body{
-			margin:0!important;
-			}
-     </style>
+  <meta charset="utf-8">
+  <title>探探</title>
+  <meta name="viewport" content="width=device-width">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="css/swiper.min.css">
+
+  <!-- Demo styles -->
+  <style>
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: auto;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  .swiper-slide img{
+    width: 100%;
+    height: auto;
+  }
+    .header{
+      width: 100%;
+      height: auto;
+      max-width: 750px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .lb{
+      position: absolute;
+      width: 100%;
+      height: auto;
+      z-index: 999999;
+      margin-top: -121%;
+    }
+    .bj{
+      width: 100%;
+      height: auto;
+      z-index: 9999;
+    }
+  </style>
+
 </head>
 <body>
-			<center>
-				<div class="navImage">
-				  <img id="img"  src="http://cdn.xzwjuub.cn/tantan.zjzhidao.mobi/1/images/bgjy.jpg" alt="navbar" usemap="#navImg">
-			    <map name="navImg" id="navImg" class="btnCilck"><area shape="rectangle" coords="426,2857,660,2927" onClick="javascript:;"/>
-			         
-			      <area shape="rectangle" coords="178,2672,512,2749" onClick="javascript:;"/>            
-				  </map>
-				</div> 
-</center>
+<div class="header">
+
+    <img src="http://cdn.xzwjuub.cn/tantan.zjzhidao.mobi/images/1/bj.jpg" class="bj" alt="">
+
+
+  <div class="lb">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="http://cdn.xzwjuub.cn/tantan.zjzhidao.mobi/images/1/1.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="http://cdn.xzwjuub.cn/tantan.zjzhidao.mobi/images/1/2.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="http://cdn.xzwjuub.cn/tantan.zjzhidao.mobi/images/1/3.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="btnCilck" style="position: absolute;width:29%;height: 2%;left: 35%;top: 13.5%;z-index: 99999999999999;">
+
+  </div>
+  <div  style="position: fixed;bottom:0;width: 100%;height: auto;max-width: 750px;z-index: 9999999;">
+    <img src="http://cdn.xzwjuub.cn/tantan.zjzhidao.mobi/images/1/btn.jpg" style="width: 100%;height: auto;" alt="">
+    <div class="btnCilck" style="position: absolute;width: 22%;height: 47%;top:26%;left: 75%;z-index: 9999999999;">
+
+    </div>
+  </div>
+
+</div>
+
+
+  <!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container');
+  </script>
 <script>
 
-		var Android="https://tantanapp.com/tantan_sembaidu25.apk";//安卓下载链接
-		var Ios="";//ios下载链接
+    var Android="https://tantanapp.com/tantan_BaidusemYunhaiyangfan25.apk";//安卓下载链接
+    var Ios="";//ios下载链接
 
-		var btns = document.getElementsByClassName("btnCilck");
-		for(var i=0;i<btns.length;i++){
-		   btns[i].onclick=function () {
-               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                   window.location.href =Ios;
-               }else {
-                   window.location.href =Android;
-               }
-           }
-		};
+    var btns = document.getElementsByClassName("btnCilck");
+    for(var i=0;i<btns.length;i++){
+        btns[i].onclick=function () {
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href =Android;
+            }else {
+                window.location.href =Android;
+            }
+        }
+    };
 </script>
 </body>
 </html>
