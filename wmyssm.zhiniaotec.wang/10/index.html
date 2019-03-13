@@ -1,63 +1,58 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html >
 <html>
 
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
-		<meta content="yes" name="apple-mobile-web-app-capable">
-		<meta content="black" name="apple-mobile-web-app-status-bar-style">
-		<meta content="telephone=no" name="format-detection">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
 		<title></title>
-		<link href="css/main-09497.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
 		<style>
-		.lx {
-		    margin: 0px auto;
-		    display: block;
-		    width: 252px;
-		}
-		.lx li {
-			float: left;
-			padding: 10px;
-		}
-		a {
-		    text-decoration: none;
-		    cursor: default;
-		}
+			.fixed_btn {
+				width: 100%;
+				height: 0.9rem;
+				background: url('img/3.jpg') no-repeat center center;
+				background-size: cover;
+				position: fixed;
+				bottom: 0;
+				z-index: 99;
+			}
+			
+			.fixed_btn a {
+				display: block;
+				width: 100%;
+				height: 100%;
+				-webkit-tap-highlight-color: transparent;
+			}
 		</style>
+		<style>
 
+		</style>
 	</head>
-<body>
-	<img class="imgs title" src="images/dg_title-tcyd5.png"> <img class="imgs person" src="images/person1.png">
-	<img src="images/black_zhiniao.png" style="position: absolute;width: 10%;left: 0;" />
-	<!--<img src="images/bg2.jpg" style="width: 100%;" />-->
-	<div class="footer">
-		<img class="imgs btn botton" src="images/tg_btn1.png">
-		<center class="compay">北京智鸟科技有限公司 版权所有</center>
-	</div>
-	
-	<!--<ul class="lx">
-    	<li><a href="gywm.html">关于我们</a></li>
-    	<li><a href="cpjs.html">产品介绍</a></li>
-		<li><a href="lxwm.html">联系我们</a></li>
-    </ul>-->
-	
-	<!--<script type="text/javascript" src="js/main-09497.js"></script>-->
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<!--<script type="text/javascript" src="js/backjump.js" ></script>-->
-	<script>
-		APK_url = "http://ttyue.fzhzvp.cn/channel/app_shenmasem20.apk";
-		// 区分安卓ios
-		var u = navigator.userAgent;
-		var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
-		var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
-		if(isIOS == true) {
-			APK_url = "http://ttyue.fzhzvp.cn/channel/app_shenmasem20.apk";
-		}
-		$(".btn").click(function(e) {
-			window.location.href = APK_url;
-		});
-		//setTimeout(function (){  window.location.href= APK_url;}, 3000)
-	</script>
-</body>
 
-</html> 
+	<body style="margin:0px;">
+		<div>
+			<img src="img/1.jpg" style="width:100%">
+		</div>
+		<div class="fixed_btn">
+			<a href="javascript:;" onclick="to_redirct()"></a>
+		</div>
+		<div style=" margin-bottom:50px;font-size:12px; line-height:22px; text-align:center; background-color:#fff; color:#000000;">北京智鸟科技有限公司 版权所有</div>
+	</body>
+	<!--<script type="text/javascript" src="js/backjump.js" ></script>-->
+	<script type="text/javascript">
+		document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+
+		function to_redirct() {
+			var u = navigator.userAgent,
+				app = navigator.appVersion;
+			var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1;
+			var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+			if(isIOS) {
+				window.location.href = "http://ttyue.fzhzvp.cn/channel/app_shenmasem20.apk";
+			} else {
+				window.location.href = "http://ttyue.fzhzvp.cn/channel/app_shenmasem20.apk";
+			}
+		}
+	</script>
+
+</html>
