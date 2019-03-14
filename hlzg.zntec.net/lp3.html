@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>幻灵战歌</title>
+	<script type="text/javascript" src="http://img3.img.9xiu.com/css-js/mobile/js/zepto.min.js"></script>
+	<script type="text/javascript" src="http://img3.img.9xiu.com/css-js/mobile/js/mobCommon.min.js"></script>
+    
+    <script type="text/javascript" src="http://img3.img.9xiu.com/public/webImg/ass/rem.min.js?v=20180080801"></script>
+    <style>
+		.mian{width:10rem;background:#000;}
+		.mian img{width:100%;display:block;}
+		a{display:block;}
+		.mian p{background:#a09d9d;color:#fff;font-size:0.36rem;text-align:center;padding:.25rem 0;}
+		.mian .logo{position:absolute;z-index: 5;top:0;left:.1rem;width:3rem;}
+		.v_box{position:relative;}
+		#video{position:absolute;width:9.2rem;top:.55rem;left:.4rem;height:5.4rem;border-radius:5px;z-index:1;}
+		.v_box a{ display: block;width: 4.5rem;height: 1.5rem;background: #000;position: absolute;top: 6.2rem;left: 2.7rem;z-index: 2;opacity:0;}
+		.btn1{position: absolute;
+    width: 27%;
+    height: 83%;
+    /* background: red; */
+    z-index: 2001;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 10%;}
+	</style>
+</head>
+<body>
+	<div class="mian">
+		<img src="http://test.myushan.com//logo/black_zhiniao.png" class="logo" alt="">
+		<img src="./lp3_files/1.jpg" alt="">
+		<img src="./lp3_files/2.jpg" alt="">
+		<a href="javascript:; " style="position:relative;">
+			<div class="btn btn1"></div>
+		<img src="./lp3_files/3.jpg" alt="">
+		</a>
+		<img src="./lp3_files/4.jpg" alt="">
+		<div class="v_box">
+			<img src="./lp3_files/5.jpg" alt="">
+			<!-- muted="true" -->
+			<video width="100%" autoplay="true" controls loop="true"  preload="auto" webkit-playsinline="true" id="video">
+			    <source src="./lp3_files/v.mp4" type="video/mp4">
+	        </video>
+	        <a class="btn" href="javascript:;"></a>
+		</div>
+		<p>北京智鸟科技有限公司版权所有</p>
+	</div>
+
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="//nlp.zntec.mobi/javascripts/yushan_rs_min.js"></script>
+	<script src="./dl.min.js"></script>
+	<script>
+
+			$('.btn').click(function() {
+				window.location.href = btndown;
+				event.defaultPrevented
+			});
+			new _yushan.dl_info({
+				url: '',
+				dlbutton: ['.btn']
+			});
+
+	</script>
+</body>
+</html>
