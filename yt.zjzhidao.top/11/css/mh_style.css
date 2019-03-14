@@ -1,0 +1,67 @@
+html,body {line-height:0;}
+body {background: #fff;}
+body,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd,p {margin:0;}
+body,h1,input,button,select,textarea {font-family:"Microsoft Yahei","PingFang SC","Helvetica Neue",serif;font-size:.28rem;color:#272727;}
+input,button,select,textarea {border:none;outline:none;}
+input,button,textarea,th,td {padding:0;}
+i,em,cite {font-style:normal;}
+ul,ol {padding:0;list-style:none;}
+img {vertical-align:top;border:none;}
+a {text-decoration:none;color:inherit;}
+
+.warp{
+    height: 100%;
+    width: 100%;
+}
+.swiper-container{
+
+}
+.swiper-slide img{ 
+    width: 100%;
+    /* height: 100%; */
+}
+.btn-box{
+    width: 100%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    bottom: 0.5rem;
+    z-index: 999;
+    padding-top: 0.8rem;
+}
+.btn{
+    width: 3.4rem;
+}
+.arrow{
+    width: .5rem;
+}
+.swiper-container-vertical>.swiper-pagination-bullets{
+    right: .3rem;
+    top: 65%;
+    transform: translate3d(0,0,0);
+}
+
+.swiper-pagination-bullet-active{background: #EF645D}
+
+/*setp and weixin*/
+.step{margin:0 auto 1.2rem;width:7.5rem;background:#000 url("../images/step/step-header.jpg") no-repeat top / contain;text-align:center;}
+.step-header{padding:.5rem 0;font-size:.36rem;color:#fff;}
+.step img{margin-bottom:.3rem;width:6.9rem;}
+
+.weixin{position:fixed;top:0;right:0;bottom:0;left:0;text-align:center;background:rgba(0,0,0,.8);z-index:999999;}
+.weixin img{margin:.3rem 0 0 .4rem;width:5.73rem;height:2.65rem;}
+/* an-pc */
+.an-pc{
+    height: 100%;
+    position: relative;
+}
+.an-pc img{
+    width: 100%;
+}
+.anbtn-box{
+    position: absolute;
+    top: 2.6rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
