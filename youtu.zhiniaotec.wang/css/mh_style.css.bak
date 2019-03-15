@@ -45,7 +45,7 @@ a {text-decoration:none;color:inherit;}
 .swiper-pagination-bullet-active{background: #EF645D}
 
 /*setp and weixin*/
-.step{margin:0 auto 1.2rem;width:7.5rem;background:#000 url("http://cdn.xzwjuub.cn/yt.zjzhidao.top/images/step/step-header.jpg") no-repeat top / contain;text-align:center;}
+.step{margin:0 auto 1.2rem;width:7.5rem;background:#000 url("../images/step/step-header.jpg") no-repeat top / contain;text-align:center;}
 .step-header{padding:.5rem 0;font-size:.36rem;color:#fff;}
 .step img{margin-bottom:.3rem;width:6.9rem;}
 
