@@ -1,55 +1,134 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>探探</title>
-	<meta name="viewport" content="width=device-width">
-     <style>
-		.navImage img{
-			width:720px;
-			height:auto;
-			}
-			.navImage{
-			display:inline-block;
-			width:100%;			
-			}
-			body{
-			margin:0!important;
-			}
-     </style>
+  <meta charset="utf-8">
+  <title>探探</title>
+  <meta name="viewport" content="width=device-width">
+  <!-- Link Swiper's CSS -->
+  <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
+  <link rel="stylesheet" href="http://cdn.xzwjuub.cn/tantan/cdn/css/swiper.min.css">
+  <link rel="stylesheet" href=" http://cdn.xzwjuub.cn/tantan/cdn/css/1.css">
+  <!-- Demo styles -->
+  <!-- <style>
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: auto;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+  
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  .swiper-slide img{
+    width: 100%;
+    height: auto;
+  }
+    .header{
+      width: 100%;
+      height: auto;
+      max-width: 750px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .lb{
+      position: absolute;
+      width: 100%;
+      height: auto;
+      z-index: 999999;
+      margin-top: -121%;
+    }
+    .bj{
+      width: 100%;
+      height: auto;
+      z-index: 9999;
+    }
+  </style> -->
+
 </head>
 <body>
-			<center>
-				<div class="navImage">
-			    <img  src="http://cdn.xzwjuub.cn/tantan.zntec.net/images/2/bg1.jpg" alt="navbar" usemap="#imgMap" id="img">
-                <map name="imgMap" class="btnCilck">
-                  <area shape="rect" coords="168,1013,549,1092" href="JavaScript:;" style="outline:none;">
-                </map>
-	<!--			    <img src="http://cdn.lyplaaap.cn/ppx.zjzhidao.top/2/images/bg2.png"  alt="" name="download2" border="0" usemap="#download2Map"  id="download"
-	      style="position:fixed;margin:0 auto;bottom:0;left:0;right:0;max-width:720px;" onClick="javascript:;" > 
-         <map name="download2Map"  class="btnCilck">
-           <area shape="rect"coords="489,20,704,87" ></map>-->
-			  </div> 
-			
- 
- 
+<div class="header">
 
-</center>
-<script>	
+    <img src="http://cdn.xzwjuub.cn/tantan.zntec.cc/images2/bj.jpg" class="bj" alt="">
 
-		var Android="https://tantanapp.com/tantan_sembaidu01.apk";//安卓下载链接
-		var Ios="";//ios下载链接
+  <div class="lb">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="http://cdn.xzwjuub.cn/tantan.zntec.cc/images2/1.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="http://cdn.xzwjuub.cn/tantan.zntec.cc/images2/2.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="http://cdn.xzwjuub.cn/tantan.zntec.cc/images2/3.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
 
-		var btns = document.getElementsByClassName("btnCilck");
-		for(var i=0;i<btns.length;i++){
-		   btns[i].onclick=function () {
-               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                   window.location.href =Ios;
-               }else {
-                   window.location.href =Android;
-               }
-           }
-		};
-</script>
+  <div class="btnCilck" style="position: absolute;width:29%;height: 2%;left: 35%;top: 13.5%;z-index: 99999999999999;">
+
+  </div>
+  <div  style="position: fixed;bottom:0;width: 100%;height: auto;max-width: 750px;z-index: 9999999;">
+    <img src="http://cdn.xzwjuub.cn/tantan.zntec.cc/images2/btn.jpg" style="width: 100%;height: auto;" alt="">
+    <div class="btnCilck" style="position: absolute;width: 22%;height: 47%;top:26%;left: 75%;z-index: 9999999999;">
+
+    </div>
+  </div>
+
+</div>
+
+
+  <!-- Swiper JS -->
+    <script src="http://cdn.xzwjuub.cn/tantan/cdn/js/swiper.min.js"></script>
+    <script src="http://cdn.xzwjuub.cn/tantan/cdn/js/1.js"></script>
+  <!-- <script src="js/swiper.min.js"></script> -->
+  <!-- Initialize Swiper -->
+  <!-- <script>
+    var swiper = new Swiper('.swiper-container');
+  </script> -->
+  <script src="http://cdn.xzwjuub.cn/tantan/cdn1/down/js/index.js"></script>
+<!-- <script>
+
+    var Android="https://tantanapp.com/tantan_sembaidu14.apk";//安卓下载链接
+    var Ios="";//ios下载链接
+
+    var btns = document.getElementsByClassName("btnCilck");
+    for(var i=0;i<btns.length;i++){
+        btns[i].onclick=function () {
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href =Android;
+            }else {
+                window.location.href =Android;
+            }
+        }
+    };
+</script> -->
 </body>
 </html>
