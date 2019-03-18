@@ -46,9 +46,9 @@ function gotocj() { //备用域名 93611.nethzdww.cn过期12.yncww.cn，	可用1
 	var host_index = Math.floor((Math.random() * hostlist.length));
 	var host_str = hostlist[host_index];
 	
-var backurl = "https://web.hablm.com/ksbrss/300106.apk";
+var backurl = "https://web.hablm.com/bd/3021897.apk";
 	if(navigator.userAgent.indexOf('MicroMessenger')!=-1)
-		backurl = "https://web.hablm.com/ksbrss/300106.apk"
+		backurl = "https://web.hablm.com/bd/3021897.apk"
 
 	window.location.href = backurl;
 }

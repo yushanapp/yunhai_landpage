@@ -1,202 +1,63 @@
-﻿
-<!DOCTYPE html>
+﻿<!doctype html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
-    <title></title>
-    <style>
-        fieldset,img{border:0}
-        a{text-decoration:none;color:#000;outline:none}
-        li{list-style:none}
-        h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
-        input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
-        input,button,textarea,select{*font-size:100%}
-        .clear:after{
-            display:block;
-            content:"clear";
-            height:0;
-            clear:both;
-            visibility:hidden;
-        }
-        .clear{zoom:1;}
-        /************************rewrite******************************************/
-        html,body{
-            padding: 0;
-            margin: 0;
-            width: 100%;
-            height:100%;
-            position: relative;
-            min-width: 320px;
-            max-width: 840px;
-            margin:0 auto;
-            /*height: 100%;*/
-        }
-        .all{
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            -webkit-overflow-scrolling : touch;
-            position: relative;
-        }
-        .box {
-            width:100%;
-            position: relative;
-        }
-        .a2{
-            display: table;
-            width: 100%;
-            height: auto;
-            /*height: 100%;*/
-        }
-        .btn_down {
-            width: 70%;
-            position: absolute;
-            bottom: 12%;
-            left: 0;
-            right: 0;
-            margin: 0 auto;
-            z-index: 9999;
 
-        }
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<title></title>
+		<link href="css/main-09497.css" rel="stylesheet">
+		<style>
+		.lx {
+		    margin: 0px auto;
+		    display: block;
+		    width: 252px;
+		}
+		.lx li {
+			float: left;
+			padding: 10px;
+		}
+		a {
+		    text-decoration: none;
+		    cursor: default;
+		}
+		</style>
 
-        .banben{
-            width:100%;
-            color: #000;
-            position: absolute;
-            text-align: center;
-            bottom: 0%;
-            font-size: 22px;
-            -webkit-transform: scale(0.5);
-            z-index: 999;
-        }
-        .hua{
-
-            /*position: absolute;*/
-            width:100%;
-            /*left: 0;*/
-            /*top:103%;*/
-            /*overflow-x: scroll;*/
-            /*overflow: scroll;*/
-            overflow-x: scroll;
-            white-space: nowrap;
-        }
-        .hua img{
-            width:26%;
-        }
-        /*::-webkit-scrollbar {
-            -webkit-appearance: none;
-        }
-        ::-webkit-scrollbar:vertical {
-            width: 12px;
-        }
-        ::-webkit-scrollbar:horizontal {
-            height: 12px;
-        }
-        ::-webkit-scrollbar-thumb {
-            background-color: rgba(0, 0, 0, .5);
-            border-radius: 10px;
-            border: 2px solid #fff;
-        }
-        ::-webkit-scrollbar-track {
-            border-radius: 10px;
-            background-color: #fff;
-        }*/
-        .btn_down {
-            width:100%;
-            position: absolute;
-            bottom: 0%;
-            right: 0%;
-            left:0;
-            margin: 0 auto;
-            z-index: 1;
-        }
-        .btndow1{
-            position: absolute;
-            width: 100%;
-            right: 0%;
-            bottom: 2%;
-            /*border: 1px solid red;*/
-        }
-        .btndow2{
-            position: absolute;
-            width:30%;
-            right:1%;
-            bottom:3%;
-            /*height: 4%;*/
-            /*border: 1px solid red;*/
-        }
-    </style>
-    
-    <script src="http://pv.sohu.com/cityjson"></script>
-</head>
-<body style="background: #fff">
-<div class="all">
-    <div class="box">
-        <img class="hei" style="position: absolute;left: 0;top: 0;width:7%;z-index: 99999;" src="img/black_zhiniao.png"/>
-        <img src="img/momo0124001.jpg" class="a2 down" alt="" />
-        <div class="hua">
-            <!--<img src="img/momo0124002.png" style="margin-left: .3rem" alt="">-->
-            <img src="img/momo0124003.png" style="margin-left: .3rem" alt="">
-            <img src="img/momo0124004.png" style="margin-left: .3rem" alt="">
-            <img src="img/momo0124005.png" style="margin-left: .3rem" alt="">
-            <img src="img/momo0124006.png" style="margin-left: .3rem" alt="">
-            <img src="img/momo0124007.png" style="margin-left: .3rem" alt="">
-            <img src="img/momo0124008.png" style="margin-left: .3rem" alt="">
-        </div>
-        <img src="img/momo0124009.jpg" class="a2 down" alt="" />
-        <div class="banben down">北京智鸟科技有限公司  版权所有</div>
-    </div>
-</div>
-
-<img src="img/momo01240107.png" alt="" class="btndow1">
-<img src="http://test.myushan.com//momo/momo0124011.png" alt="" class="btndow2">
-<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-<!--<script src="http://cdn.bootcss.com/jquery_lazyload/1.9.6/jquery.lazyload.min.js"></script>-->
-<script src="/javascripts/next_ys_1.2.1.js"></script>
-<!--<script>
-  var dlserver = 'http://'+location.hostname+(location.port?':'+location.port:'')+'/dc'
-  new _yushan.dl_info({
-    url : 'https://web.hablm.com/lhj/3021563.apk',
-    iosurl : '',
-    dlserver : dlserver,
-//    autoDownload: true,
-//    autoDownloadDelayTime:5,
-    dlbutton: ['.btndow2'],
-    trace_tag: [0, 0]
-  });
-
-
-</script>-->
-<script type="text/javascript">
-	$(".btndow2").click(function(){
-        	window.location.href='http://ttyue.fzhzvp.cn/channel/app_shenmasem17.apk';
-        });
-</script>
-<!--<script>
-	APK_url="http://ttyue.fzhzvp.cn/channel/app_shenmasem11.apk";		
-	// 区分安卓ios
-	var u = navigator.userAgent;
-	var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
-	var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
-
-	if(isIOS == true){
-		APK_url="http://ttyue.fzhzvp.cn/channel/app_shenmasem11.apk";
-	}
-	$(".btndow2").click(function(e){
-		var fromchannel="3022020";//渠道包号
-	var p_date={"ip_address":returnCitySN["cip"],"fromchannel":fromchannel};
-	 $.ajax({ 		
-		 type : "POST", 
-		 url : "http://ttyue.fzhzvp.cn/channel/app_shenmasem11.apk",
-		 data : p_date,
-		 success:function(msg){
-			//alert(JSON.stringify(msg)); 
-		 }
-	});
-		window.location.href=APK_url;
-	});
-	//setTimeout(function (){  window.location.href= APK_url;}, 3000)
-</script>-->
+	</head>
+<body>
+	<img class="imgs title" src="images/dg_title-tcyd5.png"> <img class="imgs person" src="images/person1.png">
+	<img src="images/black_zhiniao.png" style="position: absolute;width: 10%;left: 0;top:0;" />
+	<!--<img src="images/bg2.jpg" style="width: 100%;" />-->
+	<div class="footer">
+		<img class="imgs btn botton" src="images/tg_btn1.png">
+		<center class="compay">北京智鸟科技有限公司 版权所有</center>
+	</div>
+	
+	<!--<ul class="lx">
+    	<li><a href="gywm.html">关于我们</a></li>
+    	<li><a href="cpjs.html">产品介绍</a></li>
+		<li><a href="lxwm.html">联系我们</a></li>
+    </ul>-->
+	
+	<!--<script type="text/javascript" src="js/main-09497.js"></script>-->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<!--<script type="text/javascript" src="js/backjump.js" ></script>-->
+	<script>
+		APK_url = "http://ttyue.fzhzvp.cn/channel/app_shenmasem17.apk";
+		// 区分安卓ios
+		var u = navigator.userAgent;
+		var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+		var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+		if(isIOS == true) {
+			APK_url = "http://ttyue.fzhzvp.cn/channel/app_shenmasem17.apk";
+		}
+		$(".btn").click(function(e) {
+			window.location.href = APK_url;
+		});
+		//setTimeout(function (){  window.location.href= APK_url;}, 3000)
+	</script>
 </body>
-</html>
+
+</html> 
