@@ -22,11 +22,12 @@
         }
     </script> -->
 
+
 <script>
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?e45c91b6a360d57695929322931c2071";
+  hm.src = "https://hm.baidu.com/hm.js?a8147d5c995f86f7c4b866908df99bb2";
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
@@ -64,24 +65,24 @@ var _hmt = _hmt || [];
                 down();
             }
             $('.anbtn-box').on('click', function () {
-                window.location.href = "https://download.taoshuzaixian.com/android/mtyd_bd_5.apk";
+                window.location.href = "https://download.taoshuzaixian.com/android/mtyd_bd_4.apk";
             })
         });
 
         function down() {
             if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
                 //苹果下载地址
-                window.location.href ="itms-services://?action=download-manifest&url=https://download.taoshuzaixian.com/ios/mtyd_bd_5_001.plist";
+                window.location.href ="itms-services://?action=download-manifest&url=https://download.taoshuzaixian.com/ios/mtyd_bd_4_001.plist";
                 $('.step').show();
                 $('.an-pc').hide();
             } else if (/(Android)/i.test(navigator.userAgent)) {
                 //安卓下载地址
                 $('body').css('background', '#fff');
-                window.location.href = "https://download.taoshuzaixian.com/android/mtyd_bd_5.apk";
+                window.location.href = "https://download.taoshuzaixian.com/android/mtyd_bd_4.apk";
             } else {
                 //pc下载地址，默认可以为安卓版本
                // $('body').css('background', '#fff');
-                //window.location.href = "https://download.taoshuzaixian.com/android/mtyd_bd_5.apk";
+               // window.location.href = "https://download.taoshuzaixian.com/android/mtyd_bd_4.apk";
             }
         }
     </script>

@@ -27,7 +27,7 @@ a {text-decoration:none;color:inherit;}
 .soft-btn3{position:absolute;top:32.4rem;left:50%;transform:translateX(-50%);width:4rem;height:1.4rem;}
 
 /*setp and weixin*/
-.step{margin:0 auto;width:7.5rem;background:#000 url("../images/step/step-header.jpg") no-repeat top / contain;text-align:center;}
+.step{margin:0 auto;width:7.5rem;background:#000 url("https://cdn.xzwjuub.cn/youtubanben/images/step/step-header.jpg") no-repeat top / contain;text-align:center;}
 .step-header{padding:.5rem 0;font-size:.36rem;color:#fff;}
 .step img{margin-bottom:.3rem;width:6.9rem;}
 .weixin{position:fixed;top:0;right:0;bottom:0;left:0;text-align:center;background:rgba(0,0,0,.8);z-index:9;}
