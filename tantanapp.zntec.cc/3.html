@@ -1,0 +1,48 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>探探</title>
+	<meta name="viewport" content="width=device-width">
+     <style>
+		.navImage img{
+			width:720px;
+			height:auto;
+			}
+			.navImage{
+			display:inline-block;
+			width:100%;			
+			}
+			body{
+			margin:0!important;
+			}
+     </style>
+</head>
+<body>
+			<center>
+				<div class="navImage">
+			    <img  src="https://cdn.xzwjuub.cn/tantanapp.zntec.cc/images/bg2.jpg" alt="navbar" id="img">
+               			    <img src="https://cdn.xzwjuub.cn/tantanapp.zntec.cc/images/btn.jpg"  alt="" name="download2" border="0" usemap="#download2Map"  id="download"
+	      style="position:fixed;margin:0 auto;bottom:5%;left:0;right:0;max-width:720px;" onClick="javascript:;" > 
+         <map name="download2Map"  class="btnCilck">
+           <area shape="rect"coords="538,29,693,93" style="outline:none;"></map>
+			  </div>
+</center>
+<script>	
+
+		var Android="https://itunes.apple.com/cn/app/id861891048?mt=8";//安卓下载链接
+		var Ios="https://itunes.apple.com/cn/app/id861891048?mt=8";//ios下载链接
+
+		var btns = document.getElementsByClassName("btnCilck");
+		for(var i=0;i<btns.length;i++){
+		   btns[i].onclick=function () {
+               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Ios;
+               }else {
+                   window.location.href =Android;
+               }
+           }
+		};
+</script>
+</body>
+</html>
