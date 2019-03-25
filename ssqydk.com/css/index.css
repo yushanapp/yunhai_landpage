@@ -1,0 +1,68 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+	font-family: "microsoft yahei";	
+	font-weight:normal;
+}
+body{ background:#fff;}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+input,textarea,select,a:focus {
+    outline: none;
+}
+.clearFix:after{
+	clear:both;
+	content: '';
+	display: block;
+}
+.none{
+	display: none;
+}
+ul,li{ margin:0; padding:0;}
+.cona img{ display:block; width:100%;}
+.cona a{ display:block; width:60%; margin:1rem auto;}
+
+.conz img{ display:block; width:100%;}
+.conz a{ display:block; width:60%; margin:1rem auto;}
+
+.iphone{ border:solid 1px #CCC; display:block; width:80%; margin:0 auto; margin-top:0.4rem; padding-left:2%; height:46px; line-height:46px; -moz-border-radius: 8px;-webkit-border-radius: 8px;border-radius: 8px;}
+.tijiao{ width:80%; margin:0.45rem auto; display:block; -moz-border-radius: 30px;-webkit-border-radius: 30px;border-radius: 30px; background:#FF5A5A; text-align:center; height:0.8rem; line-height:0.8rem; color:#fff; font-size:0.3rem;}
+.forma b{ font-size:0.32rem; text-align:center; color:#232323; display:block;}
+
+
+
+.conz a{animation:sdong 0.8s infinite alternate linear; -webkit-animation:sdong 0.8s infinite alternate linear; -moz-animation:sdong 0.8s infinite alternate linear; -o-animation:sdong 0.8s infinite alternate linear;}
+
+@keyframes sdong{
+from{ transform:scale(0.8,0.8);}
+to{  transform:scale(1,1);}
+}
+@-webkit-keyframes sdong{
+from{ -webkit-transform:scale(0.8,0.8);}
+to{  -webkit-transform:scale(1,1);}
+}
+@-moz-keyframes sdong{
+from{ -moz-transform:scale(0.8,0.8);}
+to{  -moz-transform:scale(1,1);}
+}
+@-o-keyframes sdong{
+from{ -o-transform:scale(0.8,0.8);}
+to{  -o-transform:scale(1,1);}
+}
+
+.change{
+	font-size:16px;
+	color:yellow;
+	animation:myfirst 0.6s;
+	animation-iteration-count:infinite;
+}
+@keyframes myfirst
+{
+from {color:red;}
+to {color:#yellow;}
+}
