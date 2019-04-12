@@ -1,0 +1,66 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>极云惠普</title>
+	<meta name="viewport" content="width=device-width">
+     <style>
+		.navImage img{
+			width:720px;
+			height:auto;
+			}
+			.navImage{
+			display:inline-block;
+			width:auto;
+			position: relative;
+			}
+			body{
+			margin:0!important;
+			}
+		 #lb{
+		 	position: absolute;
+			 width: 100%;
+			 height: auto;
+			 left: 0;
+			 top: 46%;
+			 z-index: 99;
+		 }
+     </style>
+</head>
+<body>
+			<center>
+				<div class="navImage">
+
+			    <img  src="https://cdn.xzwjuub.cn/jiyun.ayushan.cn/images/bj.jpg" alt="navbar" usemap="#imgMap" id="img">
+         <!--       <map name="imgMap" class="btnCilck">
+                  <area shape="rect" coords="198,1288,512,1361" style="outline:none;"  href="javascript:;">
+                </map>-->
+					<img id="lb" src="https://cdn.xzwjuub.cn/jiyun.ayushan.cn/images/i.gif" alt="">
+
+				</div> 
+			
+
+<img src="https://cdn.xzwjuub.cn/jiyun.ayushan.cn/images/btn.png" class="btnCilck" alt="" name="download2" border="0" usemap="#download2Map"  id="download2" style="position:fixed;margin:0 auto;bottom:6%;;left:0;right:0;max-width: 400px;z-index: 9999;" onClick="javascript:;" >
+<!--
+<map name="download2Map"  class="btnCilck"><area shape="rect" coords="52,230,648,327"  href="javascript:;"></map>
+-->
+
+</center>
+<script>
+
+		var Android="http://yunying.xy599.com/jyphCloudGames_release_267169_v19.apk";//安卓下载链接
+		var Ios="";//ios下载链接
+
+		var btns = document.getElementsByClassName("btnCilck");
+		for(var i=0;i<btns.length;i++){
+		   btns[i].onclick=function () {
+               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Android;
+               }else {
+                   window.location.href =Android;
+               }
+           }
+		};
+</script>
+</body>
+</html>
