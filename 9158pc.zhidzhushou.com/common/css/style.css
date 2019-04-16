@@ -1,0 +1,115 @@
+@charset "utf-8";
+body, p, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, select, textarea, button, th, td { margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight:normal;}
+ul, dl, ol { list-style: none; }
+img, fieldset, input[type="submit"] { border: 0 none; }
+img { display: inline-block; overflow: hidden; vertical-align: top; }
+em { font-style: normal; }
+table { border-collapse: collapse; border-spacing: 0; }
+button, input[type="button"] { cursor: pointer; border: 0 none; }
+menu { margin: 0; padding: 0; }
+input[type="number"] { -webkit-user-select: text; }
+a, button, input, img { -webkit-touch-callout: none; }
+input, select, textarea { outline: none; }
+.clearfix:after { content:"."; display:block; clear:both; visibility:hidden; line-height:0; height:0; font-size:0; }
+.clearfix { display:inline-block; zoom:1; }
+html[xmlns] .clearfix { display:block; }
+* html .clearfix { zoom:1; }
+html, body { height: 100%; }
+a { text-decoration: none;}
+html { overflow-x:hidden;}
+body { font:13px/1.5 \5fae\8f6f\96c5\9ed1\000d\000a, "Microsoft YaHei", "微软雅黑", \5b8b\4f53, "SimSun", Trebuchet MS, tahoma, sans-serif; color:#fee7bd; height:100%;  background:url(../images/bgg.png) no-repeat center top #41474b ;}
+
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+
+.clear:after{
+	content:'';
+	display: block;
+	clear:both;
+}
+
+.second:before{
+display: table;
+content: "";
+}
+.pageBox{
+	
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+    /*background-repeat: no-repeat;*/
+    margin: 0 auto;
+    background-position: top center;
+    position: relative;
+   
+    
+}
+/*.header{
+	width: 100%;
+	height: 100%;
+	background: url(../images/bg.png) no-repeat;
+	background: 100%;
+
+}*/
+
+.pageBox .banner {
+    width: 830px;
+    height: 620px;
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    /*margin-left: -500px;
+    margin-top: -420px;*/
+    z-index: 999;
+}
+.pageBox .banner .short {
+    width: 830px;
+    height: 620px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.chance {
+    width: 286px;
+    height: 586px;
+    background: url(../images/shouji.png) no-repeat;
+    background-size:100%  ;
+    margin-top: 36px;
+    /*margin-left: 134px;*/
+}
+.pageBox .banner .bannerR {
+   /* position: absolute;*/
+    width: 360px;
+    height: 420px;
+    margin-top: 177px;
+    /*margin-right: 134px;*/
+    /*margin: 104px 0px 0px 740px;*/
+}
+.picture{
+	width: 100%;
+}
+.picture img{
+	width: 100%;
+}
+.press{
+	width: 100%;
+	margin-top: 30px;
+}
+.press a{
+	display: block;
+}
+.press a img{
+	width: 100%;
+}
+
+/*加的*/
+.plus{
+	position: relative;
+	width: 830px;
+    height: 620px;
+}

@@ -1,0 +1,258 @@
+.clearfix {
+	*zoom: 1
+}
+
+.clearfix:after {
+	clear: both;
+	visibility: hidden
+}
+
+#root,
+.bg,
+.main {
+	position: relative;
+	width: 100%;
+	height: 100%
+}
+
+.bg .bg-item {
+	width: 16.66668%;
+	float: left;
+	position: relative;
+	background: #000;
+	cursor: pointer
+}
+
+.bg .bg-item img {
+	display: block;
+	width: 100%;
+	min-height: 195px;
+	cursor: pointer;
+	transition: all 0.6s;
+}
+
+
+.bg .bg-item img:hover{
+	transform: scale(1.4);
+}
+
+.bg .bg-item .mask {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #000;
+	opacity: .4;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40)
+}
+
+.tip {
+	display: block;
+	position: absolute;
+	z-index: 10;
+	text-align: center;
+	cursor: pointer
+}
+
+.tip .login-wrapper {
+	position: relative;
+	width: 100%
+}
+
+.tip .login-wrapper img {
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 0 7px 2px #d35b2b
+}
+
+.tip .chat {
+	width: 235px;
+	height: 65px;
+	line-height: 65px;
+	margin: 15px auto 0;
+	border-radius: 50px;
+	box-shadow: 0 0 2px 2px #d35b2b;
+	text-align: center;
+	color: #fff;
+	font-size: 22px;
+	background: #d35b2b;
+	opacity: .8
+}
+
+.third-login {
+	position: absolute;
+	top: 50%;
+	left: 56%;
+	z-index: 20;
+	padding: 20px 34px;
+	margin-top: -300px;
+	border-radius: 6px;
+	background: hsla(0, 0%, 100%, .9);
+	background: #fff;
+	color: #fff
+}
+
+.third-login .logo {
+	display: block;
+	width: 190px;
+	margin: 0 auto 20px
+}
+
+.third-login .login-main .title {
+	font-size: 20px;
+	color: #302523;
+	text-align: center
+}
+
+.third-login .login-main .title .spe {
+	color: #ff6428
+}
+
+.third-login .login-list {
+	padding: 30px 0 20px;
+	text-align: center;
+	overflow: hidden;
+	width: auto
+}
+
+.third-login .login-list .login-item {
+	float: left;
+	margin-right: 23px;
+	cursor: pointer;
+	list-style: none
+}
+
+.third-login .login-list .login-item img {
+	display: block;
+	width: 84px;
+	height: 84px;
+	margin-bottom: 15px
+}
+
+.third-login .login-list .login-item span {
+	color: #000;
+	font-size: 16px;
+	text-align: center
+}
+
+.third-login .login-list .active {
+	animation: bounce 1s 1
+}
+
+.third-login .footer {
+	font-size: 12px;
+	text-align: center
+}
+
+.third-login .footer input {
+	vertical-align: middle
+}
+
+.third-login .footer .register-agreed {
+	vertical-align: middle;
+	color: #888
+}
+
+.third-login .footer .user-protocol {
+	vertical-align: middle;
+	color: #39b7ff;
+	cursor: pointer
+}
+
+.third-login .footer a {
+	text-decoration: none
+}
+
+.video-wrapper {
+	position: absolute;
+	width: 366px;
+	height: 650px;
+	z-index: 100;
+	left: 20%;
+	top: 50%;
+	margin-top: -450px;
+	background: #666
+}
+
+.video-wrapper video {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	z-index: 10;
+	object-fit: fill
+}
+
+.video-wrapper .voice {
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 36px;
+	height: 36px;
+	z-index: 20;
+	cursor: pointer
+}
+
+.video-wrapper span {
+	display: block;
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	z-index: 5
+}
+
+.video-wrapper .left-top {
+	left: -6px;
+	top: -6px
+}
+
+.video-wrapper .right-top {
+	right: -6px;
+	top: -6px
+}
+
+.video-wrapper .right-bottom {
+	right: -6px;
+	bottom: -6px
+}
+
+.video-wrapper .left-bottom {
+	left: -6px;
+	bottom: -6px
+}
+
+@media screen and (max-width:1200px) {
+	.third-login {
+		margin-top: -150px;
+		transform: scale(.85)
+	}
+	.video-wrapper {
+		transform: scale(.7);
+		left: 16%
+	}
+}
+
+@keyframes bounce {
+	0%,
+	20%,
+	53%,
+	80%,
+	to {
+		animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+		transform: translateZ(0)
+	}
+	40%,
+	43% {
+		animation-timing-function: cubic-bezier(.755, .05, .855, .06);
+		transform: translate3d(0, -30px, 0)
+	}
+	70% {
+		animation-timing-function: cubic-bezier(.755, .05, .855, .06);
+		transform: translate3d(0, -15px, 0)
+	}
+	90% {
+		transform: translate3d(0, -4px, 0)
+	}
+}

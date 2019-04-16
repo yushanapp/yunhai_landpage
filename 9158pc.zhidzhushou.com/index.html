@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>9158下载</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" type="image/x-icon" href="http://sr.9see.com/v3.0/images/favicon.png" />
+    <link href="common/css/style.css?20190314" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="common/css/promotion.index.css" />
+    <script src="common/js/jquery-1.11.3.js" type="text/javascript"></script>
+    <style type="text/css">
+        html, body
+        {
+            overflow: hidden;
+            height: 100%;
+            min-height: 1140px;
+            margin: 0;
+            padding: 0;
+        }
+        .bg-it
+        {
+            width: 16.6%; /*height: 138px;*/
+            border: #000 solid 0px; /*margin: 50px auto;*/ /* overflow: hidden; */
+            position: relative;
+        }
+        .bg-it img
+        {
+            cursor: pointer;
+            transition: all 0.6s;
+            width: 100%;
+            border: 1px solid transparent;
+            opacity: 0.4;
+        }
+        .bg-it img:hover
+        {
+            transform: scale(1.1);
+            border: 1px solid #ffec35;
+            z-index: 99;
+            position: relative;
+            opacity: 1;
+        }
+        .an
+        {
+            /*position: relative;*/
+            width: 60%;
+            height: 50px;
+            position: absolute;
+            top: 105%;
+            z-index: 99;
+            left: 20%;
+        }
+        .an img
+        {
+            width: 100%;
+            opacity: 1;
+        }
+        .an img:hover
+        {
+            width: 100%;
+            border: 0px solid transparent;
+        }
+    </style>
+    <script type="text/javascript">
+        var vList = ["http://www.9158.com/9158pc_down/common/file/1.mp4",
+                         "http://www.9158.com/9158pc_down/common/file/2.mov",
+                         "http://www.9158.com/9158pc_down/common/file/3.mp4",
+                         "http://www.9158.com/9158pc_down/common/file/6.mov",
+                         "http://www.9158.com/9158pc_down/common/file/7.mp4",
+                         "http://www.9158.com/9158pc_down/common/file/12.mp4",
+                         "http://www.9158.com/9158pc_down/common/file/13.mp4",
+                         ]; // 初始化播放列表
+
+        $(function () {
+            var html = "";
+            for (var i = 1; i < 19; i++) {
+                html += "<div class=\"bg-it left\" onclick=\"Down();\">";
+                html += "<div class=\"headimg\">";
+                html += "<img class=\"aim\" src=\"common/images/" + i + ".jpg\" />";
+                html += "</div>";
+                html += "<div class=\"an\" style=\"display: none;\" onclick=\"Down();\">";
+                html += "<img src=\"common/images/liao.png\" />";
+                html += "</div></div>";
+                if (i == 18) {
+                    $("#divList").append(html);
+                }
+            }
+
+            var winHeight = $(window).height();
+            $(".aim").css("height", (winHeight / 3) + "px");
+            //$("#divMain").css("margin-bottom", "0px");
+            var index = 0;
+            var vid = document.getElementById("v_media");
+            vid.onended = function () {
+                if (index >= vList.length) {
+                    index = 0;
+                }
+                vid.src = vList[index];
+                vid.play();
+                index++;
+            };
+
+            $(".headimg").mousemove(function () {
+                $(this).next().show();
+            }).mouseout(function () {
+                if ($(".an").length == 1) {
+
+                } else {
+                    $(this).next().hide();
+                }
+                //$(this).next().hide();
+            });
+            $(".an").mousemove(function () {
+                $(this).show();
+            }).mouseout(function () {
+                $(this).hide();
+            });
+
+            $(window).resize(function () {
+                var winHeight1 = $(window).height();
+                $(".aim").css("height", (winHeight1 / 3) + "px");
+                $("#divMain").css({
+                    "top": "10%",
+                    "left": "20%"
+                });
+            });
+        });
+        function OpenVoice() {
+            document.getElementById("v_media").muted = "";
+            $("#imgView").hide();
+            $("#imgHide").show();
+        }
+        function CloseVoice() {
+            document.getElementById("v_media").muted = "muted";
+            $("#imgView").show();
+            $("#imgHide").hide();
+        }
+//      function Down() {
+//          window.location.href = "http://jh.01lm.com/ktv/9158chat_ktv207_123.exe";
+//      }
+    </script>
+</head>
+<body>
+    <div class="pageBox">
+        <div class="collection clear" id="divList">
+
+        </div>
+        <!--背景结束-->
+        <table>
+        </table>
+        <img src="common/images/black_zhidaozhushou.png" style="position: absolute;top: 0px;">
+        <div id="divMain" class="banner clear">
+            <div class="plus">
+                <div class="short clear">
+                    <div class="chance left">
+                        <div id="div1" style="position: absolute; width: 248px; height: 439px; left: 19px;
+                            margin-top: 66px; overflow: hidden;">
+                            <video id="v_media" muted="muted" autoplay="autoplay" width="329.25" height="439"
+                                src="http://www.9158.com/9158pc_down/common/file/11.mp4" style="margin-left: -40px;">
+				        </video>
+                        </div>
+                        <img id="imgView" onclick="OpenVoice()" src="common/images/icon_silence.png" alt="voice"
+                            style="position: absolute; left: 215px; margin-top: 70px; overflow: hidden; cursor: pointer;" />
+                        <img id="imgHide" onclick="CloseVoice()" src="common/images/icon_voice.png" alt="voice"
+                            style="position: absolute; left: 215px; margin-top: 70px; overflow: hidden; cursor: pointer;
+                            display: none;" />
+                    </div>
+                    <div class="bannerR right">
+                        <div class="picture">
+                            <img src="common/images/tu.png" />
+                        </div>
+                        <div class="press">
+                            <a href="http://jh.01lm.com/ktv/9158chat_ktv207_123.exe">
+                                <img src="common/images/anniu.png" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p style="position: absolute;top: 90%;left: 40%;">北京智道未来网络科技有限公司版权所有</p>
+</body>
+</html>
