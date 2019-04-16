@@ -1,52 +1,104 @@
 ﻿<!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>红人直播</title>
-	<meta name="viewport" content="width=device-width">
-     <style>
-		.navImage img{
-			width:720px;
-			height:auto;
-			}
-			.navImage{
-			display:inline-block;
-			max-width: 720px;
-			}
-			body{
-			margin:0!important;
-			}
-		 	.img_box{
-				
-				width: 100%;
-				height: auto;
-				margin: 0 auto;
-				position: relative;
-			}
-		 .btns{
-			 position: absolute;
-			 width: 54%;
-			 height: 6%;
-			 left: 23%;
-			 top: 84%;
-			 z-index: 999;
-			 background: rgba(0,0,0,0);
-			 border: none;
-			 outline: none;
-		 }
-		.btns2{
-			position: absolute;
-			width: 20%;
-			height:11%;
-			left: 38%;
-			top: 50%;
-			z-index: 999;
-			background: rgba(0,0,0,0);
-			border: none;
-			outline: none;
-		}
-     </style>
-	<script type="text/javascript">
+    <meta charset="UTF-8">
+    <title>红人直播</title>
+    <meta name="viewport" content="width=device-width">
+    <style>
+        .navImage img {
+            width: 720px;
+            height: auto;
+        }
+
+        .navImage {
+            display: inline-block;
+            max-width: 720px;
+        }
+
+        body {
+            margin: 0 !important;
+        }
+
+        .img_box {
+
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .btns {
+            position: absolute;
+            width: 92%;
+            height: 2.5%;
+            left: 4%;
+            top: 93.3%;
+            z-index: 999;
+            background: rgba(0, 0, 0, 0);
+            border: none;
+            outline: none;
+        }
+
+        .btns2 {
+            position: absolute;
+            width: 20%;
+            height: 11%;
+            left: 38%;
+            top: 50%;
+            z-index: 999;
+            background: rgba(0, 0, 0, 0);
+            border: none;
+            outline: none;
+        }
+
+        .btns3 {
+            position: absolute;
+            width: 20%;
+            height: 49%;
+            left: 76%;
+            top: 24%;
+            z-index: 999;
+            background: rgba(0, 0, 0, 0);
+            border: none;
+            outline: none;
+
+        }
+
+        .btns4 {
+            position: absolute;
+            width: 20%;
+            height: 49%;
+            left: 76%;
+            top: 24%;
+            z-index: 999;
+            background: rgba(0, 0, 0, 0);
+            border: none;
+            outline: none;
+
+        }
+
+        .img_box2 {
+            width: 100%;
+            max-width: 720px;
+            margin: 0 auto;
+            position: fixed;
+            top: 0;
+        }
+
+        .img_box3 {
+            width: 100%;
+            max-width: 720px;
+            margin: 0 auto;
+            position: fixed;
+            bottom: 0;
+        }
+
+        .img_box3 img, .img_box2 img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+    <script type="text/javascript">
         window._agl = window._agl || [];
         (function () {
             _agl.push(
@@ -61,54 +113,55 @@
                 s.parentNode.insertBefore(agl, s);
             })();
         })();
-	</script>
+    </script>
 </head>
 <body>
-			<center>
-				<div class="navImage">
+<center>
+    <div class="navImage">
+        <div class="img_box">
+            <img src="https://cdn.xzwjuub.cn/hrzb.zhiniaotec.com/images/bg2.jpg" alt="navbar" id="img" border="0">
+            <button class="btns btnCilck" data-agl-cvt="6"></button>
+           <!-- <button class="btns2 btnCilck" data-agl-cvt="6"></button>-->
+        </div>
 
-
-			<div class="img_box">
-				<img src="http://cdn.xzwjuub.cn/hongren.zhiniaotec.com/images/bg1.jpg" alt="navbar" usemap="#imgMap" id="img" border="0">
-
-				<!--  <map name="imgMap" class="btnCilck">
-                      <area shape="rect" coords="274,641,414,782"  data-agl-cvt="6" href="javascript:;" style="outline:none;">
-                      <area shape="rect" coords="165,1070,561,1163"  data-agl-cvt="6" href="javascript:;" style="outline:none;">
-                  </map>-->
-				<button class="btns btnCilck" data-agl-cvt="6"></button>
-				<button class="btns2 btnCilck" data-agl-cvt="6"></button>
-			</div>
-
-			  </div> 
-		<!--<img src="http://cdn.lyplaaap.cn/pick.zhiniaotec.com/images/bg2.png" alt="" border="0" usemap="#download2Map" id="download2" style="position:fixed;margin:0 auto;top:0px;left:0;right:0;max-width: 720px;" onClick="javascript:;" >
-<map name="download2Map" class="btnCilck"><area shape="rect" coords="496,7,716,8  8" href="javascript:;"></map>-->
-			</center>
+        <div class="img_box2">
+            <img src="https://cdn.xzwjuub.cn/hrzb.zhiniaotec.com/images/s.jpg" alt="navbar" id="img2" border="0">
+            <button class="btns3 btnCilck" data-agl-cvt="6"></button>
+        </div>
+        <div class="img_box3">
+            <img src="https://cdn.xzwjuub.cn/hrzb.zhiniaotec.com/images/x.jpg" alt="navbar" id="img3" border="0">
+            <button class="btns4 btnCilck" data-agl-cvt="6"></button>
+        </div>
+    </div>
+</center>
 <script src="js/jquery-2.1.4.min.js"></script>
 <script>
 
     function getParameter(name) {
-        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)","i");
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
         var r = location.search.substr(1).match(reg);
-        if (r!=null) return (r[2]); return null;
+        if (r != null) return (r[2]);
+        return null;
     }
-    var c=getParameter("c");
+
+    var c = getParameter("c");
     console.log(c);
 
-	var Android="http://www.hongrenvv65.top/down+101.html?c="+c;//安卓下载链接
-	console.log(Android);
-		var Ios="";//ios下载链接
+    var Android = "http://www.hongrenvv65.top/down+101.html?c=" + c;//安卓下载链接
+    console.log(Android);
+    var Ios = "";//ios下载链接
 
-		var btns = document.getElementsByClassName("btnCilck");
-		for(var i=0;i<btns.length;i++){
-		   btns[i].onclick=function () {
-               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                   window.location.href =Android;
-               }else {
-                   window.location.href =Android;
-               }
-           }
-		};
-
+    var btns = document.getElementsByClassName("btnCilck");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].onclick = function () {
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href = Android;
+            } else {
+                window.location.href = Android;
+            }
+        }
+    }
+    ;
 
 
 </script>
