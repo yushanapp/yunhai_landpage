@@ -1,0 +1,196 @@
+@media screen and (max-width:1024px){
+    #header .header-content{width:90%;}
+    .nav-toggle{display:block;}
+    .navigation{position:fixed;background-color:#000;width:100%;height:100%;top:0;left:0;z-index:99999;visibility:hidden;opacity:0;-webkit-transition:opacity 0.5s,visibility 0s 0.5s;transition:opacity 0.5s,visibility 0s 0.5s;}
+    .navigation .primary-nav{position:relative;top:45%;-moz-transform:translateY(-45%);-ms-transform:translateY(-45%);-webkit-transform:translateY(-45%);transform:translateY(-45%);}
+    .navigation li{display:block;margin-bottom:20px;}
+    .navigation a{display:block;font-size:14px;margin:0;text-align:center;}
+    .overview-video iframe{width:290px;height:163px;}
+    .flex-control-nav{bottom:20px;}
+}
+@media screen and (max-width:768px){
+    #banner{text-align:center;}
+    .banner-text{padding-top:30%;}
+    .banner-text h1{margin-top:70px;font-size:30px;	font-weight:600;line-height:38px;}
+    .banner-text h2{font-size:28px;}
+    .banner-text p{font-size:18px;}
+    .banner-img{margin:auto;}
+    .banner-btn a{margin-bottom:100px;}
+    #overview{text-align:center;}
+    .overview-content p{padding-right:0px;}
+    #features{text-align:center;}
+    .features1-content{margin-top:5%;}
+    .left{text-align:center;}
+    .middle{padding-left:0px;margin:auto;margin-top:5%;margin-bottom:5%;}
+    .features2-content{margin-top:0px;}
+    .features3 img{padding-left:0px;}
+    .footer .footer-col{margin-bottom:50px;}
+	.zcdown {margin-bottom: 10%; text-align: center;}
+}
+@media screen and (max-width:640px){
+    #banner{text-align:center;}
+    .banner-text h1{margin-top:70px;font-size:30px;line-height:38px;font-weight:600;}
+    .banner-btn a{margin-bottom:70px;}
+    .banner-text{padding-top:35%;}
+    .footer a{font-size:14px;}
+    .footer .footer-share li{width:35px;height:35px;border-radius:50%;padding:7px 0;margin:0 5px;}
+	.zcdown {margin-bottom: 10%; text-align: center;}
+}
+@media screen and (max-width:480px){
+    #banner{text-align:center;}
+    .banner-text{padding-top:35%;}
+    .banner-text h1{margin-top:70px;font-size:30px;line-height:38px;font-weight:600;}
+    .banner-btn a{margin-bottom:15px;}
+	.zcdown {margin-bottom: 10%; text-align: center;}
+}
+@media screen and (max-width:320px){
+    .banner-text{padding-top:55%;}
+    .subscribe-form input[type=text]{width:65%;}
+    .subscribe-form input[type=submit]{width:35%;}
+}
+
+
+
+
+
+.mapbox{background:#0a2765;padding:20px 0 70px;}
+.mapbox .mapbox_n{position:relative;width:50%;margin:0 auto;}
+.mapbox .mapbox_n .img{width:100%;display: block;margin: 0 auto;}
+.mapbox .mapbox_n .address{position:absolute;top:16%;right:10%;width:6%;height:3%;margin:0;z-index:99;}
+.mapbox .mapbox_n .address span{position: absolute;top:-42px;right:-234px;color:#fff;width:250px;;background:url(../images/frame_bg.png) no-repeat;background-size:100% 100%;padding:15px 10px 15px 55px;display:block;display:none;}
+.mapbox .mapbox_n .address.gz{top:80%;right:29%;width:3%;height:15px;}
+.mapbox .mapbox_n .address.gz span{top: -183px;right: -465px;width: 475px;padding: 30px 20px 30px 101px;}
+
+.mapbox .mapbox_n .address.sz{top: 83%;right: 27%;width:3%;height:2%;}
+.mapbox .mapbox_n .address.sz span{top: -218px;right: -447px;width: 460px;padding: 30px 20px 30px 97px;}
+
+
+.mapbox .mapbox_n .address.sd{top: 48%;right: 23.5%;width: 3%;}
+.mapbox .mapbox_n .address.sd span{top:-81px;right:-237px;}
+.mapbox .mapbox_n .address.st{top: 80%;right: 20.5%;width: 3%;}
+.mapbox .mapbox_n .address.st span{top: -106px;right: -215px;width:260px;}
+.mapbox .mapbox_n .address.nc{top: 71%;right: 22.5%;width: 4%;height:16px;}
+.mapbox .mapbox_n .address.nc span{top: -96px;right: -232.5px;}
+.mapbox .mapbox_n .address.cs{top: 72%;right: 29.5%;width:3%;height:19px;}
+.mapbox .mapbox_n .address.cs span{top: -90px;right: -231px;}
+
+
+
+.mapbox .mapbox_n .address.wh{top: 60.5%;right: 28.5%;width: 4%;}
+.mapbox .mapbox_n .address.wh span{top: -103px;right: -252px;}
+
+.mapbox .mapbox_n .address.jz{top: 65.5%;right: 29.5%;width: 4%;}
+.mapbox .mapbox_n .address.jz span{top: -86px;right: -214px;}
+
+
+.mapbox .mapbox_n .address.sw{top: 83%;right: 22.5%;width: 2%;height: 11px;}
+.mapbox .mapbox_n .address.sw span{top: -81px;right: -216px;}
+.mapbox .mapbox_n .address.hz{top: 79.5%;right: 23.5%;width: 3%;height: 11px;}
+.mapbox .mapbox_n .address.hz span{top: -124px;right: -262px;width: 299px;padding-left: 61px;}
+.mapbox .mapbox_n .address.qy{top: 77.5%;right: 26%;width: 3%;height: 13px;}
+.mapbox .mapbox_n .address.qy span{top: -73px;right: -229px;}
+.mapbox .mapbox_n .address.ny{top: 55%;right: 32%;width: 4%;height: 16px;}
+.mapbox .mapbox_n .address.ny span{top: -61px;right: -256px;}
+.mapbox .mapbox_n .address.yt{top: 42%;right: 13.5%;width: 3%;height: 14px;}
+.mapbox .mapbox_n .address.yt span{top: -61px;right: -204px;}
+.mapbox .mapbox_n .address.zj{top: 85%;right: 32.5%;width: 3%;height: 13px;}
+.mapbox .mapbox_n .address.zj span{top: -57px;right: -240px;}
+.mapbox .mapbox_n .address.ly{top: 76.5%;right: 17.5%;width: 3%;height: 17px;}
+.mapbox .mapbox_n .address.ly span{top: -84px;right: -212px;}
+.mapbox .mapbox_n .address.sc{top: 61.5%;right: 45.5%;width: 4%;height: 16px;}
+.mapbox .mapbox_n .address.sc span{top: -53px;right: -243px;}
+.mapbox .mapbox_n .address.jx{top: 58%;right: 17.5%;width: 3%;height: 13px;}
+.mapbox .mapbox_n .address.jx span{top: -56px;right: -258px;width:260px;}
+.mapbox .mapbox_n .address.bd{top: 39.5%;right: 28%;width: 3%;height: 17px;}
+.mapbox .mapbox_n .address.bd span{top: -53px;right: -243px;}
+.mapbox .mapbox_n .address.sjz{top: 45.5%;right: 25%;width: 5%;height: 13px;}
+.mapbox .mapbox_n .address.sjz span{top: -89px;right: -221px;}
+.mapbox .mapbox_n .address.cd{top: 41%;right: 23%;width: 3%;height: 13px;}
+.mapbox .mapbox_n .address.cd span{top: -72px;right: -208px;}
+.mapbox .mapbox_n .address.nn{top: 80.5%;right: 34.5%;width: 4%;height: 18px;}
+.mapbox .mapbox_n .address.nn span{top: -93px;right: -222px;width:260px;}
+.mapbox .mapbox_n .address.sf{top: 43.5%;right: 21.5%;width: 3%;height: 19px;}
+.mapbox .mapbox_n .address.sf span{top: -53px;right: -243px;}
+.mapbox .mapbox_n .address.zz{top: 50%;right: 28%;width: 4%;height: 19px;}
+.mapbox .mapbox_n .address.zz span{top: -49px;right: -230px;}
+// .mapbox .mapbox_n .address.wh{top: 61.5%;right: 29%;width: 4%;height: 19px;}
+// .mapbox .mapbox_n .address.wh span{top: -66px;right: -252px;}
+.mapbox .mapbox_n .address.qd{top: 48.5%;right: 16%;width: 3%;height: 14px;}
+.mapbox .mapbox_n .address.qd span{top: -88px;right: -212px;}
+.mapbox .mapbox_n .address.fz{top: 71.5%;right: 14.5%;width: 3%;height: 17px;}
+.mapbox .mapbox_n .address.fz span{top: -76px;right: -206px;}
+.mapbox .mapbox_n .address.yk{top: 64%;right: 13.5%;width: 3%;height: 18px;}
+.mapbox .mapbox_n .address.yk span{top: -82px;right: -224px;width:260px;}
+
+
+
+@media screen and (min-width:1920px){
+    .mapbox .mapbox_n .img{width:950px;}
+}
+@media screen and (min-width:769px) and (max-width:1024px){
+    .mapbox .mapbox_n .address span{top:-58px;}
+    .mapbox .mapbox_n .address.gz{height:9px;}
+    .mapbox .mapbox_n .address.gz span{top: -206px;width: 397px;right: -385px;padding-left: 86px;}
+    .mapbox .mapbox_n .address.sz span{top: -274px;width: 330px;right: -320px;padding: 30px 20px 30px 72px;}
+    .mapbox .mapbox_n .address.sd span{top:-80px;}
+    .mapbox .mapbox_n .address.st{height:2%;}
+    .mapbox .mapbox_n .address.st span{top: -115px;right: -234px;}
+    .mapbox .mapbox_n .address.nc{height:12px;}
+    .mapbox .mapbox_n .address.nc span{top: -87px;right: -238px;}
+    .mapbox .mapbox_n .address.cs{height:9px;}
+    .mapbox .mapbox_n .address.cs span{top: -87px;right: -238px;}
+
+    .mapbox .mapbox_n .address.wh{height:10px;}
+    .mapbox .mapbox_n .address.wh span{top: -112px;right: -247px;}
+
+    .mapbox .mapbox_n .address.jz{top: 65.5%;right: 29.5%;width: 4%;}
+    .mapbox .mapbox_n .address.jz span{top: -84px;right: -225px;}
+
+    .mapbox .mapbox_n .address.sw{height:8px;}
+    .mapbox .mapbox_n .address.sw span{right: -228px;top:79px;}
+    .mapbox .mapbox_n .address.hz{height:8px;}
+    .mapbox .mapbox_n .address.hz span{top: -131px;right: -273px;}
+    .mapbox .mapbox_n .address.qy{height:9px;}
+    .mapbox .mapbox_n .address.qy span{top: -81px;right:-232px;}
+    .mapbox .mapbox_n .address.ny{height:11px;}
+    .mapbox .mapbox_n .address.ny span{top: -70px;right: -250px;}
+    .mapbox .mapbox_n .address.yt{height:8px;}
+    .mapbox .mapbox_n .address.yt span{top: -70px;right: -221px;}
+    .mapbox .mapbox_n .address.zj span{top: -67px;}
+    .mapbox .mapbox_n .address.ly{height:11px;}
+    .mapbox .mapbox_n .address.ly span{right: -228px;}
+    .mapbox .mapbox_n .address.sc{height:9px;}
+    .mapbox .mapbox_n .address.sc span{top: -66px;}
+    .mapbox .mapbox_n .address.jx{height:8px;}
+    .mapbox .mapbox_n .address.jx span{top: -59px;}
+    .mapbox .mapbox_n .address.bd{height:11px;}
+    .mapbox .mapbox_n .address.bd span{top: -65px;}
+    .mapbox .mapbox_n .address.sjz{height:9px;}
+    .mapbox .mapbox_n .address.sjz span{top: -83px;right: -229px;}
+    .mapbox .mapbox_n .address.cd{height:9px;}
+    .mapbox .mapbox_n .address.cd span{right: -223px;top:-75px;}
+    .mapbox .mapbox_n .address.nn{height:11px;}
+    .mapbox .mapbox_n .address.nn span{top: -105px;right: -234px;width:260px;}
+    .mapbox .mapbox_n .address.sf{height:12px;}
+    .mapbox .mapbox_n .address.sf span{top: -65px;right: -243px;}
+    .mapbox .mapbox_n .address.zz{height: 12px;}
+    .mapbox .mapbox_n .address.zz span{top: -62px;right: -234px;}
+    .mapbox .mapbox_n .address.qd{height: 8px;}
+    .mapbox .mapbox_n .address.qd span{top: -85px;right: -227px;}
+    .mapbox .mapbox_n .address.fz{height: 12px;}
+    .mapbox .mapbox_n .address.fz span{top: -83px;right: -224px;}
+    .mapbox .mapbox_n .address.yk{height: 10px;}
+    .mapbox .mapbox_n .address.yk span{right: -236px;}
+
+
+}
+@media screen and (max-width:768px){
+    .mapbox .mapbox_n{width:90%;}
+}
+@media screen and (max-width:640px){
+    .mapbox .mapbox_n{width:90%;}
+}
+@media (max-width:414px){
+    .mapbox .mapbox_n{width:100%;}
+    .mapbox .mapbox_n .address span{display:none;}
+}
