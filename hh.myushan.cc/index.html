@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="full-screen" content="yes">
+  <meta name="x5-fullscreen" content="true">
+  <meta name="applicable-device" content="mobile">
+  <link rel="stylesheet" href="https://cdn.xzwjuub.cn/huohua/css/3/main.css">
+  <title>火花APP</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="header-left">
+        <div class="left-logo">
+          <!-- <img src="https://res.xdlfkh.cn/hhdl/images/logo.png" alt=""> -->
+          <img src="https://cdn.xzwjuub.cn/huohua/images/logo_hj.png" alt="">
+        </div>
+        <div class="left-title">
+          <p class="left-name">火花直播</p>
+          <p class="left-description">风情女神秀场</p>
+        </div>
+      </div>
+      <div class="header-right"  onclick="download()">
+        <i class="right-icon"></i>
+        免费下载APP
+      </div>
+    </div>
+    <div class="content">
+      <div class="content-top">
+        <div class="top-left">
+          <div class="avatar"></div>
+		  <div class="avatar2" style="float: left;width: .94rem;height: .94rem;background: url("https://cdn.xzwjuub.cn/huohua/images/avatar.png") no-repeat center;-webkit-background-size: cover;background-size: cover
+
+		  ></div>
+
+          <div class="user">
+            <p class="name">小清瑶 <i class="sex-icon"></i></p>
+            <p class="address"><i class="address-icon"></i>12.5km</p>
+          </div>
+          <div class="care"></div>
+        </div>
+        <div class="top-right"><i class="dian"></i>热辣直播中</div>
+      </div>
+      <div class="content-play"></div>
+      <div class="footer">
+        <!-- <div class="footer-description">
+          <p class="text1"></p>
+          <p class="text2"></p>
+        </div> -->
+        <div class="footer-btn">
+          <ul class="clearfix">
+            <li>
+              <a href="javascript:;">
+                <div >
+                  <p class="icon voice"></p>
+                  <p class="text">切到语言聊天</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <div>
+                  <p class="icon phone"></p>
+                  <p class="text active">立即免费看秀</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <div >
+                  <p class="icon camera"></p>
+                  <p class="text">转换摄像头</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="copy" style="color:#F0F0F0">
+         &copy; 版权所有:北京智投智道投资咨询有限公司
+		   </br>公司地址:北京市昌平区昌崔路198号院2号楼
+		     </br>联系电话：15810015773
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mask" id="mask">
+    <div class="dialog">
+      <div class="avatar"></div>
+      <div class="description">
+        <p>去撩更多颜值主播</p>
+      </div>
+      <div onclick="download()" class="download-btn">下载<span>火花</span>APP</div>
+    </div>
+  </div>
+  <!-- <div class="install" id="install">
+    <div class="img">
+      <img src="https://res.xdlfkh.cn/hhdl/images/course_hj.gif" alt="">
+    </div>
+  </div> -->
+<!-- 
+  <div class="mask" id="js_box2">
+    <div class="alert-box">
+      <div class="now-download">“火花直播”安装中...</div>
+      <div class="alert-btn">
+        <div class="color-bar top-bar"></div>
+        <div class="color-bar buttom-bar"></div>
+      </div>
+      <div class="course_pic"><img src="./images/course_hj.gif"></div> <a
+        href="http://www.linjiazhaipin.vip/app.mobileprovision" class="change">前往企业证书</a>
+    </div>
+  </div> -->
+
+ <script src="https://cdn.xzwjuub.cn/huohua/js/jquery-2.1.1.min.js"></script>
+ <script src="https://cdn.xzwjuub.cn/huohua/js/rem.js"></script>
+ <script src="https://cdn.xzwjuub.cn/huohua/js/openinstall.js"></script>
+ 
+  <!--
+  <script src="https://res.xdlfkh.cn/hhdl/js/jquery-2.1.1.min.js"></script>
+  <script src="https://res.xdlfkh.cn/hhdl/js/rem.js"></script>
+  <script src="https://res.xdlfkh.cn/hhdl/js/openinstall.js"></script>   -->
+  <script>
+    // 初始化
+    window.onload = function () {
+      this.m = new OpenInstall({
+        appKey: this.appKey
+      }, { "channel": this.data });
+
+      if (sysTemInfo() == 1) {
+        $('.left-logo img').attr('src','images/logo2.png');
+        $('.left-title .left-name,#mask .download-btn span').html('花间映象');
+      }
+    };
+    var iosOffLine = true,
+        qd = '',
+        m = "",
+        ios = "",
+        data = "",
+        appKey = "jndr89",
+        bg = null,
+        backNum = 0,
+        kfh = 0;
+    function showDialog() {
+      document.getElementById('mask').style.display = 'block';
+    };
+    // 下载
+    function download() {
+      if (sysTemInfo() == 1) {
+        document.getElementById('mask').style.display = 'none';
+        // document.getElementById('js_box2').style.display = 'block';
+        // this.installByQYZS();
+        this.m.install();
+      } else {
+        var form = document.createElement('form');
+        form.action = 'https://app.bfljrs.cn:19443/direct/' + (this.getURLParameter('qd') || 'BD_1');
+        document.getElementsByTagName('body')[0].appendChild(form);
+        form.submit();
+      }
+    };
+    // 获取地址栏参数
+    function getURLParameter(i) {
+        return decodeURIComponent((new RegExp('[?|&]' + i + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
+    };
+    function sysTemInfo() { // 判断ios 和安卓  1 ios  2 android
+      var us = navigator.userAgent.toLowerCase();
+      if ((us.indexOf('android') > -1 || us.indexOf('linux') > -1) || navigator.platform.toLowerCase().indexOf('linux') != -1) {
+        return '2';
+      } else if (us.indexOf('iphone') > -1 || us.indexOf('ipad') > -1) {
+        return '1';
+      }
+    };
+    // function installByQYZS() {
+    //     $('.cover,.layer').hide();
+    //   $('.fot').addClass('blur');
+    //   $("#js_box2").show();
+    //   $(".now-download").show();
+    //   $(".change").hide();
+    //   loading = true;
+    //   $(".top-bar").css("width", "0.1%");
+    //   timer = setTimeout(function () {
+    //     $(".top-bar").animate({
+    //       width: "100%"
+    //     }, 40000, function () {
+    //       $(".now-download").html('安装完成，请开始设置！');
+    //       $('.alert-btn').hide();
+    //       $(".change").show();
+    //       loading = false;
+    //     });
+    //   }, 1000);
+    // };
+  </script>
+  <div style="display:none"><script type="text/javascript" src="https://s19.cnzz.com/z_stat.php?id=1272113474&web_id=1272113474"></script></div>
+</body>
+</html>
