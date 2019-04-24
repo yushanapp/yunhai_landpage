@@ -78,4 +78,4 @@ textarea{resize: none;overflow: auto;}
 @keyframes scale{0%{transform: scale(0.98);}
 50%{transform: scale(1.2);}
 100%{transform: scale(0.98);}}
-.copy{text-align: center;font-size: .1.5rem;color: #fff;margin-top: .133333rem}
+.copy{text-align: center;font-size: 0.1rem;color: #fff;margin-top: .133333rem}
