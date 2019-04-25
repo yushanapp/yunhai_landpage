@@ -24,7 +24,7 @@ textarea{resize: none;overflow: auto;}
 .container .header .left-description{font-size: .24rem;}
 .container .header .header-right{float: right;width: 2.4rem;height: .64rem;line-height: .64rem;margin: .28rem .3rem;color: #FF38B0;font-size: .28rem;border-radius: 30px;background-color: #fff;}
 .container .header .header-right .right-icon{float: left;width: .3rem;height: .3rem;margin: .16rem .04rem .16rem .2rem;background: url("https://cdn.xzwjuub.cn/huohua/images/top_icon_downloads.png") no-repeat;-webkit-background-size: cover;background-size: cover;}
-.content{position: relative;background: #7A716B url('https://cdn.xzwjuub.cn/huohua/images/live_bg.png') no-repeat 0 0;background-size: cover;height: 100%;padding-top: 1.2rem;}
+.content{position: relative;background: #7A716B url('https://cdn.xzwjuub.cn/live_bg.jpg') no-repeat 0 0;background-size: cover;height: 100%;padding-top: 1.2rem;}
 .content .content-top{margin: .44rem .3rem;overflow: hidden;}
 .content .content-top .top-left{float: left;width: 3.8rem;height: .94rem;background: rgba(0, 0, 0, .4);color: #ffffff;-webkit-border-radius: 60px;-moz-border-radius: 60px;border-radius: 60px;}
 .content .content-top .top-left .avatar{float: left;width: .94rem;height: .94rem;background: url("https://cdn.xzwjuub.cn/huohua/images/avatar.png") no-repeat center;-webkit-background-size: cover;background-size: cover;}
@@ -45,7 +45,8 @@ textarea{resize: none;overflow: auto;}
 .footer .footer-btn ul li{float: left;width: 33.33%;text-align: center;}
 .footer .footer-btn ul li .icon{width: 1.18rem;height: 1.18rem;margin: .71rem auto 0;-webkit-background-size: contain;background-size: contain;}
 .footer .footer-btn ul li .voice{background: url("https://cdn.xzwjuub.cn/huohua/images/video_icon_voice.png") no-repeat center;-webkit-background-size: contain;background-size: contain;}
-.footer .footer-btn ul li .phone{background: url("https://cdn.xzwjuub.cn/huohua/images/video_icon_get.png") no-repeat center;-webkit-background-size: contain;background-size: contain;-webkit-animation: scale 1s infinite;-o-animation: scale 1s infinite;animation: scale 1s infinite;}
+/* .footer .footer-btn ul li .phone{background: url("https://cdn.xzwjuub.cn/huohua/images/images/video_icon_get_1.png") no-repeat center;-webkit-background-size: contain;background-size: contain;-webkit-animation: scale 1s infinite;-o-animation: scale 1s infinite;animation: scale 1s infinite;} */
+.footer .footer-btn ul li .phone{background: url("https://cdn.xzwjuub.cn/huohua/images/5/video_icon_get_1.png") no-repeat center;-webkit-background-size: contain;background-size: contain;-webkit-animation: scale 1s infinite;-o-animation: scale 1s infinite;animation: scale 1s infinite;}
 .footer .footer-btn ul li .camera{background: url("https://cdn.xzwjuub.cn/huohua/images/video_icon_camera.png") no-repeat center;-webkit-background-size: contain;background-size: contain;}
 .footer .footer-btn ul li .text{margin-top: .18rem;color: #ffffff;font-size: .20rem;}
 .footer .footer-btn ul li .active{font-size: .3rem;font-weight: bold;}
@@ -78,4 +79,5 @@ textarea{resize: none;overflow: auto;}
 @keyframes scale{0%{transform: scale(0.98);}
 50%{transform: scale(1.2);}
 100%{transform: scale(0.98);}}
-.copy{text-align: center;font-size: .1.5rem;color: #fff;margin-top: .133333rem}
+.copy{text-align: center;font-size: 0.1rem;color: #fff;margin-top: .133333rem}
+.iosTips{display: none; position: absolute;left: 0;top: -.7rem; width: 100%;height: 1rem;background: url(../images/txt_ios.png) center no-repeat;background-size: auto 90%; }
