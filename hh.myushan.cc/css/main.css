@@ -45,7 +45,8 @@ textarea{resize: none;overflow: auto;}
 .footer .footer-btn ul li{float: left;width: 33.33%;text-align: center;}
 .footer .footer-btn ul li .icon{width: 1.18rem;height: 1.18rem;margin: .71rem auto 0;-webkit-background-size: contain;background-size: contain;}
 .footer .footer-btn ul li .voice{background: url("https://cdn.xzwjuub.cn/huohua/images/video_icon_voice.png") no-repeat center;-webkit-background-size: contain;background-size: contain;}
-.footer .footer-btn ul li .phone{background: url("https://cdn.xzwjuub.cn/huohua/images/video_icon_get.png") no-repeat center;-webkit-background-size: contain;background-size: contain;-webkit-animation: scale 1s infinite;-o-animation: scale 1s infinite;animation: scale 1s infinite;}
+/* .footer .footer-btn ul li .phone{background: url("https://cdn.xzwjuub.cn/huohua/images/images/video_icon_get_1.png") no-repeat center;-webkit-background-size: contain;background-size: contain;-webkit-animation: scale 1s infinite;-o-animation: scale 1s infinite;animation: scale 1s infinite;} */
+.footer .footer-btn ul li .phone{background: url("https://cdn.xzwjuub.cn/huohua/images/2/video_icon_get_1.png") no-repeat center;-webkit-background-size: contain;background-size: contain;-webkit-animation: scale 1s infinite;-o-animation: scale 1s infinite;animation: scale 1s infinite;}
 .footer .footer-btn ul li .camera{background: url("https://cdn.xzwjuub.cn/huohua/images/video_icon_camera.png") no-repeat center;-webkit-background-size: contain;background-size: contain;}
 .footer .footer-btn ul li .text{margin-top: .18rem;color: #ffffff;font-size: .20rem;}
 .footer .footer-btn ul li .active{font-size: .3rem;font-weight: bold;}
@@ -78,4 +79,4 @@ textarea{resize: none;overflow: auto;}
 @keyframes scale{0%{transform: scale(0.98);}
 50%{transform: scale(1.2);}
 100%{transform: scale(0.98);}}
-.copy{text-align: center;font-size: .1.5rem;color: #fff;margin-top: .133333rem}
+.copy{text-align: center;font-size: 0.1rem;color: #fff;margin-top: .133333rem}
