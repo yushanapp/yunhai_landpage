@@ -11,8 +11,8 @@
   <meta name="x5-fullscreen" content="true">
   <meta name="applicable-device" content="mobile">
   <!-- <link rel="stylesheet" href="https://cdn.xzwjuub.cn/huohua/css/4/main.css?v=2019042401"> -->
-  <link href="https://cdn.xzwjuub.cn/xs/images2/favicon.ico" mce_href="https://cdn.xzwjuub.cn/xs/images2/favicon.ico" rel="icon" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdn.xzwjuub.cn/huohua/images/4/main.css">
+  <link rel="stylesheet" href="https://cdn.xzwjuub.cn/huohua/css/6/main.css">
+  <link href="https://cdn.xzwjuub.cn/xs/images2/favicon.ico" mce_href="https://cdn.xzwjuub.cn/xs/images2/favicon.ico" rel="icon" type="image/x-icon"> 
   <title>火花APP</title>
 </head>
 
@@ -48,10 +48,11 @@
       </div>
       <div class="content-play"></div>
       <div class="footer">
-        <!-- <div class="footer-description">
-          <p class="text1"></p>
-          <p class="text2"></p>
-        </div> -->
+        <div class="footer-description">
+          <p class="iosTips"></p>
+          <!-- <p class="text1"></p>
+          <p class="text2"></p> -->
+        </div>
         <div class="footer-btn">
           <ul class="clearfix">
             <li>
@@ -123,6 +124,7 @@
   <script>
     var qd = this.getURLParameter('qd') || 'BD_1';
     if (sysTemInfo() == 1) {
+      $('.iosTips').show();
       $('.left-logo img').attr('src', 'images/logo2.png');
       $('.left-title .left-name,#mask .download-btn span').html('花间映象');
     }
