@@ -1,63 +1,58 @@
-﻿<!doctype html>
-<html>
+﻿
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://www.826006.com/qtt4/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>完美夜色</title>
+    <style>
+    @keyframes scaleDraw {  /*定义关键帧、scaleDrew是需要绑定到选择器的关键帧名称*/
+            0%{
+                transform: scale(1);  /*开始为原始大小*/
+            }
+            25%{
+                transform: scale(1.1); /*放大1.1倍*/
+            }
+            50%{
+                transform: scale(1);
+            }
+            75%{
+                transform: scale(1.1);
+            }
+        }
 
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
-		<meta content="yes" name="apple-mobile-web-app-capable">
-		<meta content="black" name="apple-mobile-web-app-status-bar-style">
-		<meta content="telephone=no" name="format-detection">
-		<title></title>
-		<link href="css/main-09497.css" rel="stylesheet">
-		<style>
-		.lx {
-		    margin: 0px auto;
-		    display: block;
-		    width: 252px;
-		}
-		.lx li {
-			float: left;
-			padding: 10px;
-		}
-		a {
-		    text-decoration: none;
-		    cursor: default;
-		}
-		</style>
+        body{
+            margin:0px;
+            padding:0px;
+        }
 
-	</head>
+        img{
+            width:100%;
+            height:100%;
+        }
+        .btn{
+        	-webkit-animation: scaleDraw 5s ease-in-out infinite;
+        	-webkit-animation-name: scaleDraw; /*关键帧名称*/
+            -webkit-animation-timing-function: ease-in-out; /*动画的速度曲线*/
+            -webkit-animation-iteration-count: infinite;  /*动画播放的次数*/
+
+        }
+    </style>
+</head>
 <body>
-	<img class="imgs title" src="images/dg_title-tcyd5.png"> <img class="imgs person" src="images/person1.png">
-	<img src="images/black_zhiniao.png" style="position: absolute;width: 10%;left: 0;top: 0;" />
-	<!--<img src="images/bg2.jpg" style="width: 100%;" />-->
-	<div class="footer">
-		<img class="imgs btn botton" src="images/tg_btn1.png">
-		<center class="compay">北京智鸟科技有限公司 版权所有</center>
-	</div>
-	
-	<!--<ul class="lx">
-    	<li><a href="gywm.html">关于我们</a></li>
-    	<li><a href="cpjs.html">产品介绍</a></li>
-		<li><a href="lxwm.html">联系我们</a></li>
-    </ul>-->
-	
-	<!--<script type="text/javascript" src="js/main-09497.js"></script>-->
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<!--<script type="text/javascript" src="js/backjump.js" ></script>-->
-	<script>
-		APK_url = "http://yuedan.4ip7u3.cn/channel/app_shenmasem17.apk";
-		// 区分安卓ios
-		var u = navigator.userAgent;
-		var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
-		var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
-		if(isIOS == true) {
-			APK_url = "http://yuedan.4ip7u3.cn/channel/app_shenmasem17.apk";
-		}
-		$(".btn").click(function(e) {
-			window.location.href = APK_url;
-		});
-		//setTimeout(function (){  window.location.href= APK_url;}, 3000)
-	</script>
-</body>
+<div style="position: relative;">
+    <a href="javascript:;" class="aHtml">
+        <img src="img/3.jpg" alt="">
+    </a>
+     <a  href="http://yuedan.4ip7u3.cn/channel/app_shenmasem17.apk" style="position: absolute;width:60%;bottom:8%;left:21%;"><img class="btn" src="img/btn.png" alt=""></a> 
+</div>
+<!--<script type="text/javascript">
+        document.getElementById("download").addEventListener("click", function(){
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href ="https://www.9xiu.com/spread/download?f=shenmsem5";
+            }else {
+                window.location.href ="https://www.9xiu.com/spread/download?f=shenmsem5";
+            }
+        });
+</script>-->
 
-</html> 
+</body></html>
