@@ -1,0 +1,151 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body,
+        html {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            min-width: 320px;
+            max-width: 840px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            position: absolute;
+            top: -10px;
+            left: 0;
+            width: 20%;
+            z-index: 9999;
+        }
+        
+        .box {
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .box1 {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+        
+        .car_img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        /* 缩放动画*/
+        
+        @-webkit-keyframes slipUp {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        
+        .fontsize {
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            position: absolute;
+            bottom: 0;
+            color: black;
+            -webkit-transform: scale(0.6);
+        }
+        
+        .bottom {
+            width: 100%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+        }
+        
+        .btn_down1 {
+            width: 69%;
+            position: absolute;
+            bottom: 11.6%;
+            right: 1%;
+            /* margin: 0 auto; */
+            z-index: 1;
+            /* -webkit-animation: slipUp 1s linear infinite alternate; */
+            /* height: 10%; */
+            /* border: 1px solid red; */
+            left: 0%;
+            right: 0%;
+            margin: 0 auto;
+            /* top: 26%; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box1">
+            <img class="logo" src="http://test.myushan.com//logo/black_zhiniao.png" onclick="return false" alt="" />
+            <img class="car_img down" src="./img/bg.jpg" onclick="return false" alt="" />
+            <p class="fontsize banben"><span style="font-size:14px">北京智鸟科技有限公司版权所有</span><br>
+<span style="transform:scale(0.5)">地址：海淀区交大东路66号院2号楼</span>
+<span style="transform:scale(0.5)">联系电话：13051230120</span></div></p>
+
+
+        </div>
+    </div>
+    <img class="btn_down1" src="./img/btn.png">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./dl.min.js"></script>
+
+    <script>
+        $('.btn_down1').click(function() {
+            window.location.href = btndown;
+            event.defaultPrevented
+        });
+var ios = "https://go.onelink.me/app/6d1b81ef";
+var down = "";
+var btndown = "";
+function _getQueryString(name) {
+  var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+  var r = window.location.search.substr(1).match(reg);
+  if (r != null) {
+    return r[2];
+  }
+  return null;
+}
+var c4 = _getQueryString('c4')||'zhr_04';
+var android = "http://huajiao.dl.keniub.com/app/android/apk/sem_"+c4+".apk";
+if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+  down = "ios";
+  btndown = ios;
+} else if (/(Android)/i.test(navigator.userAgent)) {
+  down = "android";
+  btndown = android;
+} else {
+  down = "pc";
+  btndown = android;
+}
+    </script>
+
+</body>
+
+</html>
