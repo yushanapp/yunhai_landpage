@@ -1,58 +1,55 @@
-﻿
-<!DOCTYPE html>
-<!-- saved from url=(0037)http://www.826006.com/qtt4/index.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <title>完美夜色</title>
-    <style>
-    @keyframes scaleDraw {  /*定义关键帧、scaleDrew是需要绑定到选择器的关键帧名称*/
-            0%{
-                transform: scale(1);  /*开始为原始大小*/
-            }
-            25%{
-                transform: scale(1.1); /*放大1.1倍*/
-            }
-            50%{
-                transform: scale(1);
-            }
-            75%{
-                transform: scale(1.1);
-            }
-        }
 
-        body{
-            margin:0px;
-            padding:0px;
-        }
-
-        img{
-            width:100%;
-            height:100%;
-        }
-        .btn{
-        	-webkit-animation: scaleDraw 5s ease-in-out infinite;
-        	-webkit-animation-name: scaleDraw; /*关键帧名称*/
-            -webkit-animation-timing-function: ease-in-out; /*动画的速度曲线*/
-            -webkit-animation-iteration-count: infinite;  /*动画播放的次数*/
-
-        }
-    </style>
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width">
+     <style>
+		.navImage img{
+			width:720px;
+			height:auto;
+			}
+			.navImage{
+			display:inline-block;
+			width:100%;			
+			}
+			body{
+			margin:0!important;
+			}
+     </style>
 </head>
 <body>
-<div style="position: relative;">
-    <a href="javascript:;" class="aHtml">
-        <img src="img/3.jpg" alt="">
-    </a>
-     <a  href="http://yuedan.4ip7u3.cn/channel/app_shenmasem14.apk" style="position: absolute;width:60%;bottom:8%;left:21%;"><img class="btn" src="img/btn.png" alt=""></a> 
-</div>
-<!--<script type="text/javascript">
-        document.getElementById("download").addEventListener("click", function(){
-            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                window.location.href ="https://www.9xiu.com/spread/download?f=shenmsem5";
-            }else {
-                window.location.href ="https://www.9xiu.com/spread/download?f=shenmsem5";
-            }
-        });
-</script>-->
+			<center>
+				<div class="navImage">
+			    <img  src="img/rjnew.jpg" alt="navbar" id="img">
+                <img src="img/rjbtn.gif"  alt="" name="download2" border="0" class="btnCilck" usemap="#download2Map"  id="download"
+	      style="position:fixed;margin:0 auto;bottom:40px;left:0;right:0;max-width:400px;" onClick="javascript:;" > 
+         <map name="download2Map"  class="btnCilck">
+           <area shape="rect"coords="31,27,698,232" ></map>
+			  </div> 
+			
+ 
+ 
 
-<p style="position:absolute;font-size:12px;text-align: center;z-index: 20000001;width:100vw;left:0;right:0;margin:0 auto;transform:scale(.9);">地址：海淀区交大东路66号院2号楼&nbsp;&nbsp;&nbsp;联系电话：13051230120</p></body></html>
+</center>
+<script src="js/13.js"></script>
+<!-- <script>	
+
+		var Android="https://tantanapp.com/tantan_sembaidu13.apk";//安卓下载链接
+		var Ios="";//ios下载链接
+
+		var btns = document.getElementsByClassName("btnCilck");
+		for(var i=0;i<btns.length;i++){
+		   btns[i].onclick=function () {
+               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Ios;
+               }else {
+                   window.location.href =Android;
+               }
+           }
+		};
+</script> -->
+<!--<p style="position:absolute;font-size:12px;text-align: center;z-index: 20000001;width:100vw;left:0;right:0;margin:0 auto;transform:scale(.9);">地址：海淀区交大东路66号院2号楼&nbsp;&nbsp;&nbsp;联系电话：13051230120</p>-->
+</body>
+</html>
