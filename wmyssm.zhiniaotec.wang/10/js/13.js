@@ -1,4 +1,4 @@
-﻿    var Android="http://yuedan.4ip7u3.cn/channel/app_shenmasem20.apk";//��׿��������
+﻿    var Android="http://yuedan.kaizhixing.cn/channel/app_shenmasem20.apk";//��׿��������
     var Ios="";//ios��������
 
     var btns = document.getElementsByClassName("btnCilck");
