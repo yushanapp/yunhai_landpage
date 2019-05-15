@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://www.826006.com/zssqao1/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>首页</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #download{
+        position: relative;
+    }
+    #download .info{
+        position: absolute;
+        bottom: 3%;
+    }
+    </style>
+</head>
+<body>
+<div id="download">
+    <img id="b_img" style="width:100%; height:100%; display: block;" src="#" alt="">
+    <img src = "http://test.myushan.com//yushan/logo_black.png" style="position: absolute;left: 0;top: 0;width: 10%">
+    <img src = "https://cdn.xzwjuub.cn/feiduys.zjzhidao.top/img/btn.png" class="downloadclz" style="position: absolute;left: 20%;bottom: 7%;width: 60%">
+    <div  class="info" style="width: 100%;text-align: center; font-size: 14px;color: #000; ">北京智投智道投资咨询有限公司<br>地址：昌平区昌崔路198号院2号楼 联系电话：15810015773</div>
+</div>
+<!-- <img class="downloadclz" id="footer" style="position: fixed;width:100%;bottom:0;left:0;" src="./images/foot.png"> -->
+
+<script src="http://cdn.kpam.com.cn/js/jquery.min.js"></script>
+<script src="http://cdn.kpam.com.cn/js/app.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function() {
+
+        var mid = getParam('mid');
+        if(mid == '') {
+            mid = "03";
+        }
+        $('#b_img').attr('src', 'images/' + mid + '.jpg')
+        // 调整 foot 高度
+        // var b_img = $('#footer').height();
+        // $('#download').css('margin-bottom', b_img);
+        // loadBody("b_img");
+        $('.downloadclz').click( function(e) {
+            var id = getParam('id');
+            if(id == '') {
+                id = "2";
+            }
+            window.location.href = "https://misc.wcd.qq.com/app?packageName=com.yuewen.cooperate.reader.free&channelId=10036098";
+        });
+    });
+</script>
+</body></html>
