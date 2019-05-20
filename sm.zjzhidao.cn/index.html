@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon " type="images/x-icon" href="./favicon.ico">
+  <title>同城单身约</title>
+  <style>
+    .main,
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(197, 197, 197);
+    }
+
+    .background {
+      width: 100%;
+      height: auto;
+    }
+
+    .box {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 80%;
+    }
+
+    .box #down {
+      margin: 0 auto;
+      width: 50%;
+      margin-bottom: 10px;
+    }
+
+    .box .like {
+      color: white;
+      font-size: 12px;
+    }
+
+    .box .like img {
+      width: 10px;
+      margin: 0 3px;
+    }
+
+    .logo {
+      width: 100%;
+      font-size: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: rgb(37, 37, 37)
+    }
+
+    .logo .ads {
+      transform: scale(0.8)
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <img class="background" src="./img/background.png" alt="">
+    <div class="box">
+      <img id="down" src="./img/down.png" alt="">
+      <div class="like">
+        <img src="./img/heart.png" alt="">
+        <span>喜欢可见面</span>
+        <img src="./img/heart.png" alt="">
+      </div>
+    </div>
+    <div class="logo">
+      <span>北京智投智道投资咨询有限公司</span>
+      <span class="ads">地址：昌平区昌崔路198号院2号楼</span>
+      <span class="ads">联系电话：15810015773</span>
+    </div>
+  </div>
+</body>
+<script src="//res.cdn.openinstall.io/openinstall.js"></script>
+<script>
+  var downDom = document.getElementById('down')
+
+  var t = getUParmes('t')
+  var channel = ''
+  if (t) {
+    channel = t.replace('_', '')
+  } else {
+    channel = 'wg1'
+  }
+  var data = {
+    "channel": t
+  };
+  var m = new OpenInstall({
+    appKey: "aped0l"
+  }, data);
+  // 统计消息
+  var _my_5cu = {
+    t: !t ? 'wg_1' : t,
+    c: 2
+  }
+
+  downDom.addEventListener('click', function () {
+    down()
+  })
+
+  // 点击下载
+  function down() {
+    var isiPad = /iPad/i.test(navigator.userAgent);
+    var isiPhone = /iPhone|iPod/i.test(navigator.userAgent);
+    var isAndroid = /Android/i.test(navigator.userAgent);
+    var isWeixin = /MicroMessenger/i.test(navigator.userAgent);
+    var isIOS = (isiPad || isiPhone);
+    var down_url = '';
+    if (isWeixin) {
+      if (isAndroid) {
+        down_url = "http://wxd.cctv69.top/2017/" + channel + "/tongche/"
+      } else if (isIOS) {
+        m.install();
+      }
+    } else {
+      if (isAndroid) {
+        down_url = "http://www.0h0x5.cn/2017/" + channel + "/tongche/"
+      } else if (isIOS) {
+        m.install();
+      }
+    }
+    if (down_url == '') { } else {
+      window.location.href = down_url;
+    };
+  }
+
+
+  // 获取url参数
+  function getUParmes(name) {
+    return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
+  }
+</script>
+
+</html>
