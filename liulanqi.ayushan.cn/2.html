@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>2345浏览器</title>
+  <meta name="viewport" content="width=device-width">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/Swiper/4.5.0/css/swiper.min.css">
+
+  <!-- Demo styles -->
+  <style>
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: auto;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  .swiper-slide img{
+    width: 100%;
+    height: auto;
+  }
+    .header{
+      width: 100%;
+      height: auto;
+      max-width: 750px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .lb{
+      position: absolute;
+      width: 80%;
+      top: 26%;
+      left: 10%;
+      height: auto;
+      z-index: 999999;
+    }
+    .bj{
+      width: 100%;
+      height: auto;
+      z-index: 9999;
+    }
+  </style>
+
+</head>
+<body>
+<div class="header">
+
+    <img src="https://cdn.xzwjuub.cn/liulan.zjiaozhidao.mobi/images/bj.jpg" class="bj" alt="">
+
+
+  <div class="lb">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="https://cdn.xzwjuub.cn/liulan.zjiaozhidao.mobi/images/1.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://cdn.xzwjuub.cn/liulan.zjiaozhidao.mobi/images/2.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://cdn.xzwjuub.cn/liulan.zjiaozhidao.mobi/images/3.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="btnCilck" style="position: absolute;width:29%;height: 2%;left: 35%;top: 13.5%;z-index: 99999999999999;">
+
+  </div>
+  <div  style="position: fixed;bottom:10%;;width: 100%;text-align:center;margin:0 auto;height: auto;max-width: 750px;z-index: 9999999;">
+    <img class="btnCilck" src="https://cdn.xzwjuub.cn/liulan.zjiaozhidao.mobi/images/btn.png" style="width: 70%;margin:0 auto;height: auto;" alt="">
+ <!--   <div class="btnCilck" style="position: absolute;width: 22%;height: 47%;top:26%;left: 75%;z-index: 9999999999;">
+
+    </div>-->
+  </div>
+
+</div>
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.bootcss.com/Swiper/4.5.0/js/swiper.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container');
+  </script>
+<script>
+
+    var Android="http://download.2345.cn/2345yd1/apk/mkt/sc-yhbaidusem2_cpc_ljj.apk";//安卓下载链接
+    var Ios="";//ios下载链接
+
+    var btns = document.getElementsByClassName("btnCilck");
+    for(var i=0;i<btns.length;i++){
+        btns[i].onclick=function () {
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href =Ios;
+            }else {
+                window.location.href =Android;
+            }
+        }
+    };
+</script>
+</body>
+</html>
