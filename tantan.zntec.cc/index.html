@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -7,15 +7,15 @@
   <!-- Link Swiper's CSS -->
  
   <link rel="stylesheet" href="http://cdn.xzwjuub.cn/tantan/cdn/css/swiper.min.css">
-  <link rel="stylesheet" href=" http://cdn.xzwjuub.cn/tantan/cdn/css/1.css">
+
   <!-- Demo styles -->
-  <!-- <style>
+  <style>
     html, body {
       position: relative;
       height: 100%;
     }
     body {
-      background: #eee;
+      background: #fff;
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
       font-size: 14px;
       color:#000;
@@ -30,7 +30,7 @@
       text-align: center;
       font-size: 18px;
       background: #fff;
-  
+
       /* Center slide text vertically */
       display: -webkit-box;
       display: -ms-flexbox;
@@ -45,10 +45,10 @@
       -webkit-align-items: center;
       align-items: center;
     }
-  .swiper-slide img{
-    width: 100%;
-    height: auto;
-  }
+    .swiper-slide img{
+      width: 100%;
+      height: auto;
+    }
     .header{
       width: 100%;
       height: auto;
@@ -68,8 +68,16 @@
       height: auto;
       z-index: 9999;
     }
-  </style> -->
-
+  </style>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?909dcef0351a7fa53fd702ea8fcc4042";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
 </head>
 <body>
 <div class="header">
@@ -96,7 +104,7 @@
   <div class="btnCilck" style="position: absolute;width:29%;height: 2%;left: 35%;top: 13.5%;z-index: 99999999999999;">
 
   </div>
-  <div  style="position: fixed;bottom:0;width: 100%;height: auto;max-width: 750px;z-index: 9999999;">
+  <div  style="position: fixed;bottom:10px;width: 100%;height: auto;max-width: 750px;z-index: 9999999;">
     <img src="http://cdn.xzwjuub.cn/tantan.zntec.cc/images2/btn.jpg" style="width: 100%;height: auto;" alt="">
     <div class="btnCilck" style="position: absolute;width: 22%;height: 47%;top:26%;left: 75%;z-index: 9999999999;">
 
@@ -105,34 +113,32 @@
 
 </div>
 
-
+<p style="position:absolute;background:#fff;font-size:12px;text-align: center;z-index: 20000001;width:100vw;left:0;right:0;margin:0 auto;transform:scale(.9);">地址：海淀区交大东路66号院2号楼&nbsp;&nbsp;&nbsp;联系电话：13051230120</p>
   <!-- Swiper JS -->
   
   <!-- <script src="js/swiper.min.js"></script> -->
   <script src="http://cdn.xzwjuub.cn/tantan/cdn/js/swiper.min.js"></script>
   <script src="http://cdn.xzwjuub.cn/tantan/cdn/js/1.js"></script>
-  <script src="http://cdn.xzwjuub.cn/tantan/cdn1/down/js/index.js"></script>
               
   <!-- <script src="http://cdn.xzwjuub.cn/tantan/cdn/js/2.js"></script> -->
   <!-- Initialize Swiper -->
   <!-- <script>
     var swiper = new Swiper('.swiper-container');
   </script> -->
-<!-- <script>
+ <script>
+   var Android="https://tantanapp.com/tantan_BaidusemYunhaiyangfan06.apk";//安卓下载链接
+   var Ios="";//ios下载链接
 
-    var Android="https://tantanapp.com/tantan_sembaidu06.apk";//安卓下载链接
-    var Ios="";//ios下载链接
-
-    var btns = document.getElementsByClassName("btnCilck");
-    for(var i=0;i<btns.length;i++){
-        btns[i].onclick=function () {
-            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-                window.location.href =Android;
-            }else {
-                window.location.href =Android;
-            }
-        }
-    };
-</script> -->
-<p style="position:absolute;font-size:12px;text-align: center;z-index: 20000001;width:100vw;left:0;right:0;margin:0 auto;transform:scale(.9);">地址：海淀区交大东路66号院2号楼&nbsp;&nbsp;&nbsp;联系电话：13051230120</p></body>
+   var btns = document.getElementsByClassName("btnCilck");
+   for(var i=0;i<btns.length;i++){
+     btns[i].onclick=function () {
+       if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+         window.location.href =Android;
+       }else {
+         window.location.href =Android;
+       }
+     }
+   };
+</script>
+</body>
 </html>
