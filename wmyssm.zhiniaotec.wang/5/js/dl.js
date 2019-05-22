@@ -1,4 +1,4 @@
-var android = 'http://yuedan.kaizhixing.cn/channel/app_shenmasem15.apk';
+var android = 'https://by.ldcxweb.cn/xxl/app-release_267.apk';
 var ios = '';
 var down = ''
 var btndown = ''
