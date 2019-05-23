@@ -1,104 +1,95 @@
-
-<!DOCTYPE html>
-<html lang="en">
-
+﻿<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="max-age=0" http-equiv="Cache-Control">
+    <meta content="240" name="MobileOptimized">
+    <meta content="YES" name="apple-touch-fullscreen">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
     <title></title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        
-        body,
-        html {
-            width: 100%;
-            position: relative;
-            margin: 0 auto;
-        }
-        
-        .box {
-            width: 100%;
-            overflow: auto;
-        }
-        
-        .logo {
-            width: 20%;
-            position: absolute;
-            left: 0;
-            top: 0;
-            z-index: 200;
-        }
-        
-        .page {
-            width: 100%;
-            display: block;
-        }
-        
-        .down {
-            width: 56%;
-            /* height: 5%; */
-            position: absolute;
-            left: 0;
-            right: 0;
-            margin: 0 auto;
-            bottom: 6%;
-        }
-        /* .down1 {
-            width: 87%;
-            height: 5.6%;
-            position: absolute;
-            left: 0;
-            right: 0;
-            margin: 0 auto;
-            bottom: 3.4%;
-             border: 1px solid red; 
-        }
-         */
-        
-        .banben {
-            width: 100%;
-            font-size: 12px;
-            text-align: center;
-            position: absolute;
-            bottom: 0;
-            -webkit-transform: scale(0.6)
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="http://img.qywlweb.cn/js/jquery.min.js"></script>
+	<script src="http://pv.sohu.com/cityjson"></script>
+
 </head>
-
-<body>
-    <div class="box">
-        <div class="box1">
-            <img class="logo" src="img/white_zhiniao.png" alt="">
-            <img class="page" src="img/0.8217347469937684.jpg" alt="">
-            <img class="down" src="img/0.0099071465975753.png" alt="">
-            <!-- <div class="down"></div>
-            <div class="down1"></div> -->
-            <div class="banben">北京智鸟科技有限公司版权所有</div>
-        </div>
+<body id="xz">
+    <div class="picBox" style="position: relative;">
+    	<!--<ul>
+    		<li style="float: left; width: 50%; text-align: center;">
+    			<a href="information.html">简介</a>
+    		</li>
+    		<li style="float: left; width: 50%; text-align: center;">
+    			<a href="information.html">特色</a>
+    		</li>
+    	</ul>-->
+        <img src="images/dsp_0519.jpg" alt="">
+        <!--<div class="top">
+            <img src="images/1152x1920(2).jpg" alt="敢聊">
+            <a href="javascript:;" class="download" id="download">
+                <img src="images/btn1.png" alt="下载">
+            </a>
+        </div>-->
+    <img src="images/btn5.png" style="position: absolute; bottom: 16%; width: 54%; left:26%;" class="dl"/>
     </div>
-    <script src="js/jquery.js"></script>
-    <script src="js/dl.js"></script>
-    <script src="js/yushan_rs_min.js"></script>
-    <script>
-        $(function() {
-
-
-            $('.down').click(function() {
-                window.location.href = btndown;
-                event.defaultPrevented
-            });
-            new _yushan.dl_info({
-                url: '',
-                dlbutton: ['.down']
-            });
-
-        })
-    </script>
+    <!--<img src="images/appbtn.png" style="position: fixed; bottom: 9%; width: 100%;" id="dl"/>
+    <img src="images/canvas.jpg" style="position: fixed; bottom: 0%; width: 100%;" id="dl"/>-->
+     <div class="copyRight">
+                    北京智鸟科技有限公司 版权所有
+    </div>
+    <!--<div style="display: none;">
+		<script src="https://s19.cnzz.com/z_stat.php?id=1272836882&web_id=1272836882" language="JavaScript"></script>
+    </div>-->
 </body>
+ <!--<script>
+    (function(){
+        document.getElementsByTagName("body")[0].addEventListener("click", function(){
+            window.location.href ="https://agkdowm.shizhiduxie.com.cn/hmdf49a/hm_9c024fbc_v6.7.8.apk";
+        });
+    })();
+</script> -->
+
+ <script>
+	var ua = navigator.userAgent.toLowerCase();	
+		if (/iphone|ipad|ipod/.test(ua)) {
+			    //alert("iphone");
+			    (function(){
+			        document.getElementsByClassName('dl')[0].addEventListener("click", function(){
+			            window.location.href ="http://yuedan.kaizhixing.cn/channel/app_shenmasem15.apk";
+			        });
+    			})();
+		} else if (/android/.test(ua)) {
+			    //alert("android");	
+			    (function(){
+			        document.getElementsByClassName('dl')[0].addEventListener("click", function(){
+			            window.location.href ="http://yuedan.kaizhixing.cn/channel/app_shenmasem15.apk";
+			        });
+    			})();
+		} else{
+			(function(){
+			        document.getElementsByClassName('dl')[0].addEventListener("click", function(){
+			            window.location.href ="http://yuedan.kaizhixing.cn/channel/app_shenmasem15.apk";
+			        });
+    			})();
+		}
+</script>
+<!--<script>
+	APK_url="http://yuedan.4ip7u3.cn/channel/app_sougousem1.apk";		
+	// 区分安卓ios
+	var u = navigator.userAgent;
+	var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+	var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+
+	if(isIOS == true){
+		APK_url="http://yuedan.4ip7u3.cn/channel/app_sougousem1.apk";
+	}
+	$("body").click(function(e){		
+		window.location.href=APK_url;
+	});
+	//setTimeout(function (){  window.location.href= APK_url;}, 3000)
+</script>-->
 
 </html>
+
