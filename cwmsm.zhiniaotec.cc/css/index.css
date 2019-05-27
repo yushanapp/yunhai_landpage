@@ -1,0 +1,87 @@
+body {
+    background: #ea669c;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    width: 100%;
+}
+
+.swiper-slide {
+/*    background-position: center;
+    background-size: cover;*/
+
+
+}
+
+.header{
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    margin: 0 auto!important;
+    position: relative;
+}
+.h_top{
+    width: 100%;
+    height: auto;
+}
+.h_lbbox{
+    width: 90%;
+    height: auto;
+    position: absolute;
+    top: 39%;
+    left: 5%;
+    z-index: 99;
+}
+.h_lbbox2{
+    top: 58%!important;
+}
+.h_lbbox3{
+    top: 77%!important;
+}
+.swiper-container .swiper-wrapper{
+    width: 30%!important;
+}
+.swiper-container .swiper-wrapper{
+    width: 45%;
+    height: auto;
+}
+.swiper-container .swiper-wrapper img{
+    width: 100%;
+    height: auto;
+}
+.part-3{
+    width: 100%;
+    height: auto;
+   /* background: url(../images/bg_3.jpg);
+    background-size: 100% 100%;
+    text-align: center;
+    padding-top: 2.22222222rem;*/
+    margin-top: 40px;
+    position: relative;
+}
+.part-3>.bj{
+    width: 100%;
+    margin-top: 20px;
+}
+.btbox{
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 16.5%;
+}
+.btbox img{
+    width: 94%;
+    height: auto;
+    margin-left: 3%;
+    margin-top: 4%;
+}
