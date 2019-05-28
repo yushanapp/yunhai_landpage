@@ -7,9 +7,9 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<meta content="telephone=no,email=no" name="format-detection">
 		<meta name="description" content="信用管家-征信查询">
-		<title>信用管家-信用查询</title>
-		<link rel="stylesheet" href="./信用管家-征信查询_files/swiper-3.4.1.min.css">
-		<link rel="stylesheet" href="./信用管家-征信查询_files/zx_query.css">
+		<title>信用管家-征信查询</title>
+		<link rel="stylesheet" href="./lp1/swiper-3.4.1.min.css">
+		<link rel="stylesheet" href="./lp1/zx_query.css">
 		<script>(function(para) {
 	        var p = para.sdk_url, n = para.name, w = window, d = document, s = 'script',x = null,y = null;
 	        w['sensorsDataAnalytic201505'] = n;
@@ -46,7 +46,7 @@
 	        }
 	      });
 	      sa.quick('autoTrack', {
-	          appname: "信用查询渠道页"
+	          appname: "征信查询渠道页"
 	      });
 	  	</script>
 		<script  type="text/javascript">
@@ -68,14 +68,14 @@
 	</head>
 	<body style="">
 		<div class="zx-logo">
-			<img src="./信用管家-征信查询_files/head_body.png">
+			<img src="./lp1/head_body.png">
 			<img style="position: absolute;left: 0;top: 0;width:70px;z-index:200;" src="http://test.myushan.com//yushan/logo_black.png"/>
 			<!-- <h1>信用管家-征信查询</h1>
 			<span class="zx-desc">权威信用查询帮手</span> -->
 			<button class="submit-btn" id="submit-btn1">立即查询</button>
 			<em>500万次下载 丨 15.33M</em>
 			<div style="margin-top: 1.63rem">
-				<span>百万用户的选择, 个人信用查询神器, 信用管理、</span>
+				<span>百万用户的选择, 个人征信查询神器, 信用管理、</span>
 				<span>信用贷款一站式服务</span>
 			</div>
 			<div class="zx-img">信用查询 | 信用贷款</div>
@@ -85,13 +85,13 @@
 			<div class="swiper-container swiper-container-horizontal">
 		        <div class="swiper-wrapper">
 		            <div class="swiper-slide swiper-slide-active" style="margin-left: 16px;">
-		            	<img src="./信用管家-征信查询_files/f_01.jpg">
+		            	<img src="./lp1/f_01.jpg">
 		            </div>
 		            <div class="swiper-slide swiper-slide-next" style="margin-left: 16px;">
-		            	<img src="./信用管家-征信查询_files/f_02.jpg">
+		            	<img src="./lp1/f_02.jpg">
 		            </div>
 		            <div class="swiper-slide" style="margin-left: 16px;">
-		            	<img src="./信用管家-征信查询_files/f_03.jpg">
+		            	<img src="./lp1/f_03.jpg">
 		            </div>
 		        </div>
 		    </div>
@@ -103,7 +103,7 @@
 	    		<h2>功能特点</h2>
 	    		<span></span>
 	    	</div>
-	    	<p><span>个人信用管理</span><span>——</span><span>实时获取</span><span>信用报告，</span><span>轻松管理您的信用情况</span></p>
+	    	<p><span>个人征信管理</span><span>——</span><span>实时获取</span><span>征信报告，</span><span>轻松管理您的信用情况</span></p>
 	    	<p><span>黑名单监测</span><span>——</span><span>全维度检测多行业黑名单风险</span></p>
 	    	<p><span>信用贷款</span><span>——500-50万额度急速贷款，高通过率，低利息，放款快</span></p>
 	    </div>
@@ -117,7 +117,7 @@
 	    	<div class="comment">
 	    		<div class="comment_item">
 	    			<div class="comment_head">
-	    				<img src="./信用管家-征信查询_files/user_583h559.png" class="comment_img">
+	    				<img src="./lp1/user_583h559.png" class="comment_img">
 	    				<span class="comment_nick">大雄k大雄</span>
 	    				<span class="comment_time">2018-08-30</span>
 	    			</div>
@@ -125,19 +125,19 @@
 	    		</div>
 	    		<div class="comment_item">
 	    			<div class="comment_head">
-	    				<img src="./信用管家-征信查询_files/user_665i361.png" class="comment_img">
+	    				<img src="./lp1/user_665i361.png" class="comment_img">
 	    				<span class="comment_nick">猫咪老师</span>
 	    				<span class="comment_time">2018-08-30</span>
 	    			</div>
-	    			<div class="comment_text">再也不用去排队等待查信用了，APP在线就可以生成信用报告，第一时间了解自己的信用问题，信用查询很准的！</div>
+	    			<div class="comment_text">再也不用去排队等待查征信了，APP在线就可以生成信用报告，第一时间了解自己的信用问题，信用查询很准的！</div>
 	    		</div>
 	    		<div class="comment_item">
 	    			<div class="comment_head">
-	    				<img src="./信用管家-征信查询_files/user_974j902.png" class="comment_img">
+	    				<img src="./lp1/user_974j902.png" class="comment_img">
 	    				<span class="comment_nick">本宫下线了</span>
 	    				<span class="comment_time">2018-08-30</span>
 	    			</div>
-	    			<div class="comment_text">查询个人信用真的很便捷，推荐这款信用查询的APP！</div>
+	    			<div class="comment_text">再也不用去排队等待查征信了，APP在线就可以生成信用报告，第一时间了解自己的信用问题，信用查询很准的！</div>
 	    		</div>
 	    	</div>
 	    </div>
@@ -148,13 +148,14 @@
 			<div class="company" >
 				<span>北京智投智道投资咨询有限公司版权所有</span>
 				<span><br>地址：昌平区昌崔路198号院2号楼 <br>联系电话：15810015773<br></span>
+				
 				<span class="tip">- 投资有风险，投入需谨慎 -</span>
 			</div>
 	    </div>
 
-		<script src="./信用管家-征信查询_files/swiper-3.4.1.min.js"></script>
-		<script src="./信用管家-征信查询_files/zepto.min.js"></script>
-		<script src="./信用管家-征信查询_files/ocpcCommon.js"></script>
+		<script src="./lp1/swiper-3.4.1.min.js"></script>
+		<script src="./lp1/zepto.min.js"></script>
+		<script src="./lp1/ocpcCommon.js"></script>
 		<script type="text/javascript">
 			window._agl  &&  window._agl.push(['track',  ['success',  {t:  3}]]);
             var host = 'https:' == document.location.protocol ? 'https://': 'http://';
@@ -181,7 +182,7 @@
 			    if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) { 			       
 			        window.location = "https://itunes.apple.com/app/apple-store/id1391068141";//ios下载地址
 			    }else if (navigator.userAgent.match(/android/i)) {
-			        window.location= 'http://f.kongapi.com/zxcx/61.apk'; //android下载地址
+			        window.location= 'http://f.kongapi.com/zxcx/60.apk'; //android下载地址
 			    }  
 			}
 			function formatTime(date, all, separator) {
