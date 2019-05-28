@@ -1,0 +1,261 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-overflow-scrolling: touch;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: none;
+	color: #333
+}
+
+html {
+	font-family: arial;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	line-height: 1;
+	font-size: 20px;
+}
+
+@media only screen and (min-width:420px) {
+	html {
+		font-size: 22.08px!important
+	}
+}
+
+@media only screen and (min-width:480px) {
+	html {
+		font-size: 25.6px!important
+	}
+}
+
+@media only screen and (max-width:400px) {
+	html {
+		font-size: 18px!important
+	}
+}
+
+@media only screen and (max-width:330px) {
+	html {
+		font-size: 15px!important
+	}
+}
+
+i,em{
+	font-style: normal;
+}
+button{
+	outline: none;
+	border: none;
+	background: none;
+}
+
+img {
+	display: block;
+	border: 0
+}
+
+ul,ol,dl {
+	list-style: none
+}
+body {
+	background: rgb(245, 245, 245) url(./head_bg.jpg) top no-repeat;
+	background-size: 100%;
+}
+.zx-logo img{
+	width: 100%;
+	margin-bottom: 0.75rem;
+}
+.zx-logo h1{
+	width: 100%;
+	height: 1.3rem;
+	line-height: 1.3rem;
+	font-size: 1.2rem;
+	color:#333333;
+	letter-spacing:0.28px;
+	text-align:center;
+}
+.zx-logo .zx-desc{
+	display: block;
+	width: 100%;
+	height: 0.75rem;
+	padding: 0.8rem 0 0.45rem;
+	color: #999;
+	font-size: 0.75rem;
+	line-height: 0.75rem;
+	text-align: center;
+}
+.zx-logo em{
+	display: block;
+	width: 100%;
+	height: 0.65rem;
+	color: #999;
+	font-size: 0.65rem;
+	line-height: 0.65rem;
+	text-align: center;
+}
+.submit-btn{
+	display: block;
+	width: 8.05rem;
+	height: 1.75rem;
+	margin: 0.8rem auto 0.6rem;
+	background: rgb(248, 141, 29);
+	border-radius: 2.5rem;
+	color: #fff;
+	font-size: 1rem;
+	line-height: 1.75rem;
+	text-align: center;
+	background-image: linear-gradient(-90deg, #F9A01B 0%, #F37121 99%);
+	box-shadow: 0 4px 4px 0 rgba(243,113,33,0.12);
+	border-radius: 8px;
+}
+.zx-logo div span{
+	display: block;
+	width: 100%;
+	height: 1rem;
+	font-size: 0.7rem;
+	line-height: 1rem;
+	text-align: center;
+	color: #999;
+}
+.zx-logo div{
+	overflow: hidden;
+}
+.zx-img{
+	width: 8.65rem;
+	margin: 16px auto 24px;
+	font-family: PingFangSC-Medium;
+	font-size: 14px;
+	color: #F37121;
+	text-align: center;
+	line-height: 20px;
+}
+.zx-logo div img{
+	width: 4.1rem;
+	height: 1.4rem;
+	float: left;
+	margin-top: 0.5rem;
+	margin-bottom: 2rem;
+}
+.zxcq-img{
+	margin-right: 0.45rem;
+}
+
+.swiper-slide{
+	height: 14.85rem;
+	width: 8.35rem;
+}
+.swiper-slide img{
+	width: 100%;
+}
+
+.zx-function{
+	margin-top: 0.35rem;
+	overflow: hidden;;
+}
+.zx-title{
+	margin: 32px 0 0.75rem 0.6rem;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+}
+.zx-title h2{
+	float: left;
+	height: 0.75rem;
+	font-size: 0.75rem;
+	margin: 0 8px;
+	align-items: center;
+}
+.zx-title span{
+	height: 12px;
+	width: 0.2rem;
+	background: #F37121;
+}
+.zx-function p{
+	font-size: 0.8rem;
+	line-height: 1rem;
+	margin: 16px 30px 0;
+	color: rgba(0,0,0,0.60);
+}
+.zx-function p span:first-child {
+	color: #F37121;
+}
+.zx-comment dl{
+	padding: ;
+}
+.submint-btn-box button{
+	background:rgb(248, 141, 29);
+	border-radius:5rem;
+	width: 16.3rem;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	background-image: linear-gradient(-90deg, #F9A01B 0%, #F37121 99%);
+	box-shadow: 0 4px 4px 0 rgba(243,113,33,0.12);
+	border-radius: 8px;
+}
+
+.company{
+	font-family: PingFangSC-Regular;
+	font-size: 12px;
+	color: rgba(0,0,0,0.26);
+	text-align: center;
+	line-height: 18px;
+}
+
+.comment {
+	margin: 0 24px;
+}
+.comment_item {
+	margin-top: 15px;
+	border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+.comment_head {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.comment_img {
+	margin-right: 8px;
+	width: 32px;
+}
+.comment_nick {
+	font-family: PingFangSC-Medium;
+	font-size: 14px;
+	color: rgba(0,0,0,0.38);
+	text-align: left;
+	line-height: 20px;
+	flex: 1;
+}
+.comment_time {
+	font-family: PingFangSC-Regular;
+	font-size: 12px;
+	color: rgba(0,0,0,0.38);
+	text-align: left;
+	line-height: 18px;
+}
+.comment_text {
+	margin: 4px 0 15px 40px;
+	font-family: PingFangSC-Regular;
+	font-size: 13px;
+	color: rgba(0,0,0,0.87);
+	text-align: left;
+	line-height: 20px;
+}
+.line {
+	margin: 32px auto 16px;
+	width: 88%;
+	height: 0;
+	border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+.tip {
+	margin-top: 8px;
+	font-family: PingFangSC-Regular;
+	font-size: 12px;
+	color: rgba(0,0,0,0.60);
+	text-align: center;
+	line-height: 18px;
+}
+
+
