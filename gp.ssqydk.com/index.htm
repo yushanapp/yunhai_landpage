@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="cache-control" content="no-cache">
+  <link rel="dns-prefetch" href="//s3.pstatp.com">
+  <link rel="dns-prefetch" href="//s3a.pstatp.com">
+  <link rel="dns-prefetch" href="//s3b.pstatp.com">
+  <meta name="viewport" content="viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no">
+  <title>选股宝</title>
+  <script>
+    !(function () {
+  o();
+  window.addEventListener('resize', o);
+  function o() {
+    var w = document.documentElement.clientWidth;
+    w = (w > 100) ? w : 100;
+    w = (w < 625) ? w : 625;
+    document.documentElement.style.fontSize = ((20 * w) / 375) + 'px';
+  }
+  var styleNode = document.createElement("style");
+  styleNode.type = "text/css";
+  var str = '';
+  if(/status_bar=0/.test(location.search)){
+    try {
+      var diffH = 20;
+      if (navigator.userAgent.indexOf('Android') > -1){
+        diffH = 25;
+      }
+      str += '\n.status-bar-pad{padding-top:'+ diffH +'px!important;}';
+      str += '\n.status-bar-top{top:'+ diffH +'px!important;}';
+      str += '\n.status-bar-tran{transform: translateY('+ diffH +'px); -webkit-transform: translateY('+ diffH +'px);}';
+      str += '\n.status-bar-basic-pt{padding-top:'+ (diffH + 44) +'px!important;}';
+      str += '\n.status-bar-basic-top{top:'+ (diffH + 44) +'px!important;}';
+    } catch (e) {
+      console.log(e);
+    }
+  }
+  if (navigator.userAgent.indexOf('Android') > -1) {
+    str += '\n.ad1px{transform: translateY(1px); -webkit-transform: translateY(1px)}';
+    str += '\n.a-t-1px{transform: translateY(-1px); -webkit-transform: translateY(-1px)}';
+    str += '\n.a-t-2px{transform: translateY(-2px); -webkit-transform: translateY(-2px)}';
+    str += '\n.a-b-2px{transform: translateY(2px); -webkit-transform: translateY(2px)}';
+  }
+  if (styleNode.styleSheet) {
+    styleNode.styleSheet.cssText = str;
+  } else {
+    styleNode.innerHTML = str;
+  }
+  document.getElementsByTagName("head")[0].appendChild(styleNode);
+})();
+
+  </script>
+
+<link href="land.41e9500068cdeed1ce67a08679abed5b.css" tppabs="https://s3.pstatp.com/caijing/caijing_stock_web/static/css/land.41e9500068cdeed1ce67a08679abed5b.css" rel="stylesheet"></head>
+<body>
+  <div id="app" >
+    <header>
+  <div class="grid">
+    <img src="download.png" alt="选股宝，科技创造财富" width="117" height="36" class="t-icon f-db f-fl">
+    <ul class="f-fr f-dn menus">
+      <li class="f-ib">
+        <a>首页</a>
+      </li>
+      <li class="f-ib">
+        <a>公司介绍</a>
+      </li>
+      <li class="f-ib">
+        <a>产品简介</a>
+      </li>
+      <li class="f-ib">
+        <a>主要功能</a>
+      </li>
+    </ul>
+  </div>
+</header>
+<div class="banner">
+  <div class="grid f-pr">
+    <p class="slogan">
+      智能大数据，帮你炒牛股
+    </p>
+
+    <div class="pic-code">
+      <img src="download (1).png" width="148" height="148" class="f-db">
+      <p>手机扫码，轻松下载</p>
+    </div>
+    <div class="d-link">
+
+      <a class="f-db ios" href="https://itunes.apple.com/cn/app/xuan-gu-bao/id993530278?mt=8" tppabs="https://itunes.apple.com/cn/app/id1297191884">苹果手机下载</a>
+
+      <a class="f-db android" href="https://android.myapp.com/myapp/detail.htm?apkName=com.wallstreetcn.meepo" tppabs="http://sj.qq.com/myapp/detail.htm?apkName=com.ss.android.caijing.stock">安卓手机下载</a>    </div>
+    <div class="pic"></div>
+  </div>
+</div>
+
+<div class="company-intro">
+  <div class="grid f-pr">
+    <img class="bg-l" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAAC+AQMAAAD+wnMnAAAABlBMVEUAAADfQEClF8VXAAAAAnRSTlMAB+j3WJsAAAJiSURBVFjD7Ze7kcQgDEDtceDQJVAKpVwpUM8l1wKluASHBIx1s7C7WhBCzNnjcXCKdvFDXz5iKOQLYBuaogEEZoEoroFAktBUIqkBkNTM8BbLhpOED2oElF2yg5aoHckSoDAxTZAJmzcUx7giOAO5BNYVlKorkjOqRFaCmBLxbIG+f7BMdW8/aMZb21jB6tO+rvprPnXPVX/zQVPJ75hbXyohzTiGMywNyBeuORqQK6asNKAyk54EFJoDI1lnOrpf6nXEfxIzKWsWtaLJLPUquuR1MWQwC9ysykafc9tjZR1O+diEM3LNOeJrWyK3u9Y2liP/MlkIYsm2yVTr5DxFNvSselZgDOWf6sSRVIiYn9D3MmqC0CqR3xSxmKSduRMcGg3Mcb4i4muIQUSTmHE8p1GoduCRgIhj7rCAwQ0MsmNyqwh+mCLM5C43SeVdgQVjo7lzvYhiL3f9SpiqZg6/JNaxzcqGFrnc+RdiBSQmiEtveCK7gIwcgp9GLv/JAGpj0/tEvIDMMT9sBWwfssRCsEVyCXEColgkWUiI5ZA5IbqNbAkZDiBTQkysA1tH34cAhBYSBGToRJI5RqKjvcjGI/qBTAICvcjKI+qBzBJiH4g7hCydyNJCooLIXYKoxtJNiT0N2RvI+EC0hGxXImFoSCdiJMSfhvgWYpIWGfHXICAh4UpkayEaEcmQrOWoL//In5HbVfo+O8CAv83JIJ11FyLn3AG3utUUQBtZL2sIYnNygy5oAXBH+zpEVgmR21C5mUXkSNcst+fnvAOkB4c569ly2itLfs7JiPy07Hqgys/cX8ENDEC1I5H2AAAAAElFTkSuQmCC">
+    <img class="bg-m" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANwAAABWAQMAAACev2p8AAAABlBMVEUAAADfQEClF8VXAAAAAnRSTlMAB+j3WJsAAAF5SURBVEjHtJRBroQgEETHsGDpETwKR8OjeRSP4NKFoX4+MBZ0NzEzyfRChQfd1YXhtQAvK2Zg/REsDx150yPcPobhH/ohTBnuFoyP0A0gcGV4fAcn4FSkTD/AvF+He4BHhsmAvsA4gnuGMOBcYBjBrcDVPM6Nrza4ZQxZug3KnE3nUaAfwFThqX2v0GlzOeksc32F0wCeFcJwrwqB4d/ybiEaFgVCYRHnuEoYtI0gdSzahemGs4YeAL8+gazkoBoNN5ygGo08RrAXPQN53FMDo+zFNYWClDs3Ehcemp7gQiOVl3IBpLb+KcRe7SC1zkoIIZZlYq8oKHgQolu71CLUh7UrAj2iPCYKt3gmOqm9FOGYiz2EJ2jyBgg3A1M5LmQvVT4/e/W47o0QP3GmmVEs5TLk/ybg0cFAQLGUy6BYKmLQWa1IX3dSz1jRpq8shr4mGfoS1SXtTlcFvdElQ2a1m1kN6Jh1nHdXgJL+9pcBO4iHBR0ug18g8wGfeKGuiFfdZQAAAABJRU5ErkJggg==">
+    <img class="bg-r" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEoAAABKAQMAAAAmHlAyAAAABlBMVEXfQEAAAACF6BdBAAAAAnRSTlMHADnSW/8AAACmSURBVCjPzdKxDcMgEIXhZ7lwyQiMQjaD0RiFEVxSEMjdcVZ0CpGVLhTok6Dh+DHGeMLRniEblB2An6zEY7IQt8lERBSyEJhd6JlVeDBP4c4swo2ZhWCmyUicQjDsSp/RlC6jKg/DU7kbFuVmmJX4xnTxcc//XT+84m4k60mup77+IfOF/ZPeRnClYYPRjExcJrkmdO8mg41WUzaB2+zlclQ2Oie+AJBnriJTYzhjAAAAAElFTkSuQmCC">
+    <div class="content">
+      <div class="h2 f-pr">
+        <img class="title-bar" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAEAgMAAAC1h1SvAAAACVBMVEXmRzjnSTvmRjgoXaPNAAAAAnRSTlPjSQzAlCMAAAAWSURBVAjXY/BaBQcLGbQQnBUoHBRlAAQ+HgvequHSAAAAAElFTkSuQmCC">
+        公司介绍
+      </div>
+      <p class="detail">
+          公司成立于2017年，主营业务包含技术开发、技术推广、技术转让、技术咨询、技术服务、互联网文化活动和互联网信息服务等。
+      </p>
+    </div>
+  </div>
+</div>
+<div class="product-intro">
+  <div class="grid f-pr">
+    <div class="k-line"></div>
+    <div class="content f-tar">
+      <div class="h2 f-pr">
+        <img class="title-bar" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAEAgMAAAC1h1SvAAAACVBMVEXmRzjnSTvmRjgoXaPNAAAAAnRSTlPjSQzAlCMAAAAWSURBVAjXY/BaBQcLGbQQnBUoHBRlAAQ+HgvequHSAAAAAElFTkSuQmCC">
+        产品简介
+      </div>
+      <p class="detail">
+        选股宝是一款智能化炒股行情(金融/投资/理财/证券)软件<br>
+        基于机器学习模型，量化股票大数据，为用户提供高速股票行情和海量数据分析
+      </p>
+    </div>
+  </div>
+</div>
+<div class="main-fun">
+  <div class="grid f-pr">
+    <div class="h2 f-pr">
+      <img class="title-bar" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAEAgMAAAC1h1SvAAAACVBMVEXmRzjnSTvmRjgoXaPNAAAAAnRSTlPjSQzAlCMAAAAWSURBVAjXY/BaBQcLGbQQnBUoHBRlAAQ+HgvequHSAAAAAElFTkSuQmCC">
+      主要功能
+    </div>
+    <ul class="f-cb funs">
+      <li class="f-tac">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAACW1BMVEUAAADiRTvlTkTnhH/mTEPpTkPjRz7ncmfsjYT1loXia2Xyf2j1kX/3hGr6nob2lIDwSUnteWnlbmb5iWvmTUDZWU3wfGj////rd2fteGfrdWfuemj1gWn////zjXr5nIT1mIf1o5LwlYn////99PPsoZ7////qfG7vgG77j3L21NP////tpqP//PzsioH9oon////71dXrjYb/7+/////vWT3wXD7oUTrxXT7tWDzzYD/hSDfjSTjvWz3fRTfmTTnqVDv1YkDdQTbyXz7nUDrhRjfsVzzrVTvbQDXoUzrXOzTgRzbYPDTkTDjhSjfdQzbaPzXmTzn3ZUH2ZEDsVjzjSzjeRDbWOTTZPjTeRDf0YT/gSjffSDbZPTT5aELmUTn4ZkHkTzjru7jiTjjpVjvZQzTWOzPKOi7kTTjUQjPOPjDhTDfnUjrjTDjdRzbbRjXEMyzJOC7ohHnLPC/2393eSzbdRTbSPzH9+PfXQzPHNS3svLneRjbTOjLFNCzYRTTWQTPUQDLNPC/MOC/SQjHqUzrXRTPcSTXVODPOOTDqh3vmgHjPQDHJNS7FOC3INy3aRDTQPDHCMSvZQDTUPjPROTH65+XRW1LaSDX++vrum47aRjT88/L35ePwycf1xb/wvrrvq6PncF/jWkXMS0HLST/1z8zlpJ/tl4vtiHrYenTseGTnX0jXUEXQPjDwnpDVYljNVErXR0DXQDvKRTr119XwxsT1vrXstrDpn5rgg3zZgHrgdmzNQzf76ujvsq30tKrii4PVbGPcW1fsgG/fZmLgZl3rbFfCPzl0ZqFeAAAANHRSTlMAGguXEBcV4ouI5N+T3oWRA97j2hQG4Gje4eLf3362hoAyd0Tu7OLT0c3JuKmnkHNXPSYgkidingAADChJREFUaN7tmudbm2UUxiWGujeOuvfevko1CFHDCCMYCkJ9ozEmIWSLIQUqNWUIDkAcVRRH3dbWvfcef5b3Oc8ig8T5wevyTlquqx/4cZ/7POc5b8oB/+u/rOMdDqezYRPU4HQ6HMf/09//aIezvq5M9U7H0X/p25115pHQGXhpnXGU0eFHHV6so446pExnnlWdcfqdQneR+vr6tvZt3br1pq03kW6/4Qa8b7gF2rJly3XQjfS68Vro+uvxvr6tv72/vd3t7j+9GuMKJkCMAANvCAAg8IYIwSIICCwmQO39/aAAc3YVyEWCAEYfSSLAuJ2MMGOLYKz3ARdAwAecMMLtvbAK5DhtgwmSAd1wEwDsAxQgCCIICqJqRYwHvKfUgHAezJAI5QIihMlDQEAgI2BIhNftrQUhAjOMD8MwmRsbkPIBDjMavcdUgyAOjehTiJt0pYTW2RBNBSMK8QBq5W1srApRkRsEG9EUXStGGIZAsMCoBVHHgxjGCAgcuUQURc4ItC4FwjZqQpQPkjEByTTwvlHlAQIkO9eNN7sgeapDio8Hn8HbFUJlDoQOvY0kDiBswAczPJ7aENO5pq0EYUtR5xof/bJzG6VqQUzmPEkYIBnkwzDYBzG4VJCMwwP5q0KYoJwU+QCipHUhbl0SIR6QedQul3ZBRkoHIigQMVTncldFyAbyYAT58PtPqgI5YquZVpJxwxZQrsPLICDRuBFyIMMOelIidD/eLZs3ZjiO6NM+ZKXgxNjQdwcQZCCy/9d9P+19892Xvvv0xe/2ewCCExhpaTnZseElWwcnQNBk153LiWsbMnRysW9swlqvb/b7yQQhAKnb6GJ2AiKNMEIPRJpWNEl07/a7vfufs0r0ZjgMjL+FKJvrnBtsI3V1R6hSmUuQIaXTqt2b2meV6iV7pMVPDIbUVd5m6gEBAi8mGIaOXCLISOiVZ0oh3+aTaUZwuerqK6ZeJ5wQw9xP5nTotkK1vKlw/nsRyXO6bJ9l7PQIEXpaegCpc1Q2whBTKlBEV5XcUKhWMLww//YP773/0fLyCwqyZy2QBmWkpaeHIfUVjQBiaoXjYSKXeahx5QYkX5hbzI0uL79hKX1SyNg9QJAOqqtopZ4h5nDoyEsuDwjjEJDVeVBiX5pMXp+kevWAMjAAJ7BSboQhKg9FgNC59P3JiBokEXcqJCjviWCet6CPJ7N2Og1Ez0ATnFSw0iAgEkEvfQL1pCII7W9urArBUDKPWJ4ShWI/Y/Gs7QMERiSkofSwKwgYRZOEzve+T1/cG3FjrLMPCBQ/KKuvCx+/vUVfnmII+fBJSMmxd2gII3TmNwIR2Uc1eTeCcQiKXBcaPf6w/RIzJp5+/Adu5vhKwCcYPkDK67VJ/OOpxSsiKNe3ufejJkTxunE99fMNRU784Yct1lv33PMefX1mugDIgM/XpCGbyqsFJ0UrO8cRSb1oQUQJemm483QHJPyyCP2N5eXlpy1SfGW7b6CJBYiul6mWdCIYuq1QK++zltKzwZTb3U7rW6MnFH5FGHxhdDQWe98ifRDd7iIfriYXIGX1ciqIWK3k3oO+jXhfphllKHLvCYbDMvSPYrnETG6Mums6mnGBAYqGOEtPInRY0bgiI/LnBYkpoaBYFkJJFXouMT43nnj6Y2vsvXh0ynYRorWLIKXnsU5B9CFnH22RoAhk7P2xdZSUpyWpQo8lpndN7hpP5L7OvRNfAYTU1QqI0PqbRJVr/d4DRupN8fO+v/yaoowEcYvr0GOJ+GQhGwUl8c50dCXTBQSMKCfrbxWHdqJKxeNQB/IlGkhTwqERHXpsZnwym8mAEp+enlzJBggBI80a4jAQ48Qw2nQgn8ViuVjsVUVJJpMy9NdmxndlM7YdAAbKTgVaqVhdza0VIE7tBEaUj3YdyNe5xcXFXE5R3lxQoccW49GA7fPZge1ZvKamuqhWra3NxomzEkSv7AhdBvJ0Yi4+j4mrKXtM6LhCfAM+lx3ompqa4kp1oVgVIQ0aoi9zhC4D+SIxN7+6sFpYRxGhj4KRDfiaMEmaUKMuMFxkowjSYCaXhqgrEKGrQHJzhYV8MrmwFjcUDj2H0AMwgono83FXtcIIM27TkE0VIHInwX4Y/FQGshhf9YVCGOxr8YSm4KTTucjYTTji9AcMctMqGNuOrQYBQhYrPCECWYyv5UP+IK6PhUI8EUMny9AT8Wgm4PLBB0OQBzkB4bZt226rBeHlLRJMjslA1vJJPyZJCJT5OaZw6CoQGOGRCAYERvO223orOTHBg4E3dp5Q/qsJhIvQ88lgMJhqDPrD8DI3E3vtBeu570dnOBC+OwSC4oDYSW+vhjRUaGH5YY8bkPm3v3oajIUkxlUKM9EfCtvZyfhMbPmjZTrpKwHbxTcUELCBSkkjgNx8bLVzAiO8TzeG8qvxuUUwbATSCIEyErYz89MY7DMJzBAKhGxArexD5dHbWxHiKHLSxk6S+cL8fGE1j009JZ+gRsJpOxuNT4+PT+/KgtGkbg9GgAHIbSBAGuKoBOHlrQ0rYiifX1hYSIaBEBA/WRmwMyvRycloNuMS3Ss6VxLQu0SpDDneQHjVhZNUKBROhtNpf9BDDAiUlnSPD9Mwsz0T6LJt8gE3XS7KAwKCCVCHhhxffmmdwEba+yPuxlTQjyMY9OMJjSH84DHSgxmCqRvACTeR44XA4YEYvcWQ8usXEPnxW8SNZQHXU2MKheLnQIKAkuZJhX2BIIhcTytAJKLj5g5Ayq9fp4L0o1biwzGvfPYXDA8QQj2E8RXFAUkfgsGQ8kXCoSAK4fYyBQhTK6oWhB2REQThwQ7x4cDxgAjRceuhFVaioxVEMR6Qny/IPJQNhlBX6YnICBwOINYxAKmwDG9SEFDcwodGsA9GtCD3AZ66RAADkYvMTV8RQ0M2lS3cXC5iaAKlYWxwqTgPVSkQdOeCoRFDCuIof3QABAT5OUlKVmkEHZWGAR/kkkUKdAUCgeapqe3be4U6tJgxdAcgulpGDQrCq6435fe/vHfv3oeN7q2kR9brlyeGbiXhb0DMCDZyaCfcuhghE9af1EQ3vn3HrUN3DN3RDYipllE9Q1QcwRGf9ac1PATKECgSUl/5EfsUbisaKUn7z0N2Dnd3DxGiGxBlpNzKZjZCxcpn/gLkyW4A6E8nIGSk3Ao7EZ3bErbXPt+z575S3V1F932+G1bYSCecVDQCK4AIBh4NAqtYgEYfJe0g3b/jfqV7tB43uueepdndu3d2dwIBAVK/0UdRm+UJbEkH1uLjiVgsNioEnAEys5S4A5Cdw8ToZghukopyMsRDkfA9O/5OYkYqNzs7C+QsSWKXRpeWlh5dWtqxtGPHEjT70O4nh4c7wWDIVScaFR/7zTzYAQknA5nCJJ468NwxPS70zmPr9JDW7EOMfuih3Tt3Cshg5+ChV59vGRVnv1kNdljBQ0d2LboSjRYKhegkaZfSk7ueFNrJ2g2BAAZBOgehQy+zKkOgU8RljoGFeWVjQE1hQGFEySG10tGBZ50nok+QhiCcC/TsMPQkCEAAMkyQ86yNIcd41Fgc4ZloQ0AJGCRocNcR7eiQpG6IHED4Msj6caIaBAg919MDEPY3F6s10ByYat5GMnP3VhaDZOKgPDj4wVNWFchJ6oIS92wTPXrw2iP2UFxQ0DZzeWAeAoFpBYpEAPIhHimrOdFXIAQbamNv5cucN11zlTMFumMIk4QpRADjBas2ZEQaAcDHDJhQ6wKv7MoHD3a4kD4GhY9OepytWi6Vh7zM5TqNl1qn4UNI1IrmOtuQcTz44IefWLUgel+AEb7N5W5FCLNOGwRqpRGsDz62/hiES+XTRiCuFu09KnJI9hUbUYwHf3zeqg3RO4mIo6lLr28Ig+PQfcU+CCEnCRXrC5yP2hAVB++IJH6A4ucn8mFWK+kDEseQW/dbC6oNMX0l9lDKQz15qK6CdOSiVoNs46tvrD8GUT5caoETpWpWCEiWSvRup878bflhSG3IBcgDCHnKW4UPENadDn0C2YSK/IOXnrH+KORsily2FQD6lPMxNwyulZxXw+Tic/z/Ri2I0ekDep3WfaV9mFV3SPtAW/28By6qqvxXSg4u0+UHbqxLLz7Xqqm/+csx15xzzpWX1Ib8/V/zOa025K/rf8i/BPkd3P/sEqhmuUcAAAAASUVORK5CYII=">
+        <p class="t">高速行情</p>
+        <p class="d">
+          交易所数据直连<br>
+          高速行情免费体验
+        </p>
+      </li>
+      <li class="f-tac">
+        <img src="data:image/png;base64,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">
+        <p class="t">个性资讯</p>
+        <p class="d">
+          智能模型精选市场资讯<br>
+          个性化推荐个股相关新闻
+        </p>
+      </li>
+      <li class="f-tac">
+        <img src="data:image/png;base64,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">
+        <p class="t">便捷登录</p>
+        <p class="d">
+          使用头条账号登录<br>
+          自动同步头条的自选股数据
+        </p>
+      </li>
+      <li class="f-tac">
+        <img src="data:image/png;base64,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">
+        <p class="t">个股资料</p>
+        <p class="d">
+          包含公司简况、<br>
+          财务数据、相关新闻、公告等
+        </p>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="footer-space">
+
+</div>
+<footer>
+  <div class="grid f-pr">
+    <p class="f-tac">
+      <a href="gy.htm">关于我们</a> <a href="lx.htm">联系我们</a> <a href="cp.htm">产品介绍</a> <br>
+      公司名称：深圳谦懿德科技有限公司  地址：深圳南山区北三环西路43号2号院5层501室<br>
+      粤ICP备17044249号
+    </p>
+  </div>
+</footer>
+  </div>
+
+  <script src="es6-promise.auto.min.js" tppabs="http://s3a.pstatp.com/caijing/pure_resource/js/es6-promise.auto.min.js"></script><script src="tea-applog-js-v20-min.js" tppabs="http://s3.pstatp.com/caijing/pure_resource/js/tea-applog-js-v20-min.js"></script><script src="raven.min.js" tppabs="http://s3.pstatp.com/caijing/pure_resource/js/raven.min.js" crossorigin="anonymous"></script><script>Raven.config('http://ad.sentry.m.byted.org/566').install();</script>
+  <!-- built files will be auto injected -->
+<script type="text/javascript" src="land.f0b4b1e87878a1acc992.js" tppabs="https://s3.pstatp.com/caijing/caijing_stock_web/static/js/land.f0b4b1e87878a1acc992.js"></script></body>
+</html>

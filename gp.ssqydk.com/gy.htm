@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="cache-control" content="no-cache">
+  <link rel="dns-prefetch" href="//s3.pstatp.com">
+  <link rel="dns-prefetch" href="//s3a.pstatp.com">
+  <link rel="dns-prefetch" href="//s3b.pstatp.com">
+  <meta name="viewport" content="viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no">
+  <title>选股宝</title>
+  <script>
+    !(function () {
+  o();
+  window.addEventListener('resize', o);
+  function o() {
+    var w = document.documentElement.clientWidth;
+    w = (w > 100) ? w : 100;
+    w = (w < 625) ? w : 625;
+    document.documentElement.style.fontSize = ((20 * w) / 375) + 'px';
+  }
+  var styleNode = document.createElement("style");
+  styleNode.type = "text/css";
+  var str = '';
+  if(/status_bar=0/.test(location.search)){
+    try {
+      var diffH = 20;
+      if (navigator.userAgent.indexOf('Android') > -1){
+        diffH = 25;
+      }
+      str += '\n.status-bar-pad{padding-top:'+ diffH +'px!important;}';
+      str += '\n.status-bar-top{top:'+ diffH +'px!important;}';
+      str += '\n.status-bar-tran{transform: translateY('+ diffH +'px); -webkit-transform: translateY('+ diffH +'px);}';
+      str += '\n.status-bar-basic-pt{padding-top:'+ (diffH + 44) +'px!important;}';
+      str += '\n.status-bar-basic-top{top:'+ (diffH + 44) +'px!important;}';
+    } catch (e) {
+      console.log(e);
+    }
+  }
+  if (navigator.userAgent.indexOf('Android') > -1) {
+    str += '\n.ad1px{transform: translateY(1px); -webkit-transform: translateY(1px)}';
+    str += '\n.a-t-1px{transform: translateY(-1px); -webkit-transform: translateY(-1px)}';
+    str += '\n.a-t-2px{transform: translateY(-2px); -webkit-transform: translateY(-2px)}';
+    str += '\n.a-b-2px{transform: translateY(2px); -webkit-transform: translateY(2px)}';
+  }
+  if (styleNode.styleSheet) {
+    styleNode.styleSheet.cssText = str;
+  } else {
+    styleNode.innerHTML = str;
+  }
+  document.getElementsByTagName("head")[0].appendChild(styleNode);
+})();
+
+  </script>
+
+<link href="land.41e9500068cdeed1ce67a08679abed5b.css" tppabs="https://s3.pstatp.com/caijing/caijing_stock_web/static/css/land.41e9500068cdeed1ce67a08679abed5b.css" rel="stylesheet"></head>
+<body>
+  <div id="app" >
+    <header>
+  <div class="grid">
+    <img src="download.png" alt="选股宝，科技创造财富" width="117" height="36" class="t-icon f-db f-fl">
+    <ul class="f-fr f-dn menus">
+      <li class="f-ib">
+        <a>首页</a>
+      </li>
+      <li class="f-ib">
+        <a>公司介绍</a>
+      </li>
+      <li class="f-ib">
+        <a>产品简介</a>
+      </li>
+      <li class="f-ib">
+        <a>主要功能</a>
+      </li>
+    </ul>
+  </div>
+</header>
+<div class="banner">
+  <div class="grid f-pr">
+    <p class="slogan">
+      智能大数据，帮你炒牛股
+    </p>
+
+    <div class="pic-code">
+      <img src="download (1).png" width="148" height="148" class="f-db">
+      <p>手机扫码，轻松下载</p>
+    </div>
+    <div class="d-link">
+
+      <a class="f-db ios" href="https://itunes.apple.com/cn/app/xuan-gu-bao/id993530278?mt=8" tppabs="https://itunes.apple.com/cn/app/id1297191884">苹果手机下载</a>
+
+      <a class="f-db android" href="https://android.myapp.com/myapp/detail.htm?apkName=com.wallstreetcn.meepo" tppabs="http://sj.qq.com/myapp/detail.htm?apkName=com.ss.android.caijing.stock">安卓手机下载</a>    </div>
+    <div class="pic"></div>
+  </div>
+</div>
+
+<div class="company-intro">
+  <div class="grid f-pr"><img class="bg-m" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANwAAABWAQMAAACev2p8AAAABlBMVEUAAADfQEClF8VXAAAAAnRSTlMAB+j3WJsAAAF5SURBVEjHtJRBroQgEETHsGDpETwKR8OjeRSP4NKFoX4+MBZ0NzEzyfRChQfd1YXhtQAvK2Zg/REsDx150yPcPobhH/ohTBnuFoyP0A0gcGV4fAcn4FSkTD/AvF+He4BHhsmAvsA4gnuGMOBcYBjBrcDVPM6Nrza4ZQxZug3KnE3nUaAfwFThqX2v0GlzOeksc32F0wCeFcJwrwqB4d/ybiEaFgVCYRHnuEoYtI0gdSzahemGs4YeAL8+gazkoBoNN5ygGo08RrAXPQN53FMDo+zFNYWClDs3Ehcemp7gQiOVl3IBpLb+KcRe7SC1zkoIIZZlYq8oKHgQolu71CLUh7UrAj2iPCYKt3gmOqm9FOGYiz2EJ2jyBgg3A1M5LmQvVT4/e/W47o0QP3GmmVEs5TLk/ybg0cFAQLGUy6BYKmLQWa1IX3dSz1jRpq8shr4mGfoS1SXtTlcFvdElQ2a1m1kN6Jh1nHdXgJL+9pcBO4iHBR0ug18g8wGfeKGuiFfdZQAAAABJRU5ErkJggg==">
+    <img class="bg-r" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEoAAABKAQMAAAAmHlAyAAAABlBMVEXfQEAAAACF6BdBAAAAAnRSTlMHADnSW/8AAACmSURBVCjPzdKxDcMgEIXhZ7lwyQiMQjaD0RiFEVxSEMjdcVZ0CpGVLhTok6Dh+DHGeMLRniEblB2An6zEY7IQt8lERBSyEJhd6JlVeDBP4c4swo2ZhWCmyUicQjDsSp/RlC6jKg/DU7kbFuVmmJX4xnTxcc//XT+84m4k60mup77+IfOF/ZPeRnClYYPRjExcJrkmdO8mg41WUzaB2+zlclQ2Oie+AJBnriJTYzhjAAAAAElFTkSuQmCC">
+    <div class="content">
+      <div class="h2 f-pr">
+        <img class="title-bar" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAEAgMAAAC1h1SvAAAACVBMVEXmRzjnSTvmRjgoXaPNAAAAAnRSTlPjSQzAlCMAAAAWSURBVAjXY/BaBQcLGbQQnBUoHBRlAAQ+HgvequHSAAAAAElFTkSuQmCC">
+        关于我们</div>
+      <p class="detail">选股宝是一款基于A股主题投资的极简资讯推送手机软件。移动端有iOS和安卓两个版本，在各大应用市场均已上线，PC端也已上线。<br>
+        在选股宝，用户可以关注真正有价值的主题，软件会及时跟踪动态，让用户轻松、高效、及时地获取股市优质信息。跑赢大盘，领先一步，投资用选股宝，每一次推送都是机会。<br>
+        <br>
+</p>
+    </div>
+  </div>
+</div>
+<div class="footer-space"></div>
+<footer>
+  <div class="grid f-pr">
+    <p class="f-tac">
+      <a href="gy.htm">关于我们</a> <a href="lx.htm">联系我们</a> <a href="cp.htm">产品介绍</a> <br>
+      公司名称：深圳谦懿德科技有限公司  地址：深圳南山区北三环西路43号2号院5层501室<br>
+      粤ICP备17044249号
+    </p>
+  </div>
+</footer>
+  </div>
+
+  <script src="es6-promise.auto.min.js" tppabs="http://s3a.pstatp.com/caijing/pure_resource/js/es6-promise.auto.min.js"></script><script src="tea-applog-js-v20-min.js" tppabs="http://s3.pstatp.com/caijing/pure_resource/js/tea-applog-js-v20-min.js"></script><script src="raven.min.js" tppabs="http://s3.pstatp.com/caijing/pure_resource/js/raven.min.js" crossorigin="anonymous"></script><script>Raven.config('http://ad.sentry.m.byted.org/566').install();</script>
+  <!-- built files will be auto injected -->
+<script type="text/javascript" src="land.f0b4b1e87878a1acc992.js" tppabs="https://s3.pstatp.com/caijing/caijing_stock_web/static/js/land.f0b4b1e87878a1acc992.js"></script></body>
+</html>
