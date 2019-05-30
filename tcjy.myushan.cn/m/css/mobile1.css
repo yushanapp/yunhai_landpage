@@ -1,0 +1,1002 @@
+@charset "utf-8";
+body {
+	font-size: 12px;
+}
+.mtop h1 {
+	float: left;
+}
+.mtop h1 a {
+	display: block;
+	width: 180px;
+	background: url(../images/tx.gif) no-repeat left center;
+	height: 70px;
+	text-indent: -9999px;
+}
+.topright {
+	text-align: right;
+	padding-right: 10px;
+	padding-top: 10px;
+	line-height: 24px;
+}
+.topright span {
+	display: block;
+	text-align: right;
+	font-size: 14px;
+}
+.topright span.username {
+	color: #089c39;
+	font-weight: bold;
+}
+.topright span.username a {
+	color: #666;
+	font-weight: normal; margin-right:5px;
+}
+.topright span.groupname {
+	font-size: 12px;
+}
+.topright span a {
+	color: #36F;
+	text-decoration: underline;
+	margin-left: 10px;
+	font-size: 14px;
+}
+.topright a.login,.topright a.regist{
+	margin-top:10px;
+	display:block;
+	float:right; width:60px;
+	color:#930;
+	text-decoration:underline;
+}
+.topright a.login{ color:#090}
+.nav {
+	height: 46px;
+	background: #fc6da2;
+	line-height: 46px;
+	color: #fff;
+	font-size: 14px;
+	width: 100%;
+}
+.ny .nav {
+	position: fixed;
+	z-index: 1000
+}
+.nav li {
+	float: left;
+	display: block;
+	width: 20%;
+	position: relative;
+}
+.nav li span {
+	width: 18px;
+	height: 18px;
+	display: block;
+	border-radius: 9px;
+	background: #FF6;
+	line-height: 18px;
+	color: #F00;
+	text-align: center;
+	margin: 0;
+	position: absolute;
+	top: 3px;
+	right: 0px;
+	font-size: 10px
+}
+.nav li a {
+	display: block;
+	text-align: center;
+	color: #fff;
+}
+.nav li a.cur {
+	background: #df2e70
+}
+.nav span {
+	margin-left: 20px;
+}
+.snav {
+	border-bottom: 3px solid #EBEBEB;
+	height: 44px;
+	margin-bottom: 15px;
+	line-height: 40px;
+	padding-top: 46px;
+}
+.snav a {
+	display: block;
+	width: 30%;
+	border-bottom: 3px solid #fff;
+	color: #333;
+	text-align: center;
+	float: left;
+}
+.snav a.cur {
+	font-weight: bold;
+	color: #fc6da2;
+	border-bottom: 3px solid #fc6da2;
+}
+.memberlist dl {
+	padding: 15px;
+	border-bottom: dashed 1px #ccc;
+	height: 125px;
+}
+.memberlist dl dt {
+	float: left;
+}
+.memberlist dl dd {
+	padding-left: 114px;
+	margin-bottom: 10px;
+}
+.memberlist dl dd.dd01 a {
+	font-size: 14px;
+	font-weight: bold;
+	color: #e20088;
+	text-decoration: underline;
+	margin-bottom: 10px
+}
+.memberlist dl dd.dd03 a {
+	display: block;
+	line-height: 30px;
+	width: 50%;
+	text-align: center;
+	background: #fc6da2;
+	color: #fff;
+	border-radius: 4px;
+	text-decoration: underline;
+}
+.footer {
+	text-align: center;
+}
+.footer ul {
+	height: 30px;
+	display: block;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+.footer li {
+	display: inline;
+	;
+	margin: 20px 0;
+	margin-right: 20px
+}
+.footer li a {
+	text-decoration: underline;
+}
+.copyright {
+	height: 50px;
+	background: #f0f0f0;
+	padding-top: 15px;
+	color: #999;
+	text-align: center;
+}
+.bottom{ text-align:center;}
+/*************login regist*****************/
+.loginbox {
+	margin: 50px 30px;
+}
+.loginbox.register {
+	margin: 30px;
+}
+.loginbox li {
+	display: block;
+	height: 40px;
+	margin-bottom: 20px;
+	border: solid 1px #acacac;
+	border-left: solid 2px #F00;
+	background: url(../../images/inputbg.gif);
+	line-height: 40px;
+	border-radius: 4px;
+}
+.loginbox.register li {
+	margin-bottom: 10px;
+}
+.loginbox.register li.selectli {
+	background: none;
+	border: none;
+}
+.loginbox.register li.selectli select {
+	height: 30px;
+	width: 35%
+}
+.loginbox li span {
+	display: block;
+	float: left;
+	width: 28%;
+	text-align: center;
+	font-size: 14px;
+	color: #555
+}
+.loginbox li input[type=text], .loginbox li input[type=password] {
+	float: left;
+	line-height: 26px;
+	height: 26px;
+	border: none;
+	outline: none;
+	width: 70%;
+	margin-top: 7px;
+	font-size: 14px;
+}
+.loginbox li label {
+	margin: 0 20px 0 10px;
+}
+.rememberMe {
+	margin: 0 30px 20px 30px;
+	line-height: 30px;
+	height: 30px;
+}
+.rememberMe input, .rememberMe label, .rememberMe a {
+	display: inline;
+	margin-right: 15px;
+	cursor: pointer;
+}
+.rememberMe a {
+	text-decoration: underline;
+	color: #06F
+}
+.subbtn {
+	text-align: center;
+}
+.loginBtn {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	width: 45%;
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 4px;
+}
+.loginBtn:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+.main {
+	padding: 5px;
+	background: #f0f0f0;
+	font-size: 14px;
+}
+.dl_2colum {
+	margin: 15px 0;
+}
+.dl_2colum dl {
+	width: 50%;
+	float: left;
+	text-align: center;
+	margin-bottom: 10px;
+	background: #fff;
+	padding: 1px 0;
+}
+.dl_2colum dl dt {
+	margin: 5px;
+}
+.dl_2colum dl dt img {
+	width: 100%;
+	max-width: 190px;
+}
+.dl_2colum dd {
+	font-size: 12px;
+	margin-bottom: 5px;
+	height: 20px;
+	overflow: hidden;
+}
+.dl_2colum dl dd span {
+	font-size: 14px;
+}
+.dl_2colum dl dd span.name {
+	color: #F09
+}
+.dl_2colum dl dd span.online {
+	color: #009900;
+}
+.seemore {
+	text-align: center;
+	margin-bottom: 15px;
+}
+.do {
+	text-align: center;
+}
+.do dl {
+	margin: 0 auto;
+	padding: 40px 20px;
+	font-size: 12px;
+}
+.do dl dt {
+	font-size: 18px;
+}
+.do dl dd.reg {
+	width: 85%;
+	margin: 20px auto;
+	line-height: 40px;
+	background: #F06;
+	border-radius: 4px;
+	font-weight: bold;
+font-size:
+}
+.do dl dd.reg a {
+	color: #fff;
+}
+.content {
+	margin: 10px;
+}
+.content dl.baseinfo {
+	min-height: 150px;
+	margin-bottom: 15px;
+	position: relative;
+	display: block;
+}
+.content dl.baseinfo dt {
+	float: left;
+	width: 120px;
+}
+.content dl.baseinfo dt img {
+	width: 120px;
+	height: 150px;
+	margin-bottom: 10px;
+	;
+	text-align: center;
+	color: #999
+}
+.content dl.baseinfo dt a {
+	display: block;
+}
+.content dl.baseinfo dd {
+	padding-left: 130px;
+	margin-bottom: 5px;
+	font-size: 12px;
+}
+.content dl.baseinfo dd a {
+	line-height: 24px;
+	display: block;
+	text-align: center;
+	color: #fff;
+	background: #39F;
+	width: 70px;
+	border-radius: 3px;
+	font-size: 12px;
+}
+.content dl.baseinfo dd.next {
+	position: absolute;
+	display: block;
+	right: 10px;
+	top: 70px;
+	padding: 0px;
+	margin: 0px;
+	width: 28px;
+	height: 28px;
+}
+.content dl.baseinfo dd.next a {
+	width: 28px;
+	height: 28px;
+	margin: 0px;
+	background: url(../../images/next.gif);
+}
+.content dl.baseinfo dd strong {
+	font-size: 14px;
+}
+.content ul.smenu li {
+	float: left;
+	width: 20%;
+	display: block;
+	margin-bottom: 15px;
+}
+.content ul.smenu li a {
+	display: block;
+	text-align: center;
+	line-height: 34px;
+	background: #ffdeee;
+	border-radius: 3px;
+	font-size:12px;
+	border-right:1px solid #fff;
+}
+.content ul.qqh li {
+	float: left;
+	width: 50%;
+	display: block;
+	margin-bottom: 15px;
+}
+.content ul.qqh li a {
+	display: block;
+	margin: 0 10px;
+	border-radius: 4px;
+	text-align: center;
+	text-align: center;
+	color: #fff;
+	background: #ff339d;
+	line-height: 36px;
+	font-size: 14px;
+}
+.content ul.qqh li a.contect {
+	background: #F63
+}
+.tcyxTitle {
+	line-height: 32px;
+	height: 32px;
+	border-bottom: solid 1px #ccc;
+	margin-bottom: 15px;
+}
+.tcyxTitle h2 {
+	line-height: 33px;
+	background: #fff;
+	float: left;
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	width: 88px;
+	margin-left: 20px;
+	border: solid 1px #ccc;
+	border-bottom: none;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px
+}
+.tcyxTitle a {
+	float: right;
+	font-size: 12px;
+	color: #C36;
+	margin-right: 10px;
+	text-decoration: underline;
+}
+.tcyx ul li {
+	width: 25%;
+	float: left;
+	text-align: center;
+	font-size: 12px;
+	line-height: 24px;
+	margin-bottom: 10px;
+}
+.tcyx ul li a {
+	display: block;
+	margin: 0 3px;
+	color: #C36
+}
+.tcyx ul li a span {
+	display: block;
+	width: 100%;
+	height: 24px;
+	overflow: hidden;
+}
+.tcyx ul li img {
+	width: 100%;
+	max-width: 150px;
+}
+.buttom {
+	line-height: 18px;
+	text-align: center;
+	padding-bottom: 15px;
+	color: #666;
+	
+}
+.buttommenu {
+	background: #fc6da2;
+	position: fixed;
+	bottom: 0px;
+	z-index: 1000;
+	width: 100%;
+	height:30px;
+	line-height:30px;
+	font-size: 12px;
+}
+.buttommenu a {
+	display: inline;
+	color: #000;
+	padding: 0 8px;
+}
+.photolist {
+	margin: 10px;
+}
+.photolist dl {
+	width: 50%;
+	display: block;
+	float: left;
+	text-align: center;
+}
+.photolist dl dt {
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+	height: 150px;
+	overflow: hidden;
+}
+.photolist dl dt img {
+	width: 100%;
+	max-width: 160px;
+}
+.photolist dl dd.dd01 a {
+	margin: 8px 0;
+	line-height: 20px;
+	height: 20px;
+	font-size: 14px;
+	color: #C06;
+	display: block;
+}
+.photolist dl dd.dd03 a {
+	display: block;
+	width: 60%;
+	margin: 0 auto;
+	line-height: 24px;
+	height: 24px;
+	border: solid 1px #d5d5d5;
+	background: #fffeee;
+	color: #73202b;
+	margin-bottom: 10px;
+}
+.photos {
+	background: #f5f5f5;
+	border-top: solid 1px #ccc;
+	border-bottom: solid 1px #ccc;
+	margin-bottom: 15px;
+}
+.photos h2, .qinmi h2 {
+	font-size: 14px;
+	color: #333;
+	line-height: 30px;
+	border-bottom: solid 1px #ccc;
+	margin-bottom: 15px;
+}
+.photos ul {
+	width: 100%;
+	height: 80px;
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+.photos ul li {
+	float: left;
+	margin-right: 5px;
+	width: 80px;
+	height: 80px;
+	overflow: hidden;
+	position:relative;
+	display:block;
+}
+.photos ul li img {
+	width: 80px;
+}
+.photos ul li .mask {
+	position:absolute; left:0px; top:0px; width:100%; height:100%; background:#cd1784; color:#fff; opacity:0.8; text-align:center;
+}
+.photos ul li .mask p{ margin:0 10px; text-indent:0px; margin-top:20px;}
+.qinmi h2 {
+	background: #fef5f8
+}
+.qinmi {
+	border-top: solid 1px #ccc;
+	border-bottom: solid 1px #ccc;
+	margin-bottom: 15px;
+}
+.qinmi ul li {
+	margin-bottom: 8px;
+	font-size: 12px;
+	color: #fb03a9
+}
+.qinmi ul li span {
+	color: #333;
+}
+.sendmsg h3 {
+	font-size: 14px;
+	padding-left: 10px;
+	line-height: 30px;
+	background: #f5f5f5;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.xingqin {
+	padding: 10px;
+}
+.xingqin label {
+	margin-right: 5px;
+}
+.sendmsg .textarea {
+	margin: 0 10px;
+	width: 90%;
+	height: 60px;
+}
+.btnbox {
+	height: 24px;
+	padding: 10px;
+}
+.btnbox li {
+	float: left;
+	height: 24px;
+	line-height: 24px;
+	margin-right: 10px;
+}
+.btnbox li.key {
+	width: 80px;
+}
+.btnbox .text {
+	line-height: 22px;
+	height: 22px;
+	border: solid 1px #ccc;
+	width: 60px;
+	padding: 0 5px;
+}
+.btnbox li.keyimg {
+	width: 47px;
+	padding-top: 2px;
+	background: #fb1c31
+}
+.btnbox li.keyimg img {
+	width: 47px;
+	height: 20px;
+}
+.tx {
+	padding: 10px;
+}
+.registerBtn {
+	display: block;
+	float: none;
+	line-height: 40px;
+	color: #fff;
+	border-radius: 4px;
+}
+.registerBtn:visited {
+	color: #fff;
+}
+.bpic {
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.bpic img {
+	width: 100%;
+}
+.bpic p {
+	margin-bottom: 15px
+}
+.viewcontect {
+	padding: 10px 20px;
+	background: #F36;
+	margin: 20px auto;
+	color: #fff;
+	border-radius: 4px;
+	font-weight: bold;
+}
+.bpic a:link {
+	color: #fff;
+}
+.contectlist {
+	padding-top: 20px;
+}
+.contectlist li {
+	display: block;
+	margin: 0 30px 10px 30px;
+	height: 30px;
+	padding-left: 50px;
+	line-height: 30px;
+	font-size: 14px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.contectlist {
+	padding-top: 30px;
+}
+.contectlist li.qq {
+	background: url(../images/con_01.jpg) no-repeat
+}
+.contectlist li.weixin {
+	background: url(../images/con_04.jpg) no-repeat
+}
+.contectlist li.email {
+	background: url(../images/con_02.jpg) no-repeat
+}
+.contectlist li.mobile {
+	background: url(../images/con_03.jpg) no-repeat
+}
+.dovip {
+	margin-bottom: 20px;
+}
+.dovip h2, h3 {
+	font-size: 14px;
+	line-height: 30px;
+}
+.dovip p {
+	line-height: 20px;
+	color: #666;
+}
+.dovip h2 strong {
+	font-size: 16px;
+	color: #F00
+}
+.dovip h3 {
+	margin-top: 10px;
+}
+.ad {
+	margin-bottom: 10px;
+}
+.dovip a {
+	font-weight: bold;
+	color: #F00;
+	display: block;
+	padding: 10px 0;
+	text-decoration: underline;
+}
+.smenu2 {
+	display: block;
+	border-bottom: solid 2px #39F;
+	margin-bottom: 25px;
+}
+.smenu2 li {
+	float: left;
+	width: 32%;
+	margin: 0 0.65%;
+	display: block;
+	text-align: center;
+}
+.smenu2 li a {
+	display: block;
+	line-height: 30px;
+	background: #f3f3f3
+}
+.smenu2 li a.cur {
+	background: #39F;
+	color: #fff;
+}
+.upload a.file {
+	display: block;
+	width: 120px;
+	height: 150px;
+	border: solid 1px #ccc;
+	padding: 5px;
+	overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+}
+.upload a.file input {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 150px;
+	width: 120px;
+	opacity: 0;
+	line-height: 150px;
+	cursor: pointer;
+	font-size: 150px;
+}
+.upload a.file #preview, .upload a.file .img, .upload a.file img {
+	width: 120px;
+	height: 150px;
+	cursor: pointer;
+}
+#preview {
+	display: block;
+	background: url(../images/uploadbg.gif)
+}
+#uploadbtn {
+	display: block;
+	margin: 15px auto;
+}
+.photolist li {
+	float: left;
+	width: 70px;
+	height: 90px;
+	overflow: hidden;
+	padding: 5px;
+	border: solid 1px #ccc;
+	margin: 5px;
+	text-align: center;
+}
+.photolist li a {
+	display: block;
+	height: 70px;
+	line-height: 70px;
+	width: 100%;
+	overflow: hidden;
+	font-size: 60px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 5px;
+}
+.photolist li a img {
+	width: 70px;
+}
+.photolist li a.addphoto {
+	background: #ddd;
+}
+.filetable {
+	width: 100%;
+	margin: 20px auto;
+}
+.filetable th {
+	font-size: 12px;
+	text-align: right;
+	padding-right: 10px;
+	width: 35%;
+	font-weight: normal;
+}
+.filetable td select {
+	width: 100%;
+	height: 26px;
+	margin: 5px 0;
+}
+.filetable td input {
+	margin: 5px;
+}
+.reg_form dl dd {
+	display: block;
+	clear: both;
+	height: 30px;
+	margin-bottom: 10px;
+	line-height: 30px;
+}
+.reg_form dl dd span {
+	float: left;
+}
+.reg_form dl dd span.s01 {
+	width: 90px;
+	display: block;
+	padding-right: 5px;
+	text-align: right;
+}
+.reg_form dl dd span.s02 input {
+	line-height: 28px;
+	height: 28px;
+	padding: 0 5px;
+}
+.reg_form dl dd span.s01 u {
+	text-decoration: none;
+	color: red;
+	margin-right: 5px;
+	font-weight: bold;
+	font-family: ""
+}
+.reg_form dl dd.d01 {
+	padding-left: 95px;
+	padding-top: 10px;
+	height: 36px;
+}
+.button_01 {
+	border: none;
+	outline: none;
+	background: #F06;
+	border-radius: 4px;
+	width: 80px;
+	height: 36px;
+	color: #fff;
+}
+.msglist dl {
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom: solid 1px #ccc;
+}
+.msglist dl dt {
+	float: left;
+	margin-left: 15px;
+}
+.msglist dl dt a {
+	display: block;
+	width: 70px;
+	overflow: hidden;
+}
+.msglist dl dd {
+	margin-bottom: 8px;
+	padding-left: 100px;
+	display: block;
+}
+.msglist dl dd.d01 strong {
+	color: red;
+}
+.msglist dl dd.d01 span {
+	margin-left: 10px;
+}
+.msglist dl dd.d01 span.msgtime {
+	color: #666
+}
+.msglist dl dd.d03 a {
+	display: block;
+	width: 90px;
+	text-align: center;
+	line-height: 24px;
+	float: left;
+	margin-right: 10px;
+	background: #F6C;
+	border-radius: 4px;
+	color: #fff;
+}
+.msglist dl dd.d03 a.mark {
+	background: #39F
+}
+#usergroup dl {
+	padding: 20px;
+	border-bottom: solid 1px #ccc;
+}
+#usergroup dl dt {
+	line-height: 18px;
+	margin-bottom: 10px;
+	font-size: 16px;
+	color: #F60;
+	font-weight: bold;
+}
+#usergroup dl dt label {
+	margin-left: 10px;
+}
+#usergroup dl dd {
+	padding-left: 28px;
+	margin-bottom: 5px;
+}
+#usergroup dl dd span.price {
+	font-weight: bold;
+	color: #06F;
+	font-size: 14px;
+}
+#usergroup dl dd span.pprice {
+	font-weight: bold;
+	color: #0C9;
+	font-size: 14px;
+}
+#usergroup .ad {
+	color: #903;
+}
+.paylist {
+	margin-bottom: 15px;
+}
+.paylist li {
+	width: 40%;
+	float: left;
+	margin: 10px 0;
+	margin-right: 5%;
+	text-align: center;
+}
+.paylist li img {
+	width: 100%;
+	max-width: 143px;
+}
+.btn, .paybtn {
+	text-align: center;
+	margin-top: 15px;
+}
+.order2 img {
+	width: 100%
+}
+.orderTitle {
+	background: #fffed6;
+	padding: 10px;
+	border: solid 1px #F93;
+	border-radius: 4px;
+	margin: 15px 0;
+}
+.orderTitle li {
+	display: block;
+	height: 20px;
+	line-height: 20px;
+}
+.orderTitle strong {
+	display: block;
+	float: left;
+	width: 50%;
+}
+.orderTitle span {
+	display: block;
+	float: left;
+	width: 35%;
+}
+.ts {
+	line-height: 18px;
+	margin-bottom: 10px;
+}
+.card li {
+	height: 28px;
+	line-height: 28px;
+	width: 100%;
+	text-align: center;
+}
+.card li input {
+	width: 200px;
+	padding: 0 5px;
+	height: 28px;
+}
+.card li select {
+	width: 210px;
+	height: 28px;
+}
+.returnmsg{ text-align:center; margin:50px auto 0 auto; line-height:30px; font-size:16px;}
+.returnmsg font{ color:#F00}
+.returnmsg u{ color:#F36; }
+.searchbox ul{ width:80%; margin:20% 10% 0 10%;}
+.searchbox li{ margin-bottom:30px;}
+.searchbox li select{ height:30px; width:45%; margin:2%}
+a.submit{ display:block; width:94%; margin:2%; height:30px; text-align:center; line-height:30px; color:#fff; font-weight:bold; font-size:16px; background: #fa6ba0;  outline:none; background-image:none; border-radius:4px;}
+.fxlist{ margin:0 10px;}
+.fxlist li{ margin-bottom:10px; padding-left:15px; background:url(../images/sh_more.gif) left center no-repeat;}
+.nav a.denglu{ float:right; margin-right:20px; color:#fff; font-weight:bold;}
+.nav span{ float:left;}
+.registul  strong{ }
+.reg_wrong,.reg_notice{display:block; margin-bottom:10px; font-weight:normal; padding-left:28%; color:red;}
+.reg_notice{ color:#03F}
+.reg_right{ display:none}
