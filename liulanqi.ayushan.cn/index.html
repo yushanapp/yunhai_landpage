@@ -67,79 +67,50 @@
       height: auto;
       z-index: 9999;
     }
-    .imgs2{
-      position: absolute;
-      width: 100%;
-      height: auto;
-      top: 25.5%;
-      left: 0;
-      margin: 0 auto;
-      z-index: 9999;
-    }
-    .imgs{
-      position: absolute;
-      width: 40%;
-      height: auto;
-      top: 17%;
-      left: 30%;
-      margin: 0 auto;
-      z-index: 999;
-
-      -moz-animation: mymove 3s ease-in-out infinite alternate;
-      -webkit-animation: mymove 3s ease-in-out infinite alternate;
-      animation: mymove 3s ease-in-out infinite alternate;
-    }
-    @keyframes mymove{
-      0% {
-        -moz-transform: translate3d(0, 0, 0) rotate(0deg);
-        -ms-transform: translate3d(0, 0, 0) rotate(0deg);
-        -webkit-transform: translate3d(0, 0, 0) rotate(0deg);
-        transform: translate3d(0, 0, 0) rotate(0deg);
-      }
-      50% {
-        -moz-transform: translate3d(0, 8px, 0) rotate(5deg);
-        -ms-transform: translate3d(0, 8px, 0) rotate(5deg);
-        -webkit-transform: translate3d(0, 8px, 0) rotate(5deg);
-        transform: translate3d(0, 8px, 0) rotate(5deg);
-      }
-      100% {
-        -moz-transform: translate3d(0, 0, 0) rotate(0deg);
-        -ms-transform: translate3d(0, 0, 0) rotate(0deg);
-        -webkit-transform: translate3d(0, 0, 0) rotate(0deg);
-        transform: translate3d(0, 0, 0) rotate(0deg);
-      }
-    }
-
   </style>
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?109ba7d63144ed36329ea773f9fe2c38";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
 
 </head>
 <body>
 <div class="header">
 
-  <img src="https://cdn.xzwjuub.cn/liulanqi.ayushan.cn/images/bg.jpg" class="bj" alt="">
-  <img src="https://cdn.xzwjuub.cn/liulanqi.ayushan.cn/images/xf1.png" class="imgs" alt="">
-  <img src="https://cdn.xzwjuub.cn/liulanqi.ayushan.cn/images/xf2.png" class="imgs2" alt="">
+  <img src="https://cdn.xzwjuub.cn/liulanqi.ayushan.cn/img2/bj.jpg" class="bj" alt="">
+
+
+  <div class="lb">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="https://cdn.xzwjuub.cn/liulanqi.ayushan.cn/img2/1.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://cdn.xzwjuub.cn/liulanqi.ayushan.cn/img2/2.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://cdn.xzwjuub.cn/liulanqi.ayushan.cn/img2/3.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="btnCilck" style="position: absolute;width:29%;height: 2%;left: 35%;top: 13.5%;z-index: 99999999999999;">
 
   </div>
-  <div  style="position: fixed;bottom:8%;;width: 100%;text-align:center;margin:0 auto;height: auto;max-width: 750px;z-index: 9999999;">
-    <img class="btnCilck" src="https://cdn.xzwjuub.cn/liulanqi.ayushan.cn/images/btn.png" style="width: 60%;margin:0 auto;height: auto;" alt="">
+  <div  style="position: fixed;bottom:10%;;width: 100%;text-align:center;margin:0 auto;height: auto;max-width: 750px;z-index: 9999999;">
+    <img class="btnCilck" src="https://cdn.xzwjuub.cn/liulanqi.ayushan.cn/img2/btn.png" style="width: 70%;margin:0 auto;height: auto;" alt="">
     <!--   <div class="btnCilck" style="position: absolute;width: 22%;height: 47%;top:26%;left: 75%;z-index: 9999999999;">
 
        </div>-->
   </div>
 
 </div>
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.bootcss.com/Swiper/4.5.0/js/swiper.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper('.swiper-container');
+</script>
 <script>
 
     var Android="http://download.2345.cn/2345yd1/apk/mkt/sc-yhbaidusem1_cpc_ljj.apk";//安卓下载链接
