@@ -1,0 +1,406 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>【约单_约单APP—约单官网】最大的时间交易平台,中国版的Thumbtack，TaskRabbits,任务兔子。</title>
+    <meta charset="utf-8"/>
+    <meta name="keywords" content="滴滴打人  猪八戒  陌陌  微信  Thumbtack TaskRabbits,任务兔子"/>
+    <meta name="description" content="约单APP是国内最大的时间交易平台，中国版的Thumbtack，您可以出售您的时间，比如可以陪看电影，陪跑步等，同时您也可以提供技能服务，比如上门按摩，模特外拍，瑜伽、外语等培训等。
+比陌陌更容易，比微信更有趣。"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /*font-size: 62.5%;
+            min-width: 60rem;*/
+            /* 10 ÷ 16 × 100% = 62.5% */
+            font-family: "Microsoft YaHei";
+            -webkit-tap-highlight-color:rgba(0,0,0,0);
+        }
+        ol, ul {
+            list-style: none;
+        }
+        a{
+            text-decoration:none;
+            color: #222222;
+        }
+        a:hover {
+            color: #555555;
+        }
+
+        .header {
+            background: #222;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        .header div {
+            width: 70%;
+            margin: 0 auto;
+            text-align: left;
+            /*border: dashed 1px grey;*/
+        }
+
+        .header span {
+            /*margin-top: 5px;*/
+            float: right;
+            text-align: right;
+        }
+
+        .header span a {
+            color: white;
+            font-size: 1em;
+            padding: 10px;
+            border: 1px solid transparent;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .header span a:hover {
+            border: 1px solid #fff;
+        }
+
+        .header img {
+            height: 2.5rem;
+            margin-top: 5px;
+        }
+
+        .iyd_nav{
+            display: none;
+        }
+        /*约单导航————移动端 new_*/
+        .iyd_nav{
+            width: 100%;
+            position: relative;
+        }
+        .iyd_nav h3{
+            height: 50px;
+            line-height: 50px;
+            background: #ffffff;
+            text-align: center;
+            font-weight: normal;
+            font-size: 18px;
+        }
+        .yd_logo{
+            position: absolute;
+            top: 7px;
+            left: 13px;
+        }
+        .yd_logo img{
+            width: 2rem;
+            height: 2rem;
+        }
+        .nav_btn{
+            width: 30px;
+            height: 26px;
+            display: inline-block;
+            background: #ffffff url("images/btn.png") no-repeat;
+            background-size: 75%;
+            background-position: center;
+            position: absolute;
+            top: 12px;
+            right: 25px;
+        }
+        .nav_menu{
+            width: 130px;
+            height: auto;
+            border: 1px solid #dddddd;
+            border-radius: 6px;
+            background: #f6f6f6;
+            position: absolute;
+            top: 57px;
+            right: 15px;
+            z-index: 99;
+        }
+        .triangle{
+            padding: 10px;
+            background: url("images/triangle.png") no-repeat;
+            background-size:  cover 50%;
+            background-position: center;
+            position: absolute;
+            top: -14px;
+            right: 14px;
+            z-index: 80;
+        }
+
+        .nav_menu li{
+            text-align: center;
+            line-height: 48px;
+        }
+        .nav_menu li a{
+            display: inline-block;
+            width: 80%;
+            font-size: 16px;
+        }
+        .about a{
+            border-bottom: 1px solid #dddddd;
+        }
+        /*end约单导航————移动端*/
+
+        .content {
+            /*background: #fff;*/
+            width: 70%;
+            margin: auto;
+        }
+
+        .content h1 {
+            font-size: 1.5em;
+            margin: 1rem 0;
+        }
+
+        .content div {
+            margin-bottom: 1rem;
+            border: 1px dashed grey;
+            padding: 2rem;
+            -webkit-border-radius: 1rem 1rem 0 0;
+            -moz-border-radius: 1rem 1rem 0 0;
+            border-radius: 1rem 1rem 0 0;
+        }
+
+        .content p {
+            text-indent: 2em;
+            line-height: 200%;
+            font-size: 1em;
+            color: #333;
+        }
+
+        .footer {
+            background: #222;
+        }
+
+        .footer div {
+            background: url(images/footer.png) no-repeat 50% 0;
+            background-size: 100%;
+            height: 16em;
+            margin: auto;
+            max-width: 60rem;
+            position: relative;
+        }
+
+        .footer p {
+            position: absolute;
+            color: transparent;
+            /*color: red;*/
+        }
+
+        .weibo {
+            font-size: 1.6rem;
+            top: 2.5rem;
+            right: 17rem;
+        }
+
+        .weixin {
+            font-size: 1.6rem;
+            top: 5.5rem;
+            right: 17rem;
+        }
+
+        .kefu {
+            font-size: 1.1rem;
+            top: 10.5rem;
+            right: 17.5rem;
+        }
+
+        .copyright {
+            color: #fff !important;
+            width: 100%;
+            bottom: 2rem;
+            text-align: center;
+            font-size: 1rem;
+        }
+
+
+        @media screen and (min-width: 320px) {
+            html {
+                font-size: .9em
+            }
+        }
+
+        @media screen and (min-width: 340px) {
+            html {
+                font-size: 1.1em
+            }
+        }
+
+        @media screen and (min-width: 480px) {
+            html {
+                font-size: 1.6em
+            }
+        }
+
+        @media screen and (min-width: 720px) {
+            html {
+                font-size: 2em
+            }
+        }
+
+        @media screen and (min-width: 1080px) {
+            html {
+                font-size: 1em
+            }
+        }
+
+        /*手机的适配*/
+        @media screen and (max-width: 1000px) {
+            body {
+                background: #FAFAFA;
+            }
+            .header{display: none}
+            .iyd_nav{display: block;}
+            .header span a{
+                padding: 0;
+                margin-left: .5em;
+            }
+            .header span a:hover{
+                border: none;
+            }
+            .content{
+                width: 90%;
+            }
+            .content h1{
+                font-size: 1.2em;
+            }
+            .content div{
+                border-radius: .7em;
+                padding: 1em;
+            }
+            .content p{
+                line-height: 1.5em;
+            }
+            .footer div{
+                height: 6em;
+            }
+        }
+
+    </style>
+
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script>
+        $(function () {
+            $('.nav_btn').click(function () {
+                $('.nav_menu').show();
+            });
+            $('.nav_menu').find('li').click(function () {
+                $('.nav_menu').hide();
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+<!--[if lte IE 8]>
+<style type="text/css">
+    #errorie, #errorie div {
+        display: block;
+    }
+
+    #errorie {
+        padding: 30px 0;
+        background: #FCF8E3;
+    }
+
+    #errorie div {
+        width: 900px;
+        margin: 0 auto;
+        line-height: 26px;
+        color: orange;
+        font-size: 18px;
+    }
+
+    #errorie div a {
+        color: #459f79;
+        font-size: 18px;
+    }
+
+    #errorie div a:hover {
+        text-decoration: underline;
+    }
+
+    #errorie div a span {
+        font-size: 30px;
+        color: red;
+    }
+
+    .header, .content, .footer {
+        display: none;
+    }
+</style>
+<div id="errorie">
+    <div>
+        您所使用的IE浏览器版本过旧，为了您获得更好的浏览体验，请升级您的浏览器到 IE9 以上版本，
+        <a target="_blank" href="http://windows.microsoft.com/zh-cn/internet-explorer">点击升级</a>
+    </div>
+
+    <div>
+        <a href="http://wx.iyuedan.com/wx/download/fast" target="_blank">下载最新版<span>约单APP</span></a>
+    </div>
+</div>
+<![endif]-->
+
+<div class="iyd_nav">
+    <!--<a class="yd_logo" href="index.html"><img src="images/logo.png" alt=""/></a>-->
+    <h3>关于我们</h3>
+    <a class="nav_btn" href="javascript:void (0)"></a>
+    <!--<ul class="nav_menu" style="display: none;">
+        <span class="triangle"></span>
+        <li class="about"><a href="index.html">约单首页</a></li>
+        <li class="about"><a href="javascript:void (0)">关于我们</a></li>
+        <li><a href="help.html">产品帮助</a></li>
+    </ul>-->
+</div>
+
+<div class="header">
+    <div>
+        <!--<a href="index.html"><img src="images/logo.png" alt="约单APP"/></a>-->
+        <!--<span class="b">
+                <a href="index.html">首页</a>
+                <a href="about.html">关于我们</a>
+                <a href="help.html">产品帮助</a>
+        </span>-->
+    </div>
+</div>
+<div class="content">
+    <h1>【公司简介】</h1>
+    <div>
+        <p>
+        	北京智鸟科技有限公司，是一款人人都可以买卖个性化服务的平台型产品，在国家倡导“万众创业，共享经济”的时代背景下，目前年订单量已突破3000万笔，总撮合金额达到200亿元，是目前国内最大的个人服务交易撮合平台，享有移动互联网“共享经济第一黑马“之美誉，被业界称为“人的淘宝”。约单创始团队来自腾讯、新浪等知名互联网公司，在智能匹配算法、大数据等领域积累有多年经验。
+        </p>
+        <img src="img/person1.png">
+    </div>
+    
+    <h1>【联系方式】</h1>
+
+    <div>
+        <p>1.公司名：北京智鸟科技有限公司</p>
+
+        <p>2.联系电话： 18600835189</p>
+
+        <p>3.公司地址：北京市海淀区高里掌路1号院6号楼201-44</p>
+    </div>
+
+</div>
+<div class="footer">
+    <div>
+        <!--<p class="weibo">新浪微博号：约单APP</p>
+
+        <p class="weixin">微信服务号：iyuedan</p>
+
+        <p class="kefu">客服邮箱 kefu@iyuedan.com</p>
+
+        <p class="copyright">©2015 约单 京ICP备15011114号-1</p>-->
+    </div>
+</div>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan style='display:none' id='cnzz_stat_icon_1260446014'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1260446014%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>

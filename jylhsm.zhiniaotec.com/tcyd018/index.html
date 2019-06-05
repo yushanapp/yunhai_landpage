@@ -1,0 +1,139 @@
+﻿
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>同城约单-让约会变得简单</title>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <style type="text/css">
+      @charset "utf-8";
+      body, p, input, h1, h2, h3, h4, ul, li, dl, dt, dd, form {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          vertical-align: middle;
+      }
+
+      body {
+          font-family: '微软雅黑', 'Arial';
+          font-size: 0.9em;
+          -webkit-text-size-adjust: none;
+          -moz-text-size-adjust: none;
+          -ms-text-size-adjust: none;
+          -o-text-size-adjust: none;
+      }
+
+      html, body {
+          width: 100%;
+          margin: 0 auto;
+          #min-width: 320px;
+          #max-width: 640px;
+          background-color: #eeeeee;
+          color: #777575;
+      }
+			img{
+				display: block;
+			}
+      .home_wrap {
+          width: 100%;
+          margin: 0 auto;
+          cursor: pointer;
+      }
+
+      .home_wrap img {
+          width: 100%;
+      }
+      .fixed {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          max-width: 640px;
+          right: 0;
+          margin: 0 auto;
+      }
+      #downApk{
+      	position: absolute;
+      	bottom: 8%;
+		left: 20%;
+      	width: 60%;
+      	height: 40px;
+      	/*border: 1px solid red;*/
+      }
+      .btndow1{
+            position: fixed;
+            width: 100%;
+            right: 0%;
+            bottom: 0%;
+            /*border: 1px solid red;*/
+        }
+        .btndow2{
+            position: fixed;
+            width:30%;
+            right:1%;
+            bottom:1%;
+            /*height: 4%;*/
+            /*border: 1px solid red;*/
+        }
+  </style>
+  		<style>
+		.lx {
+		    margin: 0px auto;
+		    display: block;
+		    width: 252px;
+		}
+		.lx li {
+			float: left;
+			padding: 10px;
+		}
+		a {
+		    text-decoration: none;
+		    cursor: default;
+		}
+		</style>
+</head>
+<body onload="" style="position: relative;">
+	<!--<img style="position: absolute;left: 0;top: 0;width:13%;z-index:200;" src="http://test.myushan.com//logo/black_yushanlogo.png">-->
+	<img class="hei" style="position: absolute;left: 0;top: 0;width:7%;z-index: 99999;" src="img/logo_black.png"/>
+  <img src="img/yz_yd_bg.jpg" width="100%"/>
+  <img src="img/momo0124010.png" alt="" class="btndow1">
+  <img src="img/bt.png" alt="" class="btndow2">
+<div class="btndow3" style="position: absolute;left: 30%;bottom: 10%; width:45%; height: 8%;"></div>
+<div style="text-align: center;margin-top: 10px;margin-bottom: 10px;" id="beian">
+<p>北京智鸟科技有限公司 版权所有</p>
+</div>
+
+	<!--<ul class="lx">
+    	<li><a href="gywm.html">关于我们</a></li>
+    	<li><a href="cpjs.html">产品介绍</a></li>
+		<li><a href="lxwm.html">联系我们</a></li>
+  </ul>-->
+    
+<script src="js/jquery.js"></script>
+<script src="js/china.js"></script>
+<!--<script>
+	APK_url="http://tcjy.amazonjs.cn/channel/app_bdxxl20.apk";
+	$("body").click(function(e){
+		window.location.href=APK_url;
+	});
+	//setTimeout(function (){  window.location.href= APK_url;}, 3000)
+</script>-->
+
+	<script>
+			APK_url="https://by.ldcxweb.cn/fctf/3023018.apk";
+			// 区分安卓ios
+			var u = navigator.userAgent;
+			var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+			var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+		
+			if(isIOS == true){
+				APK_url="https://by.ldcxweb.cn/fctf/3023017.apk";
+			}
+			$(".btndow2,.btndow3").click(function(e){
+				window.location.href=APK_url;
+			});
+			//setTimeout(function (){  window.location.href= APK_url;}, 3000)
+	</script>
+</html>
