@@ -1,0 +1,57 @@
+body, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, address, del, em, img, div 
+strong, b, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, input,select,textarea
+ thead, tr, th, td,header{margin:0;padding:0;border:0;outline: 0;font-family:'pinghei','PingHei-light'}
+ol,ul,li{list-style:none;}
+table{border-collapse:collapse;border-spacing:0;width: 100%;box-sizing:border-box; }
+img{vertical-align:top;width: 100%;border: none;display:block; margin:0; margin-top:-.028rem;}
+em,i{font-style:normal}
+html,body{height: 100%;}
+html{font-size: 100px;-webkit-text-size-adjust: none;}
+body{word-break:break-all;-webkit-user-select:none;-webkit-text-size-adjust:none;width:100%;min-width:320px;overflow-x:hidden;border:none; }
+a{text-decoration:none;outline:0;}
+textarea{resize:none}
+button{border:none;}
+.cf:before,.cf:after {content:"";display:table;}
+.cf:after { clear:both; }/* For IE 6/7 (trigger hasLayout) */
+.fl{float:left}
+.fr{float:right}
+.hide{display: none}
+.w{width:100%;}
+.wrap
+{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 auto;
+	min-height: 100%; height: auto !important;height: 100%; position:relative;
+}
+/*==========================公共样式============================*/
+#wrapper{font-size: .6rem;width: 100%;}
+.button{width: 100%; height:6.667rem;background-image: url(../images/top_title5.png); background-size: 100% 100%; background-repeat: no-repeat;}
+.dl_button img {width:100%; margin:0 auto; border:none;}
+.dl_button{width: 55%; margin:0 auto; margin-top:3.2rem }
+#section05 a img {position: absolute;top: 0;width: 1.289rem;height: 1.156rem;-webkit-transform: rotate(0deg);transform: rotate(0deg);-webkit-animation: sdb05 1.5s infinite;animation: sdb05 1.5s infinite;box-sizing: border-box;}
+@-webkit-keyframes  {0% {-webkit-transform: rotate(0deg) translate(0, 0);opacity: 0;}50% {opacity: 1;}100% {-webkit-transform: rotate(0deg) translate(0px, 20px);opacity: 0;}}
+@keyframes sdb05 {0% {transform: rotate(0deg) translate(0, 0);opacity: 0;}50% {opacity: 1;}	100% {transform: rotate(0deg) translate(0px, 20px);	opacity: 0;}}
+.demo a {position: absolute;left: 46%;z-index: 2;display: inline-block;-webkit-transform: translate(0, -50%);transform: translate(0, -50%);	color: #fff;letter-spacing: .1em;text-decoration: none;transition: opacity .3s;}
+.demo a:hover {opacity: .5;}
+.arrow{}
+.user_list {    padding: .667rem .489rem 0 .489rem;}
+.list ul {width: 100%}
+.list li {width:48.2%;margin-right:.467rem;background-color: #fff; float: left; border-radius: .3rem; margin-bottom: .550rem}
+.user_photo{width: 100%; height:8.178rem;border-radius: .3rem}
+.user_photo img{width: 100%; height:auto;border-radius: .3rem}
+.user_name {margin:.5rem .5rem 0 .5rem; position: relative;}
+.name{color: #555; font-size:.622rem; margin-right: .3rem }
+.age{color: #555; font-size: .533rem;padding-top: .1rem}
+.content_box {width: 100%}
+.about_ming{color: #555; font-size: .533rem; border-bottom: 1px solid #cdcdcd; padding: .2rem 0; height:1.500rem }
+.about_ming1{color: #555; font-size: .533rem; border-bottom: 1px solid #cdcdcd; padding: .2rem .2rem .9rem 0}
+
+.xzlt{text-align: center;color: #555; font-size:0.578rem;margin: .5rem 0}
+.xzlt a{color: #555;font-size:0.578rem; }
+.xzlt a:hover{color: #555;font-size:0.578rem;}
+.footer_button{width: 100%; height:5.675rem;background-image: url(../images/bottom_bg.png); background-size: 100% 100%; background-repeat: no-repeat;　}
+.dl_button1 img {width:100%; margin:0 auto;}
+.dl_button1{width: 55%; margin:0 auto; margin-top:1.2rem }
+.copyright {width: 100%;text-align: center;color: #61269d;padding:.9rem 0  .5rem 0 ; font-size: 0.444rem}
