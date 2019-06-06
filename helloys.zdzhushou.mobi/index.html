@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <link rel="stylesheet" href="style.css" charset="utf-8">
+  <script type="text/javascript" src="js/jquery-1.4.min.js"></script>
+</head>
+<body>
+  <div class="wapper">
+	  <div class="logo"></div>
+	  <div class="bg bg1"></div>
+	  <div class="bg bg2">
+		<a href="javascript:void(0)" class="play" id="play"></a>
+	  </div>
+	  <div class="bg bg3"></div>
+	  <div class="bg bg4"></div>
+	  <div class="bg bg5">
+		<div class="box">
+			<div class="list">
+				<ul>
+					<li class="p7"><img src="images/1.jpg" alt="" /></li>
+					<li class="p6"><img src="images/2.jpg" alt="" /></li>
+					<li class="p5"><img src="images/3.jpg" alt="" /></li>
+					<li class="p4"><img src="images/1.jpg" alt="" /></li>
+					<li class="p3"><img src="images/2.jpg" alt="" /></li>
+					<li class="p2"><img src="images/3.jpg" alt="" /></li>
+					<li class="p1"><img src="images/1.jpg" alt="" /></li>
+				</ul>
+			</div>
+		</div>
+	  </div>
+	  <div class="bg bg6">
+		<a href="javascript:void(0)" class="join" id="join"></a>
+	  </div>
+
+
+	  <div class="qrcode">
+		<img src="./images/qrcode-info.png" />
+	  </div>
+	  <div id="dialog" class="dialog">
+		<div class="dialog-box">
+			<a href="javascript:void(0)" class="close"></a>
+			<a href="javascript:void(0)" class="sure"></a>
+		</div>
+		<div class="dialog-video">
+			<a href="javascript:void(0)" class="close"></a>
+			<a href="javascript:void(0)" class="sure"></a>
+		</div>
+		<div class="dialog-mask"></div>
+	  </div>
+  </div>
+
+  <script type="text/javascript">
+	$('#play').click(function(){
+		$('#dialog .dialog-video').append('<iframe class="video_iframe" style="z-index:1;" src="https://v.qq.com/txp/iframe/player.html?vid=q0880brb13l&amp;auto=1" allowfullscreen="" width="806" height="454"></iframe>');
+		$('#dialog .dialog-mask, #dialog .dialog-video').show();
+	})
+	$('#join').click(function(){
+		$('#dialog .dialog-mask, #dialog .dialog-box').show();
+	})
+	$('#dialog .close, #dialog .sure, #dialog .dialog-mask').click(function(){
+		$('#dialog .dialog-mask, #dialog .dialog-box, #dialog .dialog-video').hide();
+		$('#dialog .dialog-video iframe').remove();
+	})
+	
+    var test=document.getElementsByTagName("body")[0].style;
+    if(typeof test.animation!="undefined"||typeof test.WebkitAnimation!="undefined"){
+		$('.box').show();
+		var cArr=["p7","p6","p5","p4","p3","p2","p1"];
+		var index=0;
+		function previmg(){
+			cArr.unshift(cArr[6]);
+			cArr.pop();
+			$("li").each(function(i,e){
+				$(e).removeClass().addClass(cArr[i]);
+			})
+			index--;
+			if (index<0) {
+				index=6;
+			}
+		}
+		function nextimg(){
+			cArr.push(cArr[0]);
+			cArr.shift();
+			$("li").each(function(i,e){
+				$(e).removeClass().addClass(cArr[i]);
+			})
+			index++;
+			if (index>6) {
+				index=0;
+			}
+		}
+
+		timer=setInterval(nextimg,3000);
+    }else{
+        $('.wapper').append('<img class="phone" src="images/phone.png" />');
+    }
+  </script>
+<body>

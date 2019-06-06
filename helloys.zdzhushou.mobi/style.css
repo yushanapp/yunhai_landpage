@@ -1,0 +1,95 @@
+body,ol,ul,li,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}img{border:0;vertical-align:top}li{list-style:none}iframe{border:none}html{height:100%;font-size:16px}body{height:100%;font:400 1em/1.8 'Microsoft Yahei', 'PingFang SC', 'Avenir', 'Segoe UI', 'Hiragino Sans GB', STHeiti, 'Microsoft Sans Serif', 'WenQuanYi Micro Hei', sans-serif}a{color:#333;text-decoration:none}a:hover{color:#0c82ff}
+.wapper{position:relative;}
+.wapper .logo{background-image:url(./images/logo.png);width:340px;height:74px;position:absolute;left:16px;top:38px;z-index:1;}
+.wapper .bg{background:center no-repeat;}
+.wapper .bg1{background-image:url(./images/bg1.jpg);height:408px;}
+.wapper .bg2{background-image:url(./images/bg2.jpg);height:408px;position:relative;}
+.wapper .bg2 .play{
+	background:url(./images/play.png);
+	position:absolute;
+	left:50%;
+	top:180px;
+	width:171px;
+	height:164px;
+	margin-left:220px;
+	animation: video 1s infinite;
+	-webkit-animation:video 1s infinite;
+}
+.wapper .bg3{background-image:url(./images/bg3.jpg);height:408px;}
+.wapper .bg4{background-image:url(./images/bg4.jpg);height:407px;}
+.wapper .bg5{background-image:url(./images/bg5.jpg);height:408px;;position:relative;}
+.wapper .bg6{background-image:url(./images/bg6.jpg);height:408px;position:relative;}
+.wapper .bg6 .join{position:absolute;left:50%;top:116px;width:156px;height:43px;margin-left:172px;}
+
+.wapper .qrcode{background:url(./images/qrcode.png);width:232px;height:392px;position:fixed;right:0;top:50%;margin-top:-186px;}
+.wapper .qrcode img{position:absolute;top:155px;left:50px; width:131px; height:131px;}
+
+.wapper .dialog .close{width:48px;height:48px;position:absolute;right:0;top:0;}
+.wapper .dialog .sure{width:136px;height:42px;position:absolute;left:250px;bottom:53px;}
+.wapper .dialog .dialog-box{display:none;background:url(./images/dialog.png); width:690px;height:478px;position:fixed; z-index:100; top:50%; left:50%; margin-left:-300px; margin-top:-249px;}
+.wapper .dialog .dialog-video{display:none;background:url(./images/dialog-video.png); width:895px;height:548px;position:fixed; z-index:100; top:50%; left:50%; margin-left:-425px; margin-top:-274px;}
+.wapper .dialog .dialog-video iframe{margin:80px 0 0 22px;}
+.wapper .dialog .dialog-mask{display:none;position:fixed; z-index:99;width:100%;height:100%;opacity:0.5;filter:alpha(opacity=50);left:0;top:0;background-color:#000;}
+
+@-webkit-keyframes video{
+	0%,100% { -webkit-transform: scale(1);}
+    50% { -webkit-transform: scale(0.95);}
+}
+@keyframes video{  
+    0%,100% { transform: scale(1);}
+    50% { transform: scale(0.95);}
+}
+
+.wapper .phone{position: absolute;top:1775px;left:50%;margin-left:-620px;z-index:99;}
+.wapper .box{
+	width: 600px;
+	height: 340px;
+	position: relative;
+	top:200px;
+	left:50%;
+	margin-left:-620px;
+	display:none;
+}
+
+.wapper .box li{
+	position: absolute;
+	top: 0;
+	left: 0;
+	list-style: none;
+	opacity: 0;
+	transition: all 0.3s ease-out;
+	pointer-events:none;
+}
+.wapper .box img{
+	border:none;
+	height:450px;
+}
+.wapper .box .p1{
+	transform:translate3d(-224px,0,0);
+}
+.wapper .box .p2{
+	transform:translate3d(-20px,0,0);
+	transform-origin:0 50%;
+	opacity: 1;
+	z-index: 2;
+}
+.wapper .box .p3{
+	transform:translate3d(110px,-20px,0) scale(1.18);
+	z-index: 3;
+	opacity: 1;
+}
+.wapper .box .p4{
+	transform:translate3d(241px,0,0);
+	transform-origin:100% 50%;
+	opacity: 1;
+	z-index: 2;
+}
+.wapper .box .p5{
+	transform:translate3d(432px,0,0);
+}
+.wapper .box .p6{
+	transform:translate3d(446px,0,0);
+}
+.wapper .box .p7{
+	transform:translate3d(520px,0,0);
+}
