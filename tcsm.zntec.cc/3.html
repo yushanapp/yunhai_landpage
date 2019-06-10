@@ -1,97 +1,201 @@
-﻿<!doctype html>
-<html>
+﻿
+<!DOCTYPE>
+<html lang="zh-CN" data-dpr="2">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta content="max-age=0" http-equiv="Cache-Control">
-    <meta content="240" name="MobileOptimized">
-    <meta content="YES" name="apple-touch-fullscreen">
-    <meta content="yes" name="apple-mobile-web-app-capable">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta content="telephone=no" name="format-detection">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="http://img.qywlweb.cn/js/jquery.min.js"></script>
-	<script src="http://pv.sohu.com/cityjson"></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="no-cache" http-equiv="Pragma">
+<meta content="94d5d882754bfdaa" property="wb:webmaster">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="email=no">
+<meta name="viewport" content="width=device-width, initial-scale=0.5, user-scalable=0, minimum-scale=0.5, maximum-scale=1.0">
+<title>陌声-新一代语音交友神器</title>
+<script src="js/resize.js"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<style>
+.yuyin{ float: right; width:1.7rem; height:0.7rem; margin-top:0.1rem}
+.about_ming{color: #555; font-size: .533rem;border-bottom: 1px solid #fff; padding: 0.2rem 0 0.3rem 0; height:1.500rem }
+.pulse {
+    -webkit-animation: pulse .5s linear infinite;
+    animation: pulse .5s linear infinite;
+}
+@-webkit-keyframes pulse {
+			0% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1)
+	}
+	80% {
+		-webkit-transform: scale3d(1.05, 1.05, 1.05);
+		transform: scale3d(1.05, 1.05, 1.05)
+	}
+	100% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1)
+	}
+}
 
+@keyframes pulse {
+	0% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1)
+	}
+	80% {
+		-webkit-transform: scale3d(1.05, 1.05, 1.05);
+		transform: scale3d(1.05, 1.05, 1.05)
+	}
+	100% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1)
+	}
+}
+.bt1{
+	position: fixed;
+    width: 100%;
+    right: 0%;
+    bottom: 0%;
+}
+.bt2{
+	position: fixed;
+    width: 30%;
+    right: 1%;
+    bottom: 1%;
+}
+</style> 
 </head>
-<body id="xz">
-    <div class="picBox" style="position: relative;">
-    	<!--<ul>
-    		<li style="float: left; width: 50%; text-align: center;">
-    			<a href="information.html">简介</a>
-    		</li>
-    		<li style="float: left; width: 50%; text-align: center;">
-    			<a href="information.html">特色</a>
-    		</li>
-    	</ul>-->
-        <img src="images/dsp_0519.jpg" alt="">
-        <!--<div class="top">
-            <img src="images/1152x1920(2).jpg" alt="敢聊">
-            <a href="javascript:;" class="download" id="download">
-                <img src="images/btn1.png" alt="下载">
-            </a>
-        </div>-->
-    <img src="images/btn5.png" style="position: absolute; bottom: 16%; width: 54%; left:26%;" class="dl"/>
-    </div>
-    <!--<img src="images/appbtn.png" style="position: fixed; bottom: 9%; width: 100%;" id="dl"/>
-    <img src="images/canvas.jpg" style="position: fixed; bottom: 0%; width: 100%;" id="dl"/>-->
-     <div class="copyRight">
-                     北京智鸟科技有限公司 版权所有<br/>
-		    地址：海淀区交大东路66号院2号楼<br/>
+<body style="background-color:#a247ff">
+<div id="wrapper">
+   <div class="top_title fl w"><img src="images/title1.jpg" alt=""/></div>
+   <div class="top_title fl w"><img src="images/title2.jpg" alt=""/></div>
+   <div class="top_title fl w"><img src="images/title3.jpg" alt=""/></div>
+   <div class="top_title fl w"><img src="images/title4.jpg" alt=""/></div>
+   <div class="button fl">
+   	  <div class="dl_button pulse"> <a class="dl"><img src="images/button_img.png" alt=""></a></div>
+      <div class="arrow fl">
+      	<section id="section05" class="demo">
+           <a ><img src="images/arrow_pic.png"></a>
+        </section>
+      </div>
+  </div>
+  <div class="content_box fl w">
+    <div class="user_list cf">
+  	  <div class="list fl w">
+  	     <ul>
+  	   	   <li>
+  	   		  <div class="user_photo fl"><img src="images/photo1.jpg" alt=""/></div>
+              <div class="top_txt fl w">
+  	   		      <div class="user_name cf">
+  	   		         <div class="user fl w">
+  	   		         	<div class="name fl">蒂妮</div>
+  	   		            <div class="age fl">23岁</div>
+                        <div class="yuyin"><img src="images/yuyin_1.png"></div>
+  	   		         </div>
+  	   		         <div class="about_ming fl w">如果你爱上我的笑容，该怎么办呢？</div>
+  	   		      </div>
+  	   		  </div>
+  	   	  </li>
+  	      <li class="fr" style="margin-right: 0">
+  	   		  <div class="user_photo fl"><img src="images/photo2.jpg" alt=""/></div>
+              <div class="top_txt fl w">
+  	   		      <div class="user_name cf">
+  	   		         <div class="user fl w">
+  	   		         	<div class="name fl">沐沐</div>
+  	   		            <div class="age fl">21岁</div>
+                        <div class="yuyin"><img src="images/yuyin_2.png"></div>
+  	   		         </div>
+  	   		         <div class="about_ming fl w">我是装纯卖萌不淡定傲娇的</div>
+  	   		      </div>
+  	   		  </div>  	      	
+  	      </li>
+  	   	   <li style="margin-bottom: 0">
+  	   		  <div class="user_photo fl"><img src="images/photo3.jpg" alt=""/></div>
+              <div class="top_txt fl w">
+  	   		      <div class="user_name cf">
+  	   		         <div class="user fl w">
+  	   		         	<div class="name fl">露露</div>
+  	   		            <div class="age fl">19岁</div>
+                        <div class="yuyin"><img src="images/yuyin_3.png"></div>
+  	   		         </div>
+  	   		         <div class="about_ming fl w">我有我的风格，我有我的主张</div>
+  	   		      </div>
+  	   		  </div>
+  	   	  </li>
+  	      <li class="fr" style="margin-right: 0; margin-bottom: 0">
+  	   		  <div class="user_photo fl"><img src="images/photo4.jpg" alt=""/></div>
+              <div class="top_txt fl w">
+  	   		      <div class="user_name cf">
+  	   		         <div class="user fl w">
+  	   		         	<div class="name fl">晓璇</div>
+  	   		            <div class="age fl">23岁</div>
+                        <div class="yuyin"><img src="images/yuyin_4.png"></div>
+  	   		         </div>
+  	   		         <div class="about_ming fl w">喜欢自己才会拥抱生活</div>
+  	   		      </div>
+  	   		  </div>  	      	
+  	      </li>  	  
+  	   </ul>
+  	  </div>
+   </div>
+  </div>
+
+  <div class="footer_button fl w">
+  	<!--<div class="dl_button1 pulse"> 
+  		<a href="#"><img src="images/button_img.png" alt=""></a>
+  	</div>-->
+  	<img src="images/momo0124010.png" class="bt1 dl"/>
+  	<img src="images/momo0124011.png" class="bt2 dl pulse"/>
+    <div class="copyright fl w">
+                    北京智鸟科技有限公司 版权所有<br/>
+                    地址：海淀区交大东路66号院2号楼<br/>
                     联系电话：13907550120
     </div>
-    <!--<div style="display: none;">
-		<script src="https://s19.cnzz.com/z_stat.php?id=1272836882&web_id=1272836882" language="JavaScript"></script>
-    </div>-->
-</body>
- <!--<script>
-    (function(){
-        document.getElementsByTagName("body")[0].addEventListener("click", function(){
-            window.location.href ="https://agkdowm.shizhiduxie.com.cn/hmdf49a/hm_9c024fbc_v6.7.8.apk";
-        });
-    })();
-</script> -->
+  </div>
 
- <script>
-	var ua = navigator.userAgent.toLowerCase();	
-		if (/iphone|ipad|ipod/.test(ua)) {
-			    //alert("iphone");
-			    (function(){
-			        document.getElementsByClassName('dl')[0].addEventListener("click", function(){
-			            window.location.href ="https://by.ldcxweb.cn/qmjy/3022889.apk";
-			        });
-    			})();
-		} else if (/android/.test(ua)) {
-			    //alert("android");	
-			    (function(){
-			        document.getElementsByClassName('dl')[0].addEventListener("click", function(){
-			            window.location.href ="https://by.ldcxweb.cn/qmjy/3022889.apk";
-			        });
-    			})();
-		} else{
-			(function(){
-			        document.getElementsByClassName('dl')[0].addEventListener("click", function(){
-			            window.location.href ="https://by.ldcxweb.cn/qmjy/3022889.apk";
-			        });
-    			})();
-		}
-</script>
-<!--<script>
-	APK_url="http://ssjy.tjyjgj.cn/channel/app_fccps61.apk";		
+</div>
+
+
+<script src="js/jquery-1.js"></script> 
+<script type="text/javascript" >
+//获取url中的参数
+//	function getUrlParam(name) {
+//		var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+//		var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+//		if (r != null) return unescape(r[2]); return null; //返回参数值
+//	}
+//
+//	var channel = getUrlParam('channel');	
+//	var channel_id = getUrlParam('channel_id');	
+	
+//	if(channel == 'mosheng-release-900122') {
+//		$('.copyright').html("佛山市正晟信息技术有限公司");
+//	}
+//	$('body').on('click', function(){
+//		window.location.href="../../download.php?channel="+channel+"&channel_id=" + channel_id; 
+//	});
+
+	APK_url="https://by.ldcxweb.cn/qmjy/3022889.apk";		
 	// 区分安卓ios
 	var u = navigator.userAgent;
 	var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
 	var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
 
 	if(isIOS == true){
-		APK_url="http://tdanba.cn/?app=3021339";
+		APK_url="https://by.ldcxweb.cn/qmjy/3022889.apk";
 	}
-	$("body").click(function(e){		
+	$(".dl").click(function(e){
 		window.location.href=APK_url;
 	});
 	//setTimeout(function (){  window.location.href= APK_url;}, 3000)
+
+
+</script>
+<!--<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?b625dca34036b7b0329ef515c7916f4c";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
 </script>-->
-
+</body>
 </html>
-
