@@ -195,11 +195,11 @@
 	    </div>
 
 	    <div class="submint-btn-box">
-	    	<button class="submit-btn" id="submit-btn2" data-agl-cvt="6">立即查询</button>
+	    	<button class="submit-btn" id="submit-btn2">立即查询</button>
 	    	<div class="line"></div>
 			<div class="company">
 				<span>北京智投智道投资咨询有限公司版权所有</span>
-				<span><br>地址：昌平区昌崔路198号院2号楼 <br>联系电话：15010903351<br></span>
+				<span><br>地址：昌平区昌崔路198号院2号楼 <br>联系电话：15810015773<br></span>
 				<span class="tip">- 投资有风险，投入需谨慎 -</span>
 			</div>
 	    </div>
@@ -229,6 +229,7 @@
 		        }
 			}
 			function funDownloadApp() {
+				window._agl && window._agl.push(['track', ['success', {t: 3}]])
 			    if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) { 			       
 			        window.location = "https://itunes.apple.com/app/apple-store/id1391068141";//ios下载地址
 			    }else if (navigator.userAgent.match(/android/i)) {
