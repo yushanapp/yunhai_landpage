@@ -1,0 +1,62 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta http-equiv=Cache-Control content="no-cache, no-store, must-revalidate"><meta http-equiv=Pragma content=no-cache><meta http-equiv=Expires content=0><meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" name=viewport><meta content=yes name=apple-mobile-web-app-capable><meta content=black name=apple-mobile-web-app-status-bar-style><meta content="telephone=no" name=format-detection><title></title><script type=text/javascript>function getParams() {
+        var str = location.href.replace(/#\//, ''); //取得整个地址栏
+
+        var num = str.indexOf("?")
+        str = str.substr(num + 1); //取得所有参数   stringvar.substr(start [, length ]
+
+        var arr = str.split("&"); //各个参数放到数组里
+        var obj = {};
+        var value, name;
+        for (var i = 0; i < arr.length; i++) {
+          num = arr[i].indexOf("=");
+          if (num > 0) {
+            name = arr[i].split('=')[0];
+            value = arr[i].split('=')[1].split('#')[0];
+            obj[name] = value;
+          }
+        }
+        return obj
+      }
+      if(getParams().utm_source == 'yfbdsem-3' && location.origin == 'https://black-check.kongapi.com') {
+        window._agl = window._agl || [];
+        (function () {
+          _agl.push(
+            ['production', '_f7L2XwGXjyszb4d1e2oxPybgD']
+            );
+          (function () {
+            var agl = document.createElement('script');
+            agl.type = 'text/javascript';
+            agl.async = true;
+            agl.src = 'https://fxgate.baidu.com/angelia/fcagl.js?production=_f7L2XwGXjyszb4d1e2oxPybgD';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(agl, s);
+          })();
+        })();
+      }</script><script>(function(para) {
+        var p = para.sdk_url, n = para.name, w = window, d = document, s = 'script',x = null,y = null;
+        w['sensorsDataAnalytic201505'] = n;
+        w[n] = w[n] || function(a) {return function() {(w[n]._q = w[n]._q || []).push([a, arguments]);}};
+        var ifs = ['track','quick','register','registerPage','registerOnce','clearAllRegister','trackSignup', 'trackAbtest', 'setProfile','setOnceProfile','appendProfile', 'incrementProfile', 'deleteProfile', 'unsetProfile', 'identify','login','logout','trackLink','clearAllRegister'];
+        for (var i = 0; i < ifs.length; i++) {
+          w[n][ifs[i]] = w[n].call(null, ifs[i]);
+        }
+        if (!w[n]._t) {
+          x = d.createElement(s), y = d.getElementsByTagName(s)[0];
+          x.async = 1;
+          x.src = p;
+          y.parentNode.insertBefore(x, y);
+          w[n].para = para;
+        }
+      })({
+        sdk_url: 'https://kongapi.com/sensors-js-sdk/sensorsdata.min.js',
+        heatmap_url:'https://kongapi.com/sensors-js-sdk/heatmap.min.js',
+        name: 'sa',
+        web_url: 'http://sensors-api.kongapi.com/?project=credit',
+        server_url: 'https://sensors-api.kongapi.com/sa?project=credit',
+        corss_subdomain:false,
+        // heatmap:{
+        //   clickmap:'default',
+        //   scroll_notice_map:'not_collect'
+        //   }
+      });
+      sa.quick('autoTrack');</script><link href=/static/app.7e9ee99455b0e5eaace90d125f54a338.css rel=stylesheet></head><body class=body-index><div id=app></div><script type=text/javascript src=/static/js/manifest.f2f8d40f4d324c14582c.js></script><script type=text/javascript src=/static/js/vendor.594c6fafd5716bfe9cac.js></script><script type=text/javascript src=/static/js/app.3c50b16a14cab2068b68.js></script></body></html>
