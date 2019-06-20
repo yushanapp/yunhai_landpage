@@ -1,0 +1,52 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Soul</title>
+	<meta name="viewport" content="width=device-width"> 
+   <link href="https://cdn.xzwjuub.cn/soul/images/favicon.ico" mce_href="https://cdn.xzwjuub.cn/soul/images/favicon.ico" rel="icon" type="image/x-icon">  
+     <style>
+		.navImage img{
+			width:720px;
+			height:auto;
+			}
+			.navImage{
+			display:inline-block;
+			width:100%;			
+			}
+			body{
+			margin:0!important;
+			}
+     </style>
+</head>
+<body>
+			<center>
+				<div class="navImage">
+			    <img  src="https://cdn.xzwjuub.cn/soul/images/bg.jpg" alt="navbar" name="img" border="0" usemap="#imgMap" id="img">
+<map name="imgMap" class="btnCilck">
+ <area shape="rect" coords="217,995,509,1088" style="outline:none;" href="javascript:;" id="t9"></map></div> 
+			
+      <!-- <img src="" class="btnCilck" alt="" name="download2" border="0" usemap="#download2Map"  id="download2" style="position:fixed;margin:0 auto;bottom:0;;left:0;right:0;max-width: 720px;" onClick="javascript:;" > -->
+<!-- <map name="download2Map"  class="btnCilck"><area shape="rect" coords="52,230,648,327"  href="javascript:;">
+  <area shape="rect" id="btn2" coords="519,19,693,79" href="javascript:;" style="outline:none;">
+</map> -->
+
+</center>
+<script>
+
+		var Android="";//安卓下载链接
+		var Ios="https://lnk0.com/xJdMN1?kwid={keywordid}&creative={creative}";//ios下载链接
+
+		var btns = document.getElementsByClassName("btnCilck");
+		for(var i=0;i<btns.length;i++){
+		   btns[i].onclick=function () {
+               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Ios;
+               }else {
+                   window.location.href =Android;
+               }
+           }
+		};
+</script>
+</body>
+</html>
