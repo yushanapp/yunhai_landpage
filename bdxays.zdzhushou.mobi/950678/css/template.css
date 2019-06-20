@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: url('../images/bac.png') no-repeat;
+    background-size:100% 100%;
+    background-attachment: fixed;
+}
+.main_con{
+     width: 100%;
+ }
+img{
+    display: block;
+    width: 100%;
+    margin:0;
+    padding:0;
+}
+.tab_bar{
+    position: fixed;
+    left:0;
+    bottom: 0;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+.about_box .cp_bottom{
+    margin-top: 0.8rem;
+}
+.cp_bottom{
+
+    padding-bottom: 0.5rem;
+}
+.cp_bottom p{
+    color: #fff;
+    text-align: center;
+    font-size: 0.12rem;
+}
+.cp_bottom p{
+    font-size: 0.18rem;
+}
+
+
+
+
+.user_box{
+    background-color:#ebebeb
+}
+.talk_box{
+    width:2.4rem;
+    height:0.5rem;
+    line-height:0.5rem;
+    display:inline-block;
+    background-size:100%;
+    display:-webkit-flex;
+    display:flex;
+}
+.talk_box>div:last-child{
+    margin-left:0.14rem;
+}
+.talk_box .dots{
+    width:0.05rem;
+    height:0.05rem;
+    border-radius:50%;
+    background-color:#ff2700;
+    display:block
+}
+.user_photo{
+    width:0.5rem;
+    height:0.5rem;
+    border-radius:0.05rem;
+    display:inline-block;
+    overflow:hidden;
+    margin-left:0.12rem;
+    margin-right:0.14rem;
+}
+.user_photo img{
+    width:100%
+}
+
+.user_box ul{
+    margin:0.3rem auto 0.2rem;
+}
+.user_box .user_list{
+    display:-webkit-flex;
+    display:flex;
+
+}
+.user_box .user_list_2{
+    margin-top:0.3rem;
+}
+.user_box .user_list_2 .talk_box{
+    width:2rem;
+}
+.seconds{
+    margin-top:-0.07rem;
+    display:block;
+}
+
+.tips{
+    width:4.8rem;
+    background-color:#fff;
+    border-radius:0.16rem;
+    position:absolute;
+    left:50%;
+    margin-left:-2.4rem;
+    top:20%;
+    z-index:1000;
+}
+.tips p{
+    height:1.2rem;
+    line-height:1.2rem;
+    text-align:center;
+    font-size:0.14rem;
+    font-family:"微软雅黑"
+}
+.tips span{
+    width:1.34rem;
+    height:0.34rem;
+    line-height:0.34rem;
+    background-color:#e4007f;
+    display:block;
+    border-radius:0.07rem;
+    text-align:center;
+    color:#fff;
+    margin:0 auto 0.2rem;
+}
+.tips .close{
+    width:0.16rem;
+    display:block;
+    position:absolute;
+    right:0.05rem;
+    top:0.05rem;
+    z-index:4;
+}
+.tips .close img{
+    width:100%
+}
+.talking{
+    position:relative;
+}
+.talking .radar{
+    position:absolute;
+    left:0.28rem;
+    top:0.16rem;
+    width:0.12rem
+}
+.first_talking audio{
+    position:absolute;
+    top:0
+}
+#audio_play{
+    visibility:hidden;
+}
+.bottom_talking{
+    position:fixed;
+    bottom:0px
+}
+.bottom_talking img{
+    width:100%
+}
+
+
+.about_box .page_top{
+    height: 0.7rem;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    /*background: #ff58c1;*/
+    line-height: 0.7rem;
+    color: #fff;
+
+}
+.about_box .page_top .prev_btn{
+    position: absolute;
+    width: 0.16rem;
+    top: 0.2rem;
+    left: 0.3rem;
+}
+.about_box .con_box{
+    padding: 0.5rem 0.45rem 0.44rem;
+    color: #7a7a7a;
+    font-size: 0.22rem;
+    line-height: 0.44rem;
+    margin-top: 0.7rem;
+}
+.about_box .con_box .logo{
+    width: 1.96rem;
+}
+.about_box .con_box h4{
+    font-weight: 100;
+    font-size: 0.3rem;
+    color: white;
+
+    padding-bottom: 0.26rem;
+}
+.about_box .con_box p{
+    padding: 0.17rem 0;
+    color: white;
+}
+.about_box .cp_bottom{
+    background: #fff;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 0.24rem;
+    padding-bottom: 0.3rem;
+}
+.about_box .cp_bottom .cp{
+    font-size: 0.2rem;
+}
+
+.page_logo{
+    position: absolute;
+    top:0.2rem;
+    left:0.2rem;
+    width: 1.68rem;
+}
+
+
+
