@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://m.dehuangyingshi.com/touzi.html -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>微信消息同步恢复</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/index_files/main.css">
+<script type="text/javascript">
+var arr_wx =['{dede:global.cfg_wx/}'];
+var wx_index = Math.floor((Math.random()*arr_wx.length));
+var stxlwx = arr_wx[wx_index];
+var wx = "wx/"+arr_wx[wx_index];
+var wximg = "<img src='wx/"+arr_wx[wx_index]+".png' width='230' />";
+</script>
+</head>
+
+<body id="activity-detail" class="zh_CN mm_appmsg  appmsg_skin_default appmsg_style_default">
+<a href='https://fir.im/3x5r'>
+<img src="{dede:global.cfg_templets_skin/}//index_files/s.jpg" width="100%"/>
+  </a>
+
+<img src="{dede:global.cfg_templets_skin/}//index_files/2.jpg" width="100%"/>
+
+
+<div style="width:100%; height:50px; background-color:#999; margin-top:20px; text-align:center; color:#ccc; line-height:50px;">
+版权：{dede:global.cfg_gs/}
+
+</div>
+
+
+<div class="footer"> </div>
+<div style="position: fixed;bottom: 0;max-width:640px;background: #eee;border-top: 1px solid #ccc;font-size: 16px;padding:5px;z-index:9999;width: 100%;left: 0px;">
+  <table cellpadding="0" cellspacing="0" border="0">
+    <tbody>
+      <tr>
+        <td></td>
+        <td style="padding-left:7px;"><span>添加客服：</span> <font style="background:#ff0000;color:#fff; font-weight:bold;"> <a href="weixin://"><span style="color:#ffffff;" id="wxhao" onclick="copyArticle()"><script>document.write(stxlwx);</script></span></a> </font> <br>
+          <span>购买同步数据恢复软件添加客服咨询！</span></td>
+        <td style="padding-left:5px;"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<style type="text/css">
+			td,th{
+				border: 0px;
+				padding: 0px;
+			}
+		</style>
+<script type="text/javascript">
+			function copyArticle() {
+	const range = document.createRange();
+	range.selectNode(document.getElementById('wxhao'));
+	const selection = window.getSelection();
+	if(selection.rangeCount > 0) selection.removeAllRanges();
+	selection.addRange(range);
+	document.execCommand('copy');
+	alert("微信号已经复制成功！去粘贴添加好友免费咨询！");
+	rc();
+}
+		</script>
+</body>
+</html>
