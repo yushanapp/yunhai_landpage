@@ -1,0 +1,264 @@
+@charset "utf-8";
+html,body{
+	width:100%;
+	min-height:100%;
+}
+body{
+	margin:0; 
+	padding:0;
+	font-family:"Microsoft yahei";
+}
+p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,input,img,select{
+	margin:0;
+	padding:0;
+	list-style:none;
+	border:0; outline:none;
+}
+a{
+	text-decoration:none;
+	cursor:default;
+}
+table{
+	border-collapse:
+	collapse;border-spacing: 0;
+}
+.shadow{
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+:focus {
+	outline:0;
+}
+
+*{
+	tap-highlight-color: rgba(0,0,0,0);
+}
+
+.re_trg, .le_trg, .top_trg,.bot_trg{
+	display:inline-block;
+	width:9px;
+	height:9px;
+	border-right:2px solid #555;
+	border-bottom:2px solid #555;
+	transform:rotate(-45deg);
+}
+.le_trg{
+	width:9px;
+	height:9px;
+	transform:rotate(135deg);
+}
+.bot_trg{
+	transform:rotate(45deg);
+	margin:3px 4px;
+}
+.top_trg{
+	transform:rotate(-135deg);
+	margin: -2px 4px;
+}
+
+.box-sizing{
+	box-sizing:border-box;
+}
+.dis-v{
+	display:-ms-flexbox;
+	display:flex;
+	box-orient:vertical;
+}
+.dis-box{
+	display:-ms-flexbox;
+	display:flex;
+}
+.dis-flex{
+	box-flex:1;
+}
+.dis-center{
+	box-sizing:border-box;
+	display:-ms-flexbox;
+	display:flex;
+	box-pack:center;
+	box-align:center;
+}
+.f_left{ float:left;}
+.f_right{ float:right;}
+.center{ text-align:center;}
+.font14{ font-size:14px;}
+.font12{ font-size:12px;}
+body{
+	color: #333333;
+	margin: 0;
+
+	font-size:14px;
+}
+.box{
+	padding-bottom: 60px;
+}
+button{
+	outline: none;
+}
+header{
+	background: url(../img/img_01-ac593.jpg) no-repeat;
+	background-size: cover;
+	height: 50px;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: justify;
+	    justify-content: space-between;
+	-ms-flex-align: center;
+	    align-items: center;
+	padding: 0 20px;
+}
+.logo{
+	background: url(../img/black_zhidaozhushou.png) no-repeat;
+	background-size: contain;
+	height: 30px;
+	width: 100px;
+	position: absolute;
+	top: 48px;
+	right: 5px;
+
+}
+header .txt span{
+	color: #FFFFFF;
+}
+header .txt img{
+	height: 20px;
+	margin-left: 5px;
+	vertical-align: text-bottom;
+	border-radius: 10px;
+	border: 1px solid #fff;
+}
+header .txt .title{
+	font-size: 16px;
+	font-weight: 900;
+}
+header .down_btn{
+	width: 80px;
+	height: 24px;
+	border-radius: 12px;
+	background: #f6e37d;
+	color: #ac16b2;
+	border: 0;
+	font-size: 10px;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+li{
+	padding: 10px;
+	border-bottom: 1px solid #ececec;
+	overflow: hidden;
+}
+li img{
+	width: 28%;
+	float: left;
+}
+li .user_info{
+	float: right;
+	width: 68%;
+	font-size: 12px;
+}
+.info_detail_box{
+	overflow: hidden;
+}
+.info_detail_box .info_detail{
+	border-bottom: 1px solid #e0ebfd;
+	float: left;
+	padding-bottom: 5px;
+}
+.info_detail_box .info_detail .name{
+	font-size: 24px;
+	font-weight: 900;
+	color: #ac16b2;
+}
+.info_detail_box .info_detail .age,.info_detail_box .info_detail .single{
+	margin-left: 5px;
+}
+.info_detail_box .time{
+	font-size: 10px;
+	color: #a9a9a9;
+	line-height: 1px;
+	float: right;
+	margin-top: 20px;
+}
+.tags{
+	margin-top: 5px;
+	overflow: hidden;
+}
+.tags span{
+	display: block;
+	float: left;
+	text-align: center;
+	margin-right: 5px;
+	background: #e0ebfd;
+	font-size: 8px;
+	padding: 5px 10px;
+	border-radius: 6px;
+}
+.askfriend_info{
+	height: 40px;
+	padding-top: 5px;
+}
+.photo_address_box{
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: end;
+	    align-items: flex-end;
+	-ms-flex-pack: justify;
+	    justify-content: space-between;
+}
+
+.photo_address_box .photo_box .down_btn{
+	width: 60px;
+	height: 24px;
+	color: #ffffff;
+	border: 0;
+	border-radius: 3px;
+	font-size: 10px;
+	background: #ac16b2;
+	padding: 0;
+}
+.photo_address_box .address{
+	font-size: 0.16rem;
+	color: #11cd6e;
+}
+.photo_address_box .address:before{
+	content: '';
+	width: 0.16rem;
+	height: 0.18rem;
+	background-size: cover;
+	display: block;
+	float: left;
+	margin-right: 0.05rem;
+	margin-top: 0.05rem;
+}
+.company{
+	font-size: 12px;
+	text-align: center;
+	padding: 10px 0;
+}
+.bottom{
+	width: 100%;
+	height: 60px;
+	background: #ac16b2;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	    align-items: center;
+	-ms-flex-pack: center;
+	    justify-content: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+.bottom .down_btn{
+	width: 80%;
+	height: 30px;
+	background: #f5e37c;
+	color: #ac16b2;
+	border-radius: 15px;
+	display: block;
+	text-align: center;
+	font-size: 12px;
+	line-height: 30px;
+}
