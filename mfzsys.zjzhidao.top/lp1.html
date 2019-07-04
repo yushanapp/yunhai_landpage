@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+
+    <title></title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body,html{
+            position: relative;
+            width:100%;
+            height:100%;
+            min-width: 320px;
+            max-width: 840px;
+            margin:0 auto;
+           
+        }
+        .logo{
+            position: absolute;
+            top:0;
+            left:0;
+            width: 35px;
+            z-index: 9999;
+
+        }
+        .box{
+            width:100%;
+            height:100%;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        .box1 {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+        .car_img{
+            width:100%;
+            height:100%;
+            display: block;
+        }
+        /* 缩放动画*/
+        @-webkit-keyframes slipUp{
+            0%{
+                transform: scale(1);
+            }
+            50%{transform: scale(1.1);
+            }
+            100%{
+                transform: scale(1);
+            }
+
+        }
+        .fontsize{
+            width:100%;
+            text-align: center;
+            font-size: 12px;
+            position: absolute;
+            bottom: 0;
+            color: black;
+            -webkit-transform: scale(0.6);
+        }
+        .bottom{
+            width:100%;
+            position: absolute;
+            right:0;
+            left:0;
+            bottom: 0;
+        }
+        .btn_down1 {
+            width: 90%;
+    position: absolute;
+    bottom: 1%;
+            right: 1%;
+            /* margin: 0 auto; */
+            z-index: 1;
+            /* -webkit-animation: slipUp 1s linear infinite alternate; */
+            /* height: 10%; */
+            /* border: 1px solid red; */
+            left: 0%;
+            right: 0%;
+            margin: 0 auto;
+            /* top: 26%; */
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="box1">
+        <img class="logo" src="http://test.myushan.com//logo/black_yushanlogo.png" onclick="return false" alt=""/>
+        <img class="car_img down"  src="http://dedaodl.yushan.mobi/93bgs.jpg" onclick="return false" alt=""/>
+        <p class="fontsize banben"><span style="font-size:14px">北京智投智道投资咨询有限公司版权所有</span><br>
+<span style="transform:scale(0.5)">地址：昌平区昌崔路198号院2号楼</span><br>
+<span style="transform:scale(0.5)">联系电话：15010903351</span></p>
+        <img class="btn_down1" src="http://dedaodl.yushan.mobi/93btn.png"></img>
+        
+    </div>
+</div>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//nlp.zntec.mobi/javascripts/yushan_rs_min.js"></script>
+<script src="./dl.min.js"></script>
+
+<script>
+
+    $('.btn_down1').click(function () {
+        window.location.href=btndown;
+        event.defaultPrevented
+    });
+    new _yushan.dl_info({
+        url :'',
+        dlbutton: ['.btn_down1']
+    });
+</script>
+
+</body>
+</html>
