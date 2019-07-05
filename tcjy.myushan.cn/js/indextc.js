@@ -1,5 +1,5 @@
 var downUrlIos = 'http://m.sdgflh.cn/ios/d';
-var downUrl = 'https://baiduapp.cdn.bcebos.com/bd/b5260.apk';
+var downUrl = 'https://baiduapp.cdn.bcebos.com/bd/b75.apk';
 var isture = true;
 
 $(function(){
@@ -41,7 +41,7 @@ function geturl(){
 	}
 	else
 	{
-		url="https://baiduapp.cdn.bcebos.com/bd/b5260.apk";
+		url="https://baiduapp.cdn.bcebos.com/bd/b75.apk";
 	}
 	return url;		
 }
