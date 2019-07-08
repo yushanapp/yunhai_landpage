@@ -4148,7 +4148,7 @@ padding-left: 9.2rem;
     .footer {
         height: auto;
 background-color: transparent;
-        display:none; 
+       /* display:none; */
         background-color: rgba(245, 138, 167, .4);
         letter-spacing: 0;
         font-size: .4375rem
