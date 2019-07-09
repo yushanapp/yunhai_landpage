@@ -230,6 +230,9 @@
 			}
 			function funDownloadApp() {
 				window._agl && window._agl.push(['track', ['success', {t: 3}]])
+				sa.track('Download_App', {
+					url: location.href
+				})
 			    if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) { 			       
 			        window.location = "https://itunes.apple.com/app/apple-store/id1391068141";//ios下载地址
 			    }else if (navigator.userAgent.match(/android/i)) {
