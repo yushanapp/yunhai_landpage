@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="baidu-site-verification" content="QpfdfPmoBr"/>
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <title></title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+</head>
+<body>
+<div class="back-ground click_a" id="download_click" style="padding-bottom: 30px;">
+    <img class="bg_img" src="images/img_01.jpg" style="width: 100%;"/>
+    <img class="bg_imga" src="images/img_02.jpg" style="width: 100%;"/>
+    <img class="bg_img" src="images/img_03.jpg" style="width: 100%;"/>
+    <img class="bg_imga" src="images/img_04.jpg" style="width: 100%;"/>
+    <img class="bg_img" src="images/img_05.jpg" style="width: 100%;"/>
+    <img class="bg_imga" src="images/img_06.jpg" style="width: 100%;"/>
+    <img class="bg_img" src="images/img_07.jpg" style="width: 100%;"/>
+    <img class="bg_imga" src="images/img_08.jpg" style="width: 100%;"/>
+    <img class="bg_img" src="images/img_09.jpg" style="width: 100%;"/>
+    <img class="bg_imga" src="images/img_10.jpg" style="width: 100%;"/>
+    <img class="bg_img" src="images/img_11.jpg" style="width: 100%;"/>
+    <img class="bg_imga" src="images/img_12.jpg" style="width: 100%;"/>
+    <img class="bg_img" src="images/img_13.jpg" style="width: 100%;"/>
+</div>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+    function rePosition(oi) {
+        var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        var ratio = width / 640;
+        document.getElementsByTagName("html")[0].style.fontSize = 100 * ratio + "px";
+    }
+    rePosition();
+    window.onresize = function() {
+        rePosition();
+    }
+    function Getparameter(key) {
+        var QueryString = {
+            data: {},
+            Initial: function() {
+                var aPairs, aTmp, a;
+                var queryString = location.search;
+                queryString = queryString.substr(1, queryString.length);
+                aPairs = queryString.split("&");
+                for(var i = 0; i < aPairs.length; i++) {
+                    aTmp = aPairs[i].split("=");
+                    this.data[aTmp[0]] = aTmp[1];
+                }
+            },
+            GetValue: function(key) {
+                return QueryString.data[key];
+            }
+        };
+        QueryString.Initial();
+        return QueryString.data
+    }
+
+    let getparameter = new Getparameter();
+    let fromId = getparameter.channel || 950909;
+    var downurl = 'http://ptd.rfydong.com/apk/download/'+fromId+'/rfydong_'+fromId+'.apk';
+    //http://ptd.rfydong.com/apk/download/950909/rfydong_950909.apk
+    console.log(fromId, downurl);
+
+    window.dl = function dl() {
+        location.href = downurl;
+    };
+
+    $('.bg_imga').click(function () {
+        dl()
+    })
+</script>
+</body>
+</html>
