@@ -1,0 +1,217 @@
+/* 禁用iPhone中Safari的字号自动调整 */
+html { -webkit-text-size-adjust: none; }
+/* 设置HTML5元素为块 */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+/* 设置图片视频等自适应调整 */
+img { max-width: 100%; height: auto; width: auto\9; /* ie8 */ }
+.video embed, .video object, .video iframe { width: 100%; height: auto; }
+
+/* 公共库 */
+a { text-decoration: none; cursor: pointer; }
+li { list-style: none; }
+a { text-decoration: none; color: #555756; }
+a:hover { color: #141414; text-decoration: none; }
+a img { border: none; }
+a > img { vertical-align: bottom; }
+.min-height { min-height: 0; height: auto; _height: 0; overflow: hidden; _overflow: visible; }
+.float-left { float: left; }
+.float-right { float: right; }
+.clear { clear: both; }
+.position-absolute { position: absolute; }
+.position-relative { position: relative; }
+.position-fixed { position: fixed; }
+.overflow-hidden { overflow: hidden; }
+.display-inline-block { display: inline-block; }
+
+
+/* 页面主代码 */
+body { font: 14px/22px "微软雅黑", 'Helvetica', Arial, sans-serif; background: #fff; color: #595959; overflow-y: scroll; overflow-x: hidden; *overflow-y: auto !important; }
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,tr{ margin:0; padding:0;}
+
+.page-container{
+    -webkit-background-size:100%;
+    background-size:100%;
+    margin: 0 auto;
+    position: relative;
+}
+.page-container .page-bg{
+    width: 100%;
+    margin: -2% auto;
+}
+.page-container .giftop{
+    width: 84%;
+    height: 16.5%;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 19.5%;
+}
+ .page-container .gifunder{
+     width: 84%;
+     height: 16.5%;
+     position: absolute;
+     margin: 0 auto;
+     left: 0;
+     right: 0;
+     top: 62.2%
+ }
+.page-container .downtop{
+    width: 62%;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 39%;
+    z-index: 98;
+}
+.page-container .downunder{
+    width: 62%;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 86%;
+    z-index: 98;
+}
+.page-container .downunder2{
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 90.5%;
+    z-index: 98;
+	color: white;
+	text-align:center;
+}
+.page-container .downunder3{
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 92%;
+    z-index: 98;
+	text-align:center;
+	
+}
+ .page-container .suspensionbox{
+     width: 100%;
+     position:fixed;
+     right:0;
+     bottom:0;
+     z-index: 98;
+     word-wrap: break-word;
+     word-break: break-all;
+ }
+
+
+
+
+/*响应式媒体查询，*/
+
+/*
+ * -----------------------------------------
+ *  320 ~ 480
+ * -----------------------------------------
+ */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+}
+
+/*
+ * -----------------------------------------
+ *  321 ~   宽大于321的设备
+ * -----------------------------------------
+ */
+@media only screen and (min-width: 321px) {
+}
+
+/*
+ * -----------------------------------------
+ *  ~ 320  宽小于320的设备
+ * -----------------------------------------
+ */
+@media only screen and (max-width: 320px) {
+}
+
+/*
+ * -----------------------------------------
+ *  ~ 480  宽小于480的设备
+ * -----------------------------------------
+ */
+@media only screen and (max-width: 480px) {
+}
+
+/* medium screens (excludes iPad & iPhone) */
+/*
+ * -----------------------------------------
+ * 481 ~ 767  宽大于480且小于767的iPad和iPhone
+ * -----------------------------------------
+ */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+}
+
+/* ipads (portrait and landscape) */
+/*
+ * -----------------------------------------
+ * 768 ~ 1024  宽大于480且小于1024的iPad和iPhone
+ * -----------------------------------------
+ */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+}
+
+/* ipads (landscape) */
+/*
+ * -----------------------------------------
+ * 768 ~ 1024  宽大于480且小于1024的iPad和iPhone
+ * -----------------------------------------
+ */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+}
+
+/* ipads (portrait) */
+/*
+ * -----------------------------------------
+ * 768 ~ 1024  宽大于480且小于1024的iPad和iPhone
+ * -----------------------------------------
+ */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+}
+
+/*
+ * -----------------------------------------
+ * 1444 ~ 1824  宽大于1444且小于1824的设备
+ * -----------------------------------------
+ */
+@media only screen and (min-width: 1444px) and (max-width: 1824px) {
+}
+
+/*
+ * -----------------------------------------
+ * 1824 ~  宽大于1824的设备
+ * -----------------------------------------
+ */
+@media only screen and (min-width: 1824px) {
+}
+
+/*
+ * -----------------------------------------
+ * 2224 ~  宽大于2224的设备
+ * -----------------------------------------
+ */
+@media only screen and (min-width: 2224px) {
+}
+
+/* iphone 4 and high pixel ratio (1.5+) devices */
+/*
+ * -----------------------------------------
+ * iphone4 ~
+ * -----------------------------------------
+ */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+}
+/* iphone 4 and higher pixel ratio (2+) devices (retina) */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+}
+
