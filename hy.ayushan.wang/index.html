@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>航运e家</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=yes"/>
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="resource/js/mui/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="resource/css/app.css"/>
+		<style>
+			#maskPointer{
+				text-align: center;
+				color: #fff;
+			}
+			#maskPointer .arrow{
+			    margin: 30px;
+			    text-align: right;
+			}
+			#maskPointer .arrow img{
+				width: 80%;
+			}
+			#maskPointer .text {
+			    font-size: 20px;
+			    line-height: 36px;
+			}
+			#maskPointer .text span {
+			    color: #fed700;
+			}
+			.channel_logo{
+				position: absolute;
+				width: 100%;
+				bottom: 0;
+				text-align: center;
+				font-size: 12px;
+				background: rgba(255,255,255,0.9);
+/*				padding-left: 140px;
+				padding-top: 10px;*/
+				z-index: 2;
+			}
+			.channel_img{
+				position: absolute;
+				width: 100px;
+				left: 30px;
+				top: 20px;
+			}
+		</style>
+	</head>
+
+	<body class="bg_white">
+		<div class="download_01">
+			<img src="resource/images/down_01.jpg">
+			<a href="javascript:;" id="openApp_link"><img src="resource/images/down_02.jpg" alt='点击下载"航运助理"'></a>
+		</div>
+
+		<div class="download_02" style="bottom: 40px;"></div>
+
+		<div class="channel_logo" id="channel_logo">
+			北京智投智道投资咨询有限公司<br/>
+			地址：昌平区昌崔路198号院2号楼<br/>
+		</div>
+
+		<iframe id="iframe_open_App" style="display:none;"></iframe>
+
+
+	</body>
+	<script src="resource/js/jquery-min.js"></script>
+	<script src="resource/js/mui/mui.min.js"></script>
+	<script type="text/javascript">
+		var CT = {
+			debug: true
+		};
+	</script>
+	<script src="resource/js/CT.js"></script>	
+
+	<script>
+		// CT.alert("Hello! MUI");		
+
+		var search = location.search, param, channel;
+		mui.extend(CT, {
+			init_page: function(){
+				var t = this;				
+				param = CT.queryString(search, "param");
+				channel = CT.queryString(search, "channel");
+				$("#openApp_link").on("click", function(){
+					t.openApp();
+				});
+				// if(channel&&channel=="pukepai"){
+					// $("#channel_logo").show();
+					// $(".download_02").css({
+					// 	bottom: "40px"
+					// });
+				// }
+			},
+			page_loading: function(){
+				var t = this;
+
+				//渲染loading
+			},
+			//显示蒙层
+			showMask: function(){
+				$("#maskPointer").show();
+			},
+			//隐藏蒙层
+			hideMask: function(){
+				$("#maskPointer").hide();
+			},
+			openApp: function(){
+				var t = this;				
+				
+				var url;
+				if (mui.os.ios) {	
+					url = "xiaozhoushipping://"+param;	
+					$.getScript(
+					    "https://pv.sohu.com/cityjson?ie=utf-8",
+					    function(data){  
+					    //localIP = returnCitySN["cip"];
+					    console.log(returnCitySN);
+					    var cname = returnCitySN&&returnCitySN['cname'];
+					    //杭州地区不下载
+					    // if(cname.indexOf('杭州') > -1){
+					    // 	return;
+					    // }
+					    setTimeout(function(){
+							window.open("https://itunes.apple.com/cn/app/id1104759817");
+							// window.location.href = "https://itunes.apple.com/cn/app/id1104759817";  //IOS
+						},0)
+				    });					
+					// $("#iframe_open_App").attr("src", url);
+					// window.location.href = url;					
+				}else if (mui.os.android){
+					url = 'hyej://com.leijin.hhej?param='+param;
+					// $("#iframe_open_App").attr("src", url);
+					window.location.href = url;
+					setTimeout(function(){
+						CT.getAndroidUrl({
+							data:{
+								channel: channel
+							},
+							cb: function(url){
+								window.location.href = url || CT['android_url'] || "http://resource.hangyunejia.com/resource/uploads/file/20190411/ZoZGwQlrHasaLa3aZto4.apk";
+							},
+							fb: function(url){
+								window.location.href = url || CT['android_url'] || "http://resource.hangyunejia.com/resource/uploads/file/20190411/ZoZGwQlrHasaLa3aZto4.apk";
+							}
+						});
+						
+					},2000)
+				}else{
+					// CT.alert("在普通浏览器");
+					window.location.href = CT['android_url'];	
+				}
+			}
+		});
+
+		CT.init_page();
+		
+	</script>
+
+</html>
