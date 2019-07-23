@@ -1,0 +1,45 @@
+html{font-family:"微软雅黑",Arial,sans-serif}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,input,button,textarea,p,th,td,b,i,strong{padding:0;margin:0;font-family:Microsoft YaHei,sans-serif,Arial}
+strong,b{font-weight: normal;font-size:13px;}
+fieldset,img{border:0}
+a{text-decoration:none;color:#000;outline:none}
+li{list-style:none}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
+input,button,textarea,select{*font-size:100%}
+.clear:after{
+  display:block; 
+  content:"clear"; 
+  height:0; 
+  clear:both;
+  visibility:hidden;
+}
+.clear{zoom:1;}
+/************************rewrite******************************************/
+html,body{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.all{
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  position: relative;
+}
+.a2{
+  display: block;
+  width: 100%;
+  /*height: auto;*/
+}
+.banben{
+  width: 100%;
+  color: rgb(70,68,68);
+  position: absolute;
+  text-align: center;
+  z-index: 100;
+  bottom: -230px;
+  left: 30px;
+  font-size: 0.4rem;
+}
