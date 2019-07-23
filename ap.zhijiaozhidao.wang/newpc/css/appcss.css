@@ -34,8 +34,7 @@ html #layui_layer_skinlayercss {
 	animation-duration: .3s
 }
 .layui-layer-close {
-	/*background: url(/newpc/images/icon-global.png) 4px -1156px no-repeat;*/
-	background: url("../images/icon-global.png") 4px -1156px no-repeat;
+	background: url(/newpc/images/icon-global.png) 4px -1156px no-repeat;
 	display: block;
 	width: 20px;
 	height: 20px
