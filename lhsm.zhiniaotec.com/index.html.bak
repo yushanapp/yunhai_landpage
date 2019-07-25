@@ -68,7 +68,7 @@
 <body>
     <div class="box">
         <div class="box1">
-            <a 1href="javascript:window.location.href=btndown;void(0);" target=_blank><img class="page" src="picture/one.jpg" alt=""></a>
+            <img class="page" src="picture/one.jpg" alt="">
 			<img class="logo" src="picture/black_zhiniao.png" alt="">
             <div class="banben"></div>
         </div>

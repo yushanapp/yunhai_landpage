@@ -1,0 +1,234 @@
+@charset "utf-8";
+/* CSS Document */
+
+.blk, .qb_box {
+	font: normal 12px "Microsoft YaHei";
+}
+.blk .main, .qb_box .main {
+	background: #fff;
+	padding: 5px;
+	margin-top:0px;
+}
+.blk .blk_title, .qb_box .blk_title {
+	line-height: 33px;
+	border: solid 1px #e78f08;
+	height: 33px;
+	background: url(/newpc/images/ui-bg_gloss-wave_35_f6a828_500x100.png) left center;
+}
+.blk h2, .qb_box h2 {
+	font: bold 14px "Microsoft YaHei";
+	padding-left: 10px;
+	color: #fff;
+	float: left;
+	display: block;
+	line-height: 33px;
+}
+a.closeBtn {
+	display: block;
+	border: solid 1px #f7b64a;
+	width: 19px;
+	height: 18px;
+	float: right;
+	background: url(/newpc/images/close.gif) no-repeat;
+	text-indent: -99px;
+	overflow: hidden;
+	margin: 7px 10px 0 0;
+}
+a.closeBtn:hover {
+	background: url(/newpc/images/close_hover.gif)
+}
+.clear {
+	font-size: 0px;
+	line-height: 0px;
+	clear: both;
+}
+.blk .main .oldmsg {
+	height: 98px;
+	background: #fff;
+}
+.blk .main dl {
+	padding: 20px 20px 20px 40px;
+	border-bottom: dotted 1px #ccc;
+	background: #fff;
+	display: block;
+}
+.blk .main dl dt {
+	float: left;
+	width: 70px;
+}
+.blk .main dl dt img {
+	padding: 2px;
+	border: solid 1px #ccc
+}
+.blk .main dl dd {
+	float: left;
+}
+.blk .main dl dd.dd_01 {
+	width: 115px;
+	display: block;
+}
+.blk .main dl dd.dd_01 u {
+	display: block;
+	margin-bottom: 25px;
+	color: #369
+}
+.blk .main dl dd.dd_02 {
+	color: #d81d7c;
+	height: 42px;
+	width: 230px;
+	overflow: hidden;
+}
+.blk .main dl dd.dd_03 {
+	width: 120px;
+	color: #666;
+}
+.blk .main .blue_bg, .qb_box .main .blue_bg {
+	background: #f0f5ff;
+}
+.qb_box .main .blue_bg {
+	height: 450px;
+}
+.blk .msg {
+	padding: 20px 40px;
+}
+.blk .msg .textarea {
+	width: 100%;
+	height: 100px;
+	border: solid 1px #e2e3ea;
+	border-top-color: #abadb3
+}
+.blk .msg h3 {
+	line-height: 30px;
+	margin-left: 20px;
+	font-size: 14px;
+}
+.xingqin {
+	text-align: center;
+	height: 19px;
+	margin: 10px 0;
+	margin-left: 30px
+}
+.xingqin label, .xingqin input {
+	float: left;
+	line-height: 19px;
+	height: 19px;
+}
+.xingqin label {
+	margin-right: 15px;
+	margin-left: 5px;
+	cursor:pointer;
+}
+.msg_button {
+	line-height: 33px;
+	height: 33px;
+	width: 102px;
+	background: url(/newpc/images/button01.gif);
+	border: 0px;
+	outline: none;
+	font: bold 14px "Microsoft YaHei";
+	color: #fff;
+}
+.btnbox {
+	text-align: center;
+	margin: 10px 0;
+}
+.tx {
+	color: #369;
+	text-align: center;
+}
+.qb_box {
+	width: 650px;
+}
+.qb_box .main .qb_tab {
+	height: 260px;
+	background: #fff;
+	border-bottom: dotted 1px #ccc;
+}
+.qiubo_tab_info {
+	padding: 10px;
+}
+.qiubo_tab_info dl {
+	width: 33%;
+	display: block;
+	height: 43px;
+	float: left;
+	margin-bottom: 10px;
+}
+.qiubo_tab_info dt {
+	float: left;
+	width: 30px;
+}
+.qiubo_tab_info dt input {
+	margin-top: 10px;
+}
+.qiubo_tab_info dd {
+	float: left;
+}
+.qiubo_tab_info dd.dd_01 {
+	width: 63px;
+}
+.qiubo_tab_info dd.dd_01 img {
+	border: solid 1px #ccc;
+}
+.qiubo_tab_info dd.dd_02 {
+	width: 105px;
+	text-align: center;
+}
+.qiubo_tab_info dd.dd_02 a img {
+	margin-top: 5px;
+}
+.qb_gif {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	border: solid 1px #ccc;
+	left: 148px;
+	top: -15px;
+	text-align: center;
+	display: none;
+	cursor: pointer;
+}
+.miyu{ 
+	padding:10px;
+	
+}
+.miyu_title{
+	line-height:18px;
+	font: bold 14px "Microsoft YaHei" ;
+	height:18px;
+	margin-bottom:20px;
+	
+}
+.miyu_title input,.miyu_title a{ height:18px; float:left;color: #d81d7c}
+.big_btn{ width:120px; height:60px; line-height:60px; border:none; outline:none; background:url(/newpc/images/qb_but.gif); color:#fff; font-weight:bold;}
+.miyu dl dt{ float:right; width:180px;}
+.miyu dl dd{ float:left; margin-bottom:15px; }
+.miyu dl dd span{ margin-left:10px; color:#F00}
+.miyu dl dd.dd_01{ width:120px; line-height:22px; text-align:right; font-weight:bold; color:#666; clear:left;}
+.miyu dl dd.dd_02{ line-height:22px;}
+.blk .main dl.worning dt img{ border:none;}
+.blk .main dl.worning dd.dd01{ width:77px; font-size:14px; font-weight:bold; color:#F00; line-height:24px;}
+.blk .main dl.worning dd.dd02{ line-height:24px; margin-bottom:20px; width:280px;}
+.blk .main dl.worning dd.dd02 a{ color:#06F; font-weight:bold; font-size:14px;}
+.blk .main dl.worning dd.dd03{ padding-left:140px;}
+.blk .main dl.message dt{ color:#F0C; font-size:14px; font-weight:bold; width:200px; float:none; margin-bottom:20px;}
+.blk .main dl.message dd{ margin-bottom:10px; width:200px; color:#F3C}
+.blk .main dl.message dd span{ display:block; float:left; width:60px; margin-right:10px; text-align:right; color:#666}
+#loginbox .main  dl dt{ display:block; background:url(/newpc/images/login_ts.gif) left -10px no-repeat; line-height:40px; width:380px; padding-left:50px; font-size:16px; font-weight:bold; color:#F00; margin-bottom:20px;}
+#loginbox .main  dl dd{ float:none; margin-bottom:10px; line-height:30px; padding-left:50px;}
+#loginbox .main  dl dd span{ margin-right:10px;}
+#loginbox .main  dl dd.dd01{ margin-bottom:0px; padding-left:80px;}
+#loginbox .main  dl dd.dd01 a{margin-left:15px; color:#F60; font-weight:bold; font-size:14px;}
+#loginbox .main  dl dd.dd02{ margin-left:150px; color:#999}
+#loginbox .main  dl dd.dd03{ margin-left:45px;}
+#loginbox .main  dl dd.dd03 input{ margin-right:10px;}
+#loginbox .main  dl{ background:#f6f6f6}
+.contectlist{ padding-top:20px;}
+.contectlist li{ display:block; float:left; width:160px; height:52px; padding-left:60px; line-height:52px; font-size:14px; margin-bottom:10px; font-size:14px; font-weight:bold;}
+.contectlist{ padding-left:30px;}
+.contectlist li.qq{ background:url(/newpc/images/con_01.gif) no-repeat}
+.contectlist li.weixin{ background:url(/newpc/images/con_04.gif) no-repeat}
+.contectlist li.email{ background:url(/newpc/images/con_02.gif) no-repeat}
+.contectlist li.mobile{ background:url(/newpc/images/con_03.gif) no-repeat}
+
+

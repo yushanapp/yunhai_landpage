@@ -1,0 +1,17 @@
+﻿﻿*{margin:0;padding:0;font:normal 100% "微软雅黑",Microsoft YaHei,Arial, Helvetica, sans-serif, "宋体";list-style:none;}
+body{ margin:0 auto; padding: 0 auto;}
+a{ text-decoration:none;}
+a:focus {outline-style:none; -moz-outline-style: none;}
+a{blr:expression(this.onFocus=this.close());}
+a{blr:expression(this.onFocus=this.blur());}
+img{ border:0; vertical-align:middle; width:100%;}
+body{width: 100%;background: #fff;}
+.down_page{ position: relative;}
+.down_page img{ width: 100%;}
+.btn{width:77%;padding-bottom:30%;position:fixed;bottom:-10%;background-size:100%;left:22%;}
+.tips {display:none;position: absolute;top: 0;left: 0;z-index: 99;text-align: center;width: 100%;background: #fff;}
+.bg_filter {display:none;width: 100%;height: 100%;background: rgba(0,0,0,0.6);position:absolute;left:0;top:0;}
+.font{position: absolute;bottom:3%;font-size: 13px;color:#53221d;text-align: center;width: 100%;}
+.font a{font-size: 13px;color:#53221d;}
+
+

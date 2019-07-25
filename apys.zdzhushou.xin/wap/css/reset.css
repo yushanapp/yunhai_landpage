@@ -1,0 +1,67 @@
+body,h1,h2,h3,h4,h5,h6,div,p,ul,ol,dl,dt,dd,li,td,span,a,i,em,strong,input,select,textarea,form,hr{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-text-size-adjust: 100%;
+}
+html{
+	-webkit-appearance: none;
+	overflow-y:scroll;overflow-x:hidden;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent;
+	text-shadow:none;-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;box-sizing:border-box;
+}
+*:not(input,textarea) {
+  -webkit-touch-callout: inherit;
+  -webkit-user-select: auto;
+}
+body {
+  width: 100%;
+  font-family: Hiragino Sans GB, Arial, Helvetica, "微软雅黑", sans-serif;
+  font-size: 12px/1.5;
+  color: #000;
+  -webkit-touch-callout: inherit ;
+  -webkit-user-select: auto ;
+  background-color: #fff;
+  overflow:hidden;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+button,input,select,textarea {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+dt,dd {
+  display: inline-block;
+}
+input,select,textarea{
+    font-size:100%;
+    resize: none;
+    outline: none;
+}
+table{
+	border-collapse: collapse;   /*边框之间没有空隙*/
+	border-spacing: 0;
+}
+ul,ol,li {
+  list-style: none;
+}
+em {
+  font-style: normal;
+}
+img{
+	border:0;max-width: 100%;display: inline-block;vertical-align: middle;-ms-interpolation-mode: bicubic;
+}
+audio,canvas,video {
+    display: inline-block;  /* 现代浏览器 +IE6、7 inline 元素 */
+    *display: inline;        /* IE6、7 block 元素 */
+    *zoom: 1;
+}
