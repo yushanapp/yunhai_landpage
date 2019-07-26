@@ -112,9 +112,18 @@
 
     <script>
         $(function() {
+            function _getQueryString(name) {
+                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+                var r = window.location.search.substr(1).match(reg);
+                if (r != null) {
+                    return r[2]
+                }
+                return null
+            };
+            var c = _getQueryString('c')||'1';
             $('.btn_img').click(function() {
                 
-                window.location.href = 'https://cdn.aixifan.com/downloads/AcFun-baidusem01.apk';
+                window.location.href = 'https://cdn.aixifan.com/downloads/AcFun-baidusem0'+c+'.apk';
                 event.defaultPrevented
             });
 
