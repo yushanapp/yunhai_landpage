@@ -1,0 +1,125 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title></title>
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+        body,
+        p,
+        input,
+        h1,
+        h2,
+        h3,
+        h4,
+        ul,
+        li,
+        dl,
+        dt,
+        dd,
+        form {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            vertical-align: middle;
+        }
+        
+        img {
+            display: block;
+        }
+        
+        body {
+            font-family: '微软雅黑', 'Arial';
+            font-size: 0.9em;
+        }
+        
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            min-width: 320px;
+            max-width: 640px;
+            position: relative;
+            overflow: hidden;
+            background: white;
+        }
+        
+        .home_wrap {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            cursor: pointer;
+            position: relative;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .box {
+            width: 100%;
+            position: relative;
+        }
+        
+        .home_wrap img.bj {
+            width: 100%;
+        }
+        
+        .btn_img {
+            width: 50%;
+            position: absolute;
+            bottom: 12%;
+            left: 0;
+            right: 0;
+            margin: auto;
+            z-index: 999;
+        }
+        
+        .banben {
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            color: black;
+            position: absolute;
+            bottom: 0;
+            -webkit-transform: scale(0.7);
+            z-index: 9999;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="home_wrap">
+        <div class="box">
+
+            <img onclick="return false" class="bj" src="http://test.myushan.com/acfun/bg4.jpg" alt="" />
+            <img class="btn_img" src="http://test.myushan.com/acfun/btn4.png" alt="">
+
+        </div>
+    </div>
+    
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script>
+        $(function() {
+            $('.btn_img').click(function() {
+                
+                window.location.href = 'https://cdn.aixifan.com/downloads/AcFun-baidusem04.apk';
+                event.defaultPrevented
+            });
+
+        })
+    </script>
+</body>
+
+</html>
