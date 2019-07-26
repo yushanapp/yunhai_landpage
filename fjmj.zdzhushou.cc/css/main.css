@@ -95,7 +95,7 @@ button{
 	outline: none;
 }
 header{
-	background: url(../img/img_01-ac593.jpg) no-repeat;
+	background: url(../img/header.jpg) no-repeat;
 	background-size: cover;
 	height: 50px;
 	display: -ms-flexbox;
@@ -135,7 +135,7 @@ header .down_btn{
 	height: 24px;
 	border-radius: 12px;
 	background: #f6e37d;
-	color: #ac16b2;
+	color: #FA324E;
 	border: 0;
 	font-size: 10px;
 }
@@ -169,7 +169,7 @@ li .user_info{
 .info_detail_box .info_detail .name{
 	font-size: 24px;
 	font-weight: 900;
-	color: #ac16b2;
+	color: #FA324E;
 }
 .info_detail_box .info_detail .age,.info_detail_box .info_detail .single{
 	margin-left: 5px;
@@ -215,7 +215,7 @@ li .user_info{
 	border: 0;
 	border-radius: 3px;
 	font-size: 10px;
-	background: #ac16b2;
+	background: #FA324E;
 	padding: 0;
 }
 .photo_address_box .address{
@@ -240,7 +240,7 @@ li .user_info{
 .bottom{
 	width: 100%;
 	height: 60px;
-	background: #ac16b2;
+	background: #FA324E;
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-align: center;
@@ -255,7 +255,7 @@ li .user_info{
 	width: 80%;
 	height: 30px;
 	background: #f5e37c;
-	color: #ac16b2;
+	color: #FA324E;
 	border-radius: 15px;
 	display: block;
 	text-align: center;
