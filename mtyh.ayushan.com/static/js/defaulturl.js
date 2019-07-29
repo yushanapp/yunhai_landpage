@@ -1,4 +1,4 @@
-var android='https://yuehui1.cn/market/3091009.apk';
+var android='https://app.jzhrh.com/mj3590023.apk';
 var ios='https://itunes.apple.com/cn/app/id1154389441';
 var down=''
 var btndown=''
