@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b3b0db6-8c7e-4f02-af0a-2caf076eddd9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/xiaobu.zjzhidao.top/lp1.html" beforeDir="false" afterPath="$PROJECT_DIR$/xiaobu.zjzhidao.top/lp1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zcmsm.zhiniaotec.com/679.html" beforeDir="false" afterPath="$PROJECT_DIR$/zcmsm.zhiniaotec.com/679.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zcmsm.zhiniaotec.com/679/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/zcmsm.zhiniaotec.com/679/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zcmsm.zhiniaotec.com/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/zcmsm.zhiniaotec.com/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -79,7 +76,7 @@
         <entry file="file://$PROJECT_DIR$/xiaobu.zjzhidao.top/lp1.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="551">
-              <caret line="44" column="15" lean-forward="true" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="15" />
+              <caret line="44" column="15" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -140,11 +137,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2112" />
-    <option name="y" value="152" />
-    <option name="width" value="1280" />
-    <option name="height" value="797" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1920" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -196,10 +192,10 @@
     <option name="totallyTimeSpent" value="4293000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="1920" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17336152" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1748401" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" />
@@ -455,7 +451,7 @@
     <entry file="file://$PROJECT_DIR$/xiaobu.zjzhidao.top/lp1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="551">
-          <caret line="44" column="15" lean-forward="true" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="15" />
+          <caret line="44" column="15" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="15" />
         </state>
       </provider>
     </entry>
