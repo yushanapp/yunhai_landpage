@@ -1,94 +1,5 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>航运e家</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="format-detection" content="telephone=yes"/>
-		<meta name="apple-mobile-web-app-status-bar-style" content="black">
-		<link href="https://yh.cdnweb.top/hangyun/ico/favicon.ico" mce_href="https://yh.cdnweb.top/hangyun/ico/favicon.ico"
-		rel="icon" type="image/x-icon">
-		<link rel="stylesheet" type="text/css" href="https://yh.cdnweb.top/hangyun/css/down.css"/>
-		<!-- <style>
-			body{
-				font-family: "PingFangSC";
-				background: #F8F8F9;
-				color: #101D37;
-				font-size: 17px;
-		    			line-height: 21px;
-				-webkit-text-size-adjust: 100% !important;
-				text-size-adjust: 100% !important;
-				-moz-text-size-adjust: 100% !important;
-				padding: 0;
-				margin: 0;
-			}
-			ul,li{
-				margin:0;
-				padding: 0;
-				list-style: none;
-			}
-			.bg_white{
-				background: #fff;
-			}
-			.download_01{
-				position: absolute;
-				width: 100%;
-				z-index: 2;
-			}
-			.download_01 img{
-				width: 100%;
-			}
-			.download_02{
-				position: absolute;
-				width: 100%;
-				top: 50px;
-				bottom: 0;
-				background: url("resource/images/down_03.jpg") bottom no-repeat;
-				background-size: contain;
-				z-index: 1;
-			}
-			#maskPointer{
-				text-align: center;
-				color: #fff;
-			}
-			#maskPointer .arrow{
-			    margin: 30px;
-			    text-align: right;
-			}
-			#maskPointer .arrow img{
-				width: 80%;
-			}
-			#maskPointer .text {
-			    font-size: 20px;
-			    line-height: 36px;
-			}
-			#maskPointer .text span {
-			    color: #fed700;
-			}
-			.channel_logo{
-				position: absolute;
-				width: 100%;
-				bottom: 0;
-				font-size: 12px;
-				background: rgba(255,255,255,0.9);
-				/*padding-left: 140px;*/
-				text-align: center;
-				padding-top: 10px;
-				z-index: 2;
-			}
-			.channel_img{
-				position: absolute;
-				width: 100px;
-				left: 30px;
-				top: 20px;
-			}
-		</style> -->
-		
-		<script type="text/javascript" src='https://yh.cdnweb.top/hangyun/js/downold.js'></script>
-		<!-- <script>
-		// CT.alert("Hello! MUI");		
-		
+// CT.alert("Hello! MUI");		
+
 		var debugTest = ((location.port&&location.port=="8080") || !location.host || location.host&&location.host.indexOf("test") != -1)?true:false;
 		var search = location.search, param, channel;
 		var CT = {
@@ -99,7 +10,7 @@
 			},
 			page_loading: function(){
 				var t = this;
-		
+
 				//渲染loading
 			},
 			queryString:function(str,name){
@@ -238,26 +149,5 @@
 			},
 			android_url : "http://resource.hangyunejia.com/resource/uploads/file/20190411/ZoZGwQlrHasaLa3aZto4.apk"
 		};
-		
+
 		CT.init_page();
-		
-			</script> -->
-	</head>
-
-	<body class="bg_white">
-		<div class="download_02" style="bottom: 40px;"></div>
-		<div class="download_01" onclick="CT.openApp();">			
-			<img src="https://yh.cdnweb.top/hangyun/resource/images/down_01.jpg" alt='点击下载"航运助理"'>
-		</div>
-		<div class="channel_logo" id="channel_logo">
-			北京智投智道投资咨询有限公司<br/>
-			地址：昌平区昌崔路198号院2号楼
-		</div>
-
-		<iframe id="iframe_open_App" style="display:none;"></iframe>
-
-
-	</body>
-	<!-- <script src="resource/js/jquery-min.js"></script> -->
-
-</html>
