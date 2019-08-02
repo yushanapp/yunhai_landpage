@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>宝宝巴士</title>
+  <meta name="viewport" content="width=device-width">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <!-- Demo styles -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?1fbbd07723a26fe464a445ec452a6db3";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body>
+<div class="header">
+  <div class="h_top">
+    <img src="https://yh.cdnweb.top/baobao.zdaozhushou.ren/images0701/bj.jpg" style="width: 100%;height: auto" alt="">
+  </div>
+  <div class="h_lbbox">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" >
+          <img src="https://yh.cdnweb.top/baobao.zdaozhushou.ren/images0701/1.jpg" style=" width: 100%;height: auto;" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://yh.cdnweb.top/baobao.zdaozhushou.ren/images0701/2.jpg" style="width: 100%;height: auto;" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://yh.cdnweb.top/baobao.zdaozhushou.ren/images0701/3.jpg" style="width: 100%;height: auto;" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://yh.cdnweb.top/baobao.zdaozhushou.ren/images0701/4.jpg" style="width: 100%;height: auto;" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://yh.cdnweb.top/baobao.zdaozhushou.ren/images0701/5.jpg" style="width: 100%;height: auto;" alt="">
+        </div>
+      </div>
+      <!--    &lt;!&ndash; Add Pagination &ndash;&gt;
+          <div class="swiper-pagination"></div>-->
+    </div>
+
+    <div class="btns btnCilck">
+
+    </div>
+  </div>
+ <!-- <div class="part-3">
+    <img src="images/bg_3.jpg" class="bj">
+    &lt;!&ndash;<img src="images/fix_1.jpg">
+    <img src="images/fix_2.jpg">&ndash;&gt;
+    <div class="btbox">
+      <img src="images/fix_1.jpg" alt="">
+      <img src="images/fix_2.jpg" alt="">
+    </div>
+
+  </div>-->
+  <div style="position:fixed;margin:0 auto;bottom:12%;left:0;right:0;text-align: center;max-width: 650px;width: 100%;z-index: 999999999999;">
+    <img src="images/btn.png" alt="" border="0" style="width: 65%; height: auto;margin-bottom: -2px;" onClick="javascript:;" >
+    <div class="btnCilck" style="position: absolute;width: 65%;height: 100%;left: 17%;top: -2%;z-index: 99999;">
+    </div>
+  </div>
+
+</div>
+
+
+  <!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+      var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          autoplay: 3000,
+          loop: true, //
+          grabCursor: true,
+          spaceBetween: 50,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+              rotate: 0,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows : true,
+          },
+          pagination: {
+              el: '.swiper-pagination',
+          },
+      });
+
+    var Android="http://app-apk.babybus.com/BceFile/ApkFile/Chants_v3.1.2_2019723_ad_release_sign.apk";//安卓下载链接
+    var Ios="";//ios下载链接
+
+    var btns = document.getElementsByClassName("btnCilck");
+    for(var i=0;i<btns.length;i++){
+        btns[i].onclick=function () {
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href =Android;
+            }else {
+                window.location.href =Android;
+            }
+        }
+    };
+  </script>
+</body>
+</html>
