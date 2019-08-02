@@ -9,12 +9,12 @@ function UserAgent()
 
 //Mobile
 if ((preg_match("/(iphone|ipod|android)/i", strtolower(UserAgent()))) AND strstr(strtolower(UserAgent()), 'webkit')) {
-    header('Location: wap4.html' . $siteAnchor);
+    header('Location: wap.html' . $siteAnchor);
     exit;
 } else if (trim(UserAgent()) == '' OR preg_match("/(nokia|sony|ericsson|mot|htc|samsung|sgh|lg|philips|lenovo|ucweb|opera mobi|windows mobile|blackberry)/i", strtolower(UserAgent()))) {
-    header('Location: wap4.html' . $siteAnchor);
+    header('Location: wap.html' . $siteAnchor);
     exit;
 } else {//PC
-    header('Location: wap4.html' . $siteAnchor);
+    header('Location: wap.html' . $siteAnchor);
 }
 ?>
