@@ -1,0 +1,56 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>鱼丸空间</title>
+	<meta name="viewport" content="width=device-width"> 
+ 	 <link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon">
+     <style>
+		.navImage img{
+			width:720px;
+			height:auto;
+			}
+			.navImage{
+			display:inline-block;
+			width:100%;			
+			}
+			body{
+			margin:0!important;
+			}
+     </style>
+</head>
+<body>
+			<center>
+				<div class="navImage">
+			    <img  src="https://yh.cdnweb.top/ywkj.zhidzhushou.com/images0805/bg2.jpg" alt="navbar" usemap="#imgMap" id="img">
+                <map name="imgMap" class="btnCilck"><area shape="rect" coords="367,1106,670,1136" href="JavaScript:;" style="outline:none;"><area shape="rect" coords="41,1108,344,1138" href="JavaScript:;" style="outline:none;"><area shape="rect" coords="30,1474,333,1504" href="JavaScript:;" style="outline:none;"><area shape="rect" coords="385,1473,688,1503" href="JavaScript:;" style="outline:none;"><area shape="rect" coords="383,1828,686,1858" href="JavaScript:;" style="outline:none;"><area shape="rect" coords="36,1829,339,1859" href="JavaScript:;" style="outline:none;">
+                  <area shape="rect" coords="82,2177,631,2232" href="JavaScript:;" style="outline:none;">
+                </map>
+			    <img src="images/btn.jpg"  alt="" name="download2" border="0" usemap="#download2Map"  id="download"
+	      style="position:fixed;margin:0 auto;bottom:0;left:0;right:0;max-width:720px;" onClick="javascript:;" > 
+         <map name="download2Map"  class="btnCilck">
+           <area shape="rect"coords="574,10,710,58"></map>
+			  </div> 
+			
+ 
+ 
+
+</center>
+<script>	
+
+		var Android="https://m.17yuwan.com/download/baidusemyw_00006.apk";//安卓下载链接
+		var Ios="";//ios下载链接
+
+		var btns = document.getElementsByClassName("btnCilck");
+		for(var i=0;i<btns.length;i++){
+		   btns[i].onclick=function () {
+               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Ios;
+               }else {
+                   window.location.href =Android;
+               }
+           }
+		};
+</script>
+</body>
+</html>
