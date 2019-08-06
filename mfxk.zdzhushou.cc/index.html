@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+   <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        .index_box img{
+            display: block;
+            width: 100%;
+        }
+
+    </style>
+</head>
+
+<body >
+
+<div class="index_box">
+    <img src="images/img_02.jpg" alt="" />
+    <img class="img" src="images/img_03.jpg" alt="" />
+    <img src="images/img_04.jpg" alt="" />
+    <img class="img" src="images/img_05.jpg" alt="" />
+    <img src="images/img_06.jpg" alt="" />
+    <img class="img" src="images/img_07.jpg" alt="" />
+    <img src="images/img_08.jpg" alt="" />
+    <img class="img" src="images/img_09.jpg" alt="" />
+    <img src="images/img_11.jpg" alt="" />
+    <img class="img" src="images/img_12.jpg" alt="" />
+    <img src="images/img_13.jpg" alt="" />
+
+</div>
+<script type="text/javascript" src="http://hd.youyuan.com/html/public/js/tj.js"></script>
+
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script>
+    function rePosition(oi) {
+        var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        var ratio = width / 640;
+        document.getElementsByTagName("html")[0].style.fontSize = 100 * ratio + "px";
+    }
+    rePosition();
+    window.onresize = function() {
+        rePosition();
+    }
+    function Getparameter(key) {
+        var QueryString = {
+            data: {},
+            Initial: function() {
+                var aPairs, aTmp, a;
+                var queryString = location.search;
+                queryString = queryString.substr(1, queryString.length);
+                aPairs = queryString.split("&");
+                for(var i = 0; i < aPairs.length; i++) {
+                    aTmp = aPairs[i].split("=");
+                    this.data[aTmp[0]] = aTmp[1];
+                }
+            },
+            GetValue: function(key) {
+                return QueryString.data[key];
+            }
+        };
+        QueryString.Initial();
+        return QueryString.data
+    }
+
+    let getparameter = new Getparameter();
+    let fromId = getparameter.channel || 950903;
+    var downurl = 'http://ptd.rfydong.com/apk/download/'+fromId+'/frydong_'+fromId+'.apk';
+    //http://ptd.rfydong.com/apk/download/950903/frydong_950903.apk
+    console.log(fromId, downurl);
+
+    $(".img").click(function () {
+        window.location.href=downurl;
+    })
+
+</script>
+</body>
+
+</html>
