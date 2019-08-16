@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>宝宝巴士儿歌</title>
+  <meta name="viewport" content="width=device-width">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://yh.cdnweb.top/bseg.zhidzhushou.mobi/css/swiper.min.css">
+  <link rel="stylesheet" href="https://yh.cdnweb.top/bseg.zhidzhushou.mobi/css/index.css">
+  <!-- Demo styles -->
+
+</head>
+<body>
+<div class="header">
+  <div class="h_top">
+    <img src="https://yh.cdnweb.top/bseg.zhidzhushou.mobi/images/bj.png" style="width: 100%;height: auto" alt="">
+  </div>
+  <div class="h_lbbox">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+       <!-- <div class="swiper-slide" >
+          <img src="images/1.jpg" class="btnCilck" style=" width: 100%;height: auto;" alt="">
+        </div>-->
+        <div class="swiper-slide">
+          <img src="https://yh.cdnweb.top/bseg.zhidzhushou.mobi/images/2.jpg" class="btnCilck" style="width: 100%;height: auto;" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://yh.cdnweb.top/bseg.zhidzhushou.mobi/images/3.jpg" class="btnCilck" style="width: 100%;height: auto;" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://yh.cdnweb.top/bseg.zhidzhushou.mobi/images/4.jpg" class="btnCilck" style="width: 100%;height: auto;" alt="">
+        </div>
+      </div>
+      <!--    &lt;!&ndash; Add Pagination &ndash;&gt;
+          <div class="swiper-pagination"></div>-->
+    </div>
+
+    <div class="btns btnCilck">
+
+    </div>
+  </div>
+ <!-- <div class="part-3">
+    <img src="images/bg_3.jpg" class="bj">
+    &lt;!&ndash;<img src="images/fix_1.jpg">
+    <img src="images/fix_2.jpg">&ndash;&gt;
+    <div class="btbox">
+      <img src="images/fix_1.jpg" alt="">
+      <img src="images/fix_2.jpg" alt="">
+    </div>
+
+  </div>-->
+  <div class="btnCilck" style="position:fixed;margin:0 auto;bottom:8%;left:0;right:0;text-align: center;max-width: 650px;width: 100%;z-index: 999999999999;">
+    <img src="https://yh.cdnweb.top/bseg.zhidzhushou.mobi/images/btn.png" alt="" border="0" style="width: 65%; height: auto;margin-bottom: -2px;" onClick="javascript:;" >
+    <div class="btnCilck" style="position: absolute;width: 32%;height: 50%;left: 61%;top: 23%;z-index: 99999;">
+    </div>
+  </div>
+
+</div>
+
+
+  <!-- Swiper JS -->
+  <script src="https://yh.cdnweb.top/bseg.zhidzhushou.mobi/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+      var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          autoplay: 3000,
+          loop: true, //
+          grabCursor: true,
+          spaceBetween: 50,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+              rotate: 0,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows : true,
+          },
+          pagination: {
+              el: '.swiper-pagination',
+          },
+
+
+      });
+
+    var Android="";//安卓下载链接
+    var Ios="https://app.aflink.com/id1270598726?af_siteid={{USER_ID}}&af_adset={{UNIT_ID}}&af_ad={{IDEA_ID}}&af_prt=yunhaiyangfan&pid=baidusearch_int&c=sg-ios1&af_click_lookback=7d&idfa={{IDFA}}&md5_android_id={{ANDROID_ID}}&os={{OS}}&af_ip={{IP}}&af_ua={{UA}}&ts={{TS}}&clickid={{CLICK_ID}}&callback_url={{CALLBACK_URL}}&sign={{SIGN}}&callType=v3&md5_imei={{IMEI_MD5}}&md5_android_id={{ANDROID_ID}}&af_lang=%e4%b8%ad%e6%96%87";//ios下载链接
+
+    var btns = document.getElementsByClassName("btnCilck");
+    for(var i=0;i<btns.length;i++){
+        btns[i].onclick=function () {
+            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                window.location.href =Ios;
+            }else {
+                window.location.href =Android;
+            }
+        }
+    };
+  </script>
+</body>
+</html>
+
