@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>宝宝巴士</title>
+	<meta name="viewport" content="width=device-width"> 
+ 	 <!-- <link href="images/favicon.ico" mce_href="images/favicon.ico" rel="icon" type="image/x-icon"> -->
+     <style>
+		.navImage img{
+			width:720px;
+			height:auto;
+			}
+			.navImage{
+			display:inline-block;
+			width:100%;			
+			}
+			body{
+			margin:0!important;
+			}
+     </style>
+	 <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?933be8c977461d00cc6bf830a9e57bc3";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body>
+			<center>
+				<div class="navImage">
+			    <img  src="https://yh.cdnweb.top/bsgs.zhidzhushou.com/images/bg.jpg" alt="navbar" usemap="#imgMap" id="img">
+                <map name="imgMap" class="btnCilck">
+                  <area shape="rect" coords="175,1130,557,1238"href="JavaScript:;" style="outline:none;" id="t1">
+                </map>
+			 <!-- <img src=""  alt="" name="download2" border="0" usemap="#download2Map"  id="download"
+			 	      style="position:fixed;margin:0 auto;bottom:0;left:0;right:0;max-width:720px;" onClick="javascript:;" > --> 
+         <!-- <map name="download2Map"  class="btnCilck">
+           <area shape="rect"coords="503,8,700,81" id="t2" >
+         </map> -->
+
+			  </div> 
+		
+ </center>
+<script>	
+
+		var Android="http://app-apk.babybus.com/BceFile/ApkFile/Story_v1.4.0_2019809_ad_Release_final.apk";//安卓下载链接
+		var Ios="";//ios下载链接
+
+		var btns = document.getElementsByClassName("btnCilck");
+		for(var i=0;i<btns.length;i++){
+		   btns[i].onclick=function () {
+               if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+                   window.location.href =Ios;
+               }else {
+                   window.location.href =Android;
+               }
+           }
+		};
+</script>
+</body>
+</html>
