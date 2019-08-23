@@ -2,10 +2,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<title></title>
-	<link href="//ldyfile.oss-cn-beijing.aliyuncs.com/css/c/css.css" rel="stylesheet" type="text/css">
-	<script src="//ldyfile.oss-cn-beijing.aliyuncs.com/js/c/jquery.js" type="text/javascript" charset="utf-8"></script>
-	<script language="javascript" src="//ldyfile.oss-cn-beijing.aliyuncs.com/js/c/c.js"></script>
-	<script language="javascript" src="//ldyfile.oss-cn-beijing.aliyuncs.com/js/c/aes.js"></script>
+	<link href="css/css.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script language="javascript" src="js/c.js"></script>
 	<script type="text/javascript">
         var browser = {
             versions: function() {
@@ -29,14 +28,12 @@
         };
 	</script>
 </head>
-<body><div> <figure><figcaption><div class="boxPic"><img src="//ldyfile.oss-cn-beijing.aliyuncs.com/image/c/ym.png"></div><div class="boxPic1"><img src="//ldyfile.oss-cn-beijing.aliyuncs.com/image/c/ym1.png"></div><div class="boxPic2"><img src="//ldyfile.oss-cn-beijing.aliyuncs.com/image/c/ym2.png"></div></figcaption></figure><div><img src="//ldyfile.oss-cn-beijing.aliyuncs.com/image/c/xdled13com5.jpg" style="width:100%"><div class="bottom_fd"><div class="bottom_btn"><a class="g" href="javascript:;" onclick="javascrpt:void(0);"><img style="width: 100%;height: 100%;" src="//ldyfile.oss-cn-beijing.aliyuncs.com/image/c/xdled13com11.png"></a></div></div></div><div id="random" style="display:none;">务体系，这是我们要争取的一个目标，我估计-1</div></div>
-
+<body><div> <figure><figcaption><div class="boxPic"><img src="//ldyfile.oss-cn-beijing.aliyuncs.com/image/c/ym.png"></div><div class="boxPic1"><img src="//ldyfile.oss-cn-beijing.aliyuncs.com/image/c/ym1.png"></div><div class="boxPic2"><img src="//ldyfile.oss-cn-beijing.aliyuncs.com/image/c/ym2.png"></div></figcaption></figure><div><img src="//ldyfile.oss-cn-beijing.aliyuncs.com/image/c/xdled13com2.jpg" style="width:100%"><div class="bottom_fd"><div class="bottom_btn"><a class="g" href="javascript:;" onclick="javascrpt:void(0);"><img style="width: 100%;height: 100%;" src="//ldyfile.oss-cn-beijing.aliyuncs.com/image/c/xdled13com11.png"></a></div></div></div><div id="random" style="display:none;">瓒婃潵瓒婂鐨勪汉涓嶅悵琛ㄨ揪瀵逛腑鍥界殑璧炲徆涔嬫儏銆備笉-1</div></div>
 <script type="text/javascript">
-    var regionMark = "1";
     var app = request("app");
     var linkUrl = window.location.href;
-
     $(document).ready(function(){
+        
         $(".boxPic").click(function() {
             $(".boxPic").css({
                 display : "none"
@@ -60,7 +57,6 @@
         });
     });
 
-
     function downLoad(){
         if (browser.versions.ios || browser.versions.iPhone || browser.versions.iPad) {
             if (browser.versions.wechat) {
@@ -70,11 +66,10 @@
                 shouwDiv2();
                 return false;
             } else {
-                    if(app !=null && app  !=""){
-                        getiprecord("http://xdled13.com:8080/c",app);
-                        window.location.href = "https://itunes.apple.com/app/id1471594433";
-                    }
-                    
+                if(app !=null && app !=""){
+				    getiprecord("http://xdled13.com:8080/c",app);
+                    window.location.href = "http://itunes.apple.com/app/id1468410877";
+                }						
             }
         } else {
             if (browser.versions.wechat) {
@@ -84,9 +79,9 @@
                 shouwDiv();
                 return false;
             } else {
-                 if(app !=null && app  !=""){
-					 window.location.href =  "https://yuehui1.cn/market/"+app+".apk";
-                 }
+                    if(app !=null && app  !=""){
+		    window.location.href =  "https://djchaye.com/market/"+app+".apk";
+                    }
             }
         }
 	}
