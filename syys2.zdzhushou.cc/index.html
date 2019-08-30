@@ -1,0 +1,95 @@
+<html><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title></title>
+	<link href="css/css.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script language="javascript" src="js/c.js"></script>
+	<script language="javascript" src="js/aes.js"></script>
+	<script type="text/javascript">
+        var browser = {
+            versions: function() {
+                var u = navigator.userAgent, app = navigator.appVersion;
+                return {
+                    trident: u.indexOf('Trident') > -1,
+                    presto: u.indexOf('Presto') > -1,
+                    webKit: u.indexOf('AppleWebKit') > -1,
+                    gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1,
+                    mobile: !!u.match(/AppleWebKit.*Mobile.*/) || !!u.match(/AppleWebKit/),
+                    ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+                    android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1,
+                    iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1,
+                    iPad: u.indexOf('iPad') > -1,
+                    webApp: u.indexOf('Safari') == -1,
+                    wechat: u.indexOf('MicroMessenger') > -1,
+                    qq: u.indexOf('Mobile MQQBrowser')>-1 || u.indexOf('QQ/')>-1
+                };
+            }(),
+            language: (navigator.browserLanguage || navigator.language).toLowerCase()
+        };
+	</script>
+</head>
+<body><div> <figure><figcaption><div class="boxPic"><img src="img/ym.png"></div><div class="boxPic1"><img src="img/ym1.png"></div><div class="boxPic2"><img src="img/ym2.png"></div></figcaption></figure><div class="centre_img"><img src="img/1.jpg" style="width: 100%;height: 100%"><div class="centre_btn"><div><a class="g" href="javascript:;" onclick="javascrpt:void(0);"><img src="img/2.png"></a></div></div></div><div id="random" style="display:none;">的发展成就鼓舞人心。当习近平主席讲到“全-1</div></div>
+
+    
+        
+    
+
+<script type="text/javascript">
+    var app = request("app");
+    var linkUrl = window.location.href;
+    $(document).ready(function(){
+        $(".boxPic").click(function() {
+            $(".boxPic").css({
+                display : "none"
+            });
+        });
+        $(".boxPic1").click(function() {
+            $(".boxPic1").css({
+                display : "none"
+            });
+        });
+        $(".boxPic2").click(function() {
+            $(".boxPic2").css({
+                display : "none"
+            });
+        });
+        $("#img").bind("click",function (event) {
+                downLoad();
+        })
+        $('.g').bind("click",function(event){
+            downLoad();
+        });
+    });
+    function downLoad(){
+        if (browser.versions.ios || browser.versions.iPhone || browser.versions.iPad) {
+            if (browser.versions.wechat) {
+                shouwDiv2();
+                return false;
+            } else if (browser.versions.qq){
+                shouwDiv2();
+                return false;
+            } else {
+                    if(app !=null && app  !=""){
+                        getiprecord("http://nanningshoubiaohuishou.com:8080/d",app);
+						window.location.href = "http://itunes.apple.com/app/id1468410877";
+                    }
+            }
+        } else {
+            if (browser.versions.wechat) {
+                shouwDiv();
+                return false;
+            } else if (browser.versions.qq){
+                shouwDiv();
+                return false;
+            } else {
+                    if(app !=null && app  !=""){
+					     window.location.href = "https://nztravel.cn/market/"+app+".apk";
+                    }
+            }
+        }
+	}
+</script>
+
+
+</body></html>
