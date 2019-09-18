@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>同城求偶</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <style>
+    *{margin: 0;padding: 0}
+  </style>
+</head>
+<body>
+<!-- 统计代码 -->
+<div style="display: none">
+    
+</div>
+
+
+<div class="image-view" style="padding: 10px;">
+    <img src="http://m.wan99.net/ssdlq/images/jm3-2.jpg" width="100%"/>
+</div>
+
+
+<div class="back-ground click_a" id="download_click">
+    <img src="http://m.wan99.net/ssdlq/images/002.png"" alt="" class="click_a" style="width: 100%;    position: fixed;
+    bottom: 0;
+    left: 0;">
+<!--<div style="    position: fixed;
+    left: 50%;
+    bottom: 1rem;
+    width: 12rem;
+    background: #fa6880;
+    height: 3rem;
+    font-size: 1.2rem;
+    color: white;
+    border: 0;
+    border-radius: .5rem;
+    text-align: center;
+    line-height: 3rem;
+    margin-left: -6rem;">
+  		立即免费下载
+	</div>-->
+</div>
+
+<script type="text/javascript" src="https://jiaoyou-520.oss-cn-hangzhou.aliyuncs.com/js/jquery-1.8.0.min.js"></script>
+<script language='javascript'>
+      var u = navigator.userAgent;
+      var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+    $(function(){
+        var url = "https://zhoumojianmian.com/market/992141105.apk";
+        //var iosurl = "https://itunes.apple.com/cn/app/id1442182057";	
+      	 $(".click_a").click(function(){
+           		if(isiOS){
+                   location.href = iosurl;
+                }else {
+                	location.href = url;
+                }
+                
+        });
+        <!--setTimeout('$(".click_a").click()', 3000 );-->
+    });
+
+</script>
+
+<!--2016-12-03 new-->
+</body>
+</html>
