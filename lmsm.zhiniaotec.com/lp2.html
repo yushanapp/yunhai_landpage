@@ -1,0 +1,180 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="//s1.pstatp.com/cdn/expire-1-M/Swiper/3.3.1/css/swiper.min.css" rel="stylesheet">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body,
+        html {
+            width: 100%;
+            position: relative;
+            margin: 0 auto;
+        }
+        
+        .box {
+            width: 100%;
+        }
+        
+        .header {
+            width: 100%;
+            position: relative;
+        }
+        
+        .page {
+            width: 100%;
+            display: block;
+        }
+        
+        .down1 {
+            position: absolute;
+            bottom: 2%;
+            width: 66%;
+            /* height: 19%; */
+            /* border: 1px solid red; */
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+        
+        .swiper-container {
+            width: 100%;
+            position: relative;
+        }
+        
+        .swiper-slide {
+            width: 100%;
+
+            margin-left: 5px;
+        }
+        
+        .jieshao {
+            /* width: 100%; */
+            position: relative;
+            width: 96%;
+            left: 0;
+            right: 0;
+            margin: 5% auto;
+            /* margin-bottom: 90px; */
+        }
+        
+        .jieshao p {
+            font-size: 14px;
+            line-height: 24px;
+        }
+        
+        .bottom {
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            z-index: 2010;
+        }
+        
+        .btndown {
+            width: 33%;
+            position: fixed;
+            right: 1%;
+            bottom: 1%;
+            z-index: 2011;
+        }
+        
+        .banben {
+            width: 100%;
+            position: relative;
+            bottom: 70px;
+            font-size: 12px;
+            text-align: center;
+            -webkit-transform: scale(0.6);
+            z-index: 200;
+            color: black;
+        }
+        
+        .logo {
+            width: 20%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="header">
+            <img src="http://test.myushan.com//logo/black_zhiniao.png" alt="" class="logo">
+            <img src="http://test.myushan.com/0.22430839463657137.jpg" alt="" class="page">
+            <!-- <div class="down1"></div> -->
+            <img src="http://test.myushan.com/0.026080904730511056.png" alt="" class="down1">
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="http://test.myushan.com/0.4420498191363853.jpg" alt="" class="page">
+                </div>
+                <div class="swiper-slide">
+                    <img src="http://test.myushan.com/0.5614294920346343.jpg" alt="" class="page">
+                </div>
+                <div class="swiper-slide">
+                    <img src="http://test.myushan.com/0.62215545350585.jpg" alt="" class="page">
+                </div>
+                
+                <div class="swiper-slide">
+                    <img src="http://test.myushan.com/0.8824020075486672.jpg" alt="" class="page">
+                </div>
+
+            </div>
+        </div>
+        <div class="jieshao">
+            
+            <img src="http://test.myushan.com/0.5831506726234701.jpg" style="width:100%;" onclick="return false" alt="">
+
+
+
+
+        </div>
+        <img src="http://test.myushan.com/0.2657147443601122.png" alt="" class="bottom">
+        <img src="http://test.myushan.com/0.9944740812999953.png" alt="" class="btndown">
+        <div class="banben"><span style="font-size:14px">北京智鸟科技有限公司版权所有</span><br>
+            <span style="transform:scale(0.5)">地址：海淀区交大东路66号院2号楼</span><br>
+            <span style="transform:scale(0.5)">联系电话：13907550120</span></div>
+    </div>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//s0.pstatp.com/cdn/expire-1-M/Swiper/3.3.1/js/swiper.jquery.js"></script>
+    <script src="//test.myushan.com/javascripts/yushan_rs_min.js"></script>
+    <script src="./dl.min.js"></script>
+    <script>
+        $(function() {
+            var swiper = new Swiper('.swiper-container', {
+                direction: 'horizontal',
+                loop: true,
+                observer: true,
+                observeParents: true,
+                slidesPerView: 2,
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                autoplay: 100,
+                speed: 10000
+            })
+            $('.down1,.btndown').click(function() {
+                window.location.href = btndown;
+                event.defaultPrevented
+            });
+            new _yushan.dl_info({
+                url: '',
+                dlbutton: ['.down1', '.btndown']
+            });
+        })
+    </script>
+</body>
+
+</html>
