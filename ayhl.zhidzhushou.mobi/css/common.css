@@ -1,0 +1,29 @@
+/*手机弹跳效果*/
+.move-touch{-webkit-overflow-scrolling : touch;}
+
+/*图片 水平居中 垂直居中*/
+.auto-center ul li{text-align: center;}
+.auto-center ul li .pict{display: table;width: 100%;}
+.auto-center ul li .pict i{vertical-align: middle;display: table-cell;}
+
+/*css3模糊效果*/
+.vague{-webkit-filter: blur(2px); transition:0.3s;-webkit-transition:0.3s;}
+
+/*旋转对象*/
+.rogate{transition:.3s;-webkit-transition:.3s;}
+.rogate:hover{transform:rotate(90deg);}
+
+/*排序-上下三角形*/
+.arrow{position: relative;line-height:1;margin-left: .1rem;}
+.arrow:before{content:""; position:absolute; top:-.02rem; left:0; width:0px;height:0px;border-bottom: .08rem solid;border-right: .08rem solid transparent;border-top:.08rem solid transparent;border-left: .08rem solid transparent;}
+.arrow:after{content:""; position:absolute; top:.18rem; left:0; width:0px;height:0px;border-top: .08rem solid;border-right: .08rem solid transparent;border-bottom:.08rem solid transparent;border-left:.08rem solid transparent;}
+.arrow.one:before{display: none;}
+.arrow.one:after{top:.14rem;}
+
+/*0.5像素边框*/
+.border-top:before{background: #dadada;content:"";position: absolute;height: 1px;transform-origin: 0 0;transform: scale(0.5,0.5);-webkit-transform: scale(0.5,0.5);-moz-transform: scale(0.5,0.5);width:200%;top:0;left:0;}
+.border-bottom:after{background: #dadada;content:"";position: absolute;height: 1px;transform-origin: 0 0;transform: scale(0.5,0.5);-webkit-transform: scale(0.5,0.5);-moz-transform: scale(0.5,0.5);width:200%;bottom:-1px;left:0;}
+
+/*滑动菜单*/
+.flex-slide{display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;display: flex;overflow-y:auto;}
+.flex-slide>*{flex-shrink:0;}
