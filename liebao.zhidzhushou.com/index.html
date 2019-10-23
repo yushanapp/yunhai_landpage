@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body,
+        html {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            min-width: 320px;
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 15%;
+            z-index: 9999;
+        }
+
+        .box {
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .box1 {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+
+        .car_img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        /* 缩放动画*/
+
+        @-webkit-keyframes slipUp {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .fontsize {
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            position: absolute;
+            bottom: 0;
+            color: black;
+            -webkit-transform: scale(0.6);
+            z-index: 1;
+        }
+
+        .bottom {
+            width: 100%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+        }
+
+        .btn {
+            position: absolute;
+            width: 86%;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            z-index: 2001;
+            bottom: 15.2%;
+
+
+
+
+        }
+
+        .btn1 {
+            position: absolute;
+            width: 90%;
+            height: 11%;
+
+            z-index: 2001;
+            bottom: .8%;
+            left: 5%;
+        }
+
+        .btn_down1 {
+            width: 100%;
+            position: absolute;
+            bottom: 0%;
+            right: 0%;
+
+            z-index: 2000;
+            font-size: 0;
+            /* top: 26%; */
+        }
+
+        .alert_show {
+            position: absolute;
+            width: 96%;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            z-index: 200;
+            height: 81%;
+            /* background: red; */
+            bottom: 17%;
+        }
+
+        .img {
+            width: 100%;
+        }
+
+        .mask {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .5);
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 2100;
+            display: none;
+            overflow: auto;
+        }
+
+        .alert {
+            margin: 15vh auto 0 auto;
+            width: 70%;
+            position: relative;
+        }
+
+        .close {
+            position: absolute;
+            right: 12px;
+            top: 12px;
+            font-size: 40px;
+            transform: rotate(45deg)
+        }
+
+        .alert_btn {
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 70%;
+            bottom: 11%;
+        }
+
+        .center {
+            top: 50%;
+            left: 50%;
+            transform: translate(24%, -50%);
+        }
+
+        .search {
+            position: absolute;
+            width: 80%;
+            left: 10%;
+            top: 55%;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .info {
+            position: absolute;
+            left: 15%;
+            z-index: 2001;
+            top: 0%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box1">
+
+            <img class="car_img down" src="./图片/bakup.jpg" onclick="return false"
+                alt="" />
+
+        </div>
+        <img class="btn" src="http://test.myushan.com/0.4242794420263871.jpg" alt="">
+
+
+    </div>
+
+
+    </div>
+
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+
+
+    <script>
+        function _getQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) {
+                return r[2]
+            }
+            return null
+        };
+        let apks = ["http://dl.cm.ksmobile.com/static/res/fixed/8f/2010007173.apk",
+            "http://dl.cm.ksmobile.com/static/res/fixed/11/2010007174.apk",
+            "http://dl.cm.ksmobile.com/static/res/fixed/fa/2010007175.apk",
+            "http://dl.cm.ksmobile.com/static/res/fixed/6b/2010007176.apk",
+            "http://dl.cm.ksmobile.com/static/res/fixed/f1/2010007177.apk",
+            "http://dl.cm.ksmobile.com/static/res/fixed/6c/2010007180.apk",
+            "http://dl.cm.ksmobile.com/static/res/fixed/97/2010007181.apk",
+            "http://dl.cm.ksmobile.com/static/res/fixed/e5/2010007182.apk",
+            "http://dl.cm.ksmobile.com/static/res/fixed/44/2010007183.apk",
+            "http://dl.cm.ksmobile.com/static/res/fixed/a9/2010007184.apk",
+        ]
+        let dl = apks[_getQueryString('c4')||0]
+        $('.btn,.btn1,.search').click(function () {
+            window.location.href = dl;
+            event.defaultPrevented
+        });
+
+    </script>
+
+</body>
+
+</html>
