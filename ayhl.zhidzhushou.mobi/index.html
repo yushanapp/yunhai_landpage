@@ -41,7 +41,7 @@
        			</div>
        		</div>
        		<div class="product-download">
-       			<a href="https://tmpfile.yueyuan1314.com/android/app-baidutuiguang-release1.2.2-6.apk">免费下载</a>
+       			<a href="javascript:void(0)" onclick="dl()">免费下载</a>
        		</div>
        		<div class="product-list">
        			<ul>
@@ -158,4 +158,19 @@
 <script src="js/jquery-2.2.4.min.js"></script><!--jQ库-->
 <script src="js/Swiper.js"></script><!--轮播库-->
 <script src="js/version-3.2.8.js"></script><!--封装函数-->
+<script>
+	function getQueryString(name)
+	{
+		 var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+		 var r = window.location.search.substr(1).match(reg);//search,查询？后面的参数，并匹配正则
+		 if(r!=null)return  unescape(r[2]); return null;
+	}
+	function dl(){
+		var ch = "qi4LXz";
+		ch = getQueryString("ch") || "qi4LXz";
+		url = "https://at.umtrack.com/"+ch+"?cid=5484&keywordid={keywordid}&creative={creative}";
+		alert(url);
+		window.location = url;
+	}
+</script>
 </html>
