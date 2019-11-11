@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <link rel="stylesheet" type="text/css" media="screen" href="./swiper.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body,
+        html {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            margin: 0 auto;
+        }
+        
+        .box {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .box1 {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        
+        .pg {
+            width: 100%;
+            position: absolute;
+            height: 100%;
+            display: block;
+            top: 0;
+            left: 0;
+            background-size: cover;
+        }
+        
+        .pg img {
+            width: 100%;
+            position: absolute;
+        }
+        
+        .logo {
+            width: 53%;
+            position: absolute;
+            left: 3%;
+            top: 2%;
+            z-index: 200;
+        }
+        
+        .banben {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            font-size: 12px;
+            text-align: center;
+            -webkit-transform: scale(0.6);
+            color: white;
+        }
+        
+        .btn_down1 {
+            width: 67%;
+            position: absolute;
+            bottom: 6%;
+            /* margin: 0 auto; */
+            z-index: 99999;
+            left: 0%;
+            right: 0%;
+            margin: 0 auto;
+        }
+        
+        .pg1 {
+            background-image: url(http://test.myushan.com/0.7162087203513239.jpg);
+            -webkit-animation: depthField1 15s infinite linear;
+            animation: depthField1 15s infinite linear;
+            -webkit-animation-fill-mode: forwards;
+        }
+        
+        @keyframes depthField1 {
+            0% {
+                opacity: 0;
+                -webkit-transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+                transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+            }
+            3% {
+                opacity: 1;
+                -webkit-transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+                transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+            }
+            20% {
+                opacity: 1;
+                -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+                transform: matrix(1, 0, 0, 1, 0, 0);
+            }
+            60% {
+                opacity: 0;
+                -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+                transform: matrix(1, 0, 0, 1, 0, 0);
+            }
+            61% {
+                opacity: 0;
+                -webkit-transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+                transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+            }
+            100% {
+                opacity: 0;
+                -webkit-transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+                transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+            }
+        }
+        
+        .pg2 {
+            background-image: url(http://test.myushan.com/0.44165293015757534.jpg);
+            -webkit-animation: depthField2 15s infinite linear;
+            animation: depthField2 15s infinite linear;
+        }
+        
+        @keyframes depthField2 {
+            0% {
+                opacity: 0;
+                -webkit-transform: matrix(1.03, 0, 0, 1.03, 0, 0);
+                transform: matrix(1.03, 0, 0, 1.03, 0, 0);
+            }
+            5% {
+                opacity: 0;
+                -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+                transform: matrix(1, 0, 0, 1, 0, 0);
+            }
+            20% {
+                opacity: 0;
+                -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+                transform: matrix(1, 0, 0, 1, 0, 0);
+            }
+            25% {
+                opacity: 1;
+                -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+                transform: matrix(1, 0, 0, 1, 0, 0);
+            }
+            32% {
+                opacity: 1;
+                -webkit-transform: matrix(1.08, 0, 0, 1.08, 0, 0);
+                transform: matrix(1.08, 0, 0, 1.08, 0, 0);
+            }
+            40% {
+                opacity: 1;
+                -webkit-transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+                transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+            }
+            67% {
+                opacity: 0;
+                -webkit-transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+                transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+            }
+            100% {
+                opacity: 0;
+                -webkit-transform: matrix(1.03, 0, 0, 1.03, 0, 0);
+                transform: matrix(1.03, 0, 0, 1.03, 0, 0);
+            }
+        }
+        
+        .pg3 {
+            background-image: url(http://test.myushan.com/0.4530136848864079.jpg);
+            -webkit-animation: depthField3 15s infinite linear;
+            animation: depthField3 15s infinite linear;
+        }
+        
+        @keyframes depthField3 {
+            0% {
+                opacity: 0;
+                -webkit-transform: matrix(1.03, 0, 0, 1.03, 0, 0);
+                transform: matrix(1.03, 0, 0, 1.03, 0, 0);
+            }
+            25% {
+                opacity: 0;
+                -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+                transform: matrix(1, 0, 0, 1, 0, 0);
+            }
+            40% {
+                opacity: 0;
+                -webkit-transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+                transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+            }
+            43% {
+                opacity: 1;
+                -webkit-transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+                transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+            }
+            55% {
+                opacity: 1;
+                -webkit-transform: matrix(1.03, 0, 0, 1.03, 0, 0);
+                transform: matrix(1.03, 0, 0, 1.03, 0, 0);
+            }
+            60% {
+                opacity: 1;
+                -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+                transform: matrix(1, 0, 0, 1, 0, 0);
+            }
+            80% {
+                opacity: 0;
+                -webkit-transform: matrix(1.03, 0, 0, 1.03, 0, 0);
+                transform: matrix(1.03, 0, 0, 1.03, 0, 0);
+            }
+            100% {
+                opacity: 0;
+                -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+                transform: matrix(1, 0, 0, 1, 0, 0);
+            }
+        }
+        
+        .pg4 {
+            background-image: url(http://test.myushan.com/0.08922323856050984.jpg);
+            -webkit-animation: depthField4 15s infinite linear;
+            animation: depthField4 15s infinite linear;
+        }
+        
+        @keyframes depthField4 {
+            0% {
+                opacity: 0;
+                -webkit-transform: matrix(1.03, 0, 0, 1.03, 0, 0);
+                transform: matrix(1.03, 0, 0, 1.03, 0, 0);
+            }
+            25% {
+                opacity: 0;
+                -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+                transform: matrix(1, 0, 0, 1, 0, 0);
+            }
+            40% {
+                opacity: 0;
+                -webkit-transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+                transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+            }
+            43% {
+                opacity: 0;
+                -webkit-transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+                transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+            }
+            55% {
+                opacity: 0;
+                -webkit-transform: matrix(1.03, 0, 0, 1.03, 0, 0);
+                transform: matrix(1.03, 0, 0, 1.03, 0, 0);
+            }
+            60% {
+                opacity: 0;
+                -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+                transform: matrix(1, 0, 0, 1, 0, 0);
+            }
+            61% {
+                opacity: 1;
+                -webkit-transform: matrix(1.02, 0, 0, 1.02, 0, 0);
+                transform: matrix(1.02, 0, 0, 1.02, 0, 0);
+            }
+            68% {
+                opacity: 1;
+                -webkit-transform: matrix(1.1, 0, 0, 1.1, 0, 0);
+                transform: matrix(1.1, 0, 0, 1.1, 0, 0);
+            }
+            89% {
+                opacity: 1;
+                -webkit-transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+                transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+            }
+            100% {
+                opacity: 0;
+                -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+                transform: matrix(1, 0, 0, 1, 0, 0);
+            }
+        }
+        
+        .pg5 {
+            background-image: url(http://test.myushan.com/0.6510314128697403.jpg);
+            -webkit-animation: depthField5 15s infinite linear;
+            animation: depthField5 15s infinite linear;
+        }
+        
+        @keyframes depthField5 {
+            0% {
+                opacity: 0;
+                -webkit-transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+                transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+            }
+            3% {
+                opacity: 0;
+                -webkit-transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+                transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+            }
+            20% {
+                opacity: 0;
+                -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+                transform: matrix(1, 0, 0, 1, 0, 0);
+            }
+            60% {
+                opacity: 0;
+                -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+                transform: matrix(1, 0, 0, 1, 0, 0);
+            }
+            90% {
+                opacity: 1;
+                -webkit-transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+                transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+            }
+            94% {
+                opacity: 1;
+                -webkit-transform: matrix(1.02, 0, 0, 1.02, 0, 0);
+                transform: matrix(1.02, 0, 0, 1.02, 0, 0);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+                transform: matrix(1, 0, 0, 1, 0, 0);
+            }
+        }
+        
+        .model {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: rgba(0, 0, 0, .4);
+            z-index: 199;
+            top: 0;
+            left: 0;
+        }
+        
+        .bj {
+            width: 92%;
+            position: absolute;
+            display: block;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            top: 9%;
+        }
+        
+        .head {
+            width: 100%;
+            display: block;
+        }
+        
+        .logo1 {
+            width: 44px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 9999;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box1">
+        
+            <div class="pg pg1"></div>
+            <div class="pg pg2"></div>
+            <div class="pg pg3"></div>
+            <div class="pg pg4"></div>
+            <div class="pg pg5"></div>
+            <div class="model">
+                <img src="http://test.myushan.com/0.6624760108379346.png" alt="" class="bj">
+            </div>
+            <img src="http://test.myushan.com/0.3300224874792168.png" alt="" class="logo">
+            <img class="logo" style="position: absolute;width: 12%;left:0;left: 0;top: 0;" src="http://test.myushan.com//logo/black_zhidaozhushou.png" onclick="return false"/>
+            <p class="fontsize banben"><span style="font-size:14px">北京智道未来网络科技有限公司版权所有</span><br>
+                <span style="transform:scale(0.5)">地址：昌平区东小口镇立汤路179号院1号楼</span>
+                <span style="transform:scale(0.5)">联系电话：13907550120</span></p>
+        </div>
+        <img class="btn_down1" src="http://test.myushan.com/0.45606090061703686.png">
+
+    </div>
+</body>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="./dl.min.js"></script>
+<script src="//test.myushan.com/javascripts/yushan_rs_min.js"></script>
+<script>
+    $(function() {
+
+
+        $('.btn_down1').click(function() {
+            window.location.href = btndown;
+            event.defaultPrevented
+        });
+        new _yushan.dl_info({
+            url: '',
+            dlbutton: ['.btn_down1']
+        });
+
+    })
+</script>
+
+</html>
