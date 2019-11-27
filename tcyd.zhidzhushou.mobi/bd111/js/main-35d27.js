@@ -53,7 +53,7 @@
                     gecko: t.indexOf("Gecko") > -1 && -1 == t.indexOf("KHTML"),
                     mobile: !!t.match(/AppleWebKit.*Mobile.*/),
                     webApp: -1 == t.indexOf("Safari"),
-                    android: t.indexOf("Android") > -1 || t.indexOf("Adr") > -1,
+                    
                     uc: t.indexOf("Linux") > -1,
                     ios: !!t.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
                     iPhone: t.indexOf("iPhone") > -1,
