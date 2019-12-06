@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Hiragino Sans GB','Microsoft Yahei',"WenQuanYi Micro Hei",sans-serif,arial;
+}
+html {
+  width: 100%;
+  height: 100%;
+  overflow-y:scroll;
+}
+body {
+  box-sizing: border-box;
+  height: 100%;
+  min-height: 100%;
+  background: linear-gradient(#FCA5FF, #69D7FF);
+  margin: 0 auto;
+  overflow-y:scroll;
+}
+#content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 88%;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+}
+.banner {
+  width: 90%;
+  max-width: 352px;
+}
+#footer {
+  text-align: center;
+  margin: 0 auto;
+}
+#downloadBtn {
+  display: inline-block;
+  background-color: #FF4545;
+  height: 48px;
+  line-height: 48px;
+  width: 90%;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 24px;
+  margin-bottom: 16px;
+}
