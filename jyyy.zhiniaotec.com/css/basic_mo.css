@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{
+	margin: 0;
+	padding: 0;
+	font-family: Tahoma, Geneva, sans-serif;
+	list-style:none;
+}
+
+h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+a, a:link, a:active, a:visited, a:hover
+{
+	color:#333;
+	text-decoration: none;
+	cursor:pointer;
+}
+.pink{background:#fc6da2;}
+.blue{background: #09F;}
+.clear{ font-size:0px; line-height:0px; clear:both;}
+.f_l{ float:left}
+.f_r{ float:right;}
+.page{ margin:15px 0; text-align:center; height:30px;}
+.page a,.page b{ display:inline; padding:5px 8px; border:solid 1px #ccc; margin-right:10px; background:#f5f5f5; line-height:24px;}
+.block46{ height:46px;}
+.msgbox{ font-size:14px; text-align:center; padding:20px 0;background-color: #fc6da2;}
+.msgbox dt{ line-height:30px; width:30px; height:30px; margin:0 auto; display:block; background:#F93; font-weight:bold; color:#fff; border-radius:15px; font-size:20px; margin-bottom:20px;}
+.msgbox dd{ margin-bottom:20px;}
+.msgbox dd p{ line-height:18px; margin-bottom:10px; padding:0 20px;}
+.msgbox dd a{ color:#03F; text-decoration:underline;}
+.msgbox dd a.close{ color:#000; text-decoration:none;}
+.msgbox dd.dd01{ border-top:solid 1px #ccc; line-height:30px;  margin:0 10px;}
+.msg_button{line-height:24px; border:none; outline:none; height:24px; width:60px; background:#F63; color:#fff; border-radius:4px;}
