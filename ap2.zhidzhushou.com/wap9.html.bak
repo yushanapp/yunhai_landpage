@@ -151,7 +151,7 @@
     </div>
     <div class="downbtn" onclick="dl();">
         <div class="downbtnbox">
-            <span style="margin-left:.45rem">免费下载 立即约聊</span>
+            <div class="downicon"></div><span>免费下载 立即约聊</span>
         </div>
     </div>
     <section style="font-size: 12px; text-align: center">
