@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>【爱碰】- 结识附近的人，开启同城私密视频聊天！</title>
+    <link rel="stylesheet" type="text/css" href="newpc/css/css.css"/>
+    <link rel="stylesheet" type="text/css" href="newpc/css/basic.css"/>
+    <link rel="stylesheet" type="text/css" href="newpc/css/core.css"/>
+    <link rel="stylesheet" type="text/css" href="newpc/css/member.css"/>
+    <script type="text/javascript" src="newpc/js/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="newpc/js/jquery.ajax.app.js"></script>
+    <script type="text/javascript" src="newpc/js/common.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var readParameter = function (key) {
+                var ret = '';
+                if (window.location.search) {
+                    var s = window.location.search.substr(1);
+                    s = s.split('&');
+                    for (var i in s) {
+                        g = s[i].split('=');
+                        if (g[0] === key && g.length === 2) {
+                            ret = g[1];
+                            break;
+                        }
+                    }
+                }
+                if (ret === '' && key === '_cc') {
+                    ret = window.location.hash ? window.location.hash.substr(1) : '';
+                }
+                return ret;
+            };
+
+            $(".main a,.jiaru a,.contentTitle,.btnmain a").click(function () {
+
+                layer.open({
+                    type: 2,
+                    title: !1,
+                    shadeClose: !1,
+                    shade: [0.6, "url(newpc/images/mark_bg.png) #000"],
+                    area: ["700px", "520px"],
+                    skin: "",
+
+                    content: ["alert.html?_cc=" + readParameter('_cc'), "no"],
+                    zIndex: 111111
+                });
+
+            })
+        });
+
+        function closelay() {
+            $(".layui-layer").hide();
+            $(".layui-layer-shade").hide();
+        }
+    </script>
+</head>
+<body class="index">
+<!-------- 头部开始 -------->
+<div class="top">
+    <div class="main width1000">
+        <h1><img src="newpc/images/logo.png"/></h1>
+        <a class="topright"><img src="newpc/images/logo3.png"/></a>
+    </div>
+</div>
+<!-------- 头部结束 -------->
+
+<div class="main width1000">
+    <div class="contentTitle">
+        <img src="newpc/images/logo444.png" width="337" height="46"/>
+        <a class="fc-red f14"><span>2020年受女性欢迎的视频交友APP！人气旺！ 轻松交友约会！</span></a>
+        <a class="ablock org  f_r">手机扫一扫，马上加入</a>
+        <div class="clear"></div>
+    </div>
+</div>
+<br>
+
+<div class="main width1000">
+    <ul class="piclist">
+        <li><a><img src="newpc/images/1.png"/></a>
+            <div class="info"><a><span class="online">发起视频</span></a><a><span>查看联系方式</span></a>
+                <p><img src="newpc/images/weizhi.png"/><a>璐璐	28岁</a></p>
+            </div>
+        </li>
+        <li><a><img src="newpc/images/2.png"/></a>
+            <div class="info"><a><span class="online">发起视频</span></a><a><span>查看联系方式</span></a>
+                <p><img src="newpc/images/weizhi.png"/><a>白甜	25岁</a></p>
+            </div>
+        </li>
+        <li><a><img src="newpc/images/3.png"/></a>
+            <div class="info"><a><span class="online">发起视频</span></a><a><span>查看联系方式</span></a>
+                <p><img src="newpc/images/weizhi.png"/><a>丽思	27岁</a></p>
+            </div>
+        </li>
+        <li><a><img src="newpc/images/20.png"/></a>
+            <div class="info"><a><span class="online">发起视频</span></a><a><span>查看联系方式</span></a>
+                <p><img src="newpc/images/weizhi.png"/><a>巧巧	30岁</a></p>
+            </div>
+        </li>
+        <li class="last"><a><img src="newpc/images/5.png"/></a>
+            <div class="info"><a><span class="online">发起视频</span></a><a><span>查看联系方式</span></a>
+                <p><img src="newpc/images/weizhi.png"/><a>琳丽	28岁</a></p>
+            </div>
+        </li>
+        <li><a><img src="newpc/images/21.png"/></a>
+            <div class="info"><a><span class="online">发起视频</span></a><a><span>查看联系方式</span></a>
+                <p><img src="newpc/images/weizhi.png"/><a>芬芳	31岁</a></p>
+            </div>
+        </li>
+        <li><a><img src="newpc/images/7.png"/></a>
+            <div class="info"><a><span class="online">发起视频</span></a><a><span>查看联系方式</span></a>
+                <p><img src="newpc/images/weizhi.png"/><a>司马·瑶	24岁</a></p>
+            </div>
+        </li>
+        <li><a><img src="newpc/images/8.png"/></a>
+            <div class="info"><a><span class="online">发起视频</span></a><a><span>查看联系方式</span></a>
+                <p><img src="newpc/images/weizhi.png"/><a>晓蕊	23岁</a></p>
+            </div>
+        </li>
+        <li><a><img src="newpc/images/18.png"/></a>
+            <div class="info"><a><span class="online">发起视频</span></a><a><span>查看联系方式</span></a>
+                <p><img src="newpc/images/weizhi.png"/><a>娜娜	29岁</a></p>
+            </div>
+        </li>
+        <li class="last"><a><img src="newpc/images/19.png"/></a>
+            <div class="info"><a><span class="online">发起视频</span></a><a><span>查看联系方式</span></a>
+                <p><img src="newpc/images/weizhi.png"/><a>慧妍	34岁</a></p>
+            </div>
+        </li>
+        <li><a><img src="newpc/images/11.jpg"/></a>
+            <div class="info"><a><span class="online">发起视频</span></a><a><span>查看联系方式</span></a>
+                <p><img src="newpc/images/weizhi.png"/><a>糖果	29岁</a></p>
+            </div>
+        </li>
+        <li><a><img src="newpc/images/12.jpg"/></a>
+            <div class="info"><a><span class="online">发起视频</span></a><a><span>查看联系方式</span></a>
+                <p><img src="newpc/images/weizhi.png"/><a>爱蹭饭	26岁</a></p>
+            </div>
+        </li>
+        <li><a><img src="newpc/images/13.jpg"/></a>
+            <div class="info"><a><span class="online">发起视频</span></a><a><span>查看联系方式</span></a>
+                <p><a>乖乖女	29岁</a></p>
+            </div>
+        </li>
+
+        <li><a><img src="newpc/images/16.png"/></a>
+            <div class="info"><a><span class="online">发起视频</span></a><a><span>查看联系方式</span></a>
+                <p><img src="newpc/images/weizhi.png"/><a>悠悠奶茶	29岁</a></p>
+            </div>
+        </li>
+        <li class="last"><a><img src="newpc/images/17.png"/></a>
+            <div class="info"><a><span class="online">发起视频</span></a><a><span>查看联系方式</span></a>
+                <p><img src="newpc/images/weizhi.png"/><a>欣欣	29岁</a></p>
+            </div>
+        </li>
+        <div class="clear"></div>
+    </ul>
+    <div class="clear"></div>
+    <div class="more"><a class="fc-red">点击查看更多附近的人>></a></div>
+</div>
+
+<div class="btnmain width1000">
+    <ul class="cando">
+        <li><a><img src="newpc/images/b-0.png" width="183" height="256"/></a><span></span></li>
+        <li><a><img src="newpc/images/b-1.png" width="183" height="256"/></a><span></span></li>
+        <li><a><img src="newpc/images/b-2.png" width="183" height="256"/></a><span></span></li>
+        <li><a><img src="newpc/images/b-3.png" width="183" height="256"/></a><span></span></li>
+        <li><a><img src="newpc/images/b-4.png" width="183" height="256"/></a><span></span></li>
+        <div class="clear"></div>
+    </ul>
+</div>
+<div class="jiaru"><a>免费下载：大型同城在线交友,找到意中人,请及时下载注册！</a></div>
+<div class="copyright">
+	爱碰app是一款同城单身男女快速约会的交友软件<br />
+    &nbsp;&nbsp;&nbsp;北京智道未来网络科技有限公司 版权所有&nbsp;&nbsp;&nbsp;地址：昌平区东小口镇立汤路179号院1号楼
+联系电话：13907550120
+    <!-- <a target="_blank" href="lianxi.html"><font size="3" color="#FFFFFF"> 联系我们</font></a>
+    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+    <a target="_blank" href="about.html"><font size="3" color="#FFFFFF">关于我们</font></a>
+    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+    </a> -->
+</div>
+<link rel="stylesheet" href="newpc/css/appcss.css">
+<script type="text/javascript" src="newpc/js/appon2.js"></script>
+<div style='display:none'>
+    <script type="text/javascript" src="https://s5.cnzz.com/z_stat.php?id=1276877145&web_id=1276877145"></script>
+</div>
+</body>
+</html>
