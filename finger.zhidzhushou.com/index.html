@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>finger</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta content="max-age=0" http-equiv="Cache-Control">
+    <meta content="240" name="MobileOptimized">
+    <meta content="YES" name="apple-touch-fullscreen">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <script language="javascript">
+        function GetRequest() {
+            var url = location.search;
+            var theRequest = new Object();
+            if (url.indexOf("?") != -1) {
+                var str = url.substr(1);
+                strs = str.split("&");
+                for (var i = 0; i < strs.length; i++) {
+                    theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+                }
+            }
+            return theRequest;
+        }
+        var android_urls = [
+            'https://www.finger66.com:8006/t/7H', 'https://www.finger66.com:8006/t/vH', 'https://www.finger66.com:8006/t/wH', 'https://www.finger66.com:8006/t/dH', 'https://www.finger66.com:8006/t/hH', 'https://www.finger66.com:8006/t/RH', 'https://www.finger66.com:8006/t/HH', 'https://www.finger66.com:8006/t/cH', 'https://www.finger66.com:8006/t/kH', 'https://www.finger66.com:8006/t/tH', 'https://www.finger66.com:8006/t/QH', 'https://www.finger66.com:8006/t/rH', 'https://www.finger66.com:8006/t/NH', 'https://www.finger66.com:8006/t/SH', 'https://www.finger66.com:8006/t/VH', 'https://www.finger66.com:8006/t/4H', 'https://www.finger66.com:8006/t/8H', 'https://www.finger66.com:8006/t/uH', 'https://www.finger66.com:8006/t/gH', 'https://www.finger66.com:8006/t/mH', 'https://www.finger66.com:8006/t/PH', 'https://www.finger66.com:8006/t/fH', 'https://www.finger66.com:8006/t/JH', 'https://www.finger66.com:8006/t/eH', 'https://www.finger66.com:8006/t/MH', 'https://www.finger66.com:8006/t/GH', 'https://www.finger66.com:8006/t/5H', 'https://www.finger66.com:8006/t/bH', 'https://www.finger66.com:8006/t/YH', 'https://www.finger66.com:8006/t/LH', 'https://www.finger66.com:8006/t/3H', 'https://www.finger66.com:8006/t/1H', 'https://www.finger66.com:8006/t/jH', 'https://www.finger66.com:8006/t/WH', 'https://www.finger66.com:8006/t/9H', 'https://www.finger66.com:8006/t/yH', 'https://www.finger66.com:8006/t/iH', 'https://www.finger66.com:8006/t/CH', 'https://www.finger66.com:8006/t/ZH', 'https://www.finger66.com:8006/t/qH', 'https://www.finger66.com:8006/t/nH', 'https://www.finger66.com:8006/t/DH', 'https://www.finger66.com:8006/t/TH', 'https://www.finger66.com:8006/t/6H', 'https://www.finger66.com:8006/t/pH', 'https://www.finger66.com:8006/t/xc', 'https://www.finger66.com:8006/t/ac', 'https://www.finger66.com:8006/t/sc', 'https://www.finger66.com:8006/t/oc', 'https://www.finger66.com:8006/t/Ac', 'https://www.finger66.com:8006/t/Bc', 'https://www.finger66.com:8006/t/Fc', 'https://www.finger66.com:8006/t/Xc', 'https://www.finger66.com:8006/t/2c', 'https://www.finger66.com:8006/t/Kc', 'https://www.finger66.com:8006/t/Uc', 'https://www.finger66.com:8006/t/zc', 'https://www.finger66.com:8006/t/Ec', 'https://www.finger66.com:8006/t/7c', 'https://www.finger66.com:8006/t/vc', 'https://www.finger66.com:8006/t/wc', 'https://www.finger66.com:8006/t/dc', 'https://www.finger66.com:8006/t/hc', 'https://www.finger66.com:8006/t/Rc', 'https://www.finger66.com:8006/t/Hc', 'https://www.finger66.com:8006/t/cc', 'https://www.finger66.com:8006/t/kc', 'https://www.finger66.com:8006/t/tc', 'https://www.finger66.com:8006/t/Qc', 'https://www.finger66.com:8006/t/rc', 'https://www.finger66.com:8006/t/Nc', 'https://www.finger66.com:8006/t/Sc', 'https://www.finger66.com:8006/t/Vc', 'https://www.finger66.com:8006/t/4c', 'https://www.finger66.com:8006/t/8c', 'https://www.finger66.com:8006/t/uc', 'https://www.finger66.com:8006/t/gc', 'https://www.finger66.com:8006/t/Fh', 'https://www.finger66.com:8006/t/mc', 'https://www.finger66.com:8006/t/Pc', 'https://www.finger66.com:8006/t/fc', 'https://www.finger66.com:8006/t/Jc', 'https://www.finger66.com:8006/t/ec', 'https://www.finger66.com:8006/t/Mc', 'https://www.finger66.com:8006/t/Gc', 'https://www.finger66.com:8006/t/5c', 'https://www.finger66.com:8006/t/bc', 'https://www.finger66.com:8006/t/Yc', 'https://www.finger66.com:8006/t/Lc', 'https://www.finger66.com:8006/t/3c', 'https://www.finger66.com:8006/t/1c', 'https://www.finger66.com:8006/t/jc', 'https://www.finger66.com:8006/t/Wc', 'https://www.finger66.com:8006/t/9c', 'https://www.finger66.com:8006/t/yc', 'https://www.finger66.com:8006/t/ic', 'https://www.finger66.com:8006/t/Cc', 'https://www.finger66.com:8006/t/Zc', 'https://www.finger66.com:8006/t/qc', 'https://www.finger66.com:8006/t/nc', 'https://www.finger66.com:8006/t/Dc', 'https://www.finger66.com:8006/t/Tc', 'https://www.finger66.com:8006/t/6c', 'https://www.finger66.com:8006/t/pc', 'https://www.finger66.com:8006/t/xk', 'https://www.finger66.com:8006/t/ak', 'https://www.finger66.com:8006/t/sk', 'https://www.finger66.com:8006/t/ok', 'https://www.finger66.com:8006/t/Ak', 'https://www.finger66.com:8006/t/Bk', 'https://www.finger66.com:8006/t/Fk', 'https://www.finger66.com:8006/t/Xk', 'https://www.finger66.com:8006/t/2k', 'https://www.finger66.com:8006/t/Kk', 'https://www.finger66.com:8006/t/Uk', 'https://www.finger66.com:8006/t/zk', 'https://www.finger66.com:8006/t/Ek', 'https://www.finger66.com:8006/t/7k', 'https://www.finger66.com:8006/t/vk', 'https://www.finger66.com:8006/t/wk', 'https://www.finger66.com:8006/t/dk', 'https://www.finger66.com:8006/t/hk', 'https://www.finger66.com:8006/t/Rk', 'https://www.finger66.com:8006/t/Hk', 'https://www.finger66.com:8006/t/ck', 'https://www.finger66.com:8006/t/kk', 'https://www.finger66.com:8006/t/tk', 'https://www.finger66.com:8006/t/Qk', 'https://www.finger66.com:8006/t/rk', 'https://www.finger66.com:8006/t/Nk', 'https://www.finger66.com:8006/t/Sk', 'https://www.finger66.com:8006/t/Vk', 'https://www.finger66.com:8006/t/4k', 'https://www.finger66.com:8006/t/8k', 'https://www.finger66.com:8006/t/uk', 'https://www.finger66.com:8006/t/gk', 'https://www.finger66.com:8006/t/mk', 'https://www.finger66.com:8006/t/Pk', 'https://www.finger66.com:8006/t/fk', 'https://www.finger66.com:8006/t/Jk', 'https://www.finger66.com:8006/t/ek', 'https://www.finger66.com:8006/t/Mk', 'https://www.finger66.com:8006/t/Gk', 'https://www.finger66.com:8006/t/5k', 'https://www.finger66.com:8006/t/bk', 'https://www.finger66.com:8006/t/Yk', 'https://www.finger66.com:8006/t/Lk', 'https://www.finger66.com:8006/t/3k', 'https://www.finger66.com:8006/t/1k', 'https://www.finger66.com:8006/t/jk', 'https://www.finger66.com:8006/t/TN', 'https://www.finger66.com:8006/t/6N', 'https://www.finger66.com:8006/t/pN', 'https://www.finger66.com:8006/t/xS', 'https://www.finger66.com:8006/t/aS', 'https://www.finger66.com:8006/t/sS', 'https://www.finger66.com:8006/t/oS', 'https://www.finger66.com:8006/t/AS', 'https://www.finger66.com:8006/t/BS', 'https://www.finger66.com:8006/t/FS', 'https://www.finger66.com:8006/t/XS', 'https://www.finger66.com:8006/t/2S', 'https://www.finger66.com:8006/t/KS', 'https://www.finger66.com:8006/t/US', 'https://www.finger66.com:8006/t/zS', 'https://www.finger66.com:8006/t/ES', 'https://www.finger66.com:8006/t/7S', 'https://www.finger66.com:8006/t/vS', 'https://www.finger66.com:8006/t/wS', 'https://www.finger66.com:8006/t/dS', 'https://www.finger66.com:8006/t/hS', 'https://www.finger66.com:8006/t/RS', 'https://www.finger66.com:8006/t/HS', 'https://www.finger66.com:8006/t/cS', 'https://www.finger66.com:8006/t/kS', 'https://www.finger66.com:8006/t/tS', 'https://www.finger66.com:8006/t/QS', 'https://www.finger66.com:8006/t/rS', 'https://www.finger66.com:8006/t/NS', 'https://www.finger66.com:8006/t/SS', 'https://www.finger66.com:8006/t/VS', 'https://www.finger66.com:8006/t/4S', 'https://www.finger66.com:8006/t/8S', 'https://www.finger66.com:8006/t/uS', 'https://www.finger66.com:8006/t/gS', 'https://www.finger66.com:8006/t/mS', 'https://www.finger66.com:8006/t/PS', 'https://www.finger66.com:8006/t/fS', 'https://www.finger66.com:8006/t/JS', 'https://www.finger66.com:8006/t/eS', 'https://www.finger66.com:8006/t/MS', 'https://www.finger66.com:8006/t/GS', 'https://www.finger66.com:8006/t/5S', 'https://www.finger66.com:8006/t/bS', 'https://www.finger66.com:8006/t/YS', 'https://www.finger66.com:8006/t/LS', 'https://www.finger66.com:8006/t/3S', 'https://www.finger66.com:8006/t/1S', 'https://www.finger66.com:8006/t/jS', 'https://www.finger66.com:8006/t/WS', 'https://www.finger66.com:8006/t/9S', 'https://www.finger66.com:8006/t/yS', 'https://www.finger66.com:8006/t/iS', 'https://www.finger66.com:8006/t/CS', 'https://www.finger66.com:8006/t/ZS', 'https://www.finger66.com:8006/t/qS', 'https://www.finger66.com:8006/t/nS', 'https://www.finger66.com:8006/t/DS', 'https://www.finger66.com:8006/t/TS', 'https://www.finger66.com:8006/t/6S', 'https://www.finger66.com:8006/t/pS', 'https://www.finger66.com:8006/t/xV', 'https://www.finger66.com:8006/t/aV', 'https://www.finger66.com:8006/t/sV', 'https://www.finger66.com:8006/t/oV', 'https://www.finger66.com:8006/t/AV', 'https://www.finger66.com:8006/t/BV', 'https://www.finger66.com:8006/t/FV', 'https://www.finger66.com:8006/t/XV', 'https://www.finger66.com:8006/t/2V', 'https://www.finger66.com:8006/t/KV', 'https://www.finger66.com:8006/t/UV', 'https://www.finger66.com:8006/t/zV', 'https://www.finger66.com:8006/t/EV', 'https://www.finger66.com:8006/t/7V', 'https://www.finger66.com:8006/t/vV', 'https://www.finger66.com:8006/t/wV', 'https://www.finger66.com:8006/t/dV', 'https://www.finger66.com:8006/t/hV', 'https://www.finger66.com:8006/t/RV', 'https://www.finger66.com:8006/t/HV', 'https://www.finger66.com:8006/t/cV', 'https://www.finger66.com:8006/t/kV', 'https://www.finger66.com:8006/t/tV', 'https://www.finger66.com:8006/t/QV', 'https://www.finger66.com:8006/t/rV', 'https://www.finger66.com:8006/t/NV', 'https://www.finger66.com:8006/t/SV', 'https://www.finger66.com:8006/t/VV', 'https://www.finger66.com:8006/t/4V', 'https://www.finger66.com:8006/t/8V', 'https://www.finger66.com:8006/t/uV', 'https://www.finger66.com:8006/t/gV', 'https://www.finger66.com:8006/t/mV', 'https://www.finger66.com:8006/t/PV', 'https://www.finger66.com:8006/t/fV', 'https://www.finger66.com:8006/t/JV', 'https://www.finger66.com:8006/t/eV', 'https://www.finger66.com:8006/t/MV', 'https://www.finger66.com:8006/t/GV', 'https://www.finger66.com:8006/t/5V', 'https://www.finger66.com:8006/t/bV', 'https://www.finger66.com:8006/t/YV', 'https://www.finger66.com:8006/t/LV', 'https://www.finger66.com:8006/t/3V', 'https://www.finger66.com:8006/t/1V', 'https://www.finger66.com:8006/t/jV', 'https://www.finger66.com:8006/t/WV', 'https://www.finger66.com:8006/t/9V', 'https://www.finger66.com:8006/t/yV', 'https://www.finger66.com:8006/t/iV', 'https://www.finger66.com:8006/t/CV', 'https://www.finger66.com:8006/t/ZV', 'https://www.finger66.com:8006/t/qV', 'https://www.finger66.com:8006/t/nV', 'https://www.finger66.com:8006/t/DV', 'https://www.finger66.com:8006/t/TV', 'https://www.finger66.com:8006/t/6V', 'https://www.finger66.com:8006/t/pV', 'https://www.finger66.com:8006/t/x4', 'https://www.finger66.com:8006/t/a4', 'https://www.finger66.com:8006/t/s4', 'https://www.finger66.com:8006/t/o4', 'https://www.finger66.com:8006/t/A4', 'https://www.finger66.com:8006/t/B4', 'https://www.finger66.com:8006/t/F4', 'https://www.finger66.com:8006/t/X4', 'https://www.finger66.com:8006/t/24', 'https://www.finger66.com:8006/t/K4', 'https://www.finger66.com:8006/t/U4', 'https://www.finger66.com:8006/t/z4', 'https://www.finger66.com:8006/t/E4', 'https://www.finger66.com:8006/t/74', 'https://www.finger66.com:8006/t/v4', 'https://www.finger66.com:8006/t/w4', 'https://www.finger66.com:8006/t/d4', 'https://www.finger66.com:8006/t/h4', 'https://www.finger66.com:8006/t/R4', 'https://www.finger66.com:8006/t/H4', 'https://www.finger66.com:8006/t/c4', 'https://www.finger66.com:8006/t/k4', 'https://www.finger66.com:8006/t/t4', 'https://www.finger66.com:8006/t/Q4', 'https://www.finger66.com:8006/t/r4', 'https://www.finger66.com:8006/t/N4', 'https://www.finger66.com:8006/t/S4', 'https://www.finger66.com:8006/t/V4', 'https://www.finger66.com:8006/t/44', 'https://www.finger66.com:8006/t/84', 'https://www.finger66.com:8006/t/u4', 'https://www.finger66.com:8006/t/g4', 'https://www.finger66.com:8006/t/m4', 'https://www.finger66.com:8006/t/P4', 'https://www.finger66.com:8006/t/f4', 'https://www.finger66.com:8006/t/J4', 'https://www.finger66.com:8006/t/e4', 'https://www.finger66.com:8006/t/M4', 'https://www.finger66.com:8006/t/G4', 'https://www.finger66.com:8006/t/54', 'https://www.finger66.com:8006/t/b4', 'https://www.finger66.com:8006/t/Y4', 'https://www.finger66.com:8006/t/L4', 'https://www.finger66.com:8006/t/34', 'https://www.finger66.com:8006/t/14', 'https://www.finger66.com:8006/t/j4', 'https://www.finger66.com:8006/t/W4', 'https://www.finger66.com:8006/t/94', 'https://www.finger66.com:8006/t/y4', 'https://www.finger66.com:8006/t/i4', 'https://www.finger66.com:8006/t/C4', 'https://www.finger66.com:8006/t/Z4', 'https://www.finger66.com:8006/t/q4', 'https://www.finger66.com:8006/t/n4', 'https://www.finger66.com:8006/t/D4', 'https://www.finger66.com:8006/t/T4', 'https://www.finger66.com:8006/t/64', 'https://www.finger66.com:8006/t/p4', 'https://www.finger66.com:8006/t/x8', 'https://www.finger66.com:8006/t/a8', 'https://www.finger66.com:8006/t/s8', 'https://www.finger66.com:8006/t/o8', 'https://www.finger66.com:8006/t/A8', 'https://www.finger66.com:8006/t/B8', 'https://www.finger66.com:8006/t/F8', 'https://www.finger66.com:8006/t/X8', 'https://www.finger66.com:8006/t/28', 'https://www.finger66.com:8006/t/K8', 'https://www.finger66.com:8006/t/U8', 'https://www.finger66.com:8006/t/z8', 'https://www.finger66.com:8006/t/E8', 'https://www.finger66.com:8006/t/78', 'https://www.finger66.com:8006/t/v8', 'https://www.finger66.com:8006/t/w8', 'https://www.finger66.com:8006/t/d8', 'https://www.finger66.com:8006/t/h8', 'https://www.finger66.com:8006/t/R8', 'https://www.finger66.com:8006/t/H8', 'https://www.finger66.com:8006/t/c8', 'https://www.finger66.com:8006/t/k8', 'https://www.finger66.com:8006/t/t8', 'https://www.finger66.com:8006/t/Q8', 'https://www.finger66.com:8006/t/r8', 'https://www.finger66.com:8006/t/N8', 'https://www.finger66.com:8006/t/S8', 'https://www.finger66.com:8006/t/V8', 'https://www.finger66.com:8006/t/48', 'https://www.finger66.com:8006/t/88', 'https://www.finger66.com:8006/t/u8', 'https://www.finger66.com:8006/t/g8', 'https://www.finger66.com:8006/t/m8', 'https://www.finger66.com:8006/t/P8', 'https://www.finger66.com:8006/t/f8', 'https://www.finger66.com:8006/t/J8', 'https://www.finger66.com:8006/t/e8', 'https://www.finger66.com:8006/t/M8', 'https://www.finger66.com:8006/t/G8', 'https://www.finger66.com:8006/t/58', 'https://www.finger66.com:8006/t/b8', 'https://www.finger66.com:8006/t/Y8', 'https://www.finger66.com:8006/t/L8', 'https://www.finger66.com:8006/t/38', 'https://www.finger66.com:8006/t/18', 'https://www.finger66.com:8006/t/j8', 'https://www.finger66.com:8006/t/W8', 'https://www.finger66.com:8006/t/98', 'https://www.finger66.com:8006/t/y8', 'https://www.finger66.com:8006/t/i8', 'https://www.finger66.com:8006/t/C8', 'https://www.finger66.com:8006/t/Z8', 'https://www.finger66.com:8006/t/q8', 'https://www.finger66.com:8006/t/n8', 'https://www.finger66.com:8006/t/D8', 'https://www.finger66.com:8006/t/T8', 'https://www.finger66.com:8006/t/68', 'https://www.finger66.com:8006/t/p8', 'https://www.finger66.com:8006/t/xu', 'https://www.finger66.com:8006/t/au', 'https://www.finger66.com:8006/t/su', 'https://www.finger66.com:8006/t/ou', 'https://www.finger66.com:8006/t/Au', 'https://www.finger66.com:8006/t/Bu',
+            'https://www.finger66.com:8006/r/TY', 'https://www.finger66.com:8006/r/6Y', 'https://www.finger66.com:8006/r/pY', 'https://www.finger66.com:8006/r/xL', 'https://www.finger66.com:8006/r/aL', 'https://www.finger66.com:8006/r/sL', 'https://www.finger66.com:8006/r/oL', 'https://www.finger66.com:8006/r/AL', 'https://www.finger66.com:8006/r/BL', 'https://www.finger66.com:8006/r/FL', 'https://www.finger66.com:8006/r/XL', 'https://www.finger66.com:8006/r/2L', 'https://www.finger66.com:8006/r/KL', 'https://www.finger66.com:8006/r/UL', 'https://www.finger66.com:8006/r/zL', 'https://www.finger66.com:8006/r/EL', 'https://www.finger66.com:8006/r/7L', 'https://www.finger66.com:8006/r/vL', 'https://www.finger66.com:8006/r/wL', 'https://www.finger66.com:8006/r/dL', 'https://www.finger66.com:8006/r/hL', 'https://www.finger66.com:8006/r/RL', 'https://www.finger66.com:8006/r/HL', 'https://www.finger66.com:8006/r/cL', 'https://www.finger66.com:8006/r/kL', 'https://www.finger66.com:8006/r/tL', 'https://www.finger66.com:8006/r/QL', 'https://www.finger66.com:8006/r/rL', 'https://www.finger66.com:8006/r/NL', 'https://www.finger66.com:8006/r/SL', 'https://www.finger66.com:8006/r/VL', 'https://www.finger66.com:8006/r/4L', 'https://www.finger66.com:8006/r/8L', 'https://www.finger66.com:8006/r/uL', 'https://www.finger66.com:8006/r/gL', 'https://www.finger66.com:8006/r/mL', 'https://www.finger66.com:8006/r/PL', 'https://www.finger66.com:8006/r/fL', 'https://www.finger66.com:8006/r/JL',
+            'https://www.finger66.com:8006/r/kxa', 'https://www.finger66.com:8006/r/txa', 'https://www.finger66.com:8006/r/Qxa', 'https://www.finger66.com:8006/r/rxa', 'https://www.finger66.com:8006/r/Nxa', 'https://www.finger66.com:8006/r/Sxa', 'https://www.finger66.com:8006/r/Vxa', 'https://www.finger66.com:8006/r/4xa', 'https://www.finger66.com:8006/r/8xa', 'https://www.finger66.com:8006/r/uxa', 'https://www.finger66.com:8006/r/gxa', 'https://www.finger66.com:8006/r/mxa', 'https://www.finger66.com:8006/r/Pxa', 'https://www.finger66.com:8006/r/fxa', 'https://www.finger66.com:8006/r/Jxa', 'https://www.finger66.com:8006/r/exa', 'https://www.finger66.com:8006/r/Mxa', 'https://www.finger66.com:8006/r/Gxa', 'https://www.finger66.com:8006/r/5xa', 'https://www.finger66.com:8006/r/bxa', 'https://www.finger66.com:8006/r/Yxa', 'https://www.finger66.com:8006/r/Lxa', 'https://www.finger66.com:8006/r/3xa', 'https://www.finger66.com:8006/r/1xa', 'https://www.finger66.com:8006/r/jxa', 'https://www.finger66.com:8006/r/Wxa', 'https://www.finger66.com:8006/r/9xa', 'https://www.finger66.com:8006/r/yxa', 'https://www.finger66.com:8006/r/ixa', 'https://www.finger66.com:8006/r/Cxa', 'https://www.finger66.com:8006/r/Zxa', 'https://www.finger66.com:8006/r/qxa', 'https://www.finger66.com:8006/r/nxa', 'https://www.finger66.com:8006/r/Dxa', 'https://www.finger66.com:8006/r/Txa', 'https://www.finger66.com:8006/r/6xa', 'https://www.finger66.com:8006/r/pxa', 'https://www.finger66.com:8006/r/xaa', 'https://www.finger66.com:8006/r/aaa', 'https://www.finger66.com:8006/r/saa', 'https://www.finger66.com:8006/r/oaa', 'https://www.finger66.com:8006/r/Aaa', 'https://www.finger66.com:8006/r/Baa', 'https://www.finger66.com:8006/r/Faa', 'https://www.finger66.com:8006/r/Xaa', 'https://www.finger66.com:8006/r/2aa', 'https://www.finger66.com:8006/r/Kaa', 'https://www.finger66.com:8006/r/Uaa', 'https://www.finger66.com:8006/r/zaa', 'https://www.finger66.com:8006/r/Eaa', 'https://www.finger66.com:8006/r/7aa', 'https://www.finger66.com:8006/r/vaa', 'https://www.finger66.com:8006/r/waa', 'https://www.finger66.com:8006/r/daa', 'https://www.finger66.com:8006/r/haa', 'https://www.finger66.com:8006/r/Raa', 'https://www.finger66.com:8006/r/Haa', 'https://www.finger66.com:8006/r/caa', 'https://www.finger66.com:8006/r/kaa', 'https://www.finger66.com:8006/r/taa', 'https://www.finger66.com:8006/r/Qaa', 'https://www.finger66.com:8006/r/raa', 'https://www.finger66.com:8006/r/Naa', 'https://www.finger66.com:8006/r/Saa', 'https://www.finger66.com:8006/r/Vaa', 'https://www.finger66.com:8006/r/4aa', 'https://www.finger66.com:8006/r/8aa', 'https://www.finger66.com:8006/r/uaa', 'https://www.finger66.com:8006/r/gaa', 'https://www.finger66.com:8006/r/maa', 'https://www.finger66.com:8006/r/Paa', 'https://www.finger66.com:8006/r/faa', 'https://www.finger66.com:8006/r/Jaa', 'https://www.finger66.com:8006/r/eaa', 'https://www.finger66.com:8006/r/Maa', 'https://www.finger66.com:8006/r/Gaa', 'https://www.finger66.com:8006/r/5aa', 'https://www.finger66.com:8006/r/baa', 'https://www.finger66.com:8006/r/Yaa', 'https://www.finger66.com:8006/r/Laa', 'https://www.finger66.com:8006/r/3aa', 'https://www.finger66.com:8006/r/1aa', 'https://www.finger66.com:8006/r/jaa', 'https://www.finger66.com:8006/r/Waa', 'https://www.finger66.com:8006/r/9aa', 'https://www.finger66.com:8006/r/yaa', 'https://www.finger66.com:8006/r/iaa', 'https://www.finger66.com:8006/r/Caa', 'https://www.finger66.com:8006/r/Zaa', 'https://www.finger66.com:8006/r/qaa', 'https://www.finger66.com:8006/r/naa', 'https://www.finger66.com:8006/r/Daa', 'https://www.finger66.com:8006/r/Taa', 'https://www.finger66.com:8006/r/6aa', 'https://www.finger66.com:8006/r/paa', 'https://www.finger66.com:8006/r/xsa', 'https://www.finger66.com:8006/r/asa', 'https://www.finger66.com:8006/r/ssa', 'https://www.finger66.com:8006/r/osa', 'https://www.finger66.com:8006/r/Asa', 'https://www.finger66.com:8006/r/Bsa', 'https://www.finger66.com:8006/r/Fsa', 'https://www.finger66.com:8006/r/Xsa', 'https://www.finger66.com:8006/r/2sa', 'https://www.finger66.com:8006/r/Ksa', 'https://www.finger66.com:8006/r/Usa', 'https://www.finger66.com:8006/r/zsa', 'https://www.finger66.com:8006/r/Esa', 'https://www.finger66.com:8006/r/7sa', 'https://www.finger66.com:8006/r/vsa', 'https://www.finger66.com:8006/r/wsa', 'https://www.finger66.com:8006/r/dsa', 'https://www.finger66.com:8006/r/hsa', 'https://www.finger66.com:8006/r/Rsa', 'https://www.finger66.com:8006/r/Hsa', 'https://www.finger66.com:8006/r/csa', 'https://www.finger66.com:8006/r/ksa', 'https://www.finger66.com:8006/r/tsa', 'https://www.finger66.com:8006/r/Qsa', 'https://www.finger66.com:8006/r/rsa', 'https://www.finger66.com:8006/r/Nsa', 'https://www.finger66.com:8006/r/Ssa', 'https://www.finger66.com:8006/r/Vsa', 'https://www.finger66.com:8006/r/4sa', 'https://www.finger66.com:8006/r/8sa', 'https://www.finger66.com:8006/r/usa', 'https://www.finger66.com:8006/r/gsa', 'https://www.finger66.com:8006/r/msa', 'https://www.finger66.com:8006/r/Psa', 'https://www.finger66.com:8006/r/fsa', 'https://www.finger66.com:8006/r/Jsa', 'https://www.finger66.com:8006/r/esa', 'https://www.finger66.com:8006/r/Msa', 'https://www.finger66.com:8006/r/Gsa', 'https://www.finger66.com:8006/r/5sa', 'https://www.finger66.com:8006/r/bsa', 'https://www.finger66.com:8006/r/Ysa', 'https://www.finger66.com:8006/r/Lsa', 'https://www.finger66.com:8006/r/3sa', 'https://www.finger66.com:8006/r/1sa', 'https://www.finger66.com:8006/r/jsa', 'https://www.finger66.com:8006/r/Wsa', 'https://www.finger66.com:8006/r/9sa', 'https://www.finger66.com:8006/r/ysa', 'https://www.finger66.com:8006/r/isa', 'https://www.finger66.com:8006/r/Csa', 'https://www.finger66.com:8006/r/Zsa', 'https://www.finger66.com:8006/r/qsa', 'https://www.finger66.com:8006/r/nsa', 'https://www.finger66.com:8006/r/Dsa', 'https://www.finger66.com:8006/r/Tsa', 'https://www.finger66.com:8006/r/6sa', 'https://www.finger66.com:8006/r/psa', 'https://www.finger66.com:8006/r/xoa', 'https://www.finger66.com:8006/r/aoa', 'https://www.finger66.com:8006/r/soa', 'https://www.finger66.com:8006/r/ooa', 'https://www.finger66.com:8006/r/Aoa', 'https://www.finger66.com:8006/r/Boa', 'https://www.finger66.com:8006/r/Foa', 'https://www.finger66.com:8006/r/Xoa', 'https://www.finger66.com:8006/r/2oa', 'https://www.finger66.com:8006/r/Koa', 'https://www.finger66.com:8006/r/Uoa', 'https://www.finger66.com:8006/r/zoa', 'https://www.finger66.com:8006/r/Eoa', 'https://www.finger66.com:8006/r/7oa', 'https://www.finger66.com:8006/r/voa', 'https://www.finger66.com:8006/r/woa', 'https://www.finger66.com:8006/r/doa', 'https://www.finger66.com:8006/r/hoa', 'https://www.finger66.com:8006/r/Roa', 'https://www.finger66.com:8006/r/Hoa', 'https://www.finger66.com:8006/r/coa', 'https://www.finger66.com:8006/r/koa', 'https://www.finger66.com:8006/r/toa', 'https://www.finger66.com:8006/r/Qoa', 'https://www.finger66.com:8006/r/roa', 'https://www.finger66.com:8006/r/Noa'
+        ];
+        var ios_urls = [
+            'https://www.finger66.com:8006/r/KAa',
+            'https://www.finger66.com:8006/r/UAa',
+            'https://www.finger66.com:8006/r/zAa',
+            'https://www.finger66.com:8006/r/EAa',
+            'https://www.finger66.com:8006/r/7Aa',
+            'https://www.finger66.com:8006/r/vAa',
+            'https://www.finger66.com:8006/r/wAa',
+            'https://www.finger66.com:8006/r/dAa',
+            'https://www.finger66.com:8006/r/hAa',
+            'https://www.finger66.com:8006/r/RAa',
+            'https://www.finger66.com:8006/r/HAa',
+            'https://www.finger66.com:8006/r/cAa',
+            'https://www.finger66.com:8006/r/kAa',
+            'https://www.finger66.com:8006/r/tAa',
+            'https://www.finger66.com:8006/r/QAa',
+            'https://www.finger66.com:8006/r/rAa',
+            'https://www.finger66.com:8006/r/NAa',
+            'https://www.finger66.com:8006/r/SAa',
+            'https://www.finger66.com:8006/r/VAa',
+            'https://www.finger66.com:8006/r/4Aa',
+            'https://www.finger66.com:8006/r/8Aa',
+            'https://www.finger66.com:8006/r/uAa',
+            'https://www.finger66.com:8006/r/gAa',
+            'https://www.finger66.com:8006/r/mAa',
+            'https://www.finger66.com:8006/r/PAa',
+            'https://www.finger66.com:8006/r/fAa',
+            'https://www.finger66.com:8006/r/JAa',
+            'https://www.finger66.com:8006/r/eAa',
+            'https://www.finger66.com:8006/r/MAa',
+            'https://www.finger66.com:8006/r/GAa',
+            'https://www.finger66.com:8006/r/5Aa',
+            'https://www.finger66.com:8006/r/bAa',
+            'https://www.finger66.com:8006/r/YAa',
+            'https://www.finger66.com:8006/r/LAa',
+            'https://www.finger66.com:8006/r/3Aa',
+            'https://www.finger66.com:8006/r/1Aa',
+            'https://www.finger66.com:8006/r/jAa',
+            'https://www.finger66.com:8006/r/WAa',
+            'https://www.finger66.com:8006/r/9Aa',
+            'https://www.finger66.com:8006/r/yAa',
+            'https://www.finger66.com:8006/r/iAa',
+            'https://www.finger66.com:8006/r/CAa',
+            'https://www.finger66.com:8006/r/ZAa',
+            'https://www.finger66.com:8006/r/qAa',
+            'https://www.finger66.com:8006/r/nAa',
+            'https://www.finger66.com:8006/r/DAa',
+            'https://www.finger66.com:8006/r/TAa',
+            'https://www.finger66.com:8006/r/6Aa',
+            'https://www.finger66.com:8006/r/pAa',
+            'https://www.finger66.com:8006/r/xBa',
+            'https://www.finger66.com:8006/r/aBa',
+            'https://www.finger66.com:8006/r/sBa',
+            'https://www.finger66.com:8006/r/oBa',
+            'https://www.finger66.com:8006/r/ABa',
+            'https://www.finger66.com:8006/r/BBa',
+            'https://www.finger66.com:8006/r/FBa',
+            'https://www.finger66.com:8006/r/XBa',
+            'https://www.finger66.com:8006/r/2Ba',
+            'https://www.finger66.com:8006/r/KBa',
+            'https://www.finger66.com:8006/r/UBa',
+            'https://www.finger66.com:8006/r/zBa',
+            'https://www.finger66.com:8006/r/EBa',
+            'https://www.finger66.com:8006/r/7Ba',
+            'https://www.finger66.com:8006/r/vBa',
+            'https://www.finger66.com:8006/r/wBa',
+            'https://www.finger66.com:8006/r/dBa',
+            'https://www.finger66.com:8006/r/hBa',
+            'https://www.finger66.com:8006/r/RBa',
+            'https://www.finger66.com:8006/r/HBa'];
+
+        var _GET = GetRequest();
+        var index = _GET['i'];
+        if (typeof(index) == "undefined" || index < 1 || index > ios_urls.length) {
+            index = 1;
+        }
+        index--;
+        var ua = navigator.userAgent.toLowerCase();
+        var link;
+        if (/iphone|ipad|ipod/.test(ua)) {
+            //IOS
+            link = ios_urls[index];
+        } else {
+            //Android
+            if (index >= android_urls.length) {
+                link = android_urls[0];
+            } else {
+                link = android_urls[index];
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="content_box">
+    <img class="fix" src="images/jita_01.png" alt="" onclick="btnAction()">
+    <div class="top" onclick="btnAction()">
+        <img src="images/jita_01.png" alt="">
+    </div>
+    <div class="top">
+        <img src="images/jita_02.png" alt="">
+    </div>
+    <div class="btn" onclick="btnAction()">
+        <img src="images/jita_03.png" alt="">
+    </div>
+    <div class="copyRight">北京智道未来网络科技有限公司版权所有<br/>地址：昌平区东小口镇立汤路179号院1号楼
+联系电话：13907550120</div>
+
+</div>
+
+<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+<script>
+
+    function btnAction() {
+        window.location.href = link;
+    }
+
+</script>
+</body>
+</html>
