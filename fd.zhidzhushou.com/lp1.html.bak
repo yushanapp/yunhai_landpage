@@ -92,7 +92,7 @@
             position: absolute;
             width: 58%;
             height: 9%;
-            bottom: 20%;
+            bottom: 25%;
             right: 0;
             z-index: 2000;
             left: 0;
@@ -112,12 +112,12 @@
                 alt=""
         />
         <img onclick="return false" class="bj" src="http://img.zntec.mobi/0.3108938723804029.jpg" alt="" />
+        <img class="down_btn down" src="http://img.zntec.mobi/0.568621237670923.png" alt="">
         <div class="banben"><span style="font-size:14px">北京智道未来网络科技有限公司版权所有</span><br>
             <span style="transform:scale(0.5)">地址：昌平区东小口镇立汤路179号院1号楼</span><br>
             <span style="transform:scale(0.5)">联系电话：13907550120</span></div>
     </div>
 </div>
-<img class="down_btn down" src="http://img.zntec.mobi/0.568621237670923.png" alt="">
 
 <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="//img.zntec.mobi/javascripts/yushan_zs_min.js"></script>
