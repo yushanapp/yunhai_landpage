@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title></title>
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+        body,
+        p,
+        input,
+        h1,
+        h2,
+        h3,
+        h4,
+        ul,
+        li,
+        dl,
+        dt,
+        dd,
+        form {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            vertical-align: middle;
+        }
+        .logo {
+            width: 25%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 200;
+        }
+        img {
+            display: block;
+        }
+
+        body {
+            font-family: '微软雅黑', 'Arial';
+            font-size: 0.9em;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            min-width: 320px;
+            max-width: 640px;
+            position: relative;
+            overflow: hidden;
+            background: white;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .home_wrap {
+            width: 100%;
+            height: 100%;
+            flex: 1;
+            margin: 0 auto;
+            cursor: pointer;
+            position: absolute;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .box {
+            width: 100%;
+            position: relative;
+        }
+
+        .home_wrap img.bj {
+            width: 100%;
+        }
+        .banben {
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            color: black;
+            position: absolute;
+            bottom: 0%;
+            -webkit-transform: scale(0.7);
+            z-index: 99;
+        }
+        .down_btn{
+            position: absolute;
+            width: 58%;
+            height: 9%;
+            bottom: 25%;
+            right: 0;
+            z-index: 2000;
+            left: 0;
+            margin: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="home_wrap">
+    <div class="box">
+        <img
+                class="logo"
+                src="http://img.zntec.mobi//logo/black_zhidaozhushou.png"
+                alt=""
+        />
+        <img onclick="return false" class="bj" src="http://img.zntec.mobi/0.3108938723804029.jpg" alt="" />
+        <img class="down_btn down" src="http://img.zntec.mobi/0.568621237670923.png" alt="">
+        <div class="banben"><span style="font-size:14px">北京智道未来网络科技有限公司版权所有</span><br>
+            <span style="transform:scale(0.5)">地址：昌平区东小口镇立汤路179号院1号楼</span><br>
+            <span style="transform:scale(0.5)">联系电话：13907550120</span></div>
+    </div>
+</div>
+
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//img.zntec.mobi/javascripts/yushan_zs_min.js"></script>
+
+<script>
+    var n = '10037652';
+    var idApk = '';
+    function GetQueryString(name)
+    {
+        var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if(r!=null)return  unescape(r[2]); return null;
+    }
+    $(".down").click(function(){
+        n = GetQueryString('id');
+        if(n == null || n == ''){
+            n = '10037652'
+        }
+        idApk = 'https://misc.wcd.qq.com/app?packageName=com.yuewen.cooperate.reader.free&channelId='+n;
+        window.location.href = idApk;
+    });
+    new _yushan.dl_info({
+        url: "",
+        dlbutton: [".down"]
+    });
+</script>
+</body>
+
+</html>
