@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title></title>
+    <style>
+        fieldset,img{border:0}
+        a{text-decoration:none;color:#000;outline:none}
+        li{list-style:none}
+        h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+        input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
+        input,button,textarea,select{*font-size:100%}
+        .clear:after{
+            display:block;
+            content:"clear";
+            height:0;
+            clear:both;
+            visibility:hidden;
+        }
+        .clear{zoom:1;}
+        /************************rewrite******************************************/
+        html,body{
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height:100%;
+            position: relative;
+            min-width: 320px;
+            max-width: 840px;
+            margin:0 auto;
+            /*height: 100%;*/
+        }
+        .all{
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            -webkit-overflow-scrolling : touch;
+            position: relative;
+        }
+        .box {
+            width:100%;
+            margin-bottom: 10%;
+
+            position: relative;
+        }
+        .a2{
+            display: table;
+            width: 100%;
+            height: auto;
+        }
+        .banben{
+            z-index: 111;
+            width: 100%;
+            color: #000;
+            text-align: center;
+            position: absolute;
+            bottom: 1%;
+            font-size: .4rem;
+            -webkit-transform: scale(0.7);
+        }
+        .btn_dow{
+            position: absolute;
+            z-index: 999;
+            width: 100%;
+            bottom: 0%;
+        }
+        .btnDown {
+            width: 60%;
+            height: 8%;
+            position: absolute;
+            bottom: 2%;
+            z-index: 1000;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="all">
+    <div class="box">
+        <img class="hei" style="position: absolute;left: 0;top: 0;width:7%;z-index: 99999;" src="http://img.zntec.mobi//logo/black_zhidaozhushou.png"/>
+        <img src="http://img.zntec.mobi/0.2391716126829091.jpg" class="a2 down"  alt="" />
+        <img src="http://img.zntec.mobi/0.05041805361041263.jpg" class="a2 down"  alt="" />
+        <img src="http://img.zntec.mobi/0.14264298478920234.jpg" class="a2 down"  alt="" />
+        <img src="http://img.zntec.mobi/0.6129990464576729.jpg" class="a2 down"  alt="" />
+        <img src="http://img.zntec.mobi/0.2064960658125321.jpg" class="a2 down"  alt="" />
+        <div class="banben down">
+                <span style="font-size:14px">北京智道未来网络科技有限公司版权所有</span><br>
+            <span style="transform:scale(0.5)">地址：昌平区东小口镇立汤路179号院1号楼</span><br>
+            <span style="transform:scale(0.5)">联系电话：13907550120</span>
+        </div>
+    </div>
+</div>
+<img src="http://img.zntec.mobi/0.12679928926231865.png" alt="" class="btn_dow">
+<div class="btnDown"></div>
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//img.zntec.mobi/javascripts/yushan_zs_min.js"></script><script src="./dl.min.js"></script>
+<script>
+  $('.btnDown').click(function () {
+        window.location.href=btndown;
+        event.defaultPrevented
+    });
+    new _yushan.dl_info({
+        url :'',
+        dlbutton: ['.btnDown']
+    });
+
+
+</script>
+</body>
+</html>
