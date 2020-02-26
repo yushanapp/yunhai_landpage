@@ -1,0 +1,34 @@
+body{background: #f5f5f5;}
+header{
+	background: -webkit-linear-gradient(left, #e242fe , #f8509d); /* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(right, #e242fe, #f8509d); /* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(right, #e242fe, #f8509d); /* Firefox 3.6 - 15 */
+	background: linear-gradient(to right, #e242fe , #f8509d); /* 标准的语法 */
+}
+header .addres{width: 6%;}
+header .logo{width: 25%;}
+.wrap:after{content: "";display: block;height:0;clear:both;visibility: hidden;}
+/* .ui-header{line-height: 1.3rem;} */
+.list li{background: #fff;}
+.list li .w23{float: left;margin-right: 0.1rem;}
+.list li .w23:nth-child(3n){margin-right: 0;}
+.list li .w23 img{width: 100%;height: 100%;}
+.list li .w52{display: block;background: #fb5290;margin:.4rem auto 0;display: flex;align-items: center;justify-content: center;}
+.list li .tong{background: #41d9de}
+.list li .qin{background: #fab140}
+.list li .zai{background: #d04b8c;color: #24fe00;}
+.list li .fl a{padding:0.05rem 0.15rem;font-size: 0.22rem;}
+.list li .fl a img{width: 6%;position: relative;top: -0.03rem;}
+.w10 img{width: 100%;height: 100%;}
+footer{background: #fff;padding-bottom: 2.0rem;}
+footer p{font-size: 0.24rem;line-height: 160%;}
+
+.di_piao{position: fixed;left: 0;bottom: 0rem;background: #fff;-moz-box-shadow:0px 0px 13px #FAA5BC; -webkit-box-shadow:0px 0px 13px #FAA5BC; box-shadow:0px 0px 13px #FAA5BC;}
+.di_piao .w17{display: block;background: #e242fe;line-height: 0.6rem;}
+.di_piao .w38{font-size: 0.24rem;color: #656364;line-height: 160%;}
+.di_piao .w38 span{font-size: 0.4rem;color: #fb3499;}
+.debox{position:fixed;left:10%; top:200px; width:80%; height:auto; border-radius:15px; background:#fff;box-shadow:0 0 10px #ccc ; }
+.debox-title{  border-bottom: solid #eee 1px; padding:20px; font-size:18px; color:#515151}
+.debox-bottom  { text-align:center;}
+.debox-bottom a{ font-size:16px; color:#0b67f9; display:block;padding:15px 0; text-align:center; width:50%; float:left; }
+.debox-bottom a#down{ border-left:solid #eee 1px; margin-left:-1px;}

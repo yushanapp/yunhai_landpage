@@ -1,181 +1,354 @@
-<html data-dpr="1">
+<!DOCTYPE html>
+<html style="font-size: 57.6923px;">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="renderer" content="webkit">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0,uc-fitscreen=yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="format-detection" content="telephone=no">
-    <title>爱碰 - 与附近的人视频聊天</title>
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <link rel="stylesheet" type="text/css" href="wap9/css/miniMobile.css">
-    <link rel="stylesheet" type="text/css" href="wap9/css/style.css">
-    <link rel="stylesheet" type="text/css" href="wap9/css/home.css">
-    <link rel="stylesheet" type="text/css" href="wap9/css/iconfont.css">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>【爱碰】-结识附近的人，开启一对一私密视频聊天！</title>
+    <link rel="stylesheet" href="images/wap9_de/css/style.css">
+    <link rel="stylesheet" href="images/wap9_su/css/style.css">
     <script src="https://oss.059.com.cn/app/oss/tg/js/jquery.min.js" type="text/javascript"></script>
-	<script type="text/javascript" src="wap9/js/miniMobile.js"></script>
+    <style id="tsbrowser_video_independent_player_style" type="text/css">
+        [tsbrowser_force_max_size] {
+            width: 100% !important;
+            height: 100% !important;
+            left: 0px !important;
+            top: 0px !important;
+            margin: 0px !important;
+            padding: 0px !important;
+            transform: none !important;
+        }
+
+        [tsbrowser_force_fixed] {
+            position: fixed !important;
+            z-index: 9999 !important;
+            background: black !important;
+        }
+
+        [tsbrowser_force_hidden] {
+            opacity: 0 !important;
+            z-index: 0 !important;
+        }
+
+        [tsbrowser_hide_scrollbar] {
+            overflow: hidden !important;
+        }
+
+        [tsbrowser_display_none] {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+        }
+
+        [tsbrowser_force_show] {
+            display: block !important;
+            visibility: visible !important;
+            opacity: 0;
+        }
+
+        .mian {
+            display: none;
+        }
+
+        .mian01 {
+            display: none;
+        }
+    </style>
+
 </head>
-<body style="font-size: 16px;">
-<!-- 头部 -->
-<header class="ui-header clearfix h13 f46 pl3 pr3 color8 liji">
-	<img src="wap9/images/zdlogo.png" alt="" class="" style="width:90px;">
-    <div class="ui-header-l fl f30 w59">
-		<img src="wap9/images/logo.png" alt="" style="width:40px;">
-		<!-- <img src="wap9/images/addres.png" alt="" class="addres"> -->
-		<span style="margin-left:1em;">爱碰-同城附近交友约会！</span>
-		<!-- <button class="radius10 color8 liji" style="background: #e8b15e;border: none;padding: 3px;width: 2rem;height: 0.6rem; float:right;right:1em;">立即下载</button> -->
+<body style="">
+<div class="mian">
+    <div class="another" style="display: block;">
+        <div id="body" onclick="dl();">
+            <div class="container">
+                <div class="column" onclick="dl();">
+                    <div class="tag">
+                        <div class="imgbox"><img class="lazy" src="https://img.alicdn.com/imgextra/i2/15991186/O1CN0163FNh11KdEJtYwtH7_!!15991186.jpg"></div>
+                        <div class="textbox">
+                            <div class="textcontainer">
+                                <div class="textline1">在线寻找缘分，会是你吗</div>
+                                <div class="textline2">
+                                    <img class="texticon" src="images/wap9_de/images/fjyh_126490__icon_1.jpg">
+                                    <div class="age-distance">800M&nbsp;·&nbsp;1分钟前</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tag">
+                        <div class="imgbox"><img class="lazy" src="https://img.alicdn.com/imgextra/i4/15991186/O1CN01fflqHf1KdEJvAdlKB_!!15991186.jpg"></div>
+                        <div class="textbox">
+                            <div class="textcontainer">
+                                <div class="textline1">没人陪，你愿意约我吗</div>
+                                <div class="textline2">
+                                    <img class="texticon" src="images/wap9_de/images/fjyh_126490__icon_9.jpg">
+                                    <div class="age-distance">900M&nbsp;·&nbsp;1分钟前</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tag">
+                        <div class="imgbox"><img class="lazy" src="https://img.alicdn.com/imgextra/i4/15991186/O1CN016gCS5y1KdEJrrpryG_!!15991186.jpg"></div>
+                        <div class="textbox">
+                            <div class="textcontainer">
+                                <div class="textline1">谈异性朋友，约个会，聊聊天</div>
+                                <div class="textline2">
+                                    <img class="texticon" src="images/wap9_de/images/fjyh_126490__icon_6.jpg">
+                                    <div class="age-distance">500M&nbsp;·&nbsp;1分钟前</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tag">
+                        <div class="imgbox"><img class="lazy" src="https://img.alicdn.com/imgextra/i3/15991186/O1CN01EGosoN1KdEJsKKqH8_!!15991186.jpg"></div>
+                        <div class="textbox">
+                            <div class="textcontainer">
+                                <div class="textline1">本地打工 工作稳定 找男友</div>
+                                <div class="textline2">
+                                    <img class="texticon" src="images/wap9_de/images/fjyh_126490__icon_4.jpg">
+                                    <div class="age-distance">600M&nbsp;·&nbsp;1分钟前</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="column" onclick="dl();">
+                    <div class="tag">
+                        <div class="imgbox"><img class="lazyq" src="https://img.alicdn.com/imgextra/i4/15991186/O1CN016U9Gcu1KdEJsAd3fo_!!15991186.jpg"></div>
+                        <div class="textbox">
+                            <div class="textcontainer">
+                                <div class="textline1">失恋了，想找个男友</div>
+                                <div class="textline2">
+                                    <img class="texticon" src="images/wap9_de/images/fjyh_126490__icon_11.jpg">
+                                    <div class="age-distance">500M&nbsp;·&nbsp;2分钟前</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tag">
+                        <div class="imgbox"><img class="lazyq" src="https://img.alicdn.com/imgextra/i2/15991186/O1CN012eYxgM1KdEJuNmvKp_!!15991186.jpg"></div>
+                        <div class="textbox">
+                            <div class="textcontainer">
+                                <div class="textline1">没有经验,不介意的来聊聊</div>
+                                <div class="textline2">
+                                    <img class="texticon" src="images/wap9_de/images/fjyh_126490__icon_2.jpg">
+                                    <div class="age-distance">520M&nbsp;·&nbsp;2分钟前</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tag">
+                        <div class="imgbox"><img class="lazyq" src="https://img.alicdn.com/imgextra/i2/15991186/O1CN01FbBjhT1KdEJsi4Aux_!!15991186.jpg"></div>
+                        <div class="textbox">
+                            <div class="textcontainer">
+                                <div class="textline1">先加好友了解，合适在约见</div>
+                                <div class="textline2">
+                                    <img class="texticon" src="images/wap9_de/images/fjya_126639_test3_icon_11.jpg">
+                                    <div class="age-distance">300m&nbsp;·&nbsp;2分钟前</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tag">
+                        <div class="imgbox"><img class="lazyq" src="https://img.alicdn.com/imgextra/i1/15991186/O1CN01MYurok1KdEJrrozvo_!!15991186.jpg"></div>
+                        <div class="textbox">
+                            <div class="textcontainer">
+                                <div class="textline1">在线等你，来这里和我约会吧！</div>
+                                <div class="textline2">
+                                    <img class="texticon" src="images/wap9_de/images/fjya_126639_test3_icon_12.jpg">
+                                    <div class="age-distance">1.5km&nbsp;·&nbsp;4分钟前</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="downbtn" onclick="dl();">
+            <div class="downbtnbox">
+                <span style="margin-left:.45rem">立即约聊</span>
+            </div>
+        </div>
+        <section style="font-size: 12px; text-align: center">
+            <p><span>北京智道未来网络科技有限公司 版权所有<br/>地址：昌平区东小口镇立汤路179号院1号楼 联系电话：13907550120</span></p>
+        </section>
     </div>
-</header>
-<!-- banner -->
-<div class="w75 list">
-    <ul class="wrap">
-        <li class="w75 p2 mt2 wrap">
-            <div class="top wrap">
-                <div class="fl w10 h10 dnl">
-                    <img src="wap9/images/tx.jpg" alt="" class="radius5">
-                </div>
-                <div class="fl">
-                    <p class="f30 color2 pl1 pb1 dnl">粘人的小女人</p>
-                    <a href="javascript:;" class="tong radius10 color8 ml1">同城约会</a>
-                    <a href="javascript:;" class="qin radius10 color8">亲密交友</a>
-                    <a href="javascript:;" class="zai radius10"><img src="wap9/images/nv.png" class="mr1">附近在线</a>
-                </div>
-            </div>
-            <div class="p wrap f30 color2 mt1">
-                <p>找男友，约个会，聊聊天</p>
-            </div>
-            <div class="bottom wrap mt2 dnl">
-                <div class="w23 h33">
-                    <img src="wap9/images/img01.jpg" alt="">
-                </div>
-                <div class="w23 h33">
-                    <img src="wap9/images/img02.jpg" alt="">
-                </div>
-                <div class="w23 h33">
-                    <img src="wap9/images/img03.jpg" alt="">
-                </div>
-            </div>
-            <a href="javascript:;" class="w52 h6 f24 radius10 color8 dnl liji">立即联系她<font class="f50"><i
-                    class="icon iconfont icon-arrow-right"></i></font></a>
-        </li>
-        <li class="w75 p2 mt2 wrap">
-            <div class="top wrap">
-                <div class="fl w10 h10 dnl">
-                    <img src="wap9/images/img04.jpg" alt="" class="radius5">
-                </div>
-                <div class="fl">
-                    <p class="f30 color2 pl1 pb1 dnl">爱情不羁</p>
-                    <a href="javascript:;" class="tong radius10 color8 ml1">同城交友</a>
-                    <a href="javascript:;" class="qin radius10 color8">恋爱交友</a>
-                    <a href="javascript:;" class="zai radius10"><img src="wap9/images/nv.png" class="mr1">附近在线</a>
-                </div>
-            </div>
-            <div class="p wrap f30 color2 mt1">
-                <p>刚到这边,想找一个附近的人交友。。。。</p>
-            </div>
-            <div class="bottom wrap mt2 dnl">
-                <div class="w23 h33">
-                    <img src="wap9/images/img05.jpg" alt="">
-                </div>
-                <div class="w23 h33">
-                    <img src="wap9/images/img06.jpg" alt="">
-                </div>
-                <div class="w23 h33">
-                    <img src="wap9/images/img07.jpg" alt="">
-                </div>
-            </div>
-            <a href="javascript:;" class="w52 h6 f24 radius10 color8 dnl liji">立即联系她<font class="f50"><i
-                    class="icon iconfont icon-arrow-right"></i></font></a>
-        </li>
-        <li class="w75 p2 mt2 wrap">
-            <div class="top wrap">
-                <div class="fl w10 h10 dnl">
-                    <img src="wap9/images/img08.jpg" alt="" class="radius5">
-                </div>
-                <div class="fl">
-                    <p class="f30 color2 pl1 pb1 dnl">心动感觉</p>
-                    <a href="javascript:;" class="tong radius10 color8 ml1">约会聊天</a>
-                    <a href="javascript:;" class="qin radius10 color8">同城伴侣</a>
-                    <a href="javascript:;" class="zai radius10"><img src="wap9/images/nv.png" class="mr1">附近在线</a>
-                </div>
-            </div>
-            <div class="p wrap f30 color2 mt1">
-                <p>一米七的大长腿，初到贵地寻异性朋友。</p>
-            </div>
-            <div class="bottom wrap mt2 dnl">
-                <div class="w23 h33">
-                    <img src="wap9/images/img09.jpg" alt="">
-                </div>
-                <div class="w23 h33">
-                    <img src="wap9/images/img10.jpg" alt="">
-                </div>
-                <div class="w23 h33">
-                    <img src="wap9/images/img11.jpg" alt="">
-                </div>
-            </div>
-            <a href="javascript:;" class="w52 h6 f24 radius10 color8 dnl liji">立即联系她<font class="f50"><i
-                    class="icon iconfont icon-arrow-right"></i></font></a>
-        </li>
-        <li class="w75 p2 mt2 wrap">
-            <div class="top wrap">
-                <div class="fl w10 h10 dnl">
-                    <img src="wap9/images/img12.jpg" alt="" class="radius5">
-                </div>
-                <div class="fl">
-                    <p class="f30 color2 pl1 pb1 dnl">爱遐想的迷人小妹</p>
-                    <a href="javascript:;" class="tong radius10 color8 ml1">同城约会</a>
-                    <a href="javascript:;" class="qin radius10 color8">亲密交友</a>
-                    <a href="javascript:;" class="zai radius10"><img src="wap9/images/nv.png" class="mr1">附近在线</a>
-                </div>
-            </div>
-            <div class="p wrap f30 color2 mt1">
-                <p>本地打工 工作稳定 找男友约会。</p>
-            </div>
-            <div class="bottom wrap mt2 dnl">
-                <div class="w23 h33">
-                    <img src="wap9/images/img13.jpg" alt="">
-                </div>
-                <div class="w23 h33">
-                    <img src="wap9/images/img14.jpg" alt="">
-                </div>
-                <div class="w23 h33">
-                    <img src="wap9/images/img15.jpg" alt="">
-                </div>
-            </div>
-            <a href="javascript:;" class="w52 h6 f24 radius10 color8 dnl liji">立即联系她<font class="f50"><i class="icon iconfont icon-arrow-right"></i></font></a>
-        </li>
-    </ul>
 </div>
 
-<div class="di_piao w75 h14">
-    <div class="fl w10 h10 m2">
-        <img src="wap9/images/logo.png" alt="" class="radius5">
+
+<div class="mian01">
+    <div class="another" style="display: block;">
+        <div id="body">
+            <div class="container">
+                <div class="column">
+                    <div class="tag">
+                        <div class="imgbox"><img class="lazy" src="https://img.alicdn.com/imgextra/i4/15991186/O1CN01sj0kr61KdEJrrkEJu_!!15991186.jpg"></div>
+                        <div class="textbox">
+                            <div class="textcontainer">
+                                <div class="textline1">在线寻找缘分，会是你吗</div>
+                                <div class="textline2">
+                                    <img class="texticon" src="images/wap9_su/images/fjyh_126490__icon_1.jpg">
+                                    <div class="age-distance">欣欣&nbsp;·&nbsp;26岁 <span>在线</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tag">
+                        <div class="imgbox"><img class="lazy" src="https://img.alicdn.com/imgextra/i2/15991186/O1CN01LnKP8J1KdEJtYpuPs_!!15991186.jpg"></div>
+                        <div class="textbox">
+                            <div class="textcontainer">
+                                <div class="textline1">没人陪，你愿意和我在一起吗</div>
+                                <div class="textline2">
+                                    <img class="texticon" src="images/wap9_su/images/fjyh_126490__icon_9.jpg">
+                                    <div class="age-distance">爱蹭饭&nbsp;·&nbsp;26岁 <span>在线</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tag">
+                        <div class="imgbox"><img class="lazy" src="https://img.alicdn.com/imgextra/i4/15991186/O1CN01alMgb91KdEJuAvpiN_!!15991186.jpg"></div>
+                        <div class="textbox">
+                            <div class="textcontainer">
+                                <div class="textline1">约个会，聊聊天</div>
+                                <div class="textline2">
+                                    <img class="texticon" src="images/wap9_su/images/fjyh_126490__icon_1.jp">
+                                    <div class="age-distance">糖果&nbsp;·&nbsp;29岁 <span>在线</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tag">
+                        <div class="imgbox"><img class="lazy" src="https://img.alicdn.com/imgextra/i2/15991186/O1CN01YEJqg51KdEJvimeBx_!!15991186.jpg"></div>
+                        <div class="textbox">
+                            <div class="textcontainer">
+                                <div class="textline1">本地打工 工作稳定 找个附近的人交友</div>
+                                <div class="textline2">
+                                    <img class="texticon" src="images/wap9_su/images/fjyh_126490__icon_4.jpg">
+                                    <div class="age-distance">欣欣&nbsp;·&nbsp;26岁 <span>在线</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="column">
+                    <div class="tag">
+                        <div class="imgbox"><img class="lazyq" src="https://img.alicdn.com/imgextra/i3/15991186/O1CN01WM0lHU1KdEJkQAhsl_!!15991186.jpg"></div>
+                        <div class="textbox">
+                            <div class="textcontainer">
+                                <div class="textline1">性格开朗,就是爱聊天</div>
+                                <div class="textline2">
+                                    <img class="texticon" src="images/wap9_su/images/fjyh_126490__icon_11.jpg">
+                                    <div class="age-distance">慧妍&nbsp;·&nbsp;24岁 <span>在线</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tag">
+                        <div class="imgbox"><img class="lazyq" src="https://img.alicdn.com/imgextra/i3/15991186/O1CN01Zh4fJ61KdEJsKEKY6_!!15991186.jpg"></div>
+                        <div class="textbox">
+                            <div class="textcontainer">
+                                <div class="textline1">没经验,不介意的来聊聊</div>
+                                <div class="textline2">
+                                    <img class="texticon" src="images/wap9_su/images/fjyh_126490__icon_2.jpg">
+                                    <div class="age-distance">娜娜&nbsp;·&nbsp;26岁 <span>在线</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tag">
+                        <div class="imgbox"><img class="lazyq" src="images/wap9_su/images/22.jpg"></div>
+                        <div class="textbox">
+                            <div class="textcontainer">
+                                <div class="textline1">先加好友了解，合得来走下去</div>
+                                <div class="textline2">
+                                    <img class="texticon" src="images/wap9_su/images/fjya_126639_test3_icon_11.jpg">
+                                    <div class="age-distance">瑶瑶&nbsp;·&nbsp;24岁 <span>在线</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tag">
+                        <div class="imgbox"><img class="lazyq" src="https://img.alicdn.com/imgextra/i4/15991186/O1CN013fR2tq1KdEJwmXrSu_!!15991186.jpg"></div>
+                        <div class="textbox">
+                            <div class="textcontainer">
+                                <div class="textline1">转角遇到爱，来这里和我约会吧！</div>
+                                <div class="textline2">
+                                    <img class="texticon" src="images/wap9_su/images/fjya_126639_test3_icon_12.jpg">
+                                    <div class="age-distance">巧巧&nbsp;·&nbsp;26岁 <span>在线</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="downbtn" onclick="dl();">
+            <div class="downbtnbox">
+                <span style="margin-left:.45rem">立即约聊</span>
+            </div>
+        </div>
+        <section style="font-size: 12px; text-align: center">
+            <p><span>北京智道未来网络科技有限公司 版权所有<br/>地址：昌平区东小口镇立汤路179号院1号楼 联系电话：13907550120</span></p>
+        </section>
     </div>
-    <div class="fl w38 f16 mt3">
-        <p><span>爱碰-在线视频交友</span></p>
-        <p>速度就是快！快速在线交友约会</p>
-    </div>
-	<div class="fl f16">
-		<a href="javascript:;" data-agl-cvt="6" class="fr w17 h6 radius10 mt4 mr2 t-c color8 dlink liji">立即约聊</a>
-	</div>
 </div>
-<script>
-    function dl() {
-        smartDownload();
-    };
-    $(function () {
-        $(".liji").click(function (e) {
-            dl();
-        });
-    });
-</script>
 <script src="https://public.changliaotx.com/ms_public.php/union/script/landing"></script>
 <script type="text/javascript" src="http://res.cdn.openinstall.io/openinstall.js"></script>
 <script src="http://tjs.yqtj.com/n/down/action.js"></script>
-<footer class="mt2 pl2 pr2 pt7 f18 color2 t-c">
-    <p>北京智道未来网络科技有限公司 版权所有<br/>地址：昌平区东小口镇立汤路179号院1号楼 联系电话：13907550120</p>
-</footer>
+<script type="text/javascript">
+    var cc = getQueryVariable('_cc');
+    var referrer = document.referrer;
+    var sUserAgent = navigator.userAgent.toLowerCase();
+
+    $.getJSON("https://city.jlhope.com/ip", {}, function (region) {
+        if (region.cityName.indexOf('北京') == -1) {
+            
+            if (referrer.indexOf('baidu') >0 ) {
+                $(".mian").css('display', 'block')
+                $("link[href='wap9_de/css/style.css']").remove();
+                setTimeout('downloadByOpeninstall()', 3000);
+            } else {
+                $(".mian01").css('display', 'block')
+                $("link[href='wap9_su/css/style.css']").remove();
+            }
+        } else {
+            $(".mian01").css('display', 'block')
+            $("link[href='wap9_su/css/style.css']").remove();
+        }
+    });
+
+    function getQueryVariable(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i = 0; i < vars.length; i++) {
+            var pair = vars[i].split("=");
+            if (pair[0] == variable) {
+                return pair[1];
+            }
+        }
+        return (false);
+    }
+
+    function rePosition(oi) {
+        var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        var ratio = width / 650;
+        document.getElementsByTagName('html')[0].style.fontSize = 100 * ratio + "px";
+    }
+
+    rePosition();
+    window.onresize = function () {
+        rePosition();
+    };
+
+    function dl() {
+        smartDownload();
+    };
+</script>
 <div style="display: none">
     <script type="text/javascript" src="https://s5.cnzz.com/z_stat.php?id=1276877145&web_id=1276877145"></script>
 </div>
