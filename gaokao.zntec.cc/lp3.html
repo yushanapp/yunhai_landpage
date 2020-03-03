@@ -32,16 +32,16 @@
             list-style: none;
             vertical-align: middle;
         }
-        
+
         img {
             display: block;
         }
-        
+
         body {
             font-family: '微软雅黑', 'Arial';
             font-size: 0.9em;
         }
-        
+
         html,
         body {
             width: 100%;
@@ -53,7 +53,7 @@
             overflow: hidden;
             background: white;
         }
-        
+
         .home_wrap {
             width: 100%;
             height: 100%;
@@ -63,16 +63,16 @@
             overflow: auto;
             -webkit-overflow-scrolling: touch;
         }
-        
+
         .box {
             width: 100%;
             position: relative;
         }
-        
+
         .home_wrap img.bj {
             width: 100%;
         }
-        
+
         .btn_img {
             width: 50%;
             position: absolute;
@@ -82,7 +82,7 @@
             margin: auto;
             z-index: 999;
         }
-        
+
         .banben {
             width: 100%;
             text-align: center;
@@ -103,7 +103,7 @@
         <div class="box">
             <img style="position: absolute;left:0%;top:-7px;width:16%;z-index:10;" class="bai" src="http://test.myushan.com//logo/black_zhiniao.png" />
             <img onclick="return false" class="bj" src="http://test.myushan.com/0.1543822919150828.jpg" alt="" />
-            <div class="banben"><span style="font-size:14px">北京智鸟科技有限公司版权所有</span><br>
+            <div class="banben"><span style="font-size:14px">北京智鸟科技有限公司版权所有<br><span><a href="http://www.beian.miit.gov.cn">京ICP备16054220号-1</a></span></span><br>
             <span style="transform:scale(0.5)">地址：海淀区交大东路66号院2号楼</span>
             <span style="transform:scale(0.5)">联系电话：13907550120</span></div>
         </div>
@@ -115,7 +115,7 @@
     <script>
         $(function() {
             $('.btn_img').click(function() {
-                
+
                 window.location.href = btndown;
                 event.defaultPrevented
             });

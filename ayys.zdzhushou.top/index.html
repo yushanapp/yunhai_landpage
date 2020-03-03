@@ -118,7 +118,7 @@
 function getParams(defaultParams) {
 	params = window.location.search.slice(1);
 	var reg = /.+=.+(&.+=.+)*$/gi;
-	
+
 	if (reg.test(params)) {
 		params = params.split('&');
 		params = params.reduce(function(obj, item) {
@@ -130,7 +130,7 @@ function getParams(defaultParams) {
 	if(params.hasOwnProperty('keyword')){
 		return params;
 	}
-	
+
 	if (defaultParams) {
 		return params = defaultParams;
 	}
@@ -223,7 +223,7 @@ function jumptoNewUrl(){
 	</script>
 	<div class="bottom">
 		<footer style="text-align: center;transform: scale(0.7);margin-top: -10px;">
-			<p>北京智道未来网络科技有限公司版权所有</p>
+			<p>北京智道未来网络科技有限公司版权所有<br><span><a href="http://www.beian.miit.gov.cn">京ICP备15031264号-1</a></span></p>
 			<p>地址：昌平区东小口镇立汤路179号院1号楼</p>
 			<p>联系电话：18610650668</p>
 		</footer>

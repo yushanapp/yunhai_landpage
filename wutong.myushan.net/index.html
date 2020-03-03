@@ -14,7 +14,7 @@
              "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
              SimSun, sans-serif;
              color: #333;
-		}         
+		}
 		.image-box {
 			max-width: 750px;
 			margin: 0 auto;
@@ -38,7 +38,7 @@
             padding: 8px 34px;
             border-radius: 100px;
             font-weight: bold;
-            font-size: 16px; 
+            font-size: 16px;
 			color: #fff;
 		}
 		.footer{
@@ -47,7 +47,7 @@
 			padding: 8px 0;
 		}
 
-	</style> 
+	</style>
 	<body>
 		<div class="container">
 			<div class="image-box">
@@ -60,7 +60,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="footer"><span style="font-size:12px">北京智投智道投资咨询有限公司版权所有</span><br> <span style="transform:scale(0.5)">地址：昌平区昌崔路198号院2号楼</span><br> <span style="transform:scale(0.5)">联系电话：15010903351</span></div>
+		<div class="footer"><span style="font-size:12px">北京智投智道投资咨询有限公司版权所有<br><span><a href="http://www.beian.miit.gov.cn">京ICP备15010702号-1</a></span></span><br> <span style="transform:scale(0.5)">地址：昌平区昌崔路198号院2号楼</span><br> <span style="transform:scale(0.5)">联系电话：15010903351</span></div>
 	</body>
 	<script type="text/javascript">
 		  $(function () {
@@ -77,8 +77,8 @@
                     wqsrc = Request['wqsrc'];
                 }
             };
-             
-            $('#download').on('click', function () {                
+
+            $('#download').on('click', function () {
 	            if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
 	                window.location.href ="#";
 	            }else {
@@ -91,10 +91,10 @@
 						dataType: 'jsonp',
 						crossDomain: true,
 						success: function(data) {
-							console.log(data.url);							
-							window.location.href =data.url;							
+							console.log(data.url);
+							window.location.href =data.url;
 						}
-					})										
+					})
 	            }
              })
         });
