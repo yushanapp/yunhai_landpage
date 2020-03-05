@@ -127,7 +127,7 @@
             /*border: 1px solid red;*/
         }
     </style>
-    
+
     <script src="http://pv.sohu.com/cityjson"></script>
 </head>
 <body style="background: #fff">
@@ -150,7 +150,7 @@
 </div>
 
 <img src="img/momo0124010.png" alt="" class="btndow1">
-<img src="http://test.myushan.com//momo/momo0124011.png" alt="" class="btndow2">
+<img src="http://img.zntec.mobi//momo/momo0124011.png" alt="" class="btndow2">
 <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 <!--<script src="http://cdn.bootcss.com/jquery_lazyload/1.9.6/jquery.lazyload.min.js"></script>-->
 <script src="/javascripts/next_ys_1.2.1.js"></script>
@@ -174,7 +174,7 @@
         });
 </script>-->
 <script>
-	APK_url="https://web.hablm.com/ksbrss/300094.apk";		
+	APK_url="https://web.hablm.com/ksbrss/300094.apk";
 	// 区分安卓ios
 	var u = navigator.userAgent;
 	var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
@@ -186,12 +186,12 @@
 	$(".btndow2").click(function(e){
 		var fromchannel="3022020";//渠道包号
 	var p_date={"ip_address":returnCitySN["cip"],"fromchannel":fromchannel};
-	 $.ajax({ 		
-		 type : "POST", 
+	 $.ajax({
+		 type : "POST",
 		 url : "http://as.yshizr.cn:9800/system/iosiprecord",
 		 data : p_date,
 		 success:function(msg){
-			//alert(JSON.stringify(msg)); 
+			//alert(JSON.stringify(msg));
 		 }
 	});
 		window.location.href=APK_url;

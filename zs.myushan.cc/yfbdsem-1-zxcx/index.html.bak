@@ -69,7 +69,7 @@
 	<body style="">
 		<div class="zx-logo">
 			<img src="./lp1/head_body.png">
-			<img style="position: absolute;left: 0;top: 0;width:70px;z-index:200;" src="http://test.myushan.com//yushan/logo_black.png"/>
+			<img style="position: absolute;left: 0;top: 0;width:70px;z-index:200;" src="http://img.zntec.mobi//yushan/logo_black.png"/>
 			<!-- <h1>信用管家-征信查询</h1>
 			<span class="zx-desc">权威信用查询帮手</span> -->
 			<button class="submit-btn" id="submit-btn1">立即查询</button>
