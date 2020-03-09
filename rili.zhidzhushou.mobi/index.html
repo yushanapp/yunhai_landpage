@@ -1,0 +1,183 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body,
+        html {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            min-width: 320px;
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 15%;
+            z-index: 9999;
+        }
+
+        .box {
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .box1 {
+            position: relative;
+            width: 100%;
+            height: auto;
+            padding-bottom:150px ;
+        }
+
+        .car_img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        /* 缩放动画*/
+
+        @-webkit-keyframes slipUp {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .fontsize {
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            position: absolute;
+            bottom: 160px;
+            color: white;
+            -webkit-transform: scale(0.6);
+            z-index: 1;
+        }
+
+        .bottom {
+            width: 100%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+        }
+        .btn{
+            position: absolute;
+            width: 37%;
+            /* height: 10%; */
+            z-index: 2001;
+            bottom: 1.2%;
+            right: 4%;
+            position: absolute;
+            height: 78%;
+            /* background: red; */
+
+
+        }
+        .btn1{
+            position: absolute;
+            width: 35%;
+
+            z-index: 2001;
+            top: 18.8%;
+            left: 42%;
+        }
+
+        .btn_down1 {
+            width: 100%;
+            position: absolute;
+            bottom: 0%;
+            right: 0%;
+
+            z-index: 100;
+            font-size: 0;
+            /* top: 26%; */
+        }
+        .alert_show{
+            position: absolute;
+    width: 96%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 200;
+    height: 8%;
+    /* background: red; */
+    top: 27%;
+        }
+        .img{
+            width: 100%;
+        }
+        .center{
+            top: 50%;
+            left: 50%;
+            transform: translate(24%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box1">
+            <img class="logo" src="static/picture/white_zhidaozhushou.png" onclick="return false" alt="" />
+            <img class="car_img down" src="static/picture/bg1.png" onclick="return false" alt="" />
+            <img class="car_img down" src="static/picture/bg2.png" onclick="return false" alt="" />
+            <img class="car_img down" src="static/picture/bg3.png" onclick="return false" alt="" />
+            <img class="car_img down" src="static/picture/bg4.png" onclick="return false" alt="" />
+
+            <p class="fontsize banben"><span style="font-size:14px">北京智道未来网络科技有限公司版权所有<br><span><a href="http://www.beian.miit.gov.cn" target="_blank">京ICP备15031264号-1</a></span></span><br>
+            <span style="transform:scale(0.5)">地址：北京市昌平区回龙观镇回龙观西大街16号院1号楼1至6层101六层A605A室</span>
+            <span style="transform:scale(0.5)"></span></p>
+
+
+        </div>
+        <div class="btn_down1">
+            <div  class="btn center"></div>
+        <img class="img" src="static/picture/btm.jpg"/>
+        </div>
+
+    </div>
+
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/yushan_zs_min.js"></script>
+
+
+    <script>
+
+        $('.btn,.btn1').click(function() {
+            window.location.href = 'https://ad.toutiao.com/advertiser_package/dl/db704248_102423460468_1540280520091';
+            event.defaultPrevented
+        });
+        new _yushan.dl_info({
+            url: '',
+            dlbutton: ['.btn','.btn1']
+        });
+    </script>
+
+</body>
+
+</html>
