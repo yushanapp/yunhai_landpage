@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title></title>
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+        body,
+        p,
+        input,
+        h1,
+        h2,
+        h3,
+        h4,
+        ul,
+        li,
+        dl,
+        dt,
+        dd,
+        form {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            vertical-align: middle;
+        }
+        .logo {
+            width: 20%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 200;
+        }
+        img {
+            display: block;
+        }
+
+        body {
+            font-family: '微软雅黑', 'Arial';
+            font-size: 0.9em;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            min-width: 320px;
+            max-width: 640px;
+            position: relative;
+            overflow: hidden;
+            background: white;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .home_wrap {
+            width: 100%;
+            height: 100%;
+            flex: 1;
+            margin: 0 auto;
+            cursor: pointer;
+            position: absolute;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .box {
+            width: 100%;
+            position: relative;
+        }
+
+        .home_wrap img.bj {
+            width: 100%;
+        }
+        .banben {
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            color: black;
+            position: absolute;
+            bottom: 6.5%;
+            -webkit-transform: scale(0.7);
+            z-index: 99;
+        }
+        .down_btn{
+            position: absolute;
+            width: 94%;
+            height: 5%;
+            top: 13%;
+            right: 0;
+            z-index: 2000;
+            left: 0;
+            margin: auto;
+        }
+        .btm {
+            position: absolute;
+            width: 21%;
+            height: 3%;
+            bottom: 1%;
+            right: 3%;
+            z-index: 2000;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="home_wrap">
+    <div class="box">
+        <img class="hei logo"  src="http://img.zntec.mobi//logo/black_zhiniao.png"/>
+        <img onclick="return false" class="bj" src="http://img.zntec.mobi/0.6065057816157149.jpg" alt="" />
+        <div class="down_btn down"></div>
+        <div class="btm down"></div>
+        <div class="banben down"><span style="font-size:14px">北京智鸟科技有限公司版权所有<br><span><a href="http://www.beian.miit.gov.cn" target="_blank">京ICP备16054220号-1</a></span></span><br>
+            <span style="transform:scale(0.5)">地址：海淀区交大东路66号院2号楼</span><br>
+            <span style="transform:scale(0.5)">联系电话：13907550120</span></div>
+    </div>
+</div>
+
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script>
+    var idApk = '';
+    var phone = 'isAndroid';
+    var an_1 = [
+            'http://d.youxi123.top/boluobao_v4.4.56-YYSMSEM1.apk',
+            'http://d.youxi123.top/boluobao_v4.4.56-YYSMSEM2.apk',
+            'http://d.youxi123.top/boluobao_v4.4.56-YYSMSEM3.apk',
+            'http://d.youxi123.top/boluobao_v4.4.56-YYSMSEM4.apk',
+            'http://d.youxi123.top/boluobao_v4.4.56-YYSMSEM5.apk',
+            'http://d.youxi123.top/boluobao_v4.4.56-YYSMSEM6.apk',
+            'http://d.youxi123.top/boluobao_v4.4.56-YYSMSEM7.apk',
+            'http://d.youxi123.top/boluobao_v4.4.56-YYSMSEM8.apk'
+    ]
+        function GetQueryString(name)
+        {
+            var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if(r!=null)return  unescape(r[2]); return null;
+        }
+        var u = window.navigator.userAgent, app = window.navigator.appVersion;
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //g
+        var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+        if (isAndroid) {
+            phone = 'isAndroid';
+        }
+        if (isIOS) {
+            phone = '';
+        }
+        var downArray = [];
+    $(".down").click(function(){
+        n = Number(GetQueryString('id'))-1;
+        if(n == null || n == '' || !an_1[n]){
+           if(phone =='isAndroid' ){
+               downArray = an_1[0];
+           }
+        }else{
+
+            if(phone =='isAndroid' ){
+                downArray = an_1[n];
+            }
+        }
+        idApk = downArray;
+        window.location.href = idApk;
+
+    });
+</script>
+</body>
+
+</html>
