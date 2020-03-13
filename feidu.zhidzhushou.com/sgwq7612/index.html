@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>飞读免费小说</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--    <link rel="stylesheet" href="./css/common.css">-->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 20px !important;
+        }
+        .box{
+            position: relative;
+            top: 0;
+            left: 0;
+            min-width: 18rem;
+            height: 100%;
+            margin: 0 auto;
+        }
+        .box .box-cont{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height:75.2rem ;
+            background: url("./images/FlyingBG.png") no-repeat center center;
+            background-size: 100% 100%;
+        }
+    /*    下载按钮*/
+        .box .box-downBtn{
+            position: fixed;
+            left: 50%;
+            bottom: 3.075rem;
+            width: 14rem;
+            height: 3.05rem;
+            margin-left:-7rem;
+            font-size: 0.75rem;
+            background: url("./images/FlyingBtn.png") no-repeat center;
+            background-size: 14rem  3.05rem
+        }
+    </style>
+    <script>
+        var rem = 20;
+        ;(function(){
+            function changeRem(){
+                rem = 20/320*document.documentElement.clientWidth;
+                document.documentElement.style.fontSize = rem + 'px';
+            };
+            changeRem();
+            window.addEventListener('resize',function(){
+                changeRem();
+            },false)
+        })();
+    </script>
+</head>
+<body>
+<div class="box">
+    <div class="box-cont"></div>
+    <div class="box-downBtn" id="downBtn"></div>
+</div>
+<script>
+    window.onload=function(){
+        let oBtn=document.getElementById('downBtn');
+        oBtn.onclick=function(){
+            window.open('https://misc.wcd.qq.com/app?packageName=com.yuewen.cooperate.reader.free&channelId=10047612')
+        }
+    }
+</script>
+</body>
+</html>
