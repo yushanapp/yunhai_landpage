@@ -1281,11 +1281,11 @@
             y ? ($("#company").show(), $(".cp_bottom").hide(), $(".detail_btn").hide()) : g && $("#company").hide(), 
             j && "" != j && (document.querySelector("title").innerHTML = e[j], document.querySelector(".tit").innerHTML = e[j]), 
             w && "a" == w ? ($("#pageA").show(), console.log("a")) : w && "b" == w ? ($("#pageB").show(), 
-            console.log("b")) : w && "c" == w && ($("#pageC").show(), console.log("c")), E && "yyzx" == E ? (T.html("北京智鸟科技有限公司版权所有 版权所有"), 
-            k.html("ICP备 08104462 号"), P.html("地址：北京市密云区经济开发区西统路8号西田各庄镇政府办公楼508室")) : E && "yb" == E ? (T.html("北京智鸟科技有限公司版权所有 版权所有"), 
-            k.html("ICP备15053624号"), P.html("地址：北京市朝阳区北苑路乙108号14幢")) : E && "lkt" == E ? (T.html("北京智鸟科技有限公司版权所有 版权所有"), 
-            k.html("ICP备18026322号"), P.html("地址：海淀区交大东路66号院2号楼")) : E && "sysd" == E ? (T.html("北京三易时代文化传媒有限公司 版权所有"), 
-            k.html("ICP备17064426号"), P.html("地址：北京市朝阳区广华居19号楼2层201")) : E && "jiujy" == E && (T.html("北京智鸟科技有限公司版权所有 版权所有"), 
+            console.log("b")) : w && "c" == w && ($("#pageC").show(), console.log("c")), E && "yyzx" == E ? (T.html("北京友缘在线网络科技股份有限公司 版权所有"), 
+            k.html("ICP备 08104462 号"), P.html("地址：北京市密云区经济开发区西统路8号西田各庄镇政府办公楼508室")) : E && "yb" == E ? (T.html("北京缘博网络科技有限公司 版权所有"), 
+            k.html("ICP备15053624号"), P.html("地址：北京市朝阳区北苑路乙108号14幢")) : E && "lkt" == E ? (T.html("成都乐开天科技有限公司 版权所有"), 
+            k.html("ICP备18026322号"), P.html("地址：成都市高新区天府三街69号新希望国际B座4层411室")) : E && "sysd" == E ? (T.html("北京三易时代文化传媒有限公司 版权所有"), 
+            k.html("ICP备17064426号"), P.html("地址：北京市朝阳区广华居19号楼2层201")) : E && "jiujy" == E && (T.html("太原市万柏林区九加一科技咨询服务部 版权所有"), 
             P.html("柏林区杜儿坪大虎峪西街")), $(".company_detail").click(function(t) {
                 t.stopPropagation(), location.href = "./about.html?info=" + E;
             }), $(".phone_us").click(function(t) {

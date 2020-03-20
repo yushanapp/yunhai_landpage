@@ -384,7 +384,7 @@ dd div div{
 }
 
 .detail_btn{
-	display: none;
+	#display: none;
 	background: #fff;
 	/*display: flex;*/
 	justify-content: space-around;
