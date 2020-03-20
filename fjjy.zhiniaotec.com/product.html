@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<title>公司简介</title>
+		<link rel="stylesheet" type="text/css" href="//hd.youyuan.com/html/public/css/yy_clear.css">
+		<link href="css/index.css" rel="stylesheet"></head>
+		<style type="text/css">
+			.about_box .con_box{
+				padding-top: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="about_box">
+			<div class="page_top">
+				<img src="images/images/prev_03.png" class="prev_btn" onClick="javascript :history.back(-1);"/>
+				<span class="tit">产品介绍</span>
+			</div>
+			<div class="con_box">
+				<p style="padding-top: 0.5rem;"></p>
+			<!--	<h4 style="padding-top: 0.5rem;">给身边的人一个近距离交友的机会</h4>
+				<p>找对象、找恋人，一个人生活太孤独，两个人一起才快乐，独自在异乡漂泊，不如找个知心人一起生活。</p>
+				<p>在这里，不怕圈子小朋友少，不论长相与学历，全民大众交友、同城相亲、线下约会，真正帮你摆脱单身烦恼! </p>
+				<p>青春不再孤单，缘分不再等待，这里为70-90后单身男女提供新的交友互动平台，寻找你的TA一起来约会。</p>
+				<img src="images/images/product_07.png"/>-->
+			</div>
+			<div class="cp_bottom">
+				<p class="cp">成都乐开天科技有限公司</p>
+				<p class="bahao">蜀ICP备18026322号</p>
+			</div>
+		</div>
+
+	</body>
+</html>
+<script type="text/javascript" src="//hd.youyuan.com/html/public/js/zepto.min.js"></script>	
+<script type="text/javascript">
+	function rePosition(oi){
+        var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        var ratio = width/640;
+            document.getElementsByTagName('html')[0].style.fontSize=100*ratio+"px";
+	    }
+	    rePosition();
+	    window.onresize = function(){
+	        rePosition();
+	    }
+	    var QueryString = {data: {},Initial: function() {
+		var aPairs,aTmp,a;
+		var queryString = location.search;
+		queryString = queryString.substr(1, queryString.length);
+		aPairs = queryString.split("&");
+		for (var i = 0; i < aPairs.length; i++) {
+			aTmp = aPairs[i].split("=");
+			this.data[aTmp[0]] = aTmp[1];
+		}
+	},GetValue: function(key) {
+		return QueryString.data[key];
+	}
+	};
+	QueryString.Initial();
+	var info = QueryString.GetValue('info');
+	var company=document.querySelector('.cp');
+	var beian=document.querySelector('.bahao');
+	    
+	if(info && info=='yyzx'){
+	company.innerHTML = '北京友缘在线网络科技股份有限公司 版权所有';
+	beian.innerHTML='京ICP备 08104462 号';
+	$('.con_box p').html('有缘网（youyuan.com）是中国领先的大众婚恋交友移动互联网平台，专注为最广泛的单身男女婚恋交友创造更多机会和可能，通过提供轻松、易用、性价比高的服务，促进两性有效沟通，是时下更懂90后的移动婚恋交友平台。');
+	$('.cp_bottom').css('margin-top','6.3rem');
+	}else if(info && info == 'yb'){
+	
+	company.innerHTML = '北京缘博网络科技有限公司 版权所有';
+	beian.innerHTML='京ICP备15053624号';
+	$('.con_box p').html('这里为70-90后单身男女提供新的交友互动平台，寻找你的TA一起来约会。');
+	$('.cp_bottom').css('margin-top','7.7rem');
+
+	}else if(info && info == 'lkt'){
+	
+	company.innerHTML = '成都乐开天科技有限公司 版权所有';
+	beian.innerHTML='蜀ICP备18026322号';
+	$('.con_box p').html('为广泛单身男女智能匹配，制造婚恋机会。');
+	$('.cp_bottom').css('margin-top','8.1rem');
+	}
+	else if(info && info == 'sysd'){
+	
+	company.innerHTML = '北京三易时代文化传媒有限公司 版权所有';
+	beian.innerHTML='京ICP备17064426号';
+	$('.con_box p').html('专注为最广泛的单身男女婚恋交友创造更多机会和可能，通过提供轻松、易用、性价比高的服务，促进两性有效沟通，是时下更懂90后的移动婚恋交友平台。');
+	$('.cp_bottom').css('margin-top','7.1rem');
+	}
+	else if(info && info == 'jiujy'){
+	
+	company.innerHTML = '太原市万柏林区九加一科技咨询服务部 版权所有';
+	beian.innerHTML=' ';
+	$('.con_box p').html('专注为最广泛的单身男女婚恋交友创造更多机会和可能，通过提供轻松、易用、性价比高的服务，促进两性有效沟通，是时下更懂90后的移动婚恋交友平台。');
+	$('.cp_bottom').css('margin-top','7.1rem');
+	}    
+</script>
