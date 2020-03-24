@@ -1,0 +1,133 @@
+﻿
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+
+	<title></title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body,
+		html {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			min-width: 320px;
+			max-width: 750px;
+			margin: 0 auto;
+		}
+
+		.logo {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 15%;
+			z-index: 9999;
+		}
+
+		.box {
+			width: 100%;
+			height: 100%;
+			overflow: auto;
+			-webkit-overflow-scrolling: touch;
+		}
+
+		.box1 {
+			position: relative;
+			width: 100%;
+			height: auto;
+		}
+
+		.car_img {
+			width: 100%;
+			height: 100%;
+			display: block;
+		}
+		.fontsize {
+			width: 100%;
+			text-align: center;
+			font-size: 12px;
+			color: black;
+			-webkit-transform: scale(0.6);
+			z-index: 1;
+			margin-top: -27%;
+		}
+		.btn_down1 {
+			width: 100%;
+			position: absolute;
+			bottom: 0%;
+			right: 0%;
+			z-index: 999;
+			margin-bottom: -4px;
+
+		}
+		.btn_down1 img{
+			width: 100%;
+		}
+		.btn_top {
+			position: absolute;
+			width: 80%;
+			height: 6%;
+			z-index: 999;
+			top: 34%;
+			left: 10%;
+		}
+		.btn {
+			position: absolute;
+			width: 27%;
+			height: 65%;
+			z-index: 999;
+			right: 2%;
+			top: 21%;
+		}
+	</style>
+</head>
+
+<body>
+<div class="box">
+	<div class="box1">
+		<img class="logo" src="http://img.zntec.mobi//logo/black_zhidaozhushou.png" onclick="return false" alt="" />
+		<img class="car_img" src="http://img.zntec.mobi/0.9892836098343856.jpg" onclick="return false" alt="" />
+		<div class="btn_top down"></div>
+		<p class="fontsize banben"><span style="font-size:14px">北京智道未来网络科技有限公司版权所有<br><span><a href="http://www.beian.miit.gov.cn" target="_blank">京ICP备15031264号-1</a></span></span><br>
+			<span style="transform:scale(0.5)">地址：北京市昌平区回龙观镇回龙观西大街16号院1号楼1至6层101六层A605A室</span>
+		</p>
+
+	</div>
+	<div class="btn_down1">
+		<div class="btn down"></div>
+		<img class="img" src="http://img.zntec.mobi/0.5979560910137252.jpg"/>
+	</div>
+</div>
+
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script>
+    function GetQueryString(name) {
+        var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if(r!=null)return  unescape(r[2]); return null;
+    }
+    $(".down").click(function(){
+        n = GetQueryString('id');
+        if(n == null || n == '' ){
+            n = 1;
+        }
+        window.location.href = 'https://qnp.chumanapp.com/apk/app-release-official-v4.9.7.2_sub_0-109_aligned_signed_baiduliu'+ n +'.apk';
+
+    });
+</script>
+
+</body>
+
+</html>
