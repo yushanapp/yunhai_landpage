@@ -23,6 +23,15 @@ h3{
 	margin-left:0.14rem;
 
 }
+.logo{
+	position: absolute;
+	top:0;
+	left:0;
+	width:2rem;
+}
+.txt{
+	margin-left:111px;
+}
 .index_box{
 	padding-bottom: 0.7rem;
 }
@@ -375,8 +384,9 @@ dd div div{
 }
 
 .detail_btn{
+	display: none;
 	background: #fff;
-	display: flex;
+	/*display: flex;*/
 	justify-content: space-around;
 	padding-top: 0.19rem;
 	padding-bottom: 0.28rem;

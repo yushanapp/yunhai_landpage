@@ -89,8 +89,7 @@ body{
 	margin: 0;
 	
 }
-.content_box{
-	display: none;
+#body .content_box{
 	padding-bottom: 1rem;
 }
 button{
