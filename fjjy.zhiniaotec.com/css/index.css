@@ -25,12 +25,13 @@ h3{
 }
 .logo{
 	position: absolute;
-	top:0;
+	top:-1px;
 	left:0;
+	z-index: 99;
 	width:2rem;
 }
 .txt{
-	margin-left:111px;
+	margin-left:99px;
 }
 .index_box{
 	padding-bottom: 0.7rem;
