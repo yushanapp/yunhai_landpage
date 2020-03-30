@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>有情趣</title>
+  <link rel="stylesheet" type="text/css" href="css/base.css" />
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+
+<body>
+  <a href="#" id="link">
+   
+	</a>
+	<div class="wap">
+		<img src="img/prc1.jpg?v=1" />
+	</div>
+	<a href="#" id="linkfoot">
+		<div class="foot" id="foot"></div>
+	</a>
+</body>
+<script>
+function getQueryString(name) {
+        var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) {
+            return unescape(r[2]);
+        }
+        return null;
+}
+function isIos() {
+	var userAgent = window.navigator.userAgent;
+	var isIOS = userAgent.indexOf("iPhone") != -1 || userAgent.indexOf("iPad") != -1;
+	return isIOS;
+}
+var ss = getQueryString("ss");
+var url = "";
+var isIOS = isIos();
+
+if (isIOS) {
+	url = "https://apps.apple.com/app/apple-store/id1470376786?pt=120211676&ct=ss001&mt=8";
+} else {
+	if (ss == "6") {
+		url = "http://yqqimg.yqqsc.com//file/channels/oy/a_a010_441.apk";
+	} else if (ss == "4") {
+		url = "http://yqqimg.yqqsc.com//file/channels/yw/yw_yw023_140.apk";
+	} else if (ss == "3") {
+		url = "http://yqqimg.yqqsc.com//file/channels/yw/yw_yw022_140.apk";
+	} else if (ss == "2") {
+		url = "http://yqqimg.yqqsc.com//file/channels/yw/yw_yw021_140.apk";
+	} else if (ss == "1") {
+		url = "http://yqqimg.yqqsc.com//file/channels/yw/yw_yw020_140.apk";
+	} else {
+		url = "http://yqqimg.yqqsc.com//file/channels/yw/yw_yw020_140.apk";
+	}
+}
+
+var head = document.getElementById('head');
+var foot = document.getElementById('foot');
+if (head) {
+	var headUrl = "img/head.png";
+	if (ss == "6") {
+		headUrl = "img/head6.png";
+	}
+	if (isIOS) {
+		headUrl = "img/headios.png";
+	}
+	head.innerHTML = "<img src=\"" + headUrl + "\" />";
+}
+if (foot) {
+	var footUrl = "img/foot.png";
+	if (ss == "6") {
+		footUrl = "img/foot6.png";
+	}
+	if (isIOS) {
+		footUrl = "img/footios.png";
+	}
+	foot.innerHTML = "<img src=\"" + footUrl + "\" />";
+}
+if (ss == "6") {
+	document.title = "魅诱直播";
+}
+if (isIOS) {
+	document.title = "玩洽夜聊";
+}
+
+var link = document.getElementById('link');
+var linkfoot = document.getElementById('linkfoot');
+if (link) {
+	link.href = url;
+}
+if (linkfoot) {
+	linkfoot.href = url;
+}
+//location.href = url;
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?7f78247d74b40ca1c222ba2f3a496071";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+</html>
