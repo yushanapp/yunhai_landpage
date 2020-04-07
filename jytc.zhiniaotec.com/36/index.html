@@ -1,0 +1,113 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="max-age=0" http-equiv="Cache-Control">
+    <meta content="240" name="MobileOptimized">
+    <meta content="YES" name="apple-touch-fullscreen">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery.js"></script>
+	<script src="http://pv.sohu.com/cityjson"></script>
+	<style>
+		.dlBtn{
+			width: 350px;
+			height: 100px;
+/*			background: red;*/
+			position: absolute;
+			top:860px;
+			left:150px;
+			z-index: 100;
+		}
+	</style>
+
+</head>
+<body id="xz">
+    <div class="picBox" style="position: relative;">
+    	<!--<ul>
+    		<li style="float: left; width: 50%; text-align: center;">
+    			<a href="information.html">简介</a>
+    		</li>
+    		<li style="float: left; width: 50%; text-align: center;">
+    			<a href="information.html">特色</a>
+    		</li>
+    	</ul>-->
+        <img src="images/dsp_0219.jpg" alt="">
+		<span class="dlBtn"></span>
+        <!--<div class="top">
+            <img src="images/1152x1920(2).jpg" alt="敢聊">
+            <a href="javascript:;" class="download" id="download">
+                <img src="images/btn1.png" alt="下载">
+            </a>
+        </div>-->
+    <img src="images/btn5.png" style="position: absolute; bottom: 16%; width: 54%; left:0; right: 0; margin: auto;" class="dl"/>
+    </div>
+    <!--<img src="images/appbtn.png" style="position: fixed; bottom: 9%; width: 100%;" id="dl"/>
+    <img src="images/canvas.jpg" style="position: fixed; bottom: 0%; width: 100%;" id="dl"/>-->
+     <div class="copyRight">
+                   <p>北京智鸟科技有限公司版权所有 </p>
+         <p>京ICP备16054220号-1</p>
+       <p>地址：北京市昌平区沙河镇北街家园五区2号楼5层4单元525</p>
+    </div>
+    <!--<div style="display: none;">
+		<script src="https://s19.cnzz.com/z_stat.php?id=1272836882&web_id=1272836882" language="JavaScript"></script>
+    </div>-->
+</body>
+ <!--<script>
+    (function(){
+        document.getElementsByTagName("body")[0].addEventListener("click", function(){
+            window.location.href ="https://by.ldcxweb.cn/qmjy/3022877.apk";
+        });
+    })();
+</script> -->
+
+ <!--<script>
+	var ua = navigator.userAgent.toLowerCase();	
+		if (/iphone|ipad|ipod/.test(ua)) {
+			    //alert("iphone");
+			    (function(){
+			        document.getElementsByClassName('dl')[0].addEventListener("click", function(){
+			            window.location.href ="http://cloudappclub.com:8080/r/index.do?app=3022847";
+			        });
+    			})();
+		} else if (/android/.test(ua)) {
+			    //alert("android");	
+			    (function(){
+			        document.getElementsByClassName('dl')[0].addEventListener("click", function(){
+			            window.location.href ="https://by.ldcxweb.cn/qmjy/3022847.apk";
+			        });
+    			})();
+		} else{
+			(function(){
+			        document.getElementsByClassName('dl')[0].addEventListener("click", function(){
+			            window.location.href ="https://by.ldcxweb.cn/qmjy/3022847.apk";
+			        });
+    			})();
+		}
+</script>-->
+<script>
+	APK_url="https://by.ldcxweb.cn/qmjy/992121020.apk";		
+	// 区分安卓ios
+	var u = navigator.userAgent;
+	var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+	var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+
+	if(isIOS == true){
+		APK_url="https://by.ldcxweb.cn/qmjy/992121020.apk";
+	}
+	var dlBtn =  document.querySelector('.dlBtn')
+	dlBtn.onclick = function(){
+		window.location.href=APK_url;
+	}
+//	$("body").click(function(e){		
+//		window.location.href=APK_url;
+//	});
+	//setTimeout(function (){  window.location.href= APK_url;}, 3000)
+</script>
+
+</html>
+
