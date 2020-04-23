@@ -3,7 +3,7 @@
 <head>
 	  <meta charset="UTF-8">
 	  <title>触漫</title>
-	  <meta name="viewport" content="width=device-width"> 
+	  <meta name="viewport" content="width=device-width">
 	  <meta name="Generator" content="EditPlus®">  <!-- -->
 	  <meta name="Author" content="触漫"><!--   -->
 	  <meta name="Keywords" content="触漫"><!-- -->
@@ -16,7 +16,7 @@
 			}
 			.navImage{
 			display:inline-block;
-			width:100%;			
+			width:100%;
 			}
 			body{
 			margin:0!important;
@@ -30,19 +30,28 @@
                   <area shape="rect" coords="76,906,646,1054"href="JavaScript:;" style="outline:none;" id="t1">
                 </map>
 		  <img src="https://yh.cdnweb.top/20191015/1/images/bg2.jpg"  alt="" name="download2" border="0" usemap="#download2Map"  id="download"
-		   style="position:fixed;margin:0 auto;bottom:0;left:0;right:0;max-width:720px;" onClick="javascript:;" > 
+		   style="position:fixed;margin:0 auto;bottom:0;left:0;right:0;max-width:720px;" onClick="javascript:;" >
 	         <map name="download2Map"  class="btnClick"> <area shape="rect"coords="513,16,709,81" id="t2"></map>
-     </div>  
-<script>	         
-		var Android="https://qnp.chumanapp.com/apk/v4.9.3_sub_0-100-20191112-100103_aligned_signed_baiduliu1.apk";//安卓下载链接
+     </div>
+<script>
+		var Android="https://qnp.chumanapp.com/apk/app-official-release-4991_aligned_signed_baiduliu";//安卓下载链接
 		var Ios="";//ios下载链接
+        function _getQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) {
+                return r[2]
+            }
+            return null
+        }
 		var btns = document.getElementsByClassName("btnClick");
 		for(var i=0;i<btns.length;i++){
 		   btns[i].onclick=function () {
                if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
                    window.location.href =Ios;
                }else {
-                   window.location.href =Android;
+                   var keyword = _getQueryString('id') || '1';
+                   window.location.href =Android+ keyword+'.apk';
                }
            }
 		};
