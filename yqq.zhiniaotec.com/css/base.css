@@ -1,0 +1,57 @@
+html, body { position: relative; width:100%; height: auto; margin:0 auto; font-family:"微软雅黑"; }
+html { font-size:62.5% }
+@media only screen and (min-width: 350px) {
+html {
+ font-size: 70%!important;
+}
+}
+@media only screen and (min-width: 420px) {
+html {
+ font-size: 78%!important;
+}
+}
+@media only screen and (min-width: 440px) {
+html {
+ font-size: 80%!important;
+}
+}
+@media only screen and (min-width: 481px) {
+html {
+ font-size: 94%!important;
+}
+}
+@media only screen and (min-width: 561px) {
+ html {
+ font-size: 109%!important;
+}
+}
+@media only screen and (min-width: 640px) {
+ html {
+ font-size: 125%!important;
+}
+}
+@media only screen and (min-width: 700px) {
+ html {
+ font-size: 136.72%!important;
+}
+}
+@media only screen and (min-width: 750px) {
+ html {
+ font-size: 146.48%!important;
+}
+}
+* { margin: 0; padding: 0; }
+body { color:#5E5E5E; }
+.fl { float:left }
+.fr { float:right }
+ul, ul li { list-style:none }
+.clear { clear:both }
+.hide { display:none }
+a { cursor:pointer; text-decoration:none; color:#5E5E5E }
+img, input, label { border:0 none; }
+.qianfen { color:#F09FAE }
+.clear { clear:both }
+.red { color:#D82545; }
+img { width:100% }
+.wap { width:100%; margin:0 auto;}
+/*===============*/
