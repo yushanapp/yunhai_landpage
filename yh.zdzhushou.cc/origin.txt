@@ -1,0 +1,12 @@
+Uri: http://jy.zdzhushou.com.cn/
+File Name: c:\Downloaded Web Sites\jy.zdzhushou.com.cn\index.html
+Content Type: text/html
+
+Uri: http://jy.zdzhushou.com.cn/static/css/share.css
+File Name: c:\Downloaded Web Sites\jy.zdzhushou.com.cn\static\css\share.css
+Content Type: text/css
+
+Uri: http://jy.zdzhushou.com.cn/static/img/banner_m@2x.png
+File Name: c:\Downloaded Web Sites\jy.zdzhushou.com.cn\static\img\banner_m@2x.png
+Content Type: image/png
+
