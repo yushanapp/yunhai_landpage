@@ -1,0 +1,382 @@
+﻿@charset "utf-8";
+html,body{
+	width:100%;
+	min-height:100%;
+}
+body{
+	margin:0; 
+	padding:0;
+	font-size:16px;
+	font-family:"Microsoft yahei";
+}
+p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,input,img,select{
+	margin:0;
+	padding:0;
+	list-style:none;
+	border:0; outline:none;
+}
+a{
+	text-decoration:none;
+	cursor:default;
+}
+table{
+	border-collapse:
+	collapse;border-spacing: 0;
+}
+.shadow{
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+:focus {
+	outline:0;
+}
+
+*{
+	tap-highlight-color: rgba(0,0,0,0);
+}
+
+.re_trg, .le_trg, .top_trg,.bot_trg{
+	display:inline-block;
+	width:9px;
+	height:9px;
+	border-right:2px solid #555;
+	border-bottom:2px solid #555;
+	transform:rotate(-45deg);
+}
+.le_trg{
+	width:9px;
+	height:9px;
+	transform:rotate(135deg);
+}
+.bot_trg{
+	transform:rotate(45deg);
+	margin:3px 4px;
+}
+.top_trg{
+	transform:rotate(-135deg);
+	margin: -2px 4px;
+}
+
+.box-sizing{
+	box-sizing:border-box;
+}
+.dis-v{
+	display:-ms-flexbox;
+	display:flex;
+	box-orient:vertical;
+}
+.dis-box{
+	display:-ms-flexbox;
+	display:flex;
+}
+.dis-flex{
+	box-flex:1;
+}
+.dis-center{
+	box-sizing:border-box;
+	display:-ms-flexbox;
+	display:flex;
+	box-pack:center;
+	box-align:center;
+}
+.f_left{ float:left;}
+.f_right{ float:right;}
+.center{ text-align:center;}
+.font14{ font-size:14px;}
+.font12{ font-size:12px;}body {
+    margin: 0;
+    padding: 0; 
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-size: 12px;
+    background-color: #f2f2f2;
+}
+a:active{
+    background: #000;
+    opacity: .4;
+}
+.topnav {
+    border: none;
+    font-size: 12px;
+    background: #F660BA;
+    opacity: .9;
+    border-radius: 0px;
+    position: fixed;
+    z-index: 999;
+    display: table;
+    overflow: hidden;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.control-item {
+    line-height: 38px;
+    display: table-cell;
+    overflow: hidden;
+    width: 1%;
+    transition: background-color .1s linear;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #fff;
+}
+
+.control-item img {
+    display: block;
+    border: 0;
+    vertical-align: middle;
+}
+
+.control-item {
+    line-height: 38px;
+    display: table-cell;
+    overflow: hidden;
+    transition: background-color .1s linear;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #fff;
+    vertical-align: middle;
+}
+
+.active {
+    color: #F8FF34;
+}
+
+.pt50 {
+    padding-top: 50px;
+    padding-bottom: 43px;
+}
+
+.n_topad {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #006600;
+    background: #fff;
+    padding: 5px 0;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+.container {
+    margin: 0 15px 30px 15px;
+}
+
+.index-item {
+    background: #fff;
+    margin: 0 -15px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.clearfix:before, .clearfix:after {
+    display: table;
+    content: ' ';
+}
+.index-item a{
+    display: block;
+}
+.index-item dt {
+    float: left;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.index-item dt img {
+    width: 100%;
+    height: auto;
+}
+
+.index-item dd.dd01 {
+    float: left;
+    margin-left: 15px;
+}
+
+.index-item dd.dd01 .uname {
+    line-height: 24px;
+    font-size: 16px;
+    color: #282828;
+    font-weight: bold;
+}
+
+.index-item dd.dd01 .tag {
+    padding: 5px 0;
+}
+
+.index-item dd.dd01 .tag span {
+    padding: 3px 5px;
+    margin-right: 5px;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.index-item dd.dd01 .tag .blue {
+    background: #77cee5;
+}
+
+.index-item dd.dd01 .tag .orange {
+    background: #fcbe7d;
+}
+
+.index-item dd.dd02 {
+    float: right;
+
+}
+.index-item dd.dd02>a{
+    color:#fff;
+    font-size: 16px;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 12px;
+    margin-left: 5px;
+    background: #F05F43;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.index-item .info {
+    padding: 10px 0;
+    color: #6d6d6d;
+    font-size: 14px;
+}
+
+.index-item ul {
+    margin: 0 -3px;
+}
+
+.index-item ul li {
+    width: 33.33%;
+    float: left;
+}
+
+.index-item ul li .pic {
+    margin: 0 3px;
+    height: 110%;
+    overflow: hidden;
+}
+
+.index-item ul li .pic img {
+    width: 100%;
+    height: auto;
+}
+
+.index-item .juli {
+    color: #61c11f;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.juli em {
+    display: inline-block;
+    width: 18px;
+    height: 22px;
+    color: #0C6;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.juli em>img {
+}
+
+.index-item .juli span {
+    display: inline-block;
+    color: #0C6;
+    vertical-align: top;
+}
+
+.morem {
+    background: #fff;
+    margin: 10px 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.morem a {
+    color: #F2603B;
+    text-decoration: underline;
+}
+.company{
+
+}
+.company p{
+	text-align: center;
+	font-family: "\5FAE\8F6F\96C5\9ED1";
+	
+}
+.footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    z-index: 999;
+    background-color: #f2f2f2;
+}
+
+.footer ul li {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+.footer li a {
+    display: block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.footer li a>img {
+    display: block;
+    width: 100%;
+}
+
+.footer li a span {
+    color: #8e807d;
+    font-size: 10px;
+}
+
+.debox {
+    position: fixed;
+    left: 10%;
+    top: 200px;
+    width: 80%;
+    height: auto;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.debox-title {
+    border-bottom: solid #eee 1px;
+    padding: 20px;
+    font-size: 18px;
+    color: #515151;
+}
+
+.debox-bottom {
+    text-align: center;
+}
+
+.debox-bottom a {
+    display: inline-block;
+    font-size: 16px;
+    color: #0b67f9;
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+    width: 50%;
+    float: left;
+}
+.debox-bottom a:active{
+    background:#0b67f9;
+    opacity: .3;
+    color:#fff;
+}
+
+.debox-bottom a#down {
+    border-left: solid #eee 1px;
+    margin-left: -1px;
+}
