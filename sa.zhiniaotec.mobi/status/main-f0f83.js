@@ -1209,11 +1209,11 @@
         var n = e.GetValue("from") || e.GetValue("qd") || e.GetValue("channelyy") || 66223, i = e.GetValue("ut"), o = (e.GetValue("autoLoad"), 
         e.GetValue("dj") || "body"), a = (e.GetValue("time"), e.GetValue("cpxx"));
         3091012 == n ? n = 3091018 : 3091012 == n ? n = 3091018 : 3091012 == n ? n = 3091018 : 3091012 == n && (n = 3091012);
-        var s = "https://app.jzhrh.com/mj502006919.apk";
-        "sp" == i && (s = "https://app.jzhrh.com/mj502006919.apk"), 
-        "yobolove" == i && (s = "https://app.jzhrh.com/mj502006919.apk"), 
-        "yoboloveSp" == i && (s = "https://app.jzhrh.com/mj502006919.apk"), 
-        "lrxq" == i && (s = "https://app.jzhrh.com/mj502006919.apk");
+        var s = "https://app.jzhrh.com/mj502006921.apk";
+        "sp" == i && (s = "https://app.jzhrh.com/mj502006921.apk"), 
+        "yobolove" == i && (s = "https://app.jzhrh.com/mj502006921.apk"), 
+        "yoboloveSp" == i && (s = "https://app.jzhrh.com/mj502006921.apk"), 
+        "lrxq" == i && (s = "https://app.jzhrh.com/mj502006921.apk");
         var u = document.querySelector("body"), c = (document.querySelector("html"), document.querySelector(".debox")), l = document.getElementById("close"), f = document.getElementById("down"), h = document.querySelector(".company"), p = new r.default();
         p({
             tjtype: "window-onload",
