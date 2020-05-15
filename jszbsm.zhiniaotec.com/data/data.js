@@ -113,10 +113,6 @@ var data = {
             cover: baseURL + 'data/video/11.jpg'
         },
         {
-            name: '哈妮宝贝',
-            cover: baseURL + 'data/video/3.jpg'
-        },
-        {
             name: '梦老师',
             cover: baseURL + 'data/video/4.jpg'
         },
@@ -149,10 +145,15 @@ var data = {
             view: '5641',
             cover: baseURL + 'data/video/10.jpg'
         },
+
+        {
+            name: '哈妮宝贝',
+            cover: baseURL + 'data/video/3.jpg'
+        },
         {
             name: '养乐多',
             view: '5641',
-            cover: baseURL + 'data/video/2.jpg'
+            cover: baseURL + 'data/hot/5.jpg'
         },      
         {
             name: '小艾薇儿',
