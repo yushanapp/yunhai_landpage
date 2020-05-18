@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>嗨</title>
+    <style> 
+    *{
+        margin:0;
+        padding: 0;
+    }
+    .wrap{
+        width: 100%;
+    }
+    .image{
+        width: 100%;
+    }
+    .btn{
+        width:70%;
+        height: 8%;
+        position: absolute;
+        left: 50%;
+        top:84%;
+        margin-left: -34%;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <img class="image" src="./img/02.jpg" alt="">
+        <span class="btn btn_down"></span>
+    </div>
+</body>
+<script>
+    var btn = document.querySelector('.btn_down')
+    btn.onclick = function () {
+        window.location.href = `https://apps.apple.com/cn/app/id1493905800`
+    }
+</script>
+</html>
