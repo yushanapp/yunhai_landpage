@@ -1,0 +1,8 @@
+#yunhe-logo img{ 
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 30px;
+	filter: Alpha(Opacity=30, FinishOpacity=0, Style=1, StartX=0, StartY=0, FinishX=100, FinishY=100);
+	opacity: 1;
+}
