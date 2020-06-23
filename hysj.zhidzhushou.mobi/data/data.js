@@ -1,4 +1,4 @@
-﻿var baseURL = 'https://rec.net678.vip/hysj.zhidzhushou.mobi/'
+﻿var baseURL = 'https://rec.net678.vip/hy1.ximuwl.com/'
 var data = {
     hot: [
         {
