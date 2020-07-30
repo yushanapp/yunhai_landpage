@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=0">
+    <title>天气预报</title>
+    <!-- 引入 Vue 的 JS 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+        <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .body{
+            width: 100vw;
+            height: 270vh;
+            position: relative;
+        }
+        /* 外部遮罩层层级100 */
+        .body .zhe{
+            width: 100vw;
+            position: absolute;
+            left: 0;
+            top:0;
+            z-index: 100;
+        }
+        /* 背景 */
+        .body .bg{
+            width: 100vw;
+            height: 100%;
+            padding-bottom: 170px;
+        }
+        .btn_box{
+            width: 100vw;
+            height: 400px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            z-index: 101;
+        }
+        /* 下载按钮 */
+        .body .btn{
+            width: 100vw;
+            height: 10vh;
+            position: absolute;
+            left: 50vw;
+            bottom:0;
+            margin-left: -50vw;
+            z-index: 102;
+        }
+        .btn1{
+            width: 80vw;
+            height: 10vh;
+            position: absolute;
+            left: 50vw;
+            top:87vh;
+            margin-left: -40vw;
+            z-index: 102;
+        }
+        .btn1{
+            width: 80vw;
+            height: 10vh;
+            position: absolute;
+            left: 50vw;
+            top:129vh;
+            margin-left: -40vw;
+            z-index: 102;
+        }
+        .btn2{
+            width: 80vw;
+            height: 10vh;
+            position: absolute;
+            left: 50vw;
+            top:168vh;
+            margin-left: -40vw;
+            z-index: 102;
+        }
+        .btn3{
+            width: 80vw;
+            height: 10vh;
+            position: absolute;
+            left: 50vw;
+            top:209vh;
+            margin-left: -40vw;
+            z-index: 102;
+        }
+        .btn4{
+            width: 80vw;
+            height: 10vh;
+            position: absolute;
+            left: 50vw;
+            top:248vh;
+            margin-left: -40vw;
+            z-index: 102;
+        }
+        .btn5{
+            width: 80vw;
+            height: 10vh;
+            position: absolute;
+            left: 50vw;
+            top:88vh;
+            margin-left: -40vw;
+            z-index: 102;
+        }
+        .body .btn_img{
+            width: 100vw;
+            height: 10vh;
+            position: absolute;
+            left: 50vw;
+            bottom:0;
+            margin-left: -50vw;
+            z-index: 101;
+        }
+        /* 轮播图 */
+        .my-swipe .van-swipe-item {
+            width: 100vw;
+            height: 100vh;
+            margin:0;
+            padding:0;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+</body>
+<script>
+	let keyword = window.location.search
+    let key = keyword.slice(8,keyword.length).split("&")[0]
+    let app = new Vue({
+        template:`
+        <div class="body">    
+            <!-- 背景 -->
+            <!-- 遮罩,防止QQ浏览器图片预览 -->
+            <div class="zhe"></div>
+            <img class="bg" src="./image/bj.jpg" alt=""> 
+            <div class="btn1" @click="down()"></div>
+            <div class="btn2" @click="down()"></div>
+            <div class="btn3" @click="down()"></div>
+            <div class="btn4" @click="down()"></div>
+            <div class="btn5" @click="down()"></div>
+            <div class="btn_box">
+                <img class="btn_img" src="./image/btn.png" alt="">
+                <!-- 下载按钮 -->
+                <div class="btn" @click="down()"></div>
+            </div>   
+        </div>
+        `,
+        methods:{
+            down(){
+                let down_url = `http://oassets.funhan.cn/app/qicai_baidutyctwo_release_4.1.7.6_418.apk`
+                console.log(down_url)
+                window.location.href = down_url
+            }
+        }
+    })
+
+    app.$mount('#app')
+</script>
+</html>
