@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>刺猬猫</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .bj_box{
+            width: 100vw;
+            position: relative;
+        }
+        .zhe{
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top:0;
+            z-index: 100;
+        }
+        .bj{
+            width: 100vw;
+            padding:10vw 0 0 0;
+        }
+        .logo{
+            width: 30vw;
+            height: 6vw;
+            position: absolute;
+            left: 2vw;
+            top:2vw;
+        }
+        .copy{
+            width: 100vw;
+            text-align: center;
+            font-size: 3vw;
+        }
+        .bot{
+            padding-bottom:20vw;
+        }
+        .btn_box{
+            width: 100vw;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            z-index: 101;
+        }
+        .btn_img{
+            width: 100vw;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        .btn{
+            width: 100vw;
+            height: 20vw;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: 102;
+        }
+    </style>
+</head>
+<body>
+    <div class="bj_box">
+        <div class="zhe"></div>
+        <img src="http://img.zntec.mobi//logo/black_zhiniao.png" alt="" class="logo">
+        <img src="./image/bj.jpg" class="bj" alt="">
+        <p class="copy">版权 © 北京智鸟科技有限公司 京ICP备16054220号</p>
+        <p class="copy">地址：北京市昌平区沙河镇北街家园五区2号楼5层4单元525</p>
+        <p class="copy bot">电话：13907550120</p>
+        <div class="btn_box">
+            <img src="./image/btn.png" alt="" class="btn_img">
+            <span class="btn btn_down"></span>
+        </div>
+    </div>
+</body>
+<script>
+    let btn = document.querySelector(".btn_down");
+
+    let type = window.location.search.split("type=")[1].split("&")[0];
+
+    btn.onclick = ()=>{
+        window.location.href = `http://c5.kuangxiangit.com/custom/download/2.0.112/Novel-common-release_26011_jiagu_sign-SHENMAC${type}.apk`;
+    }
+</script>
+</html>
