@@ -10,7 +10,7 @@
       nextButton: '.next'
     });
     //系统判断
-    var M, channel = getQueryString('qd') || 'BDPP2_1',
+    var M, channel = getQueryString('qd') || 'SMPP_0110',
       appKey = 'kimvpm',
       iosOffLine = false;
     var an_url = "https://app.live520.ink:19443/direct/" + channel,
@@ -18,17 +18,21 @@
     if (sysTemInfo() == 'ios') {
       appKey = 'kimvpm';
       channel = 'ios' + channel;
-      var OS = 'ios', appName = '花间';
+      var OS = 'ios',
+        appName = '花间';
       var titArry = ['立即下载' + appName + OS + '版app', appName + OS + '版官网下载', appName + OS + '版app官方下载', appName + '影视' + OS + '版app官方下载', appName + OS + '版下载'];
       $('.btn a').each(function (i) {
-        $(this).attr({ class: OS, title: titArry[i] });
+        $(this).attr({
+          class: OS,
+          title: titArry[i]
+        });
       })
       ios_url += '?qd=' + channel;
       $('body').addClass('iosApp');
       $('title').html('花间APP-美女主播1V1直播社交APP下载_花间APP安卓版/IOS版官网下载');
       $('.logo').attr('src', 'images/logo2.png');
-      
-    }else if(sysTemInfo() == 'android'){
+
+    } else if (sysTemInfo() == 'android') {
       appKey = 'kqhqf6';
     }
 
@@ -78,7 +82,7 @@
     }, {
       "channel": channel
     });
-  } catch (e) { }
+  } catch (e) {}
 
   $('.manual  ul li').eq(0).addClass('active').find('.con').show()
   $('.manual  ul li a').click(function () {

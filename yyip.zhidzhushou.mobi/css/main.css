@@ -132,7 +132,7 @@ html{max-width: 600px;}
 .ucTips{position: fixed;top: 50%;left: 50%;transform: translate(-50%,-50%);-webkit-transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);-ms-transform: translate(-50%,-50%);-o-transform: translate(-50%,-50%);background: #fff;width: 5.8rem;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;padding: .4rem .4rem .3rem;border-radius: .1rem;-webkit-border-radius: .1rem;-moz-border-radius: .1rem;-ms-border-radius: .1rem;-o-border-radius: .1rem;text-align: center;font-size: .28rem;color: #333;z-index: 100;}
 .ucTips p{line-height: 26px;margin-top: 0.2rem;font-size: .32rem;color: #333;text-align: center;}
 .ucTips a{display: block;height: .8rem;line-height: .8rem;background: url(../images/down_btn.png) no-repeat center center;background-size: contain;color: #fff;font-size: .3rem;margin-top: .28rem;}
-.ucTips .t_close{cursor: pointer;position: absolute;top: .14rem;right: .14rem;width: .42rem;height: .42rem;background: url(https://res.mushan.xin/newlmql/images/c_lose.png) no-repeat 0/cover;}
+.ucTips .t_close{cursor: pointer;position: absolute;top: .14rem;right: .14rem;width: .42rem;height: .42rem;background: url(https://res.xianxerman.com/newlmql/images/c_lose.png) no-repeat 0/cover;}
 .ucTips input{width: 1px;height: 1px;opacity: 0;position: absolute;}
 .toast{position: fixed;z-index: 9999;top: 50%;left: 50%;transform: translate(-50%,-50%);background: rgba(0, 0, 0, .8);font-size: .32rem;color: #fff;padding: .133333rem .2rem;border-radius: .133333rem;}
 .vipTag{display: none; width: 100%; height: .4rem; position: absolute; left: 0; bottom: 2rem; background: url(../images/vip.png) center no-repeat; background-size: auto 90%;}
